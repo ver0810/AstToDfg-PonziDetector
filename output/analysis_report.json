@@ -1,0 +1,61 @@
+{
+  "analysis_summary": {
+    "total_files": 3,
+    "successful_analyses": 3,
+    "failed_analyses": 0,
+    "success_rate": 1.0
+  },
+  "solidity_version": "0.4.x",
+  "output_directory": "output",
+  "detailed_results": [
+    {
+      "contract": "BaseContract",
+      "solidity_version": "0.4.x",
+      "success": true,
+      "ast_nodes": 161,
+      "dfg_nodes": 230,
+      "dfg_edges": 229,
+      "json_file": "output/dfgs/BaseContract_dfg.json",
+      "summary_file": "output/dfgs/BaseContract_summary.json",
+      "visualization_file": "output/graphs/BaseContract_dfg.png",
+      "viz_stats_file": "output/graphs/BaseContract_viz_stats.json"
+    },
+    {
+      "contract": "SimpleStorage",
+      "solidity_version": "0.4.x",
+      "success": true,
+      "ast_nodes": 36,
+      "dfg_nodes": 47,
+      "dfg_edges": 46,
+      "json_file": "output/dfgs/SimpleStorage_dfg.json",
+      "summary_file": "output/dfgs/SimpleStorage_summary.json",
+      "visualization_file": "output/graphs/SimpleStorage_dfg.png",
+      "viz_stats_file": "output/graphs/SimpleStorage_viz_stats.json"
+    },
+    {
+      "contract": "LegacyContract",
+      "solidity_version": "0.4.x",
+      "success": true,
+      "ast_nodes": 159,
+      "dfg_nodes": 247,
+      "dfg_edges": 246,
+      "json_file": "output/dfgs/LegacyContract_dfg.json",
+      "summary_file": "output/dfgs/LegacyContract_summary.json",
+      "visualization_file": "output/graphs/LegacyContract_dfg.png",
+      "viz_stats_file": "output/graphs/LegacyContract_viz_stats.json"
+    }
+  ],
+  "generated_at": "/home/ancheng/Code/ast-solidity",
+  "statistics": {
+    "total_contracts": 3,
+    "total_dfg_nodes": 524,
+    "total_dfg_edges": 521,
+    "average_nodes_per_contract": 174.66666666666666,
+    "average_edges_per_contract": 173.66666666666666,
+    "analyzed_contracts": [
+      "BaseContract",
+      "SimpleStorage",
+      "LegacyContract"
+    ]
+  }
+}

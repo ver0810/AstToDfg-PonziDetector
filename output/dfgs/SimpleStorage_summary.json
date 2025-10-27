@@ -1,0 +1,50 @@
+{
+  "contract": "SimpleStorage",
+  "solidity_version": "0.4.x",
+  "statistics": {
+    "total_nodes": 47,
+    "total_edges": 46,
+    "entry_node": null
+  },
+  "node_types": {
+    "identifier": 35,
+    "pragma_directive": 1,
+    "contract": 1,
+    "state_variable": 1,
+    "constructor_function": 1,
+    "expression_statement": 2,
+    "expression": 2,
+    "function": 2,
+    "return_statement": 1,
+    "parameter": 1
+  },
+  "edge_types": {
+    "control_dependency": 33,
+    "definition": 7,
+    "data_dependency": 6
+  },
+  "functions": [
+    {
+      "name": "SimpleStorage",
+      "scope": "SimpleStorage",
+      "data_type": null
+    },
+    {
+      "name": "set",
+      "scope": "SimpleStorage",
+      "data_type": null
+    },
+    {
+      "name": "get",
+      "scope": "SimpleStorage",
+      "data_type": null
+    }
+  ],
+  "state_variables": [
+    {
+      "name": "storedData",
+      "data_type": "uint256",
+      "scope": "SimpleStorage"
+    }
+  ]
+}
