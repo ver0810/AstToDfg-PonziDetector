@@ -32,7 +32,7 @@ python -m src.main examples/solidity_04x/simple_contract.sol --detect --visualiz
 python -m src.main examples/solidity_04x/*.sol --batch --detect
 ```
 
-See [Main Script Guide](docs/MAIN_SCRIPT_GUIDE.md) for detailed usage.
+See [Usage Guide](docs/USAGE_GUIDE.md) for detailed usage and examples.
 
 ### Option 2: Use Python API
 
@@ -96,19 +96,35 @@ ast-solidity/
 │   ├── dfg_builder/              # DFG construction
 │   │   ├── dfg_builder.py
 │   │   └── dfg_config.py
-│   ├── visualization/            # Graph visualization
-│   │   └── visualizer.py
 │   ├── detector/                 # Ponzi detection
 │   │   ├── llm_detector.py
 │   │   └── batch_detector.py
+│   ├── visualization/            # Graph visualization
+│   │   └── visualizer.py
 │   ├── utils/                    # Utility functions
+│   │   ├── config_manager.py
+│   │   ├── dataset_loader.py
+│   │   └── result.py
 │   └── json_serializer.py        # JSON export
-├── examples/solidity_04x/         # Example contracts
+├── test/                          # Unit tests
+│   ├── run_tests.py              # Test runner
+│   └── test_*.py                 # Test modules
+├── examples/                      # Example contracts
+│   └── solidity_04x/             # Solidity 0.4.x examples
 ├── docs/                          # Documentation
-│   └── MAIN_SCRIPT_GUIDE.md      # Main script usage guide
+│   ├── QUICK_START.md            # Quick start guide
+│   ├── USAGE_GUIDE.md            # Detailed usage guide
+│   ├── OPTIMIZATION_GUIDE.md     # DFG optimization guide
+│   └── QUICK_REFERENCE.md        # Quick reference
+├── data/                          # Datasets
 ├── output/                        # Generated outputs
-├── ast-solidity.py               # 🚀 CLI entry point
-└── tree-sitter-solidity/          # Parser library
+│   ├── dfgs/                     # DFG JSON files
+│   └── graphs/                   # Visualizations
+├── results/                       # Detection results
+├── cache/                         # Cache for detection
+├── config.example.json           # Example configuration
+├── requirements.txt              # Python dependencies
+└── tree-sitter-solidity/         # Solidity parser library
 ```
 
 ## 🎯 Quick Start

@@ -79,17 +79,54 @@ class StaticAnalyzer:
                 temperature=0
             )
             content = response.choices[0].message.content
-            result_json = json.loads(response.choices[0].message.content)
+            
+            if not content:
+                print(f"⚠️ API 返回空内容")
+                return ClassificationResult(False, 0.0, "未知", "API返回空内容")
+            
+            # 尝试提取 JSON 内容
+            # LLM 可能返回带有解释的文本，我们需要提取 JSON 部分
+            import re
+            
+            # 尝试找到 JSON 代码块
+            json_match = re.search(r'```json\s*(\{.*?\})\s*```', content, re.DOTALL)
+            if json_match:
+                json_str = json_match.group(1)
+            else:
+                # 尝试找到直接的 JSON 对象
+                json_match = re.search(r'(\{[^{}]*"is_ponzi"[^{}]*\})', content, re.DOTALL)
+                if json_match:
+                    json_str = json_match.group(1)
+                else:
+                    # 如果找不到 JSON，尝试直接解析整个内容
+                    json_str = content.strip()
+            
+            # 解析 JSON
+            try:
+                result_json = json.loads(json_str)
+            except json.JSONDecodeError as je:
+                print(f"⚠️ JSON 解析失败，原始内容: {content[:200]}...")
+                print(f"   错误: {je}")
+                # 返回默认结果，但保留原始响应作为理由
+                return ClassificationResult(
+                    is_ponzi=False,
+                    confidence=0.0,
+                    risk_level="未知",
+                    reasoning=f"JSON解析失败，原始响应: {content[:500]}"
+                )
+            
             return ClassificationResult(
                 is_ponzi=bool(result_json.get("is_ponzi", False)),
                 confidence=float(result_json.get("confidence", 0.0)),
                 risk_level=result_json.get("risk_level", "未知"),
                 reasoning=result_json.get("reasoning", "无详细理由。")
             )
-            # return content if content else "分析失败：API未返回内容"
+            
         except Exception as e:
-            print(f"模型分析失败: {e}")
-            return ClassificationResult(False, 0.0, "未知", "分类异常")
+            print(f"❌ 模型分析失败: {e}")
+            import traceback
+            traceback.print_exc()
+            return ClassificationResult(False, 0.0, "未知", f"分类异常: {str(e)}")
 
 class PonziDetectionPipeline:
     """Ponzi detection pipeline using LLM cascade"""
@@ -168,7 +205,7 @@ class PonziDetectionPipeline:
         
         result_dict = {
             "contract_name": contract_name,
-            "analysis_report": report_str,
+            # "analysis_report": report_str,
             "classification_result": {
                 "is_ponzi": result.is_ponzi,
                 "confidence": result.confidence,

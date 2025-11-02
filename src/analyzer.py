@@ -110,8 +110,22 @@ class SolidityAnalyzer:
     def analyze_source(self, source_code: str, contract_name: str = "Unknown",
                       generate_json: bool = True,
                       generate_visualization: bool = True,
-                      generate_summary: bool = True) -> Dict[str, Any]:
-        """分析Solidity源码"""
+                      generate_summary: bool = True,
+                      extra_metadata: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
+        """
+        分析Solidity源码
+        
+        Args:
+            source_code: 源代码
+            contract_name: 合约名称
+            generate_json: 是否生成JSON文件
+            generate_visualization: 是否生成可视化
+            generate_summary: 是否生成摘要
+            extra_metadata: 额外的元数据（如label等），将添加到JSON文件中
+            
+        Returns:
+            分析结果字典
+        """
         if not self.components_ready:
             return {
                 "contract": contract_name,
@@ -167,7 +181,7 @@ class SolidityAnalyzer:
             # 生成JSON文件
             if generate_json:
                 json_path = self.output_dir / "dfgs" / f"{actual_contract_name}_dfg.json"
-                if self.json_serializer.save_to_file(dfg, str(json_path)):
+                if self.json_serializer.save_to_file(dfg, str(json_path), extra_metadata=extra_metadata):
                     result["json_file"] = str(json_path)
                 
                 # 生成摘要

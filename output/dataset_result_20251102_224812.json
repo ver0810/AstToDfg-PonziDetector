@@ -1,0 +1,114 @@
+{
+  "dataset": "data/test_3.json",
+  "total_entries": 3,
+  "timestamp": "2025-11-02T22:48:12.837991",
+  "results": [
+    {
+      "contract_name": "contract_0",
+      "source_file": "output/temp_contract_0.sol",
+      "timestamp": "2025-11-02T22:48:12.838703",
+      "steps": {
+        "read_source": {
+          "status": "success",
+          "time": 6.29425048828125e-05,
+          "code_length": 1499
+        },
+        "build_ast": {
+          "status": "success",
+          "time": 0.00972437858581543,
+          "ast_nodes": 228
+        },
+        "build_dfg": {
+          "status": "success",
+          "time": 5.745887756347656e-05,
+          "output_file": "output/dfgs/ResetPonzi_dfg.json",
+          "node_count": 53,
+          "edge_count": 11,
+          "filtered_nodes": 341,
+          "filtered_edges": 3
+        },
+        "detection": {
+          "status": "skipped"
+        },
+        "visualization": {
+          "status": "skipped"
+        }
+      },
+      "status": "success",
+      "label": 1
+    },
+    {
+      "contract_name": "contract_1",
+      "source_file": "output/temp_contract_1.sol",
+      "timestamp": "2025-11-02T22:48:12.849115",
+      "steps": {
+        "read_source": {
+          "status": "success",
+          "time": 5.316734313964844e-05,
+          "code_length": 10449
+        },
+        "build_ast": {
+          "status": "success",
+          "time": 0.04037761688232422,
+          "ast_nodes": 1020
+        },
+        "build_dfg": {
+          "status": "success",
+          "time": 4.696846008300781e-05,
+          "output_file": "output/dfgs/ethpyramid_dfg.json",
+          "node_count": 300,
+          "edge_count": 121,
+          "filtered_nodes": 2280,
+          "filtered_edges": 25
+        },
+        "detection": {
+          "status": "skipped"
+        },
+        "visualization": {
+          "status": "skipped"
+        }
+      },
+      "status": "success",
+      "label": 1
+    },
+    {
+      "contract_name": "contract_2",
+      "source_file": "output/temp_contract_2.sol",
+      "timestamp": "2025-11-02T22:48:12.890036",
+      "steps": {
+        "read_source": {
+          "status": "success",
+          "time": 4.38690185546875e-05,
+          "code_length": 10849
+        },
+        "build_ast": {
+          "status": "success",
+          "time": 0.027892351150512695,
+          "ast_nodes": 736
+        },
+        "build_dfg": {
+          "status": "success",
+          "time": 4.553794860839844e-05,
+          "output_file": "output/dfgs/Ownable_dfg.json",
+          "node_count": 237,
+          "edge_count": 83,
+          "filtered_nodes": 3772,
+          "filtered_edges": 30
+        },
+        "detection": {
+          "status": "skipped"
+        },
+        "visualization": {
+          "status": "skipped"
+        }
+      },
+      "status": "success",
+      "label": 0
+    }
+  ],
+  "summary": {
+    "success": 3,
+    "failed": 0,
+    "total_time": 0.08026695251464844
+  }
+}

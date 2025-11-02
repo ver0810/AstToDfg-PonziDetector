@@ -1,0 +1,45 @@
+{
+  "solidity_version": "0.4.x",
+  "dfg": {
+    "mode": "standard",
+    "include_types": [
+      "contract_definition",
+      "function_definition",
+      "variable_declaration",
+      "assignment",
+      "function_call",
+      "if_statement",
+      "while_statement",
+      "for_statement",
+      "return",
+      "modifier_invocation"
+    ],
+    "edge_types": [
+      "data_dependency",
+      "control_flow",
+      "call"
+    ]
+  },
+  "detection": {
+    "enabled": false,
+    "concurrency_limit": 40,
+    "cache_enabled": true,
+    "cache_dir": "cache",
+    "timeout": 60,
+    "max_retries": 3,
+    "provider": {
+      "name": "qwen",
+      "api_key": null,
+      "base_url": null,
+      "model": null
+    }
+  },
+  "output": {
+    "format": "json",
+    "output_dir": "output",
+    "prettify": true,
+    "include_metadata": true,
+    "include_source_code": false
+  },
+  "verbose": false
+}

@@ -1,25 +1,27 @@
 #!/usr/bin/env python3
 """
 Batch detector for processing multiple JSON files asynchronously.
+Enhanced with caching, progress tracking, and better error handling.
 """
 
 import json
 import os
 import asyncio
 import glob
+import hashlib
 from pathlib import Path
-from typing import List, Dict, Tuple
+from typing import List, Dict, Tuple, Optional
 from datetime import datetime
 from tqdm.asyncio import tqdm_asyncio
 
 from .llm_detector import PonziDetectionPipeline, LLMConfig
-from ..utils.functional_helpers import Result
 
 
 class BatchDetector:
     """Batch processor for detecting Ponzi schemes in multiple files"""
     
-    def __init__(self, config: LLMConfig = None, concurrency_limit: int = 40, cache_dir: str = "cache"):
+    def __init__(self, config: LLMConfig = None, concurrency_limit: int = 40, 
+                 cache_dir: str = "cache", enable_cache: bool = True):
         """
         Initialize batch detector.
         
@@ -27,15 +29,81 @@ class BatchDetector:
             config: LLM configuration
             concurrency_limit: Maximum concurrent requests
             cache_dir: Directory for caching results
+            enable_cache: Whether to enable result caching
         """
         self.config = config or LLMConfig()
         self.concurrency_limit = concurrency_limit
         self.cache_dir = cache_dir
+        self.enable_cache = enable_cache
         self.pipeline = PonziDetectionPipeline(config, cache_dir)
+        
+        # Initialize statistics
+        self.stats = {
+            'cache_hits': 0,
+            'cache_misses': 0,
+            'errors': []
+        }
+        
+        # Unified cache file
+        self.cache_file = Path(cache_dir) / "batch_detection_cache.json"
+        self.cache = {}
         
         # Create output directories
         os.makedirs("results", exist_ok=True)
-        os.makedirs(cache_dir, exist_ok=True)
+        if self.enable_cache:
+            os.makedirs(cache_dir, exist_ok=True)
+            self._load_cache()
+        
+    
+    def _load_cache(self):
+        """Load cache from unified cache file."""
+        if self.cache_file.exists():
+            try:
+                with open(self.cache_file, 'r', encoding='utf-8') as f:
+                    self.cache = json.load(f)
+                print(f"📂 加载缓存: {len(self.cache)} 条记录")
+            except Exception as e:
+                print(f"⚠️  加载缓存失败: {e}")
+                self.cache = {}
+        else:
+            self.cache = {}
+    
+    def _save_cache(self):
+        """Save cache to unified cache file."""
+        try:
+            with open(self.cache_file, 'w', encoding='utf-8') as f:
+                json.dump(self.cache, f, indent=2, ensure_ascii=False)
+        except Exception as e:
+            print(f"⚠️  保存缓存失败: {e}")
+    
+    def _get_cache_key(self, file_path: str) -> Optional[str]:
+        """Generate cache key for a file based on its content hash."""
+        try:
+            with open(file_path, 'rb') as f:
+                content = f.read()
+                return hashlib.md5(content).hexdigest()
+        except Exception:
+            return None
+    
+    def _load_from_cache(self, cache_key: Optional[str]) -> Optional[Dict]:
+        """Load detection result from unified cache."""
+        if not self.enable_cache or not cache_key:
+            return None
+        
+        if cache_key in self.cache:
+            self.stats['cache_hits'] += 1
+            return self.cache[cache_key]
+        
+        self.stats['cache_misses'] += 1
+        return None
+    
+    def _save_to_cache(self, cache_key: Optional[str], result: Dict):
+        """Save detection result to unified cache."""
+        if not self.enable_cache or not cache_key:
+            return
+        
+        self.cache[cache_key] = result
+        self._save_cache()
     
     def get_json_files(self, output_dir: str = "output", pattern: str = "*.json") -> List[Tuple[str, str]]:
         """
@@ -60,7 +128,7 @@ class BatchDetector:
     
     async def detect_batch(self, output_dir: str = "output", 
                           pattern: str = "*.json",
-                          limit: int = None) -> Dict:
+                          limit: Optional[int] = None) -> Dict:
         """
         Batch detect Ponzi schemes from JSON files.
         
@@ -72,9 +140,17 @@ class BatchDetector:
         Returns:
             Dictionary with detection results and statistics
         """
+        # Reset statistics for this batch
+        self.stats = {
+            'cache_hits': 0,
+            'cache_misses': 0,
+            'errors': []
+        }
+        
         print("🚀 启动批量异步检测系统")
         print(f"📂 输入目录: {output_dir}")
         print(f"🔗 并发限制: {self.concurrency_limit}")
+        print(f"💾 缓存状态: {'启用' if self.enable_cache else '禁用'}")
         
         # Get files to process
         json_files = self.get_json_files(output_dir, pattern)
@@ -99,9 +175,25 @@ class BatchDetector:
             file_name, file_path = file_info
             async with semaphore:
                 try:
-                    # Load JSON file
+                    # Load JSON file first to get label
                     with open(file_path, 'r', encoding='utf-8') as f:
                         data = json.load(f)
+                    
+                    # Get label if exists
+                    label = data.get('label', data.get('contract_label', -1))
+                    
+                    # Check cache
+                    cache_key = self._get_cache_key(file_path)
+                    cached_result = self._load_from_cache(cache_key)
+                    
+                    if cached_result:
+                        return {
+                            'file_name': file_name,
+                            'status': 'success',
+                            'result': cached_result,
+                            'label': label,  # Add label from file
+                            'from_cache': True
+                        }
                     
                     # Convert to string for analysis
                     contract_data = json.dumps(data, indent=2, ensure_ascii=False)
@@ -109,21 +201,24 @@ class BatchDetector:
                     # Detect
                     result = await self.pipeline.detect(contract_data, file_name)
                     
-                    # Get label if exists
-                    label = data.get('label', data.get('contract_label', -1))
+                    # Save to cache
+                    self._save_to_cache(cache_key, result)
                     
                     return {
                         'file_name': file_name,
                         'status': 'success',
                         'result': result,
-                        'label': label
+                        'label': label,
+                        'from_cache': False
                     }
                     
                 except Exception as e:
+                    error_msg = str(e)
+                    self.stats['errors'].append({'file': file_name, 'error': error_msg})
                     return {
                         'file_name': file_name,
                         'status': 'error',
-                        'error': str(e)
+                        'error': error_msg
                     }
         
         # Process all files concurrently
@@ -139,14 +234,18 @@ class BatchDetector:
         """Calculate statistics from detection results"""
         successful = [r for r in results if r['status'] == 'success']
         failed = [r for r in results if r['status'] == 'error']
+        cached = [r for r in successful if r.get('from_cache', False)]
         
         stats = {
             'total': len(results),
             'successful': len(successful),
             'failed': len(failed),
+            'cached': len(cached),
+            'cache_hit_rate': len(cached) / len(results) if results else 0,
             'detection_results': [],
             'statistics': {},
-            'evaluation_metrics': {}
+            'evaluation_metrics': {},
+            'errors': self.stats['errors']
         }
         
         # Collect detection results
@@ -175,7 +274,8 @@ class BatchDetector:
                 'is_ponzi': is_ponzi,
                 'confidence': confidence,
                 'risk_level': classification['risk_level'],
-                'actual_label': actual_label
+                'actual_label': actual_label,
+                'from_cache': result.get('from_cache', False)
             })
             
             # Calculate confusion matrix (if labels available)
@@ -242,6 +342,9 @@ class BatchDetector:
         print(f"  总文件数: {stats['total']}")
         print(f"  ✅ 成功: {stats['successful']}")
         print(f"  ❌ 失败: {stats['failed']}")
+        
+        if stats.get('cached', 0) > 0:
+            print(f"  💾 缓存命中: {stats['cached']} ({stats['cache_hit_rate']:.1%})")
         
         if stats['statistics']:
             print(f"\n🔍 检测结果:")

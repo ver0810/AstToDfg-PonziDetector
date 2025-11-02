@@ -130,8 +130,20 @@ class JSONSerializer:
         
         return metadata
     
-    def save_to_file(self, dfg: DFG, file_path: str, ensure_dir: bool = True) -> bool:
-        """将DFG保存到JSON文件"""
+    def save_to_file(self, dfg: DFG, file_path: str, ensure_dir: bool = True, 
+                     extra_metadata: Optional[Dict[str, Any]] = None) -> bool:
+        """
+        将DFG保存到JSON文件
+        
+        Args:
+            dfg: DFG对象
+            file_path: 保存路径
+            ensure_dir: 是否确保目录存在
+            extra_metadata: 额外的元数据（如label等），将添加到JSON根级别
+            
+        Returns:
+            是否保存成功
+        """
         try:
             # 确保目录存在
             if ensure_dir:
@@ -139,6 +151,13 @@ class JSONSerializer:
             
             # 序列化DFG
             serialized_dfg = self.serialize_dfg(dfg)
+            
+            # 添加额外的元数据到根级别
+            if extra_metadata:
+                for key, value in extra_metadata.items():
+                    # 避免覆盖DFG的核心字段
+                    if key not in ['contract', 'solidity_version', 'nodes', 'edges', 'metadata', 'entry_node_id']:
+                        serialized_dfg[key] = value
             
             # 写入文件
             with open(file_path, 'w', encoding='utf-8') as f:
