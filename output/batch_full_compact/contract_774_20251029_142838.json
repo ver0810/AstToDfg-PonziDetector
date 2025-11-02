@@ -1,0 +1,601 @@
+{
+  "contract": "ERC20",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "ERC20",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 21,
+        "column": 1,
+        "end_line": 24,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 21,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "function",
+      "name": "transfer",
+      "data_type": null,
+      "scope": "ERC20",
+      "source_location": {
+        "line": 22,
+        "column": 3,
+        "end_line": 22,
+        "end_column": 73
+      },
+      "properties": {
+        "source_location": {
+          "line": 22,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "parameter",
+      "name": "success",
+      "data_type": "bool",
+      "scope": "transfer_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "transfer"
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "function",
+      "name": "balanceOf",
+      "data_type": null,
+      "scope": "ERC20",
+      "source_location": {
+        "line": 23,
+        "column": 3,
+        "end_line": 23,
+        "end_column": 73
+      },
+      "properties": {
+        "source_location": {
+          "line": 23,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "parameter",
+      "name": "balance",
+      "data_type": "uint256",
+      "scope": "balanceOf_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "balanceOf"
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "contract",
+      "name": "Buyer",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 26,
+        "column": 1,
+        "end_line": 173,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 26,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "state_variable",
+      "name": "balances",
+      "data_type": "mapping (address => uint256)",
+      "scope": "Buyer",
+      "source_location": {
+        "line": 28,
+        "column": 3,
+        "end_line": 28,
+        "end_column": 48
+      },
+      "properties": {
+        "source_location": {
+          "line": 28,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_10": {
+      "id": "dfg_node_10",
+      "type": "state_variable",
+      "name": "buy_bounty",
+      "data_type": "uint256",
+      "scope": "Buyer",
+      "source_location": {
+        "line": 30,
+        "column": 3,
+        "end_line": 30,
+        "end_column": 29
+      },
+      "properties": {
+        "source_location": {
+          "line": 30,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_11": {
+      "id": "dfg_node_11",
+      "type": "state_variable",
+      "name": "withdraw_bounty",
+      "data_type": "uint256",
+      "scope": "Buyer",
+      "source_location": {
+        "line": 32,
+        "column": 3,
+        "end_line": 32,
+        "end_column": 34
+      },
+      "properties": {
+        "source_location": {
+          "line": 32,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_12": {
+      "id": "dfg_node_12",
+      "type": "state_variable",
+      "name": "bought_tokens",
+      "data_type": "bool",
+      "scope": "Buyer",
+      "source_location": {
+        "line": 34,
+        "column": 3,
+        "end_line": 34,
+        "end_column": 29
+      },
+      "properties": {
+        "source_location": {
+          "line": 34,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_13": {
+      "id": "dfg_node_13",
+      "type": "state_variable",
+      "name": "contract_eth_value",
+      "data_type": "uint256",
+      "scope": "Buyer",
+      "source_location": {
+        "line": 36,
+        "column": 3,
+        "end_line": 36,
+        "end_column": 37
+      },
+      "properties": {
+        "source_location": {
+          "line": 36,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_14": {
+      "id": "dfg_node_14",
+      "type": "state_variable",
+      "name": "kill_switch",
+      "data_type": "bool",
+      "scope": "Buyer",
+      "source_location": {
+        "line": 38,
+        "column": 3,
+        "end_line": 38,
+        "end_column": 27
+      },
+      "properties": {
+        "source_location": {
+          "line": 38,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_15": {
+      "id": "dfg_node_15",
+      "type": "state_variable",
+      "name": "password_hash",
+      "data_type": "bytes32",
+      "scope": "Buyer",
+      "source_location": {
+        "line": 41,
+        "column": 3,
+        "end_line": 41,
+        "end_column": 94
+      },
+      "properties": {
+        "source_location": {
+          "line": 41,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_16": {
+      "id": "dfg_node_16",
+      "type": "state_variable",
+      "name": "earliest_buy_time",
+      "data_type": "uint256",
+      "scope": "Buyer",
+      "source_location": {
+        "line": 43,
+        "column": 3,
+        "end_line": 43,
+        "end_column": 49
+      },
+      "properties": {
+        "source_location": {
+          "line": 43,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_17": {
+      "id": "dfg_node_17",
+      "type": "state_variable",
+      "name": "eth_cap",
+      "data_type": "uint256",
+      "scope": "Buyer",
+      "source_location": {
+        "line": 45,
+        "column": 3,
+        "end_line": 45,
+        "end_column": 39
+      },
+      "properties": {
+        "source_location": {
+          "line": 45,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_18": {
+      "id": "dfg_node_18",
+      "type": "state_variable",
+      "name": "developer",
+      "data_type": "address",
+      "scope": "Buyer",
+      "source_location": {
+        "line": 47,
+        "column": 3,
+        "end_line": 47,
+        "end_column": 73
+      },
+      "properties": {
+        "source_location": {
+          "line": 47,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_19": {
+      "id": "dfg_node_19",
+      "type": "state_variable",
+      "name": "sale",
+      "data_type": "address",
+      "scope": "Buyer",
+      "source_location": {
+        "line": 49,
+        "column": 3,
+        "end_line": 49,
+        "end_column": 68
+      },
+      "properties": {
+        "source_location": {
+          "line": 49,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_20": {
+      "id": "dfg_node_20",
+      "type": "state_variable",
+      "name": "token",
+      "data_type": "ERC20",
+      "scope": "Buyer",
+      "source_location": {
+        "line": 51,
+        "column": 3,
+        "end_line": 51,
+        "end_column": 74
+      },
+      "properties": {
+        "source_location": {
+          "line": 51,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_21": {
+      "id": "dfg_node_21",
+      "type": "function",
+      "name": "activate_kill_switch",
+      "data_type": null,
+      "scope": "Buyer",
+      "source_location": {
+        "line": 65,
+        "column": 3,
+        "end_line": 76,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 65,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_22": {
+      "id": "dfg_node_22",
+      "type": "function",
+      "name": "withdraw",
+      "data_type": null,
+      "scope": "Buyer",
+      "source_location": {
+        "line": 79,
+        "column": 3,
+        "end_line": 118,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 79,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_23": {
+      "id": "dfg_node_23",
+      "type": "function",
+      "name": "add_to_buy_bounty",
+      "data_type": null,
+      "scope": "Buyer",
+      "source_location": {
+        "line": 121,
+        "column": 3,
+        "end_line": 126,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 121,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_24": {
+      "id": "dfg_node_24",
+      "type": "function",
+      "name": "claim_bounty",
+      "data_type": null,
+      "scope": "Buyer",
+      "source_location": {
+        "line": 137,
+        "column": 3,
+        "end_line": 160,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 137,
+          "column": 3
+        }
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_2",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_5",
+      "target": "dfg_node_7",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_1",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_8",
+      "target": "dfg_node_9",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_8",
+      "target": "dfg_node_10",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_8",
+      "target": "dfg_node_11",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_8",
+      "target": "dfg_node_12",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_9": {
+      "id": "dfg_edge_9",
+      "source": "dfg_node_8",
+      "target": "dfg_node_13",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_10": {
+      "id": "dfg_edge_10",
+      "source": "dfg_node_8",
+      "target": "dfg_node_14",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_11": {
+      "id": "dfg_edge_11",
+      "source": "dfg_node_8",
+      "target": "dfg_node_15",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_12": {
+      "id": "dfg_edge_12",
+      "source": "dfg_node_8",
+      "target": "dfg_node_16",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_13": {
+      "id": "dfg_edge_13",
+      "source": "dfg_node_8",
+      "target": "dfg_node_17",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_14": {
+      "id": "dfg_edge_14",
+      "source": "dfg_node_8",
+      "target": "dfg_node_18",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_15": {
+      "id": "dfg_edge_15",
+      "source": "dfg_node_8",
+      "target": "dfg_node_19",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_16": {
+      "id": "dfg_edge_16",
+      "source": "dfg_node_8",
+      "target": "dfg_node_20",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_17": {
+      "id": "dfg_edge_17",
+      "source": "dfg_node_8",
+      "target": "dfg_node_21",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_18": {
+      "id": "dfg_edge_18",
+      "source": "dfg_node_8",
+      "target": "dfg_node_22",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_19": {
+      "id": "dfg_edge_19",
+      "source": "dfg_node_8",
+      "target": "dfg_node_23",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_20": {
+      "id": "dfg_edge_20",
+      "source": "dfg_node_8",
+      "target": "dfg_node_24",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 774,
+    "source_line": 775,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "ERC20",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

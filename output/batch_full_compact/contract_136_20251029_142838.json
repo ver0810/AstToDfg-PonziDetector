@@ -1,0 +1,400 @@
+{
+  "contract": "Dividend",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "Dividend",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 3,
+        "column": 1,
+        "end_line": 114,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "contributors",
+      "data_type": "Contributor[]",
+      "scope": "Dividend",
+      "source_location": {
+        "line": 10,
+        "column": 1,
+        "end_line": 10,
+        "end_column": 35
+      },
+      "properties": {
+        "source_location": {
+          "line": 10,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "state_variable",
+      "name": "unprocessedProfits",
+      "data_type": "uint",
+      "scope": "Dividend",
+      "source_location": {
+        "line": 12,
+        "column": 1,
+        "end_line": 12,
+        "end_column": 36
+      },
+      "properties": {
+        "source_location": {
+          "line": 12,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "state_variable",
+      "name": "totalContributors",
+      "data_type": "uint",
+      "scope": "Dividend",
+      "source_location": {
+        "line": 13,
+        "column": 1,
+        "end_line": 13,
+        "end_column": 35
+      },
+      "properties": {
+        "source_location": {
+          "line": 13,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "state_variable",
+      "name": "totalContributions",
+      "data_type": "uint",
+      "scope": "Dividend",
+      "source_location": {
+        "line": 14,
+        "column": 1,
+        "end_line": 14,
+        "end_column": 36
+      },
+      "properties": {
+        "source_location": {
+          "line": 14,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "state_variable",
+      "name": "totalProfit",
+      "data_type": "uint",
+      "scope": "Dividend",
+      "source_location": {
+        "line": 15,
+        "column": 1,
+        "end_line": 15,
+        "end_column": 29
+      },
+      "properties": {
+        "source_location": {
+          "line": 15,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "state_variable",
+      "name": "totalSUM",
+      "data_type": "uint",
+      "scope": "Dividend",
+      "source_location": {
+        "line": 16,
+        "column": 1,
+        "end_line": 16,
+        "end_column": 26
+      },
+      "properties": {
+        "source_location": {
+          "line": 16,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "state_variable",
+      "name": "deployer",
+      "data_type": "address",
+      "scope": "Dividend",
+      "source_location": {
+        "line": 17,
+        "column": 1,
+        "end_line": 17,
+        "end_column": 25
+      },
+      "properties": {
+        "source_location": {
+          "line": 17,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "state_variable",
+      "name": "profitAddr",
+      "data_type": "address",
+      "scope": "Dividend",
+      "source_location": {
+        "line": 18,
+        "column": 1,
+        "end_line": 18,
+        "end_column": 27
+      },
+      "properties": {
+        "source_location": {
+          "line": 18,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_10": {
+      "id": "dfg_node_10",
+      "type": "constructor_function",
+      "name": "Dividend",
+      "data_type": null,
+      "scope": "Dividend",
+      "source_location": {
+        "line": 27,
+        "column": 1,
+        "end_line": 30,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 27,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_11": {
+      "id": "dfg_node_11",
+      "type": "function",
+      "name": "Enter",
+      "data_type": null,
+      "scope": "Dividend",
+      "source_location": {
+        "line": 38,
+        "column": 1,
+        "end_line": 87,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 38,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_12": {
+      "id": "dfg_node_12",
+      "type": "function",
+      "name": "PayOut",
+      "data_type": null,
+      "scope": "Dividend",
+      "source_location": {
+        "line": 90,
+        "column": 1,
+        "end_line": 101,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 90,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_13": {
+      "id": "dfg_node_13",
+      "type": "function",
+      "name": "TestContract",
+      "data_type": null,
+      "scope": "Dividend",
+      "source_location": {
+        "line": 104,
+        "column": 1,
+        "end_line": 106,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 104,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_14": {
+      "id": "dfg_node_14",
+      "type": "function",
+      "name": "SetProfitAddr",
+      "data_type": null,
+      "scope": "Dividend",
+      "source_location": {
+        "line": 109,
+        "column": 1,
+        "end_line": 111,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 109,
+          "column": 1
+        }
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_1",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_1",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_1",
+      "target": "dfg_node_7",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_1",
+      "target": "dfg_node_8",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_1",
+      "target": "dfg_node_9",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_9": {
+      "id": "dfg_edge_9",
+      "source": "dfg_node_1",
+      "target": "dfg_node_10",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_10": {
+      "id": "dfg_edge_10",
+      "source": "dfg_node_1",
+      "target": "dfg_node_11",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_11": {
+      "id": "dfg_edge_11",
+      "source": "dfg_node_1",
+      "target": "dfg_node_12",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_12": {
+      "id": "dfg_edge_12",
+      "source": "dfg_node_1",
+      "target": "dfg_node_13",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_13": {
+      "id": "dfg_edge_13",
+      "source": "dfg_node_1",
+      "target": "dfg_node_14",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 136,
+    "source_line": 137,
+    "label": 1,
+    "mode": "compact",
+    "contract_name": "Dividend",
+    "timestamp": "20251029_142838"
+  },
+  "label": 1
+}

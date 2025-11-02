@@ -1,0 +1,3992 @@
+{
+  "contract": "OraclizeI",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "OraclizeI",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 7,
+        "column": 1,
+        "end_line": 21,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 7,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "cbAddress",
+      "data_type": "address",
+      "scope": "OraclizeI",
+      "source_location": {
+        "line": 8,
+        "column": 5,
+        "end_line": 8,
+        "end_column": 30
+      },
+      "properties": {
+        "source_location": {
+          "line": 8,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "function",
+      "name": "query",
+      "data_type": null,
+      "scope": "OraclizeI",
+      "source_location": {
+        "line": 9,
+        "column": 5,
+        "end_line": 9,
+        "end_column": 100
+      },
+      "properties": {
+        "source_location": {
+          "line": 9,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "parameter",
+      "name": "_id",
+      "data_type": "bytes32",
+      "scope": "query_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "query"
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "function",
+      "name": "query_withGasLimit",
+      "data_type": null,
+      "scope": "OraclizeI",
+      "source_location": {
+        "line": 10,
+        "column": 5,
+        "end_line": 10,
+        "end_column": 129
+      },
+      "properties": {
+        "source_location": {
+          "line": 10,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "parameter",
+      "name": "_id",
+      "data_type": "bytes32",
+      "scope": "query_withGasLimit_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "query_withGasLimit"
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "function",
+      "name": "query2",
+      "data_type": null,
+      "scope": "OraclizeI",
+      "source_location": {
+        "line": 11,
+        "column": 5,
+        "end_line": 11,
+        "end_column": 116
+      },
+      "properties": {
+        "source_location": {
+          "line": 11,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_11": {
+      "id": "dfg_node_11",
+      "type": "parameter",
+      "name": "_id",
+      "data_type": "bytes32",
+      "scope": "query2_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "query2"
+      }
+    },
+    "dfg_node_12": {
+      "id": "dfg_node_12",
+      "type": "function",
+      "name": "query2_withGasLimit",
+      "data_type": null,
+      "scope": "OraclizeI",
+      "source_location": {
+        "line": 12,
+        "column": 5,
+        "end_line": 12,
+        "end_column": 145
+      },
+      "properties": {
+        "source_location": {
+          "line": 12,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_14": {
+      "id": "dfg_node_14",
+      "type": "parameter",
+      "name": "_id",
+      "data_type": "bytes32",
+      "scope": "query2_withGasLimit_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "query2_withGasLimit"
+      }
+    },
+    "dfg_node_15": {
+      "id": "dfg_node_15",
+      "type": "function",
+      "name": "queryN",
+      "data_type": null,
+      "scope": "OraclizeI",
+      "source_location": {
+        "line": 13,
+        "column": 5,
+        "end_line": 13,
+        "end_column": 101
+      },
+      "properties": {
+        "source_location": {
+          "line": 13,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_17": {
+      "id": "dfg_node_17",
+      "type": "parameter",
+      "name": "_id",
+      "data_type": "bytes32",
+      "scope": "queryN_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "queryN"
+      }
+    },
+    "dfg_node_18": {
+      "id": "dfg_node_18",
+      "type": "function",
+      "name": "queryN_withGasLimit",
+      "data_type": null,
+      "scope": "OraclizeI",
+      "source_location": {
+        "line": 14,
+        "column": 5,
+        "end_line": 14,
+        "end_column": 130
+      },
+      "properties": {
+        "source_location": {
+          "line": 14,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_20": {
+      "id": "dfg_node_20",
+      "type": "parameter",
+      "name": "_id",
+      "data_type": "bytes32",
+      "scope": "queryN_withGasLimit_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "queryN_withGasLimit"
+      }
+    },
+    "dfg_node_21": {
+      "id": "dfg_node_21",
+      "type": "function",
+      "name": "getPrice",
+      "data_type": null,
+      "scope": "OraclizeI",
+      "source_location": {
+        "line": 15,
+        "column": 5,
+        "end_line": 15,
+        "end_column": 67
+      },
+      "properties": {
+        "source_location": {
+          "line": 15,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_23": {
+      "id": "dfg_node_23",
+      "type": "parameter",
+      "name": "_dsprice",
+      "data_type": "uint",
+      "scope": "getPrice_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getPrice"
+      }
+    },
+    "dfg_node_24": {
+      "id": "dfg_node_24",
+      "type": "function",
+      "name": "getPrice",
+      "data_type": null,
+      "scope": "OraclizeI",
+      "source_location": {
+        "line": 16,
+        "column": 5,
+        "end_line": 16,
+        "end_column": 82
+      },
+      "properties": {
+        "source_location": {
+          "line": 16,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_26": {
+      "id": "dfg_node_26",
+      "type": "parameter",
+      "name": "_dsprice",
+      "data_type": "uint",
+      "scope": "getPrice_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getPrice"
+      }
+    },
+    "dfg_node_27": {
+      "id": "dfg_node_27",
+      "type": "function",
+      "name": "useCoupon",
+      "data_type": null,
+      "scope": "OraclizeI",
+      "source_location": {
+        "line": 17,
+        "column": 5,
+        "end_line": 17,
+        "end_column": 40
+      },
+      "properties": {
+        "source_location": {
+          "line": 17,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_28": {
+      "id": "dfg_node_28",
+      "type": "function",
+      "name": "setProofType",
+      "data_type": null,
+      "scope": "OraclizeI",
+      "source_location": {
+        "line": 18,
+        "column": 5,
+        "end_line": 18,
+        "end_column": 44
+      },
+      "properties": {
+        "source_location": {
+          "line": 18,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_29": {
+      "id": "dfg_node_29",
+      "type": "function",
+      "name": "setConfig",
+      "data_type": null,
+      "scope": "OraclizeI",
+      "source_location": {
+        "line": 19,
+        "column": 5,
+        "end_line": 19,
+        "end_column": 41
+      },
+      "properties": {
+        "source_location": {
+          "line": 19,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_30": {
+      "id": "dfg_node_30",
+      "type": "function",
+      "name": "setCustomGasPrice",
+      "data_type": null,
+      "scope": "OraclizeI",
+      "source_location": {
+        "line": 20,
+        "column": 5,
+        "end_line": 20,
+        "end_column": 48
+      },
+      "properties": {
+        "source_location": {
+          "line": 20,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_31": {
+      "id": "dfg_node_31",
+      "type": "contract",
+      "name": "OraclizeAddrResolverI",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 22,
+        "column": 1,
+        "end_line": 24,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 22,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_32": {
+      "id": "dfg_node_32",
+      "type": "function",
+      "name": "getAddress",
+      "data_type": null,
+      "scope": "OraclizeAddrResolverI",
+      "source_location": {
+        "line": 23,
+        "column": 5,
+        "end_line": 23,
+        "end_column": 51
+      },
+      "properties": {
+        "source_location": {
+          "line": 23,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_34": {
+      "id": "dfg_node_34",
+      "type": "parameter",
+      "name": "_addr",
+      "data_type": "address",
+      "scope": "getAddress_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getAddress"
+      }
+    },
+    "dfg_node_35": {
+      "id": "dfg_node_35",
+      "type": "contract",
+      "name": "usingOraclize",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 25,
+        "column": 1,
+        "end_line": 494,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 25,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_36": {
+      "id": "dfg_node_36",
+      "type": "state_variable",
+      "name": "day",
+      "data_type": "uint",
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 26,
+        "column": 5,
+        "end_line": 26,
+        "end_column": 34
+      },
+      "properties": {
+        "source_location": {
+          "line": 26,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_37": {
+      "id": "dfg_node_37",
+      "type": "state_variable",
+      "name": "week",
+      "data_type": "uint",
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 27,
+        "column": 5,
+        "end_line": 27,
+        "end_column": 37
+      },
+      "properties": {
+        "source_location": {
+          "line": 27,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_38": {
+      "id": "dfg_node_38",
+      "type": "state_variable",
+      "name": "month",
+      "data_type": "uint",
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 28,
+        "column": 5,
+        "end_line": 28,
+        "end_column": 39
+      },
+      "properties": {
+        "source_location": {
+          "line": 28,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_39": {
+      "id": "dfg_node_39",
+      "type": "state_variable",
+      "name": "proofType_NONE",
+      "data_type": "byte",
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 29,
+        "column": 5,
+        "end_line": 29,
+        "end_column": 41
+      },
+      "properties": {
+        "source_location": {
+          "line": 29,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_40": {
+      "id": "dfg_node_40",
+      "type": "state_variable",
+      "name": "proofType_TLSNotary",
+      "data_type": "byte",
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 30,
+        "column": 5,
+        "end_line": 30,
+        "end_column": 46
+      },
+      "properties": {
+        "source_location": {
+          "line": 30,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_41": {
+      "id": "dfg_node_41",
+      "type": "state_variable",
+      "name": "proofStorage_IPFS",
+      "data_type": "byte",
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 31,
+        "column": 5,
+        "end_line": 31,
+        "end_column": 44
+      },
+      "properties": {
+        "source_location": {
+          "line": 31,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_42": {
+      "id": "dfg_node_42",
+      "type": "state_variable",
+      "name": "networkID_auto",
+      "data_type": "uint8",
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 32,
+        "column": 5,
+        "end_line": 32,
+        "end_column": 39
+      },
+      "properties": {
+        "source_location": {
+          "line": 32,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_43": {
+      "id": "dfg_node_43",
+      "type": "state_variable",
+      "name": "networkID_mainnet",
+      "data_type": "uint8",
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 33,
+        "column": 5,
+        "end_line": 33,
+        "end_column": 42
+      },
+      "properties": {
+        "source_location": {
+          "line": 33,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_44": {
+      "id": "dfg_node_44",
+      "type": "state_variable",
+      "name": "networkID_testnet",
+      "data_type": "uint8",
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 34,
+        "column": 5,
+        "end_line": 34,
+        "end_column": 42
+      },
+      "properties": {
+        "source_location": {
+          "line": 34,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_45": {
+      "id": "dfg_node_45",
+      "type": "state_variable",
+      "name": "networkID_morden",
+      "data_type": "uint8",
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 35,
+        "column": 5,
+        "end_line": 35,
+        "end_column": 41
+      },
+      "properties": {
+        "source_location": {
+          "line": 35,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_46": {
+      "id": "dfg_node_46",
+      "type": "state_variable",
+      "name": "networkID_consensys",
+      "data_type": "uint8",
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 36,
+        "column": 5,
+        "end_line": 36,
+        "end_column": 46
+      },
+      "properties": {
+        "source_location": {
+          "line": 36,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_47": {
+      "id": "dfg_node_47",
+      "type": "state_variable",
+      "name": "OAR",
+      "data_type": "OraclizeAddrResolverI",
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 38,
+        "column": 5,
+        "end_line": 38,
+        "end_column": 31
+      },
+      "properties": {
+        "source_location": {
+          "line": 38,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_48": {
+      "id": "dfg_node_48",
+      "type": "state_variable",
+      "name": "oraclize",
+      "data_type": "OraclizeI",
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 40,
+        "column": 5,
+        "end_line": 40,
+        "end_column": 24
+      },
+      "properties": {
+        "source_location": {
+          "line": 40,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_49": {
+      "id": "dfg_node_49",
+      "type": "function",
+      "name": "oraclize_setNetwork",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 52,
+        "column": 5,
+        "end_line": 78,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 52,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_51": {
+      "id": "dfg_node_51",
+      "type": "parameter",
+      "name": "param_49",
+      "data_type": "bool",
+      "scope": "oraclize_setNetwork_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "oraclize_setNetwork"
+      }
+    },
+    "dfg_node_52": {
+      "id": "dfg_node_52",
+      "type": "function",
+      "name": "__callback",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 80,
+        "column": 5,
+        "end_line": 82,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 80,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_53": {
+      "id": "dfg_node_53",
+      "type": "function",
+      "name": "__callback",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 83,
+        "column": 5,
+        "end_line": 84,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 83,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_54": {
+      "id": "dfg_node_54",
+      "type": "function",
+      "name": "oraclize_getPrice",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 86,
+        "column": 5,
+        "end_line": 88,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 86,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_56": {
+      "id": "dfg_node_56",
+      "type": "parameter",
+      "name": "param_54",
+      "data_type": "uint",
+      "scope": "oraclize_getPrice_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "oraclize_getPrice"
+      }
+    },
+    "dfg_node_57": {
+      "id": "dfg_node_57",
+      "type": "function",
+      "name": "oraclize_getPrice",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 90,
+        "column": 5,
+        "end_line": 92,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 90,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_59": {
+      "id": "dfg_node_59",
+      "type": "parameter",
+      "name": "param_57",
+      "data_type": "uint",
+      "scope": "oraclize_getPrice_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "oraclize_getPrice"
+      }
+    },
+    "dfg_node_60": {
+      "id": "dfg_node_60",
+      "type": "function",
+      "name": "oraclize_query",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 94,
+        "column": 5,
+        "end_line": 98,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 94,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_62": {
+      "id": "dfg_node_62",
+      "type": "parameter",
+      "name": "id",
+      "data_type": "bytes32",
+      "scope": "oraclize_query_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "oraclize_query"
+      }
+    },
+    "dfg_node_63": {
+      "id": "dfg_node_63",
+      "type": "function",
+      "name": "oraclize_query",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 99,
+        "column": 5,
+        "end_line": 103,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 99,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_65": {
+      "id": "dfg_node_65",
+      "type": "parameter",
+      "name": "id",
+      "data_type": "bytes32",
+      "scope": "oraclize_query_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "oraclize_query"
+      }
+    },
+    "dfg_node_66": {
+      "id": "dfg_node_66",
+      "type": "function",
+      "name": "oraclize_query",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 104,
+        "column": 5,
+        "end_line": 108,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 104,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_68": {
+      "id": "dfg_node_68",
+      "type": "parameter",
+      "name": "id",
+      "data_type": "bytes32",
+      "scope": "oraclize_query_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "oraclize_query"
+      }
+    },
+    "dfg_node_69": {
+      "id": "dfg_node_69",
+      "type": "function",
+      "name": "oraclize_query",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 109,
+        "column": 5,
+        "end_line": 113,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 109,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_71": {
+      "id": "dfg_node_71",
+      "type": "parameter",
+      "name": "id",
+      "data_type": "bytes32",
+      "scope": "oraclize_query_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "oraclize_query"
+      }
+    },
+    "dfg_node_72": {
+      "id": "dfg_node_72",
+      "type": "function",
+      "name": "oraclize_query",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 114,
+        "column": 5,
+        "end_line": 118,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 114,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_74": {
+      "id": "dfg_node_74",
+      "type": "parameter",
+      "name": "id",
+      "data_type": "bytes32",
+      "scope": "oraclize_query_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "oraclize_query"
+      }
+    },
+    "dfg_node_75": {
+      "id": "dfg_node_75",
+      "type": "function",
+      "name": "oraclize_query",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 119,
+        "column": 5,
+        "end_line": 123,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 119,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_77": {
+      "id": "dfg_node_77",
+      "type": "parameter",
+      "name": "id",
+      "data_type": "bytes32",
+      "scope": "oraclize_query_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "oraclize_query"
+      }
+    },
+    "dfg_node_78": {
+      "id": "dfg_node_78",
+      "type": "function",
+      "name": "oraclize_query",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 124,
+        "column": 5,
+        "end_line": 128,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 124,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_80": {
+      "id": "dfg_node_80",
+      "type": "parameter",
+      "name": "id",
+      "data_type": "bytes32",
+      "scope": "oraclize_query_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "oraclize_query"
+      }
+    },
+    "dfg_node_81": {
+      "id": "dfg_node_81",
+      "type": "function",
+      "name": "oraclize_query",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 129,
+        "column": 5,
+        "end_line": 133,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 129,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_83": {
+      "id": "dfg_node_83",
+      "type": "parameter",
+      "name": "id",
+      "data_type": "bytes32",
+      "scope": "oraclize_query_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "oraclize_query"
+      }
+    },
+    "dfg_node_84": {
+      "id": "dfg_node_84",
+      "type": "function",
+      "name": "oraclize_query",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 134,
+        "column": 5,
+        "end_line": 139,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 134,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_86": {
+      "id": "dfg_node_86",
+      "type": "parameter",
+      "name": "id",
+      "data_type": "bytes32",
+      "scope": "oraclize_query_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "oraclize_query"
+      }
+    },
+    "dfg_node_87": {
+      "id": "dfg_node_87",
+      "type": "function",
+      "name": "oraclize_query",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 140,
+        "column": 5,
+        "end_line": 145,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 140,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_89": {
+      "id": "dfg_node_89",
+      "type": "parameter",
+      "name": "id",
+      "data_type": "bytes32",
+      "scope": "oraclize_query_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "oraclize_query"
+      }
+    },
+    "dfg_node_90": {
+      "id": "dfg_node_90",
+      "type": "function",
+      "name": "oraclize_query",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 146,
+        "column": 5,
+        "end_line": 151,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 146,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_92": {
+      "id": "dfg_node_92",
+      "type": "parameter",
+      "name": "id",
+      "data_type": "bytes32",
+      "scope": "oraclize_query_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "oraclize_query"
+      }
+    },
+    "dfg_node_93": {
+      "id": "dfg_node_93",
+      "type": "function",
+      "name": "oraclize_query",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 152,
+        "column": 5,
+        "end_line": 157,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 152,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_95": {
+      "id": "dfg_node_95",
+      "type": "parameter",
+      "name": "id",
+      "data_type": "bytes32",
+      "scope": "oraclize_query_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "oraclize_query"
+      }
+    },
+    "dfg_node_96": {
+      "id": "dfg_node_96",
+      "type": "function",
+      "name": "oraclize_query",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 158,
+        "column": 5,
+        "end_line": 162,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 158,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_98": {
+      "id": "dfg_node_98",
+      "type": "parameter",
+      "name": "id",
+      "data_type": "bytes32",
+      "scope": "oraclize_query_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "oraclize_query"
+      }
+    },
+    "dfg_node_99": {
+      "id": "dfg_node_99",
+      "type": "function",
+      "name": "oraclize_query",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 163,
+        "column": 5,
+        "end_line": 167,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 163,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_101": {
+      "id": "dfg_node_101",
+      "type": "parameter",
+      "name": "id",
+      "data_type": "bytes32",
+      "scope": "oraclize_query_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "oraclize_query"
+      }
+    },
+    "dfg_node_102": {
+      "id": "dfg_node_102",
+      "type": "function",
+      "name": "oraclize_query",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 168,
+        "column": 5,
+        "end_line": 172,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 168,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_104": {
+      "id": "dfg_node_104",
+      "type": "parameter",
+      "name": "id",
+      "data_type": "bytes32",
+      "scope": "oraclize_query_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "oraclize_query"
+      }
+    },
+    "dfg_node_105": {
+      "id": "dfg_node_105",
+      "type": "function",
+      "name": "oraclize_query",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 173,
+        "column": 5,
+        "end_line": 177,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 173,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_107": {
+      "id": "dfg_node_107",
+      "type": "parameter",
+      "name": "id",
+      "data_type": "bytes32",
+      "scope": "oraclize_query_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "oraclize_query"
+      }
+    },
+    "dfg_node_108": {
+      "id": "dfg_node_108",
+      "type": "function",
+      "name": "oraclize_query",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 179,
+        "column": 5,
+        "end_line": 184,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 179,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_110": {
+      "id": "dfg_node_110",
+      "type": "parameter",
+      "name": "id",
+      "data_type": "bytes32",
+      "scope": "oraclize_query_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "oraclize_query"
+      }
+    },
+    "dfg_node_111": {
+      "id": "dfg_node_111",
+      "type": "function",
+      "name": "oraclize_query",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 185,
+        "column": 5,
+        "end_line": 190,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 185,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_113": {
+      "id": "dfg_node_113",
+      "type": "parameter",
+      "name": "id",
+      "data_type": "bytes32",
+      "scope": "oraclize_query_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "oraclize_query"
+      }
+    },
+    "dfg_node_114": {
+      "id": "dfg_node_114",
+      "type": "function",
+      "name": "oraclize_query",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 191,
+        "column": 5,
+        "end_line": 196,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 191,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_116": {
+      "id": "dfg_node_116",
+      "type": "parameter",
+      "name": "id",
+      "data_type": "bytes32",
+      "scope": "oraclize_query_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "oraclize_query"
+      }
+    },
+    "dfg_node_117": {
+      "id": "dfg_node_117",
+      "type": "function",
+      "name": "oraclize_query",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 197,
+        "column": 5,
+        "end_line": 202,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 197,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_119": {
+      "id": "dfg_node_119",
+      "type": "parameter",
+      "name": "id",
+      "data_type": "bytes32",
+      "scope": "oraclize_query_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "oraclize_query"
+      }
+    },
+    "dfg_node_120": {
+      "id": "dfg_node_120",
+      "type": "function",
+      "name": "oraclize_query",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 203,
+        "column": 5,
+        "end_line": 209,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 203,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_122": {
+      "id": "dfg_node_122",
+      "type": "parameter",
+      "name": "id",
+      "data_type": "bytes32",
+      "scope": "oraclize_query_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "oraclize_query"
+      }
+    },
+    "dfg_node_123": {
+      "id": "dfg_node_123",
+      "type": "function",
+      "name": "oraclize_query",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 210,
+        "column": 5,
+        "end_line": 216,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 210,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_125": {
+      "id": "dfg_node_125",
+      "type": "parameter",
+      "name": "id",
+      "data_type": "bytes32",
+      "scope": "oraclize_query_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "oraclize_query"
+      }
+    },
+    "dfg_node_126": {
+      "id": "dfg_node_126",
+      "type": "function",
+      "name": "oraclize_query",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 217,
+        "column": 5,
+        "end_line": 223,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 217,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_128": {
+      "id": "dfg_node_128",
+      "type": "parameter",
+      "name": "id",
+      "data_type": "bytes32",
+      "scope": "oraclize_query_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "oraclize_query"
+      }
+    },
+    "dfg_node_129": {
+      "id": "dfg_node_129",
+      "type": "function",
+      "name": "oraclize_query",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 224,
+        "column": 5,
+        "end_line": 230,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 224,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_131": {
+      "id": "dfg_node_131",
+      "type": "parameter",
+      "name": "id",
+      "data_type": "bytes32",
+      "scope": "oraclize_query_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "oraclize_query"
+      }
+    },
+    "dfg_node_132": {
+      "id": "dfg_node_132",
+      "type": "function",
+      "name": "oraclize_query",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 232,
+        "column": 5,
+        "end_line": 239,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 232,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_134": {
+      "id": "dfg_node_134",
+      "type": "parameter",
+      "name": "id",
+      "data_type": "bytes32",
+      "scope": "oraclize_query_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "oraclize_query"
+      }
+    },
+    "dfg_node_135": {
+      "id": "dfg_node_135",
+      "type": "function",
+      "name": "oraclize_query",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 240,
+        "column": 5,
+        "end_line": 247,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 240,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_137": {
+      "id": "dfg_node_137",
+      "type": "parameter",
+      "name": "id",
+      "data_type": "bytes32",
+      "scope": "oraclize_query_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "oraclize_query"
+      }
+    },
+    "dfg_node_138": {
+      "id": "dfg_node_138",
+      "type": "function",
+      "name": "oraclize_query",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 248,
+        "column": 5,
+        "end_line": 255,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 248,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_140": {
+      "id": "dfg_node_140",
+      "type": "parameter",
+      "name": "id",
+      "data_type": "bytes32",
+      "scope": "oraclize_query_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "oraclize_query"
+      }
+    },
+    "dfg_node_141": {
+      "id": "dfg_node_141",
+      "type": "function",
+      "name": "oraclize_query",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 256,
+        "column": 5,
+        "end_line": 263,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 256,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_143": {
+      "id": "dfg_node_143",
+      "type": "parameter",
+      "name": "id",
+      "data_type": "bytes32",
+      "scope": "oraclize_query_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "oraclize_query"
+      }
+    },
+    "dfg_node_144": {
+      "id": "dfg_node_144",
+      "type": "function",
+      "name": "oraclize_query",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 264,
+        "column": 5,
+        "end_line": 272,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 264,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_146": {
+      "id": "dfg_node_146",
+      "type": "parameter",
+      "name": "id",
+      "data_type": "bytes32",
+      "scope": "oraclize_query_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "oraclize_query"
+      }
+    },
+    "dfg_node_147": {
+      "id": "dfg_node_147",
+      "type": "function",
+      "name": "oraclize_query",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 273,
+        "column": 5,
+        "end_line": 281,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 273,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_149": {
+      "id": "dfg_node_149",
+      "type": "parameter",
+      "name": "id",
+      "data_type": "bytes32",
+      "scope": "oraclize_query_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "oraclize_query"
+      }
+    },
+    "dfg_node_150": {
+      "id": "dfg_node_150",
+      "type": "function",
+      "name": "oraclize_query",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 282,
+        "column": 5,
+        "end_line": 290,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 282,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_152": {
+      "id": "dfg_node_152",
+      "type": "parameter",
+      "name": "id",
+      "data_type": "bytes32",
+      "scope": "oraclize_query_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "oraclize_query"
+      }
+    },
+    "dfg_node_153": {
+      "id": "dfg_node_153",
+      "type": "function",
+      "name": "oraclize_query",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 291,
+        "column": 5,
+        "end_line": 299,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 291,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_155": {
+      "id": "dfg_node_155",
+      "type": "parameter",
+      "name": "id",
+      "data_type": "bytes32",
+      "scope": "oraclize_query_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "oraclize_query"
+      }
+    },
+    "dfg_node_156": {
+      "id": "dfg_node_156",
+      "type": "function",
+      "name": "oraclize_cbAddress",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 301,
+        "column": 5,
+        "end_line": 303,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 301,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_158": {
+      "id": "dfg_node_158",
+      "type": "parameter",
+      "name": "param_156",
+      "data_type": "address",
+      "scope": "oraclize_cbAddress_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "oraclize_cbAddress"
+      }
+    },
+    "dfg_node_159": {
+      "id": "dfg_node_159",
+      "type": "function",
+      "name": "oraclize_setProof",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 304,
+        "column": 5,
+        "end_line": 306,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 304,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_160": {
+      "id": "dfg_node_160",
+      "type": "function",
+      "name": "oraclize_setCustomGasPrice",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 307,
+        "column": 5,
+        "end_line": 309,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 307,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_161": {
+      "id": "dfg_node_161",
+      "type": "function",
+      "name": "oraclize_setConfig",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 310,
+        "column": 5,
+        "end_line": 312,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 310,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_162": {
+      "id": "dfg_node_162",
+      "type": "function",
+      "name": "getCodeSize",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 314,
+        "column": 5,
+        "end_line": 318,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 314,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_164": {
+      "id": "dfg_node_164",
+      "type": "parameter",
+      "name": "_size",
+      "data_type": "uint",
+      "scope": "getCodeSize_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getCodeSize"
+      }
+    },
+    "dfg_node_165": {
+      "id": "dfg_node_165",
+      "type": "function",
+      "name": "parseAddr",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 320,
+        "column": 5,
+        "end_line": 336,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 320,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_167": {
+      "id": "dfg_node_167",
+      "type": "parameter",
+      "name": "param_165",
+      "data_type": "address",
+      "scope": "parseAddr_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "parseAddr"
+      }
+    },
+    "dfg_node_168": {
+      "id": "dfg_node_168",
+      "type": "function",
+      "name": "strCompare",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 338,
+        "column": 5,
+        "end_line": 354,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 338,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_170": {
+      "id": "dfg_node_170",
+      "type": "parameter",
+      "name": "param_168",
+      "data_type": "int",
+      "scope": "strCompare_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "strCompare"
+      }
+    },
+    "dfg_node_171": {
+      "id": "dfg_node_171",
+      "type": "function",
+      "name": "indexOf",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 356,
+        "column": 5,
+        "end_line": 381,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 356,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_173": {
+      "id": "dfg_node_173",
+      "type": "parameter",
+      "name": "param_171",
+      "data_type": "int",
+      "scope": "indexOf_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "indexOf"
+      }
+    },
+    "dfg_node_174": {
+      "id": "dfg_node_174",
+      "type": "function",
+      "name": "strConcat",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 383,
+        "column": 5,
+        "end_line": 398,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 383,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_176": {
+      "id": "dfg_node_176",
+      "type": "parameter",
+      "name": "param_174",
+      "data_type": "string",
+      "scope": "strConcat_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "strConcat"
+      }
+    },
+    "dfg_node_177": {
+      "id": "dfg_node_177",
+      "type": "function",
+      "name": "strConcat",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 400,
+        "column": 5,
+        "end_line": 402,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 400,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_179": {
+      "id": "dfg_node_179",
+      "type": "parameter",
+      "name": "param_177",
+      "data_type": "string",
+      "scope": "strConcat_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "strConcat"
+      }
+    },
+    "dfg_node_180": {
+      "id": "dfg_node_180",
+      "type": "function",
+      "name": "strConcat",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 404,
+        "column": 5,
+        "end_line": 406,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 404,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_182": {
+      "id": "dfg_node_182",
+      "type": "parameter",
+      "name": "param_180",
+      "data_type": "string",
+      "scope": "strConcat_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "strConcat"
+      }
+    },
+    "dfg_node_183": {
+      "id": "dfg_node_183",
+      "type": "function",
+      "name": "strConcat",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 408,
+        "column": 5,
+        "end_line": 410,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 408,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_185": {
+      "id": "dfg_node_185",
+      "type": "parameter",
+      "name": "param_183",
+      "data_type": "string",
+      "scope": "strConcat_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "strConcat"
+      }
+    },
+    "dfg_node_186": {
+      "id": "dfg_node_186",
+      "type": "function",
+      "name": "parseInt",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 413,
+        "column": 5,
+        "end_line": 415,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 413,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_188": {
+      "id": "dfg_node_188",
+      "type": "parameter",
+      "name": "param_186",
+      "data_type": "uint",
+      "scope": "parseInt_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "parseInt"
+      }
+    },
+    "dfg_node_189": {
+      "id": "dfg_node_189",
+      "type": "function",
+      "name": "parseInt",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 418,
+        "column": 5,
+        "end_line": 434,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 418,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_191": {
+      "id": "dfg_node_191",
+      "type": "parameter",
+      "name": "param_189",
+      "data_type": "uint",
+      "scope": "parseInt_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "parseInt"
+      }
+    },
+    "dfg_node_192": {
+      "id": "dfg_node_192",
+      "type": "function",
+      "name": "uint2str",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 436,
+        "column": 5,
+        "end_line": 451,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 436,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_194": {
+      "id": "dfg_node_194",
+      "type": "parameter",
+      "name": "param_192",
+      "data_type": "string",
+      "scope": "uint2str_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "uint2str"
+      }
+    },
+    "dfg_node_195": {
+      "id": "dfg_node_195",
+      "type": "function",
+      "name": "stra2cbor",
+      "data_type": null,
+      "scope": "usingOraclize",
+      "source_location": {
+        "line": 453,
+        "column": 5,
+        "end_line": 493,
+        "end_column": 10
+      },
+      "properties": {
+        "source_location": {
+          "line": 453,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_197": {
+      "id": "dfg_node_197",
+      "type": "parameter",
+      "name": "param_195",
+      "data_type": "bytes",
+      "scope": "stra2cbor_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "stra2cbor"
+      }
+    },
+    "dfg_node_198": {
+      "id": "dfg_node_198",
+      "type": "contract",
+      "name": "Gamble",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 497,
+        "column": 1,
+        "end_line": 615,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 497,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_199": {
+      "id": "dfg_node_199",
+      "type": "state_variable",
+      "name": "Cashpot",
+      "data_type": "uint",
+      "scope": "Gamble",
+      "source_location": {
+        "line": 498,
+        "column": 5,
+        "end_line": 498,
+        "end_column": 18
+      },
+      "properties": {
+        "source_location": {
+          "line": 498,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_200": {
+      "id": "dfg_node_200",
+      "type": "state_variable",
+      "name": "Service_Fee",
+      "data_type": "uint",
+      "scope": "Gamble",
+      "source_location": {
+        "line": 499,
+        "column": 5,
+        "end_line": 499,
+        "end_column": 22
+      },
+      "properties": {
+        "source_location": {
+          "line": 499,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_201": {
+      "id": "dfg_node_201",
+      "type": "state_variable",
+      "name": "Gross",
+      "data_type": "uint",
+      "scope": "Gamble",
+      "source_location": {
+        "line": 500,
+        "column": 5,
+        "end_line": 500,
+        "end_column": 16
+      },
+      "properties": {
+        "source_location": {
+          "line": 500,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_202": {
+      "id": "dfg_node_202",
+      "type": "state_variable",
+      "name": "Ticket",
+      "data_type": "uint",
+      "scope": "Gamble",
+      "source_location": {
+        "line": 501,
+        "column": 5,
+        "end_line": 501,
+        "end_column": 17
+      },
+      "properties": {
+        "source_location": {
+          "line": 501,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_203": {
+      "id": "dfg_node_203",
+      "type": "state_variable",
+      "name": "Owner",
+      "data_type": "address",
+      "scope": "Gamble",
+      "source_location": {
+        "line": 502,
+        "column": 5,
+        "end_line": 502,
+        "end_column": 19
+      },
+      "properties": {
+        "source_location": {
+          "line": 502,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_204": {
+      "id": "dfg_node_204",
+      "type": "state_variable",
+      "name": "Power_Ball",
+      "data_type": "string",
+      "scope": "Gamble",
+      "source_location": {
+        "line": 503,
+        "column": 5,
+        "end_line": 503,
+        "end_column": 23
+      },
+      "properties": {
+        "source_location": {
+          "line": 503,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_205": {
+      "id": "dfg_node_205",
+      "type": "state_variable",
+      "name": "Power_Ball_Set",
+      "data_type": "bool",
+      "scope": "Gamble",
+      "source_location": {
+        "line": 504,
+        "column": 5,
+        "end_line": 504,
+        "end_column": 25
+      },
+      "properties": {
+        "source_location": {
+          "line": 504,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_206": {
+      "id": "dfg_node_206",
+      "type": "state_variable",
+      "name": "Tickets",
+      "data_type": "mapping(address => string)",
+      "scope": "Gamble",
+      "source_location": {
+        "line": 512,
+        "column": 5,
+        "end_line": 512,
+        "end_column": 40
+      },
+      "properties": {
+        "source_location": {
+          "line": 512,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_207": {
+      "id": "dfg_node_207",
+      "type": "state_variable",
+      "name": "Ticket_Number",
+      "data_type": "mapping(uint => address)",
+      "scope": "Gamble",
+      "source_location": {
+        "line": 513,
+        "column": 5,
+        "end_line": 513,
+        "end_column": 44
+      },
+      "properties": {
+        "source_location": {
+          "line": 513,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_208": {
+      "id": "dfg_node_208",
+      "type": "constructor_function",
+      "name": "Gamble",
+      "data_type": null,
+      "scope": "Gamble",
+      "source_location": {
+        "line": 514,
+        "column": 5,
+        "end_line": 518,
+        "end_column": 10
+      },
+      "properties": {
+        "source_location": {
+          "line": 514,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_209": {
+      "id": "dfg_node_209",
+      "type": "function",
+      "name": "__callback",
+      "data_type": null,
+      "scope": "Gamble",
+      "source_location": {
+        "line": 519,
+        "column": 6,
+        "end_line": 571,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 519,
+          "column": 6
+        }
+      }
+    },
+    "dfg_node_210": {
+      "id": "dfg_node_210",
+      "type": "function",
+      "name": "draw",
+      "data_type": null,
+      "scope": "Gamble",
+      "source_location": {
+        "line": 572,
+        "column": 2,
+        "end_line": 582,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 572,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_211": {
+      "id": "dfg_node_211",
+      "type": "function",
+      "name": "small_payout",
+      "data_type": null,
+      "scope": "Gamble",
+      "source_location": {
+        "line": 583,
+        "column": 2,
+        "end_line": 606,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 583,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_212": {
+      "id": "dfg_node_212",
+      "type": "function",
+      "name": "check_prize",
+      "data_type": null,
+      "scope": "Gamble",
+      "source_location": {
+        "line": 607,
+        "column": 2,
+        "end_line": 610,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 607,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_214": {
+      "id": "dfg_node_214",
+      "type": "parameter",
+      "name": "param_212",
+      "data_type": "uint",
+      "scope": "check_prize_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "check_prize"
+      }
+    },
+    "dfg_node_215": {
+      "id": "dfg_node_215",
+      "type": "function",
+      "name": "winning_ticket",
+      "data_type": null,
+      "scope": "Gamble",
+      "source_location": {
+        "line": 611,
+        "column": 2,
+        "end_line": 614,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 611,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_217": {
+      "id": "dfg_node_217",
+      "type": "parameter",
+      "name": "param_215",
+      "data_type": "string",
+      "scope": "winning_ticket_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "winning_ticket"
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_3",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_6",
+      "target": "dfg_node_8",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_1",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_9",
+      "target": "dfg_node_11",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_1",
+      "target": "dfg_node_9",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_12",
+      "target": "dfg_node_14",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_9": {
+      "id": "dfg_edge_9",
+      "source": "dfg_node_1",
+      "target": "dfg_node_12",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_10": {
+      "id": "dfg_edge_10",
+      "source": "dfg_node_15",
+      "target": "dfg_node_17",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_11": {
+      "id": "dfg_edge_11",
+      "source": "dfg_node_1",
+      "target": "dfg_node_15",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_12": {
+      "id": "dfg_edge_12",
+      "source": "dfg_node_18",
+      "target": "dfg_node_20",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_13": {
+      "id": "dfg_edge_13",
+      "source": "dfg_node_1",
+      "target": "dfg_node_18",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_14": {
+      "id": "dfg_edge_14",
+      "source": "dfg_node_21",
+      "target": "dfg_node_23",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_15": {
+      "id": "dfg_edge_15",
+      "source": "dfg_node_1",
+      "target": "dfg_node_21",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_16": {
+      "id": "dfg_edge_16",
+      "source": "dfg_node_24",
+      "target": "dfg_node_26",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_17": {
+      "id": "dfg_edge_17",
+      "source": "dfg_node_1",
+      "target": "dfg_node_24",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_18": {
+      "id": "dfg_edge_18",
+      "source": "dfg_node_1",
+      "target": "dfg_node_27",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_19": {
+      "id": "dfg_edge_19",
+      "source": "dfg_node_1",
+      "target": "dfg_node_28",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_20": {
+      "id": "dfg_edge_20",
+      "source": "dfg_node_1",
+      "target": "dfg_node_29",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_21": {
+      "id": "dfg_edge_21",
+      "source": "dfg_node_1",
+      "target": "dfg_node_30",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_22": {
+      "id": "dfg_edge_22",
+      "source": "dfg_node_32",
+      "target": "dfg_node_34",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_23": {
+      "id": "dfg_edge_23",
+      "source": "dfg_node_31",
+      "target": "dfg_node_32",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_24": {
+      "id": "dfg_edge_24",
+      "source": "dfg_node_35",
+      "target": "dfg_node_36",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_25": {
+      "id": "dfg_edge_25",
+      "source": "dfg_node_35",
+      "target": "dfg_node_37",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_26": {
+      "id": "dfg_edge_26",
+      "source": "dfg_node_35",
+      "target": "dfg_node_38",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_27": {
+      "id": "dfg_edge_27",
+      "source": "dfg_node_35",
+      "target": "dfg_node_39",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_28": {
+      "id": "dfg_edge_28",
+      "source": "dfg_node_35",
+      "target": "dfg_node_40",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_29": {
+      "id": "dfg_edge_29",
+      "source": "dfg_node_35",
+      "target": "dfg_node_41",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_30": {
+      "id": "dfg_edge_30",
+      "source": "dfg_node_35",
+      "target": "dfg_node_42",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_31": {
+      "id": "dfg_edge_31",
+      "source": "dfg_node_35",
+      "target": "dfg_node_43",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_32": {
+      "id": "dfg_edge_32",
+      "source": "dfg_node_35",
+      "target": "dfg_node_44",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_33": {
+      "id": "dfg_edge_33",
+      "source": "dfg_node_35",
+      "target": "dfg_node_45",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_34": {
+      "id": "dfg_edge_34",
+      "source": "dfg_node_35",
+      "target": "dfg_node_46",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_35": {
+      "id": "dfg_edge_35",
+      "source": "dfg_node_35",
+      "target": "dfg_node_47",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_36": {
+      "id": "dfg_edge_36",
+      "source": "dfg_node_35",
+      "target": "dfg_node_48",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_37": {
+      "id": "dfg_edge_37",
+      "source": "dfg_node_49",
+      "target": "dfg_node_51",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_38": {
+      "id": "dfg_edge_38",
+      "source": "dfg_node_35",
+      "target": "dfg_node_49",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_39": {
+      "id": "dfg_edge_39",
+      "source": "dfg_node_35",
+      "target": "dfg_node_52",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_40": {
+      "id": "dfg_edge_40",
+      "source": "dfg_node_35",
+      "target": "dfg_node_53",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_41": {
+      "id": "dfg_edge_41",
+      "source": "dfg_node_54",
+      "target": "dfg_node_56",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_42": {
+      "id": "dfg_edge_42",
+      "source": "dfg_node_35",
+      "target": "dfg_node_54",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_43": {
+      "id": "dfg_edge_43",
+      "source": "dfg_node_57",
+      "target": "dfg_node_59",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_44": {
+      "id": "dfg_edge_44",
+      "source": "dfg_node_35",
+      "target": "dfg_node_57",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_45": {
+      "id": "dfg_edge_45",
+      "source": "dfg_node_60",
+      "target": "dfg_node_62",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_46": {
+      "id": "dfg_edge_46",
+      "source": "dfg_node_35",
+      "target": "dfg_node_60",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_47": {
+      "id": "dfg_edge_47",
+      "source": "dfg_node_63",
+      "target": "dfg_node_65",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_48": {
+      "id": "dfg_edge_48",
+      "source": "dfg_node_35",
+      "target": "dfg_node_63",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_49": {
+      "id": "dfg_edge_49",
+      "source": "dfg_node_66",
+      "target": "dfg_node_68",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_50": {
+      "id": "dfg_edge_50",
+      "source": "dfg_node_35",
+      "target": "dfg_node_66",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_51": {
+      "id": "dfg_edge_51",
+      "source": "dfg_node_69",
+      "target": "dfg_node_71",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_52": {
+      "id": "dfg_edge_52",
+      "source": "dfg_node_35",
+      "target": "dfg_node_69",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_53": {
+      "id": "dfg_edge_53",
+      "source": "dfg_node_72",
+      "target": "dfg_node_74",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_54": {
+      "id": "dfg_edge_54",
+      "source": "dfg_node_35",
+      "target": "dfg_node_72",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_55": {
+      "id": "dfg_edge_55",
+      "source": "dfg_node_75",
+      "target": "dfg_node_77",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_56": {
+      "id": "dfg_edge_56",
+      "source": "dfg_node_35",
+      "target": "dfg_node_75",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_57": {
+      "id": "dfg_edge_57",
+      "source": "dfg_node_78",
+      "target": "dfg_node_80",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_58": {
+      "id": "dfg_edge_58",
+      "source": "dfg_node_35",
+      "target": "dfg_node_78",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_59": {
+      "id": "dfg_edge_59",
+      "source": "dfg_node_81",
+      "target": "dfg_node_83",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_60": {
+      "id": "dfg_edge_60",
+      "source": "dfg_node_35",
+      "target": "dfg_node_81",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_61": {
+      "id": "dfg_edge_61",
+      "source": "dfg_node_84",
+      "target": "dfg_node_86",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_62": {
+      "id": "dfg_edge_62",
+      "source": "dfg_node_35",
+      "target": "dfg_node_84",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_63": {
+      "id": "dfg_edge_63",
+      "source": "dfg_node_87",
+      "target": "dfg_node_89",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_64": {
+      "id": "dfg_edge_64",
+      "source": "dfg_node_35",
+      "target": "dfg_node_87",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_65": {
+      "id": "dfg_edge_65",
+      "source": "dfg_node_90",
+      "target": "dfg_node_92",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_66": {
+      "id": "dfg_edge_66",
+      "source": "dfg_node_35",
+      "target": "dfg_node_90",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_67": {
+      "id": "dfg_edge_67",
+      "source": "dfg_node_93",
+      "target": "dfg_node_95",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_68": {
+      "id": "dfg_edge_68",
+      "source": "dfg_node_35",
+      "target": "dfg_node_93",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_69": {
+      "id": "dfg_edge_69",
+      "source": "dfg_node_96",
+      "target": "dfg_node_98",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_70": {
+      "id": "dfg_edge_70",
+      "source": "dfg_node_35",
+      "target": "dfg_node_96",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_71": {
+      "id": "dfg_edge_71",
+      "source": "dfg_node_99",
+      "target": "dfg_node_101",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_72": {
+      "id": "dfg_edge_72",
+      "source": "dfg_node_35",
+      "target": "dfg_node_99",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_73": {
+      "id": "dfg_edge_73",
+      "source": "dfg_node_102",
+      "target": "dfg_node_104",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_74": {
+      "id": "dfg_edge_74",
+      "source": "dfg_node_35",
+      "target": "dfg_node_102",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_75": {
+      "id": "dfg_edge_75",
+      "source": "dfg_node_105",
+      "target": "dfg_node_107",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_76": {
+      "id": "dfg_edge_76",
+      "source": "dfg_node_35",
+      "target": "dfg_node_105",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_77": {
+      "id": "dfg_edge_77",
+      "source": "dfg_node_108",
+      "target": "dfg_node_110",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_78": {
+      "id": "dfg_edge_78",
+      "source": "dfg_node_35",
+      "target": "dfg_node_108",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_79": {
+      "id": "dfg_edge_79",
+      "source": "dfg_node_111",
+      "target": "dfg_node_113",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_80": {
+      "id": "dfg_edge_80",
+      "source": "dfg_node_35",
+      "target": "dfg_node_111",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_81": {
+      "id": "dfg_edge_81",
+      "source": "dfg_node_114",
+      "target": "dfg_node_116",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_82": {
+      "id": "dfg_edge_82",
+      "source": "dfg_node_35",
+      "target": "dfg_node_114",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_83": {
+      "id": "dfg_edge_83",
+      "source": "dfg_node_117",
+      "target": "dfg_node_119",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_84": {
+      "id": "dfg_edge_84",
+      "source": "dfg_node_35",
+      "target": "dfg_node_117",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_85": {
+      "id": "dfg_edge_85",
+      "source": "dfg_node_120",
+      "target": "dfg_node_122",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_86": {
+      "id": "dfg_edge_86",
+      "source": "dfg_node_35",
+      "target": "dfg_node_120",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_87": {
+      "id": "dfg_edge_87",
+      "source": "dfg_node_123",
+      "target": "dfg_node_125",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_88": {
+      "id": "dfg_edge_88",
+      "source": "dfg_node_35",
+      "target": "dfg_node_123",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_89": {
+      "id": "dfg_edge_89",
+      "source": "dfg_node_126",
+      "target": "dfg_node_128",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_90": {
+      "id": "dfg_edge_90",
+      "source": "dfg_node_35",
+      "target": "dfg_node_126",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_91": {
+      "id": "dfg_edge_91",
+      "source": "dfg_node_129",
+      "target": "dfg_node_131",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_92": {
+      "id": "dfg_edge_92",
+      "source": "dfg_node_35",
+      "target": "dfg_node_129",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_93": {
+      "id": "dfg_edge_93",
+      "source": "dfg_node_132",
+      "target": "dfg_node_134",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_94": {
+      "id": "dfg_edge_94",
+      "source": "dfg_node_35",
+      "target": "dfg_node_132",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_95": {
+      "id": "dfg_edge_95",
+      "source": "dfg_node_135",
+      "target": "dfg_node_137",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_96": {
+      "id": "dfg_edge_96",
+      "source": "dfg_node_35",
+      "target": "dfg_node_135",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_97": {
+      "id": "dfg_edge_97",
+      "source": "dfg_node_138",
+      "target": "dfg_node_140",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_98": {
+      "id": "dfg_edge_98",
+      "source": "dfg_node_35",
+      "target": "dfg_node_138",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_99": {
+      "id": "dfg_edge_99",
+      "source": "dfg_node_141",
+      "target": "dfg_node_143",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_100": {
+      "id": "dfg_edge_100",
+      "source": "dfg_node_35",
+      "target": "dfg_node_141",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_101": {
+      "id": "dfg_edge_101",
+      "source": "dfg_node_144",
+      "target": "dfg_node_146",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_102": {
+      "id": "dfg_edge_102",
+      "source": "dfg_node_35",
+      "target": "dfg_node_144",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_103": {
+      "id": "dfg_edge_103",
+      "source": "dfg_node_147",
+      "target": "dfg_node_149",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_104": {
+      "id": "dfg_edge_104",
+      "source": "dfg_node_35",
+      "target": "dfg_node_147",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_105": {
+      "id": "dfg_edge_105",
+      "source": "dfg_node_150",
+      "target": "dfg_node_152",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_106": {
+      "id": "dfg_edge_106",
+      "source": "dfg_node_35",
+      "target": "dfg_node_150",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_107": {
+      "id": "dfg_edge_107",
+      "source": "dfg_node_153",
+      "target": "dfg_node_155",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_108": {
+      "id": "dfg_edge_108",
+      "source": "dfg_node_35",
+      "target": "dfg_node_153",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_109": {
+      "id": "dfg_edge_109",
+      "source": "dfg_node_156",
+      "target": "dfg_node_158",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_110": {
+      "id": "dfg_edge_110",
+      "source": "dfg_node_35",
+      "target": "dfg_node_156",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_111": {
+      "id": "dfg_edge_111",
+      "source": "dfg_node_35",
+      "target": "dfg_node_159",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_112": {
+      "id": "dfg_edge_112",
+      "source": "dfg_node_35",
+      "target": "dfg_node_160",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_113": {
+      "id": "dfg_edge_113",
+      "source": "dfg_node_35",
+      "target": "dfg_node_161",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_114": {
+      "id": "dfg_edge_114",
+      "source": "dfg_node_162",
+      "target": "dfg_node_164",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_115": {
+      "id": "dfg_edge_115",
+      "source": "dfg_node_35",
+      "target": "dfg_node_162",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_116": {
+      "id": "dfg_edge_116",
+      "source": "dfg_node_165",
+      "target": "dfg_node_167",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_117": {
+      "id": "dfg_edge_117",
+      "source": "dfg_node_35",
+      "target": "dfg_node_165",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_118": {
+      "id": "dfg_edge_118",
+      "source": "dfg_node_168",
+      "target": "dfg_node_170",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_119": {
+      "id": "dfg_edge_119",
+      "source": "dfg_node_35",
+      "target": "dfg_node_168",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_120": {
+      "id": "dfg_edge_120",
+      "source": "dfg_node_171",
+      "target": "dfg_node_173",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_121": {
+      "id": "dfg_edge_121",
+      "source": "dfg_node_35",
+      "target": "dfg_node_171",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_122": {
+      "id": "dfg_edge_122",
+      "source": "dfg_node_174",
+      "target": "dfg_node_176",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_123": {
+      "id": "dfg_edge_123",
+      "source": "dfg_node_35",
+      "target": "dfg_node_174",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_124": {
+      "id": "dfg_edge_124",
+      "source": "dfg_node_177",
+      "target": "dfg_node_179",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_125": {
+      "id": "dfg_edge_125",
+      "source": "dfg_node_35",
+      "target": "dfg_node_177",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_126": {
+      "id": "dfg_edge_126",
+      "source": "dfg_node_180",
+      "target": "dfg_node_182",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_127": {
+      "id": "dfg_edge_127",
+      "source": "dfg_node_35",
+      "target": "dfg_node_180",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_128": {
+      "id": "dfg_edge_128",
+      "source": "dfg_node_183",
+      "target": "dfg_node_185",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_129": {
+      "id": "dfg_edge_129",
+      "source": "dfg_node_35",
+      "target": "dfg_node_183",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_130": {
+      "id": "dfg_edge_130",
+      "source": "dfg_node_186",
+      "target": "dfg_node_188",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_131": {
+      "id": "dfg_edge_131",
+      "source": "dfg_node_35",
+      "target": "dfg_node_186",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_132": {
+      "id": "dfg_edge_132",
+      "source": "dfg_node_189",
+      "target": "dfg_node_191",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_133": {
+      "id": "dfg_edge_133",
+      "source": "dfg_node_35",
+      "target": "dfg_node_189",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_134": {
+      "id": "dfg_edge_134",
+      "source": "dfg_node_192",
+      "target": "dfg_node_194",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_135": {
+      "id": "dfg_edge_135",
+      "source": "dfg_node_35",
+      "target": "dfg_node_192",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_136": {
+      "id": "dfg_edge_136",
+      "source": "dfg_node_195",
+      "target": "dfg_node_197",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_137": {
+      "id": "dfg_edge_137",
+      "source": "dfg_node_35",
+      "target": "dfg_node_195",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_138": {
+      "id": "dfg_edge_138",
+      "source": "dfg_node_198",
+      "target": "dfg_node_199",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_139": {
+      "id": "dfg_edge_139",
+      "source": "dfg_node_198",
+      "target": "dfg_node_200",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_140": {
+      "id": "dfg_edge_140",
+      "source": "dfg_node_198",
+      "target": "dfg_node_201",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_141": {
+      "id": "dfg_edge_141",
+      "source": "dfg_node_198",
+      "target": "dfg_node_202",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_142": {
+      "id": "dfg_edge_142",
+      "source": "dfg_node_198",
+      "target": "dfg_node_203",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_143": {
+      "id": "dfg_edge_143",
+      "source": "dfg_node_198",
+      "target": "dfg_node_204",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_144": {
+      "id": "dfg_edge_144",
+      "source": "dfg_node_198",
+      "target": "dfg_node_205",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_145": {
+      "id": "dfg_edge_145",
+      "source": "dfg_node_198",
+      "target": "dfg_node_206",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_146": {
+      "id": "dfg_edge_146",
+      "source": "dfg_node_198",
+      "target": "dfg_node_207",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_147": {
+      "id": "dfg_edge_147",
+      "source": "dfg_node_198",
+      "target": "dfg_node_208",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_148": {
+      "id": "dfg_edge_148",
+      "source": "dfg_node_198",
+      "target": "dfg_node_209",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_149": {
+      "id": "dfg_edge_149",
+      "source": "dfg_node_198",
+      "target": "dfg_node_210",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_150": {
+      "id": "dfg_edge_150",
+      "source": "dfg_node_198",
+      "target": "dfg_node_211",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_151": {
+      "id": "dfg_edge_151",
+      "source": "dfg_node_212",
+      "target": "dfg_node_214",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_152": {
+      "id": "dfg_edge_152",
+      "source": "dfg_node_198",
+      "target": "dfg_node_212",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_153": {
+      "id": "dfg_edge_153",
+      "source": "dfg_node_215",
+      "target": "dfg_node_217",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_154": {
+      "id": "dfg_edge_154",
+      "source": "dfg_node_198",
+      "target": "dfg_node_215",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 1060,
+    "source_line": 1061,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "OraclizeI",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

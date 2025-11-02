@@ -1,0 +1,1339 @@
+{
+  "contract": "owned",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "owned",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 1,
+        "column": 1,
+        "end_line": 17,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "owner",
+      "data_type": "address",
+      "scope": "owned",
+      "source_location": {
+        "line": 3,
+        "column": 3,
+        "end_line": 3,
+        "end_column": 24
+      },
+      "properties": {
+        "source_location": {
+          "line": 3,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "constructor_function",
+      "name": "owned",
+      "data_type": null,
+      "scope": "owned",
+      "source_location": {
+        "line": 5,
+        "column": 3,
+        "end_line": 7,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 5,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "function",
+      "name": "transferOwnership",
+      "data_type": null,
+      "scope": "owned",
+      "source_location": {
+        "line": 14,
+        "column": 3,
+        "end_line": 16,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 14,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "contract",
+      "name": "tokenRecipient",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 19,
+        "column": 1,
+        "end_line": 19,
+        "end_column": 119
+      },
+      "properties": {
+        "source_location": {
+          "line": 19,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "function",
+      "name": "receiveApproval",
+      "data_type": null,
+      "scope": "tokenRecipient",
+      "source_location": {
+        "line": 19,
+        "column": 27,
+        "end_line": 19,
+        "end_column": 117
+      },
+      "properties": {
+        "source_location": {
+          "line": 19,
+          "column": 27
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "contract",
+      "name": "ISncToken",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 21,
+        "column": 1,
+        "end_line": 24,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 21,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "function",
+      "name": "mintTokens",
+      "data_type": null,
+      "scope": "ISncToken",
+      "source_location": {
+        "line": 22,
+        "column": 3,
+        "end_line": 22,
+        "end_column": 53
+      },
+      "properties": {
+        "source_location": {
+          "line": 22,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "function",
+      "name": "totalSupply",
+      "data_type": null,
+      "scope": "ISncToken",
+      "source_location": {
+        "line": 23,
+        "column": 3,
+        "end_line": 23,
+        "end_column": 65
+      },
+      "properties": {
+        "source_location": {
+          "line": 23,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_11": {
+      "id": "dfg_node_11",
+      "type": "parameter",
+      "name": "totalSupply",
+      "data_type": "uint256",
+      "scope": "totalSupply_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "totalSupply"
+      }
+    },
+    "dfg_node_12": {
+      "id": "dfg_node_12",
+      "type": "contract",
+      "name": "SunContractIco",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 26,
+        "column": 1,
+        "end_line": 234,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 26,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_13": {
+      "id": "dfg_node_13",
+      "type": "state_variable",
+      "name": "startBlock",
+      "data_type": "uint256",
+      "scope": "SunContractIco",
+      "source_location": {
+        "line": 28,
+        "column": 3,
+        "end_line": 28,
+        "end_column": 29
+      },
+      "properties": {
+        "source_location": {
+          "line": 28,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_14": {
+      "id": "dfg_node_14",
+      "type": "state_variable",
+      "name": "endBlock",
+      "data_type": "uint256",
+      "scope": "SunContractIco",
+      "source_location": {
+        "line": 29,
+        "column": 3,
+        "end_line": 29,
+        "end_column": 27
+      },
+      "properties": {
+        "source_location": {
+          "line": 29,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_15": {
+      "id": "dfg_node_15",
+      "type": "state_variable",
+      "name": "minEthToRaise",
+      "data_type": "uint256",
+      "scope": "SunContractIco",
+      "source_location": {
+        "line": 30,
+        "column": 3,
+        "end_line": 30,
+        "end_column": 32
+      },
+      "properties": {
+        "source_location": {
+          "line": 30,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_16": {
+      "id": "dfg_node_16",
+      "type": "state_variable",
+      "name": "maxEthToRaise",
+      "data_type": "uint256",
+      "scope": "SunContractIco",
+      "source_location": {
+        "line": 31,
+        "column": 3,
+        "end_line": 31,
+        "end_column": 32
+      },
+      "properties": {
+        "source_location": {
+          "line": 31,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_17": {
+      "id": "dfg_node_17",
+      "type": "state_variable",
+      "name": "totalEthRaised",
+      "data_type": "uint256",
+      "scope": "SunContractIco",
+      "source_location": {
+        "line": 32,
+        "column": 3,
+        "end_line": 32,
+        "end_column": 33
+      },
+      "properties": {
+        "source_location": {
+          "line": 32,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_18": {
+      "id": "dfg_node_18",
+      "type": "state_variable",
+      "name": "multisigAddress",
+      "data_type": "address",
+      "scope": "SunContractIco",
+      "source_location": {
+        "line": 33,
+        "column": 3,
+        "end_line": 33,
+        "end_column": 34
+      },
+      "properties": {
+        "source_location": {
+          "line": 33,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_19": {
+      "id": "dfg_node_19",
+      "type": "state_variable",
+      "name": "sncTokenContract",
+      "data_type": "ISncToken",
+      "scope": "SunContractIco",
+      "source_location": {
+        "line": 36,
+        "column": 3,
+        "end_line": 36,
+        "end_column": 30
+      },
+      "properties": {
+        "source_location": {
+          "line": 36,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_20": {
+      "id": "dfg_node_20",
+      "type": "state_variable",
+      "name": "presaleContributorAllowance",
+      "data_type": "mapping (address => bool)",
+      "scope": "SunContractIco",
+      "source_location": {
+        "line": 37,
+        "column": 3,
+        "end_line": 37,
+        "end_column": 57
+      },
+      "properties": {
+        "source_location": {
+          "line": 37,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_21": {
+      "id": "dfg_node_21",
+      "type": "state_variable",
+      "name": "nextFreeParticipantIndex",
+      "data_type": "uint256",
+      "scope": "SunContractIco",
+      "source_location": {
+        "line": 38,
+        "column": 3,
+        "end_line": 38,
+        "end_column": 36
+      },
+      "properties": {
+        "source_location": {
+          "line": 38,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_22": {
+      "id": "dfg_node_22",
+      "type": "state_variable",
+      "name": "participantIndex",
+      "data_type": "mapping (uint => address)",
+      "scope": "SunContractIco",
+      "source_location": {
+        "line": 39,
+        "column": 3,
+        "end_line": 39,
+        "end_column": 46
+      },
+      "properties": {
+        "source_location": {
+          "line": 39,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_23": {
+      "id": "dfg_node_23",
+      "type": "state_variable",
+      "name": "participantContribution",
+      "data_type": "mapping (address => uint256)",
+      "scope": "SunContractIco",
+      "source_location": {
+        "line": 40,
+        "column": 3,
+        "end_line": 40,
+        "end_column": 56
+      },
+      "properties": {
+        "source_location": {
+          "line": 40,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_24": {
+      "id": "dfg_node_24",
+      "type": "state_variable",
+      "name": "icoHasStarted",
+      "data_type": "bool",
+      "scope": "SunContractIco",
+      "source_location": {
+        "line": 42,
+        "column": 3,
+        "end_line": 42,
+        "end_column": 22
+      },
+      "properties": {
+        "source_location": {
+          "line": 42,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_25": {
+      "id": "dfg_node_25",
+      "type": "state_variable",
+      "name": "minTresholdReached",
+      "data_type": "bool",
+      "scope": "SunContractIco",
+      "source_location": {
+        "line": 43,
+        "column": 3,
+        "end_line": 43,
+        "end_column": 27
+      },
+      "properties": {
+        "source_location": {
+          "line": 43,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_26": {
+      "id": "dfg_node_26",
+      "type": "state_variable",
+      "name": "icoHasSucessfulyEnded",
+      "data_type": "bool",
+      "scope": "SunContractIco",
+      "source_location": {
+        "line": 44,
+        "column": 3,
+        "end_line": 44,
+        "end_column": 30
+      },
+      "properties": {
+        "source_location": {
+          "line": 44,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_27": {
+      "id": "dfg_node_27",
+      "type": "state_variable",
+      "name": "blocksInWeek",
+      "data_type": "uint256",
+      "scope": "SunContractIco",
+      "source_location": {
+        "line": 45,
+        "column": 3,
+        "end_line": 45,
+        "end_column": 24
+      },
+      "properties": {
+        "source_location": {
+          "line": 45,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_28": {
+      "id": "dfg_node_28",
+      "type": "state_variable",
+      "name": "ownerHasClaimedTokens",
+      "data_type": "bool",
+      "scope": "SunContractIco",
+      "source_location": {
+        "line": 46,
+        "column": 5,
+        "end_line": 46,
+        "end_column": 32
+      },
+      "properties": {
+        "source_location": {
+          "line": 46,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_29": {
+      "id": "dfg_node_29",
+      "type": "state_variable",
+      "name": "lastEthReturnIndex",
+      "data_type": "uint256",
+      "scope": "SunContractIco",
+      "source_location": {
+        "line": 48,
+        "column": 3,
+        "end_line": 48,
+        "end_column": 30
+      },
+      "properties": {
+        "source_location": {
+          "line": 48,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_30": {
+      "id": "dfg_node_30",
+      "type": "state_variable",
+      "name": "hasClaimedEthWhenFail",
+      "data_type": "mapping (address => bool)",
+      "scope": "SunContractIco",
+      "source_location": {
+        "line": 49,
+        "column": 3,
+        "end_line": 49,
+        "end_column": 51
+      },
+      "properties": {
+        "source_location": {
+          "line": 49,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_31": {
+      "id": "dfg_node_31",
+      "type": "constructor_function",
+      "name": "SunContractIco",
+      "data_type": null,
+      "scope": "SunContractIco",
+      "source_location": {
+        "line": 57,
+        "column": 3,
+        "end_line": 64,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 57,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_32": {
+      "id": "dfg_node_32",
+      "type": "function",
+      "name": "claimEthIfFailed",
+      "data_type": null,
+      "scope": "SunContractIco",
+      "source_location": {
+        "line": 109,
+        "column": 3,
+        "end_line": 118,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 109,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_33": {
+      "id": "dfg_node_33",
+      "type": "function",
+      "name": "addPresaleContributors",
+      "data_type": null,
+      "scope": "SunContractIco",
+      "source_location": {
+        "line": 125,
+        "column": 3,
+        "end_line": 129,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 125,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_34": {
+      "id": "dfg_node_34",
+      "type": "function",
+      "name": "batchReturnEthIfFailed",
+      "data_type": null,
+      "scope": "SunContractIco",
+      "source_location": {
+        "line": 132,
+        "column": 3,
+        "end_line": 148,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 132,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_35": {
+      "id": "dfg_node_35",
+      "type": "function",
+      "name": "changeMultisigAddress",
+      "data_type": null,
+      "scope": "SunContractIco",
+      "source_location": {
+        "line": 151,
+        "column": 3,
+        "end_line": 153,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 151,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_36": {
+      "id": "dfg_node_36",
+      "type": "function",
+      "name": "claimCoreTeamsTokens",
+      "data_type": null,
+      "scope": "SunContractIco",
+      "source_location": {
+        "line": 156,
+        "column": 3,
+        "end_line": 162,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 156,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_37": {
+      "id": "dfg_node_37",
+      "type": "function",
+      "name": "removePresaleContributor",
+      "data_type": null,
+      "scope": "SunContractIco",
+      "source_location": {
+        "line": 165,
+        "column": 3,
+        "end_line": 167,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 165,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_38": {
+      "id": "dfg_node_38",
+      "type": "function",
+      "name": "setTokenContract",
+      "data_type": null,
+      "scope": "SunContractIco",
+      "source_location": {
+        "line": 170,
+        "column": 3,
+        "end_line": 172,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 170,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_39": {
+      "id": "dfg_node_39",
+      "type": "function",
+      "name": "withdrawEth",
+      "data_type": null,
+      "scope": "SunContractIco",
+      "source_location": {
+        "line": 175,
+        "column": 3,
+        "end_line": 180,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 175,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_40": {
+      "id": "dfg_node_40",
+      "type": "function",
+      "name": "endIco",
+      "data_type": null,
+      "scope": "SunContractIco",
+      "source_location": {
+        "line": 182,
+        "column": 3,
+        "end_line": 188,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 182,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_41": {
+      "id": "dfg_node_41",
+      "type": "function",
+      "name": "withdrawRemainingBalanceForManualRecovery",
+      "data_type": null,
+      "scope": "SunContractIco",
+      "source_location": {
+        "line": 191,
+        "column": 3,
+        "end_line": 196,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 191,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_42": {
+      "id": "dfg_node_42",
+      "type": "function",
+      "name": "getSncTokenAddress",
+      "data_type": null,
+      "scope": "SunContractIco",
+      "source_location": {
+        "line": 202,
+        "column": 3,
+        "end_line": 204,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 202,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_44": {
+      "id": "dfg_node_44",
+      "type": "parameter",
+      "name": "_tokenAddress",
+      "data_type": "address",
+      "scope": "getSncTokenAddress_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getSncTokenAddress"
+      }
+    },
+    "dfg_node_45": {
+      "id": "dfg_node_45",
+      "type": "function",
+      "name": "icoInProgress",
+      "data_type": null,
+      "scope": "SunContractIco",
+      "source_location": {
+        "line": 206,
+        "column": 3,
+        "end_line": 208,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 206,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_47": {
+      "id": "dfg_node_47",
+      "type": "parameter",
+      "name": "answer",
+      "data_type": "bool",
+      "scope": "icoInProgress_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "icoInProgress"
+      }
+    },
+    "dfg_node_48": {
+      "id": "dfg_node_48",
+      "type": "function",
+      "name": "isAddressAllowedInPresale",
+      "data_type": null,
+      "scope": "SunContractIco",
+      "source_location": {
+        "line": 210,
+        "column": 3,
+        "end_line": 212,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 210,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_50": {
+      "id": "dfg_node_50",
+      "type": "parameter",
+      "name": "answer",
+      "data_type": "bool",
+      "scope": "isAddressAllowedInPresale_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "isAddressAllowedInPresale"
+      }
+    },
+    "dfg_node_51": {
+      "id": "dfg_node_51",
+      "type": "function",
+      "name": "participantContributionInEth",
+      "data_type": null,
+      "scope": "SunContractIco",
+      "source_location": {
+        "line": 214,
+        "column": 3,
+        "end_line": 216,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 214,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_53": {
+      "id": "dfg_node_53",
+      "type": "parameter",
+      "name": "answer",
+      "data_type": "uint256",
+      "scope": "participantContributionInEth_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "participantContributionInEth"
+      }
+    },
+    "dfg_node_54": {
+      "id": "dfg_node_54",
+      "type": "function",
+      "name": "getSncTokenIssuance",
+      "data_type": null,
+      "scope": "SunContractIco",
+      "source_location": {
+        "line": 218,
+        "column": 3,
+        "end_line": 226,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 218,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_56": {
+      "id": "dfg_node_56",
+      "type": "parameter",
+      "name": "param_54",
+      "data_type": "uint",
+      "scope": "getSncTokenIssuance_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getSncTokenIssuance"
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_5",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_7",
+      "target": "dfg_node_8",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_9",
+      "target": "dfg_node_11",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_7",
+      "target": "dfg_node_9",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_12",
+      "target": "dfg_node_13",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_9": {
+      "id": "dfg_edge_9",
+      "source": "dfg_node_12",
+      "target": "dfg_node_14",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_10": {
+      "id": "dfg_edge_10",
+      "source": "dfg_node_12",
+      "target": "dfg_node_15",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_11": {
+      "id": "dfg_edge_11",
+      "source": "dfg_node_12",
+      "target": "dfg_node_16",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_12": {
+      "id": "dfg_edge_12",
+      "source": "dfg_node_12",
+      "target": "dfg_node_17",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_13": {
+      "id": "dfg_edge_13",
+      "source": "dfg_node_12",
+      "target": "dfg_node_18",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_14": {
+      "id": "dfg_edge_14",
+      "source": "dfg_node_12",
+      "target": "dfg_node_19",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_15": {
+      "id": "dfg_edge_15",
+      "source": "dfg_node_12",
+      "target": "dfg_node_20",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_16": {
+      "id": "dfg_edge_16",
+      "source": "dfg_node_12",
+      "target": "dfg_node_21",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_17": {
+      "id": "dfg_edge_17",
+      "source": "dfg_node_12",
+      "target": "dfg_node_22",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_18": {
+      "id": "dfg_edge_18",
+      "source": "dfg_node_12",
+      "target": "dfg_node_23",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_19": {
+      "id": "dfg_edge_19",
+      "source": "dfg_node_12",
+      "target": "dfg_node_24",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_20": {
+      "id": "dfg_edge_20",
+      "source": "dfg_node_12",
+      "target": "dfg_node_25",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_21": {
+      "id": "dfg_edge_21",
+      "source": "dfg_node_12",
+      "target": "dfg_node_26",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_22": {
+      "id": "dfg_edge_22",
+      "source": "dfg_node_12",
+      "target": "dfg_node_27",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_23": {
+      "id": "dfg_edge_23",
+      "source": "dfg_node_12",
+      "target": "dfg_node_28",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_24": {
+      "id": "dfg_edge_24",
+      "source": "dfg_node_12",
+      "target": "dfg_node_29",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_25": {
+      "id": "dfg_edge_25",
+      "source": "dfg_node_12",
+      "target": "dfg_node_30",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_26": {
+      "id": "dfg_edge_26",
+      "source": "dfg_node_12",
+      "target": "dfg_node_31",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_27": {
+      "id": "dfg_edge_27",
+      "source": "dfg_node_12",
+      "target": "dfg_node_32",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_28": {
+      "id": "dfg_edge_28",
+      "source": "dfg_node_12",
+      "target": "dfg_node_33",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_29": {
+      "id": "dfg_edge_29",
+      "source": "dfg_node_12",
+      "target": "dfg_node_34",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_30": {
+      "id": "dfg_edge_30",
+      "source": "dfg_node_12",
+      "target": "dfg_node_35",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_31": {
+      "id": "dfg_edge_31",
+      "source": "dfg_node_12",
+      "target": "dfg_node_36",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_32": {
+      "id": "dfg_edge_32",
+      "source": "dfg_node_12",
+      "target": "dfg_node_37",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_33": {
+      "id": "dfg_edge_33",
+      "source": "dfg_node_12",
+      "target": "dfg_node_38",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_34": {
+      "id": "dfg_edge_34",
+      "source": "dfg_node_12",
+      "target": "dfg_node_39",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_35": {
+      "id": "dfg_edge_35",
+      "source": "dfg_node_12",
+      "target": "dfg_node_40",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_36": {
+      "id": "dfg_edge_36",
+      "source": "dfg_node_12",
+      "target": "dfg_node_41",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_37": {
+      "id": "dfg_edge_37",
+      "source": "dfg_node_42",
+      "target": "dfg_node_44",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_38": {
+      "id": "dfg_edge_38",
+      "source": "dfg_node_12",
+      "target": "dfg_node_42",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_39": {
+      "id": "dfg_edge_39",
+      "source": "dfg_node_45",
+      "target": "dfg_node_47",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_40": {
+      "id": "dfg_edge_40",
+      "source": "dfg_node_12",
+      "target": "dfg_node_45",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_41": {
+      "id": "dfg_edge_41",
+      "source": "dfg_node_48",
+      "target": "dfg_node_50",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_42": {
+      "id": "dfg_edge_42",
+      "source": "dfg_node_12",
+      "target": "dfg_node_48",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_43": {
+      "id": "dfg_edge_43",
+      "source": "dfg_node_51",
+      "target": "dfg_node_53",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_44": {
+      "id": "dfg_edge_44",
+      "source": "dfg_node_12",
+      "target": "dfg_node_51",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_45": {
+      "id": "dfg_edge_45",
+      "source": "dfg_node_54",
+      "target": "dfg_node_56",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_46": {
+      "id": "dfg_edge_46",
+      "source": "dfg_node_12",
+      "target": "dfg_node_54",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 827,
+    "source_line": 828,
+    "label": 1,
+    "mode": "compact",
+    "contract_name": "owned",
+    "timestamp": "20251029_142838"
+  },
+  "label": 1
+}

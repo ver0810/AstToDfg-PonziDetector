@@ -1,0 +1,583 @@
+{
+  "contract": "plusOnePonzi",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "plusOnePonzi",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 1,
+        "column": 1,
+        "end_line": 34,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "VALUE",
+      "data_type": "uint",
+      "scope": "plusOnePonzi",
+      "source_location": {
+        "line": 3,
+        "column": 3,
+        "end_line": 3,
+        "end_column": 43
+      },
+      "properties": {
+        "source_location": {
+          "line": 3,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "struct_declaration",
+      "name": null,
+      "data_type": null,
+      "scope": "plusOnePonzi",
+      "source_location": {
+        "line": 6,
+        "column": 3,
+        "end_line": 9,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 6,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "state_variable",
+      "name": "payouts",
+      "data_type": "Payout[]",
+      "scope": "plusOnePonzi",
+      "source_location": {
+        "line": 11,
+        "column": 3,
+        "end_line": 11,
+        "end_column": 27
+      },
+      "properties": {
+        "source_location": {
+          "line": 11,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "state_variable",
+      "name": "payoutIndex",
+      "data_type": "uint",
+      "scope": "plusOnePonzi",
+      "source_location": {
+        "line": 12,
+        "column": 3,
+        "end_line": 12,
+        "end_column": 31
+      },
+      "properties": {
+        "source_location": {
+          "line": 12,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "state_variable",
+      "name": "payoutTotal",
+      "data_type": "uint",
+      "scope": "plusOnePonzi",
+      "source_location": {
+        "line": 13,
+        "column": 3,
+        "end_line": 13,
+        "end_column": 31
+      },
+      "properties": {
+        "source_location": {
+          "line": 13,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "constructor_function",
+      "name": "plusOnePonzi",
+      "data_type": null,
+      "scope": "plusOnePonzi",
+      "source_location": {
+        "line": 15,
+        "column": 3,
+        "end_line": 16,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 15,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "if_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "plusOnePonzi",
+      "source_location": {
+        "line": 19,
+        "column": 5,
+        "end_line": 21,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 19,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "plusOnePonzi",
+      "source_location": {
+        "line": 19,
+        "column": 9,
+        "end_line": 19,
+        "end_column": 26
+      },
+      "properties": {
+        "source_location": {
+          "line": 19,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_10": {
+      "id": "dfg_node_10",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "plusOnePonzi",
+      "source_location": {
+        "line": 19,
+        "column": 9,
+        "end_line": 19,
+        "end_column": 18
+      },
+      "properties": {
+        "source_location": {
+          "line": 19,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_11": {
+      "id": "dfg_node_11",
+      "type": "local_variable",
+      "name": "entryIndex",
+      "data_type": "uint",
+      "scope": "plusOnePonzi",
+      "source_location": {
+        "line": 23,
+        "column": 5,
+        "end_line": 23,
+        "end_column": 20
+      },
+      "properties": {
+        "source_location": {
+          "line": 23,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_12": {
+      "id": "dfg_node_12",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "plusOnePonzi",
+      "source_location": {
+        "line": 23,
+        "column": 23,
+        "end_line": 23,
+        "end_column": 37
+      },
+      "properties": {
+        "source_location": {
+          "line": 23,
+          "column": 23
+        }
+      }
+    },
+    "dfg_node_13": {
+      "id": "dfg_node_13",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "plusOnePonzi",
+      "source_location": {
+        "line": 24,
+        "column": 5,
+        "end_line": 24,
+        "end_column": 19
+      },
+      "properties": {
+        "source_location": {
+          "line": 24,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_14": {
+      "id": "dfg_node_14",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "plusOnePonzi",
+      "source_location": {
+        "line": 25,
+        "column": 5,
+        "end_line": 25,
+        "end_column": 42
+      },
+      "properties": {
+        "source_location": {
+          "line": 25,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_15": {
+      "id": "dfg_node_15",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "plusOnePonzi",
+      "source_location": {
+        "line": 25,
+        "column": 5,
+        "end_line": 25,
+        "end_column": 29
+      },
+      "properties": {
+        "source_location": {
+          "line": 25,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_16": {
+      "id": "dfg_node_16",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "plusOnePonzi",
+      "source_location": {
+        "line": 25,
+        "column": 32,
+        "end_line": 25,
+        "end_column": 42
+      },
+      "properties": {
+        "source_location": {
+          "line": 25,
+          "column": 32
+        }
+      }
+    },
+    "dfg_node_17": {
+      "id": "dfg_node_17",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "plusOnePonzi",
+      "source_location": {
+        "line": 26,
+        "column": 5,
+        "end_line": 26,
+        "end_column": 41
+      },
+      "properties": {
+        "source_location": {
+          "line": 26,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_18": {
+      "id": "dfg_node_18",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "plusOnePonzi",
+      "source_location": {
+        "line": 26,
+        "column": 5,
+        "end_line": 26,
+        "end_column": 30
+      },
+      "properties": {
+        "source_location": {
+          "line": 26,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_19": {
+      "id": "dfg_node_19",
+      "type": "while_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "plusOnePonzi",
+      "source_location": {
+        "line": 28,
+        "column": 5,
+        "end_line": 32,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 28,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_20": {
+      "id": "dfg_node_20",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "plusOnePonzi",
+      "source_location": {
+        "line": 28,
+        "column": 12,
+        "end_line": 28,
+        "end_column": 53
+      },
+      "properties": {
+        "source_location": {
+          "line": 28,
+          "column": 12
+        }
+      }
+    },
+    "dfg_node_21": {
+      "id": "dfg_node_21",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "plusOnePonzi",
+      "source_location": {
+        "line": 28,
+        "column": 12,
+        "end_line": 28,
+        "end_column": 38
+      },
+      "properties": {
+        "source_location": {
+          "line": 28,
+          "column": 12
+        }
+      }
+    },
+    "dfg_node_22": {
+      "id": "dfg_node_22",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "plusOnePonzi",
+      "source_location": {
+        "line": 28,
+        "column": 41,
+        "end_line": 28,
+        "end_column": 53
+      },
+      "properties": {
+        "source_location": {
+          "line": 28,
+          "column": 41
+        }
+      }
+    },
+    "dfg_node_23": {
+      "id": "dfg_node_23",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "plusOnePonzi",
+      "source_location": {
+        "line": 29,
+        "column": 22,
+        "end_line": 29,
+        "end_column": 48
+      },
+      "properties": {
+        "source_location": {
+          "line": 29,
+          "column": 22
+        }
+      }
+    },
+    "dfg_node_24": {
+      "id": "dfg_node_24",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "plusOnePonzi",
+      "source_location": {
+        "line": 30,
+        "column": 7,
+        "end_line": 30,
+        "end_column": 65
+      },
+      "properties": {
+        "source_location": {
+          "line": 30,
+          "column": 7
+        }
+      }
+    },
+    "dfg_node_25": {
+      "id": "dfg_node_25",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "plusOnePonzi",
+      "source_location": {
+        "line": 30,
+        "column": 7,
+        "end_line": 30,
+        "end_column": 37
+      },
+      "properties": {
+        "source_location": {
+          "line": 30,
+          "column": 7
+        }
+      }
+    },
+    "dfg_node_26": {
+      "id": "dfg_node_26",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "plusOnePonzi",
+      "source_location": {
+        "line": 30,
+        "column": 7,
+        "end_line": 30,
+        "end_column": 32
+      },
+      "properties": {
+        "source_location": {
+          "line": 30,
+          "column": 7
+        }
+      }
+    },
+    "dfg_node_27": {
+      "id": "dfg_node_27",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "plusOnePonzi",
+      "source_location": {
+        "line": 30,
+        "column": 38,
+        "end_line": 30,
+        "end_column": 64
+      },
+      "properties": {
+        "source_location": {
+          "line": 30,
+          "column": 38
+        }
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_1",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_1",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_1",
+      "target": "dfg_node_7",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 959,
+    "source_line": 960,
+    "label": 1,
+    "mode": "standard",
+    "contract_name": "plusOnePonzi",
+    "timestamp": "20251027_225116"
+  }
+}

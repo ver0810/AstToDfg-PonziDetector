@@ -1,0 +1,554 @@
+{
+  "contract": "RobinHoodPonzi",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "RobinHoodPonzi",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 1,
+        "column": 1,
+        "end_line": 143,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "participants",
+      "data_type": "Participant[]",
+      "scope": "RobinHoodPonzi",
+      "source_location": {
+        "line": 23,
+        "column": 3,
+        "end_line": 23,
+        "end_column": 38
+      },
+      "properties": {
+        "source_location": {
+          "line": 23,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "state_variable",
+      "name": "payoutIdx",
+      "data_type": "uint",
+      "scope": "RobinHoodPonzi",
+      "source_location": {
+        "line": 25,
+        "column": 3,
+        "end_line": 25,
+        "end_column": 30
+      },
+      "properties": {
+        "source_location": {
+          "line": 25,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "state_variable",
+      "name": "collectedFees",
+      "data_type": "uint",
+      "scope": "RobinHoodPonzi",
+      "source_location": {
+        "line": 26,
+        "column": 3,
+        "end_line": 26,
+        "end_column": 30
+      },
+      "properties": {
+        "source_location": {
+          "line": 26,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "state_variable",
+      "name": "balance",
+      "data_type": "uint",
+      "scope": "RobinHoodPonzi",
+      "source_location": {
+        "line": 27,
+        "column": 3,
+        "end_line": 27,
+        "end_column": 28
+      },
+      "properties": {
+        "source_location": {
+          "line": 27,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "state_variable",
+      "name": "fee",
+      "data_type": "uint",
+      "scope": "RobinHoodPonzi",
+      "source_location": {
+        "line": 28,
+        "column": 3,
+        "end_line": 28,
+        "end_column": 24
+      },
+      "properties": {
+        "source_location": {
+          "line": 28,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "state_variable",
+      "name": "factor",
+      "data_type": "uint",
+      "scope": "RobinHoodPonzi",
+      "source_location": {
+        "line": 29,
+        "column": 3,
+        "end_line": 29,
+        "end_column": 29
+      },
+      "properties": {
+        "source_location": {
+          "line": 29,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "state_variable",
+      "name": "owner",
+      "data_type": "address",
+      "scope": "RobinHoodPonzi",
+      "source_location": {
+        "line": 31,
+        "column": 3,
+        "end_line": 31,
+        "end_column": 25
+      },
+      "properties": {
+        "source_location": {
+          "line": 31,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "constructor_function",
+      "name": "RobinHoodPonzi",
+      "data_type": null,
+      "scope": "RobinHoodPonzi",
+      "source_location": {
+        "line": 37,
+        "column": 3,
+        "end_line": 39,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 37,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_10": {
+      "id": "dfg_node_10",
+      "type": "function",
+      "name": "enter",
+      "data_type": null,
+      "scope": "RobinHoodPonzi",
+      "source_location": {
+        "line": 47,
+        "column": 3,
+        "end_line": 103,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 47,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_11": {
+      "id": "dfg_node_11",
+      "type": "function",
+      "name": "Infos",
+      "data_type": null,
+      "scope": "RobinHoodPonzi",
+      "source_location": {
+        "line": 116,
+        "column": 2,
+        "end_line": 124,
+        "end_column": 7
+      },
+      "properties": {
+        "source_location": {
+          "line": 116,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_13": {
+      "id": "dfg_node_13",
+      "type": "parameter",
+      "name": "Owner",
+      "data_type": "address",
+      "scope": "Infos_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "Infos"
+      }
+    },
+    "dfg_node_15": {
+      "id": "dfg_node_15",
+      "type": "parameter",
+      "name": "BalanceInFinney",
+      "data_type": "uint",
+      "scope": "Infos_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "Infos"
+      }
+    },
+    "dfg_node_17": {
+      "id": "dfg_node_17",
+      "type": "parameter",
+      "name": "Participants",
+      "data_type": "uint",
+      "scope": "Infos_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "Infos"
+      }
+    },
+    "dfg_node_19": {
+      "id": "dfg_node_19",
+      "type": "parameter",
+      "name": "PayOutIndex",
+      "data_type": "uint",
+      "scope": "Infos_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "Infos"
+      }
+    },
+    "dfg_node_21": {
+      "id": "dfg_node_21",
+      "type": "parameter",
+      "name": "NextPayout",
+      "data_type": "uint",
+      "scope": "Infos_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "Infos"
+      }
+    },
+    "dfg_node_23": {
+      "id": "dfg_node_23",
+      "type": "parameter",
+      "name": "info",
+      "data_type": "string",
+      "scope": "Infos_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "Infos"
+      }
+    },
+    "dfg_node_24": {
+      "id": "dfg_node_24",
+      "type": "function",
+      "name": "participantDetails",
+      "data_type": null,
+      "scope": "RobinHoodPonzi",
+      "source_location": {
+        "line": 126,
+        "column": 2,
+        "end_line": 142,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 126,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_26": {
+      "id": "dfg_node_26",
+      "type": "parameter",
+      "name": "Address",
+      "data_type": "address",
+      "scope": "participantDetails_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "participantDetails"
+      }
+    },
+    "dfg_node_28": {
+      "id": "dfg_node_28",
+      "type": "parameter",
+      "name": "PayinInFinney",
+      "data_type": "uint",
+      "scope": "participantDetails_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "participantDetails"
+      }
+    },
+    "dfg_node_30": {
+      "id": "dfg_node_30",
+      "type": "parameter",
+      "name": "PayoutInFinney",
+      "data_type": "uint",
+      "scope": "participantDetails_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "participantDetails"
+      }
+    },
+    "dfg_node_32": {
+      "id": "dfg_node_32",
+      "type": "parameter",
+      "name": "PaidOut",
+      "data_type": "string",
+      "scope": "participantDetails_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "participantDetails"
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_1",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_1",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_1",
+      "target": "dfg_node_7",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_1",
+      "target": "dfg_node_8",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_1",
+      "target": "dfg_node_9",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_9": {
+      "id": "dfg_edge_9",
+      "source": "dfg_node_1",
+      "target": "dfg_node_10",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_10": {
+      "id": "dfg_edge_10",
+      "source": "dfg_node_11",
+      "target": "dfg_node_13",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_11": {
+      "id": "dfg_edge_11",
+      "source": "dfg_node_11",
+      "target": "dfg_node_15",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_12": {
+      "id": "dfg_edge_12",
+      "source": "dfg_node_11",
+      "target": "dfg_node_17",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_13": {
+      "id": "dfg_edge_13",
+      "source": "dfg_node_11",
+      "target": "dfg_node_19",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_14": {
+      "id": "dfg_edge_14",
+      "source": "dfg_node_11",
+      "target": "dfg_node_21",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_15": {
+      "id": "dfg_edge_15",
+      "source": "dfg_node_11",
+      "target": "dfg_node_23",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_16": {
+      "id": "dfg_edge_16",
+      "source": "dfg_node_1",
+      "target": "dfg_node_11",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_17": {
+      "id": "dfg_edge_17",
+      "source": "dfg_node_24",
+      "target": "dfg_node_26",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_18": {
+      "id": "dfg_edge_18",
+      "source": "dfg_node_24",
+      "target": "dfg_node_28",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_19": {
+      "id": "dfg_edge_19",
+      "source": "dfg_node_24",
+      "target": "dfg_node_30",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_20": {
+      "id": "dfg_edge_20",
+      "source": "dfg_node_24",
+      "target": "dfg_node_32",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_21": {
+      "id": "dfg_edge_21",
+      "source": "dfg_node_1",
+      "target": "dfg_node_24",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 166,
+    "source_line": 167,
+    "label": 1,
+    "mode": "compact",
+    "contract_name": "RobinHoodPonzi",
+    "timestamp": "20251029_142838"
+  },
+  "label": 1
+}

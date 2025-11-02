@@ -1,0 +1,294 @@
+{
+  "contract": "howbadlycouldthisgowrong",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "function",
+      "name": "buyObject",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 6,
+        "column": 5,
+        "end_line": 6,
+        "end_column": 61
+      },
+      "properties": {
+        "source_location": {
+          "line": 6,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "function",
+      "name": "claimFunds",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 11,
+        "column": 5,
+        "end_line": 11,
+        "end_column": 34
+      },
+      "properties": {
+        "source_location": {
+          "line": 11,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "function",
+      "name": "balanceOf",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 17,
+        "column": 3,
+        "end_line": 17,
+        "end_column": 65
+      },
+      "properties": {
+        "source_location": {
+          "line": 17,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "parameter",
+      "name": "param_3",
+      "data_type": "uint256",
+      "scope": "balanceOf_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "balanceOf"
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "function",
+      "name": "transfer",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 18,
+        "column": 3,
+        "end_line": 18,
+        "end_column": 70
+      },
+      "properties": {
+        "source_location": {
+          "line": 18,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "parameter",
+      "name": "param_6",
+      "data_type": "bool",
+      "scope": "transfer_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "transfer"
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "contract",
+      "name": "howbadlycouldthisgowrong",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 25,
+        "column": 1,
+        "end_line": 58,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 25,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_10": {
+      "id": "dfg_node_10",
+      "type": "state_variable",
+      "name": "destinationAddress",
+      "data_type": "address",
+      "scope": "howbadlycouldthisgowrong",
+      "source_location": {
+        "line": 27,
+        "column": 3,
+        "end_line": 27,
+        "end_column": 82
+      },
+      "properties": {
+        "source_location": {
+          "line": 27,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_11": {
+      "id": "dfg_node_11",
+      "type": "state_variable",
+      "name": "farmer",
+      "data_type": "address",
+      "scope": "howbadlycouldthisgowrong",
+      "source_location": {
+        "line": 36,
+        "column": 1,
+        "end_line": 36,
+        "end_column": 68
+      },
+      "properties": {
+        "source_location": {
+          "line": 36,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_12": {
+      "id": "dfg_node_12",
+      "type": "function",
+      "name": "getMoney",
+      "data_type": null,
+      "scope": "howbadlycouldthisgowrong",
+      "source_location": {
+        "line": 39,
+        "column": 5,
+        "end_line": 42,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 39,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_13": {
+      "id": "dfg_node_13",
+      "type": "function",
+      "name": "sowCorn",
+      "data_type": null,
+      "scope": "howbadlycouldthisgowrong",
+      "source_location": {
+        "line": 44,
+        "column": 5,
+        "end_line": 50,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 44,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_14": {
+      "id": "dfg_node_14",
+      "type": "function",
+      "name": "reap",
+      "data_type": null,
+      "scope": "howbadlycouldthisgowrong",
+      "source_location": {
+        "line": 52,
+        "column": 5,
+        "end_line": 55,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 52,
+          "column": 5
+        }
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_3",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_6",
+      "target": "dfg_node_8",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_9",
+      "target": "dfg_node_10",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_9",
+      "target": "dfg_node_11",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_9",
+      "target": "dfg_node_12",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_9",
+      "target": "dfg_node_13",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_9",
+      "target": "dfg_node_14",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 813,
+    "source_line": 814,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "howbadlycouldthisgowrong",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

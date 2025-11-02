@@ -1,0 +1,1159 @@
+{
+  "contract": "Owned",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "Owned",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 4,
+        "column": 1,
+        "end_line": 16,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 4,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "owner",
+      "data_type": "address",
+      "scope": "Owned",
+      "source_location": {
+        "line": 5,
+        "column": 5,
+        "end_line": 5,
+        "end_column": 19
+      },
+      "properties": {
+        "source_location": {
+          "line": 5,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "constructor_function",
+      "name": "Owned",
+      "data_type": null,
+      "scope": "Owned",
+      "source_location": {
+        "line": 13,
+        "column": 5,
+        "end_line": 15,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 13,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "contract",
+      "name": "Mortal",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 19,
+        "column": 1,
+        "end_line": 25,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 19,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "function",
+      "name": "kill",
+      "data_type": null,
+      "scope": "Mortal",
+      "source_location": {
+        "line": 21,
+        "column": 5,
+        "end_line": 24,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 21,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "contract",
+      "name": "Slotthereum",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 28,
+        "column": 1,
+        "end_line": 252,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 28,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "state_variable",
+      "name": "games",
+      "data_type": "Game[]",
+      "scope": "Slotthereum",
+      "source_location": {
+        "line": 30,
+        "column": 5,
+        "end_line": 30,
+        "end_column": 25
+      },
+      "properties": {
+        "source_location": {
+          "line": 30,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "state_variable",
+      "name": "numberOfGames",
+      "data_type": "uint",
+      "scope": "Slotthereum",
+      "source_location": {
+        "line": 31,
+        "column": 5,
+        "end_line": 31,
+        "end_column": 35
+      },
+      "properties": {
+        "source_location": {
+          "line": 31,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "state_variable",
+      "name": "minBetAmount",
+      "data_type": "uint",
+      "scope": "Slotthereum",
+      "source_location": {
+        "line": 32,
+        "column": 5,
+        "end_line": 32,
+        "end_column": 35
+      },
+      "properties": {
+        "source_location": {
+          "line": 32,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_10": {
+      "id": "dfg_node_10",
+      "type": "state_variable",
+      "name": "maxBetAmount",
+      "data_type": "uint",
+      "scope": "Slotthereum",
+      "source_location": {
+        "line": 33,
+        "column": 5,
+        "end_line": 33,
+        "end_column": 53
+      },
+      "properties": {
+        "source_location": {
+          "line": 33,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_11": {
+      "id": "dfg_node_11",
+      "type": "state_variable",
+      "name": "pointer",
+      "data_type": "uint8",
+      "scope": "Slotthereum",
+      "source_location": {
+        "line": 34,
+        "column": 5,
+        "end_line": 34,
+        "end_column": 31
+      },
+      "properties": {
+        "source_location": {
+          "line": 34,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_12": {
+      "id": "dfg_node_12",
+      "type": "function",
+      "name": "notify",
+      "data_type": null,
+      "scope": "Slotthereum",
+      "source_location": {
+        "line": 80,
+        "column": 5,
+        "end_line": 102,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 80,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_13": {
+      "id": "dfg_node_13",
+      "type": "function",
+      "name": "getBlockHash",
+      "data_type": null,
+      "scope": "Slotthereum",
+      "source_location": {
+        "line": 104,
+        "column": 5,
+        "end_line": 112,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 104,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_15": {
+      "id": "dfg_node_15",
+      "type": "parameter",
+      "name": "blockHash",
+      "data_type": "bytes32",
+      "scope": "getBlockHash_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getBlockHash"
+      }
+    },
+    "dfg_node_16": {
+      "id": "dfg_node_16",
+      "type": "function",
+      "name": "getNumber",
+      "data_type": null,
+      "scope": "Slotthereum",
+      "source_location": {
+        "line": 114,
+        "column": 5,
+        "end_line": 123,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 114,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_18": {
+      "id": "dfg_node_18",
+      "type": "parameter",
+      "name": "param_16",
+      "data_type": "uint8",
+      "scope": "getNumber_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getNumber"
+      }
+    },
+    "dfg_node_19": {
+      "id": "dfg_node_19",
+      "type": "function",
+      "name": "placeBet",
+      "data_type": null,
+      "scope": "Slotthereum",
+      "source_location": {
+        "line": 125,
+        "column": 5,
+        "end_line": 182,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 125,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_21": {
+      "id": "dfg_node_21",
+      "type": "parameter",
+      "name": "param_19",
+      "data_type": "bool",
+      "scope": "placeBet_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "placeBet"
+      }
+    },
+    "dfg_node_22": {
+      "id": "dfg_node_22",
+      "type": "function",
+      "name": "setMinBetAmount",
+      "data_type": null,
+      "scope": "Slotthereum",
+      "source_location": {
+        "line": 184,
+        "column": 5,
+        "end_line": 188,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 184,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_24": {
+      "id": "dfg_node_24",
+      "type": "parameter",
+      "name": "param_22",
+      "data_type": "uint",
+      "scope": "setMinBetAmount_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "setMinBetAmount"
+      }
+    },
+    "dfg_node_25": {
+      "id": "dfg_node_25",
+      "type": "function",
+      "name": "setMaxBetAmount",
+      "data_type": null,
+      "scope": "Slotthereum",
+      "source_location": {
+        "line": 190,
+        "column": 5,
+        "end_line": 194,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 190,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_27": {
+      "id": "dfg_node_27",
+      "type": "parameter",
+      "name": "param_25",
+      "data_type": "uint",
+      "scope": "setMaxBetAmount_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "setMaxBetAmount"
+      }
+    },
+    "dfg_node_28": {
+      "id": "dfg_node_28",
+      "type": "function",
+      "name": "setPointer",
+      "data_type": null,
+      "scope": "Slotthereum",
+      "source_location": {
+        "line": 196,
+        "column": 5,
+        "end_line": 200,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 196,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_30": {
+      "id": "dfg_node_30",
+      "type": "parameter",
+      "name": "param_28",
+      "data_type": "uint",
+      "scope": "setPointer_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "setPointer"
+      }
+    },
+    "dfg_node_31": {
+      "id": "dfg_node_31",
+      "type": "function",
+      "name": "getGameIds",
+      "data_type": null,
+      "scope": "Slotthereum",
+      "source_location": {
+        "line": 202,
+        "column": 5,
+        "end_line": 208,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 202,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_33": {
+      "id": "dfg_node_33",
+      "type": "parameter",
+      "name": "param_31",
+      "data_type": "uint[]",
+      "scope": "getGameIds_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getGameIds"
+      }
+    },
+    "dfg_node_34": {
+      "id": "dfg_node_34",
+      "type": "function",
+      "name": "getGamePlayer",
+      "data_type": null,
+      "scope": "Slotthereum",
+      "source_location": {
+        "line": 210,
+        "column": 5,
+        "end_line": 212,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 210,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_36": {
+      "id": "dfg_node_36",
+      "type": "parameter",
+      "name": "param_34",
+      "data_type": "address",
+      "scope": "getGamePlayer_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getGamePlayer"
+      }
+    },
+    "dfg_node_37": {
+      "id": "dfg_node_37",
+      "type": "function",
+      "name": "getGameAmount",
+      "data_type": null,
+      "scope": "Slotthereum",
+      "source_location": {
+        "line": 214,
+        "column": 5,
+        "end_line": 216,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 214,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_39": {
+      "id": "dfg_node_39",
+      "type": "parameter",
+      "name": "param_37",
+      "data_type": "uint",
+      "scope": "getGameAmount_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getGameAmount"
+      }
+    },
+    "dfg_node_40": {
+      "id": "dfg_node_40",
+      "type": "function",
+      "name": "getGameStart",
+      "data_type": null,
+      "scope": "Slotthereum",
+      "source_location": {
+        "line": 218,
+        "column": 5,
+        "end_line": 220,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 218,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_42": {
+      "id": "dfg_node_42",
+      "type": "parameter",
+      "name": "param_40",
+      "data_type": "uint8",
+      "scope": "getGameStart_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getGameStart"
+      }
+    },
+    "dfg_node_43": {
+      "id": "dfg_node_43",
+      "type": "function",
+      "name": "getGameEnd",
+      "data_type": null,
+      "scope": "Slotthereum",
+      "source_location": {
+        "line": 222,
+        "column": 5,
+        "end_line": 224,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 222,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_45": {
+      "id": "dfg_node_45",
+      "type": "parameter",
+      "name": "param_43",
+      "data_type": "uint8",
+      "scope": "getGameEnd_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getGameEnd"
+      }
+    },
+    "dfg_node_46": {
+      "id": "dfg_node_46",
+      "type": "function",
+      "name": "getGameHash",
+      "data_type": null,
+      "scope": "Slotthereum",
+      "source_location": {
+        "line": 226,
+        "column": 5,
+        "end_line": 228,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 226,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_48": {
+      "id": "dfg_node_48",
+      "type": "parameter",
+      "name": "param_46",
+      "data_type": "bytes32",
+      "scope": "getGameHash_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getGameHash"
+      }
+    },
+    "dfg_node_49": {
+      "id": "dfg_node_49",
+      "type": "function",
+      "name": "getGameNumber",
+      "data_type": null,
+      "scope": "Slotthereum",
+      "source_location": {
+        "line": 230,
+        "column": 5,
+        "end_line": 232,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 230,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_51": {
+      "id": "dfg_node_51",
+      "type": "parameter",
+      "name": "param_49",
+      "data_type": "uint8",
+      "scope": "getGameNumber_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getGameNumber"
+      }
+    },
+    "dfg_node_52": {
+      "id": "dfg_node_52",
+      "type": "function",
+      "name": "getGameWin",
+      "data_type": null,
+      "scope": "Slotthereum",
+      "source_location": {
+        "line": 234,
+        "column": 5,
+        "end_line": 236,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 234,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_54": {
+      "id": "dfg_node_54",
+      "type": "parameter",
+      "name": "param_52",
+      "data_type": "bool",
+      "scope": "getGameWin_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getGameWin"
+      }
+    },
+    "dfg_node_55": {
+      "id": "dfg_node_55",
+      "type": "function",
+      "name": "getGamePrize",
+      "data_type": null,
+      "scope": "Slotthereum",
+      "source_location": {
+        "line": 238,
+        "column": 5,
+        "end_line": 240,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 238,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_57": {
+      "id": "dfg_node_57",
+      "type": "parameter",
+      "name": "param_55",
+      "data_type": "uint",
+      "scope": "getGamePrize_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getGamePrize"
+      }
+    },
+    "dfg_node_58": {
+      "id": "dfg_node_58",
+      "type": "function",
+      "name": "getMinBetAmount",
+      "data_type": null,
+      "scope": "Slotthereum",
+      "source_location": {
+        "line": 242,
+        "column": 5,
+        "end_line": 244,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 242,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_60": {
+      "id": "dfg_node_60",
+      "type": "parameter",
+      "name": "param_58",
+      "data_type": "uint",
+      "scope": "getMinBetAmount_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getMinBetAmount"
+      }
+    },
+    "dfg_node_61": {
+      "id": "dfg_node_61",
+      "type": "function",
+      "name": "getMaxBetAmount",
+      "data_type": null,
+      "scope": "Slotthereum",
+      "source_location": {
+        "line": 246,
+        "column": 5,
+        "end_line": 248,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 246,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_63": {
+      "id": "dfg_node_63",
+      "type": "parameter",
+      "name": "param_61",
+      "data_type": "uint",
+      "scope": "getMaxBetAmount_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getMaxBetAmount"
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_4",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_6",
+      "target": "dfg_node_7",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_6",
+      "target": "dfg_node_8",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_6",
+      "target": "dfg_node_9",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_6",
+      "target": "dfg_node_10",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_6",
+      "target": "dfg_node_11",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_9": {
+      "id": "dfg_edge_9",
+      "source": "dfg_node_6",
+      "target": "dfg_node_12",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_10": {
+      "id": "dfg_edge_10",
+      "source": "dfg_node_13",
+      "target": "dfg_node_15",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_11": {
+      "id": "dfg_edge_11",
+      "source": "dfg_node_6",
+      "target": "dfg_node_13",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_12": {
+      "id": "dfg_edge_12",
+      "source": "dfg_node_16",
+      "target": "dfg_node_18",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_13": {
+      "id": "dfg_edge_13",
+      "source": "dfg_node_6",
+      "target": "dfg_node_16",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_14": {
+      "id": "dfg_edge_14",
+      "source": "dfg_node_19",
+      "target": "dfg_node_21",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_15": {
+      "id": "dfg_edge_15",
+      "source": "dfg_node_6",
+      "target": "dfg_node_19",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_16": {
+      "id": "dfg_edge_16",
+      "source": "dfg_node_22",
+      "target": "dfg_node_24",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_17": {
+      "id": "dfg_edge_17",
+      "source": "dfg_node_6",
+      "target": "dfg_node_22",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_18": {
+      "id": "dfg_edge_18",
+      "source": "dfg_node_25",
+      "target": "dfg_node_27",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_19": {
+      "id": "dfg_edge_19",
+      "source": "dfg_node_6",
+      "target": "dfg_node_25",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_20": {
+      "id": "dfg_edge_20",
+      "source": "dfg_node_28",
+      "target": "dfg_node_30",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_21": {
+      "id": "dfg_edge_21",
+      "source": "dfg_node_6",
+      "target": "dfg_node_28",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_22": {
+      "id": "dfg_edge_22",
+      "source": "dfg_node_31",
+      "target": "dfg_node_33",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_23": {
+      "id": "dfg_edge_23",
+      "source": "dfg_node_6",
+      "target": "dfg_node_31",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_24": {
+      "id": "dfg_edge_24",
+      "source": "dfg_node_34",
+      "target": "dfg_node_36",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_25": {
+      "id": "dfg_edge_25",
+      "source": "dfg_node_6",
+      "target": "dfg_node_34",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_26": {
+      "id": "dfg_edge_26",
+      "source": "dfg_node_37",
+      "target": "dfg_node_39",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_27": {
+      "id": "dfg_edge_27",
+      "source": "dfg_node_6",
+      "target": "dfg_node_37",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_28": {
+      "id": "dfg_edge_28",
+      "source": "dfg_node_40",
+      "target": "dfg_node_42",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_29": {
+      "id": "dfg_edge_29",
+      "source": "dfg_node_6",
+      "target": "dfg_node_40",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_30": {
+      "id": "dfg_edge_30",
+      "source": "dfg_node_43",
+      "target": "dfg_node_45",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_31": {
+      "id": "dfg_edge_31",
+      "source": "dfg_node_6",
+      "target": "dfg_node_43",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_32": {
+      "id": "dfg_edge_32",
+      "source": "dfg_node_46",
+      "target": "dfg_node_48",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_33": {
+      "id": "dfg_edge_33",
+      "source": "dfg_node_6",
+      "target": "dfg_node_46",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_34": {
+      "id": "dfg_edge_34",
+      "source": "dfg_node_49",
+      "target": "dfg_node_51",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_35": {
+      "id": "dfg_edge_35",
+      "source": "dfg_node_6",
+      "target": "dfg_node_49",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_36": {
+      "id": "dfg_edge_36",
+      "source": "dfg_node_52",
+      "target": "dfg_node_54",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_37": {
+      "id": "dfg_edge_37",
+      "source": "dfg_node_6",
+      "target": "dfg_node_52",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_38": {
+      "id": "dfg_edge_38",
+      "source": "dfg_node_55",
+      "target": "dfg_node_57",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_39": {
+      "id": "dfg_edge_39",
+      "source": "dfg_node_6",
+      "target": "dfg_node_55",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_40": {
+      "id": "dfg_edge_40",
+      "source": "dfg_node_58",
+      "target": "dfg_node_60",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_41": {
+      "id": "dfg_edge_41",
+      "source": "dfg_node_6",
+      "target": "dfg_node_58",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_42": {
+      "id": "dfg_edge_42",
+      "source": "dfg_node_61",
+      "target": "dfg_node_63",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_43": {
+      "id": "dfg_edge_43",
+      "source": "dfg_node_6",
+      "target": "dfg_node_61",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 333,
+    "source_line": 334,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "Owned",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

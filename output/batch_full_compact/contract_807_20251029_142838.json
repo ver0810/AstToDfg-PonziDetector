@@ -1,0 +1,288 @@
+{
+  "contract": "DataService",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "DataService",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 1,
+        "column": 1,
+        "end_line": 91,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "organizer",
+      "data_type": "address",
+      "scope": "DataService",
+      "source_location": {
+        "line": 20,
+        "column": 5,
+        "end_line": 20,
+        "end_column": 31
+      },
+      "properties": {
+        "source_location": {
+          "line": 20,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "state_variable",
+      "name": "dataRequests",
+      "data_type": "DataRequest[]",
+      "scope": "DataService",
+      "source_location": {
+        "line": 21,
+        "column": 5,
+        "end_line": 21,
+        "end_column": 40
+      },
+      "properties": {
+        "source_location": {
+          "line": 21,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "constructor_function",
+      "name": "DataService",
+      "data_type": null,
+      "scope": "DataService",
+      "source_location": {
+        "line": 24,
+        "column": 5,
+        "end_line": 26,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 24,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "function",
+      "name": "addDataRequest",
+      "data_type": null,
+      "scope": "DataService",
+      "source_location": {
+        "line": 34,
+        "column": 5,
+        "end_line": 47,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 34,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "function",
+      "name": "getDataRequestLength",
+      "data_type": null,
+      "scope": "DataService",
+      "source_location": {
+        "line": 50,
+        "column": 5,
+        "end_line": 52,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 50,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "function",
+      "name": "getDataRequest",
+      "data_type": null,
+      "scope": "DataService",
+      "source_location": {
+        "line": 55,
+        "column": 5,
+        "end_line": 58,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 55,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "function",
+      "name": "getDataPoint",
+      "data_type": null,
+      "scope": "DataService",
+      "source_location": {
+        "line": 61,
+        "column": 5,
+        "end_line": 66,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 61,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "function",
+      "name": "addDataPoint",
+      "data_type": null,
+      "scope": "DataService",
+      "source_location": {
+        "line": 69,
+        "column": 5,
+        "end_line": 83,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 69,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_10": {
+      "id": "dfg_node_10",
+      "type": "function",
+      "name": "destroy",
+      "data_type": null,
+      "scope": "DataService",
+      "source_location": {
+        "line": 86,
+        "column": 5,
+        "end_line": 90,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 86,
+          "column": 5
+        }
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_1",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_1",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_1",
+      "target": "dfg_node_7",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_1",
+      "target": "dfg_node_8",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_1",
+      "target": "dfg_node_9",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_9": {
+      "id": "dfg_edge_9",
+      "source": "dfg_node_1",
+      "target": "dfg_node_10",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 807,
+    "source_line": 808,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "DataService",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

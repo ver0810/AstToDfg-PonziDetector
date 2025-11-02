@@ -1,0 +1,400 @@
+{
+  "contract": "Fundraiser",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "Fundraiser",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 3,
+        "column": 1,
+        "end_line": 133,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "signer1",
+      "data_type": "address",
+      "scope": "Fundraiser",
+      "source_location": {
+        "line": 7,
+        "column": 3,
+        "end_line": 7,
+        "end_column": 19
+      },
+      "properties": {
+        "source_location": {
+          "line": 7,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "state_variable",
+      "name": "signer2",
+      "data_type": "address",
+      "scope": "Fundraiser",
+      "source_location": {
+        "line": 8,
+        "column": 3,
+        "end_line": 8,
+        "end_column": 19
+      },
+      "properties": {
+        "source_location": {
+          "line": 8,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "state_variable",
+      "name": "accept",
+      "data_type": "bool",
+      "scope": "Fundraiser",
+      "source_location": {
+        "line": 9,
+        "column": 3,
+        "end_line": 9,
+        "end_column": 15
+      },
+      "properties": {
+        "source_location": {
+          "line": 9,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "state_variable",
+      "name": "signer1_proposal",
+      "data_type": "Proposal",
+      "scope": "Fundraiser",
+      "source_location": {
+        "line": 24,
+        "column": 3,
+        "end_line": 24,
+        "end_column": 29
+      },
+      "properties": {
+        "source_location": {
+          "line": 24,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "state_variable",
+      "name": "signer2_proposal",
+      "data_type": "Proposal",
+      "scope": "Fundraiser",
+      "source_location": {
+        "line": 25,
+        "column": 3,
+        "end_line": 25,
+        "end_column": 29
+      },
+      "properties": {
+        "source_location": {
+          "line": 25,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "constructor_function",
+      "name": "Fundraiser",
+      "data_type": null,
+      "scope": "Fundraiser",
+      "source_location": {
+        "line": 28,
+        "column": 3,
+        "end_line": 36,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 28,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "function",
+      "name": "Contribute",
+      "data_type": null,
+      "scope": "Fundraiser",
+      "source_location": {
+        "line": 51,
+        "column": 3,
+        "end_line": 61,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 51,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "function",
+      "name": "Withdraw",
+      "data_type": null,
+      "scope": "Fundraiser",
+      "source_location": {
+        "line": 65,
+        "column": 3,
+        "end_line": 81,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 65,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_10": {
+      "id": "dfg_node_10",
+      "type": "function",
+      "name": "Close",
+      "data_type": null,
+      "scope": "Fundraiser",
+      "source_location": {
+        "line": 83,
+        "column": 3,
+        "end_line": 94,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 83,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_11": {
+      "id": "dfg_node_11",
+      "type": "function",
+      "name": "Open",
+      "data_type": null,
+      "scope": "Fundraiser",
+      "source_location": {
+        "line": 96,
+        "column": 3,
+        "end_line": 105,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 96,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_12": {
+      "id": "dfg_node_12",
+      "type": "function",
+      "name": "MaybePerformWithdraw",
+      "data_type": null,
+      "scope": "Fundraiser",
+      "source_location": {
+        "line": 107,
+        "column": 3,
+        "end_line": 116,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 107,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_13": {
+      "id": "dfg_node_13",
+      "type": "function",
+      "name": "MaybePerformClose",
+      "data_type": null,
+      "scope": "Fundraiser",
+      "source_location": {
+        "line": 118,
+        "column": 3,
+        "end_line": 125,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 118,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_14": {
+      "id": "dfg_node_14",
+      "type": "function",
+      "name": "MaybePerformOpen",
+      "data_type": null,
+      "scope": "Fundraiser",
+      "source_location": {
+        "line": 127,
+        "column": 3,
+        "end_line": 132,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 127,
+          "column": 3
+        }
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_1",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_1",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_1",
+      "target": "dfg_node_7",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_1",
+      "target": "dfg_node_8",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_1",
+      "target": "dfg_node_9",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_9": {
+      "id": "dfg_edge_9",
+      "source": "dfg_node_1",
+      "target": "dfg_node_10",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_10": {
+      "id": "dfg_edge_10",
+      "source": "dfg_node_1",
+      "target": "dfg_node_11",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_11": {
+      "id": "dfg_edge_11",
+      "source": "dfg_node_1",
+      "target": "dfg_node_12",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_12": {
+      "id": "dfg_edge_12",
+      "source": "dfg_node_1",
+      "target": "dfg_node_13",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_13": {
+      "id": "dfg_edge_13",
+      "source": "dfg_node_1",
+      "target": "dfg_node_14",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 1370,
+    "source_line": 1371,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "Fundraiser",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

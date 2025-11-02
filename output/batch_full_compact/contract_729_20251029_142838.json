@@ -1,0 +1,1295 @@
+{
+  "contract": "Owned",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "function",
+      "name": "add",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 23,
+        "column": 6,
+        "end_line": 27,
+        "end_column": 7
+      },
+      "properties": {
+        "source_location": {
+          "line": 23,
+          "column": 6
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "parameter",
+      "name": "param_1",
+      "data_type": "uint256",
+      "scope": "add_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "add"
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "function",
+      "name": "sub",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 36,
+        "column": 5,
+        "end_line": 39,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 36,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "parameter",
+      "name": "param_4",
+      "data_type": "uint256",
+      "scope": "sub_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "sub"
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "contract",
+      "name": "Owned",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 47,
+        "column": 1,
+        "end_line": 100,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 47,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "state_variable",
+      "name": "owner",
+      "data_type": "address",
+      "scope": "Owned",
+      "source_location": {
+        "line": 52,
+        "column": 5,
+        "end_line": 52,
+        "end_column": 26
+      },
+      "properties": {
+        "source_location": {
+          "line": 52,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "state_variable",
+      "name": "newOwner",
+      "data_type": "address",
+      "scope": "Owned",
+      "source_location": {
+        "line": 56,
+        "column": 5,
+        "end_line": 56,
+        "end_column": 29
+      },
+      "properties": {
+        "source_location": {
+          "line": 56,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_10": {
+      "id": "dfg_node_10",
+      "type": "constructor_function",
+      "name": "Owned",
+      "data_type": null,
+      "scope": "Owned",
+      "source_location": {
+        "line": 69,
+        "column": 5,
+        "end_line": 71,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 69,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_11": {
+      "id": "dfg_node_11",
+      "type": "function",
+      "name": "transferOwnership",
+      "data_type": null,
+      "scope": "Owned",
+      "source_location": {
+        "line": 86,
+        "column": 5,
+        "end_line": 88,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 86,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_12": {
+      "id": "dfg_node_12",
+      "type": "function",
+      "name": "acceptOwnership",
+      "data_type": null,
+      "scope": "Owned",
+      "source_location": {
+        "line": 93,
+        "column": 5,
+        "end_line": 99,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 93,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_13": {
+      "id": "dfg_node_13",
+      "type": "contract",
+      "name": "ERC20Token",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 107,
+        "column": 1,
+        "end_line": 207,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 107,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_14": {
+      "id": "dfg_node_14",
+      "type": "state_variable",
+      "name": "totalSupply",
+      "data_type": "uint256",
+      "scope": "ERC20Token",
+      "source_location": {
+        "line": 116,
+        "column": 5,
+        "end_line": 116,
+        "end_column": 36
+      },
+      "properties": {
+        "source_location": {
+          "line": 116,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_15": {
+      "id": "dfg_node_15",
+      "type": "state_variable",
+      "name": "balanceOf",
+      "data_type": "mapping(address => uint256)",
+      "scope": "ERC20Token",
+      "source_location": {
+        "line": 121,
+        "column": 5,
+        "end_line": 121,
+        "end_column": 50
+      },
+      "properties": {
+        "source_location": {
+          "line": 121,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_16": {
+      "id": "dfg_node_16",
+      "type": "state_variable",
+      "name": "allowance",
+      "data_type": "mapping(address => mapping (address => uint256))",
+      "scope": "ERC20Token",
+      "source_location": {
+        "line": 126,
+        "column": 5,
+        "end_line": 126,
+        "end_column": 71
+      },
+      "properties": {
+        "source_location": {
+          "line": 126,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_17": {
+      "id": "dfg_node_17",
+      "type": "function",
+      "name": "transfer",
+      "data_type": null,
+      "scope": "ERC20Token",
+      "source_location": {
+        "line": 153,
+        "column": 5,
+        "end_line": 165,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 153,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_19": {
+      "id": "dfg_node_19",
+      "type": "parameter",
+      "name": "success",
+      "data_type": "bool",
+      "scope": "transfer_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "transfer"
+      }
+    },
+    "dfg_node_20": {
+      "id": "dfg_node_20",
+      "type": "function",
+      "name": "approve",
+      "data_type": null,
+      "scope": "ERC20Token",
+      "source_location": {
+        "line": 176,
+        "column": 5,
+        "end_line": 180,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 176,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_22": {
+      "id": "dfg_node_22",
+      "type": "parameter",
+      "name": "success",
+      "data_type": "bool",
+      "scope": "approve_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "approve"
+      }
+    },
+    "dfg_node_23": {
+      "id": "dfg_node_23",
+      "type": "function",
+      "name": "transferFrom",
+      "data_type": null,
+      "scope": "ERC20Token",
+      "source_location": {
+        "line": 192,
+        "column": 5,
+        "end_line": 206,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 192,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_25": {
+      "id": "dfg_node_25",
+      "type": "parameter",
+      "name": "success",
+      "data_type": "bool",
+      "scope": "transferFrom_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "transferFrom"
+      }
+    },
+    "dfg_node_26": {
+      "id": "dfg_node_26",
+      "type": "contract",
+      "name": "EloPlayToken",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 210,
+        "column": 1,
+        "end_line": 504,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 210,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_27": {
+      "id": "dfg_node_27",
+      "type": "state_variable",
+      "name": "symbol",
+      "data_type": "string",
+      "scope": "EloPlayToken",
+      "source_location": {
+        "line": 215,
+        "column": 5,
+        "end_line": 215,
+        "end_column": 43
+      },
+      "properties": {
+        "source_location": {
+          "line": 215,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_28": {
+      "id": "dfg_node_28",
+      "type": "state_variable",
+      "name": "name",
+      "data_type": "string",
+      "scope": "EloPlayToken",
+      "source_location": {
+        "line": 216,
+        "column": 5,
+        "end_line": 216,
+        "end_column": 50
+      },
+      "properties": {
+        "source_location": {
+          "line": 216,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_29": {
+      "id": "dfg_node_29",
+      "type": "state_variable",
+      "name": "decimals",
+      "data_type": "uint8",
+      "scope": "EloPlayToken",
+      "source_location": {
+        "line": 217,
+        "column": 5,
+        "end_line": 217,
+        "end_column": 41
+      },
+      "properties": {
+        "source_location": {
+          "line": 217,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_30": {
+      "id": "dfg_node_30",
+      "type": "state_variable",
+      "name": "TARGET_ADDRESS",
+      "data_type": "address",
+      "scope": "EloPlayToken",
+      "source_location": {
+        "line": 222,
+        "column": 5,
+        "end_line": 222,
+        "end_column": 35
+      },
+      "properties": {
+        "source_location": {
+          "line": 222,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_31": {
+      "id": "dfg_node_31",
+      "type": "state_variable",
+      "name": "TARGET_TOKENS_ADDRESS",
+      "data_type": "address",
+      "scope": "EloPlayToken",
+      "source_location": {
+        "line": 227,
+        "column": 5,
+        "end_line": 227,
+        "end_column": 42
+      },
+      "properties": {
+        "source_location": {
+          "line": 227,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_32": {
+      "id": "dfg_node_32",
+      "type": "state_variable",
+      "name": "START_TS",
+      "data_type": "uint256",
+      "scope": "EloPlayToken",
+      "source_location": {
+        "line": 232,
+        "column": 5,
+        "end_line": 232,
+        "end_column": 29
+      },
+      "properties": {
+        "source_location": {
+          "line": 232,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_33": {
+      "id": "dfg_node_33",
+      "type": "state_variable",
+      "name": "END_TS",
+      "data_type": "uint256",
+      "scope": "EloPlayToken",
+      "source_location": {
+        "line": 233,
+        "column": 5,
+        "end_line": 233,
+        "end_column": 27
+      },
+      "properties": {
+        "source_location": {
+          "line": 233,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_34": {
+      "id": "dfg_node_34",
+      "type": "state_variable",
+      "name": "CAP",
+      "data_type": "uint256",
+      "scope": "EloPlayToken",
+      "source_location": {
+        "line": 238,
+        "column": 5,
+        "end_line": 238,
+        "end_column": 24
+      },
+      "properties": {
+        "source_location": {
+          "line": 238,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_35": {
+      "id": "dfg_node_35",
+      "type": "state_variable",
+      "name": "USDETHRATE",
+      "data_type": "uint256",
+      "scope": "EloPlayToken",
+      "source_location": {
+        "line": 243,
+        "column": 5,
+        "end_line": 243,
+        "end_column": 31
+      },
+      "properties": {
+        "source_location": {
+          "line": 243,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_36": {
+      "id": "dfg_node_36",
+      "type": "state_variable",
+      "name": "halted",
+      "data_type": "bool",
+      "scope": "EloPlayToken",
+      "source_location": {
+        "line": 249,
+        "column": 5,
+        "end_line": 249,
+        "end_column": 24
+      },
+      "properties": {
+        "source_location": {
+          "line": 249,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_37": {
+      "id": "dfg_node_37",
+      "type": "state_variable",
+      "name": "totalEthers",
+      "data_type": "uint256",
+      "scope": "EloPlayToken",
+      "source_location": {
+        "line": 254,
+        "column": 5,
+        "end_line": 254,
+        "end_column": 32
+      },
+      "properties": {
+        "source_location": {
+          "line": 254,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_38": {
+      "id": "dfg_node_38",
+      "type": "constructor_function",
+      "name": "EloPlayToken",
+      "data_type": null,
+      "scope": "EloPlayToken",
+      "source_location": {
+        "line": 281,
+        "column": 5,
+        "end_line": 288,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 281,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_39": {
+      "id": "dfg_node_39",
+      "type": "function",
+      "name": "updateCap",
+      "data_type": null,
+      "scope": "EloPlayToken",
+      "source_location": {
+        "line": 296,
+        "column": 5,
+        "end_line": 303,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 296,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_40": {
+      "id": "dfg_node_40",
+      "type": "function",
+      "name": "totalUSD",
+      "data_type": null,
+      "scope": "EloPlayToken",
+      "source_location": {
+        "line": 310,
+        "column": 5,
+        "end_line": 312,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 310,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_42": {
+      "id": "dfg_node_42",
+      "type": "parameter",
+      "name": "param_40",
+      "data_type": "uint256",
+      "scope": "totalUSD_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "totalUSD"
+      }
+    },
+    "dfg_node_43": {
+      "id": "dfg_node_43",
+      "type": "function",
+      "name": "buyPrice",
+      "data_type": null,
+      "scope": "EloPlayToken",
+      "source_location": {
+        "line": 319,
+        "column": 5,
+        "end_line": 321,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 319,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_45": {
+      "id": "dfg_node_45",
+      "type": "parameter",
+      "name": "param_43",
+      "data_type": "uint256",
+      "scope": "buyPrice_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "buyPrice"
+      }
+    },
+    "dfg_node_46": {
+      "id": "dfg_node_46",
+      "type": "function",
+      "name": "buyPriceAt",
+      "data_type": null,
+      "scope": "EloPlayToken",
+      "source_location": {
+        "line": 329,
+        "column": 5,
+        "end_line": 350,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 329,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_48": {
+      "id": "dfg_node_48",
+      "type": "parameter",
+      "name": "param_46",
+      "data_type": "uint256",
+      "scope": "buyPriceAt_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "buyPriceAt"
+      }
+    },
+    "dfg_node_49": {
+      "id": "dfg_node_49",
+      "type": "function",
+      "name": "halt",
+      "data_type": null,
+      "scope": "EloPlayToken",
+      "source_location": {
+        "line": 355,
+        "column": 5,
+        "end_line": 358,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 355,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_50": {
+      "id": "dfg_node_50",
+      "type": "function",
+      "name": "unhalt",
+      "data_type": null,
+      "scope": "EloPlayToken",
+      "source_location": {
+        "line": 363,
+        "column": 5,
+        "end_line": 366,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 363,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_51": {
+      "id": "dfg_node_51",
+      "type": "function",
+      "name": "addPrecommitment",
+      "data_type": null,
+      "scope": "EloPlayToken",
+      "source_location": {
+        "line": 377,
+        "column": 5,
+        "end_line": 397,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 377,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_52": {
+      "id": "dfg_node_52",
+      "type": "function",
+      "name": "proxyPayment",
+      "data_type": null,
+      "scope": "EloPlayToken",
+      "source_location": {
+        "line": 411,
+        "column": 5,
+        "end_line": 458,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 411,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_53": {
+      "id": "dfg_node_53",
+      "type": "function",
+      "name": "transfer",
+      "data_type": null,
+      "scope": "EloPlayToken",
+      "source_location": {
+        "line": 468,
+        "column": 5,
+        "end_line": 473,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 468,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_55": {
+      "id": "dfg_node_55",
+      "type": "parameter",
+      "name": "success",
+      "data_type": "bool",
+      "scope": "transfer_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "transfer"
+      }
+    },
+    "dfg_node_56": {
+      "id": "dfg_node_56",
+      "type": "function",
+      "name": "transferFrom",
+      "data_type": null,
+      "scope": "EloPlayToken",
+      "source_location": {
+        "line": 485,
+        "column": 5,
+        "end_line": 491,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 485,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_58": {
+      "id": "dfg_node_58",
+      "type": "parameter",
+      "name": "success",
+      "data_type": "bool",
+      "scope": "transferFrom_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "transferFrom"
+      }
+    },
+    "dfg_node_59": {
+      "id": "dfg_node_59",
+      "type": "function",
+      "name": "transferAnyERC20Token",
+      "data_type": null,
+      "scope": "EloPlayToken",
+      "source_location": {
+        "line": 500,
+        "column": 5,
+        "end_line": 503,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 500,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_61": {
+      "id": "dfg_node_61",
+      "type": "parameter",
+      "name": "success",
+      "data_type": "bool",
+      "scope": "transferAnyERC20Token_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "transferAnyERC20Token"
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_4",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_7",
+      "target": "dfg_node_8",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_7",
+      "target": "dfg_node_9",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_7",
+      "target": "dfg_node_10",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_7",
+      "target": "dfg_node_11",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_7",
+      "target": "dfg_node_12",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_13",
+      "target": "dfg_node_14",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_9": {
+      "id": "dfg_edge_9",
+      "source": "dfg_node_13",
+      "target": "dfg_node_15",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_10": {
+      "id": "dfg_edge_10",
+      "source": "dfg_node_13",
+      "target": "dfg_node_16",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_11": {
+      "id": "dfg_edge_11",
+      "source": "dfg_node_17",
+      "target": "dfg_node_19",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_12": {
+      "id": "dfg_edge_12",
+      "source": "dfg_node_13",
+      "target": "dfg_node_17",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_13": {
+      "id": "dfg_edge_13",
+      "source": "dfg_node_20",
+      "target": "dfg_node_22",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_14": {
+      "id": "dfg_edge_14",
+      "source": "dfg_node_13",
+      "target": "dfg_node_20",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_15": {
+      "id": "dfg_edge_15",
+      "source": "dfg_node_23",
+      "target": "dfg_node_25",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_16": {
+      "id": "dfg_edge_16",
+      "source": "dfg_node_13",
+      "target": "dfg_node_23",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_17": {
+      "id": "dfg_edge_17",
+      "source": "dfg_node_26",
+      "target": "dfg_node_27",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_18": {
+      "id": "dfg_edge_18",
+      "source": "dfg_node_26",
+      "target": "dfg_node_28",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_19": {
+      "id": "dfg_edge_19",
+      "source": "dfg_node_26",
+      "target": "dfg_node_29",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_20": {
+      "id": "dfg_edge_20",
+      "source": "dfg_node_26",
+      "target": "dfg_node_30",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_21": {
+      "id": "dfg_edge_21",
+      "source": "dfg_node_26",
+      "target": "dfg_node_31",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_22": {
+      "id": "dfg_edge_22",
+      "source": "dfg_node_26",
+      "target": "dfg_node_32",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_23": {
+      "id": "dfg_edge_23",
+      "source": "dfg_node_26",
+      "target": "dfg_node_33",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_24": {
+      "id": "dfg_edge_24",
+      "source": "dfg_node_26",
+      "target": "dfg_node_34",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_25": {
+      "id": "dfg_edge_25",
+      "source": "dfg_node_26",
+      "target": "dfg_node_35",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_26": {
+      "id": "dfg_edge_26",
+      "source": "dfg_node_26",
+      "target": "dfg_node_36",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_27": {
+      "id": "dfg_edge_27",
+      "source": "dfg_node_26",
+      "target": "dfg_node_37",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_28": {
+      "id": "dfg_edge_28",
+      "source": "dfg_node_26",
+      "target": "dfg_node_38",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_29": {
+      "id": "dfg_edge_29",
+      "source": "dfg_node_26",
+      "target": "dfg_node_39",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_30": {
+      "id": "dfg_edge_30",
+      "source": "dfg_node_40",
+      "target": "dfg_node_42",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_31": {
+      "id": "dfg_edge_31",
+      "source": "dfg_node_26",
+      "target": "dfg_node_40",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_32": {
+      "id": "dfg_edge_32",
+      "source": "dfg_node_43",
+      "target": "dfg_node_45",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_33": {
+      "id": "dfg_edge_33",
+      "source": "dfg_node_26",
+      "target": "dfg_node_43",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_34": {
+      "id": "dfg_edge_34",
+      "source": "dfg_node_46",
+      "target": "dfg_node_48",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_35": {
+      "id": "dfg_edge_35",
+      "source": "dfg_node_26",
+      "target": "dfg_node_46",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_36": {
+      "id": "dfg_edge_36",
+      "source": "dfg_node_26",
+      "target": "dfg_node_49",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_37": {
+      "id": "dfg_edge_37",
+      "source": "dfg_node_26",
+      "target": "dfg_node_50",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_38": {
+      "id": "dfg_edge_38",
+      "source": "dfg_node_26",
+      "target": "dfg_node_51",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_39": {
+      "id": "dfg_edge_39",
+      "source": "dfg_node_26",
+      "target": "dfg_node_52",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_40": {
+      "id": "dfg_edge_40",
+      "source": "dfg_node_53",
+      "target": "dfg_node_55",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_41": {
+      "id": "dfg_edge_41",
+      "source": "dfg_node_26",
+      "target": "dfg_node_53",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_42": {
+      "id": "dfg_edge_42",
+      "source": "dfg_node_56",
+      "target": "dfg_node_58",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_43": {
+      "id": "dfg_edge_43",
+      "source": "dfg_node_26",
+      "target": "dfg_node_56",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_44": {
+      "id": "dfg_edge_44",
+      "source": "dfg_node_59",
+      "target": "dfg_node_61",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_45": {
+      "id": "dfg_edge_45",
+      "source": "dfg_node_26",
+      "target": "dfg_node_59",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 729,
+    "source_line": 730,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "Owned",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

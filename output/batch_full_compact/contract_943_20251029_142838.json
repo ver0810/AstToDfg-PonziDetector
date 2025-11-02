@@ -1,0 +1,1700 @@
+{
+  "contract": "ERC20",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "ERC20",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 3,
+        "column": 1,
+        "end_line": 13,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "function",
+      "name": "totalSupply",
+      "data_type": null,
+      "scope": "ERC20",
+      "source_location": {
+        "line": 5,
+        "column": 5,
+        "end_line": 5,
+        "end_column": 52
+      },
+      "properties": {
+        "source_location": {
+          "line": 5,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "parameter",
+      "name": "param_2",
+      "data_type": "uint",
+      "scope": "totalSupply_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "totalSupply"
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "function",
+      "name": "balanceOf",
+      "data_type": null,
+      "scope": "ERC20",
+      "source_location": {
+        "line": 6,
+        "column": 5,
+        "end_line": 6,
+        "end_column": 61
+      },
+      "properties": {
+        "source_location": {
+          "line": 6,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "parameter",
+      "name": "param_5",
+      "data_type": "uint",
+      "scope": "balanceOf_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "balanceOf"
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "function",
+      "name": "allowance",
+      "data_type": null,
+      "scope": "ERC20",
+      "source_location": {
+        "line": 7,
+        "column": 5,
+        "end_line": 7,
+        "end_column": 80
+      },
+      "properties": {
+        "source_location": {
+          "line": 7,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_10": {
+      "id": "dfg_node_10",
+      "type": "parameter",
+      "name": "param_8",
+      "data_type": "uint",
+      "scope": "allowance_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "allowance"
+      }
+    },
+    "dfg_node_11": {
+      "id": "dfg_node_11",
+      "type": "function",
+      "name": "transfer",
+      "data_type": null,
+      "scope": "ERC20",
+      "source_location": {
+        "line": 8,
+        "column": 5,
+        "end_line": 8,
+        "end_column": 65
+      },
+      "properties": {
+        "source_location": {
+          "line": 8,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_13": {
+      "id": "dfg_node_13",
+      "type": "parameter",
+      "name": "ok",
+      "data_type": "bool",
+      "scope": "transfer_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "transfer"
+      }
+    },
+    "dfg_node_14": {
+      "id": "dfg_node_14",
+      "type": "function",
+      "name": "transferFrom",
+      "data_type": null,
+      "scope": "ERC20",
+      "source_location": {
+        "line": 9,
+        "column": 5,
+        "end_line": 9,
+        "end_column": 83
+      },
+      "properties": {
+        "source_location": {
+          "line": 9,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_16": {
+      "id": "dfg_node_16",
+      "type": "parameter",
+      "name": "ok",
+      "data_type": "bool",
+      "scope": "transferFrom_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "transferFrom"
+      }
+    },
+    "dfg_node_17": {
+      "id": "dfg_node_17",
+      "type": "function",
+      "name": "approve",
+      "data_type": null,
+      "scope": "ERC20",
+      "source_location": {
+        "line": 10,
+        "column": 5,
+        "end_line": 10,
+        "end_column": 69
+      },
+      "properties": {
+        "source_location": {
+          "line": 10,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_19": {
+      "id": "dfg_node_19",
+      "type": "parameter",
+      "name": "ok",
+      "data_type": "bool",
+      "scope": "approve_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "approve"
+      }
+    },
+    "dfg_node_20": {
+      "id": "dfg_node_20",
+      "type": "contract",
+      "name": "workForce",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 16,
+        "column": 1,
+        "end_line": 252,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 16,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_21": {
+      "id": "dfg_node_21",
+      "type": "state_variable",
+      "name": "workcrew",
+      "data_type": "Employee[]",
+      "scope": "workForce",
+      "source_location": {
+        "line": 51,
+        "column": 5,
+        "end_line": 51,
+        "end_column": 25
+      },
+      "properties": {
+        "source_location": {
+          "line": 51,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_22": {
+      "id": "dfg_node_22",
+      "type": "state_variable",
+      "name": "employeeIndex",
+      "data_type": "uint",
+      "scope": "workForce",
+      "source_location": {
+        "line": 52,
+        "column": 5,
+        "end_line": 52,
+        "end_column": 24
+      },
+      "properties": {
+        "source_location": {
+          "line": 52,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_23": {
+      "id": "dfg_node_23",
+      "type": "state_variable",
+      "name": "employeeIdIndex",
+      "data_type": "mapping( uint => uint )",
+      "scope": "workForce",
+      "source_location": {
+        "line": 53,
+        "column": 5,
+        "end_line": 53,
+        "end_column": 45
+      },
+      "properties": {
+        "source_location": {
+          "line": 53,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_24": {
+      "id": "dfg_node_24",
+      "type": "state_variable",
+      "name": "employeeNameIndex",
+      "data_type": "mapping( string => uint )",
+      "scope": "workForce",
+      "source_location": {
+        "line": 54,
+        "column": 5,
+        "end_line": 54,
+        "end_column": 49
+      },
+      "properties": {
+        "source_location": {
+          "line": 54,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_25": {
+      "id": "dfg_node_25",
+      "type": "state_variable",
+      "name": "employeeAddressIndex",
+      "data_type": "mapping( address => uint )",
+      "scope": "workForce",
+      "source_location": {
+        "line": 55,
+        "column": 5,
+        "end_line": 55,
+        "end_column": 53
+      },
+      "properties": {
+        "source_location": {
+          "line": 55,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_26": {
+      "id": "dfg_node_26",
+      "type": "state_variable",
+      "name": "exchangeRates",
+      "data_type": "mapping( address => uint )",
+      "scope": "workForce",
+      "source_location": {
+        "line": 57,
+        "column": 5,
+        "end_line": 57,
+        "end_column": 53
+      },
+      "properties": {
+        "source_location": {
+          "line": 57,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_27": {
+      "id": "dfg_node_27",
+      "type": "state_variable",
+      "name": "owner",
+      "data_type": "address",
+      "scope": "workForce",
+      "source_location": {
+        "line": 58,
+        "column": 5,
+        "end_line": 58,
+        "end_column": 19
+      },
+      "properties": {
+        "source_location": {
+          "line": 58,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_28": {
+      "id": "dfg_node_28",
+      "type": "state_variable",
+      "name": "creationDate",
+      "data_type": "uint",
+      "scope": "workForce",
+      "source_location": {
+        "line": 59,
+        "column": 5,
+        "end_line": 59,
+        "end_column": 23
+      },
+      "properties": {
+        "source_location": {
+          "line": 59,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_29": {
+      "id": "dfg_node_29",
+      "type": "state_variable",
+      "name": "antAddr",
+      "data_type": "address",
+      "scope": "workForce",
+      "source_location": {
+        "line": 62,
+        "column": 5,
+        "end_line": 62,
+        "end_column": 66
+      },
+      "properties": {
+        "source_location": {
+          "line": 62,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_30": {
+      "id": "dfg_node_30",
+      "type": "state_variable",
+      "name": "usdAddr",
+      "data_type": "address",
+      "scope": "workForce",
+      "source_location": {
+        "line": 64,
+        "column": 5,
+        "end_line": 64,
+        "end_column": 66
+      },
+      "properties": {
+        "source_location": {
+          "line": 64,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_31": {
+      "id": "dfg_node_31",
+      "type": "state_variable",
+      "name": "antToken",
+      "data_type": "ERC20",
+      "scope": "workForce",
+      "source_location": {
+        "line": 66,
+        "column": 5,
+        "end_line": 66,
+        "end_column": 37
+      },
+      "properties": {
+        "source_location": {
+          "line": 66,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_32": {
+      "id": "dfg_node_32",
+      "type": "state_variable",
+      "name": "usdToken",
+      "data_type": "ERC20",
+      "scope": "workForce",
+      "source_location": {
+        "line": 67,
+        "column": 5,
+        "end_line": 67,
+        "end_column": 37
+      },
+      "properties": {
+        "source_location": {
+          "line": 67,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_33": {
+      "id": "dfg_node_33",
+      "type": "state_variable",
+      "name": "oneUsdToEtherRate",
+      "data_type": "uint",
+      "scope": "workForce",
+      "source_location": {
+        "line": 69,
+        "column": 5,
+        "end_line": 69,
+        "end_column": 28
+      },
+      "properties": {
+        "source_location": {
+          "line": 69,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_34": {
+      "id": "dfg_node_34",
+      "type": "constructor_function",
+      "name": "workForce",
+      "data_type": null,
+      "scope": "workForce",
+      "source_location": {
+        "line": 73,
+        "column": 5,
+        "end_line": 81,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 73,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_35": {
+      "id": "dfg_node_35",
+      "type": "function",
+      "name": "indexTheWorkcrew",
+      "data_type": null,
+      "scope": "workForce",
+      "source_location": {
+        "line": 83,
+        "column": 5,
+        "end_line": 91,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 83,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_36": {
+      "id": "dfg_node_36",
+      "type": "function",
+      "name": "incompletePercent",
+      "data_type": null,
+      "scope": "workForce",
+      "source_location": {
+        "line": 93,
+        "column": 5,
+        "end_line": 99,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 93,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_38": {
+      "id": "dfg_node_38",
+      "type": "parameter",
+      "name": "param_36",
+      "data_type": "bool",
+      "scope": "incompletePercent_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "incompletePercent"
+      }
+    },
+    "dfg_node_39": {
+      "id": "dfg_node_39",
+      "type": "function",
+      "name": "addEmployee",
+      "data_type": null,
+      "scope": "workForce",
+      "source_location": {
+        "line": 101,
+        "column": 5,
+        "end_line": 116,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 101,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_40": {
+      "id": "dfg_node_40",
+      "type": "function",
+      "name": "setEmployeeSalary",
+      "data_type": null,
+      "scope": "workForce",
+      "source_location": {
+        "line": 118,
+        "column": 5,
+        "end_line": 121,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 118,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_41": {
+      "id": "dfg_node_41",
+      "type": "function",
+      "name": "removeEmployee",
+      "data_type": null,
+      "scope": "workForce",
+      "source_location": {
+        "line": 123,
+        "column": 5,
+        "end_line": 127,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 123,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_42": {
+      "id": "dfg_node_42",
+      "type": "function",
+      "name": "addFunds",
+      "data_type": null,
+      "scope": "workForce",
+      "source_location": {
+        "line": 129,
+        "column": 5,
+        "end_line": 132,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 129,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_44": {
+      "id": "dfg_node_44",
+      "type": "parameter",
+      "name": "param_42",
+      "data_type": "uint",
+      "scope": "addFunds_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "addFunds"
+      }
+    },
+    "dfg_node_45": {
+      "id": "dfg_node_45",
+      "type": "function",
+      "name": "getTokenBalance",
+      "data_type": null,
+      "scope": "workForce",
+      "source_location": {
+        "line": 134,
+        "column": 5,
+        "end_line": 137,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 134,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_47": {
+      "id": "dfg_node_47",
+      "type": "parameter",
+      "name": "param_45",
+      "data_type": "uint",
+      "scope": "getTokenBalance_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getTokenBalance"
+      }
+    },
+    "dfg_node_49": {
+      "id": "dfg_node_49",
+      "type": "parameter",
+      "name": "param_47",
+      "data_type": "uint",
+      "scope": "getTokenBalance_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getTokenBalance"
+      }
+    },
+    "dfg_node_50": {
+      "id": "dfg_node_50",
+      "type": "function",
+      "name": "scapeHatch",
+      "data_type": null,
+      "scope": "workForce",
+      "source_location": {
+        "line": 139,
+        "column": 5,
+        "end_line": 144,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 139,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_51": {
+      "id": "dfg_node_51",
+      "type": "function",
+      "name": "selfdestructTokens",
+      "data_type": null,
+      "scope": "workForce",
+      "source_location": {
+        "line": 146,
+        "column": 5,
+        "end_line": 150,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 146,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_52": {
+      "id": "dfg_node_52",
+      "type": "function",
+      "name": "getEmployeeCount",
+      "data_type": null,
+      "scope": "workForce",
+      "source_location": {
+        "line": 152,
+        "column": 5,
+        "end_line": 155,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 152,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_54": {
+      "id": "dfg_node_54",
+      "type": "parameter",
+      "name": "param_52",
+      "data_type": "uint",
+      "scope": "getEmployeeCount_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getEmployeeCount"
+      }
+    },
+    "dfg_node_55": {
+      "id": "dfg_node_55",
+      "type": "function",
+      "name": "getEmployeeInfoById",
+      "data_type": null,
+      "scope": "workForce",
+      "source_location": {
+        "line": 157,
+        "column": 5,
+        "end_line": 162,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 157,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_57": {
+      "id": "dfg_node_57",
+      "type": "parameter",
+      "name": "param_55",
+      "data_type": "uint",
+      "scope": "getEmployeeInfoById_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getEmployeeInfoById"
+      }
+    },
+    "dfg_node_59": {
+      "id": "dfg_node_59",
+      "type": "parameter",
+      "name": "param_57",
+      "data_type": "string",
+      "scope": "getEmployeeInfoById_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getEmployeeInfoById"
+      }
+    },
+    "dfg_node_61": {
+      "id": "dfg_node_61",
+      "type": "parameter",
+      "name": "param_59",
+      "data_type": "uint",
+      "scope": "getEmployeeInfoById_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getEmployeeInfoById"
+      }
+    },
+    "dfg_node_63": {
+      "id": "dfg_node_63",
+      "type": "parameter",
+      "name": "param_61",
+      "data_type": "address",
+      "scope": "getEmployeeInfoById_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getEmployeeInfoById"
+      }
+    },
+    "dfg_node_65": {
+      "id": "dfg_node_65",
+      "type": "parameter",
+      "name": "param_63",
+      "data_type": "uint",
+      "scope": "getEmployeeInfoById_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getEmployeeInfoById"
+      }
+    },
+    "dfg_node_66": {
+      "id": "dfg_node_66",
+      "type": "function",
+      "name": "getEmployeeInfoByName",
+      "data_type": null,
+      "scope": "workForce",
+      "source_location": {
+        "line": 164,
+        "column": 5,
+        "end_line": 169,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 164,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_68": {
+      "id": "dfg_node_68",
+      "type": "parameter",
+      "name": "param_66",
+      "data_type": "uint",
+      "scope": "getEmployeeInfoByName_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getEmployeeInfoByName"
+      }
+    },
+    "dfg_node_70": {
+      "id": "dfg_node_70",
+      "type": "parameter",
+      "name": "param_68",
+      "data_type": "string",
+      "scope": "getEmployeeInfoByName_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getEmployeeInfoByName"
+      }
+    },
+    "dfg_node_72": {
+      "id": "dfg_node_72",
+      "type": "parameter",
+      "name": "param_70",
+      "data_type": "uint",
+      "scope": "getEmployeeInfoByName_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getEmployeeInfoByName"
+      }
+    },
+    "dfg_node_74": {
+      "id": "dfg_node_74",
+      "type": "parameter",
+      "name": "param_72",
+      "data_type": "address",
+      "scope": "getEmployeeInfoByName_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getEmployeeInfoByName"
+      }
+    },
+    "dfg_node_76": {
+      "id": "dfg_node_76",
+      "type": "parameter",
+      "name": "param_74",
+      "data_type": "uint",
+      "scope": "getEmployeeInfoByName_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getEmployeeInfoByName"
+      }
+    },
+    "dfg_node_77": {
+      "id": "dfg_node_77",
+      "type": "function",
+      "name": "calculatePayrollBurnrate",
+      "data_type": null,
+      "scope": "workForce",
+      "source_location": {
+        "line": 171,
+        "column": 5,
+        "end_line": 179,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 171,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_79": {
+      "id": "dfg_node_79",
+      "type": "parameter",
+      "name": "param_77",
+      "data_type": "uint",
+      "scope": "calculatePayrollBurnrate_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "calculatePayrollBurnrate"
+      }
+    },
+    "dfg_node_80": {
+      "id": "dfg_node_80",
+      "type": "function",
+      "name": "calculatePayrollRunway",
+      "data_type": null,
+      "scope": "workForce",
+      "source_location": {
+        "line": 181,
+        "column": 5,
+        "end_line": 191,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 181,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_82": {
+      "id": "dfg_node_82",
+      "type": "parameter",
+      "name": "param_80",
+      "data_type": "uint",
+      "scope": "calculatePayrollRunway_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "calculatePayrollRunway"
+      }
+    },
+    "dfg_node_83": {
+      "id": "dfg_node_83",
+      "type": "function",
+      "name": "setPercentTokenAllocation",
+      "data_type": null,
+      "scope": "workForce",
+      "source_location": {
+        "line": 193,
+        "column": 5,
+        "end_line": 205,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 193,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_84": {
+      "id": "dfg_node_84",
+      "type": "function",
+      "name": "payday",
+      "data_type": null,
+      "scope": "workForce",
+      "source_location": {
+        "line": 207,
+        "column": 5,
+        "end_line": 227,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 207,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_85": {
+      "id": "dfg_node_85",
+      "type": "function",
+      "name": "setTokenExchangeRate",
+      "data_type": null,
+      "scope": "workForce",
+      "source_location": {
+        "line": 230,
+        "column": 5,
+        "end_line": 233,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 230,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_86": {
+      "id": "dfg_node_86",
+      "type": "function",
+      "name": "setUsdToEtherExchangeRate",
+      "data_type": null,
+      "scope": "workForce",
+      "source_location": {
+        "line": 236,
+        "column": 5,
+        "end_line": 239,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 236,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_87": {
+      "id": "dfg_node_87",
+      "type": "function",
+      "name": "UsdToEtherConvert",
+      "data_type": null,
+      "scope": "workForce",
+      "source_location": {
+        "line": 241,
+        "column": 5,
+        "end_line": 245,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 241,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_89": {
+      "id": "dfg_node_89",
+      "type": "parameter",
+      "name": "param_87",
+      "data_type": "uint",
+      "scope": "UsdToEtherConvert_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "UsdToEtherConvert"
+      }
+    },
+    "dfg_node_90": {
+      "id": "dfg_node_90",
+      "type": "function",
+      "name": "UsdToTokenConvert",
+      "data_type": null,
+      "scope": "workForce",
+      "source_location": {
+        "line": 247,
+        "column": 5,
+        "end_line": 251,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 247,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_92": {
+      "id": "dfg_node_92",
+      "type": "parameter",
+      "name": "param_90",
+      "data_type": "uint",
+      "scope": "UsdToTokenConvert_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "UsdToTokenConvert"
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_2",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_5",
+      "target": "dfg_node_7",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_1",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_8",
+      "target": "dfg_node_10",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_1",
+      "target": "dfg_node_8",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_11",
+      "target": "dfg_node_13",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_1",
+      "target": "dfg_node_11",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_9": {
+      "id": "dfg_edge_9",
+      "source": "dfg_node_14",
+      "target": "dfg_node_16",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_10": {
+      "id": "dfg_edge_10",
+      "source": "dfg_node_1",
+      "target": "dfg_node_14",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_11": {
+      "id": "dfg_edge_11",
+      "source": "dfg_node_17",
+      "target": "dfg_node_19",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_12": {
+      "id": "dfg_edge_12",
+      "source": "dfg_node_1",
+      "target": "dfg_node_17",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_13": {
+      "id": "dfg_edge_13",
+      "source": "dfg_node_20",
+      "target": "dfg_node_21",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_14": {
+      "id": "dfg_edge_14",
+      "source": "dfg_node_20",
+      "target": "dfg_node_22",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_15": {
+      "id": "dfg_edge_15",
+      "source": "dfg_node_20",
+      "target": "dfg_node_23",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_16": {
+      "id": "dfg_edge_16",
+      "source": "dfg_node_20",
+      "target": "dfg_node_24",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_17": {
+      "id": "dfg_edge_17",
+      "source": "dfg_node_20",
+      "target": "dfg_node_25",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_18": {
+      "id": "dfg_edge_18",
+      "source": "dfg_node_20",
+      "target": "dfg_node_26",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_19": {
+      "id": "dfg_edge_19",
+      "source": "dfg_node_20",
+      "target": "dfg_node_27",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_20": {
+      "id": "dfg_edge_20",
+      "source": "dfg_node_20",
+      "target": "dfg_node_28",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_21": {
+      "id": "dfg_edge_21",
+      "source": "dfg_node_20",
+      "target": "dfg_node_29",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_22": {
+      "id": "dfg_edge_22",
+      "source": "dfg_node_20",
+      "target": "dfg_node_30",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_23": {
+      "id": "dfg_edge_23",
+      "source": "dfg_node_20",
+      "target": "dfg_node_31",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_24": {
+      "id": "dfg_edge_24",
+      "source": "dfg_node_20",
+      "target": "dfg_node_32",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_25": {
+      "id": "dfg_edge_25",
+      "source": "dfg_node_20",
+      "target": "dfg_node_33",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_26": {
+      "id": "dfg_edge_26",
+      "source": "dfg_node_20",
+      "target": "dfg_node_34",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_27": {
+      "id": "dfg_edge_27",
+      "source": "dfg_node_20",
+      "target": "dfg_node_35",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_28": {
+      "id": "dfg_edge_28",
+      "source": "dfg_node_36",
+      "target": "dfg_node_38",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_29": {
+      "id": "dfg_edge_29",
+      "source": "dfg_node_20",
+      "target": "dfg_node_36",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_30": {
+      "id": "dfg_edge_30",
+      "source": "dfg_node_20",
+      "target": "dfg_node_39",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_31": {
+      "id": "dfg_edge_31",
+      "source": "dfg_node_20",
+      "target": "dfg_node_40",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_32": {
+      "id": "dfg_edge_32",
+      "source": "dfg_node_20",
+      "target": "dfg_node_41",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_33": {
+      "id": "dfg_edge_33",
+      "source": "dfg_node_42",
+      "target": "dfg_node_44",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_34": {
+      "id": "dfg_edge_34",
+      "source": "dfg_node_20",
+      "target": "dfg_node_42",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_35": {
+      "id": "dfg_edge_35",
+      "source": "dfg_node_45",
+      "target": "dfg_node_47",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_36": {
+      "id": "dfg_edge_36",
+      "source": "dfg_node_45",
+      "target": "dfg_node_49",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_37": {
+      "id": "dfg_edge_37",
+      "source": "dfg_node_20",
+      "target": "dfg_node_45",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_38": {
+      "id": "dfg_edge_38",
+      "source": "dfg_node_20",
+      "target": "dfg_node_50",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_39": {
+      "id": "dfg_edge_39",
+      "source": "dfg_node_20",
+      "target": "dfg_node_51",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_40": {
+      "id": "dfg_edge_40",
+      "source": "dfg_node_52",
+      "target": "dfg_node_54",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_41": {
+      "id": "dfg_edge_41",
+      "source": "dfg_node_20",
+      "target": "dfg_node_52",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_42": {
+      "id": "dfg_edge_42",
+      "source": "dfg_node_55",
+      "target": "dfg_node_57",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_43": {
+      "id": "dfg_edge_43",
+      "source": "dfg_node_55",
+      "target": "dfg_node_59",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_44": {
+      "id": "dfg_edge_44",
+      "source": "dfg_node_55",
+      "target": "dfg_node_61",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_45": {
+      "id": "dfg_edge_45",
+      "source": "dfg_node_55",
+      "target": "dfg_node_63",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_46": {
+      "id": "dfg_edge_46",
+      "source": "dfg_node_55",
+      "target": "dfg_node_65",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_47": {
+      "id": "dfg_edge_47",
+      "source": "dfg_node_20",
+      "target": "dfg_node_55",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_48": {
+      "id": "dfg_edge_48",
+      "source": "dfg_node_66",
+      "target": "dfg_node_68",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_49": {
+      "id": "dfg_edge_49",
+      "source": "dfg_node_66",
+      "target": "dfg_node_70",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_50": {
+      "id": "dfg_edge_50",
+      "source": "dfg_node_66",
+      "target": "dfg_node_72",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_51": {
+      "id": "dfg_edge_51",
+      "source": "dfg_node_66",
+      "target": "dfg_node_74",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_52": {
+      "id": "dfg_edge_52",
+      "source": "dfg_node_66",
+      "target": "dfg_node_76",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_53": {
+      "id": "dfg_edge_53",
+      "source": "dfg_node_20",
+      "target": "dfg_node_66",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_54": {
+      "id": "dfg_edge_54",
+      "source": "dfg_node_77",
+      "target": "dfg_node_79",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_55": {
+      "id": "dfg_edge_55",
+      "source": "dfg_node_20",
+      "target": "dfg_node_77",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_56": {
+      "id": "dfg_edge_56",
+      "source": "dfg_node_80",
+      "target": "dfg_node_82",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_57": {
+      "id": "dfg_edge_57",
+      "source": "dfg_node_20",
+      "target": "dfg_node_80",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_58": {
+      "id": "dfg_edge_58",
+      "source": "dfg_node_20",
+      "target": "dfg_node_83",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_59": {
+      "id": "dfg_edge_59",
+      "source": "dfg_node_20",
+      "target": "dfg_node_84",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_60": {
+      "id": "dfg_edge_60",
+      "source": "dfg_node_20",
+      "target": "dfg_node_85",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_61": {
+      "id": "dfg_edge_61",
+      "source": "dfg_node_20",
+      "target": "dfg_node_86",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_62": {
+      "id": "dfg_edge_62",
+      "source": "dfg_node_87",
+      "target": "dfg_node_89",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_63": {
+      "id": "dfg_edge_63",
+      "source": "dfg_node_20",
+      "target": "dfg_node_87",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_64": {
+      "id": "dfg_edge_64",
+      "source": "dfg_node_90",
+      "target": "dfg_node_92",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_65": {
+      "id": "dfg_edge_65",
+      "source": "dfg_node_20",
+      "target": "dfg_node_90",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 943,
+    "source_line": 944,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "ERC20",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

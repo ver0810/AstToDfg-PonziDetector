@@ -1,0 +1,1839 @@
+{
+  "contract": "Owned",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "Owned",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 7,
+        "column": 1,
+        "end_line": 49,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 7,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "owner",
+      "data_type": "address",
+      "scope": "Owned",
+      "source_location": {
+        "line": 8,
+        "column": 3,
+        "end_line": 8,
+        "end_column": 17
+      },
+      "properties": {
+        "source_location": {
+          "line": 8,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "constructor_function",
+      "name": "Owned",
+      "data_type": null,
+      "scope": "Owned",
+      "source_location": {
+        "line": 20,
+        "column": 3,
+        "end_line": 22,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 20,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "function",
+      "name": "transferOwnership",
+      "data_type": null,
+      "scope": "Owned",
+      "source_location": {
+        "line": 28,
+        "column": 3,
+        "end_line": 30,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 28,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "function",
+      "name": "shutdown",
+      "data_type": null,
+      "scope": "Owned",
+      "source_location": {
+        "line": 36,
+        "column": 3,
+        "end_line": 38,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 36,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "function",
+      "name": "withdraw",
+      "data_type": null,
+      "scope": "Owned",
+      "source_location": {
+        "line": 44,
+        "column": 3,
+        "end_line": 48,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 44,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "contract",
+      "name": "LotteryRoundInterface",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 51,
+        "column": 1,
+        "end_line": 68,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 51,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "state_variable",
+      "name": "winningNumbersPicked",
+      "data_type": "bool",
+      "scope": "LotteryRoundInterface",
+      "source_location": {
+        "line": 52,
+        "column": 3,
+        "end_line": 52,
+        "end_column": 36
+      },
+      "properties": {
+        "source_location": {
+          "line": 52,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "state_variable",
+      "name": "closingBlock",
+      "data_type": "uint256",
+      "scope": "LotteryRoundInterface",
+      "source_location": {
+        "line": 53,
+        "column": 3,
+        "end_line": 53,
+        "end_column": 31
+      },
+      "properties": {
+        "source_location": {
+          "line": 53,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_10": {
+      "id": "dfg_node_10",
+      "type": "function",
+      "name": "pickTicket",
+      "data_type": null,
+      "scope": "LotteryRoundInterface",
+      "source_location": {
+        "line": 55,
+        "column": 3,
+        "end_line": 55,
+        "end_column": 45
+      },
+      "properties": {
+        "source_location": {
+          "line": 55,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_11": {
+      "id": "dfg_node_11",
+      "type": "function",
+      "name": "randomTicket",
+      "data_type": null,
+      "scope": "LotteryRoundInterface",
+      "source_location": {
+        "line": 56,
+        "column": 3,
+        "end_line": 56,
+        "end_column": 35
+      },
+      "properties": {
+        "source_location": {
+          "line": 56,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_12": {
+      "id": "dfg_node_12",
+      "type": "function",
+      "name": "proofOfSalt",
+      "data_type": null,
+      "scope": "LotteryRoundInterface",
+      "source_location": {
+        "line": 58,
+        "column": 3,
+        "end_line": 58,
+        "end_column": 70
+      },
+      "properties": {
+        "source_location": {
+          "line": 58,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_14": {
+      "id": "dfg_node_14",
+      "type": "parameter",
+      "name": "param_12",
+      "data_type": "bool",
+      "scope": "proofOfSalt_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "proofOfSalt"
+      }
+    },
+    "dfg_node_15": {
+      "id": "dfg_node_15",
+      "type": "function",
+      "name": "closeGame",
+      "data_type": null,
+      "scope": "LotteryRoundInterface",
+      "source_location": {
+        "line": 59,
+        "column": 3,
+        "end_line": 59,
+        "end_column": 45
+      },
+      "properties": {
+        "source_location": {
+          "line": 59,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_16": {
+      "id": "dfg_node_16",
+      "type": "function",
+      "name": "claimOwnerFee",
+      "data_type": null,
+      "scope": "LotteryRoundInterface",
+      "source_location": {
+        "line": 60,
+        "column": 3,
+        "end_line": 60,
+        "end_column": 42
+      },
+      "properties": {
+        "source_location": {
+          "line": 60,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_17": {
+      "id": "dfg_node_17",
+      "type": "function",
+      "name": "withdraw",
+      "data_type": null,
+      "scope": "LotteryRoundInterface",
+      "source_location": {
+        "line": 61,
+        "column": 3,
+        "end_line": 61,
+        "end_column": 23
+      },
+      "properties": {
+        "source_location": {
+          "line": 61,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_18": {
+      "id": "dfg_node_18",
+      "type": "function",
+      "name": "shutdown",
+      "data_type": null,
+      "scope": "LotteryRoundInterface",
+      "source_location": {
+        "line": 62,
+        "column": 3,
+        "end_line": 62,
+        "end_column": 23
+      },
+      "properties": {
+        "source_location": {
+          "line": 62,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_19": {
+      "id": "dfg_node_19",
+      "type": "function",
+      "name": "distributeWinnings",
+      "data_type": null,
+      "scope": "LotteryRoundInterface",
+      "source_location": {
+        "line": 63,
+        "column": 3,
+        "end_line": 63,
+        "end_column": 33
+      },
+      "properties": {
+        "source_location": {
+          "line": 63,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_20": {
+      "id": "dfg_node_20",
+      "type": "function",
+      "name": "claimPrize",
+      "data_type": null,
+      "scope": "LotteryRoundInterface",
+      "source_location": {
+        "line": 64,
+        "column": 3,
+        "end_line": 64,
+        "end_column": 25
+      },
+      "properties": {
+        "source_location": {
+          "line": 64,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_21": {
+      "id": "dfg_node_21",
+      "type": "function",
+      "name": "paidOut",
+      "data_type": null,
+      "scope": "LotteryRoundInterface",
+      "source_location": {
+        "line": 66,
+        "column": 3,
+        "end_line": 66,
+        "end_column": 45
+      },
+      "properties": {
+        "source_location": {
+          "line": 66,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_23": {
+      "id": "dfg_node_23",
+      "type": "parameter",
+      "name": "param_21",
+      "data_type": "bool",
+      "scope": "paidOut_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "paidOut"
+      }
+    },
+    "dfg_node_24": {
+      "id": "dfg_node_24",
+      "type": "function",
+      "name": "transferOwnership",
+      "data_type": null,
+      "scope": "LotteryRoundInterface",
+      "source_location": {
+        "line": 67,
+        "column": 3,
+        "end_line": 67,
+        "end_column": 48
+      },
+      "properties": {
+        "source_location": {
+          "line": 67,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_25": {
+      "id": "dfg_node_25",
+      "type": "contract",
+      "name": "LotteryRound",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 82,
+        "column": 1,
+        "end_line": 517,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 82,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_26": {
+      "id": "dfg_node_26",
+      "type": "state_variable",
+      "name": "VERSION",
+      "data_type": "string",
+      "scope": "LotteryRound",
+      "source_location": {
+        "line": 88,
+        "column": 3,
+        "end_line": 88,
+        "end_column": 44
+      },
+      "properties": {
+        "source_location": {
+          "line": 88,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_27": {
+      "id": "dfg_node_27",
+      "type": "state_variable",
+      "name": "ROUND_LENGTH",
+      "data_type": "uint256",
+      "scope": "LotteryRound",
+      "source_location": {
+        "line": 91,
+        "column": 3,
+        "end_line": 91,
+        "end_column": 41
+      },
+      "properties": {
+        "source_location": {
+          "line": 91,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_28": {
+      "id": "dfg_node_28",
+      "type": "state_variable",
+      "name": "PAYOUT_FRACTION",
+      "data_type": "uint256",
+      "scope": "LotteryRound",
+      "source_location": {
+        "line": 94,
+        "column": 3,
+        "end_line": 94,
+        "end_column": 42
+      },
+      "properties": {
+        "source_location": {
+          "line": 94,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_29": {
+      "id": "dfg_node_29",
+      "type": "state_variable",
+      "name": "TICKET_PRICE",
+      "data_type": "uint",
+      "scope": "LotteryRound",
+      "source_location": {
+        "line": 97,
+        "column": 3,
+        "end_line": 97,
+        "end_column": 41
+      },
+      "properties": {
+        "source_location": {
+          "line": 97,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_30": {
+      "id": "dfg_node_30",
+      "type": "state_variable",
+      "name": "PICK_MASK",
+      "data_type": "bytes1",
+      "scope": "LotteryRound",
+      "source_location": {
+        "line": 100,
+        "column": 3,
+        "end_line": 100,
+        "end_column": 36
+      },
+      "properties": {
+        "source_location": {
+          "line": 100,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_31": {
+      "id": "dfg_node_31",
+      "type": "state_variable",
+      "name": "saltHash",
+      "data_type": "bytes32",
+      "scope": "LotteryRound",
+      "source_location": {
+        "line": 107,
+        "column": 3,
+        "end_line": 107,
+        "end_column": 27
+      },
+      "properties": {
+        "source_location": {
+          "line": 107,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_32": {
+      "id": "dfg_node_32",
+      "type": "state_variable",
+      "name": "saltNHash",
+      "data_type": "bytes32",
+      "scope": "LotteryRound",
+      "source_location": {
+        "line": 112,
+        "column": 3,
+        "end_line": 112,
+        "end_column": 28
+      },
+      "properties": {
+        "source_location": {
+          "line": 112,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_33": {
+      "id": "dfg_node_33",
+      "type": "state_variable",
+      "name": "closingBlock",
+      "data_type": "uint256",
+      "scope": "LotteryRound",
+      "source_location": {
+        "line": 115,
+        "column": 3,
+        "end_line": 115,
+        "end_column": 31
+      },
+      "properties": {
+        "source_location": {
+          "line": 115,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_34": {
+      "id": "dfg_node_34",
+      "type": "state_variable",
+      "name": "winningNumbers",
+      "data_type": "bytes4",
+      "scope": "LotteryRound",
+      "source_location": {
+        "line": 118,
+        "column": 3,
+        "end_line": 118,
+        "end_column": 32
+      },
+      "properties": {
+        "source_location": {
+          "line": 118,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_35": {
+      "id": "dfg_node_35",
+      "type": "state_variable",
+      "name": "winningNumbersPicked",
+      "data_type": "bool",
+      "scope": "LotteryRound",
+      "source_location": {
+        "line": 121,
+        "column": 3,
+        "end_line": 121,
+        "end_column": 44
+      },
+      "properties": {
+        "source_location": {
+          "line": 121,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_36": {
+      "id": "dfg_node_36",
+      "type": "state_variable",
+      "name": "winners",
+      "data_type": "address[]",
+      "scope": "LotteryRound",
+      "source_location": {
+        "line": 124,
+        "column": 3,
+        "end_line": 124,
+        "end_column": 28
+      },
+      "properties": {
+        "source_location": {
+          "line": 124,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_37": {
+      "id": "dfg_node_37",
+      "type": "state_variable",
+      "name": "winningsClaimable",
+      "data_type": "mapping(address => bool)",
+      "scope": "LotteryRound",
+      "source_location": {
+        "line": 127,
+        "column": 3,
+        "end_line": 127,
+        "end_column": 53
+      },
+      "properties": {
+        "source_location": {
+          "line": 127,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_38": {
+      "id": "dfg_node_38",
+      "type": "state_variable",
+      "name": "tickets",
+      "data_type": "mapping(bytes4 => address[])",
+      "scope": "LotteryRound",
+      "source_location": {
+        "line": 134,
+        "column": 3,
+        "end_line": 134,
+        "end_column": 47
+      },
+      "properties": {
+        "source_location": {
+          "line": 134,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_39": {
+      "id": "dfg_node_39",
+      "type": "state_variable",
+      "name": "nTickets",
+      "data_type": "uint256",
+      "scope": "LotteryRound",
+      "source_location": {
+        "line": 135,
+        "column": 3,
+        "end_line": 135,
+        "end_column": 31
+      },
+      "properties": {
+        "source_location": {
+          "line": 135,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_40": {
+      "id": "dfg_node_40",
+      "type": "state_variable",
+      "name": "prizePool",
+      "data_type": "uint256",
+      "scope": "LotteryRound",
+      "source_location": {
+        "line": 138,
+        "column": 3,
+        "end_line": 138,
+        "end_column": 28
+      },
+      "properties": {
+        "source_location": {
+          "line": 138,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_41": {
+      "id": "dfg_node_41",
+      "type": "state_variable",
+      "name": "prizeValue",
+      "data_type": "uint256",
+      "scope": "LotteryRound",
+      "source_location": {
+        "line": 142,
+        "column": 3,
+        "end_line": 142,
+        "end_column": 29
+      },
+      "properties": {
+        "source_location": {
+          "line": 142,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_42": {
+      "id": "dfg_node_42",
+      "type": "state_variable",
+      "name": "ownerFee",
+      "data_type": "uint256",
+      "scope": "LotteryRound",
+      "source_location": {
+        "line": 146,
+        "column": 3,
+        "end_line": 146,
+        "end_column": 27
+      },
+      "properties": {
+        "source_location": {
+          "line": 146,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_43": {
+      "id": "dfg_node_43",
+      "type": "state_variable",
+      "name": "accumulatedEntropy",
+      "data_type": "bytes32",
+      "scope": "LotteryRound",
+      "source_location": {
+        "line": 149,
+        "column": 3,
+        "end_line": 149,
+        "end_column": 38
+      },
+      "properties": {
+        "source_location": {
+          "line": 149,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_44": {
+      "id": "dfg_node_44",
+      "type": "constructor_function",
+      "name": "LotteryRound",
+      "data_type": null,
+      "scope": "LotteryRound",
+      "source_location": {
+        "line": 212,
+        "column": 3,
+        "end_line": 227,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 212,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_45": {
+      "id": "dfg_node_45",
+      "type": "function",
+      "name": "generatePseudoRand",
+      "data_type": null,
+      "scope": "LotteryRound",
+      "source_location": {
+        "line": 238,
+        "column": 3,
+        "end_line": 255,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 238,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_47": {
+      "id": "dfg_node_47",
+      "type": "parameter",
+      "name": "param_45",
+      "data_type": "bytes32",
+      "scope": "generatePseudoRand_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "generatePseudoRand"
+      }
+    },
+    "dfg_node_48": {
+      "id": "dfg_node_48",
+      "type": "function",
+      "name": "pickTicket",
+      "data_type": null,
+      "scope": "LotteryRound",
+      "source_location": {
+        "line": 261,
+        "column": 3,
+        "end_line": 275,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 261,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_49": {
+      "id": "dfg_node_49",
+      "type": "function",
+      "name": "pickValues",
+      "data_type": null,
+      "scope": "LotteryRound",
+      "source_location": {
+        "line": 290,
+        "column": 3,
+        "end_line": 299,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 290,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_51": {
+      "id": "dfg_node_51",
+      "type": "parameter",
+      "name": "param_49",
+      "data_type": "bytes4",
+      "scope": "pickValues_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "pickValues"
+      }
+    },
+    "dfg_node_52": {
+      "id": "dfg_node_52",
+      "type": "function",
+      "name": "randomTicket",
+      "data_type": null,
+      "scope": "LotteryRound",
+      "source_location": {
+        "line": 304,
+        "column": 3,
+        "end_line": 313,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 304,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_53": {
+      "id": "dfg_node_53",
+      "type": "function",
+      "name": "proofOfSalt",
+      "data_type": null,
+      "scope": "LotteryRound",
+      "source_location": {
+        "line": 324,
+        "column": 3,
+        "end_line": 340,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 324,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_55": {
+      "id": "dfg_node_55",
+      "type": "parameter",
+      "name": "param_53",
+      "data_type": "bool",
+      "scope": "proofOfSalt_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "proofOfSalt"
+      }
+    },
+    "dfg_node_56": {
+      "id": "dfg_node_56",
+      "type": "function",
+      "name": "finalizeRound",
+      "data_type": null,
+      "scope": "LotteryRound",
+      "source_location": {
+        "line": 351,
+        "column": 3,
+        "end_line": 377,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 351,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_57": {
+      "id": "dfg_node_57",
+      "type": "function",
+      "name": "closeGame",
+      "data_type": null,
+      "scope": "LotteryRound",
+      "source_location": {
+        "line": 388,
+        "column": 3,
+        "end_line": 405,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 388,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_58": {
+      "id": "dfg_node_58",
+      "type": "function",
+      "name": "claimOwnerFee",
+      "data_type": null,
+      "scope": "LotteryRound",
+      "source_location": {
+        "line": 414,
+        "column": 3,
+        "end_line": 422,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 414,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_59": {
+      "id": "dfg_node_59",
+      "type": "function",
+      "name": "withdraw",
+      "data_type": null,
+      "scope": "LotteryRound",
+      "source_location": {
+        "line": 429,
+        "column": 3,
+        "end_line": 435,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 429,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_60": {
+      "id": "dfg_node_60",
+      "type": "function",
+      "name": "shutdown",
+      "data_type": null,
+      "scope": "LotteryRound",
+      "source_location": {
+        "line": 441,
+        "column": 3,
+        "end_line": 445,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 441,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_61": {
+      "id": "dfg_node_61",
+      "type": "function",
+      "name": "distributeWinnings",
+      "data_type": null,
+      "scope": "LotteryRound",
+      "source_location": {
+        "line": 451,
+        "column": 3,
+        "end_line": 467,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 451,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_62": {
+      "id": "dfg_node_62",
+      "type": "function",
+      "name": "paidOut",
+      "data_type": null,
+      "scope": "LotteryRound",
+      "source_location": {
+        "line": 473,
+        "column": 3,
+        "end_line": 491,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 473,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_64": {
+      "id": "dfg_node_64",
+      "type": "parameter",
+      "name": "param_62",
+      "data_type": "bool",
+      "scope": "paidOut_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "paidOut"
+      }
+    },
+    "dfg_node_65": {
+      "id": "dfg_node_65",
+      "type": "function",
+      "name": "claimPrize",
+      "data_type": null,
+      "scope": "LotteryRound",
+      "source_location": {
+        "line": 499,
+        "column": 3,
+        "end_line": 509,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 499,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_66": {
+      "id": "dfg_node_66",
+      "type": "contract",
+      "name": "LotteryRoundFactoryInterface",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 519,
+        "column": 1,
+        "end_line": 522,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 519,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_67": {
+      "id": "dfg_node_67",
+      "type": "state_variable",
+      "name": "VERSION",
+      "data_type": "string",
+      "scope": "LotteryRoundFactoryInterface",
+      "source_location": {
+        "line": 520,
+        "column": 3,
+        "end_line": 520,
+        "end_column": 25
+      },
+      "properties": {
+        "source_location": {
+          "line": 520,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_68": {
+      "id": "dfg_node_68",
+      "type": "function",
+      "name": "transferOwnership",
+      "data_type": null,
+      "scope": "LotteryRoundFactoryInterface",
+      "source_location": {
+        "line": 521,
+        "column": 3,
+        "end_line": 521,
+        "end_column": 48
+      },
+      "properties": {
+        "source_location": {
+          "line": 521,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_69": {
+      "id": "dfg_node_69",
+      "type": "contract",
+      "name": "LotteryRoundFactoryInterfaceV1",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 524,
+        "column": 1,
+        "end_line": 526,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 524,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_70": {
+      "id": "dfg_node_70",
+      "type": "function",
+      "name": "createRound",
+      "data_type": null,
+      "scope": "LotteryRoundFactoryInterfaceV1",
+      "source_location": {
+        "line": 525,
+        "column": 3,
+        "end_line": 525,
+        "end_column": 88
+      },
+      "properties": {
+        "source_location": {
+          "line": 525,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_72": {
+      "id": "dfg_node_72",
+      "type": "parameter",
+      "name": "param_70",
+      "data_type": "address",
+      "scope": "createRound_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "createRound"
+      }
+    },
+    "dfg_node_73": {
+      "id": "dfg_node_73",
+      "type": "contract",
+      "name": "LotteryRoundFactory",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 528,
+        "column": 1,
+        "end_line": 572,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 528,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_74": {
+      "id": "dfg_node_74",
+      "type": "state_variable",
+      "name": "VERSION",
+      "data_type": "string",
+      "scope": "LotteryRoundFactory",
+      "source_location": {
+        "line": 530,
+        "column": 3,
+        "end_line": 530,
+        "end_column": 42
+      },
+      "properties": {
+        "source_location": {
+          "line": 530,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_75": {
+      "id": "dfg_node_75",
+      "type": "function",
+      "name": "createRound",
+      "data_type": null,
+      "scope": "LotteryRoundFactory",
+      "source_location": {
+        "line": 542,
+        "column": 3,
+        "end_line": 565,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 542,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_77": {
+      "id": "dfg_node_77",
+      "type": "parameter",
+      "name": "param_75",
+      "data_type": "address",
+      "scope": "createRound_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "createRound"
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_1",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_1",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_7",
+      "target": "dfg_node_8",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_7",
+      "target": "dfg_node_9",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_7",
+      "target": "dfg_node_10",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_9": {
+      "id": "dfg_edge_9",
+      "source": "dfg_node_7",
+      "target": "dfg_node_11",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_10": {
+      "id": "dfg_edge_10",
+      "source": "dfg_node_12",
+      "target": "dfg_node_14",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_11": {
+      "id": "dfg_edge_11",
+      "source": "dfg_node_7",
+      "target": "dfg_node_12",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_12": {
+      "id": "dfg_edge_12",
+      "source": "dfg_node_7",
+      "target": "dfg_node_15",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_13": {
+      "id": "dfg_edge_13",
+      "source": "dfg_node_7",
+      "target": "dfg_node_16",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_14": {
+      "id": "dfg_edge_14",
+      "source": "dfg_node_7",
+      "target": "dfg_node_17",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_15": {
+      "id": "dfg_edge_15",
+      "source": "dfg_node_7",
+      "target": "dfg_node_18",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_16": {
+      "id": "dfg_edge_16",
+      "source": "dfg_node_7",
+      "target": "dfg_node_19",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_17": {
+      "id": "dfg_edge_17",
+      "source": "dfg_node_7",
+      "target": "dfg_node_20",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_18": {
+      "id": "dfg_edge_18",
+      "source": "dfg_node_21",
+      "target": "dfg_node_23",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_19": {
+      "id": "dfg_edge_19",
+      "source": "dfg_node_7",
+      "target": "dfg_node_21",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_20": {
+      "id": "dfg_edge_20",
+      "source": "dfg_node_7",
+      "target": "dfg_node_24",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_21": {
+      "id": "dfg_edge_21",
+      "source": "dfg_node_25",
+      "target": "dfg_node_26",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_22": {
+      "id": "dfg_edge_22",
+      "source": "dfg_node_25",
+      "target": "dfg_node_27",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_23": {
+      "id": "dfg_edge_23",
+      "source": "dfg_node_25",
+      "target": "dfg_node_28",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_24": {
+      "id": "dfg_edge_24",
+      "source": "dfg_node_25",
+      "target": "dfg_node_29",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_25": {
+      "id": "dfg_edge_25",
+      "source": "dfg_node_25",
+      "target": "dfg_node_30",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_26": {
+      "id": "dfg_edge_26",
+      "source": "dfg_node_25",
+      "target": "dfg_node_31",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_27": {
+      "id": "dfg_edge_27",
+      "source": "dfg_node_25",
+      "target": "dfg_node_32",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_28": {
+      "id": "dfg_edge_28",
+      "source": "dfg_node_25",
+      "target": "dfg_node_33",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_29": {
+      "id": "dfg_edge_29",
+      "source": "dfg_node_25",
+      "target": "dfg_node_34",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_30": {
+      "id": "dfg_edge_30",
+      "source": "dfg_node_25",
+      "target": "dfg_node_35",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_31": {
+      "id": "dfg_edge_31",
+      "source": "dfg_node_25",
+      "target": "dfg_node_36",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_32": {
+      "id": "dfg_edge_32",
+      "source": "dfg_node_25",
+      "target": "dfg_node_37",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_33": {
+      "id": "dfg_edge_33",
+      "source": "dfg_node_25",
+      "target": "dfg_node_38",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_34": {
+      "id": "dfg_edge_34",
+      "source": "dfg_node_25",
+      "target": "dfg_node_39",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_35": {
+      "id": "dfg_edge_35",
+      "source": "dfg_node_25",
+      "target": "dfg_node_40",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_36": {
+      "id": "dfg_edge_36",
+      "source": "dfg_node_25",
+      "target": "dfg_node_41",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_37": {
+      "id": "dfg_edge_37",
+      "source": "dfg_node_25",
+      "target": "dfg_node_42",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_38": {
+      "id": "dfg_edge_38",
+      "source": "dfg_node_25",
+      "target": "dfg_node_43",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_39": {
+      "id": "dfg_edge_39",
+      "source": "dfg_node_25",
+      "target": "dfg_node_44",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_40": {
+      "id": "dfg_edge_40",
+      "source": "dfg_node_45",
+      "target": "dfg_node_47",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_41": {
+      "id": "dfg_edge_41",
+      "source": "dfg_node_25",
+      "target": "dfg_node_45",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_42": {
+      "id": "dfg_edge_42",
+      "source": "dfg_node_25",
+      "target": "dfg_node_48",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_43": {
+      "id": "dfg_edge_43",
+      "source": "dfg_node_49",
+      "target": "dfg_node_51",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_44": {
+      "id": "dfg_edge_44",
+      "source": "dfg_node_25",
+      "target": "dfg_node_49",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_45": {
+      "id": "dfg_edge_45",
+      "source": "dfg_node_25",
+      "target": "dfg_node_52",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_46": {
+      "id": "dfg_edge_46",
+      "source": "dfg_node_53",
+      "target": "dfg_node_55",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_47": {
+      "id": "dfg_edge_47",
+      "source": "dfg_node_25",
+      "target": "dfg_node_53",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_48": {
+      "id": "dfg_edge_48",
+      "source": "dfg_node_25",
+      "target": "dfg_node_56",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_49": {
+      "id": "dfg_edge_49",
+      "source": "dfg_node_25",
+      "target": "dfg_node_57",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_50": {
+      "id": "dfg_edge_50",
+      "source": "dfg_node_25",
+      "target": "dfg_node_58",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_51": {
+      "id": "dfg_edge_51",
+      "source": "dfg_node_25",
+      "target": "dfg_node_59",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_52": {
+      "id": "dfg_edge_52",
+      "source": "dfg_node_25",
+      "target": "dfg_node_60",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_53": {
+      "id": "dfg_edge_53",
+      "source": "dfg_node_25",
+      "target": "dfg_node_61",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_54": {
+      "id": "dfg_edge_54",
+      "source": "dfg_node_62",
+      "target": "dfg_node_64",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_55": {
+      "id": "dfg_edge_55",
+      "source": "dfg_node_25",
+      "target": "dfg_node_62",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_56": {
+      "id": "dfg_edge_56",
+      "source": "dfg_node_25",
+      "target": "dfg_node_65",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_57": {
+      "id": "dfg_edge_57",
+      "source": "dfg_node_66",
+      "target": "dfg_node_67",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_58": {
+      "id": "dfg_edge_58",
+      "source": "dfg_node_66",
+      "target": "dfg_node_68",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_59": {
+      "id": "dfg_edge_59",
+      "source": "dfg_node_70",
+      "target": "dfg_node_72",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_60": {
+      "id": "dfg_edge_60",
+      "source": "dfg_node_69",
+      "target": "dfg_node_70",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_61": {
+      "id": "dfg_edge_61",
+      "source": "dfg_node_73",
+      "target": "dfg_node_74",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_62": {
+      "id": "dfg_edge_62",
+      "source": "dfg_node_75",
+      "target": "dfg_node_77",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_63": {
+      "id": "dfg_edge_63",
+      "source": "dfg_node_73",
+      "target": "dfg_node_75",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 566,
+    "source_line": 567,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "Owned",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

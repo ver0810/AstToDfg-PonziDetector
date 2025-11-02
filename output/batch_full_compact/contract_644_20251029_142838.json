@@ -1,0 +1,949 @@
+{
+  "contract": "owned",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "owned",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 3,
+        "column": 1,
+        "end_line": 18,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "owner",
+      "data_type": "address",
+      "scope": "owned",
+      "source_location": {
+        "line": 4,
+        "column": 2,
+        "end_line": 4,
+        "end_column": 23
+      },
+      "properties": {
+        "source_location": {
+          "line": 4,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "constructor_function",
+      "name": "owned",
+      "data_type": null,
+      "scope": "owned",
+      "source_location": {
+        "line": 6,
+        "column": 2,
+        "end_line": 8,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 6,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "function",
+      "name": "changeOwner",
+      "data_type": null,
+      "scope": "owned",
+      "source_location": {
+        "line": 10,
+        "column": 2,
+        "end_line": 12,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 10,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "contract",
+      "name": "tokenRecipient",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 20,
+        "column": 1,
+        "end_line": 20,
+        "end_column": 117
+      },
+      "properties": {
+        "source_location": {
+          "line": 20,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "function",
+      "name": "receiveApproval",
+      "data_type": null,
+      "scope": "tokenRecipient",
+      "source_location": {
+        "line": 20,
+        "column": 26,
+        "end_line": 20,
+        "end_column": 116
+      },
+      "properties": {
+        "source_location": {
+          "line": 20,
+          "column": 26
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "contract",
+      "name": "CSToken",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 22,
+        "column": 1,
+        "end_line": 218,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 22,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "state_variable",
+      "name": "standard",
+      "data_type": "string",
+      "scope": "CSToken",
+      "source_location": {
+        "line": 30,
+        "column": 2,
+        "end_line": 30,
+        "end_column": 32
+      },
+      "properties": {
+        "source_location": {
+          "line": 30,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "state_variable",
+      "name": "name",
+      "data_type": "string",
+      "scope": "CSToken",
+      "source_location": {
+        "line": 32,
+        "column": 2,
+        "end_line": 32,
+        "end_column": 42
+      },
+      "properties": {
+        "source_location": {
+          "line": 32,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_10": {
+      "id": "dfg_node_10",
+      "type": "state_variable",
+      "name": "symbol",
+      "data_type": "string",
+      "scope": "CSToken",
+      "source_location": {
+        "line": 34,
+        "column": 2,
+        "end_line": 34,
+        "end_column": 38
+      },
+      "properties": {
+        "source_location": {
+          "line": 34,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_11": {
+      "id": "dfg_node_11",
+      "type": "state_variable",
+      "name": "decimals",
+      "data_type": "uint8",
+      "scope": "CSToken",
+      "source_location": {
+        "line": 36,
+        "column": 2,
+        "end_line": 36,
+        "end_column": 28
+      },
+      "properties": {
+        "source_location": {
+          "line": 36,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_12": {
+      "id": "dfg_node_12",
+      "type": "state_variable",
+      "name": "totalSupply",
+      "data_type": "uint256",
+      "scope": "CSToken",
+      "source_location": {
+        "line": 38,
+        "column": 2,
+        "end_line": 38,
+        "end_column": 33
+      },
+      "properties": {
+        "source_location": {
+          "line": 38,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_13": {
+      "id": "dfg_node_13",
+      "type": "state_variable",
+      "name": "balanceOf",
+      "data_type": "mapping (address => uint256)",
+      "scope": "CSToken",
+      "source_location": {
+        "line": 41,
+        "column": 2,
+        "end_line": 41,
+        "end_column": 48
+      },
+      "properties": {
+        "source_location": {
+          "line": 41,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_14": {
+      "id": "dfg_node_14",
+      "type": "state_variable",
+      "name": "matureBalanceOf",
+      "data_type": "mapping (address => uint256)",
+      "scope": "CSToken",
+      "source_location": {
+        "line": 42,
+        "column": 2,
+        "end_line": 42,
+        "end_column": 54
+      },
+      "properties": {
+        "source_location": {
+          "line": 42,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_15": {
+      "id": "dfg_node_15",
+      "type": "state_variable",
+      "name": "agingBalanceOf",
+      "data_type": "mapping (address => mapping (uint => uint256))",
+      "scope": "CSToken",
+      "source_location": {
+        "line": 44,
+        "column": 2,
+        "end_line": 44,
+        "end_column": 71
+      },
+      "properties": {
+        "source_location": {
+          "line": 44,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_16": {
+      "id": "dfg_node_16",
+      "type": "state_variable",
+      "name": "agingTimes",
+      "data_type": "uint[]",
+      "scope": "CSToken",
+      "source_location": {
+        "line": 46,
+        "column": 2,
+        "end_line": 46,
+        "end_column": 20
+      },
+      "properties": {
+        "source_location": {
+          "line": 46,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_17": {
+      "id": "dfg_node_17",
+      "type": "state_variable",
+      "name": "dividends",
+      "data_type": "Dividend[]",
+      "scope": "CSToken",
+      "source_location": {
+        "line": 48,
+        "column": 2,
+        "end_line": 48,
+        "end_column": 23
+      },
+      "properties": {
+        "source_location": {
+          "line": 48,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_18": {
+      "id": "dfg_node_18",
+      "type": "state_variable",
+      "name": "allowance",
+      "data_type": "mapping (address => mapping (address => uint256))",
+      "scope": "CSToken",
+      "source_location": {
+        "line": 50,
+        "column": 2,
+        "end_line": 50,
+        "end_column": 69
+      },
+      "properties": {
+        "source_location": {
+          "line": 50,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_19": {
+      "id": "dfg_node_19",
+      "type": "state_variable",
+      "name": "countAddressIndexes",
+      "data_type": "uint",
+      "scope": "CSToken",
+      "source_location": {
+        "line": 55,
+        "column": 2,
+        "end_line": 55,
+        "end_column": 31
+      },
+      "properties": {
+        "source_location": {
+          "line": 55,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_20": {
+      "id": "dfg_node_20",
+      "type": "state_variable",
+      "name": "addressByIndex",
+      "data_type": "mapping (uint => address)",
+      "scope": "CSToken",
+      "source_location": {
+        "line": 57,
+        "column": 2,
+        "end_line": 57,
+        "end_column": 43
+      },
+      "properties": {
+        "source_location": {
+          "line": 57,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_21": {
+      "id": "dfg_node_21",
+      "type": "state_variable",
+      "name": "indexByAddress",
+      "data_type": "mapping (address => uint)",
+      "scope": "CSToken",
+      "source_location": {
+        "line": 59,
+        "column": 2,
+        "end_line": 59,
+        "end_column": 43
+      },
+      "properties": {
+        "source_location": {
+          "line": 59,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_22": {
+      "id": "dfg_node_22",
+      "type": "state_variable",
+      "name": "agingTimesForPools",
+      "data_type": "mapping (address => uint)",
+      "scope": "CSToken",
+      "source_location": {
+        "line": 61,
+        "column": 2,
+        "end_line": 61,
+        "end_column": 47
+      },
+      "properties": {
+        "source_location": {
+          "line": 61,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_23": {
+      "id": "dfg_node_23",
+      "type": "constructor_function",
+      "name": "CSToken",
+      "data_type": null,
+      "scope": "CSToken",
+      "source_location": {
+        "line": 64,
+        "column": 2,
+        "end_line": 91,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 64,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_24": {
+      "id": "dfg_node_24",
+      "type": "function",
+      "name": "calculateDividends",
+      "data_type": null,
+      "scope": "CSToken",
+      "source_location": {
+        "line": 93,
+        "column": 2,
+        "end_line": 100,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 93,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_25": {
+      "id": "dfg_node_25",
+      "type": "function",
+      "name": "transfer",
+      "data_type": null,
+      "scope": "CSToken",
+      "source_location": {
+        "line": 103,
+        "column": 2,
+        "end_line": 122,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 103,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_26": {
+      "id": "dfg_node_26",
+      "type": "function",
+      "name": "mintToken",
+      "data_type": null,
+      "scope": "CSToken",
+      "source_location": {
+        "line": 124,
+        "column": 2,
+        "end_line": 136,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 124,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_27": {
+      "id": "dfg_node_27",
+      "type": "function",
+      "name": "addToAging",
+      "data_type": null,
+      "scope": "CSToken",
+      "source_location": {
+        "line": 138,
+        "column": 2,
+        "end_line": 152,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 138,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_28": {
+      "id": "dfg_node_28",
+      "type": "function",
+      "name": "approve",
+      "data_type": null,
+      "scope": "CSToken",
+      "source_location": {
+        "line": 155,
+        "column": 2,
+        "end_line": 158,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 155,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_30": {
+      "id": "dfg_node_30",
+      "type": "parameter",
+      "name": "success",
+      "data_type": "bool",
+      "scope": "approve_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "approve"
+      }
+    },
+    "dfg_node_31": {
+      "id": "dfg_node_31",
+      "type": "function",
+      "name": "approveAndCall",
+      "data_type": null,
+      "scope": "CSToken",
+      "source_location": {
+        "line": 160,
+        "column": 2,
+        "end_line": 166,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 160,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_33": {
+      "id": "dfg_node_33",
+      "type": "parameter",
+      "name": "success",
+      "data_type": "bool",
+      "scope": "approveAndCall_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "approveAndCall"
+      }
+    },
+    "dfg_node_34": {
+      "id": "dfg_node_34",
+      "type": "function",
+      "name": "transferFrom",
+      "data_type": null,
+      "scope": "CSToken",
+      "source_location": {
+        "line": 169,
+        "column": 2,
+        "end_line": 193,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 169,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_36": {
+      "id": "dfg_node_36",
+      "type": "parameter",
+      "name": "success",
+      "data_type": "bool",
+      "scope": "transferFrom_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "transferFrom"
+      }
+    },
+    "dfg_node_37": {
+      "id": "dfg_node_37",
+      "type": "function",
+      "name": "checkMyAging",
+      "data_type": null,
+      "scope": "CSToken",
+      "source_location": {
+        "line": 201,
+        "column": 2,
+        "end_line": 213,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 201,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_38": {
+      "id": "dfg_node_38",
+      "type": "function",
+      "name": "addAgingTimesForPool",
+      "data_type": null,
+      "scope": "CSToken",
+      "source_location": {
+        "line": 215,
+        "column": 2,
+        "end_line": 217,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 215,
+          "column": 2
+        }
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_5",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_7",
+      "target": "dfg_node_8",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_7",
+      "target": "dfg_node_9",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_7",
+      "target": "dfg_node_10",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_7",
+      "target": "dfg_node_11",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_9": {
+      "id": "dfg_edge_9",
+      "source": "dfg_node_7",
+      "target": "dfg_node_12",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_10": {
+      "id": "dfg_edge_10",
+      "source": "dfg_node_7",
+      "target": "dfg_node_13",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_11": {
+      "id": "dfg_edge_11",
+      "source": "dfg_node_7",
+      "target": "dfg_node_14",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_12": {
+      "id": "dfg_edge_12",
+      "source": "dfg_node_7",
+      "target": "dfg_node_15",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_13": {
+      "id": "dfg_edge_13",
+      "source": "dfg_node_7",
+      "target": "dfg_node_16",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_14": {
+      "id": "dfg_edge_14",
+      "source": "dfg_node_7",
+      "target": "dfg_node_17",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_15": {
+      "id": "dfg_edge_15",
+      "source": "dfg_node_7",
+      "target": "dfg_node_18",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_16": {
+      "id": "dfg_edge_16",
+      "source": "dfg_node_7",
+      "target": "dfg_node_19",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_17": {
+      "id": "dfg_edge_17",
+      "source": "dfg_node_7",
+      "target": "dfg_node_20",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_18": {
+      "id": "dfg_edge_18",
+      "source": "dfg_node_7",
+      "target": "dfg_node_21",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_19": {
+      "id": "dfg_edge_19",
+      "source": "dfg_node_7",
+      "target": "dfg_node_22",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_20": {
+      "id": "dfg_edge_20",
+      "source": "dfg_node_7",
+      "target": "dfg_node_23",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_21": {
+      "id": "dfg_edge_21",
+      "source": "dfg_node_7",
+      "target": "dfg_node_24",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_22": {
+      "id": "dfg_edge_22",
+      "source": "dfg_node_7",
+      "target": "dfg_node_25",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_23": {
+      "id": "dfg_edge_23",
+      "source": "dfg_node_7",
+      "target": "dfg_node_26",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_24": {
+      "id": "dfg_edge_24",
+      "source": "dfg_node_7",
+      "target": "dfg_node_27",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_25": {
+      "id": "dfg_edge_25",
+      "source": "dfg_node_28",
+      "target": "dfg_node_30",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_26": {
+      "id": "dfg_edge_26",
+      "source": "dfg_node_7",
+      "target": "dfg_node_28",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_27": {
+      "id": "dfg_edge_27",
+      "source": "dfg_node_31",
+      "target": "dfg_node_33",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_28": {
+      "id": "dfg_edge_28",
+      "source": "dfg_node_7",
+      "target": "dfg_node_31",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_29": {
+      "id": "dfg_edge_29",
+      "source": "dfg_node_34",
+      "target": "dfg_node_36",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_30": {
+      "id": "dfg_edge_30",
+      "source": "dfg_node_7",
+      "target": "dfg_node_34",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_31": {
+      "id": "dfg_edge_31",
+      "source": "dfg_node_7",
+      "target": "dfg_node_37",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_32": {
+      "id": "dfg_edge_32",
+      "source": "dfg_node_7",
+      "target": "dfg_node_38",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 644,
+    "source_line": 645,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "owned",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

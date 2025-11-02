@@ -1,0 +1,113 @@
+{
+  "contract": "Random",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "Random",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 3,
+        "column": 1,
+        "end_line": 12,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "_seed",
+      "data_type": "uint64",
+      "scope": "Random",
+      "source_location": {
+        "line": 4,
+        "column": 3,
+        "end_line": 4,
+        "end_column": 20
+      },
+      "properties": {
+        "source_location": {
+          "line": 4,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "function",
+      "name": "random",
+      "data_type": null,
+      "scope": "Random",
+      "source_location": {
+        "line": 8,
+        "column": 3,
+        "end_line": 11,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 8,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "parameter",
+      "name": "randomNumber",
+      "data_type": "uint64",
+      "scope": "random_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "random"
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_3",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 1424,
+    "source_line": 1425,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "Random",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

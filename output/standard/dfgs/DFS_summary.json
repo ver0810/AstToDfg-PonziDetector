@@ -1,0 +1,62 @@
+{
+  "contract": "DFS",
+  "solidity_version": "0.4.x",
+  "statistics": {
+    "total_nodes": 144,
+    "total_edges": 8,
+    "entry_node": null
+  },
+  "node_types": {
+    "contract": 1,
+    "struct_declaration": 1,
+    "state_variable": 5,
+    "function": 2,
+    "if_statement": 21,
+    "expression": 107,
+    "local_variable": 5,
+    "while_statement": 1,
+    "return_statement": 1
+  },
+  "edge_types": {
+    "definition": 8
+  },
+  "functions": [
+    {
+      "name": "makeDeposit",
+      "scope": "DFS",
+      "data_type": null
+    },
+    {
+      "name": "pay",
+      "scope": "DFS",
+      "data_type": null
+    }
+  ],
+  "state_variables": [
+    {
+      "name": "numDeposits",
+      "data_type": "uint",
+      "scope": "DFS"
+    },
+    {
+      "name": "deposits",
+      "data_type": "mapping (uint => Deposit)",
+      "scope": "DFS"
+    },
+    {
+      "name": "owner1",
+      "data_type": "address",
+      "scope": "DFS"
+    },
+    {
+      "name": "owner2",
+      "data_type": "address",
+      "scope": "DFS"
+    },
+    {
+      "name": "i",
+      "data_type": "uint",
+      "scope": "DFS"
+    }
+  ]
+}

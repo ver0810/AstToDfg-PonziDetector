@@ -1,0 +1,288 @@
+{
+  "contract": "Doubler",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "Doubler",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 1,
+        "column": 1,
+        "end_line": 62,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "participants",
+      "data_type": "Participant[]",
+      "scope": "Doubler",
+      "source_location": {
+        "line": 8,
+        "column": 5,
+        "end_line": 8,
+        "end_column": 39
+      },
+      "properties": {
+        "source_location": {
+          "line": 8,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "state_variable",
+      "name": "payoutIdx",
+      "data_type": "uint",
+      "scope": "Doubler",
+      "source_location": {
+        "line": 10,
+        "column": 2,
+        "end_line": 10,
+        "end_column": 28
+      },
+      "properties": {
+        "source_location": {
+          "line": 10,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "state_variable",
+      "name": "collectedFees",
+      "data_type": "uint",
+      "scope": "Doubler",
+      "source_location": {
+        "line": 11,
+        "column": 2,
+        "end_line": 11,
+        "end_column": 32
+      },
+      "properties": {
+        "source_location": {
+          "line": 11,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "state_variable",
+      "name": "balance",
+      "data_type": "uint",
+      "scope": "Doubler",
+      "source_location": {
+        "line": 12,
+        "column": 2,
+        "end_line": 12,
+        "end_column": 19
+      },
+      "properties": {
+        "source_location": {
+          "line": 12,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "state_variable",
+      "name": "owner",
+      "data_type": "address",
+      "scope": "Doubler",
+      "source_location": {
+        "line": 15,
+        "column": 2,
+        "end_line": 15,
+        "end_column": 23
+      },
+      "properties": {
+        "source_location": {
+          "line": 15,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "constructor_function",
+      "name": "Doubler",
+      "data_type": null,
+      "scope": "Doubler",
+      "source_location": {
+        "line": 19,
+        "column": 5,
+        "end_line": 21,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 19,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "function",
+      "name": "enter",
+      "data_type": null,
+      "scope": "Doubler",
+      "source_location": {
+        "line": 28,
+        "column": 2,
+        "end_line": 50,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 28,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "function",
+      "name": "collectFees",
+      "data_type": null,
+      "scope": "Doubler",
+      "source_location": {
+        "line": 52,
+        "column": 5,
+        "end_line": 57,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 52,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_10": {
+      "id": "dfg_node_10",
+      "type": "function",
+      "name": "setOwner",
+      "data_type": null,
+      "scope": "Doubler",
+      "source_location": {
+        "line": 59,
+        "column": 5,
+        "end_line": 61,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 59,
+          "column": 5
+        }
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_1",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_1",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_1",
+      "target": "dfg_node_7",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_1",
+      "target": "dfg_node_8",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_1",
+      "target": "dfg_node_9",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_9": {
+      "id": "dfg_edge_9",
+      "source": "dfg_node_1",
+      "target": "dfg_node_10",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 252,
+    "source_line": 253,
+    "label": 1,
+    "mode": "compact",
+    "contract_name": "Doubler",
+    "timestamp": "20251029_142838"
+  },
+  "label": 1
+}

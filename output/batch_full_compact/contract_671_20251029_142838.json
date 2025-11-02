@@ -1,0 +1,176 @@
+{
+  "contract": "plusOnePonzi",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "plusOnePonzi",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 1,
+        "column": 1,
+        "end_line": 34,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "VALUE",
+      "data_type": "uint",
+      "scope": "plusOnePonzi",
+      "source_location": {
+        "line": 3,
+        "column": 3,
+        "end_line": 3,
+        "end_column": 40
+      },
+      "properties": {
+        "source_location": {
+          "line": 3,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "state_variable",
+      "name": "payouts",
+      "data_type": "Payout[]",
+      "scope": "plusOnePonzi",
+      "source_location": {
+        "line": 11,
+        "column": 3,
+        "end_line": 11,
+        "end_column": 27
+      },
+      "properties": {
+        "source_location": {
+          "line": 11,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "state_variable",
+      "name": "payoutIndex",
+      "data_type": "uint",
+      "scope": "plusOnePonzi",
+      "source_location": {
+        "line": 12,
+        "column": 3,
+        "end_line": 12,
+        "end_column": 31
+      },
+      "properties": {
+        "source_location": {
+          "line": 12,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "state_variable",
+      "name": "payoutTotal",
+      "data_type": "uint",
+      "scope": "plusOnePonzi",
+      "source_location": {
+        "line": 13,
+        "column": 3,
+        "end_line": 13,
+        "end_column": 31
+      },
+      "properties": {
+        "source_location": {
+          "line": 13,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "function",
+      "name": "PlusOnePonzi",
+      "data_type": null,
+      "scope": "plusOnePonzi",
+      "source_location": {
+        "line": 15,
+        "column": 3,
+        "end_line": 16,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 15,
+          "column": 3
+        }
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_1",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_1",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 671,
+    "source_line": 672,
+    "label": 1,
+    "mode": "compact",
+    "contract_name": "plusOnePonzi",
+    "timestamp": "20251029_142838"
+  },
+  "label": 1
+}

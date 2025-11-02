@@ -1,0 +1,111 @@
+{
+  "contract": "setNumRewardsForTMEUser",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "setNumRewardsForTMEUser",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 5,
+        "column": 1,
+        "end_line": 13,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 5,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "constructor_function",
+      "name": "setNumRewardsForTMEUser",
+      "data_type": null,
+      "scope": "setNumRewardsForTMEUser",
+      "source_location": {
+        "line": 7,
+        "column": 1,
+        "end_line": 12,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 7,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "contract",
+      "name": "elixor",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 15,
+        "column": 1,
+        "end_line": 19,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 15,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "function",
+      "name": "manuallySetNumRewardsAvailableForChildAddress",
+      "data_type": null,
+      "scope": "elixor",
+      "source_location": {
+        "line": 17,
+        "column": 1,
+        "end_line": 17,
+        "end_column": 95
+      },
+      "properties": {
+        "source_location": {
+          "line": 17,
+          "column": 1
+        }
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_3",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 558,
+    "source_line": 559,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "setNumRewardsForTMEUser",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

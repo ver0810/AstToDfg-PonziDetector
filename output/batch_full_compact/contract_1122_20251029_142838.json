@@ -1,0 +1,260 @@
+{
+  "contract": "PonziScheme",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "PonziScheme",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 3,
+        "column": 1,
+        "end_line": 43,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "round",
+      "data_type": "uint",
+      "scope": "PonziScheme",
+      "source_location": {
+        "line": 4,
+        "column": 3,
+        "end_line": 4,
+        "end_column": 21
+      },
+      "properties": {
+        "source_location": {
+          "line": 4,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "state_variable",
+      "name": "lastDepositor",
+      "data_type": "address",
+      "scope": "PonziScheme",
+      "source_location": {
+        "line": 5,
+        "column": 3,
+        "end_line": 5,
+        "end_column": 32
+      },
+      "properties": {
+        "source_location": {
+          "line": 5,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "state_variable",
+      "name": "lastDepositorAmount",
+      "data_type": "uint",
+      "scope": "PonziScheme",
+      "source_location": {
+        "line": 6,
+        "column": 3,
+        "end_line": 6,
+        "end_column": 35
+      },
+      "properties": {
+        "source_location": {
+          "line": 6,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "state_variable",
+      "name": "startingAmount",
+      "data_type": "uint",
+      "scope": "PonziScheme",
+      "source_location": {
+        "line": 7,
+        "column": 3,
+        "end_line": 7,
+        "end_column": 30
+      },
+      "properties": {
+        "source_location": {
+          "line": 7,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "state_variable",
+      "name": "nextAmount",
+      "data_type": "uint",
+      "scope": "PonziScheme",
+      "source_location": {
+        "line": 8,
+        "column": 3,
+        "end_line": 8,
+        "end_column": 26
+      },
+      "properties": {
+        "source_location": {
+          "line": 8,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "constructor_function",
+      "name": "PonziScheme",
+      "data_type": null,
+      "scope": "PonziScheme",
+      "source_location": {
+        "line": 10,
+        "column": 3,
+        "end_line": 14,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 10,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "function",
+      "name": "checkAmount",
+      "data_type": null,
+      "scope": "PonziScheme",
+      "source_location": {
+        "line": 34,
+        "column": 3,
+        "end_line": 38,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 34,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "function",
+      "name": "increaseRound",
+      "data_type": null,
+      "scope": "PonziScheme",
+      "source_location": {
+        "line": 40,
+        "column": 3,
+        "end_line": 42,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 40,
+          "column": 3
+        }
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_1",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_1",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_1",
+      "target": "dfg_node_7",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_1",
+      "target": "dfg_node_8",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_1",
+      "target": "dfg_node_9",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 1122,
+    "source_line": 1123,
+    "label": 1,
+    "mode": "compact",
+    "contract_name": "PonziScheme",
+    "timestamp": "20251029_142838"
+  },
+  "label": 1
+}

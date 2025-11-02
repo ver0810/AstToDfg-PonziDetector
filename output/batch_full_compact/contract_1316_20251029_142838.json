@@ -1,0 +1,960 @@
+{
+  "contract": "SportsBet",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "SportsBet",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 3,
+        "column": 1,
+        "end_line": 444,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "owner",
+      "data_type": "address",
+      "scope": "SportsBet",
+      "source_location": {
+        "line": 55,
+        "column": 5,
+        "end_line": 55,
+        "end_column": 26
+      },
+      "properties": {
+        "source_location": {
+          "line": 55,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "state_variable",
+      "name": "games",
+      "data_type": "Game[]",
+      "scope": "SportsBet",
+      "source_location": {
+        "line": 56,
+        "column": 5,
+        "end_line": 56,
+        "end_column": 18
+      },
+      "properties": {
+        "source_location": {
+          "line": 56,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "state_variable",
+      "name": "balances",
+      "data_type": "mapping(address => uint)",
+      "scope": "SportsBet",
+      "source_location": {
+        "line": 57,
+        "column": 5,
+        "end_line": 57,
+        "end_column": 46
+      },
+      "properties": {
+        "source_location": {
+          "line": 57,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "constructor_function",
+      "name": "SportsBet",
+      "data_type": null,
+      "scope": "SportsBet",
+      "source_location": {
+        "line": 59,
+        "column": 5,
+        "end_line": 61,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 59,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "function",
+      "name": "createGame",
+      "data_type": null,
+      "scope": "SportsBet",
+      "source_location": {
+        "line": 63,
+        "column": 2,
+        "end_line": 75,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 63,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "parameter",
+      "name": "param_6",
+      "data_type": "int",
+      "scope": "createGame_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "createGame"
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "function",
+      "name": "cancelOpenBids",
+      "data_type": null,
+      "scope": "SportsBet",
+      "source_location": {
+        "line": 77,
+        "column": 5,
+        "end_line": 97,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 77,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_11": {
+      "id": "dfg_node_11",
+      "type": "parameter",
+      "name": "param_9",
+      "data_type": "int",
+      "scope": "cancelOpenBids_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "cancelOpenBids"
+      }
+    },
+    "dfg_node_12": {
+      "id": "dfg_node_12",
+      "type": "function",
+      "name": "setGameResult",
+      "data_type": null,
+      "scope": "SportsBet",
+      "source_location": {
+        "line": 99,
+        "column": 5,
+        "end_line": 131,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 99,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_14": {
+      "id": "dfg_node_14",
+      "type": "parameter",
+      "name": "param_12",
+      "data_type": "int",
+      "scope": "setGameResult_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "setGameResult"
+      }
+    },
+    "dfg_node_15": {
+      "id": "dfg_node_15",
+      "type": "function",
+      "name": "bidSpread",
+      "data_type": null,
+      "scope": "SportsBet",
+      "source_location": {
+        "line": 135,
+        "column": 5,
+        "end_line": 161,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 135,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_17": {
+      "id": "dfg_node_17",
+      "type": "parameter",
+      "name": "param_15",
+      "data_type": "int",
+      "scope": "bidSpread_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "bidSpread"
+      }
+    },
+    "dfg_node_18": {
+      "id": "dfg_node_18",
+      "type": "function",
+      "name": "getOpenBids",
+      "data_type": null,
+      "scope": "SportsBet",
+      "source_location": {
+        "line": 169,
+        "column": 5,
+        "end_line": 194,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 169,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_20": {
+      "id": "dfg_node_20",
+      "type": "parameter",
+      "name": "param_18",
+      "data_type": "bytes",
+      "scope": "getOpenBids_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getOpenBids"
+      }
+    },
+    "dfg_node_21": {
+      "id": "dfg_node_21",
+      "type": "function",
+      "name": "getOpenBidsByLine",
+      "data_type": null,
+      "scope": "SportsBet",
+      "source_location": {
+        "line": 198,
+        "column": 5,
+        "end_line": 250,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 198,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_23": {
+      "id": "dfg_node_23",
+      "type": "parameter",
+      "name": "param_21",
+      "data_type": "bytes",
+      "scope": "getOpenBidsByLine_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getOpenBidsByLine"
+      }
+    },
+    "dfg_node_24": {
+      "id": "dfg_node_24",
+      "type": "function",
+      "name": "getUniqueLineCount",
+      "data_type": null,
+      "scope": "SportsBet",
+      "source_location": {
+        "line": 252,
+        "column": 5,
+        "end_line": 265,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 252,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_26": {
+      "id": "dfg_node_26",
+      "type": "parameter",
+      "name": "param_24",
+      "data_type": "uint",
+      "scope": "getUniqueLineCount_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getUniqueLineCount"
+      }
+    },
+    "dfg_node_27": {
+      "id": "dfg_node_27",
+      "type": "function",
+      "name": "getOpenBidsByBidder",
+      "data_type": null,
+      "scope": "SportsBet",
+      "source_location": {
+        "line": 267,
+        "column": 5,
+        "end_line": 295,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 267,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_29": {
+      "id": "dfg_node_29",
+      "type": "parameter",
+      "name": "param_27",
+      "data_type": "bytes",
+      "scope": "getOpenBidsByBidder_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getOpenBidsByBidder"
+      }
+    },
+    "dfg_node_30": {
+      "id": "dfg_node_30",
+      "type": "function",
+      "name": "getBook",
+      "data_type": null,
+      "scope": "SportsBet",
+      "source_location": {
+        "line": 299,
+        "column": 5,
+        "end_line": 303,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 299,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_32": {
+      "id": "dfg_node_32",
+      "type": "parameter",
+      "name": "param_30",
+      "data_type": "Book",
+      "scope": "getBook_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getBook"
+      }
+    },
+    "dfg_node_33": {
+      "id": "dfg_node_33",
+      "type": "function",
+      "name": "matchExistingBids",
+      "data_type": null,
+      "scope": "SportsBet",
+      "source_location": {
+        "line": 305,
+        "column": 5,
+        "end_line": 338,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 305,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_35": {
+      "id": "dfg_node_35",
+      "type": "parameter",
+      "name": "param_33",
+      "data_type": "Bid",
+      "scope": "matchExistingBids_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "matchExistingBids"
+      }
+    },
+    "dfg_node_36": {
+      "id": "dfg_node_36",
+      "type": "function",
+      "name": "cancelBid",
+      "data_type": null,
+      "scope": "SportsBet",
+      "source_location": {
+        "line": 340,
+        "column": 5,
+        "end_line": 355,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 340,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_38": {
+      "id": "dfg_node_38",
+      "type": "parameter",
+      "name": "param_36",
+      "data_type": "bool",
+      "scope": "cancelBid_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "cancelBid"
+      }
+    },
+    "dfg_node_39": {
+      "id": "dfg_node_39",
+      "type": "function",
+      "name": "kill",
+      "data_type": null,
+      "scope": "SportsBet",
+      "source_location": {
+        "line": 357,
+        "column": 5,
+        "end_line": 359,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 357,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_40": {
+      "id": "dfg_node_40",
+      "type": "function",
+      "name": "getGameId",
+      "data_type": null,
+      "scope": "SportsBet",
+      "source_location": {
+        "line": 361,
+        "column": 5,
+        "end_line": 377,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 361,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_42": {
+      "id": "dfg_node_42",
+      "type": "parameter",
+      "name": "param_40",
+      "data_type": "bytes32",
+      "scope": "getGameId_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getGameId"
+      }
+    },
+    "dfg_node_43": {
+      "id": "dfg_node_43",
+      "type": "function",
+      "name": "getActiveGames",
+      "data_type": null,
+      "scope": "SportsBet",
+      "source_location": {
+        "line": 379,
+        "column": 5,
+        "end_line": 385,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 379,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_45": {
+      "id": "dfg_node_45",
+      "type": "parameter",
+      "name": "param_43",
+      "data_type": "bytes32[]",
+      "scope": "getActiveGames_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getActiveGames"
+      }
+    },
+    "dfg_node_46": {
+      "id": "dfg_node_46",
+      "type": "function",
+      "name": "addBidToStack",
+      "data_type": null,
+      "scope": "SportsBet",
+      "source_location": {
+        "line": 387,
+        "column": 5,
+        "end_line": 416,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 387,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_48": {
+      "id": "dfg_node_48",
+      "type": "parameter",
+      "name": "param_46",
+      "data_type": "int",
+      "scope": "addBidToStack_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "addBidToStack"
+      }
+    },
+    "dfg_node_49": {
+      "id": "dfg_node_49",
+      "type": "function",
+      "name": "getGameById",
+      "data_type": null,
+      "scope": "SportsBet",
+      "source_location": {
+        "line": 418,
+        "column": 5,
+        "end_line": 430,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 418,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_51": {
+      "id": "dfg_node_51",
+      "type": "parameter",
+      "name": "param_49",
+      "data_type": "Game",
+      "scope": "getGameById_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getGameById"
+      }
+    },
+    "dfg_node_52": {
+      "id": "dfg_node_52",
+      "type": "function",
+      "name": "withdraw",
+      "data_type": null,
+      "scope": "SportsBet",
+      "source_location": {
+        "line": 433,
+        "column": 5,
+        "end_line": 442,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 433,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_54": {
+      "id": "dfg_node_54",
+      "type": "parameter",
+      "name": "param_52",
+      "data_type": "int",
+      "scope": "withdraw_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "withdraw"
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_1",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_6",
+      "target": "dfg_node_8",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_1",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_9",
+      "target": "dfg_node_11",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_1",
+      "target": "dfg_node_9",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_9": {
+      "id": "dfg_edge_9",
+      "source": "dfg_node_12",
+      "target": "dfg_node_14",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_10": {
+      "id": "dfg_edge_10",
+      "source": "dfg_node_1",
+      "target": "dfg_node_12",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_11": {
+      "id": "dfg_edge_11",
+      "source": "dfg_node_15",
+      "target": "dfg_node_17",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_12": {
+      "id": "dfg_edge_12",
+      "source": "dfg_node_1",
+      "target": "dfg_node_15",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_13": {
+      "id": "dfg_edge_13",
+      "source": "dfg_node_18",
+      "target": "dfg_node_20",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_14": {
+      "id": "dfg_edge_14",
+      "source": "dfg_node_1",
+      "target": "dfg_node_18",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_15": {
+      "id": "dfg_edge_15",
+      "source": "dfg_node_21",
+      "target": "dfg_node_23",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_16": {
+      "id": "dfg_edge_16",
+      "source": "dfg_node_1",
+      "target": "dfg_node_21",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_17": {
+      "id": "dfg_edge_17",
+      "source": "dfg_node_24",
+      "target": "dfg_node_26",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_18": {
+      "id": "dfg_edge_18",
+      "source": "dfg_node_1",
+      "target": "dfg_node_24",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_19": {
+      "id": "dfg_edge_19",
+      "source": "dfg_node_27",
+      "target": "dfg_node_29",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_20": {
+      "id": "dfg_edge_20",
+      "source": "dfg_node_1",
+      "target": "dfg_node_27",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_21": {
+      "id": "dfg_edge_21",
+      "source": "dfg_node_30",
+      "target": "dfg_node_32",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_22": {
+      "id": "dfg_edge_22",
+      "source": "dfg_node_1",
+      "target": "dfg_node_30",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_23": {
+      "id": "dfg_edge_23",
+      "source": "dfg_node_33",
+      "target": "dfg_node_35",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_24": {
+      "id": "dfg_edge_24",
+      "source": "dfg_node_1",
+      "target": "dfg_node_33",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_25": {
+      "id": "dfg_edge_25",
+      "source": "dfg_node_36",
+      "target": "dfg_node_38",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_26": {
+      "id": "dfg_edge_26",
+      "source": "dfg_node_1",
+      "target": "dfg_node_36",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_27": {
+      "id": "dfg_edge_27",
+      "source": "dfg_node_1",
+      "target": "dfg_node_39",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_28": {
+      "id": "dfg_edge_28",
+      "source": "dfg_node_40",
+      "target": "dfg_node_42",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_29": {
+      "id": "dfg_edge_29",
+      "source": "dfg_node_1",
+      "target": "dfg_node_40",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_30": {
+      "id": "dfg_edge_30",
+      "source": "dfg_node_43",
+      "target": "dfg_node_45",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_31": {
+      "id": "dfg_edge_31",
+      "source": "dfg_node_1",
+      "target": "dfg_node_43",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_32": {
+      "id": "dfg_edge_32",
+      "source": "dfg_node_46",
+      "target": "dfg_node_48",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_33": {
+      "id": "dfg_edge_33",
+      "source": "dfg_node_1",
+      "target": "dfg_node_46",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_34": {
+      "id": "dfg_edge_34",
+      "source": "dfg_node_49",
+      "target": "dfg_node_51",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_35": {
+      "id": "dfg_edge_35",
+      "source": "dfg_node_1",
+      "target": "dfg_node_49",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_36": {
+      "id": "dfg_edge_36",
+      "source": "dfg_node_52",
+      "target": "dfg_node_54",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_37": {
+      "id": "dfg_edge_37",
+      "source": "dfg_node_1",
+      "target": "dfg_node_52",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 1316,
+    "source_line": 1317,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "SportsBet",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

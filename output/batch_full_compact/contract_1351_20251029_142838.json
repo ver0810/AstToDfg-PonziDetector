@@ -1,0 +1,349 @@
+{
+  "contract": "KittenCoin",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "KittenCoin",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 4,
+        "column": 1,
+        "end_line": 7,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 4,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "function",
+      "name": "transferFrom",
+      "data_type": null,
+      "scope": "KittenCoin",
+      "source_location": {
+        "line": 5,
+        "column": 5,
+        "end_line": 5,
+        "end_column": 95
+      },
+      "properties": {
+        "source_location": {
+          "line": 5,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "parameter",
+      "name": "param_2",
+      "data_type": "bool",
+      "scope": "transferFrom_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "transferFrom"
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "function",
+      "name": "allowance",
+      "data_type": null,
+      "scope": "KittenCoin",
+      "source_location": {
+        "line": 6,
+        "column": 5,
+        "end_line": 6,
+        "end_column": 92
+      },
+      "properties": {
+        "source_location": {
+          "line": 6,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "parameter",
+      "name": "param_5",
+      "data_type": "uint256",
+      "scope": "allowance_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "allowance"
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "contract",
+      "name": "KittenSale",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 9,
+        "column": 1,
+        "end_line": 56,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 9,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "state_variable",
+      "name": "_kittenContract",
+      "data_type": "KittenCoin",
+      "scope": "KittenSale",
+      "source_location": {
+        "line": 10,
+        "column": 5,
+        "end_line": 10,
+        "end_column": 39
+      },
+      "properties": {
+        "source_location": {
+          "line": 10,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_10": {
+      "id": "dfg_node_10",
+      "type": "state_variable",
+      "name": "_kittenOwner",
+      "data_type": "address",
+      "scope": "KittenSale",
+      "source_location": {
+        "line": 11,
+        "column": 5,
+        "end_line": 11,
+        "end_column": 33
+      },
+      "properties": {
+        "source_location": {
+          "line": 11,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_11": {
+      "id": "dfg_node_11",
+      "type": "state_variable",
+      "name": "totalContributions",
+      "data_type": "uint256",
+      "scope": "KittenSale",
+      "source_location": {
+        "line": 12,
+        "column": 5,
+        "end_line": 12,
+        "end_column": 39
+      },
+      "properties": {
+        "source_location": {
+          "line": 12,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_12": {
+      "id": "dfg_node_12",
+      "type": "state_variable",
+      "name": "kittensSold",
+      "data_type": "uint256",
+      "scope": "KittenSale",
+      "source_location": {
+        "line": 13,
+        "column": 5,
+        "end_line": 13,
+        "end_column": 32
+      },
+      "properties": {
+        "source_location": {
+          "line": 13,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_13": {
+      "id": "dfg_node_13",
+      "type": "state_variable",
+      "name": "kittensRemainingForSale",
+      "data_type": "uint256",
+      "scope": "KittenSale",
+      "source_location": {
+        "line": 14,
+        "column": 5,
+        "end_line": 14,
+        "end_column": 44
+      },
+      "properties": {
+        "source_location": {
+          "line": 14,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_14": {
+      "id": "dfg_node_14",
+      "type": "constructor_function",
+      "name": "KittenSale",
+      "data_type": null,
+      "scope": "KittenSale",
+      "source_location": {
+        "line": 16,
+        "column": 5,
+        "end_line": 23,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 16,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_15": {
+      "id": "dfg_node_15",
+      "type": "function",
+      "name": "updateKittensRemainingForSale",
+      "data_type": null,
+      "scope": "KittenSale",
+      "source_location": {
+        "line": 52,
+        "column": 5,
+        "end_line": 54,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 52,
+          "column": 5
+        }
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_2",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_5",
+      "target": "dfg_node_7",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_1",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_8",
+      "target": "dfg_node_9",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_8",
+      "target": "dfg_node_10",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_8",
+      "target": "dfg_node_11",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_8",
+      "target": "dfg_node_12",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_9": {
+      "id": "dfg_edge_9",
+      "source": "dfg_node_8",
+      "target": "dfg_node_13",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_10": {
+      "id": "dfg_edge_10",
+      "source": "dfg_node_8",
+      "target": "dfg_node_14",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_11": {
+      "id": "dfg_edge_11",
+      "source": "dfg_node_8",
+      "target": "dfg_node_15",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 1351,
+    "source_line": 1352,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "KittenCoin",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

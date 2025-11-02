@@ -1,0 +1,382 @@
+{
+  "contract": "Ownable",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "Ownable",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 2,
+        "column": 1,
+        "end_line": 18,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "owner",
+      "data_type": "address",
+      "scope": "Ownable",
+      "source_location": {
+        "line": 3,
+        "column": 3,
+        "end_line": 3,
+        "end_column": 24
+      },
+      "properties": {
+        "source_location": {
+          "line": 3,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "constructor_function",
+      "name": "Ownable",
+      "data_type": null,
+      "scope": "Ownable",
+      "source_location": {
+        "line": 5,
+        "column": 3,
+        "end_line": 7,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 5,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "function",
+      "name": "transferOwnership",
+      "data_type": null,
+      "scope": "Ownable",
+      "source_location": {
+        "line": 14,
+        "column": 3,
+        "end_line": 16,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 14,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "contract",
+      "name": "wLogoVote",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 20,
+        "column": 1,
+        "end_line": 22,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 20,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "function",
+      "name": "claimReward",
+      "data_type": null,
+      "scope": "wLogoVote",
+      "source_location": {
+        "line": 21,
+        "column": 2,
+        "end_line": 21,
+        "end_column": 42
+      },
+      "properties": {
+        "source_location": {
+          "line": 21,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "contract",
+      "name": "Logo",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 24,
+        "column": 1,
+        "end_line": 56,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 24,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "state_variable",
+      "name": "logoVote",
+      "data_type": "wLogoVote",
+      "scope": "Logo",
+      "source_location": {
+        "line": 26,
+        "column": 2,
+        "end_line": 26,
+        "end_column": 28
+      },
+      "properties": {
+        "source_location": {
+          "line": 26,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "state_variable",
+      "name": "author",
+      "data_type": "address",
+      "scope": "Logo",
+      "source_location": {
+        "line": 28,
+        "column": 2,
+        "end_line": 28,
+        "end_column": 24
+      },
+      "properties": {
+        "source_location": {
+          "line": 28,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_10": {
+      "id": "dfg_node_10",
+      "type": "state_variable",
+      "name": "metadataUrl",
+      "data_type": "string",
+      "scope": "Logo",
+      "source_location": {
+        "line": 29,
+        "column": 2,
+        "end_line": 29,
+        "end_column": 28
+      },
+      "properties": {
+        "source_location": {
+          "line": 29,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_11": {
+      "id": "dfg_node_11",
+      "type": "constructor_function",
+      "name": "Logo",
+      "data_type": null,
+      "scope": "Logo",
+      "source_location": {
+        "line": 33,
+        "column": 2,
+        "end_line": 38,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 33,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_12": {
+      "id": "dfg_node_12",
+      "type": "function",
+      "name": "tips",
+      "data_type": null,
+      "scope": "Logo",
+      "source_location": {
+        "line": 40,
+        "column": 2,
+        "end_line": 43,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 40,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_13": {
+      "id": "dfg_node_13",
+      "type": "function",
+      "name": "claimReward",
+      "data_type": null,
+      "scope": "Logo",
+      "source_location": {
+        "line": 45,
+        "column": 2,
+        "end_line": 47,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 45,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_14": {
+      "id": "dfg_node_14",
+      "type": "function",
+      "name": "setMetadata",
+      "data_type": null,
+      "scope": "Logo",
+      "source_location": {
+        "line": 49,
+        "column": 2,
+        "end_line": 51,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 49,
+          "column": 2
+        }
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_5",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_7",
+      "target": "dfg_node_8",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_7",
+      "target": "dfg_node_9",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_7",
+      "target": "dfg_node_10",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_7",
+      "target": "dfg_node_11",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_9": {
+      "id": "dfg_edge_9",
+      "source": "dfg_node_7",
+      "target": "dfg_node_12",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_10": {
+      "id": "dfg_edge_10",
+      "source": "dfg_node_7",
+      "target": "dfg_node_13",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_11": {
+      "id": "dfg_edge_11",
+      "source": "dfg_node_7",
+      "target": "dfg_node_14",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 1368,
+    "source_line": 1369,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "Ownable",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

@@ -1,0 +1,260 @@
+{
+  "contract": "testwallet9",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "testwallet9",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 1,
+        "column": 1,
+        "end_line": 65,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "owners",
+      "data_type": "address[]",
+      "scope": "testwallet9",
+      "source_location": {
+        "line": 6,
+        "column": 5,
+        "end_line": 6,
+        "end_column": 29
+      },
+      "properties": {
+        "source_location": {
+          "line": 6,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "state_variable",
+      "name": "lastowner",
+      "data_type": "address",
+      "scope": "testwallet9",
+      "source_location": {
+        "line": 8,
+        "column": 5,
+        "end_line": 8,
+        "end_column": 30
+      },
+      "properties": {
+        "source_location": {
+          "line": 8,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "function",
+      "name": "testwallet8",
+      "data_type": null,
+      "scope": "testwallet9",
+      "source_location": {
+        "line": 10,
+        "column": 5,
+        "end_line": 13,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 10,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "function",
+      "name": "add_another_owner",
+      "data_type": null,
+      "scope": "testwallet9",
+      "source_location": {
+        "line": 15,
+        "column": 4,
+        "end_line": 20,
+        "end_column": 5
+      },
+      "properties": {
+        "source_location": {
+          "line": 15,
+          "column": 4
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "function",
+      "name": "deposit",
+      "data_type": null,
+      "scope": "testwallet9",
+      "source_location": {
+        "line": 22,
+        "column": 4,
+        "end_line": 25,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 22,
+          "column": 4
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "function",
+      "name": "withdraw_all",
+      "data_type": null,
+      "scope": "testwallet9",
+      "source_location": {
+        "line": 27,
+        "column": 5,
+        "end_line": 34,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 27,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "function",
+      "name": "withdraw_a_bit",
+      "data_type": null,
+      "scope": "testwallet9",
+      "source_location": {
+        "line": 36,
+        "column": 5,
+        "end_line": 43,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 36,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "function",
+      "name": "_delete_",
+      "data_type": null,
+      "scope": "testwallet9",
+      "source_location": {
+        "line": 60,
+        "column": 4,
+        "end_line": 63,
+        "end_column": 5
+      },
+      "properties": {
+        "source_location": {
+          "line": 60,
+          "column": 4
+        }
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_1",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_1",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_1",
+      "target": "dfg_node_7",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_1",
+      "target": "dfg_node_8",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_1",
+      "target": "dfg_node_9",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 240,
+    "source_line": 241,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "testwallet9",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

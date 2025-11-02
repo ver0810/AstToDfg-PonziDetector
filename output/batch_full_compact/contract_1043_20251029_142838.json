@@ -1,0 +1,884 @@
+{
+  "contract": "ERC20",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "ERC20",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 14,
+        "column": 1,
+        "end_line": 17,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 14,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "function",
+      "name": "transfer",
+      "data_type": null,
+      "scope": "ERC20",
+      "source_location": {
+        "line": 15,
+        "column": 3,
+        "end_line": 15,
+        "end_column": 73
+      },
+      "properties": {
+        "source_location": {
+          "line": 15,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "parameter",
+      "name": "success",
+      "data_type": "bool",
+      "scope": "transfer_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "transfer"
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "function",
+      "name": "balanceOf",
+      "data_type": null,
+      "scope": "ERC20",
+      "source_location": {
+        "line": 16,
+        "column": 3,
+        "end_line": 16,
+        "end_column": 73
+      },
+      "properties": {
+        "source_location": {
+          "line": 16,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "parameter",
+      "name": "balance",
+      "data_type": "uint256",
+      "scope": "balanceOf_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "balanceOf"
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "contract",
+      "name": "StatusContribution",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 20,
+        "column": 1,
+        "end_line": 26,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 20,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "state_variable",
+      "name": "maxGasPrice",
+      "data_type": "uint256",
+      "scope": "StatusContribution",
+      "source_location": {
+        "line": 21,
+        "column": 3,
+        "end_line": 21,
+        "end_column": 30
+      },
+      "properties": {
+        "source_location": {
+          "line": 21,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_10": {
+      "id": "dfg_node_10",
+      "type": "state_variable",
+      "name": "startBlock",
+      "data_type": "uint256",
+      "scope": "StatusContribution",
+      "source_location": {
+        "line": 22,
+        "column": 3,
+        "end_line": 22,
+        "end_column": 29
+      },
+      "properties": {
+        "source_location": {
+          "line": 22,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_11": {
+      "id": "dfg_node_11",
+      "type": "state_variable",
+      "name": "totalNormalCollected",
+      "data_type": "uint256",
+      "scope": "StatusContribution",
+      "source_location": {
+        "line": 23,
+        "column": 3,
+        "end_line": 23,
+        "end_column": 39
+      },
+      "properties": {
+        "source_location": {
+          "line": 23,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_12": {
+      "id": "dfg_node_12",
+      "type": "state_variable",
+      "name": "finalizedBlock",
+      "data_type": "uint256",
+      "scope": "StatusContribution",
+      "source_location": {
+        "line": 24,
+        "column": 3,
+        "end_line": 24,
+        "end_column": 33
+      },
+      "properties": {
+        "source_location": {
+          "line": 24,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_13": {
+      "id": "dfg_node_13",
+      "type": "function",
+      "name": "proxyPayment",
+      "data_type": null,
+      "scope": "StatusContribution",
+      "source_location": {
+        "line": 25,
+        "column": 3,
+        "end_line": 25,
+        "end_column": 61
+      },
+      "properties": {
+        "source_location": {
+          "line": 25,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_15": {
+      "id": "dfg_node_15",
+      "type": "parameter",
+      "name": "param_13",
+      "data_type": "bool",
+      "scope": "proxyPayment_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "proxyPayment"
+      }
+    },
+    "dfg_node_16": {
+      "id": "dfg_node_16",
+      "type": "contract",
+      "name": "DynamicCeiling",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 29,
+        "column": 1,
+        "end_line": 36,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 29,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_17": {
+      "id": "dfg_node_17",
+      "type": "function",
+      "name": "curves",
+      "data_type": null,
+      "scope": "DynamicCeiling",
+      "source_location": {
+        "line": 30,
+        "column": 3,
+        "end_line": 33,
+        "end_column": 71
+      },
+      "properties": {
+        "source_location": {
+          "line": 30,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_19": {
+      "id": "dfg_node_19",
+      "type": "parameter",
+      "name": "hash",
+      "data_type": "bytes32",
+      "scope": "curves_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "curves"
+      }
+    },
+    "dfg_node_21": {
+      "id": "dfg_node_21",
+      "type": "parameter",
+      "name": "limit",
+      "data_type": "uint256",
+      "scope": "curves_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "curves"
+      }
+    },
+    "dfg_node_23": {
+      "id": "dfg_node_23",
+      "type": "parameter",
+      "name": "slopeFactor",
+      "data_type": "uint256",
+      "scope": "curves_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "curves"
+      }
+    },
+    "dfg_node_25": {
+      "id": "dfg_node_25",
+      "type": "parameter",
+      "name": "collectMinimum",
+      "data_type": "uint256",
+      "scope": "curves_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "curves"
+      }
+    },
+    "dfg_node_26": {
+      "id": "dfg_node_26",
+      "type": "state_variable",
+      "name": "currentIndex",
+      "data_type": "uint256",
+      "scope": "DynamicCeiling",
+      "source_location": {
+        "line": 34,
+        "column": 3,
+        "end_line": 34,
+        "end_column": 31
+      },
+      "properties": {
+        "source_location": {
+          "line": 34,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_27": {
+      "id": "dfg_node_27",
+      "type": "state_variable",
+      "name": "revealedCurves",
+      "data_type": "uint256",
+      "scope": "DynamicCeiling",
+      "source_location": {
+        "line": 35,
+        "column": 3,
+        "end_line": 35,
+        "end_column": 33
+      },
+      "properties": {
+        "source_location": {
+          "line": 35,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_28": {
+      "id": "dfg_node_28",
+      "type": "contract",
+      "name": "StatusBuyer",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 38,
+        "column": 1,
+        "end_line": 158,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 38,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_29": {
+      "id": "dfg_node_29",
+      "type": "state_variable",
+      "name": "deposits",
+      "data_type": "mapping (address => uint256)",
+      "scope": "StatusBuyer",
+      "source_location": {
+        "line": 40,
+        "column": 3,
+        "end_line": 40,
+        "end_column": 48
+      },
+      "properties": {
+        "source_location": {
+          "line": 40,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_30": {
+      "id": "dfg_node_30",
+      "type": "state_variable",
+      "name": "simulated_snt",
+      "data_type": "mapping (address => uint256)",
+      "scope": "StatusBuyer",
+      "source_location": {
+        "line": 42,
+        "column": 3,
+        "end_line": 42,
+        "end_column": 53
+      },
+      "properties": {
+        "source_location": {
+          "line": 42,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_31": {
+      "id": "dfg_node_31",
+      "type": "state_variable",
+      "name": "bounty",
+      "data_type": "uint256",
+      "scope": "StatusBuyer",
+      "source_location": {
+        "line": 44,
+        "column": 3,
+        "end_line": 44,
+        "end_column": 25
+      },
+      "properties": {
+        "source_location": {
+          "line": 44,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_32": {
+      "id": "dfg_node_32",
+      "type": "state_variable",
+      "name": "bought_tokens",
+      "data_type": "bool",
+      "scope": "StatusBuyer",
+      "source_location": {
+        "line": 46,
+        "column": 3,
+        "end_line": 46,
+        "end_column": 29
+      },
+      "properties": {
+        "source_location": {
+          "line": 46,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_33": {
+      "id": "dfg_node_33",
+      "type": "state_variable",
+      "name": "sale",
+      "data_type": "StatusContribution",
+      "scope": "StatusBuyer",
+      "source_location": {
+        "line": 49,
+        "column": 3,
+        "end_line": 49,
+        "end_column": 60
+      },
+      "properties": {
+        "source_location": {
+          "line": 49,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_34": {
+      "id": "dfg_node_34",
+      "type": "state_variable",
+      "name": "dynamic",
+      "data_type": "DynamicCeiling",
+      "scope": "StatusBuyer",
+      "source_location": {
+        "line": 51,
+        "column": 3,
+        "end_line": 51,
+        "end_column": 55
+      },
+      "properties": {
+        "source_location": {
+          "line": 51,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_35": {
+      "id": "dfg_node_35",
+      "type": "state_variable",
+      "name": "token",
+      "data_type": "ERC20",
+      "scope": "StatusBuyer",
+      "source_location": {
+        "line": 53,
+        "column": 3,
+        "end_line": 53,
+        "end_column": 35
+      },
+      "properties": {
+        "source_location": {
+          "line": 53,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_36": {
+      "id": "dfg_node_36",
+      "type": "state_variable",
+      "name": "developer",
+      "data_type": "address",
+      "scope": "StatusBuyer",
+      "source_location": {
+        "line": 55,
+        "column": 3,
+        "end_line": 55,
+        "end_column": 66
+      },
+      "properties": {
+        "source_location": {
+          "line": 55,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_37": {
+      "id": "dfg_node_37",
+      "type": "function",
+      "name": "withdraw",
+      "data_type": null,
+      "scope": "StatusBuyer",
+      "source_location": {
+        "line": 58,
+        "column": 3,
+        "end_line": 84,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 58,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_38": {
+      "id": "dfg_node_38",
+      "type": "function",
+      "name": "add_to_bounty",
+      "data_type": null,
+      "scope": "StatusBuyer",
+      "source_location": {
+        "line": 87,
+        "column": 3,
+        "end_line": 92,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 87,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_39": {
+      "id": "dfg_node_39",
+      "type": "function",
+      "name": "simulate_ico",
+      "data_type": null,
+      "scope": "StatusBuyer",
+      "source_location": {
+        "line": 95,
+        "column": 3,
+        "end_line": 111,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 95,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_40": {
+      "id": "dfg_node_40",
+      "type": "function",
+      "name": "buy",
+      "data_type": null,
+      "scope": "StatusBuyer",
+      "source_location": {
+        "line": 114,
+        "column": 3,
+        "end_line": 125,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 114,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_41": {
+      "id": "dfg_node_41",
+      "type": "function",
+      "name": "default_helper",
+      "data_type": null,
+      "scope": "StatusBuyer",
+      "source_location": {
+        "line": 128,
+        "column": 3,
+        "end_line": 148,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 128,
+          "column": 3
+        }
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_2",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_5",
+      "target": "dfg_node_7",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_1",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_8",
+      "target": "dfg_node_9",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_8",
+      "target": "dfg_node_10",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_8",
+      "target": "dfg_node_11",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_8",
+      "target": "dfg_node_12",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_9": {
+      "id": "dfg_edge_9",
+      "source": "dfg_node_13",
+      "target": "dfg_node_15",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_10": {
+      "id": "dfg_edge_10",
+      "source": "dfg_node_8",
+      "target": "dfg_node_13",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_11": {
+      "id": "dfg_edge_11",
+      "source": "dfg_node_17",
+      "target": "dfg_node_19",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_12": {
+      "id": "dfg_edge_12",
+      "source": "dfg_node_17",
+      "target": "dfg_node_21",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_13": {
+      "id": "dfg_edge_13",
+      "source": "dfg_node_17",
+      "target": "dfg_node_23",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_14": {
+      "id": "dfg_edge_14",
+      "source": "dfg_node_17",
+      "target": "dfg_node_25",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_15": {
+      "id": "dfg_edge_15",
+      "source": "dfg_node_16",
+      "target": "dfg_node_17",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_16": {
+      "id": "dfg_edge_16",
+      "source": "dfg_node_16",
+      "target": "dfg_node_26",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_17": {
+      "id": "dfg_edge_17",
+      "source": "dfg_node_16",
+      "target": "dfg_node_27",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_18": {
+      "id": "dfg_edge_18",
+      "source": "dfg_node_28",
+      "target": "dfg_node_29",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_19": {
+      "id": "dfg_edge_19",
+      "source": "dfg_node_28",
+      "target": "dfg_node_30",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_20": {
+      "id": "dfg_edge_20",
+      "source": "dfg_node_28",
+      "target": "dfg_node_31",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_21": {
+      "id": "dfg_edge_21",
+      "source": "dfg_node_28",
+      "target": "dfg_node_32",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_22": {
+      "id": "dfg_edge_22",
+      "source": "dfg_node_28",
+      "target": "dfg_node_33",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_23": {
+      "id": "dfg_edge_23",
+      "source": "dfg_node_28",
+      "target": "dfg_node_34",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_24": {
+      "id": "dfg_edge_24",
+      "source": "dfg_node_28",
+      "target": "dfg_node_35",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_25": {
+      "id": "dfg_edge_25",
+      "source": "dfg_node_28",
+      "target": "dfg_node_36",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_26": {
+      "id": "dfg_edge_26",
+      "source": "dfg_node_28",
+      "target": "dfg_node_37",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_27": {
+      "id": "dfg_edge_27",
+      "source": "dfg_node_28",
+      "target": "dfg_node_38",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_28": {
+      "id": "dfg_edge_28",
+      "source": "dfg_node_28",
+      "target": "dfg_node_39",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_29": {
+      "id": "dfg_edge_29",
+      "source": "dfg_node_28",
+      "target": "dfg_node_40",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_30": {
+      "id": "dfg_edge_30",
+      "source": "dfg_node_28",
+      "target": "dfg_node_41",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 1043,
+    "source_line": 1044,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "ERC20",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

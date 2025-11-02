@@ -1,0 +1,4594 @@
+{
+  "contract": "BMICOAffiliateProgramm",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "BMICOAffiliateProgramm",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 4,
+        "column": 1,
+        "end_line": 185,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 4,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "partnersPromo",
+      "data_type": "mapping (string => address)",
+      "scope": "BMICOAffiliateProgramm",
+      "source_location": {
+        "line": 5,
+        "column": 5,
+        "end_line": 5,
+        "end_column": 47
+      },
+      "properties": {
+        "source_location": {
+          "line": 5,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "state_variable",
+      "name": "referrals",
+      "data_type": "mapping (address => uint256)",
+      "scope": "BMICOAffiliateProgramm",
+      "source_location": {
+        "line": 6,
+        "column": 5,
+        "end_line": 6,
+        "end_column": 44
+      },
+      "properties": {
+        "source_location": {
+          "line": 6,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "struct_declaration",
+      "name": null,
+      "data_type": null,
+      "scope": "BMICOAffiliateProgramm",
+      "source_location": {
+        "line": 8,
+        "column": 5,
+        "end_line": 12,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 8,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "state_variable",
+      "name": "partnersInfo",
+      "data_type": "mapping (address => itemPartners)",
+      "scope": "BMICOAffiliateProgramm",
+      "source_location": {
+        "line": 13,
+        "column": 5,
+        "end_line": 13,
+        "end_column": 52
+      },
+      "properties": {
+        "source_location": {
+          "line": 13,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "state_variable",
+      "name": "ref_percent",
+      "data_type": "uint256",
+      "scope": "BMICOAffiliateProgramm",
+      "source_location": {
+        "line": 15,
+        "column": 5,
+        "end_line": 15,
+        "end_column": 38
+      },
+      "properties": {
+        "source_location": {
+          "line": 15,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "struct_declaration",
+      "name": null,
+      "data_type": null,
+      "scope": "BMICOAffiliateProgramm",
+      "source_location": {
+        "line": 18,
+        "column": 5,
+        "end_line": 22,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 18,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "state_variable",
+      "name": "history",
+      "data_type": "mapping(address => itemHistory[])",
+      "scope": "BMICOAffiliateProgramm",
+      "source_location": {
+        "line": 23,
+        "column": 5,
+        "end_line": 23,
+        "end_column": 47
+      },
+      "properties": {
+        "source_location": {
+          "line": 23,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "state_variable",
+      "name": "amount_referral_invest",
+      "data_type": "uint256",
+      "scope": "BMICOAffiliateProgramm",
+      "source_location": {
+        "line": 25,
+        "column": 5,
+        "end_line": 25,
+        "end_column": 43
+      },
+      "properties": {
+        "source_location": {
+          "line": 25,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_10": {
+      "id": "dfg_node_10",
+      "type": "state_variable",
+      "name": "owner",
+      "data_type": "address",
+      "scope": "BMICOAffiliateProgramm",
+      "source_location": {
+        "line": 27,
+        "column": 5,
+        "end_line": 27,
+        "end_column": 26
+      },
+      "properties": {
+        "source_location": {
+          "line": 27,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_11": {
+      "id": "dfg_node_11",
+      "type": "state_variable",
+      "name": "contractPreICO",
+      "data_type": "address",
+      "scope": "BMICOAffiliateProgramm",
+      "source_location": {
+        "line": 28,
+        "column": 5,
+        "end_line": 28,
+        "end_column": 35
+      },
+      "properties": {
+        "source_location": {
+          "line": 28,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_12": {
+      "id": "dfg_node_12",
+      "type": "state_variable",
+      "name": "contractICO",
+      "data_type": "address",
+      "scope": "BMICOAffiliateProgramm",
+      "source_location": {
+        "line": 29,
+        "column": 5,
+        "end_line": 29,
+        "end_column": 32
+      },
+      "properties": {
+        "source_location": {
+          "line": 29,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_13": {
+      "id": "dfg_node_13",
+      "type": "constructor_function",
+      "name": "BMICOAffiliateProgramm",
+      "data_type": null,
+      "scope": "BMICOAffiliateProgramm",
+      "source_location": {
+        "line": 31,
+        "column": 5,
+        "end_line": 35,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 31,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_14": {
+      "id": "dfg_node_14",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "BMICOAffiliateProgramm_function",
+      "source_location": {
+        "line": 32,
+        "column": 9,
+        "end_line": 32,
+        "end_column": 27
+      },
+      "properties": {
+        "source_location": {
+          "line": 32,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_15": {
+      "id": "dfg_node_15",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "BMICOAffiliateProgramm_function",
+      "source_location": {
+        "line": 32,
+        "column": 17,
+        "end_line": 32,
+        "end_column": 27
+      },
+      "properties": {
+        "source_location": {
+          "line": 32,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_16": {
+      "id": "dfg_node_16",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "BMICOAffiliateProgramm_function",
+      "source_location": {
+        "line": 33,
+        "column": 9,
+        "end_line": 33,
+        "end_column": 38
+      },
+      "properties": {
+        "source_location": {
+          "line": 33,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_17": {
+      "id": "dfg_node_17",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "BMICOAffiliateProgramm_function",
+      "source_location": {
+        "line": 34,
+        "column": 9,
+        "end_line": 34,
+        "end_column": 35
+      },
+      "properties": {
+        "source_location": {
+          "line": 34,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_18": {
+      "id": "dfg_node_18",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "BMICOAffiliateProgramm",
+      "source_location": {
+        "line": 39,
+        "column": 9,
+        "end_line": 39,
+        "end_column": 36
+      },
+      "properties": {
+        "source_location": {
+          "line": 39,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_19": {
+      "id": "dfg_node_19",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "BMICOAffiliateProgramm",
+      "source_location": {
+        "line": 39,
+        "column": 16,
+        "end_line": 39,
+        "end_column": 35
+      },
+      "properties": {
+        "source_location": {
+          "line": 39,
+          "column": 16
+        }
+      }
+    },
+    "dfg_node_20": {
+      "id": "dfg_node_20",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "BMICOAffiliateProgramm",
+      "source_location": {
+        "line": 39,
+        "column": 16,
+        "end_line": 39,
+        "end_column": 26
+      },
+      "properties": {
+        "source_location": {
+          "line": 39,
+          "column": 16
+        }
+      }
+    },
+    "dfg_node_21": {
+      "id": "dfg_node_21",
+      "type": "function",
+      "name": "str_length",
+      "data_type": null,
+      "scope": "BMICOAffiliateProgramm",
+      "source_location": {
+        "line": 43,
+        "column": 5,
+        "end_line": 58,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 43,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_22": {
+      "id": "dfg_node_22",
+      "type": "local_variable",
+      "name": "str",
+      "data_type": "bytes32",
+      "scope": "str_length_function",
+      "source_location": {
+        "line": 44,
+        "column": 9,
+        "end_line": 44,
+        "end_column": 20
+      },
+      "properties": {
+        "source_location": {
+          "line": 44,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_23": {
+      "id": "dfg_node_23",
+      "type": "local_variable",
+      "name": "bytesString",
+      "data_type": "bytes",
+      "scope": "str_length_function",
+      "source_location": {
+        "line": 48,
+        "column": 9,
+        "end_line": 48,
+        "end_column": 33
+      },
+      "properties": {
+        "source_location": {
+          "line": 48,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_24": {
+      "id": "dfg_node_24",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "str_length_function",
+      "source_location": {
+        "line": 48,
+        "column": 36,
+        "end_line": 48,
+        "end_column": 49
+      },
+      "properties": {
+        "source_location": {
+          "line": 48,
+          "column": 36
+        }
+      }
+    },
+    "dfg_node_25": {
+      "id": "dfg_node_25",
+      "type": "local_variable",
+      "name": "charCount",
+      "data_type": "uint256",
+      "scope": "str_length_function",
+      "source_location": {
+        "line": 49,
+        "column": 9,
+        "end_line": 49,
+        "end_column": 26
+      },
+      "properties": {
+        "source_location": {
+          "line": 49,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_26": {
+      "id": "dfg_node_26",
+      "type": "for_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "str_length_function",
+      "source_location": {
+        "line": 50,
+        "column": 9,
+        "end_line": 56,
+        "end_column": 10
+      },
+      "properties": {
+        "source_location": {
+          "line": 50,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_27": {
+      "id": "dfg_node_27",
+      "type": "local_variable",
+      "name": "j",
+      "data_type": "uint",
+      "scope": "str_length_function",
+      "source_location": {
+        "line": 50,
+        "column": 14,
+        "end_line": 50,
+        "end_column": 20
+      },
+      "properties": {
+        "source_location": {
+          "line": 50,
+          "column": 14
+        }
+      }
+    },
+    "dfg_node_28": {
+      "id": "dfg_node_28",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "str_length_function",
+      "source_location": {
+        "line": 50,
+        "column": 26,
+        "end_line": 50,
+        "end_column": 32
+      },
+      "properties": {
+        "source_location": {
+          "line": 50,
+          "column": 26
+        }
+      }
+    },
+    "dfg_node_29": {
+      "id": "dfg_node_29",
+      "type": "local_variable",
+      "name": "char",
+      "data_type": "byte",
+      "scope": "str_length_function",
+      "source_location": {
+        "line": 51,
+        "column": 13,
+        "end_line": 51,
+        "end_column": 22
+      },
+      "properties": {
+        "source_location": {
+          "line": 51,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_30": {
+      "id": "dfg_node_30",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "str_length_function",
+      "source_location": {
+        "line": 51,
+        "column": 38,
+        "end_line": 51,
+        "end_column": 62
+      },
+      "properties": {
+        "source_location": {
+          "line": 51,
+          "column": 38
+        }
+      }
+    },
+    "dfg_node_31": {
+      "id": "dfg_node_31",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "str_length_function",
+      "source_location": {
+        "line": 51,
+        "column": 50,
+        "end_line": 51,
+        "end_column": 62
+      },
+      "properties": {
+        "source_location": {
+          "line": 51,
+          "column": 50
+        }
+      }
+    },
+    "dfg_node_32": {
+      "id": "dfg_node_32",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "str_length_function",
+      "source_location": {
+        "line": 51,
+        "column": 56,
+        "end_line": 51,
+        "end_column": 61
+      },
+      "properties": {
+        "source_location": {
+          "line": 51,
+          "column": 56
+        }
+      }
+    },
+    "dfg_node_33": {
+      "id": "dfg_node_33",
+      "type": "if_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "str_length_function",
+      "source_location": {
+        "line": 52,
+        "column": 13,
+        "end_line": 55,
+        "end_column": 14
+      },
+      "properties": {
+        "source_location": {
+          "line": 52,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_34": {
+      "id": "dfg_node_34",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "str_length_function",
+      "source_location": {
+        "line": 52,
+        "column": 17,
+        "end_line": 52,
+        "end_column": 26
+      },
+      "properties": {
+        "source_location": {
+          "line": 52,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_35": {
+      "id": "dfg_node_35",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "str_length_function",
+      "source_location": {
+        "line": 53,
+        "column": 17,
+        "end_line": 53,
+        "end_column": 46
+      },
+      "properties": {
+        "source_location": {
+          "line": 53,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_36": {
+      "id": "dfg_node_36",
+      "type": "return_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "str_length_function",
+      "source_location": {
+        "line": 57,
+        "column": 9,
+        "end_line": 57,
+        "end_column": 26
+      },
+      "properties": {
+        "source_location": {
+          "line": 57,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_38": {
+      "id": "dfg_node_38",
+      "type": "parameter",
+      "name": "param_36",
+      "data_type": "uint256",
+      "scope": "str_length_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "str_length"
+      }
+    },
+    "dfg_node_39": {
+      "id": "dfg_node_39",
+      "type": "function",
+      "name": "changeOwner",
+      "data_type": null,
+      "scope": "BMICOAffiliateProgramm",
+      "source_location": {
+        "line": 60,
+        "column": 5,
+        "end_line": 65,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 60,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_40": {
+      "id": "dfg_node_40",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "changeOwner_function",
+      "source_location": {
+        "line": 61,
+        "column": 9,
+        "end_line": 61,
+        "end_column": 40
+      },
+      "properties": {
+        "source_location": {
+          "line": 61,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_41": {
+      "id": "dfg_node_41",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "changeOwner_function",
+      "source_location": {
+        "line": 61,
+        "column": 16,
+        "end_line": 61,
+        "end_column": 39
+      },
+      "properties": {
+        "source_location": {
+          "line": 61,
+          "column": 16
+        }
+      }
+    },
+    "dfg_node_42": {
+      "id": "dfg_node_42",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "changeOwner_function",
+      "source_location": {
+        "line": 62,
+        "column": 9,
+        "end_line": 62,
+        "end_column": 41
+      },
+      "properties": {
+        "source_location": {
+          "line": 62,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_43": {
+      "id": "dfg_node_43",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "changeOwner_function",
+      "source_location": {
+        "line": 62,
+        "column": 16,
+        "end_line": 62,
+        "end_column": 40
+      },
+      "properties": {
+        "source_location": {
+          "line": 62,
+          "column": 16
+        }
+      }
+    },
+    "dfg_node_44": {
+      "id": "dfg_node_44",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "changeOwner_function",
+      "source_location": {
+        "line": 64,
+        "column": 9,
+        "end_line": 64,
+        "end_column": 26
+      },
+      "properties": {
+        "source_location": {
+          "line": 64,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_45": {
+      "id": "dfg_node_45",
+      "type": "function",
+      "name": "setReferralPercent",
+      "data_type": null,
+      "scope": "BMICOAffiliateProgramm",
+      "source_location": {
+        "line": 67,
+        "column": 5,
+        "end_line": 69,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 67,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_46": {
+      "id": "dfg_node_46",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "setReferralPercent_function",
+      "source_location": {
+        "line": 68,
+        "column": 9,
+        "end_line": 68,
+        "end_column": 34
+      },
+      "properties": {
+        "source_location": {
+          "line": 68,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_47": {
+      "id": "dfg_node_47",
+      "type": "function",
+      "name": "setContractPreICO",
+      "data_type": null,
+      "scope": "BMICOAffiliateProgramm",
+      "source_location": {
+        "line": 71,
+        "column": 5,
+        "end_line": 77,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 71,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_48": {
+      "id": "dfg_node_48",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "setContractPreICO_function",
+      "source_location": {
+        "line": 72,
+        "column": 9,
+        "end_line": 72,
+        "end_column": 45
+      },
+      "properties": {
+        "source_location": {
+          "line": 72,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_49": {
+      "id": "dfg_node_49",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "setContractPreICO_function",
+      "source_location": {
+        "line": 72,
+        "column": 16,
+        "end_line": 72,
+        "end_column": 44
+      },
+      "properties": {
+        "source_location": {
+          "line": 72,
+          "column": 16
+        }
+      }
+    },
+    "dfg_node_50": {
+      "id": "dfg_node_50",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "setContractPreICO_function",
+      "source_location": {
+        "line": 73,
+        "column": 9,
+        "end_line": 73,
+        "end_column": 42
+      },
+      "properties": {
+        "source_location": {
+          "line": 73,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_51": {
+      "id": "dfg_node_51",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "setContractPreICO_function",
+      "source_location": {
+        "line": 73,
+        "column": 16,
+        "end_line": 73,
+        "end_column": 41
+      },
+      "properties": {
+        "source_location": {
+          "line": 73,
+          "column": 16
+        }
+      }
+    },
+    "dfg_node_52": {
+      "id": "dfg_node_52",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "setContractPreICO_function",
+      "source_location": {
+        "line": 74,
+        "column": 9,
+        "end_line": 74,
+        "end_column": 43
+      },
+      "properties": {
+        "source_location": {
+          "line": 74,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_53": {
+      "id": "dfg_node_53",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "setContractPreICO_function",
+      "source_location": {
+        "line": 74,
+        "column": 16,
+        "end_line": 74,
+        "end_column": 42
+      },
+      "properties": {
+        "source_location": {
+          "line": 74,
+          "column": 16
+        }
+      }
+    },
+    "dfg_node_54": {
+      "id": "dfg_node_54",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "setContractPreICO_function",
+      "source_location": {
+        "line": 76,
+        "column": 9,
+        "end_line": 76,
+        "end_column": 37
+      },
+      "properties": {
+        "source_location": {
+          "line": 76,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_55": {
+      "id": "dfg_node_55",
+      "type": "function",
+      "name": "setContractICO",
+      "data_type": null,
+      "scope": "BMICOAffiliateProgramm",
+      "source_location": {
+        "line": 79,
+        "column": 5,
+        "end_line": 85,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 79,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_56": {
+      "id": "dfg_node_56",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "setContractICO_function",
+      "source_location": {
+        "line": 80,
+        "column": 9,
+        "end_line": 80,
+        "end_column": 42
+      },
+      "properties": {
+        "source_location": {
+          "line": 80,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_57": {
+      "id": "dfg_node_57",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "setContractICO_function",
+      "source_location": {
+        "line": 80,
+        "column": 16,
+        "end_line": 80,
+        "end_column": 41
+      },
+      "properties": {
+        "source_location": {
+          "line": 80,
+          "column": 16
+        }
+      }
+    },
+    "dfg_node_58": {
+      "id": "dfg_node_58",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "setContractICO_function",
+      "source_location": {
+        "line": 81,
+        "column": 9,
+        "end_line": 81,
+        "end_column": 42
+      },
+      "properties": {
+        "source_location": {
+          "line": 81,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_59": {
+      "id": "dfg_node_59",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "setContractICO_function",
+      "source_location": {
+        "line": 81,
+        "column": 16,
+        "end_line": 81,
+        "end_column": 41
+      },
+      "properties": {
+        "source_location": {
+          "line": 81,
+          "column": 16
+        }
+      }
+    },
+    "dfg_node_60": {
+      "id": "dfg_node_60",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "setContractICO_function",
+      "source_location": {
+        "line": 82,
+        "column": 9,
+        "end_line": 82,
+        "end_column": 43
+      },
+      "properties": {
+        "source_location": {
+          "line": 82,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_61": {
+      "id": "dfg_node_61",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "setContractICO_function",
+      "source_location": {
+        "line": 82,
+        "column": 16,
+        "end_line": 82,
+        "end_column": 42
+      },
+      "properties": {
+        "source_location": {
+          "line": 82,
+          "column": 16
+        }
+      }
+    },
+    "dfg_node_62": {
+      "id": "dfg_node_62",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "setContractICO_function",
+      "source_location": {
+        "line": 84,
+        "column": 9,
+        "end_line": 84,
+        "end_column": 34
+      },
+      "properties": {
+        "source_location": {
+          "line": 84,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_63": {
+      "id": "dfg_node_63",
+      "type": "function",
+      "name": "setPromoToPartner",
+      "data_type": null,
+      "scope": "BMICOAffiliateProgramm",
+      "source_location": {
+        "line": 87,
+        "column": 5,
+        "end_line": 96,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 87,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_64": {
+      "id": "dfg_node_64",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "setPromoToPartner_function",
+      "source_location": {
+        "line": 88,
+        "column": 9,
+        "end_line": 88,
+        "end_column": 51
+      },
+      "properties": {
+        "source_location": {
+          "line": 88,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_65": {
+      "id": "dfg_node_65",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "setPromoToPartner_function",
+      "source_location": {
+        "line": 88,
+        "column": 16,
+        "end_line": 88,
+        "end_column": 50
+      },
+      "properties": {
+        "source_location": {
+          "line": 88,
+          "column": 16
+        }
+      }
+    },
+    "dfg_node_66": {
+      "id": "dfg_node_66",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "setPromoToPartner_function",
+      "source_location": {
+        "line": 89,
+        "column": 9,
+        "end_line": 89,
+        "end_column": 55
+      },
+      "properties": {
+        "source_location": {
+          "line": 89,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_67": {
+      "id": "dfg_node_67",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "setPromoToPartner_function",
+      "source_location": {
+        "line": 89,
+        "column": 16,
+        "end_line": 89,
+        "end_column": 54
+      },
+      "properties": {
+        "source_location": {
+          "line": 89,
+          "column": 16
+        }
+      }
+    },
+    "dfg_node_68": {
+      "id": "dfg_node_68",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "setPromoToPartner_function",
+      "source_location": {
+        "line": 89,
+        "column": 16,
+        "end_line": 89,
+        "end_column": 47
+      },
+      "properties": {
+        "source_location": {
+          "line": 89,
+          "column": 16
+        }
+      }
+    },
+    "dfg_node_69": {
+      "id": "dfg_node_69",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "setPromoToPartner_function",
+      "source_location": {
+        "line": 89,
+        "column": 29,
+        "end_line": 89,
+        "end_column": 39
+      },
+      "properties": {
+        "source_location": {
+          "line": 89,
+          "column": 29
+        }
+      }
+    },
+    "dfg_node_70": {
+      "id": "dfg_node_70",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "setPromoToPartner_function",
+      "source_location": {
+        "line": 90,
+        "column": 9,
+        "end_line": 90,
+        "end_column": 60
+      },
+      "properties": {
+        "source_location": {
+          "line": 90,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_71": {
+      "id": "dfg_node_71",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "setPromoToPartner_function",
+      "source_location": {
+        "line": 90,
+        "column": 16,
+        "end_line": 90,
+        "end_column": 59
+      },
+      "properties": {
+        "source_location": {
+          "line": 90,
+          "column": 16
+        }
+      }
+    },
+    "dfg_node_72": {
+      "id": "dfg_node_72",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "setPromoToPartner_function",
+      "source_location": {
+        "line": 90,
+        "column": 16,
+        "end_line": 90,
+        "end_column": 35
+      },
+      "properties": {
+        "source_location": {
+          "line": 90,
+          "column": 16
+        }
+      }
+    },
+    "dfg_node_73": {
+      "id": "dfg_node_73",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "setPromoToPartner_function",
+      "source_location": {
+        "line": 90,
+        "column": 16,
+        "end_line": 90,
+        "end_column": 33
+      },
+      "properties": {
+        "source_location": {
+          "line": 90,
+          "column": 16
+        }
+      }
+    },
+    "dfg_node_74": {
+      "id": "dfg_node_74",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "setPromoToPartner_function",
+      "source_location": {
+        "line": 90,
+        "column": 39,
+        "end_line": 90,
+        "end_column": 59
+      },
+      "properties": {
+        "source_location": {
+          "line": 90,
+          "column": 39
+        }
+      }
+    },
+    "dfg_node_75": {
+      "id": "dfg_node_75",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "setPromoToPartner_function",
+      "source_location": {
+        "line": 90,
+        "column": 39,
+        "end_line": 90,
+        "end_column": 56
+      },
+      "properties": {
+        "source_location": {
+          "line": 90,
+          "column": 39
+        }
+      }
+    },
+    "dfg_node_76": {
+      "id": "dfg_node_76",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "setPromoToPartner_function",
+      "source_location": {
+        "line": 92,
+        "column": 9,
+        "end_line": 92,
+        "end_column": 42
+      },
+      "properties": {
+        "source_location": {
+          "line": 92,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_77": {
+      "id": "dfg_node_77",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "setPromoToPartner_function",
+      "source_location": {
+        "line": 92,
+        "column": 32,
+        "end_line": 92,
+        "end_column": 42
+      },
+      "properties": {
+        "source_location": {
+          "line": 92,
+          "column": 32
+        }
+      }
+    },
+    "dfg_node_78": {
+      "id": "dfg_node_78",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "setPromoToPartner_function",
+      "source_location": {
+        "line": 93,
+        "column": 9,
+        "end_line": 93,
+        "end_column": 45
+      },
+      "properties": {
+        "source_location": {
+          "line": 93,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_79": {
+      "id": "dfg_node_79",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "setPromoToPartner_function",
+      "source_location": {
+        "line": 93,
+        "column": 9,
+        "end_line": 93,
+        "end_column": 41
+      },
+      "properties": {
+        "source_location": {
+          "line": 93,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_80": {
+      "id": "dfg_node_80",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "setPromoToPartner_function",
+      "source_location": {
+        "line": 93,
+        "column": 22,
+        "end_line": 93,
+        "end_column": 32
+      },
+      "properties": {
+        "source_location": {
+          "line": 93,
+          "column": 22
+        }
+      }
+    },
+    "dfg_node_81": {
+      "id": "dfg_node_81",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "setPromoToPartner_function",
+      "source_location": {
+        "line": 94,
+        "column": 9,
+        "end_line": 94,
+        "end_column": 47
+      },
+      "properties": {
+        "source_location": {
+          "line": 94,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_82": {
+      "id": "dfg_node_82",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "setPromoToPartner_function",
+      "source_location": {
+        "line": 94,
+        "column": 9,
+        "end_line": 94,
+        "end_column": 39
+      },
+      "properties": {
+        "source_location": {
+          "line": 94,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_83": {
+      "id": "dfg_node_83",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "setPromoToPartner_function",
+      "source_location": {
+        "line": 94,
+        "column": 22,
+        "end_line": 94,
+        "end_column": 32
+      },
+      "properties": {
+        "source_location": {
+          "line": 94,
+          "column": 22
+        }
+      }
+    },
+    "dfg_node_84": {
+      "id": "dfg_node_84",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "setPromoToPartner_function",
+      "source_location": {
+        "line": 95,
+        "column": 9,
+        "end_line": 95,
+        "end_column": 47
+      },
+      "properties": {
+        "source_location": {
+          "line": 95,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_85": {
+      "id": "dfg_node_85",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "setPromoToPartner_function",
+      "source_location": {
+        "line": 95,
+        "column": 9,
+        "end_line": 95,
+        "end_column": 40
+      },
+      "properties": {
+        "source_location": {
+          "line": 95,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_86": {
+      "id": "dfg_node_86",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "setPromoToPartner_function",
+      "source_location": {
+        "line": 95,
+        "column": 22,
+        "end_line": 95,
+        "end_column": 32
+      },
+      "properties": {
+        "source_location": {
+          "line": 95,
+          "column": 22
+        }
+      }
+    },
+    "dfg_node_87": {
+      "id": "dfg_node_87",
+      "type": "function",
+      "name": "checkPromo",
+      "data_type": null,
+      "scope": "BMICOAffiliateProgramm",
+      "source_location": {
+        "line": 98,
+        "column": 5,
+        "end_line": 100,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 98,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_88": {
+      "id": "dfg_node_88",
+      "type": "return_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "checkPromo_function",
+      "source_location": {
+        "line": 99,
+        "column": 9,
+        "end_line": 99,
+        "end_column": 51
+      },
+      "properties": {
+        "source_location": {
+          "line": 99,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_89": {
+      "id": "dfg_node_89",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "checkPromo_function",
+      "source_location": {
+        "line": 99,
+        "column": 16,
+        "end_line": 99,
+        "end_column": 50
+      },
+      "properties": {
+        "source_location": {
+          "line": 99,
+          "column": 16
+        }
+      }
+    },
+    "dfg_node_91": {
+      "id": "dfg_node_91",
+      "type": "parameter",
+      "name": "param_89",
+      "data_type": "bool",
+      "scope": "checkPromo_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "checkPromo"
+      }
+    },
+    "dfg_node_92": {
+      "id": "dfg_node_92",
+      "type": "function",
+      "name": "checkPartner",
+      "data_type": null,
+      "scope": "BMICOAffiliateProgramm",
+      "source_location": {
+        "line": 102,
+        "column": 5,
+        "end_line": 108,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 102,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_93": {
+      "id": "dfg_node_93",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "checkPartner_function",
+      "source_location": {
+        "line": 103,
+        "column": 9,
+        "end_line": 103,
+        "end_column": 57
+      },
+      "properties": {
+        "source_location": {
+          "line": 103,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_94": {
+      "id": "dfg_node_94",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "checkPartner_function",
+      "source_location": {
+        "line": 103,
+        "column": 21,
+        "end_line": 103,
+        "end_column": 57
+      },
+      "properties": {
+        "source_location": {
+          "line": 103,
+          "column": 21
+        }
+      }
+    },
+    "dfg_node_95": {
+      "id": "dfg_node_95",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "checkPartner_function",
+      "source_location": {
+        "line": 104,
+        "column": 22,
+        "end_line": 104,
+        "end_column": 24
+      },
+      "properties": {
+        "source_location": {
+          "line": 104,
+          "column": 22
+        }
+      }
+    },
+    "dfg_node_96": {
+      "id": "dfg_node_96",
+      "type": "if_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "checkPartner_function",
+      "source_location": {
+        "line": 105,
+        "column": 9,
+        "end_line": 107,
+        "end_column": 10
+      },
+      "properties": {
+        "source_location": {
+          "line": 105,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_97": {
+      "id": "dfg_node_97",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "checkPartner_function",
+      "source_location": {
+        "line": 106,
+        "column": 13,
+        "end_line": 106,
+        "end_column": 56
+      },
+      "properties": {
+        "source_location": {
+          "line": 106,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_98": {
+      "id": "dfg_node_98",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "checkPartner_function",
+      "source_location": {
+        "line": 106,
+        "column": 21,
+        "end_line": 106,
+        "end_column": 56
+      },
+      "properties": {
+        "source_location": {
+          "line": 106,
+          "column": 21
+        }
+      }
+    },
+    "dfg_node_100": {
+      "id": "dfg_node_100",
+      "type": "parameter",
+      "name": "isPartner",
+      "data_type": "bool",
+      "scope": "checkPartner_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "checkPartner"
+      }
+    },
+    "dfg_node_102": {
+      "id": "dfg_node_102",
+      "type": "parameter",
+      "name": "promo",
+      "data_type": "string",
+      "scope": "checkPartner_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "checkPartner"
+      }
+    },
+    "dfg_node_103": {
+      "id": "dfg_node_103",
+      "type": "function",
+      "name": "calc_partnerPercent",
+      "data_type": null,
+      "scope": "BMICOAffiliateProgramm",
+      "source_location": {
+        "line": 110,
+        "column": 5,
+        "end_line": 129,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 110,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_104": {
+      "id": "dfg_node_104",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "calc_partnerPercent_function",
+      "source_location": {
+        "line": 111,
+        "column": 9,
+        "end_line": 111,
+        "end_column": 20
+      },
+      "properties": {
+        "source_location": {
+          "line": 111,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_105": {
+      "id": "dfg_node_105",
+      "type": "if_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "calc_partnerPercent_function",
+      "source_location": {
+        "line": 112,
+        "column": 9,
+        "end_line": 128,
+        "end_column": 10
+      },
+      "properties": {
+        "source_location": {
+          "line": 112,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_106": {
+      "id": "dfg_node_106",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "calc_partnerPercent_function",
+      "source_location": {
+        "line": 112,
+        "column": 12,
+        "end_line": 112,
+        "end_column": 33
+      },
+      "properties": {
+        "source_location": {
+          "line": 112,
+          "column": 12
+        }
+      }
+    },
+    "dfg_node_107": {
+      "id": "dfg_node_107",
+      "type": "if_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "calc_partnerPercent_function",
+      "source_location": {
+        "line": 113,
+        "column": 13,
+        "end_line": 127,
+        "end_column": 14
+      },
+      "properties": {
+        "source_location": {
+          "line": 113,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_108": {
+      "id": "dfg_node_108",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "calc_partnerPercent_function",
+      "source_location": {
+        "line": 113,
+        "column": 16,
+        "end_line": 113,
+        "end_column": 43
+      },
+      "properties": {
+        "source_location": {
+          "line": 113,
+          "column": 16
+        }
+      }
+    },
+    "dfg_node_109": {
+      "id": "dfg_node_109",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "calc_partnerPercent_function",
+      "source_location": {
+        "line": 114,
+        "column": 17,
+        "end_line": 114,
+        "end_column": 30
+      },
+      "properties": {
+        "source_location": {
+          "line": 114,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_110": {
+      "id": "dfg_node_110",
+      "type": "if_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "calc_partnerPercent_function",
+      "source_location": {
+        "line": 116,
+        "column": 18,
+        "end_line": 127,
+        "end_column": 14
+      },
+      "properties": {
+        "source_location": {
+          "line": 116,
+          "column": 18
+        }
+      }
+    },
+    "dfg_node_111": {
+      "id": "dfg_node_111",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "calc_partnerPercent_function",
+      "source_location": {
+        "line": 116,
+        "column": 21,
+        "end_line": 116,
+        "end_column": 80
+      },
+      "properties": {
+        "source_location": {
+          "line": 116,
+          "column": 21
+        }
+      }
+    },
+    "dfg_node_112": {
+      "id": "dfg_node_112",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "calc_partnerPercent_function",
+      "source_location": {
+        "line": 116,
+        "column": 21,
+        "end_line": 116,
+        "end_column": 49
+      },
+      "properties": {
+        "source_location": {
+          "line": 116,
+          "column": 21
+        }
+      }
+    },
+    "dfg_node_113": {
+      "id": "dfg_node_113",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "calc_partnerPercent_function",
+      "source_location": {
+        "line": 116,
+        "column": 53,
+        "end_line": 116,
+        "end_column": 80
+      },
+      "properties": {
+        "source_location": {
+          "line": 116,
+          "column": 53
+        }
+      }
+    },
+    "dfg_node_114": {
+      "id": "dfg_node_114",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "calc_partnerPercent_function",
+      "source_location": {
+        "line": 117,
+        "column": 17,
+        "end_line": 117,
+        "end_column": 30
+      },
+      "properties": {
+        "source_location": {
+          "line": 117,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_115": {
+      "id": "dfg_node_115",
+      "type": "if_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "calc_partnerPercent_function",
+      "source_location": {
+        "line": 119,
+        "column": 18,
+        "end_line": 127,
+        "end_column": 14
+      },
+      "properties": {
+        "source_location": {
+          "line": 119,
+          "column": 18
+        }
+      }
+    },
+    "dfg_node_116": {
+      "id": "dfg_node_116",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "calc_partnerPercent_function",
+      "source_location": {
+        "line": 119,
+        "column": 21,
+        "end_line": 119,
+        "end_column": 80
+      },
+      "properties": {
+        "source_location": {
+          "line": 119,
+          "column": 21
+        }
+      }
+    },
+    "dfg_node_117": {
+      "id": "dfg_node_117",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "calc_partnerPercent_function",
+      "source_location": {
+        "line": 119,
+        "column": 21,
+        "end_line": 119,
+        "end_column": 49
+      },
+      "properties": {
+        "source_location": {
+          "line": 119,
+          "column": 21
+        }
+      }
+    },
+    "dfg_node_118": {
+      "id": "dfg_node_118",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "calc_partnerPercent_function",
+      "source_location": {
+        "line": 119,
+        "column": 53,
+        "end_line": 119,
+        "end_column": 80
+      },
+      "properties": {
+        "source_location": {
+          "line": 119,
+          "column": 53
+        }
+      }
+    },
+    "dfg_node_119": {
+      "id": "dfg_node_119",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "calc_partnerPercent_function",
+      "source_location": {
+        "line": 120,
+        "column": 17,
+        "end_line": 120,
+        "end_column": 30
+      },
+      "properties": {
+        "source_location": {
+          "line": 120,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_120": {
+      "id": "dfg_node_120",
+      "type": "if_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "calc_partnerPercent_function",
+      "source_location": {
+        "line": 122,
+        "column": 18,
+        "end_line": 127,
+        "end_column": 14
+      },
+      "properties": {
+        "source_location": {
+          "line": 122,
+          "column": 18
+        }
+      }
+    },
+    "dfg_node_121": {
+      "id": "dfg_node_121",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "calc_partnerPercent_function",
+      "source_location": {
+        "line": 122,
+        "column": 21,
+        "end_line": 122,
+        "end_column": 80
+      },
+      "properties": {
+        "source_location": {
+          "line": 122,
+          "column": 21
+        }
+      }
+    },
+    "dfg_node_122": {
+      "id": "dfg_node_122",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "calc_partnerPercent_function",
+      "source_location": {
+        "line": 122,
+        "column": 21,
+        "end_line": 122,
+        "end_column": 49
+      },
+      "properties": {
+        "source_location": {
+          "line": 122,
+          "column": 21
+        }
+      }
+    },
+    "dfg_node_123": {
+      "id": "dfg_node_123",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "calc_partnerPercent_function",
+      "source_location": {
+        "line": 122,
+        "column": 53,
+        "end_line": 122,
+        "end_column": 80
+      },
+      "properties": {
+        "source_location": {
+          "line": 122,
+          "column": 53
+        }
+      }
+    },
+    "dfg_node_124": {
+      "id": "dfg_node_124",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "calc_partnerPercent_function",
+      "source_location": {
+        "line": 123,
+        "column": 17,
+        "end_line": 123,
+        "end_column": 30
+      },
+      "properties": {
+        "source_location": {
+          "line": 123,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_125": {
+      "id": "dfg_node_125",
+      "type": "if_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "calc_partnerPercent_function",
+      "source_location": {
+        "line": 125,
+        "column": 18,
+        "end_line": 127,
+        "end_column": 14
+      },
+      "properties": {
+        "source_location": {
+          "line": 125,
+          "column": 18
+        }
+      }
+    },
+    "dfg_node_126": {
+      "id": "dfg_node_126",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "calc_partnerPercent_function",
+      "source_location": {
+        "line": 125,
+        "column": 21,
+        "end_line": 125,
+        "end_column": 49
+      },
+      "properties": {
+        "source_location": {
+          "line": 125,
+          "column": 21
+        }
+      }
+    },
+    "dfg_node_127": {
+      "id": "dfg_node_127",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "calc_partnerPercent_function",
+      "source_location": {
+        "line": 126,
+        "column": 17,
+        "end_line": 126,
+        "end_column": 30
+      },
+      "properties": {
+        "source_location": {
+          "line": 126,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_129": {
+      "id": "dfg_node_129",
+      "type": "parameter",
+      "name": "percent",
+      "data_type": "uint16",
+      "scope": "calc_partnerPercent_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "calc_partnerPercent"
+      }
+    },
+    "dfg_node_130": {
+      "id": "dfg_node_130",
+      "type": "function",
+      "name": "partnerInfo",
+      "data_type": null,
+      "scope": "BMICOAffiliateProgramm",
+      "source_location": {
+        "line": 131,
+        "column": 5,
+        "end_line": 153,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 131,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_131": {
+      "id": "dfg_node_131",
+      "type": "if_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_function",
+      "source_location": {
+        "line": 132,
+        "column": 9,
+        "end_line": 152,
+        "end_column": 10
+      },
+      "properties": {
+        "source_location": {
+          "line": 132,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_132": {
+      "id": "dfg_node_132",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_function",
+      "source_location": {
+        "line": 132,
+        "column": 12,
+        "end_line": 132,
+        "end_column": 83
+      },
+      "properties": {
+        "source_location": {
+          "line": 132,
+          "column": 12
+        }
+      }
+    },
+    "dfg_node_133": {
+      "id": "dfg_node_133",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_function",
+      "source_location": {
+        "line": 132,
+        "column": 12,
+        "end_line": 132,
+        "end_column": 59
+      },
+      "properties": {
+        "source_location": {
+          "line": 132,
+          "column": 12
+        }
+      }
+    },
+    "dfg_node_134": {
+      "id": "dfg_node_134",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_function",
+      "source_location": {
+        "line": 132,
+        "column": 12,
+        "end_line": 132,
+        "end_column": 43
+      },
+      "properties": {
+        "source_location": {
+          "line": 132,
+          "column": 12
+        }
+      }
+    },
+    "dfg_node_135": {
+      "id": "dfg_node_135",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_function",
+      "source_location": {
+        "line": 133,
+        "column": 13,
+        "end_line": 133,
+        "end_column": 56
+      },
+      "properties": {
+        "source_location": {
+          "line": 133,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_136": {
+      "id": "dfg_node_136",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_function",
+      "source_location": {
+        "line": 133,
+        "column": 21,
+        "end_line": 133,
+        "end_column": 56
+      },
+      "properties": {
+        "source_location": {
+          "line": 133,
+          "column": 21
+        }
+      }
+    },
+    "dfg_node_137": {
+      "id": "dfg_node_137",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_function",
+      "source_location": {
+        "line": 134,
+        "column": 13,
+        "end_line": 134,
+        "end_column": 60
+      },
+      "properties": {
+        "source_location": {
+          "line": 134,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_138": {
+      "id": "dfg_node_138",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_function",
+      "source_location": {
+        "line": 134,
+        "column": 23,
+        "end_line": 134,
+        "end_column": 60
+      },
+      "properties": {
+        "source_location": {
+          "line": 134,
+          "column": 23
+        }
+      }
+    },
+    "dfg_node_139": {
+      "id": "dfg_node_139",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_function",
+      "source_location": {
+        "line": 136,
+        "column": 13,
+        "end_line": 136,
+        "end_column": 72
+      },
+      "properties": {
+        "source_location": {
+          "line": 136,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_140": {
+      "id": "dfg_node_140",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_function",
+      "source_location": {
+        "line": 136,
+        "column": 26,
+        "end_line": 136,
+        "end_column": 72
+      },
+      "properties": {
+        "source_location": {
+          "line": 136,
+          "column": 26
+        }
+      }
+    },
+    "dfg_node_141": {
+      "id": "dfg_node_141",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_function",
+      "source_location": {
+        "line": 136,
+        "column": 40,
+        "end_line": 136,
+        "end_column": 71
+      },
+      "properties": {
+        "source_location": {
+          "line": 136,
+          "column": 40
+        }
+      }
+    },
+    "dfg_node_142": {
+      "id": "dfg_node_142",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_function",
+      "source_location": {
+        "line": 137,
+        "column": 13,
+        "end_line": 137,
+        "end_column": 70
+      },
+      "properties": {
+        "source_location": {
+          "line": 137,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_143": {
+      "id": "dfg_node_143",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_function",
+      "source_location": {
+        "line": 137,
+        "column": 24,
+        "end_line": 137,
+        "end_column": 70
+      },
+      "properties": {
+        "source_location": {
+          "line": 137,
+          "column": 24
+        }
+      }
+    },
+    "dfg_node_144": {
+      "id": "dfg_node_144",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_function",
+      "source_location": {
+        "line": 137,
+        "column": 38,
+        "end_line": 137,
+        "end_column": 69
+      },
+      "properties": {
+        "source_location": {
+          "line": 137,
+          "column": 38
+        }
+      }
+    },
+    "dfg_node_145": {
+      "id": "dfg_node_145",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_function",
+      "source_location": {
+        "line": 138,
+        "column": 13,
+        "end_line": 138,
+        "end_column": 73
+      },
+      "properties": {
+        "source_location": {
+          "line": 138,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_146": {
+      "id": "dfg_node_146",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_function",
+      "source_location": {
+        "line": 138,
+        "column": 27,
+        "end_line": 138,
+        "end_column": 73
+      },
+      "properties": {
+        "source_location": {
+          "line": 138,
+          "column": 27
+        }
+      }
+    },
+    "dfg_node_147": {
+      "id": "dfg_node_147",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_function",
+      "source_location": {
+        "line": 138,
+        "column": 41,
+        "end_line": 138,
+        "end_column": 72
+      },
+      "properties": {
+        "source_location": {
+          "line": 138,
+          "column": 41
+        }
+      }
+    },
+    "dfg_node_148": {
+      "id": "dfg_node_148",
+      "type": "for_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_function",
+      "source_location": {
+        "line": 140,
+        "column": 13,
+        "end_line": 144,
+        "end_column": 14
+      },
+      "properties": {
+        "source_location": {
+          "line": 140,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_149": {
+      "id": "dfg_node_149",
+      "type": "local_variable",
+      "name": "i",
+      "data_type": "var",
+      "scope": "partnerInfo_function",
+      "source_location": {
+        "line": 140,
+        "column": 17,
+        "end_line": 140,
+        "end_column": 22
+      },
+      "properties": {
+        "source_location": {
+          "line": 140,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_150": {
+      "id": "dfg_node_150",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_function",
+      "source_location": {
+        "line": 140,
+        "column": 26,
+        "end_line": 140,
+        "end_column": 59
+      },
+      "properties": {
+        "source_location": {
+          "line": 140,
+          "column": 26
+        }
+      }
+    },
+    "dfg_node_151": {
+      "id": "dfg_node_151",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_function",
+      "source_location": {
+        "line": 140,
+        "column": 26,
+        "end_line": 140,
+        "end_column": 35
+      },
+      "properties": {
+        "source_location": {
+          "line": 140,
+          "column": 26
+        }
+      }
+    },
+    "dfg_node_152": {
+      "id": "dfg_node_152",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_function",
+      "source_location": {
+        "line": 141,
+        "column": 17,
+        "end_line": 141,
+        "end_column": 69
+      },
+      "properties": {
+        "source_location": {
+          "line": 141,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_153": {
+      "id": "dfg_node_153",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_function",
+      "source_location": {
+        "line": 141,
+        "column": 33,
+        "end_line": 141,
+        "end_column": 69
+      },
+      "properties": {
+        "source_location": {
+          "line": 141,
+          "column": 33
+        }
+      }
+    },
+    "dfg_node_154": {
+      "id": "dfg_node_154",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_function",
+      "source_location": {
+        "line": 142,
+        "column": 17,
+        "end_line": 142,
+        "end_column": 72
+      },
+      "properties": {
+        "source_location": {
+          "line": 142,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_155": {
+      "id": "dfg_node_155",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_function",
+      "source_location": {
+        "line": 142,
+        "column": 31,
+        "end_line": 142,
+        "end_column": 72
+      },
+      "properties": {
+        "source_location": {
+          "line": 142,
+          "column": 31
+        }
+      }
+    },
+    "dfg_node_156": {
+      "id": "dfg_node_156",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_function",
+      "source_location": {
+        "line": 143,
+        "column": 17,
+        "end_line": 143,
+        "end_column": 70
+      },
+      "properties": {
+        "source_location": {
+          "line": 143,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_157": {
+      "id": "dfg_node_157",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_function",
+      "source_location": {
+        "line": 143,
+        "column": 34,
+        "end_line": 143,
+        "end_column": 70
+      },
+      "properties": {
+        "source_location": {
+          "line": 143,
+          "column": 34
+        }
+      }
+    },
+    "dfg_node_158": {
+      "id": "dfg_node_158",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_function",
+      "source_location": {
+        "line": 147,
+        "column": 26,
+        "end_line": 147,
+        "end_column": 28
+      },
+      "properties": {
+        "source_location": {
+          "line": 147,
+          "column": 26
+        }
+      }
+    },
+    "dfg_node_159": {
+      "id": "dfg_node_159",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_function",
+      "source_location": {
+        "line": 148,
+        "column": 13,
+        "end_line": 148,
+        "end_column": 24
+      },
+      "properties": {
+        "source_location": {
+          "line": 148,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_160": {
+      "id": "dfg_node_160",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_function",
+      "source_location": {
+        "line": 149,
+        "column": 13,
+        "end_line": 149,
+        "end_column": 42
+      },
+      "properties": {
+        "source_location": {
+          "line": 149,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_161": {
+      "id": "dfg_node_161",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_function",
+      "source_location": {
+        "line": 149,
+        "column": 26,
+        "end_line": 149,
+        "end_column": 42
+      },
+      "properties": {
+        "source_location": {
+          "line": 149,
+          "column": 26
+        }
+      }
+    },
+    "dfg_node_162": {
+      "id": "dfg_node_162",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_function",
+      "source_location": {
+        "line": 150,
+        "column": 13,
+        "end_line": 150,
+        "end_column": 40
+      },
+      "properties": {
+        "source_location": {
+          "line": 150,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_163": {
+      "id": "dfg_node_163",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_function",
+      "source_location": {
+        "line": 150,
+        "column": 24,
+        "end_line": 150,
+        "end_column": 40
+      },
+      "properties": {
+        "source_location": {
+          "line": 150,
+          "column": 24
+        }
+      }
+    },
+    "dfg_node_164": {
+      "id": "dfg_node_164",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_function",
+      "source_location": {
+        "line": 151,
+        "column": 13,
+        "end_line": 151,
+        "end_column": 43
+      },
+      "properties": {
+        "source_location": {
+          "line": 151,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_165": {
+      "id": "dfg_node_165",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_function",
+      "source_location": {
+        "line": 151,
+        "column": 27,
+        "end_line": 151,
+        "end_column": 43
+      },
+      "properties": {
+        "source_location": {
+          "line": 151,
+          "column": 27
+        }
+      }
+    },
+    "dfg_node_167": {
+      "id": "dfg_node_167",
+      "type": "parameter",
+      "name": "promo",
+      "data_type": "string",
+      "scope": "partnerInfo_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "partnerInfo"
+      }
+    },
+    "dfg_node_169": {
+      "id": "dfg_node_169",
+      "type": "parameter",
+      "name": "balance",
+      "data_type": "uint256",
+      "scope": "partnerInfo_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "partnerInfo"
+      }
+    },
+    "dfg_node_171": {
+      "id": "dfg_node_171",
+      "type": "parameter",
+      "name": "h_datetime",
+      "data_type": "uint256[]",
+      "scope": "partnerInfo_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "partnerInfo"
+      }
+    },
+    "dfg_node_173": {
+      "id": "dfg_node_173",
+      "type": "parameter",
+      "name": "h_invest",
+      "data_type": "uint256[]",
+      "scope": "partnerInfo_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "partnerInfo"
+      }
+    },
+    "dfg_node_175": {
+      "id": "dfg_node_175",
+      "type": "parameter",
+      "name": "h_referrals",
+      "data_type": "address[]",
+      "scope": "partnerInfo_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "partnerInfo"
+      }
+    },
+    "dfg_node_176": {
+      "id": "dfg_node_176",
+      "type": "function",
+      "name": "partnerInfo_for_Partner",
+      "data_type": null,
+      "scope": "BMICOAffiliateProgramm",
+      "source_location": {
+        "line": 155,
+        "column": 5,
+        "end_line": 158,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 155,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_177": {
+      "id": "dfg_node_177",
+      "type": "local_variable",
+      "name": "partner_address",
+      "data_type": "address",
+      "scope": "partnerInfo_for_Partner_function",
+      "source_location": {
+        "line": 156,
+        "column": 9,
+        "end_line": 156,
+        "end_column": 32
+      },
+      "properties": {
+        "source_location": {
+          "line": 156,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_178": {
+      "id": "dfg_node_178",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_for_Partner_function",
+      "source_location": {
+        "line": 156,
+        "column": 35,
+        "end_line": 156,
+        "end_column": 59
+      },
+      "properties": {
+        "source_location": {
+          "line": 156,
+          "column": 35
+        }
+      }
+    },
+    "dfg_node_179": {
+      "id": "dfg_node_179",
+      "type": "return_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_for_Partner_function",
+      "source_location": {
+        "line": 157,
+        "column": 9,
+        "end_line": 157,
+        "end_column": 45
+      },
+      "properties": {
+        "source_location": {
+          "line": 157,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_180": {
+      "id": "dfg_node_180",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_for_Partner_function",
+      "source_location": {
+        "line": 157,
+        "column": 16,
+        "end_line": 157,
+        "end_column": 44
+      },
+      "properties": {
+        "source_location": {
+          "line": 157,
+          "column": 16
+        }
+      }
+    },
+    "dfg_node_182": {
+      "id": "dfg_node_182",
+      "type": "parameter",
+      "name": "param_180",
+      "data_type": "string",
+      "scope": "partnerInfo_for_Partner_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "partnerInfo_for_Partner"
+      }
+    },
+    "dfg_node_184": {
+      "id": "dfg_node_184",
+      "type": "parameter",
+      "name": "param_182",
+      "data_type": "uint256",
+      "scope": "partnerInfo_for_Partner_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "partnerInfo_for_Partner"
+      }
+    },
+    "dfg_node_186": {
+      "id": "dfg_node_186",
+      "type": "parameter",
+      "name": "param_184",
+      "data_type": "uint256[]",
+      "scope": "partnerInfo_for_Partner_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "partnerInfo_for_Partner"
+      }
+    },
+    "dfg_node_188": {
+      "id": "dfg_node_188",
+      "type": "parameter",
+      "name": "param_186",
+      "data_type": "uint256[]",
+      "scope": "partnerInfo_for_Partner_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "partnerInfo_for_Partner"
+      }
+    },
+    "dfg_node_190": {
+      "id": "dfg_node_190",
+      "type": "parameter",
+      "name": "param_188",
+      "data_type": "address[]",
+      "scope": "partnerInfo_for_Partner_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "partnerInfo_for_Partner"
+      }
+    },
+    "dfg_node_191": {
+      "id": "dfg_node_191",
+      "type": "function",
+      "name": "partnerInfo_for_Owner",
+      "data_type": null,
+      "scope": "BMICOAffiliateProgramm",
+      "source_location": {
+        "line": 160,
+        "column": 5,
+        "end_line": 167,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 160,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_192": {
+      "id": "dfg_node_192",
+      "type": "if_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_for_Owner_function",
+      "source_location": {
+        "line": 161,
+        "column": 9,
+        "end_line": 166,
+        "end_column": 10
+      },
+      "properties": {
+        "source_location": {
+          "line": 161,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_193": {
+      "id": "dfg_node_193",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_for_Owner_function",
+      "source_location": {
+        "line": 161,
+        "column": 12,
+        "end_line": 161,
+        "end_column": 45
+      },
+      "properties": {
+        "source_location": {
+          "line": 161,
+          "column": 12
+        }
+      }
+    },
+    "dfg_node_194": {
+      "id": "dfg_node_194",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_for_Owner_function",
+      "source_location": {
+        "line": 161,
+        "column": 21,
+        "end_line": 161,
+        "end_column": 45
+      },
+      "properties": {
+        "source_location": {
+          "line": 161,
+          "column": 21
+        }
+      }
+    },
+    "dfg_node_195": {
+      "id": "dfg_node_195",
+      "type": "return_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_for_Owner_function",
+      "source_location": {
+        "line": 162,
+        "column": 13,
+        "end_line": 162,
+        "end_column": 41
+      },
+      "properties": {
+        "source_location": {
+          "line": 162,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_196": {
+      "id": "dfg_node_196",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_for_Owner_function",
+      "source_location": {
+        "line": 162,
+        "column": 20,
+        "end_line": 162,
+        "end_column": 40
+      },
+      "properties": {
+        "source_location": {
+          "line": 162,
+          "column": 20
+        }
+      }
+    },
+    "dfg_node_197": {
+      "id": "dfg_node_197",
+      "type": "return_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_for_Owner_function",
+      "source_location": {
+        "line": 165,
+        "column": 13,
+        "end_line": 165,
+        "end_column": 92
+      },
+      "properties": {
+        "source_location": {
+          "line": 165,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_198": {
+      "id": "dfg_node_198",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_for_Owner_function",
+      "source_location": {
+        "line": 165,
+        "column": 21,
+        "end_line": 165,
+        "end_column": 28
+      },
+      "properties": {
+        "source_location": {
+          "line": 165,
+          "column": 21
+        }
+      }
+    },
+    "dfg_node_199": {
+      "id": "dfg_node_199",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_for_Owner_function",
+      "source_location": {
+        "line": 165,
+        "column": 26,
+        "end_line": 165,
+        "end_column": 28
+      },
+      "properties": {
+        "source_location": {
+          "line": 165,
+          "column": 26
+        }
+      }
+    },
+    "dfg_node_200": {
+      "id": "dfg_node_200",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_for_Owner_function",
+      "source_location": {
+        "line": 165,
+        "column": 38,
+        "end_line": 165,
+        "end_column": 54
+      },
+      "properties": {
+        "source_location": {
+          "line": 165,
+          "column": 38
+        }
+      }
+    },
+    "dfg_node_201": {
+      "id": "dfg_node_201",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_for_Owner_function",
+      "source_location": {
+        "line": 165,
+        "column": 56,
+        "end_line": 165,
+        "end_column": 72
+      },
+      "properties": {
+        "source_location": {
+          "line": 165,
+          "column": 56
+        }
+      }
+    },
+    "dfg_node_202": {
+      "id": "dfg_node_202",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "partnerInfo_for_Owner_function",
+      "source_location": {
+        "line": 165,
+        "column": 74,
+        "end_line": 165,
+        "end_column": 90
+      },
+      "properties": {
+        "source_location": {
+          "line": 165,
+          "column": 74
+        }
+      }
+    },
+    "dfg_node_204": {
+      "id": "dfg_node_204",
+      "type": "parameter",
+      "name": "param_202",
+      "data_type": "string",
+      "scope": "partnerInfo_for_Owner_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "partnerInfo_for_Owner"
+      }
+    },
+    "dfg_node_206": {
+      "id": "dfg_node_206",
+      "type": "parameter",
+      "name": "param_204",
+      "data_type": "uint256",
+      "scope": "partnerInfo_for_Owner_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "partnerInfo_for_Owner"
+      }
+    },
+    "dfg_node_208": {
+      "id": "dfg_node_208",
+      "type": "parameter",
+      "name": "param_206",
+      "data_type": "uint256[]",
+      "scope": "partnerInfo_for_Owner_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "partnerInfo_for_Owner"
+      }
+    },
+    "dfg_node_210": {
+      "id": "dfg_node_210",
+      "type": "parameter",
+      "name": "param_208",
+      "data_type": "uint256[]",
+      "scope": "partnerInfo_for_Owner_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "partnerInfo_for_Owner"
+      }
+    },
+    "dfg_node_212": {
+      "id": "dfg_node_212",
+      "type": "parameter",
+      "name": "param_210",
+      "data_type": "address[]",
+      "scope": "partnerInfo_for_Owner_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "partnerInfo_for_Owner"
+      }
+    },
+    "dfg_node_213": {
+      "id": "dfg_node_213",
+      "type": "function",
+      "name": "add_referral",
+      "data_type": null,
+      "scope": "BMICOAffiliateProgramm",
+      "source_location": {
+        "line": 169,
+        "column": 5,
+        "end_line": 184,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 169,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_214": {
+      "id": "dfg_node_214",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "add_referral_function",
+      "source_location": {
+        "line": 170,
+        "column": 9,
+        "end_line": 170,
+        "end_column": 22
+      },
+      "properties": {
+        "source_location": {
+          "line": 170,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_215": {
+      "id": "dfg_node_215",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "add_referral_function",
+      "source_location": {
+        "line": 171,
+        "column": 9,
+        "end_line": 171,
+        "end_column": 23
+      },
+      "properties": {
+        "source_location": {
+          "line": 171,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_216": {
+      "id": "dfg_node_216",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "add_referral_function",
+      "source_location": {
+        "line": 172,
+        "column": 9,
+        "end_line": 172,
+        "end_column": 31
+      },
+      "properties": {
+        "source_location": {
+          "line": 172,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_217": {
+      "id": "dfg_node_217",
+      "type": "if_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "add_referral_function",
+      "source_location": {
+        "line": 173,
+        "column": 9,
+        "end_line": 183,
+        "end_column": 10
+      },
+      "properties": {
+        "source_location": {
+          "line": 173,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_218": {
+      "id": "dfg_node_218",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "add_referral_function",
+      "source_location": {
+        "line": 173,
+        "column": 13,
+        "end_line": 173,
+        "end_column": 70
+      },
+      "properties": {
+        "source_location": {
+          "line": 173,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_219": {
+      "id": "dfg_node_219",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "add_referral_function",
+      "source_location": {
+        "line": 173,
+        "column": 13,
+        "end_line": 173,
+        "end_column": 55
+      },
+      "properties": {
+        "source_location": {
+          "line": 173,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_220": {
+      "id": "dfg_node_220",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "add_referral_function",
+      "source_location": {
+        "line": 173,
+        "column": 13,
+        "end_line": 173,
+        "end_column": 48
+      },
+      "properties": {
+        "source_location": {
+          "line": 173,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_221": {
+      "id": "dfg_node_221",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "add_referral_function",
+      "source_location": {
+        "line": 173,
+        "column": 13,
+        "end_line": 173,
+        "end_column": 41
+      },
+      "properties": {
+        "source_location": {
+          "line": 173,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_222": {
+      "id": "dfg_node_222",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "add_referral_function",
+      "source_location": {
+        "line": 173,
+        "column": 13,
+        "end_line": 173,
+        "end_column": 23
+      },
+      "properties": {
+        "source_location": {
+          "line": 173,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_223": {
+      "id": "dfg_node_223",
+      "type": "if_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "add_referral_function",
+      "source_location": {
+        "line": 174,
+        "column": 13,
+        "end_line": 182,
+        "end_column": 14
+      },
+      "properties": {
+        "source_location": {
+          "line": 174,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_224": {
+      "id": "dfg_node_224",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "add_referral_function",
+      "source_location": {
+        "line": 174,
+        "column": 16,
+        "end_line": 174,
+        "end_column": 88
+      },
+      "properties": {
+        "source_location": {
+          "line": 174,
+          "column": 16
+        }
+      }
+    },
+    "dfg_node_225": {
+      "id": "dfg_node_225",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "add_referral_function",
+      "source_location": {
+        "line": 174,
+        "column": 16,
+        "end_line": 174,
+        "end_column": 69
+      },
+      "properties": {
+        "source_location": {
+          "line": 174,
+          "column": 16
+        }
+      }
+    },
+    "dfg_node_226": {
+      "id": "dfg_node_226",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "add_referral_function",
+      "source_location": {
+        "line": 174,
+        "column": 16,
+        "end_line": 174,
+        "end_column": 52
+      },
+      "properties": {
+        "source_location": {
+          "line": 174,
+          "column": 16
+        }
+      }
+    },
+    "dfg_node_227": {
+      "id": "dfg_node_227",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "add_referral_function",
+      "source_location": {
+        "line": 175,
+        "column": 17,
+        "end_line": 175,
+        "end_column": 47
+      },
+      "properties": {
+        "source_location": {
+          "line": 175,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_228": {
+      "id": "dfg_node_228",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "add_referral_function",
+      "source_location": {
+        "line": 178,
+        "column": 17,
+        "end_line": 178,
+        "end_column": 46
+      },
+      "properties": {
+        "source_location": {
+          "line": 178,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_229": {
+      "id": "dfg_node_229",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "add_referral_function",
+      "source_location": {
+        "line": 179,
+        "column": 17,
+        "end_line": 179,
+        "end_column": 74
+      },
+      "properties": {
+        "source_location": {
+          "line": 179,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_230": {
+      "id": "dfg_node_230",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "add_referral_function",
+      "source_location": {
+        "line": 179,
+        "column": 17,
+        "end_line": 179,
+        "end_column": 38
+      },
+      "properties": {
+        "source_location": {
+          "line": 179,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_231": {
+      "id": "dfg_node_231",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "add_referral_function",
+      "source_location": {
+        "line": 179,
+        "column": 39,
+        "end_line": 179,
+        "end_column": 73
+      },
+      "properties": {
+        "source_location": {
+          "line": 179,
+          "column": 39
+        }
+      }
+    },
+    "dfg_node_232": {
+      "id": "dfg_node_232",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "add_referral_function",
+      "source_location": {
+        "line": 180,
+        "column": 17,
+        "end_line": 180,
+        "end_column": 80
+      },
+      "properties": {
+        "source_location": {
+          "line": 180,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_233": {
+      "id": "dfg_node_233",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "add_referral_function",
+      "source_location": {
+        "line": 180,
+        "column": 29,
+        "end_line": 180,
+        "end_column": 80
+      },
+      "properties": {
+        "source_location": {
+          "line": 180,
+          "column": 29
+        }
+      }
+    },
+    "dfg_node_234": {
+      "id": "dfg_node_234",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "add_referral_function",
+      "source_location": {
+        "line": 180,
+        "column": 30,
+        "end_line": 180,
+        "end_column": 73
+      },
+      "properties": {
+        "source_location": {
+          "line": 180,
+          "column": 30
+        }
+      }
+    },
+    "dfg_node_235": {
+      "id": "dfg_node_235",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "add_referral_function",
+      "source_location": {
+        "line": 180,
+        "column": 45,
+        "end_line": 180,
+        "end_column": 72
+      },
+      "properties": {
+        "source_location": {
+          "line": 180,
+          "column": 45
+        }
+      }
+    },
+    "dfg_node_236": {
+      "id": "dfg_node_236",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "add_referral_function",
+      "source_location": {
+        "line": 181,
+        "column": 17,
+        "end_line": 181,
+        "end_column": 56
+      },
+      "properties": {
+        "source_location": {
+          "line": 181,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_237": {
+      "id": "dfg_node_237",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "add_referral_function",
+      "source_location": {
+        "line": 181,
+        "column": 30,
+        "end_line": 181,
+        "end_column": 56
+      },
+      "properties": {
+        "source_location": {
+          "line": 181,
+          "column": 30
+        }
+      }
+    },
+    "dfg_node_238": {
+      "id": "dfg_node_238",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "add_referral_function",
+      "source_location": {
+        "line": 181,
+        "column": 31,
+        "end_line": 181,
+        "end_column": 49
+      },
+      "properties": {
+        "source_location": {
+          "line": 181,
+          "column": 31
+        }
+      }
+    },
+    "dfg_node_240": {
+      "id": "dfg_node_240",
+      "type": "parameter",
+      "name": "partner",
+      "data_type": "address",
+      "scope": "add_referral_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "add_referral"
+      }
+    },
+    "dfg_node_242": {
+      "id": "dfg_node_242",
+      "type": "parameter",
+      "name": "p_partner",
+      "data_type": "uint256",
+      "scope": "add_referral_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "add_referral"
+      }
+    },
+    "dfg_node_244": {
+      "id": "dfg_node_244",
+      "type": "parameter",
+      "name": "p_referral",
+      "data_type": "uint256",
+      "scope": "add_referral_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "add_referral"
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_1",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_1",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_1",
+      "target": "dfg_node_7",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_1",
+      "target": "dfg_node_8",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_1",
+      "target": "dfg_node_9",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_9": {
+      "id": "dfg_edge_9",
+      "source": "dfg_node_1",
+      "target": "dfg_node_10",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_10": {
+      "id": "dfg_edge_10",
+      "source": "dfg_node_1",
+      "target": "dfg_node_11",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_11": {
+      "id": "dfg_edge_11",
+      "source": "dfg_node_1",
+      "target": "dfg_node_12",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_12": {
+      "id": "dfg_edge_12",
+      "source": "dfg_node_1",
+      "target": "dfg_node_13",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_13": {
+      "id": "dfg_edge_13",
+      "source": "dfg_node_21",
+      "target": "dfg_node_38",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_14": {
+      "id": "dfg_edge_14",
+      "source": "dfg_node_1",
+      "target": "dfg_node_21",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_15": {
+      "id": "dfg_edge_15",
+      "source": "dfg_node_1",
+      "target": "dfg_node_39",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_16": {
+      "id": "dfg_edge_16",
+      "source": "dfg_node_1",
+      "target": "dfg_node_45",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_17": {
+      "id": "dfg_edge_17",
+      "source": "dfg_node_1",
+      "target": "dfg_node_47",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_18": {
+      "id": "dfg_edge_18",
+      "source": "dfg_node_1",
+      "target": "dfg_node_55",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_19": {
+      "id": "dfg_edge_19",
+      "source": "dfg_node_1",
+      "target": "dfg_node_63",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_20": {
+      "id": "dfg_edge_20",
+      "source": "dfg_node_87",
+      "target": "dfg_node_91",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_21": {
+      "id": "dfg_edge_21",
+      "source": "dfg_node_1",
+      "target": "dfg_node_87",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_22": {
+      "id": "dfg_edge_22",
+      "source": "dfg_node_92",
+      "target": "dfg_node_100",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_23": {
+      "id": "dfg_edge_23",
+      "source": "dfg_node_92",
+      "target": "dfg_node_102",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_24": {
+      "id": "dfg_edge_24",
+      "source": "dfg_node_1",
+      "target": "dfg_node_92",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_25": {
+      "id": "dfg_edge_25",
+      "source": "dfg_node_103",
+      "target": "dfg_node_129",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_26": {
+      "id": "dfg_edge_26",
+      "source": "dfg_node_1",
+      "target": "dfg_node_103",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_27": {
+      "id": "dfg_edge_27",
+      "source": "dfg_node_130",
+      "target": "dfg_node_167",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_28": {
+      "id": "dfg_edge_28",
+      "source": "dfg_node_130",
+      "target": "dfg_node_169",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_29": {
+      "id": "dfg_edge_29",
+      "source": "dfg_node_130",
+      "target": "dfg_node_171",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_30": {
+      "id": "dfg_edge_30",
+      "source": "dfg_node_130",
+      "target": "dfg_node_173",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_31": {
+      "id": "dfg_edge_31",
+      "source": "dfg_node_130",
+      "target": "dfg_node_175",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_32": {
+      "id": "dfg_edge_32",
+      "source": "dfg_node_1",
+      "target": "dfg_node_130",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_33": {
+      "id": "dfg_edge_33",
+      "source": "dfg_node_176",
+      "target": "dfg_node_182",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_34": {
+      "id": "dfg_edge_34",
+      "source": "dfg_node_176",
+      "target": "dfg_node_184",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_35": {
+      "id": "dfg_edge_35",
+      "source": "dfg_node_176",
+      "target": "dfg_node_186",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_36": {
+      "id": "dfg_edge_36",
+      "source": "dfg_node_176",
+      "target": "dfg_node_188",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_37": {
+      "id": "dfg_edge_37",
+      "source": "dfg_node_176",
+      "target": "dfg_node_190",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_38": {
+      "id": "dfg_edge_38",
+      "source": "dfg_node_1",
+      "target": "dfg_node_176",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_39": {
+      "id": "dfg_edge_39",
+      "source": "dfg_node_191",
+      "target": "dfg_node_204",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_40": {
+      "id": "dfg_edge_40",
+      "source": "dfg_node_191",
+      "target": "dfg_node_206",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_41": {
+      "id": "dfg_edge_41",
+      "source": "dfg_node_191",
+      "target": "dfg_node_208",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_42": {
+      "id": "dfg_edge_42",
+      "source": "dfg_node_191",
+      "target": "dfg_node_210",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_43": {
+      "id": "dfg_edge_43",
+      "source": "dfg_node_191",
+      "target": "dfg_node_212",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_44": {
+      "id": "dfg_edge_44",
+      "source": "dfg_node_1",
+      "target": "dfg_node_191",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_45": {
+      "id": "dfg_edge_45",
+      "source": "dfg_node_213",
+      "target": "dfg_node_240",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_46": {
+      "id": "dfg_edge_46",
+      "source": "dfg_node_213",
+      "target": "dfg_node_242",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_47": {
+      "id": "dfg_edge_47",
+      "source": "dfg_node_213",
+      "target": "dfg_node_244",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_48": {
+      "id": "dfg_edge_48",
+      "source": "dfg_node_1",
+      "target": "dfg_node_213",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_49": {
+      "id": "dfg_edge_49",
+      "source": "dfg_node_21",
+      "target": "dfg_node_70",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_50": {
+      "id": "dfg_edge_50",
+      "source": "dfg_node_21",
+      "target": "dfg_node_71",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_51": {
+      "id": "dfg_edge_51",
+      "source": "dfg_node_21",
+      "target": "dfg_node_72",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_52": {
+      "id": "dfg_edge_52",
+      "source": "dfg_node_21",
+      "target": "dfg_node_73",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_53": {
+      "id": "dfg_edge_53",
+      "source": "dfg_node_21",
+      "target": "dfg_node_74",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_54": {
+      "id": "dfg_edge_54",
+      "source": "dfg_node_21",
+      "target": "dfg_node_75",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_55": {
+      "id": "dfg_edge_55",
+      "source": "dfg_node_103",
+      "target": "dfg_node_232",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_56": {
+      "id": "dfg_edge_56",
+      "source": "dfg_node_103",
+      "target": "dfg_node_233",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_57": {
+      "id": "dfg_edge_57",
+      "source": "dfg_node_103",
+      "target": "dfg_node_234",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_58": {
+      "id": "dfg_edge_58",
+      "source": "dfg_node_103",
+      "target": "dfg_node_235",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_59": {
+      "id": "dfg_edge_59",
+      "source": "dfg_node_130",
+      "target": "dfg_node_180",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_60": {
+      "id": "dfg_edge_60",
+      "source": "dfg_node_130",
+      "target": "dfg_node_196",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 441,
+    "source_line": 442,
+    "label": 1,
+    "mode": "standard",
+    "contract_name": "BMICOAffiliateProgramm",
+    "timestamp": "20251027_225116"
+  }
+}

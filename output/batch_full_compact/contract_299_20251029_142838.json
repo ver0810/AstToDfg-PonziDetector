@@ -1,0 +1,505 @@
+{
+  "contract": "EthMultiplier",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "EthMultiplier",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 3,
+        "column": 1,
+        "end_line": 248,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "id",
+      "data_type": "uint16",
+      "scope": "EthMultiplier",
+      "source_location": {
+        "line": 13,
+        "column": 2,
+        "end_line": 13,
+        "end_column": 20
+      },
+      "properties": {
+        "source_location": {
+          "line": 13,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "state_variable",
+      "name": "payoutIdx",
+      "data_type": "uint16",
+      "scope": "EthMultiplier",
+      "source_location": {
+        "line": 14,
+        "column": 2,
+        "end_line": 14,
+        "end_column": 27
+      },
+      "properties": {
+        "source_location": {
+          "line": 14,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "state_variable",
+      "name": "owner",
+      "data_type": "address",
+      "scope": "EthMultiplier",
+      "source_location": {
+        "line": 15,
+        "column": 2,
+        "end_line": 15,
+        "end_column": 24
+      },
+      "properties": {
+        "source_location": {
+          "line": 15,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "state_variable",
+      "name": "investors",
+      "data_type": "mapping (uint16 => Investor)",
+      "scope": "EthMultiplier",
+      "source_location": {
+        "line": 27,
+        "column": 2,
+        "end_line": 27,
+        "end_column": 48
+      },
+      "properties": {
+        "source_location": {
+          "line": 27,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "state_variable",
+      "name": "feePercentage",
+      "data_type": "uint8",
+      "scope": "EthMultiplier",
+      "source_location": {
+        "line": 29,
+        "column": 2,
+        "end_line": 29,
+        "end_column": 34
+      },
+      "properties": {
+        "source_location": {
+          "line": 29,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "state_variable",
+      "name": "payOutPercentage",
+      "data_type": "uint8",
+      "scope": "EthMultiplier",
+      "source_location": {
+        "line": 30,
+        "column": 2,
+        "end_line": 30,
+        "end_column": 37
+      },
+      "properties": {
+        "source_location": {
+          "line": 30,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "state_variable",
+      "name": "smartContactForSale",
+      "data_type": "bool",
+      "scope": "EthMultiplier",
+      "source_location": {
+        "line": 31,
+        "column": 2,
+        "end_line": 31,
+        "end_column": 41
+      },
+      "properties": {
+        "source_location": {
+          "line": 31,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "state_variable",
+      "name": "priceOfSmartContract",
+      "data_type": "uint",
+      "scope": "EthMultiplier",
+      "source_location": {
+        "line": 32,
+        "column": 2,
+        "end_line": 32,
+        "end_column": 46
+      },
+      "properties": {
+        "source_location": {
+          "line": 32,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_10": {
+      "id": "dfg_node_10",
+      "type": "constructor_function",
+      "name": "EthMultiplier",
+      "data_type": null,
+      "scope": "EthMultiplier",
+      "source_location": {
+        "line": 43,
+        "column": 2,
+        "end_line": 43,
+        "end_column": 50
+      },
+      "properties": {
+        "source_location": {
+          "line": 43,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_11": {
+      "id": "dfg_node_11",
+      "type": "function",
+      "name": "invest",
+      "data_type": null,
+      "scope": "EthMultiplier",
+      "source_location": {
+        "line": 79,
+        "column": 2,
+        "end_line": 104,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 79,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_12": {
+      "id": "dfg_node_12",
+      "type": "function",
+      "name": "checkInvestmentRequired",
+      "data_type": null,
+      "scope": "EthMultiplier",
+      "source_location": {
+        "line": 118,
+        "column": 2,
+        "end_line": 128,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 118,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_14": {
+      "id": "dfg_node_14",
+      "type": "parameter",
+      "name": "amount",
+      "data_type": "uint",
+      "scope": "checkInvestmentRequired_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "checkInvestmentRequired"
+      }
+    },
+    "dfg_node_15": {
+      "id": "dfg_node_15",
+      "type": "function",
+      "name": "buySmartContract",
+      "data_type": null,
+      "scope": "EthMultiplier",
+      "source_location": {
+        "line": 146,
+        "column": 2,
+        "end_line": 158,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 146,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_16": {
+      "id": "dfg_node_16",
+      "type": "function",
+      "name": "setFeePercentage",
+      "data_type": null,
+      "scope": "EthMultiplier",
+      "source_location": {
+        "line": 183,
+        "column": 2,
+        "end_line": 188,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 183,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_17": {
+      "id": "dfg_node_17",
+      "type": "function",
+      "name": "setPayOutPercentage",
+      "data_type": null,
+      "scope": "EthMultiplier",
+      "source_location": {
+        "line": 204,
+        "column": 2,
+        "end_line": 209,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 204,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_18": {
+      "id": "dfg_node_18",
+      "type": "function",
+      "name": "putSmartContractOnSale",
+      "data_type": null,
+      "scope": "EthMultiplier",
+      "source_location": {
+        "line": 219,
+        "column": 2,
+        "end_line": 225,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 219,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_19": {
+      "id": "dfg_node_19",
+      "type": "function",
+      "name": "setSmartContractPrice",
+      "data_type": null,
+      "scope": "EthMultiplier",
+      "source_location": {
+        "line": 240,
+        "column": 2,
+        "end_line": 245,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 240,
+          "column": 2
+        }
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_1",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_1",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_1",
+      "target": "dfg_node_7",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_1",
+      "target": "dfg_node_8",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_1",
+      "target": "dfg_node_9",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_9": {
+      "id": "dfg_edge_9",
+      "source": "dfg_node_1",
+      "target": "dfg_node_10",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_10": {
+      "id": "dfg_edge_10",
+      "source": "dfg_node_1",
+      "target": "dfg_node_11",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_11": {
+      "id": "dfg_edge_11",
+      "source": "dfg_node_12",
+      "target": "dfg_node_14",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_12": {
+      "id": "dfg_edge_12",
+      "source": "dfg_node_1",
+      "target": "dfg_node_12",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_13": {
+      "id": "dfg_edge_13",
+      "source": "dfg_node_1",
+      "target": "dfg_node_15",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_14": {
+      "id": "dfg_edge_14",
+      "source": "dfg_node_1",
+      "target": "dfg_node_16",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_15": {
+      "id": "dfg_edge_15",
+      "source": "dfg_node_1",
+      "target": "dfg_node_17",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_16": {
+      "id": "dfg_edge_16",
+      "source": "dfg_node_1",
+      "target": "dfg_node_18",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_17": {
+      "id": "dfg_edge_17",
+      "source": "dfg_node_1",
+      "target": "dfg_node_19",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 299,
+    "source_line": 300,
+    "label": 1,
+    "mode": "compact",
+    "contract_name": "EthMultiplier",
+    "timestamp": "20251029_142838"
+  },
+  "label": 1
+}

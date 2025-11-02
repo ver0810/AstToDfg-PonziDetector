@@ -1,0 +1,363 @@
+{
+  "contract": "Mortal",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "Mortal",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 1,
+        "column": 1,
+        "end_line": 5,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "owner",
+      "data_type": "address",
+      "scope": "Mortal",
+      "source_location": {
+        "line": 2,
+        "column": 9,
+        "end_line": 2,
+        "end_column": 30
+      },
+      "properties": {
+        "source_location": {
+          "line": 2,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "function",
+      "name": "mortal",
+      "data_type": null,
+      "scope": "Mortal",
+      "source_location": {
+        "line": 3,
+        "column": 9,
+        "end_line": 3,
+        "end_column": 50
+      },
+      "properties": {
+        "source_location": {
+          "line": 3,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "function",
+      "name": "kill",
+      "data_type": null,
+      "scope": "Mortal",
+      "source_location": {
+        "line": 4,
+        "column": 9,
+        "end_line": 4,
+        "end_column": 69
+      },
+      "properties": {
+        "source_location": {
+          "line": 4,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "contract",
+      "name": "Thing",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 7,
+        "column": 1,
+        "end_line": 40,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 7,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "state_variable",
+      "name": "url",
+      "data_type": "string",
+      "scope": "Thing",
+      "source_location": {
+        "line": 10,
+        "column": 9,
+        "end_line": 10,
+        "end_column": 27
+      },
+      "properties": {
+        "source_location": {
+          "line": 10,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "state_variable",
+      "name": "data",
+      "data_type": "string",
+      "scope": "Thing",
+      "source_location": {
+        "line": 12,
+        "column": 9,
+        "end_line": 12,
+        "end_column": 28
+      },
+      "properties": {
+        "source_location": {
+          "line": 12,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "state_variable",
+      "name": "mimetype",
+      "data_type": "string",
+      "scope": "Thing",
+      "source_location": {
+        "line": 14,
+        "column": 9,
+        "end_line": 14,
+        "end_column": 32
+      },
+      "properties": {
+        "source_location": {
+          "line": 14,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "state_variable",
+      "name": "mood",
+      "data_type": "Mood",
+      "scope": "Thing",
+      "source_location": {
+        "line": 16,
+        "column": 9,
+        "end_line": 16,
+        "end_column": 26
+      },
+      "properties": {
+        "source_location": {
+          "line": 16,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_10": {
+      "id": "dfg_node_10",
+      "type": "state_variable",
+      "name": "reactions",
+      "data_type": "Thing[]",
+      "scope": "Thing",
+      "source_location": {
+        "line": 17,
+        "column": 9,
+        "end_line": 17,
+        "end_column": 34
+      },
+      "properties": {
+        "source_location": {
+          "line": 17,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_11": {
+      "id": "dfg_node_11",
+      "type": "function",
+      "name": "thing",
+      "data_type": null,
+      "scope": "Thing",
+      "source_location": {
+        "line": 19,
+        "column": 9,
+        "end_line": 27,
+        "end_column": 10
+      },
+      "properties": {
+        "source_location": {
+          "line": 19,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_12": {
+      "id": "dfg_node_12",
+      "type": "function",
+      "name": "react",
+      "data_type": null,
+      "scope": "Thing",
+      "source_location": {
+        "line": 29,
+        "column": 9,
+        "end_line": 33,
+        "end_column": 10
+      },
+      "properties": {
+        "source_location": {
+          "line": 29,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_13": {
+      "id": "dfg_node_13",
+      "type": "function",
+      "name": "withdraw",
+      "data_type": null,
+      "scope": "Thing",
+      "source_location": {
+        "line": 35,
+        "column": 9,
+        "end_line": 39,
+        "end_column": 10
+      },
+      "properties": {
+        "source_location": {
+          "line": 35,
+          "column": 9
+        }
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_5",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_5",
+      "target": "dfg_node_7",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_5",
+      "target": "dfg_node_8",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_5",
+      "target": "dfg_node_9",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_5",
+      "target": "dfg_node_10",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_9": {
+      "id": "dfg_edge_9",
+      "source": "dfg_node_5",
+      "target": "dfg_node_11",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_10": {
+      "id": "dfg_edge_10",
+      "source": "dfg_node_5",
+      "target": "dfg_node_12",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_11": {
+      "id": "dfg_edge_11",
+      "source": "dfg_node_5",
+      "target": "dfg_node_13",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 1439,
+    "source_line": 1440,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "Mortal",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

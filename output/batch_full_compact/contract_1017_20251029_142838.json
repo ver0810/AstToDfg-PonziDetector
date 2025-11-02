@@ -1,0 +1,1022 @@
+{
+  "contract": "Ownable",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "function",
+      "name": "mul",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 4,
+        "column": 3,
+        "end_line": 8,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 4,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "parameter",
+      "name": "param_1",
+      "data_type": "uint256",
+      "scope": "mul_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "mul"
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "function",
+      "name": "sub",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 10,
+        "column": 3,
+        "end_line": 13,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 10,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "parameter",
+      "name": "param_4",
+      "data_type": "uint256",
+      "scope": "sub_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "sub"
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "function",
+      "name": "add",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 15,
+        "column": 3,
+        "end_line": 19,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 15,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "parameter",
+      "name": "param_7",
+      "data_type": "uint256",
+      "scope": "add_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "add"
+      }
+    },
+    "dfg_node_10": {
+      "id": "dfg_node_10",
+      "type": "contract",
+      "name": "Ownable",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 22,
+        "column": 1,
+        "end_line": 33,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 22,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_11": {
+      "id": "dfg_node_11",
+      "type": "state_variable",
+      "name": "owner",
+      "data_type": "address",
+      "scope": "Ownable",
+      "source_location": {
+        "line": 23,
+        "column": 3,
+        "end_line": 23,
+        "end_column": 24
+      },
+      "properties": {
+        "source_location": {
+          "line": 23,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_12": {
+      "id": "dfg_node_12",
+      "type": "constructor_function",
+      "name": "Ownable",
+      "data_type": null,
+      "scope": "Ownable",
+      "source_location": {
+        "line": 25,
+        "column": 3,
+        "end_line": 27,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 25,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_13": {
+      "id": "dfg_node_13",
+      "type": "contract",
+      "name": "PariMutuel",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 35,
+        "column": 1,
+        "end_line": 152,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 35,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_14": {
+      "id": "dfg_node_14",
+      "type": "state_variable",
+      "name": "percentRake",
+      "data_type": "uint256",
+      "scope": "PariMutuel",
+      "source_location": {
+        "line": 46,
+        "column": 3,
+        "end_line": 46,
+        "end_column": 43
+      },
+      "properties": {
+        "source_location": {
+          "line": 46,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_15": {
+      "id": "dfg_node_15",
+      "type": "state_variable",
+      "name": "minBetAmount",
+      "data_type": "uint256",
+      "scope": "PariMutuel",
+      "source_location": {
+        "line": 47,
+        "column": 3,
+        "end_line": 47,
+        "end_column": 53
+      },
+      "properties": {
+        "source_location": {
+          "line": 47,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_16": {
+      "id": "dfg_node_16",
+      "type": "state_variable",
+      "name": "numberOfOutcomes",
+      "data_type": "uint8",
+      "scope": "PariMutuel",
+      "source_location": {
+        "line": 48,
+        "column": 3,
+        "end_line": 48,
+        "end_column": 46
+      },
+      "properties": {
+        "source_location": {
+          "line": 48,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_17": {
+      "id": "dfg_node_17",
+      "type": "state_variable",
+      "name": "winningOutcome",
+      "data_type": "Outcome",
+      "scope": "PariMutuel",
+      "source_location": {
+        "line": 50,
+        "column": 3,
+        "end_line": 50,
+        "end_column": 33
+      },
+      "properties": {
+        "source_location": {
+          "line": 50,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_18": {
+      "id": "dfg_node_18",
+      "type": "state_variable",
+      "name": "state",
+      "data_type": "State",
+      "scope": "PariMutuel",
+      "source_location": {
+        "line": 51,
+        "column": 3,
+        "end_line": 51,
+        "end_column": 22
+      },
+      "properties": {
+        "source_location": {
+          "line": 51,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_19": {
+      "id": "dfg_node_19",
+      "type": "state_variable",
+      "name": "balancesForOutcome",
+      "data_type": "mapping(uint8 => mapping(address => uint256))",
+      "scope": "PariMutuel",
+      "source_location": {
+        "line": 53,
+        "column": 3,
+        "end_line": 53,
+        "end_column": 68
+      },
+      "properties": {
+        "source_location": {
+          "line": 53,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_20": {
+      "id": "dfg_node_20",
+      "type": "state_variable",
+      "name": "totalForOutcome",
+      "data_type": "mapping(uint8 => uint256)",
+      "scope": "PariMutuel",
+      "source_location": {
+        "line": 54,
+        "column": 3,
+        "end_line": 54,
+        "end_column": 52
+      },
+      "properties": {
+        "source_location": {
+          "line": 54,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_21": {
+      "id": "dfg_node_21",
+      "type": "state_variable",
+      "name": "hasWithdrawnRake",
+      "data_type": "bool",
+      "scope": "PariMutuel",
+      "source_location": {
+        "line": 56,
+        "column": 3,
+        "end_line": 56,
+        "end_column": 32
+      },
+      "properties": {
+        "source_location": {
+          "line": 56,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_22": {
+      "id": "dfg_node_22",
+      "type": "state_variable",
+      "name": "refunded",
+      "data_type": "mapping(address => bool)",
+      "scope": "PariMutuel",
+      "source_location": {
+        "line": 57,
+        "column": 3,
+        "end_line": 57,
+        "end_column": 37
+      },
+      "properties": {
+        "source_location": {
+          "line": 57,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_23": {
+      "id": "dfg_node_23",
+      "type": "constructor_function",
+      "name": "PariMutuel",
+      "data_type": null,
+      "scope": "PariMutuel",
+      "source_location": {
+        "line": 59,
+        "column": 3,
+        "end_line": 61,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 59,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_24": {
+      "id": "dfg_node_24",
+      "type": "function",
+      "name": "bet",
+      "data_type": null,
+      "scope": "PariMutuel",
+      "source_location": {
+        "line": 68,
+        "column": 3,
+        "end_line": 73,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 68,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_25": {
+      "id": "dfg_node_25",
+      "type": "function",
+      "name": "totalWagered",
+      "data_type": null,
+      "scope": "PariMutuel",
+      "source_location": {
+        "line": 75,
+        "column": 3,
+        "end_line": 81,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 75,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_27": {
+      "id": "dfg_node_27",
+      "type": "parameter",
+      "name": "param_25",
+      "data_type": "uint256",
+      "scope": "totalWagered_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "totalWagered"
+      }
+    },
+    "dfg_node_28": {
+      "id": "dfg_node_28",
+      "type": "function",
+      "name": "totalRake",
+      "data_type": null,
+      "scope": "PariMutuel",
+      "source_location": {
+        "line": 83,
+        "column": 3,
+        "end_line": 85,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 83,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_30": {
+      "id": "dfg_node_30",
+      "type": "parameter",
+      "name": "param_28",
+      "data_type": "uint256",
+      "scope": "totalRake_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "totalRake"
+      }
+    },
+    "dfg_node_31": {
+      "id": "dfg_node_31",
+      "type": "function",
+      "name": "totalPrizePool",
+      "data_type": null,
+      "scope": "PariMutuel",
+      "source_location": {
+        "line": 87,
+        "column": 3,
+        "end_line": 89,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 87,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_33": {
+      "id": "dfg_node_33",
+      "type": "parameter",
+      "name": "param_31",
+      "data_type": "uint256",
+      "scope": "totalPrizePool_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "totalPrizePool"
+      }
+    },
+    "dfg_node_34": {
+      "id": "dfg_node_34",
+      "type": "function",
+      "name": "totalWageredForAddress",
+      "data_type": null,
+      "scope": "PariMutuel",
+      "source_location": {
+        "line": 91,
+        "column": 3,
+        "end_line": 97,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 91,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_36": {
+      "id": "dfg_node_36",
+      "type": "parameter",
+      "name": "param_34",
+      "data_type": "uint256",
+      "scope": "totalWageredForAddress_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "totalWageredForAddress"
+      }
+    },
+    "dfg_node_37": {
+      "id": "dfg_node_37",
+      "type": "function",
+      "name": "decimalOddsForOutcome",
+      "data_type": null,
+      "scope": "PariMutuel",
+      "source_location": {
+        "line": 103,
+        "column": 3,
+        "end_line": 108,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 103,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_39": {
+      "id": "dfg_node_39",
+      "type": "parameter",
+      "name": "integer",
+      "data_type": "uint256",
+      "scope": "decimalOddsForOutcome_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "decimalOddsForOutcome"
+      }
+    },
+    "dfg_node_41": {
+      "id": "dfg_node_41",
+      "type": "parameter",
+      "name": "fractional",
+      "data_type": "uint256",
+      "scope": "decimalOddsForOutcome_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "decimalOddsForOutcome"
+      }
+    },
+    "dfg_node_42": {
+      "id": "dfg_node_42",
+      "type": "function",
+      "name": "payoutForWagerAndOutcome",
+      "data_type": null,
+      "scope": "PariMutuel",
+      "source_location": {
+        "line": 110,
+        "column": 3,
+        "end_line": 112,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 110,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_44": {
+      "id": "dfg_node_44",
+      "type": "parameter",
+      "name": "param_42",
+      "data_type": "uint256",
+      "scope": "payoutForWagerAndOutcome_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "payoutForWagerAndOutcome"
+      }
+    },
+    "dfg_node_45": {
+      "id": "dfg_node_45",
+      "type": "function",
+      "name": "startEvent",
+      "data_type": null,
+      "scope": "PariMutuel",
+      "source_location": {
+        "line": 114,
+        "column": 3,
+        "end_line": 117,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 114,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_46": {
+      "id": "dfg_node_46",
+      "type": "function",
+      "name": "declareWinningOutcome",
+      "data_type": null,
+      "scope": "PariMutuel",
+      "source_location": {
+        "line": 119,
+        "column": 3,
+        "end_line": 124,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 119,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_47": {
+      "id": "dfg_node_47",
+      "type": "function",
+      "name": "refundEverybody",
+      "data_type": null,
+      "scope": "PariMutuel",
+      "source_location": {
+        "line": 127,
+        "column": 3,
+        "end_line": 130,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 127,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_48": {
+      "id": "dfg_node_48",
+      "type": "function",
+      "name": "getRefunded",
+      "data_type": null,
+      "scope": "PariMutuel",
+      "source_location": {
+        "line": 132,
+        "column": 3,
+        "end_line": 136,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 132,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_49": {
+      "id": "dfg_node_49",
+      "type": "function",
+      "name": "withdrawRake",
+      "data_type": null,
+      "scope": "PariMutuel",
+      "source_location": {
+        "line": 138,
+        "column": 3,
+        "end_line": 142,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 138,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_50": {
+      "id": "dfg_node_50",
+      "type": "function",
+      "name": "withdrawWinnings",
+      "data_type": null,
+      "scope": "PariMutuel",
+      "source_location": {
+        "line": 144,
+        "column": 3,
+        "end_line": 151,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 144,
+          "column": 3
+        }
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_4",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_7",
+      "target": "dfg_node_9",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_10",
+      "target": "dfg_node_11",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_10",
+      "target": "dfg_node_12",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_13",
+      "target": "dfg_node_14",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_13",
+      "target": "dfg_node_15",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_13",
+      "target": "dfg_node_16",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_9": {
+      "id": "dfg_edge_9",
+      "source": "dfg_node_13",
+      "target": "dfg_node_17",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_10": {
+      "id": "dfg_edge_10",
+      "source": "dfg_node_13",
+      "target": "dfg_node_18",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_11": {
+      "id": "dfg_edge_11",
+      "source": "dfg_node_13",
+      "target": "dfg_node_19",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_12": {
+      "id": "dfg_edge_12",
+      "source": "dfg_node_13",
+      "target": "dfg_node_20",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_13": {
+      "id": "dfg_edge_13",
+      "source": "dfg_node_13",
+      "target": "dfg_node_21",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_14": {
+      "id": "dfg_edge_14",
+      "source": "dfg_node_13",
+      "target": "dfg_node_22",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_15": {
+      "id": "dfg_edge_15",
+      "source": "dfg_node_13",
+      "target": "dfg_node_23",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_16": {
+      "id": "dfg_edge_16",
+      "source": "dfg_node_13",
+      "target": "dfg_node_24",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_17": {
+      "id": "dfg_edge_17",
+      "source": "dfg_node_25",
+      "target": "dfg_node_27",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_18": {
+      "id": "dfg_edge_18",
+      "source": "dfg_node_13",
+      "target": "dfg_node_25",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_19": {
+      "id": "dfg_edge_19",
+      "source": "dfg_node_28",
+      "target": "dfg_node_30",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_20": {
+      "id": "dfg_edge_20",
+      "source": "dfg_node_13",
+      "target": "dfg_node_28",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_21": {
+      "id": "dfg_edge_21",
+      "source": "dfg_node_31",
+      "target": "dfg_node_33",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_22": {
+      "id": "dfg_edge_22",
+      "source": "dfg_node_13",
+      "target": "dfg_node_31",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_23": {
+      "id": "dfg_edge_23",
+      "source": "dfg_node_34",
+      "target": "dfg_node_36",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_24": {
+      "id": "dfg_edge_24",
+      "source": "dfg_node_13",
+      "target": "dfg_node_34",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_25": {
+      "id": "dfg_edge_25",
+      "source": "dfg_node_37",
+      "target": "dfg_node_39",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_26": {
+      "id": "dfg_edge_26",
+      "source": "dfg_node_37",
+      "target": "dfg_node_41",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_27": {
+      "id": "dfg_edge_27",
+      "source": "dfg_node_13",
+      "target": "dfg_node_37",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_28": {
+      "id": "dfg_edge_28",
+      "source": "dfg_node_42",
+      "target": "dfg_node_44",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_29": {
+      "id": "dfg_edge_29",
+      "source": "dfg_node_13",
+      "target": "dfg_node_42",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_30": {
+      "id": "dfg_edge_30",
+      "source": "dfg_node_13",
+      "target": "dfg_node_45",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_31": {
+      "id": "dfg_edge_31",
+      "source": "dfg_node_13",
+      "target": "dfg_node_46",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_32": {
+      "id": "dfg_edge_32",
+      "source": "dfg_node_13",
+      "target": "dfg_node_47",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_33": {
+      "id": "dfg_edge_33",
+      "source": "dfg_node_13",
+      "target": "dfg_node_48",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_34": {
+      "id": "dfg_edge_34",
+      "source": "dfg_node_13",
+      "target": "dfg_node_49",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_35": {
+      "id": "dfg_edge_35",
+      "source": "dfg_node_13",
+      "target": "dfg_node_50",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 1017,
+    "source_line": 1018,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "Ownable",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

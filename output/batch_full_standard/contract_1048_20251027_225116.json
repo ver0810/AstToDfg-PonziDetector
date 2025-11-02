@@ -1,0 +1,289 @@
+{
+  "contract": "balancesImporter2",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "balancesImporter2",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 3,
+        "column": 1,
+        "end_line": 158,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "addresses2",
+      "data_type": "address[]",
+      "scope": "balancesImporter2",
+      "source_location": {
+        "line": 5,
+        "column": 1,
+        "end_line": 5,
+        "end_column": 29
+      },
+      "properties": {
+        "source_location": {
+          "line": 5,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "state_variable",
+      "name": "balances2",
+      "data_type": "uint256[]",
+      "scope": "balancesImporter2",
+      "source_location": {
+        "line": 6,
+        "column": 1,
+        "end_line": 6,
+        "end_column": 28
+      },
+      "properties": {
+        "source_location": {
+          "line": 6,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "constructor_function",
+      "name": "balancesImporter2",
+      "data_type": null,
+      "scope": "balancesImporter2",
+      "source_location": {
+        "line": 8,
+        "column": 1,
+        "end_line": 157,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 8,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "balancesImporter2_function",
+      "source_location": {
+        "line": 10,
+        "column": 1,
+        "end_line": 80,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 10,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "balancesImporter2_function",
+      "source_location": {
+        "line": 82,
+        "column": 1,
+        "end_line": 152,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 82,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "local_variable",
+      "name": "elixorContract",
+      "data_type": "elixor",
+      "scope": "balancesImporter2_function",
+      "source_location": {
+        "line": 154,
+        "column": 1,
+        "end_line": 154,
+        "end_column": 22
+      },
+      "properties": {
+        "source_location": {
+          "line": 154,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "balancesImporter2_function",
+      "source_location": {
+        "line": 154,
+        "column": 23,
+        "end_line": 154,
+        "end_column": 73
+      },
+      "properties": {
+        "source_location": {
+          "line": 154,
+          "column": 23
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "balancesImporter2_function",
+      "source_location": {
+        "line": 155,
+        "column": 1,
+        "end_line": 155,
+        "end_column": 62
+      },
+      "properties": {
+        "source_location": {
+          "line": 155,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_10": {
+      "id": "dfg_node_10",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "balancesImporter2_function",
+      "source_location": {
+        "line": 155,
+        "column": 1,
+        "end_line": 155,
+        "end_column": 40
+      },
+      "properties": {
+        "source_location": {
+          "line": 155,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_11": {
+      "id": "dfg_node_11",
+      "type": "contract",
+      "name": "elixor",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 160,
+        "column": 1,
+        "end_line": 164,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 160,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_12": {
+      "id": "dfg_node_12",
+      "type": "function",
+      "name": "importAmountForAddresses",
+      "data_type": null,
+      "scope": "elixor",
+      "source_location": {
+        "line": 162,
+        "column": 1,
+        "end_line": 162,
+        "end_column": 81
+      },
+      "properties": {
+        "source_location": {
+          "line": 162,
+          "column": 1
+        }
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_11",
+      "target": "dfg_node_12",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_12",
+      "target": "dfg_node_9",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 1048,
+    "source_line": 1049,
+    "label": 0,
+    "mode": "standard",
+    "contract_name": "balancesImporter2",
+    "timestamp": "20251027_225116"
+  }
+}

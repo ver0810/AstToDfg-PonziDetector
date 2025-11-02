@@ -1,0 +1,281 @@
+{
+  "contract": "Ballot",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "Ballot",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 2,
+        "column": 1,
+        "end_line": 65,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "chairperson",
+      "data_type": "address",
+      "scope": "Ballot",
+      "source_location": {
+        "line": 14,
+        "column": 5,
+        "end_line": 14,
+        "end_column": 25
+      },
+      "properties": {
+        "source_location": {
+          "line": 14,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "state_variable",
+      "name": "voters",
+      "data_type": "mapping(address => Voter)",
+      "scope": "Ballot",
+      "source_location": {
+        "line": 15,
+        "column": 5,
+        "end_line": 15,
+        "end_column": 38
+      },
+      "properties": {
+        "source_location": {
+          "line": 15,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "state_variable",
+      "name": "proposals",
+      "data_type": "Proposal[]",
+      "scope": "Ballot",
+      "source_location": {
+        "line": 16,
+        "column": 5,
+        "end_line": 16,
+        "end_column": 26
+      },
+      "properties": {
+        "source_location": {
+          "line": 16,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "constructor_function",
+      "name": "Ballot",
+      "data_type": null,
+      "scope": "Ballot",
+      "source_location": {
+        "line": 19,
+        "column": 5,
+        "end_line": 23,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 19,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "function",
+      "name": "giveRightToVote",
+      "data_type": null,
+      "scope": "Ballot",
+      "source_location": {
+        "line": 27,
+        "column": 5,
+        "end_line": 30,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 27,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "function",
+      "name": "delegate",
+      "data_type": null,
+      "scope": "Ballot",
+      "source_location": {
+        "line": 33,
+        "column": 5,
+        "end_line": 46,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 33,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "function",
+      "name": "vote",
+      "data_type": null,
+      "scope": "Ballot",
+      "source_location": {
+        "line": 49,
+        "column": 5,
+        "end_line": 55,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 49,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "function",
+      "name": "winningProposal",
+      "data_type": null,
+      "scope": "Ballot",
+      "source_location": {
+        "line": 57,
+        "column": 5,
+        "end_line": 64,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 57,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_11": {
+      "id": "dfg_node_11",
+      "type": "parameter",
+      "name": "winningProposal",
+      "data_type": "uint8",
+      "scope": "winningProposal_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "winningProposal"
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_1",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_1",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_1",
+      "target": "dfg_node_7",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_1",
+      "target": "dfg_node_8",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_9",
+      "target": "dfg_node_11",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_9": {
+      "id": "dfg_edge_9",
+      "source": "dfg_node_1",
+      "target": "dfg_node_9",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 1343,
+    "source_line": 1344,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "Ballot",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

@@ -1,0 +1,64 @@
+{
+  "contract": "storadge",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "storadge",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 1,
+        "column": 1,
+        "end_line": 9,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "function",
+      "name": "save",
+      "data_type": null,
+      "scope": "storadge",
+      "source_location": {
+        "line": 3,
+        "column": 2,
+        "end_line": 8,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 3,
+          "column": 2
+        }
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 1205,
+    "source_line": 1206,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "storadge",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

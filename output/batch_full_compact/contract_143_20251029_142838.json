@@ -1,0 +1,1296 @@
+{
+  "contract": "RDFDM",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "RDFDM",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 76,
+        "column": 1,
+        "end_line": 361,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 76,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "CURRENCY_USD",
+      "data_type": "uint",
+      "scope": "RDFDM",
+      "source_location": {
+        "line": 93,
+        "column": 3,
+        "end_line": 93,
+        "end_column": 39
+      },
+      "properties": {
+        "source_location": {
+          "line": 93,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "state_variable",
+      "name": "CURRENCY_EURO",
+      "data_type": "uint",
+      "scope": "RDFDM",
+      "source_location": {
+        "line": 94,
+        "column": 3,
+        "end_line": 94,
+        "end_column": 39
+      },
+      "properties": {
+        "source_location": {
+          "line": 94,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "state_variable",
+      "name": "CURRENCY_NIS",
+      "data_type": "uint",
+      "scope": "RDFDM",
+      "source_location": {
+        "line": 95,
+        "column": 3,
+        "end_line": 95,
+        "end_column": 39
+      },
+      "properties": {
+        "source_location": {
+          "line": 95,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "state_variable",
+      "name": "CURRENCY_YUAN",
+      "data_type": "uint",
+      "scope": "RDFDM",
+      "source_location": {
+        "line": 96,
+        "column": 3,
+        "end_line": 96,
+        "end_column": 39
+      },
+      "properties": {
+        "source_location": {
+          "line": 96,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "state_variable",
+      "name": "charityCount",
+      "data_type": "uint",
+      "scope": "RDFDM",
+      "source_location": {
+        "line": 115,
+        "column": 3,
+        "end_line": 115,
+        "end_column": 28
+      },
+      "properties": {
+        "source_location": {
+          "line": 115,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "state_variable",
+      "name": "owner",
+      "data_type": "address",
+      "scope": "RDFDM",
+      "source_location": {
+        "line": 116,
+        "column": 3,
+        "end_line": 116,
+        "end_column": 24
+      },
+      "properties": {
+        "source_location": {
+          "line": 116,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "state_variable",
+      "name": "manager",
+      "data_type": "address",
+      "scope": "RDFDM",
+      "source_location": {
+        "line": 117,
+        "column": 3,
+        "end_line": 117,
+        "end_column": 26
+      },
+      "properties": {
+        "source_location": {
+          "line": 117,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "state_variable",
+      "name": "token",
+      "data_type": "address",
+      "scope": "RDFDM",
+      "source_location": {
+        "line": 118,
+        "column": 3,
+        "end_line": 118,
+        "end_column": 24
+      },
+      "properties": {
+        "source_location": {
+          "line": 118,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_10": {
+      "id": "dfg_node_10",
+      "type": "state_variable",
+      "name": "operatorFeeAcct",
+      "data_type": "address",
+      "scope": "RDFDM",
+      "source_location": {
+        "line": 119,
+        "column": 3,
+        "end_line": 119,
+        "end_column": 34
+      },
+      "properties": {
+        "source_location": {
+          "line": 119,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_11": {
+      "id": "dfg_node_11",
+      "type": "state_variable",
+      "name": "charities",
+      "data_type": "mapping (uint => Charity)",
+      "scope": "RDFDM",
+      "source_location": {
+        "line": 120,
+        "column": 3,
+        "end_line": 120,
+        "end_column": 46
+      },
+      "properties": {
+        "source_location": {
+          "line": 120,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_12": {
+      "id": "dfg_node_12",
+      "type": "state_variable",
+      "name": "isLocked",
+      "data_type": "bool",
+      "scope": "RDFDM",
+      "source_location": {
+        "line": 121,
+        "column": 3,
+        "end_line": 121,
+        "end_column": 24
+      },
+      "properties": {
+        "source_location": {
+          "line": 121,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_13": {
+      "id": "dfg_node_13",
+      "type": "constructor_function",
+      "name": "RDFDM",
+      "data_type": null,
+      "scope": "RDFDM",
+      "source_location": {
+        "line": 142,
+        "column": 3,
+        "end_line": 147,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 142,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_14": {
+      "id": "dfg_node_14",
+      "type": "function",
+      "name": "lock",
+      "data_type": null,
+      "scope": "RDFDM",
+      "source_location": {
+        "line": 148,
+        "column": 3,
+        "end_line": 148,
+        "end_column": 56
+      },
+      "properties": {
+        "source_location": {
+          "line": 148,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_15": {
+      "id": "dfg_node_15",
+      "type": "function",
+      "name": "setToken",
+      "data_type": null,
+      "scope": "RDFDM",
+      "source_location": {
+        "line": 149,
+        "column": 3,
+        "end_line": 149,
+        "end_column": 86
+      },
+      "properties": {
+        "source_location": {
+          "line": 149,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_16": {
+      "id": "dfg_node_16",
+      "type": "function",
+      "name": "setOperatorFeeAcct",
+      "data_type": null,
+      "scope": "RDFDM",
+      "source_location": {
+        "line": 150,
+        "column": 3,
+        "end_line": 150,
+        "end_column": 113
+      },
+      "properties": {
+        "source_location": {
+          "line": 150,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_17": {
+      "id": "dfg_node_17",
+      "type": "function",
+      "name": "setManager",
+      "data_type": null,
+      "scope": "RDFDM",
+      "source_location": {
+        "line": 151,
+        "column": 3,
+        "end_line": 151,
+        "end_column": 83
+      },
+      "properties": {
+        "source_location": {
+          "line": 151,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_18": {
+      "id": "dfg_node_18",
+      "type": "function",
+      "name": "deleteManager",
+      "data_type": null,
+      "scope": "RDFDM",
+      "source_location": {
+        "line": 152,
+        "column": 3,
+        "end_line": 152,
+        "end_column": 67
+      },
+      "properties": {
+        "source_location": {
+          "line": 152,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_19": {
+      "id": "dfg_node_19",
+      "type": "function",
+      "name": "addCharity",
+      "data_type": null,
+      "scope": "RDFDM",
+      "source_location": {
+        "line": 155,
+        "column": 3,
+        "end_line": 160,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 155,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_20": {
+      "id": "dfg_node_20",
+      "type": "function",
+      "name": "modifyCharity",
+      "data_type": null,
+      "scope": "RDFDM",
+      "source_location": {
+        "line": 162,
+        "column": 3,
+        "end_line": 167,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 162,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_21": {
+      "id": "dfg_node_21",
+      "type": "function",
+      "name": "fiatCollected",
+      "data_type": null,
+      "scope": "RDFDM",
+      "source_location": {
+        "line": 173,
+        "column": 3,
+        "end_line": 178,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 173,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_22": {
+      "id": "dfg_node_22",
+      "type": "function",
+      "name": "fiatToEth",
+      "data_type": null,
+      "scope": "RDFDM",
+      "source_location": {
+        "line": 180,
+        "column": 3,
+        "end_line": 195,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 180,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_23": {
+      "id": "dfg_node_23",
+      "type": "function",
+      "name": "ethToFiat",
+      "data_type": null,
+      "scope": "RDFDM",
+      "source_location": {
+        "line": 197,
+        "column": 3,
+        "end_line": 208,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 197,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_24": {
+      "id": "dfg_node_24",
+      "type": "function",
+      "name": "fiatDelivered",
+      "data_type": null,
+      "scope": "RDFDM",
+      "source_location": {
+        "line": 210,
+        "column": 3,
+        "end_line": 216,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 210,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_25": {
+      "id": "dfg_node_25",
+      "type": "function",
+      "name": "ethDonation",
+      "data_type": null,
+      "scope": "RDFDM",
+      "source_location": {
+        "line": 219,
+        "column": 3,
+        "end_line": 231,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 219,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_26": {
+      "id": "dfg_node_26",
+      "type": "function",
+      "name": "fiatCollectedToEth",
+      "data_type": null,
+      "scope": "RDFDM",
+      "source_location": {
+        "line": 235,
+        "column": 3,
+        "end_line": 252,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 235,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_27": {
+      "id": "dfg_node_27",
+      "type": "function",
+      "name": "ethToFiatDelivered",
+      "data_type": null,
+      "scope": "RDFDM",
+      "source_location": {
+        "line": 254,
+        "column": 3,
+        "end_line": 267,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 254,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_28": {
+      "id": "dfg_node_28",
+      "type": "function",
+      "name": "divRound",
+      "data_type": null,
+      "scope": "RDFDM",
+      "source_location": {
+        "line": 271,
+        "column": 3,
+        "end_line": 274,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 271,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_30": {
+      "id": "dfg_node_30",
+      "type": "parameter",
+      "name": "param_28",
+      "data_type": "uint256",
+      "scope": "divRound_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "divRound"
+      }
+    },
+    "dfg_node_31": {
+      "id": "dfg_node_31",
+      "type": "function",
+      "name": "quickAuditEthCredited",
+      "data_type": null,
+      "scope": "RDFDM",
+      "source_location": {
+        "line": 276,
+        "column": 3,
+        "end_line": 309,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 276,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_33": {
+      "id": "dfg_node_33",
+      "type": "parameter",
+      "name": "_fiatCollected",
+      "data_type": "uint",
+      "scope": "quickAuditEthCredited_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "quickAuditEthCredited"
+      }
+    },
+    "dfg_node_35": {
+      "id": "dfg_node_35",
+      "type": "parameter",
+      "name": "_fiatToEthNotProcessed",
+      "data_type": "uint",
+      "scope": "quickAuditEthCredited_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "quickAuditEthCredited"
+      }
+    },
+    "dfg_node_37": {
+      "id": "dfg_node_37",
+      "type": "parameter",
+      "name": "_fiatToEthProcessed",
+      "data_type": "uint",
+      "scope": "quickAuditEthCredited_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "quickAuditEthCredited"
+      }
+    },
+    "dfg_node_39": {
+      "id": "dfg_node_39",
+      "type": "parameter",
+      "name": "_fiatToEthPricePerEth",
+      "data_type": "uint",
+      "scope": "quickAuditEthCredited_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "quickAuditEthCredited"
+      }
+    },
+    "dfg_node_41": {
+      "id": "dfg_node_41",
+      "type": "parameter",
+      "name": "_fiatToEthCreditedFinney",
+      "data_type": "uint",
+      "scope": "quickAuditEthCredited_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "quickAuditEthCredited"
+      }
+    },
+    "dfg_node_43": {
+      "id": "dfg_node_43",
+      "type": "parameter",
+      "name": "_fiatToEthAfterFeesFinney",
+      "data_type": "uint",
+      "scope": "quickAuditEthCredited_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "quickAuditEthCredited"
+      }
+    },
+    "dfg_node_45": {
+      "id": "dfg_node_45",
+      "type": "parameter",
+      "name": "_ethDonatedFinney",
+      "data_type": "uint",
+      "scope": "quickAuditEthCredited_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "quickAuditEthCredited"
+      }
+    },
+    "dfg_node_47": {
+      "id": "dfg_node_47",
+      "type": "parameter",
+      "name": "_ethDonatedAfterFeesFinney",
+      "data_type": "uint",
+      "scope": "quickAuditEthCredited_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "quickAuditEthCredited"
+      }
+    },
+    "dfg_node_49": {
+      "id": "dfg_node_49",
+      "type": "parameter",
+      "name": "_totalEthCreditedFinney",
+      "data_type": "uint",
+      "scope": "quickAuditEthCredited_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "quickAuditEthCredited"
+      }
+    },
+    "dfg_node_51": {
+      "id": "dfg_node_51",
+      "type": "parameter",
+      "name": "_quickDiscrepancy",
+      "data_type": "int",
+      "scope": "quickAuditEthCredited_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "quickAuditEthCredited"
+      }
+    },
+    "dfg_node_52": {
+      "id": "dfg_node_52",
+      "type": "function",
+      "name": "quickAuditFiatDelivered",
+      "data_type": null,
+      "scope": "RDFDM",
+      "source_location": {
+        "line": 315,
+        "column": 3,
+        "end_line": 345,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 315,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_54": {
+      "id": "dfg_node_54",
+      "type": "parameter",
+      "name": "_totalEthCreditedFinney",
+      "data_type": "uint",
+      "scope": "quickAuditFiatDelivered_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "quickAuditFiatDelivered"
+      }
+    },
+    "dfg_node_56": {
+      "id": "dfg_node_56",
+      "type": "parameter",
+      "name": "_ethNotProcessedFinney",
+      "data_type": "uint",
+      "scope": "quickAuditFiatDelivered_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "quickAuditFiatDelivered"
+      }
+    },
+    "dfg_node_58": {
+      "id": "dfg_node_58",
+      "type": "parameter",
+      "name": "_processedEthCreditedFinney",
+      "data_type": "uint",
+      "scope": "quickAuditFiatDelivered_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "quickAuditFiatDelivered"
+      }
+    },
+    "dfg_node_60": {
+      "id": "dfg_node_60",
+      "type": "parameter",
+      "name": "_ethToFiatPricePerEth",
+      "data_type": "uint",
+      "scope": "quickAuditFiatDelivered_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "quickAuditFiatDelivered"
+      }
+    },
+    "dfg_node_62": {
+      "id": "dfg_node_62",
+      "type": "parameter",
+      "name": "_ethToFiatCreditedFiat",
+      "data_type": "uint",
+      "scope": "quickAuditFiatDelivered_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "quickAuditFiatDelivered"
+      }
+    },
+    "dfg_node_64": {
+      "id": "dfg_node_64",
+      "type": "parameter",
+      "name": "_ethToFiatNotProcessed",
+      "data_type": "uint",
+      "scope": "quickAuditFiatDelivered_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "quickAuditFiatDelivered"
+      }
+    },
+    "dfg_node_66": {
+      "id": "dfg_node_66",
+      "type": "parameter",
+      "name": "_ethToFiatProcessed",
+      "data_type": "uint",
+      "scope": "quickAuditFiatDelivered_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "quickAuditFiatDelivered"
+      }
+    },
+    "dfg_node_68": {
+      "id": "dfg_node_68",
+      "type": "parameter",
+      "name": "_fiatDelivered",
+      "data_type": "uint",
+      "scope": "quickAuditFiatDelivered_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "quickAuditFiatDelivered"
+      }
+    },
+    "dfg_node_70": {
+      "id": "dfg_node_70",
+      "type": "parameter",
+      "name": "_quickDiscrepancy",
+      "data_type": "int",
+      "scope": "quickAuditFiatDelivered_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "quickAuditFiatDelivered"
+      }
+    },
+    "dfg_node_71": {
+      "id": "dfg_node_71",
+      "type": "function",
+      "name": "haraKiri",
+      "data_type": null,
+      "scope": "RDFDM",
+      "source_location": {
+        "line": 357,
+        "column": 3,
+        "end_line": 359,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 357,
+          "column": 3
+        }
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_1",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_1",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_1",
+      "target": "dfg_node_7",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_1",
+      "target": "dfg_node_8",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_1",
+      "target": "dfg_node_9",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_9": {
+      "id": "dfg_edge_9",
+      "source": "dfg_node_1",
+      "target": "dfg_node_10",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_10": {
+      "id": "dfg_edge_10",
+      "source": "dfg_node_1",
+      "target": "dfg_node_11",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_11": {
+      "id": "dfg_edge_11",
+      "source": "dfg_node_1",
+      "target": "dfg_node_12",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_12": {
+      "id": "dfg_edge_12",
+      "source": "dfg_node_1",
+      "target": "dfg_node_13",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_13": {
+      "id": "dfg_edge_13",
+      "source": "dfg_node_1",
+      "target": "dfg_node_14",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_14": {
+      "id": "dfg_edge_14",
+      "source": "dfg_node_1",
+      "target": "dfg_node_15",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_15": {
+      "id": "dfg_edge_15",
+      "source": "dfg_node_1",
+      "target": "dfg_node_16",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_16": {
+      "id": "dfg_edge_16",
+      "source": "dfg_node_1",
+      "target": "dfg_node_17",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_17": {
+      "id": "dfg_edge_17",
+      "source": "dfg_node_1",
+      "target": "dfg_node_18",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_18": {
+      "id": "dfg_edge_18",
+      "source": "dfg_node_1",
+      "target": "dfg_node_19",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_19": {
+      "id": "dfg_edge_19",
+      "source": "dfg_node_1",
+      "target": "dfg_node_20",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_20": {
+      "id": "dfg_edge_20",
+      "source": "dfg_node_1",
+      "target": "dfg_node_21",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_21": {
+      "id": "dfg_edge_21",
+      "source": "dfg_node_1",
+      "target": "dfg_node_22",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_22": {
+      "id": "dfg_edge_22",
+      "source": "dfg_node_1",
+      "target": "dfg_node_23",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_23": {
+      "id": "dfg_edge_23",
+      "source": "dfg_node_1",
+      "target": "dfg_node_24",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_24": {
+      "id": "dfg_edge_24",
+      "source": "dfg_node_1",
+      "target": "dfg_node_25",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_25": {
+      "id": "dfg_edge_25",
+      "source": "dfg_node_1",
+      "target": "dfg_node_26",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_26": {
+      "id": "dfg_edge_26",
+      "source": "dfg_node_1",
+      "target": "dfg_node_27",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_27": {
+      "id": "dfg_edge_27",
+      "source": "dfg_node_28",
+      "target": "dfg_node_30",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_28": {
+      "id": "dfg_edge_28",
+      "source": "dfg_node_1",
+      "target": "dfg_node_28",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_29": {
+      "id": "dfg_edge_29",
+      "source": "dfg_node_31",
+      "target": "dfg_node_33",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_30": {
+      "id": "dfg_edge_30",
+      "source": "dfg_node_31",
+      "target": "dfg_node_35",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_31": {
+      "id": "dfg_edge_31",
+      "source": "dfg_node_31",
+      "target": "dfg_node_37",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_32": {
+      "id": "dfg_edge_32",
+      "source": "dfg_node_31",
+      "target": "dfg_node_39",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_33": {
+      "id": "dfg_edge_33",
+      "source": "dfg_node_31",
+      "target": "dfg_node_41",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_34": {
+      "id": "dfg_edge_34",
+      "source": "dfg_node_31",
+      "target": "dfg_node_43",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_35": {
+      "id": "dfg_edge_35",
+      "source": "dfg_node_31",
+      "target": "dfg_node_45",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_36": {
+      "id": "dfg_edge_36",
+      "source": "dfg_node_31",
+      "target": "dfg_node_47",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_37": {
+      "id": "dfg_edge_37",
+      "source": "dfg_node_31",
+      "target": "dfg_node_49",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_38": {
+      "id": "dfg_edge_38",
+      "source": "dfg_node_31",
+      "target": "dfg_node_51",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_39": {
+      "id": "dfg_edge_39",
+      "source": "dfg_node_1",
+      "target": "dfg_node_31",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_40": {
+      "id": "dfg_edge_40",
+      "source": "dfg_node_52",
+      "target": "dfg_node_54",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_41": {
+      "id": "dfg_edge_41",
+      "source": "dfg_node_52",
+      "target": "dfg_node_56",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_42": {
+      "id": "dfg_edge_42",
+      "source": "dfg_node_52",
+      "target": "dfg_node_58",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_43": {
+      "id": "dfg_edge_43",
+      "source": "dfg_node_52",
+      "target": "dfg_node_60",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_44": {
+      "id": "dfg_edge_44",
+      "source": "dfg_node_52",
+      "target": "dfg_node_62",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_45": {
+      "id": "dfg_edge_45",
+      "source": "dfg_node_52",
+      "target": "dfg_node_64",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_46": {
+      "id": "dfg_edge_46",
+      "source": "dfg_node_52",
+      "target": "dfg_node_66",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_47": {
+      "id": "dfg_edge_47",
+      "source": "dfg_node_52",
+      "target": "dfg_node_68",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_48": {
+      "id": "dfg_edge_48",
+      "source": "dfg_node_52",
+      "target": "dfg_node_70",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_49": {
+      "id": "dfg_edge_49",
+      "source": "dfg_node_1",
+      "target": "dfg_node_52",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_50": {
+      "id": "dfg_edge_50",
+      "source": "dfg_node_1",
+      "target": "dfg_node_71",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 143,
+    "source_line": 144,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "RDFDM",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

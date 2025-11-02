@@ -1,0 +1,349 @@
+{
+  "contract": "MBInterface",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "MBInterface",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 17,
+        "column": 1,
+        "end_line": 23,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 17,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "function",
+      "name": "balances",
+      "data_type": null,
+      "scope": "MBInterface",
+      "source_location": {
+        "line": 20,
+        "column": 5,
+        "end_line": 20,
+        "end_column": 63
+      },
+      "properties": {
+        "source_location": {
+          "line": 20,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "parameter",
+      "name": "balance",
+      "data_type": "uint256",
+      "scope": "balances_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "balances"
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "function",
+      "name": "withdraw",
+      "data_type": null,
+      "scope": "MBInterface",
+      "source_location": {
+        "line": 22,
+        "column": 5,
+        "end_line": 22,
+        "end_column": 37
+      },
+      "properties": {
+        "source_location": {
+          "line": 22,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "contract",
+      "name": "MonethaBuyerWithdrawHelper",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 26,
+        "column": 1,
+        "end_line": 79,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 26,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "state_variable",
+      "name": "owner",
+      "data_type": "address",
+      "scope": "MonethaBuyerWithdrawHelper",
+      "source_location": {
+        "line": 28,
+        "column": 5,
+        "end_line": 28,
+        "end_column": 71
+      },
+      "properties": {
+        "source_location": {
+          "line": 28,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "state_variable",
+      "name": "MonethaBuyerAddr",
+      "data_type": "address",
+      "scope": "MonethaBuyerWithdrawHelper",
+      "source_location": {
+        "line": 30,
+        "column": 5,
+        "end_line": 30,
+        "end_column": 75
+      },
+      "properties": {
+        "source_location": {
+          "line": 30,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "state_variable",
+      "name": "min_fee",
+      "data_type": "uint256",
+      "scope": "MonethaBuyerWithdrawHelper",
+      "source_location": {
+        "line": 32,
+        "column": 5,
+        "end_line": 32,
+        "end_column": 21
+      },
+      "properties": {
+        "source_location": {
+          "line": 32,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_10": {
+      "id": "dfg_node_10",
+      "type": "state_variable",
+      "name": "supporterBalances",
+      "data_type": "mapping (address => uint256)",
+      "scope": "MonethaBuyerWithdrawHelper",
+      "source_location": {
+        "line": 35,
+        "column": 5,
+        "end_line": 35,
+        "end_column": 59
+      },
+      "properties": {
+        "source_location": {
+          "line": 35,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_11": {
+      "id": "dfg_node_11",
+      "type": "function",
+      "name": "WithdrawMonethaBuyerUtility",
+      "data_type": null,
+      "scope": "MonethaBuyerWithdrawHelper",
+      "source_location": {
+        "line": 38,
+        "column": 5,
+        "end_line": 39,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 38,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_12": {
+      "id": "dfg_node_12",
+      "type": "function",
+      "name": "claim",
+      "data_type": null,
+      "scope": "MonethaBuyerWithdrawHelper",
+      "source_location": {
+        "line": 42,
+        "column": 5,
+        "end_line": 49,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 42,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_14": {
+      "id": "dfg_node_14",
+      "type": "parameter",
+      "name": "success",
+      "data_type": "bool",
+      "scope": "claim_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "claim"
+      }
+    },
+    "dfg_node_15": {
+      "id": "dfg_node_15",
+      "type": "function",
+      "name": "donate",
+      "data_type": null,
+      "scope": "MonethaBuyerWithdrawHelper",
+      "source_location": {
+        "line": 52,
+        "column": 5,
+        "end_line": 55,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 52,
+          "column": 5
+        }
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_2",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_6",
+      "target": "dfg_node_7",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_6",
+      "target": "dfg_node_8",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_6",
+      "target": "dfg_node_9",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_6",
+      "target": "dfg_node_10",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_6",
+      "target": "dfg_node_11",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_9": {
+      "id": "dfg_edge_9",
+      "source": "dfg_node_12",
+      "target": "dfg_node_14",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_10": {
+      "id": "dfg_edge_10",
+      "source": "dfg_node_6",
+      "target": "dfg_node_12",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_11": {
+      "id": "dfg_edge_11",
+      "source": "dfg_node_6",
+      "target": "dfg_node_15",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 338,
+    "source_line": 339,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "MBInterface",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

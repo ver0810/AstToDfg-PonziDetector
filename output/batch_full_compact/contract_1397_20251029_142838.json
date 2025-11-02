@@ -1,0 +1,751 @@
+{
+  "contract": "CardboardUnicorns",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "CardboardUnicorns",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 3,
+        "column": 1,
+        "end_line": 9,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "owner",
+      "data_type": "address",
+      "scope": "CardboardUnicorns",
+      "source_location": {
+        "line": 4,
+        "column": 3,
+        "end_line": 4,
+        "end_column": 24
+      },
+      "properties": {
+        "source_location": {
+          "line": 4,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "function",
+      "name": "mint",
+      "data_type": null,
+      "scope": "CardboardUnicorns",
+      "source_location": {
+        "line": 5,
+        "column": 3,
+        "end_line": 5,
+        "end_column": 42
+      },
+      "properties": {
+        "source_location": {
+          "line": 5,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "function",
+      "name": "changeOwner",
+      "data_type": null,
+      "scope": "CardboardUnicorns",
+      "source_location": {
+        "line": 6,
+        "column": 3,
+        "end_line": 6,
+        "end_column": 43
+      },
+      "properties": {
+        "source_location": {
+          "line": 6,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "function",
+      "name": "withdraw",
+      "data_type": null,
+      "scope": "CardboardUnicorns",
+      "source_location": {
+        "line": 7,
+        "column": 3,
+        "end_line": 7,
+        "end_column": 23
+      },
+      "properties": {
+        "source_location": {
+          "line": 7,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "function",
+      "name": "withdrawForeignTokens",
+      "data_type": null,
+      "scope": "CardboardUnicorns",
+      "source_location": {
+        "line": 8,
+        "column": 3,
+        "end_line": 8,
+        "end_column": 58
+      },
+      "properties": {
+        "source_location": {
+          "line": 8,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "contract",
+      "name": "RealUnicornCongress",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 10,
+        "column": 1,
+        "end_line": 12,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 10,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "state_variable",
+      "name": "priceOfAUnicornInFinney",
+      "data_type": "uint",
+      "scope": "RealUnicornCongress",
+      "source_location": {
+        "line": 11,
+        "column": 3,
+        "end_line": 11,
+        "end_column": 39
+      },
+      "properties": {
+        "source_location": {
+          "line": 11,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "contract",
+      "name": "ForeignToken",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 13,
+        "column": 1,
+        "end_line": 16,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 13,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_10": {
+      "id": "dfg_node_10",
+      "type": "function",
+      "name": "balanceOf",
+      "data_type": null,
+      "scope": "ForeignToken",
+      "source_location": {
+        "line": 14,
+        "column": 3,
+        "end_line": 14,
+        "end_column": 65
+      },
+      "properties": {
+        "source_location": {
+          "line": 14,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_12": {
+      "id": "dfg_node_12",
+      "type": "parameter",
+      "name": "param_10",
+      "data_type": "uint256",
+      "scope": "balanceOf_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "balanceOf"
+      }
+    },
+    "dfg_node_13": {
+      "id": "dfg_node_13",
+      "type": "function",
+      "name": "transfer",
+      "data_type": null,
+      "scope": "ForeignToken",
+      "source_location": {
+        "line": 15,
+        "column": 3,
+        "end_line": 15,
+        "end_column": 65
+      },
+      "properties": {
+        "source_location": {
+          "line": 15,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_15": {
+      "id": "dfg_node_15",
+      "type": "parameter",
+      "name": "param_13",
+      "data_type": "bool",
+      "scope": "transfer_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "transfer"
+      }
+    },
+    "dfg_node_16": {
+      "id": "dfg_node_16",
+      "type": "contract",
+      "name": "CardboardUnicornAssembler",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 18,
+        "column": 1,
+        "end_line": 119,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 18,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_17": {
+      "id": "dfg_node_17",
+      "type": "state_variable",
+      "name": "cardboardUnicornTokenAddress",
+      "data_type": "address",
+      "scope": "CardboardUnicornAssembler",
+      "source_location": {
+        "line": 19,
+        "column": 3,
+        "end_line": 19,
+        "end_column": 47
+      },
+      "properties": {
+        "source_location": {
+          "line": 19,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_18": {
+      "id": "dfg_node_18",
+      "type": "state_variable",
+      "name": "realUnicornAddress",
+      "data_type": "address",
+      "scope": "CardboardUnicornAssembler",
+      "source_location": {
+        "line": 20,
+        "column": 3,
+        "end_line": 20,
+        "end_column": 82
+      },
+      "properties": {
+        "source_location": {
+          "line": 20,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_19": {
+      "id": "dfg_node_19",
+      "type": "state_variable",
+      "name": "owner",
+      "data_type": "address",
+      "scope": "CardboardUnicornAssembler",
+      "source_location": {
+        "line": 21,
+        "column": 3,
+        "end_line": 21,
+        "end_column": 37
+      },
+      "properties": {
+        "source_location": {
+          "line": 21,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_20": {
+      "id": "dfg_node_20",
+      "type": "state_variable",
+      "name": "pricePerUnicorn",
+      "data_type": "uint",
+      "scope": "CardboardUnicornAssembler",
+      "source_location": {
+        "line": 22,
+        "column": 3,
+        "end_line": 22,
+        "end_column": 42
+      },
+      "properties": {
+        "source_location": {
+          "line": 22,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_21": {
+      "id": "dfg_node_21",
+      "type": "state_variable",
+      "name": "lastPriceSetDate",
+      "data_type": "uint",
+      "scope": "CardboardUnicornAssembler",
+      "source_location": {
+        "line": 23,
+        "column": 3,
+        "end_line": 23,
+        "end_column": 36
+      },
+      "properties": {
+        "source_location": {
+          "line": 23,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_22": {
+      "id": "dfg_node_22",
+      "type": "function",
+      "name": "changeOwner",
+      "data_type": null,
+      "scope": "CardboardUnicornAssembler",
+      "source_location": {
+        "line": 35,
+        "column": 3,
+        "end_line": 37,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 35,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_23": {
+      "id": "dfg_node_23",
+      "type": "function",
+      "name": "changeTokenOwner",
+      "data_type": null,
+      "scope": "CardboardUnicornAssembler",
+      "source_location": {
+        "line": 38,
+        "column": 3,
+        "end_line": 41,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 38,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_24": {
+      "id": "dfg_node_24",
+      "type": "function",
+      "name": "changeCardboardUnicornTokenAddress",
+      "data_type": null,
+      "scope": "CardboardUnicornAssembler",
+      "source_location": {
+        "line": 46,
+        "column": 3,
+        "end_line": 50,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 46,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_25": {
+      "id": "dfg_node_25",
+      "type": "function",
+      "name": "changeRealUnicornAddress",
+      "data_type": null,
+      "scope": "CardboardUnicornAssembler",
+      "source_location": {
+        "line": 57,
+        "column": 3,
+        "end_line": 59,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 57,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_26": {
+      "id": "dfg_node_26",
+      "type": "function",
+      "name": "withdraw",
+      "data_type": null,
+      "scope": "CardboardUnicornAssembler",
+      "source_location": {
+        "line": 61,
+        "column": 3,
+        "end_line": 70,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 61,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_27": {
+      "id": "dfg_node_27",
+      "type": "function",
+      "name": "withdrawForeignTokens",
+      "data_type": null,
+      "scope": "CardboardUnicornAssembler",
+      "source_location": {
+        "line": 71,
+        "column": 3,
+        "end_line": 83,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 71,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_28": {
+      "id": "dfg_node_28",
+      "type": "function",
+      "name": "updatePriceFromRealUnicornPrice",
+      "data_type": null,
+      "scope": "CardboardUnicornAssembler",
+      "source_location": {
+        "line": 88,
+        "column": 3,
+        "end_line": 93,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 88,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_29": {
+      "id": "dfg_node_29",
+      "type": "function",
+      "name": "setPrice",
+      "data_type": null,
+      "scope": "CardboardUnicornAssembler",
+      "source_location": {
+        "line": 98,
+        "column": 3,
+        "end_line": 102,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 98,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_30": {
+      "id": "dfg_node_30",
+      "type": "function",
+      "name": "assembleUnicorn",
+      "data_type": null,
+      "scope": "CardboardUnicornAssembler",
+      "source_location": {
+        "line": 107,
+        "column": 3,
+        "end_line": 113,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 107,
+          "column": 3
+        }
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_1",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_1",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_7",
+      "target": "dfg_node_8",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_10",
+      "target": "dfg_node_12",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_9",
+      "target": "dfg_node_10",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_9": {
+      "id": "dfg_edge_9",
+      "source": "dfg_node_13",
+      "target": "dfg_node_15",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_10": {
+      "id": "dfg_edge_10",
+      "source": "dfg_node_9",
+      "target": "dfg_node_13",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_11": {
+      "id": "dfg_edge_11",
+      "source": "dfg_node_16",
+      "target": "dfg_node_17",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_12": {
+      "id": "dfg_edge_12",
+      "source": "dfg_node_16",
+      "target": "dfg_node_18",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_13": {
+      "id": "dfg_edge_13",
+      "source": "dfg_node_16",
+      "target": "dfg_node_19",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_14": {
+      "id": "dfg_edge_14",
+      "source": "dfg_node_16",
+      "target": "dfg_node_20",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_15": {
+      "id": "dfg_edge_15",
+      "source": "dfg_node_16",
+      "target": "dfg_node_21",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_16": {
+      "id": "dfg_edge_16",
+      "source": "dfg_node_16",
+      "target": "dfg_node_22",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_17": {
+      "id": "dfg_edge_17",
+      "source": "dfg_node_16",
+      "target": "dfg_node_23",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_18": {
+      "id": "dfg_edge_18",
+      "source": "dfg_node_16",
+      "target": "dfg_node_24",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_19": {
+      "id": "dfg_edge_19",
+      "source": "dfg_node_16",
+      "target": "dfg_node_25",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_20": {
+      "id": "dfg_edge_20",
+      "source": "dfg_node_16",
+      "target": "dfg_node_26",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_21": {
+      "id": "dfg_edge_21",
+      "source": "dfg_node_16",
+      "target": "dfg_node_27",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_22": {
+      "id": "dfg_edge_22",
+      "source": "dfg_node_16",
+      "target": "dfg_node_28",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_23": {
+      "id": "dfg_edge_23",
+      "source": "dfg_node_16",
+      "target": "dfg_node_29",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_24": {
+      "id": "dfg_edge_24",
+      "source": "dfg_node_16",
+      "target": "dfg_node_30",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 1397,
+    "source_line": 1398,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "CardboardUnicorns",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

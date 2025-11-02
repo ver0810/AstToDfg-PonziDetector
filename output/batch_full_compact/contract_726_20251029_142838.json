@@ -1,0 +1,260 @@
+{
+  "contract": "ResetPonzi",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "ResetPonzi",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 1,
+        "column": 1,
+        "end_line": 67,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "persons",
+      "data_type": "Person[]",
+      "scope": "ResetPonzi",
+      "source_location": {
+        "line": 11,
+        "column": 3,
+        "end_line": 11,
+        "end_column": 27
+      },
+      "properties": {
+        "source_location": {
+          "line": 11,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "state_variable",
+      "name": "niceGuys",
+      "data_type": "NiceGuy[]",
+      "scope": "ResetPonzi",
+      "source_location": {
+        "line": 12,
+        "column": 3,
+        "end_line": 12,
+        "end_column": 29
+      },
+      "properties": {
+        "source_location": {
+          "line": 12,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "state_variable",
+      "name": "payoutIdx",
+      "data_type": "uint",
+      "scope": "ResetPonzi",
+      "source_location": {
+        "line": 14,
+        "column": 3,
+        "end_line": 14,
+        "end_column": 29
+      },
+      "properties": {
+        "source_location": {
+          "line": 14,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "state_variable",
+      "name": "currentNiceGuyIdx",
+      "data_type": "uint",
+      "scope": "ResetPonzi",
+      "source_location": {
+        "line": 15,
+        "column": 3,
+        "end_line": 15,
+        "end_column": 37
+      },
+      "properties": {
+        "source_location": {
+          "line": 15,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "state_variable",
+      "name": "investor",
+      "data_type": "uint",
+      "scope": "ResetPonzi",
+      "source_location": {
+        "line": 16,
+        "column": 3,
+        "end_line": 16,
+        "end_column": 24
+      },
+      "properties": {
+        "source_location": {
+          "line": 16,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "state_variable",
+      "name": "currentNiceGuy",
+      "data_type": "address",
+      "scope": "ResetPonzi",
+      "source_location": {
+        "line": 18,
+        "column": 3,
+        "end_line": 18,
+        "end_column": 33
+      },
+      "properties": {
+        "source_location": {
+          "line": 18,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "constructor_function",
+      "name": "ResetPonzi",
+      "data_type": null,
+      "scope": "ResetPonzi",
+      "source_location": {
+        "line": 21,
+        "column": 3,
+        "end_line": 23,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 21,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "function",
+      "name": "enter",
+      "data_type": null,
+      "scope": "ResetPonzi",
+      "source_location": {
+        "line": 31,
+        "column": 3,
+        "end_line": 66,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 31,
+          "column": 3
+        }
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_1",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_1",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_1",
+      "target": "dfg_node_7",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_1",
+      "target": "dfg_node_8",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_1",
+      "target": "dfg_node_9",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 726,
+    "source_line": 727,
+    "label": 1,
+    "mode": "compact",
+    "contract_name": "ResetPonzi",
+    "timestamp": "20251029_142838"
+  },
+  "label": 1
+}

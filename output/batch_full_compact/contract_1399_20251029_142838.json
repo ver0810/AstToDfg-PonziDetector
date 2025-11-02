@@ -1,0 +1,120 @@
+{
+  "contract": "CrowdsaleMinterDummy",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "CrowdsaleMinterDummy",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 3,
+        "column": 1,
+        "end_line": 22,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "function",
+      "name": "withdrawFundsAndStartToken",
+      "data_type": null,
+      "scope": "CrowdsaleMinterDummy",
+      "source_location": {
+        "line": 5,
+        "column": 5,
+        "end_line": 8,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 5,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "function",
+      "name": "mintAllBonuses",
+      "data_type": null,
+      "scope": "CrowdsaleMinterDummy",
+      "source_location": {
+        "line": 11,
+        "column": 5,
+        "end_line": 14,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 11,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "function",
+      "name": "abort",
+      "data_type": null,
+      "scope": "CrowdsaleMinterDummy",
+      "source_location": {
+        "line": 17,
+        "column": 5,
+        "end_line": 20,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 17,
+          "column": 5
+        }
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 1399,
+    "source_line": 1400,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "CrowdsaleMinterDummy",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

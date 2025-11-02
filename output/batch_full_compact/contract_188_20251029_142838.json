@@ -1,0 +1,657 @@
+{
+  "contract": "Owned",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "Owned",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 29,
+        "column": 1,
+        "end_line": 42,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 29,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "owner",
+      "data_type": "address",
+      "scope": "Owned",
+      "source_location": {
+        "line": 30,
+        "column": 5,
+        "end_line": 30,
+        "end_column": 26
+      },
+      "properties": {
+        "source_location": {
+          "line": 30,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "constructor_function",
+      "name": "Owned",
+      "data_type": null,
+      "scope": "Owned",
+      "source_location": {
+        "line": 32,
+        "column": 5,
+        "end_line": 34,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 32,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "contract",
+      "name": "SikobaPresale",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 68,
+        "column": 1,
+        "end_line": 221,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 68,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "state_variable",
+      "name": "totalFunding",
+      "data_type": "uint256",
+      "scope": "SikobaPresale",
+      "source_location": {
+        "line": 87,
+        "column": 5,
+        "end_line": 87,
+        "end_column": 33
+      },
+      "properties": {
+        "source_location": {
+          "line": 87,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "state_variable",
+      "name": "MINIMUM_PARTICIPATION_AMOUNT",
+      "data_type": "uint256",
+      "scope": "SikobaPresale",
+      "source_location": {
+        "line": 90,
+        "column": 5,
+        "end_line": 90,
+        "end_column": 70
+      },
+      "properties": {
+        "source_location": {
+          "line": 90,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "state_variable",
+      "name": "MAXIMUM_PARTICIPATION_AMOUNT",
+      "data_type": "uint256",
+      "scope": "SikobaPresale",
+      "source_location": {
+        "line": 91,
+        "column": 5,
+        "end_line": 91,
+        "end_column": 70
+      },
+      "properties": {
+        "source_location": {
+          "line": 91,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "state_variable",
+      "name": "PRESALE_MINIMUM_FUNDING",
+      "data_type": "uint256",
+      "scope": "SikobaPresale",
+      "source_location": {
+        "line": 94,
+        "column": 5,
+        "end_line": 94,
+        "end_column": 64
+      },
+      "properties": {
+        "source_location": {
+          "line": 94,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "state_variable",
+      "name": "PRESALE_MAXIMUM_FUNDING",
+      "data_type": "uint256",
+      "scope": "SikobaPresale",
+      "source_location": {
+        "line": 95,
+        "column": 5,
+        "end_line": 95,
+        "end_column": 63
+      },
+      "properties": {
+        "source_location": {
+          "line": 95,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_10": {
+      "id": "dfg_node_10",
+      "type": "state_variable",
+      "name": "TOTAL_PREALLOCATION",
+      "data_type": "uint256",
+      "scope": "SikobaPresale",
+      "source_location": {
+        "line": 98,
+        "column": 5,
+        "end_line": 98,
+        "end_column": 59
+      },
+      "properties": {
+        "source_location": {
+          "line": 98,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_11": {
+      "id": "dfg_node_11",
+      "type": "state_variable",
+      "name": "PRESALE_START_DATE",
+      "data_type": "uint256",
+      "scope": "SikobaPresale",
+      "source_location": {
+        "line": 103,
+        "column": 5,
+        "end_line": 103,
+        "end_column": 54
+      },
+      "properties": {
+        "source_location": {
+          "line": 103,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_12": {
+      "id": "dfg_node_12",
+      "type": "state_variable",
+      "name": "PRESALE_END_DATE",
+      "data_type": "uint256",
+      "scope": "SikobaPresale",
+      "source_location": {
+        "line": 104,
+        "column": 5,
+        "end_line": 104,
+        "end_column": 80
+      },
+      "properties": {
+        "source_location": {
+          "line": 104,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_13": {
+      "id": "dfg_node_13",
+      "type": "state_variable",
+      "name": "OWNER_CLAWBACK_DATE",
+      "data_type": "uint256",
+      "scope": "SikobaPresale",
+      "source_location": {
+        "line": 110,
+        "column": 5,
+        "end_line": 110,
+        "end_column": 83
+      },
+      "properties": {
+        "source_location": {
+          "line": 110,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_14": {
+      "id": "dfg_node_14",
+      "type": "state_variable",
+      "name": "balanceOf",
+      "data_type": "mapping (address => uint256)",
+      "scope": "SikobaPresale",
+      "source_location": {
+        "line": 116,
+        "column": 5,
+        "end_line": 116,
+        "end_column": 51
+      },
+      "properties": {
+        "source_location": {
+          "line": 116,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_15": {
+      "id": "dfg_node_15",
+      "type": "constructor_function",
+      "name": "SikobaPresale",
+      "data_type": null,
+      "scope": "SikobaPresale",
+      "source_location": {
+        "line": 123,
+        "column": 5,
+        "end_line": 129,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 123,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_16": {
+      "id": "dfg_node_16",
+      "type": "function",
+      "name": "ownerWithdraw",
+      "data_type": null,
+      "scope": "SikobaPresale",
+      "source_location": {
+        "line": 157,
+        "column": 5,
+        "end_line": 164,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 157,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_17": {
+      "id": "dfg_node_17",
+      "type": "function",
+      "name": "participantWithdrawIfMinimumFundingNotReached",
+      "data_type": null,
+      "scope": "SikobaPresale",
+      "source_location": {
+        "line": 168,
+        "column": 5,
+        "end_line": 179,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 168,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_18": {
+      "id": "dfg_node_18",
+      "type": "function",
+      "name": "ownerClawback",
+      "data_type": null,
+      "scope": "SikobaPresale",
+      "source_location": {
+        "line": 184,
+        "column": 5,
+        "end_line": 189,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 184,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_19": {
+      "id": "dfg_node_19",
+      "type": "function",
+      "name": "addBalance",
+      "data_type": null,
+      "scope": "SikobaPresale",
+      "source_location": {
+        "line": 192,
+        "column": 5,
+        "end_line": 199,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 192,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_20": {
+      "id": "dfg_node_20",
+      "type": "function",
+      "name": "assertEquals",
+      "data_type": null,
+      "scope": "SikobaPresale",
+      "source_location": {
+        "line": 202,
+        "column": 5,
+        "end_line": 204,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 202,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_21": {
+      "id": "dfg_node_21",
+      "type": "function",
+      "name": "safeIncrement",
+      "data_type": null,
+      "scope": "SikobaPresale",
+      "source_location": {
+        "line": 208,
+        "column": 5,
+        "end_line": 212,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 208,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_23": {
+      "id": "dfg_node_23",
+      "type": "parameter",
+      "name": "param_21",
+      "data_type": "uint256",
+      "scope": "safeIncrement_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "safeIncrement"
+      }
+    },
+    "dfg_node_24": {
+      "id": "dfg_node_24",
+      "type": "function",
+      "name": "safeDecrement",
+      "data_type": null,
+      "scope": "SikobaPresale",
+      "source_location": {
+        "line": 216,
+        "column": 5,
+        "end_line": 220,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 216,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_26": {
+      "id": "dfg_node_26",
+      "type": "parameter",
+      "name": "param_24",
+      "data_type": "uint256",
+      "scope": "safeDecrement_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "safeDecrement"
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_4",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_4",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_4",
+      "target": "dfg_node_7",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_4",
+      "target": "dfg_node_8",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_4",
+      "target": "dfg_node_9",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_4",
+      "target": "dfg_node_10",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_9": {
+      "id": "dfg_edge_9",
+      "source": "dfg_node_4",
+      "target": "dfg_node_11",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_10": {
+      "id": "dfg_edge_10",
+      "source": "dfg_node_4",
+      "target": "dfg_node_12",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_11": {
+      "id": "dfg_edge_11",
+      "source": "dfg_node_4",
+      "target": "dfg_node_13",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_12": {
+      "id": "dfg_edge_12",
+      "source": "dfg_node_4",
+      "target": "dfg_node_14",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_13": {
+      "id": "dfg_edge_13",
+      "source": "dfg_node_4",
+      "target": "dfg_node_15",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_14": {
+      "id": "dfg_edge_14",
+      "source": "dfg_node_4",
+      "target": "dfg_node_16",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_15": {
+      "id": "dfg_edge_15",
+      "source": "dfg_node_4",
+      "target": "dfg_node_17",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_16": {
+      "id": "dfg_edge_16",
+      "source": "dfg_node_4",
+      "target": "dfg_node_18",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_17": {
+      "id": "dfg_edge_17",
+      "source": "dfg_node_4",
+      "target": "dfg_node_19",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_18": {
+      "id": "dfg_edge_18",
+      "source": "dfg_node_4",
+      "target": "dfg_node_20",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_19": {
+      "id": "dfg_edge_19",
+      "source": "dfg_node_21",
+      "target": "dfg_node_23",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_20": {
+      "id": "dfg_edge_20",
+      "source": "dfg_node_4",
+      "target": "dfg_node_21",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_21": {
+      "id": "dfg_edge_21",
+      "source": "dfg_node_24",
+      "target": "dfg_node_26",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_22": {
+      "id": "dfg_edge_22",
+      "source": "dfg_node_4",
+      "target": "dfg_node_24",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 188,
+    "source_line": 189,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "Owned",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

@@ -1,0 +1,1779 @@
+{
+  "contract": "FairPonzi",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "FairPonzi",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 26,
+        "column": 1,
+        "end_line": 478,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 26,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "scaleFactor",
+      "data_type": "uint256",
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 30,
+        "column": 2,
+        "end_line": 30,
+        "end_column": 53
+      },
+      "properties": {
+        "source_location": {
+          "line": 30,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "state_variable",
+      "name": "crr_n",
+      "data_type": "int",
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 35,
+        "column": 2,
+        "end_line": 35,
+        "end_column": 25
+      },
+      "properties": {
+        "source_location": {
+          "line": 35,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "state_variable",
+      "name": "crr_d",
+      "data_type": "int",
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 36,
+        "column": 2,
+        "end_line": 36,
+        "end_column": 25
+      },
+      "properties": {
+        "source_location": {
+          "line": 36,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "state_variable",
+      "name": "price_coeff",
+      "data_type": "int",
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 40,
+        "column": 2,
+        "end_line": 40,
+        "end_column": 50
+      },
+      "properties": {
+        "source_location": {
+          "line": 40,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "state_variable",
+      "name": "name",
+      "data_type": "string",
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 43,
+        "column": 2,
+        "end_line": 43,
+        "end_column": 44
+      },
+      "properties": {
+        "source_location": {
+          "line": 43,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "state_variable",
+      "name": "symbol",
+      "data_type": "string",
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 44,
+        "column": 2,
+        "end_line": 44,
+        "end_column": 41
+      },
+      "properties": {
+        "source_location": {
+          "line": 44,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "state_variable",
+      "name": "decimals",
+      "data_type": "uint8",
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 45,
+        "column": 2,
+        "end_line": 45,
+        "end_column": 38
+      },
+      "properties": {
+        "source_location": {
+          "line": 45,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "state_variable",
+      "name": "tokenBalance",
+      "data_type": "mapping(address => uint256)",
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 48,
+        "column": 2,
+        "end_line": 48,
+        "end_column": 50
+      },
+      "properties": {
+        "source_location": {
+          "line": 48,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_10": {
+      "id": "dfg_node_10",
+      "type": "state_variable",
+      "name": "payouts",
+      "data_type": "mapping(address => int256)",
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 52,
+        "column": 2,
+        "end_line": 52,
+        "end_column": 44
+      },
+      "properties": {
+        "source_location": {
+          "line": 52,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_11": {
+      "id": "dfg_node_11",
+      "type": "state_variable",
+      "name": "totalSupply",
+      "data_type": "uint256",
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 55,
+        "column": 2,
+        "end_line": 55,
+        "end_column": 29
+      },
+      "properties": {
+        "source_location": {
+          "line": 55,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_12": {
+      "id": "dfg_node_12",
+      "type": "state_variable",
+      "name": "totalPayouts",
+      "data_type": "int256",
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 59,
+        "column": 2,
+        "end_line": 59,
+        "end_column": 22
+      },
+      "properties": {
+        "source_location": {
+          "line": 59,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_13": {
+      "id": "dfg_node_13",
+      "type": "state_variable",
+      "name": "earningsPerToken",
+      "data_type": "uint256",
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 63,
+        "column": 2,
+        "end_line": 63,
+        "end_column": 27
+      },
+      "properties": {
+        "source_location": {
+          "line": 63,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_14": {
+      "id": "dfg_node_14",
+      "type": "constructor_function",
+      "name": "FairPonzi",
+      "data_type": null,
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 65,
+        "column": 2,
+        "end_line": 65,
+        "end_column": 32
+      },
+      "properties": {
+        "source_location": {
+          "line": 65,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_15": {
+      "id": "dfg_node_15",
+      "type": "function",
+      "name": "balanceOf",
+      "data_type": null,
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 70,
+        "column": 2,
+        "end_line": 72,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 70,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_17": {
+      "id": "dfg_node_17",
+      "type": "parameter",
+      "name": "balance",
+      "data_type": "uint256",
+      "scope": "balanceOf_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "balanceOf"
+      }
+    },
+    "dfg_node_18": {
+      "id": "dfg_node_18",
+      "type": "function",
+      "name": "withdraw",
+      "data_type": null,
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 76,
+        "column": 2,
+        "end_line": 88,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 76,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_19": {
+      "id": "dfg_node_19",
+      "type": "function",
+      "name": "reinvestDividends",
+      "data_type": null,
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 92,
+        "column": 2,
+        "end_line": 171,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 92,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_20": {
+      "id": "dfg_node_20",
+      "type": "function",
+      "name": "sellMyTokens",
+      "data_type": null,
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 176,
+        "column": 2,
+        "end_line": 179,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 176,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_21": {
+      "id": "dfg_node_21",
+      "type": "function",
+      "name": "getMeOutOfHere",
+      "data_type": null,
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 183,
+        "column": 5,
+        "end_line": 186,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 183,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_22": {
+      "id": "dfg_node_22",
+      "type": "function",
+      "name": "fund",
+      "data_type": null,
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 190,
+        "column": 2,
+        "end_line": 195,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 190,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_23": {
+      "id": "dfg_node_23",
+      "type": "function",
+      "name": "buyPrice",
+      "data_type": null,
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 198,
+        "column": 2,
+        "end_line": 200,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 198,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_25": {
+      "id": "dfg_node_25",
+      "type": "parameter",
+      "name": "param_23",
+      "data_type": "uint",
+      "scope": "buyPrice_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "buyPrice"
+      }
+    },
+    "dfg_node_26": {
+      "id": "dfg_node_26",
+      "type": "function",
+      "name": "sellPrice",
+      "data_type": null,
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 203,
+        "column": 2,
+        "end_line": 207,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 203,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_28": {
+      "id": "dfg_node_28",
+      "type": "parameter",
+      "name": "param_26",
+      "data_type": "uint",
+      "scope": "sellPrice_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "sellPrice"
+      }
+    },
+    "dfg_node_29": {
+      "id": "dfg_node_29",
+      "type": "function",
+      "name": "dividends",
+      "data_type": null,
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 212,
+        "column": 2,
+        "end_line": 214,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 212,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_31": {
+      "id": "dfg_node_31",
+      "type": "parameter",
+      "name": "amount",
+      "data_type": "uint256",
+      "scope": "dividends_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "dividends"
+      }
+    },
+    "dfg_node_32": {
+      "id": "dfg_node_32",
+      "type": "function",
+      "name": "withdrawOld",
+      "data_type": null,
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 219,
+        "column": 2,
+        "end_line": 231,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 219,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_33": {
+      "id": "dfg_node_33",
+      "type": "function",
+      "name": "balance",
+      "data_type": null,
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 234,
+        "column": 2,
+        "end_line": 237,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 234,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_35": {
+      "id": "dfg_node_35",
+      "type": "parameter",
+      "name": "amount",
+      "data_type": "uint256",
+      "scope": "balance_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "balance"
+      }
+    },
+    "dfg_node_36": {
+      "id": "dfg_node_36",
+      "type": "function",
+      "name": "buy",
+      "data_type": null,
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 239,
+        "column": 2,
+        "end_line": 301,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 239,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_37": {
+      "id": "dfg_node_37",
+      "type": "function",
+      "name": "sell",
+      "data_type": null,
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 306,
+        "column": 2,
+        "end_line": 347,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 306,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_38": {
+      "id": "dfg_node_38",
+      "type": "function",
+      "name": "reserve",
+      "data_type": null,
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 350,
+        "column": 2,
+        "end_line": 353,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 350,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_40": {
+      "id": "dfg_node_40",
+      "type": "parameter",
+      "name": "amount",
+      "data_type": "uint256",
+      "scope": "reserve_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "reserve"
+      }
+    },
+    "dfg_node_41": {
+      "id": "dfg_node_41",
+      "type": "function",
+      "name": "getTokensForEther",
+      "data_type": null,
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 357,
+        "column": 2,
+        "end_line": 359,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 357,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_43": {
+      "id": "dfg_node_43",
+      "type": "parameter",
+      "name": "tokens",
+      "data_type": "uint256",
+      "scope": "getTokensForEther_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getTokensForEther"
+      }
+    },
+    "dfg_node_44": {
+      "id": "dfg_node_44",
+      "type": "function",
+      "name": "calculateDividendTokens",
+      "data_type": null,
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 362,
+        "column": 2,
+        "end_line": 364,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 362,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_46": {
+      "id": "dfg_node_46",
+      "type": "parameter",
+      "name": "tokens",
+      "data_type": "uint256",
+      "scope": "calculateDividendTokens_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "calculateDividendTokens"
+      }
+    },
+    "dfg_node_47": {
+      "id": "dfg_node_47",
+      "type": "function",
+      "name": "getEtherForTokens",
+      "data_type": null,
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 367,
+        "column": 2,
+        "end_line": 380,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 367,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_49": {
+      "id": "dfg_node_49",
+      "type": "parameter",
+      "name": "ethervalue",
+      "data_type": "uint256",
+      "scope": "getEtherForTokens_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getEtherForTokens"
+      }
+    },
+    "dfg_node_50": {
+      "id": "dfg_node_50",
+      "type": "state_variable",
+      "name": "one",
+      "data_type": "int256",
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 384,
+        "column": 2,
+        "end_line": 384,
+        "end_column": 52
+      },
+      "properties": {
+        "source_location": {
+          "line": 384,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_51": {
+      "id": "dfg_node_51",
+      "type": "state_variable",
+      "name": "sqrt2",
+      "data_type": "uint256",
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 385,
+        "column": 2,
+        "end_line": 385,
+        "end_column": 52
+      },
+      "properties": {
+        "source_location": {
+          "line": 385,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_52": {
+      "id": "dfg_node_52",
+      "type": "state_variable",
+      "name": "sqrtdot5",
+      "data_type": "uint256",
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 386,
+        "column": 2,
+        "end_line": 386,
+        "end_column": 52
+      },
+      "properties": {
+        "source_location": {
+          "line": 386,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_53": {
+      "id": "dfg_node_53",
+      "type": "state_variable",
+      "name": "ln2",
+      "data_type": "int256",
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 387,
+        "column": 2,
+        "end_line": 387,
+        "end_column": 52
+      },
+      "properties": {
+        "source_location": {
+          "line": 387,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_54": {
+      "id": "dfg_node_54",
+      "type": "state_variable",
+      "name": "ln2_64dot5",
+      "data_type": "int256",
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 388,
+        "column": 2,
+        "end_line": 388,
+        "end_column": 53
+      },
+      "properties": {
+        "source_location": {
+          "line": 388,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_55": {
+      "id": "dfg_node_55",
+      "type": "state_variable",
+      "name": "c1",
+      "data_type": "int256",
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 389,
+        "column": 2,
+        "end_line": 389,
+        "end_column": 52
+      },
+      "properties": {
+        "source_location": {
+          "line": 389,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_56": {
+      "id": "dfg_node_56",
+      "type": "state_variable",
+      "name": "c3",
+      "data_type": "int256",
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 390,
+        "column": 2,
+        "end_line": 390,
+        "end_column": 52
+      },
+      "properties": {
+        "source_location": {
+          "line": 390,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_57": {
+      "id": "dfg_node_57",
+      "type": "state_variable",
+      "name": "c5",
+      "data_type": "int256",
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 391,
+        "column": 2,
+        "end_line": 391,
+        "end_column": 52
+      },
+      "properties": {
+        "source_location": {
+          "line": 391,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_58": {
+      "id": "dfg_node_58",
+      "type": "state_variable",
+      "name": "c7",
+      "data_type": "int256",
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 392,
+        "column": 2,
+        "end_line": 392,
+        "end_column": 52
+      },
+      "properties": {
+        "source_location": {
+          "line": 392,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_59": {
+      "id": "dfg_node_59",
+      "type": "state_variable",
+      "name": "c9",
+      "data_type": "int256",
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 393,
+        "column": 2,
+        "end_line": 393,
+        "end_column": 52
+      },
+      "properties": {
+        "source_location": {
+          "line": 393,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_60": {
+      "id": "dfg_node_60",
+      "type": "state_variable",
+      "name": "c11",
+      "data_type": "int256",
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 394,
+        "column": 2,
+        "end_line": 394,
+        "end_column": 52
+      },
+      "properties": {
+        "source_location": {
+          "line": 394,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_61": {
+      "id": "dfg_node_61",
+      "type": "function",
+      "name": "fixedLog",
+      "data_type": null,
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 399,
+        "column": 2,
+        "end_line": 414,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 399,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_63": {
+      "id": "dfg_node_63",
+      "type": "parameter",
+      "name": "log",
+      "data_type": "int256",
+      "scope": "fixedLog_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "fixedLog"
+      }
+    },
+    "dfg_node_64": {
+      "id": "dfg_node_64",
+      "type": "state_variable",
+      "name": "c2",
+      "data_type": "int256",
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 416,
+        "column": 2,
+        "end_line": 416,
+        "end_column": 44
+      },
+      "properties": {
+        "source_location": {
+          "line": 416,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_65": {
+      "id": "dfg_node_65",
+      "type": "state_variable",
+      "name": "c4",
+      "data_type": "int256",
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 417,
+        "column": 2,
+        "end_line": 417,
+        "end_column": 44
+      },
+      "properties": {
+        "source_location": {
+          "line": 417,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_66": {
+      "id": "dfg_node_66",
+      "type": "state_variable",
+      "name": "c6",
+      "data_type": "int256",
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 418,
+        "column": 2,
+        "end_line": 418,
+        "end_column": 44
+      },
+      "properties": {
+        "source_location": {
+          "line": 418,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_67": {
+      "id": "dfg_node_67",
+      "type": "state_variable",
+      "name": "c8",
+      "data_type": "int256",
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 419,
+        "column": 2,
+        "end_line": 419,
+        "end_column": 44
+      },
+      "properties": {
+        "source_location": {
+          "line": 419,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_68": {
+      "id": "dfg_node_68",
+      "type": "function",
+      "name": "fixedExp",
+      "data_type": null,
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 424,
+        "column": 2,
+        "end_line": 436,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 424,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_70": {
+      "id": "dfg_node_70",
+      "type": "parameter",
+      "name": "exp",
+      "data_type": "uint256",
+      "scope": "fixedExp_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "fixedExp"
+      }
+    },
+    "dfg_node_71": {
+      "id": "dfg_node_71",
+      "type": "function",
+      "name": "mul",
+      "data_type": null,
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 441,
+        "column": 2,
+        "end_line": 448,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 441,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_73": {
+      "id": "dfg_node_73",
+      "type": "parameter",
+      "name": "param_71",
+      "data_type": "uint256",
+      "scope": "mul_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "mul"
+      }
+    },
+    "dfg_node_74": {
+      "id": "dfg_node_74",
+      "type": "function",
+      "name": "div",
+      "data_type": null,
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 450,
+        "column": 2,
+        "end_line": 455,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 450,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_76": {
+      "id": "dfg_node_76",
+      "type": "parameter",
+      "name": "param_74",
+      "data_type": "uint256",
+      "scope": "div_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "div"
+      }
+    },
+    "dfg_node_77": {
+      "id": "dfg_node_77",
+      "type": "function",
+      "name": "sub",
+      "data_type": null,
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 457,
+        "column": 2,
+        "end_line": 460,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 457,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_79": {
+      "id": "dfg_node_79",
+      "type": "parameter",
+      "name": "param_77",
+      "data_type": "uint256",
+      "scope": "sub_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "sub"
+      }
+    },
+    "dfg_node_80": {
+      "id": "dfg_node_80",
+      "type": "function",
+      "name": "add",
+      "data_type": null,
+      "scope": "FairPonzi",
+      "source_location": {
+        "line": 462,
+        "column": 2,
+        "end_line": 466,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 462,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_82": {
+      "id": "dfg_node_82",
+      "type": "parameter",
+      "name": "param_80",
+      "data_type": "uint256",
+      "scope": "add_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "add"
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_1",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_1",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_1",
+      "target": "dfg_node_7",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_1",
+      "target": "dfg_node_8",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_1",
+      "target": "dfg_node_9",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_9": {
+      "id": "dfg_edge_9",
+      "source": "dfg_node_1",
+      "target": "dfg_node_10",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_10": {
+      "id": "dfg_edge_10",
+      "source": "dfg_node_1",
+      "target": "dfg_node_11",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_11": {
+      "id": "dfg_edge_11",
+      "source": "dfg_node_1",
+      "target": "dfg_node_12",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_12": {
+      "id": "dfg_edge_12",
+      "source": "dfg_node_1",
+      "target": "dfg_node_13",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_13": {
+      "id": "dfg_edge_13",
+      "source": "dfg_node_1",
+      "target": "dfg_node_14",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_14": {
+      "id": "dfg_edge_14",
+      "source": "dfg_node_15",
+      "target": "dfg_node_17",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_15": {
+      "id": "dfg_edge_15",
+      "source": "dfg_node_1",
+      "target": "dfg_node_15",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_16": {
+      "id": "dfg_edge_16",
+      "source": "dfg_node_1",
+      "target": "dfg_node_18",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_17": {
+      "id": "dfg_edge_17",
+      "source": "dfg_node_1",
+      "target": "dfg_node_19",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_18": {
+      "id": "dfg_edge_18",
+      "source": "dfg_node_1",
+      "target": "dfg_node_20",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_19": {
+      "id": "dfg_edge_19",
+      "source": "dfg_node_1",
+      "target": "dfg_node_21",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_20": {
+      "id": "dfg_edge_20",
+      "source": "dfg_node_1",
+      "target": "dfg_node_22",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_21": {
+      "id": "dfg_edge_21",
+      "source": "dfg_node_23",
+      "target": "dfg_node_25",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_22": {
+      "id": "dfg_edge_22",
+      "source": "dfg_node_1",
+      "target": "dfg_node_23",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_23": {
+      "id": "dfg_edge_23",
+      "source": "dfg_node_26",
+      "target": "dfg_node_28",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_24": {
+      "id": "dfg_edge_24",
+      "source": "dfg_node_1",
+      "target": "dfg_node_26",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_25": {
+      "id": "dfg_edge_25",
+      "source": "dfg_node_29",
+      "target": "dfg_node_31",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_26": {
+      "id": "dfg_edge_26",
+      "source": "dfg_node_1",
+      "target": "dfg_node_29",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_27": {
+      "id": "dfg_edge_27",
+      "source": "dfg_node_1",
+      "target": "dfg_node_32",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_28": {
+      "id": "dfg_edge_28",
+      "source": "dfg_node_33",
+      "target": "dfg_node_35",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_29": {
+      "id": "dfg_edge_29",
+      "source": "dfg_node_1",
+      "target": "dfg_node_33",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_30": {
+      "id": "dfg_edge_30",
+      "source": "dfg_node_1",
+      "target": "dfg_node_36",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_31": {
+      "id": "dfg_edge_31",
+      "source": "dfg_node_1",
+      "target": "dfg_node_37",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_32": {
+      "id": "dfg_edge_32",
+      "source": "dfg_node_38",
+      "target": "dfg_node_40",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_33": {
+      "id": "dfg_edge_33",
+      "source": "dfg_node_1",
+      "target": "dfg_node_38",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_34": {
+      "id": "dfg_edge_34",
+      "source": "dfg_node_41",
+      "target": "dfg_node_43",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_35": {
+      "id": "dfg_edge_35",
+      "source": "dfg_node_1",
+      "target": "dfg_node_41",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_36": {
+      "id": "dfg_edge_36",
+      "source": "dfg_node_44",
+      "target": "dfg_node_46",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_37": {
+      "id": "dfg_edge_37",
+      "source": "dfg_node_1",
+      "target": "dfg_node_44",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_38": {
+      "id": "dfg_edge_38",
+      "source": "dfg_node_47",
+      "target": "dfg_node_49",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_39": {
+      "id": "dfg_edge_39",
+      "source": "dfg_node_1",
+      "target": "dfg_node_47",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_40": {
+      "id": "dfg_edge_40",
+      "source": "dfg_node_1",
+      "target": "dfg_node_50",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_41": {
+      "id": "dfg_edge_41",
+      "source": "dfg_node_1",
+      "target": "dfg_node_51",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_42": {
+      "id": "dfg_edge_42",
+      "source": "dfg_node_1",
+      "target": "dfg_node_52",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_43": {
+      "id": "dfg_edge_43",
+      "source": "dfg_node_1",
+      "target": "dfg_node_53",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_44": {
+      "id": "dfg_edge_44",
+      "source": "dfg_node_1",
+      "target": "dfg_node_54",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_45": {
+      "id": "dfg_edge_45",
+      "source": "dfg_node_1",
+      "target": "dfg_node_55",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_46": {
+      "id": "dfg_edge_46",
+      "source": "dfg_node_1",
+      "target": "dfg_node_56",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_47": {
+      "id": "dfg_edge_47",
+      "source": "dfg_node_1",
+      "target": "dfg_node_57",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_48": {
+      "id": "dfg_edge_48",
+      "source": "dfg_node_1",
+      "target": "dfg_node_58",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_49": {
+      "id": "dfg_edge_49",
+      "source": "dfg_node_1",
+      "target": "dfg_node_59",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_50": {
+      "id": "dfg_edge_50",
+      "source": "dfg_node_1",
+      "target": "dfg_node_60",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_51": {
+      "id": "dfg_edge_51",
+      "source": "dfg_node_61",
+      "target": "dfg_node_63",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_52": {
+      "id": "dfg_edge_52",
+      "source": "dfg_node_1",
+      "target": "dfg_node_61",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_53": {
+      "id": "dfg_edge_53",
+      "source": "dfg_node_1",
+      "target": "dfg_node_64",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_54": {
+      "id": "dfg_edge_54",
+      "source": "dfg_node_1",
+      "target": "dfg_node_65",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_55": {
+      "id": "dfg_edge_55",
+      "source": "dfg_node_1",
+      "target": "dfg_node_66",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_56": {
+      "id": "dfg_edge_56",
+      "source": "dfg_node_1",
+      "target": "dfg_node_67",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_57": {
+      "id": "dfg_edge_57",
+      "source": "dfg_node_68",
+      "target": "dfg_node_70",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_58": {
+      "id": "dfg_edge_58",
+      "source": "dfg_node_1",
+      "target": "dfg_node_68",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_59": {
+      "id": "dfg_edge_59",
+      "source": "dfg_node_71",
+      "target": "dfg_node_73",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_60": {
+      "id": "dfg_edge_60",
+      "source": "dfg_node_1",
+      "target": "dfg_node_71",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_61": {
+      "id": "dfg_edge_61",
+      "source": "dfg_node_74",
+      "target": "dfg_node_76",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_62": {
+      "id": "dfg_edge_62",
+      "source": "dfg_node_1",
+      "target": "dfg_node_74",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_63": {
+      "id": "dfg_edge_63",
+      "source": "dfg_node_77",
+      "target": "dfg_node_79",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_64": {
+      "id": "dfg_edge_64",
+      "source": "dfg_node_1",
+      "target": "dfg_node_77",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_65": {
+      "id": "dfg_edge_65",
+      "source": "dfg_node_80",
+      "target": "dfg_node_82",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_66": {
+      "id": "dfg_edge_66",
+      "source": "dfg_node_1",
+      "target": "dfg_node_80",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 293,
+    "source_line": 294,
+    "label": 1,
+    "mode": "compact",
+    "contract_name": "FairPonzi",
+    "timestamp": "20251029_142838"
+  },
+  "label": 1
+}

@@ -1,0 +1,848 @@
+{
+  "contract": "MultiSigWallet",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "MultiSigWallet",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 5,
+        "column": 1,
+        "end_line": 379,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 5,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "MAX_OWNER_COUNT",
+      "data_type": "uint",
+      "scope": "MultiSigWallet",
+      "source_location": {
+        "line": 23,
+        "column": 5,
+        "end_line": 23,
+        "end_column": 47
+      },
+      "properties": {
+        "source_location": {
+          "line": 23,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "state_variable",
+      "name": "transactions",
+      "data_type": "mapping (uint => Transaction)",
+      "scope": "MultiSigWallet",
+      "source_location": {
+        "line": 28,
+        "column": 5,
+        "end_line": 28,
+        "end_column": 55
+      },
+      "properties": {
+        "source_location": {
+          "line": 28,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "state_variable",
+      "name": "confirmations",
+      "data_type": "mapping (uint => mapping (address => bool))",
+      "scope": "MultiSigWallet",
+      "source_location": {
+        "line": 29,
+        "column": 5,
+        "end_line": 29,
+        "end_column": 70
+      },
+      "properties": {
+        "source_location": {
+          "line": 29,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "state_variable",
+      "name": "isOwner",
+      "data_type": "mapping (address => bool)",
+      "scope": "MultiSigWallet",
+      "source_location": {
+        "line": 30,
+        "column": 5,
+        "end_line": 30,
+        "end_column": 46
+      },
+      "properties": {
+        "source_location": {
+          "line": 30,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "state_variable",
+      "name": "owners",
+      "data_type": "address[]",
+      "scope": "MultiSigWallet",
+      "source_location": {
+        "line": 31,
+        "column": 5,
+        "end_line": 31,
+        "end_column": 29
+      },
+      "properties": {
+        "source_location": {
+          "line": 31,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "state_variable",
+      "name": "required",
+      "data_type": "uint",
+      "scope": "MultiSigWallet",
+      "source_location": {
+        "line": 32,
+        "column": 5,
+        "end_line": 32,
+        "end_column": 26
+      },
+      "properties": {
+        "source_location": {
+          "line": 32,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "state_variable",
+      "name": "transactionCount",
+      "data_type": "uint",
+      "scope": "MultiSigWallet",
+      "source_location": {
+        "line": 33,
+        "column": 5,
+        "end_line": 33,
+        "end_column": 34
+      },
+      "properties": {
+        "source_location": {
+          "line": 33,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "constructor_function",
+      "name": "MultiSigWallet",
+      "data_type": null,
+      "scope": "MultiSigWallet",
+      "source_location": {
+        "line": 116,
+        "column": 5,
+        "end_line": 127,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 116,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_10": {
+      "id": "dfg_node_10",
+      "type": "function",
+      "name": "addOwner",
+      "data_type": null,
+      "scope": "MultiSigWallet",
+      "source_location": {
+        "line": 131,
+        "column": 5,
+        "end_line": 141,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 131,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_11": {
+      "id": "dfg_node_11",
+      "type": "function",
+      "name": "removeOwner",
+      "data_type": null,
+      "scope": "MultiSigWallet",
+      "source_location": {
+        "line": 145,
+        "column": 5,
+        "end_line": 160,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 145,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_12": {
+      "id": "dfg_node_12",
+      "type": "function",
+      "name": "replaceOwner",
+      "data_type": null,
+      "scope": "MultiSigWallet",
+      "source_location": {
+        "line": 165,
+        "column": 5,
+        "end_line": 180,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 165,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_13": {
+      "id": "dfg_node_13",
+      "type": "function",
+      "name": "changeRequirement",
+      "data_type": null,
+      "scope": "MultiSigWallet",
+      "source_location": {
+        "line": 184,
+        "column": 5,
+        "end_line": 191,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 184,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_14": {
+      "id": "dfg_node_14",
+      "type": "function",
+      "name": "submitTransaction",
+      "data_type": null,
+      "scope": "MultiSigWallet",
+      "source_location": {
+        "line": 198,
+        "column": 5,
+        "end_line": 204,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 198,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_16": {
+      "id": "dfg_node_16",
+      "type": "parameter",
+      "name": "transactionId",
+      "data_type": "uint",
+      "scope": "submitTransaction_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "submitTransaction"
+      }
+    },
+    "dfg_node_17": {
+      "id": "dfg_node_17",
+      "type": "function",
+      "name": "confirmTransaction",
+      "data_type": null,
+      "scope": "MultiSigWallet",
+      "source_location": {
+        "line": 208,
+        "column": 5,
+        "end_line": 217,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 208,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_18": {
+      "id": "dfg_node_18",
+      "type": "function",
+      "name": "revokeConfirmation",
+      "data_type": null,
+      "scope": "MultiSigWallet",
+      "source_location": {
+        "line": 221,
+        "column": 5,
+        "end_line": 229,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 221,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_19": {
+      "id": "dfg_node_19",
+      "type": "function",
+      "name": "executeTransaction",
+      "data_type": null,
+      "scope": "MultiSigWallet",
+      "source_location": {
+        "line": 233,
+        "column": 5,
+        "end_line": 249,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 233,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_20": {
+      "id": "dfg_node_20",
+      "type": "function",
+      "name": "isConfirmed",
+      "data_type": null,
+      "scope": "MultiSigWallet",
+      "source_location": {
+        "line": 254,
+        "column": 5,
+        "end_line": 266,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 254,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_22": {
+      "id": "dfg_node_22",
+      "type": "parameter",
+      "name": "param_20",
+      "data_type": "bool",
+      "scope": "isConfirmed_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "isConfirmed"
+      }
+    },
+    "dfg_node_23": {
+      "id": "dfg_node_23",
+      "type": "function",
+      "name": "addTransaction",
+      "data_type": null,
+      "scope": "MultiSigWallet",
+      "source_location": {
+        "line": 276,
+        "column": 5,
+        "end_line": 290,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 276,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_25": {
+      "id": "dfg_node_25",
+      "type": "parameter",
+      "name": "transactionId",
+      "data_type": "uint",
+      "scope": "addTransaction_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "addTransaction"
+      }
+    },
+    "dfg_node_26": {
+      "id": "dfg_node_26",
+      "type": "function",
+      "name": "getConfirmationCount",
+      "data_type": null,
+      "scope": "MultiSigWallet",
+      "source_location": {
+        "line": 298,
+        "column": 5,
+        "end_line": 306,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 298,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_28": {
+      "id": "dfg_node_28",
+      "type": "parameter",
+      "name": "count",
+      "data_type": "uint",
+      "scope": "getConfirmationCount_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getConfirmationCount"
+      }
+    },
+    "dfg_node_29": {
+      "id": "dfg_node_29",
+      "type": "function",
+      "name": "getTransactionCount",
+      "data_type": null,
+      "scope": "MultiSigWallet",
+      "source_location": {
+        "line": 312,
+        "column": 5,
+        "end_line": 321,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 312,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_31": {
+      "id": "dfg_node_31",
+      "type": "parameter",
+      "name": "count",
+      "data_type": "uint",
+      "scope": "getTransactionCount_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getTransactionCount"
+      }
+    },
+    "dfg_node_32": {
+      "id": "dfg_node_32",
+      "type": "function",
+      "name": "getOwners",
+      "data_type": null,
+      "scope": "MultiSigWallet",
+      "source_location": {
+        "line": 325,
+        "column": 5,
+        "end_line": 331,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 325,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_34": {
+      "id": "dfg_node_34",
+      "type": "parameter",
+      "name": "param_32",
+      "data_type": "address[]",
+      "scope": "getOwners_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getOwners"
+      }
+    },
+    "dfg_node_35": {
+      "id": "dfg_node_35",
+      "type": "function",
+      "name": "getConfirmations",
+      "data_type": null,
+      "scope": "MultiSigWallet",
+      "source_location": {
+        "line": 336,
+        "column": 5,
+        "end_line": 352,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 336,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_37": {
+      "id": "dfg_node_37",
+      "type": "parameter",
+      "name": "_confirmations",
+      "data_type": "address[]",
+      "scope": "getConfirmations_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getConfirmations"
+      }
+    },
+    "dfg_node_38": {
+      "id": "dfg_node_38",
+      "type": "function",
+      "name": "getTransactionIds",
+      "data_type": null,
+      "scope": "MultiSigWallet",
+      "source_location": {
+        "line": 360,
+        "column": 5,
+        "end_line": 378,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 360,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_40": {
+      "id": "dfg_node_40",
+      "type": "parameter",
+      "name": "_transactionIds",
+      "data_type": "uint[]",
+      "scope": "getTransactionIds_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getTransactionIds"
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_1",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_1",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_1",
+      "target": "dfg_node_7",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_1",
+      "target": "dfg_node_8",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_1",
+      "target": "dfg_node_9",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_9": {
+      "id": "dfg_edge_9",
+      "source": "dfg_node_1",
+      "target": "dfg_node_10",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_10": {
+      "id": "dfg_edge_10",
+      "source": "dfg_node_1",
+      "target": "dfg_node_11",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_11": {
+      "id": "dfg_edge_11",
+      "source": "dfg_node_1",
+      "target": "dfg_node_12",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_12": {
+      "id": "dfg_edge_12",
+      "source": "dfg_node_1",
+      "target": "dfg_node_13",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_13": {
+      "id": "dfg_edge_13",
+      "source": "dfg_node_14",
+      "target": "dfg_node_16",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_14": {
+      "id": "dfg_edge_14",
+      "source": "dfg_node_1",
+      "target": "dfg_node_14",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_15": {
+      "id": "dfg_edge_15",
+      "source": "dfg_node_1",
+      "target": "dfg_node_17",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_16": {
+      "id": "dfg_edge_16",
+      "source": "dfg_node_1",
+      "target": "dfg_node_18",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_17": {
+      "id": "dfg_edge_17",
+      "source": "dfg_node_1",
+      "target": "dfg_node_19",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_18": {
+      "id": "dfg_edge_18",
+      "source": "dfg_node_20",
+      "target": "dfg_node_22",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_19": {
+      "id": "dfg_edge_19",
+      "source": "dfg_node_1",
+      "target": "dfg_node_20",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_20": {
+      "id": "dfg_edge_20",
+      "source": "dfg_node_23",
+      "target": "dfg_node_25",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_21": {
+      "id": "dfg_edge_21",
+      "source": "dfg_node_1",
+      "target": "dfg_node_23",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_22": {
+      "id": "dfg_edge_22",
+      "source": "dfg_node_26",
+      "target": "dfg_node_28",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_23": {
+      "id": "dfg_edge_23",
+      "source": "dfg_node_1",
+      "target": "dfg_node_26",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_24": {
+      "id": "dfg_edge_24",
+      "source": "dfg_node_29",
+      "target": "dfg_node_31",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_25": {
+      "id": "dfg_edge_25",
+      "source": "dfg_node_1",
+      "target": "dfg_node_29",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_26": {
+      "id": "dfg_edge_26",
+      "source": "dfg_node_32",
+      "target": "dfg_node_34",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_27": {
+      "id": "dfg_edge_27",
+      "source": "dfg_node_1",
+      "target": "dfg_node_32",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_28": {
+      "id": "dfg_edge_28",
+      "source": "dfg_node_35",
+      "target": "dfg_node_37",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_29": {
+      "id": "dfg_edge_29",
+      "source": "dfg_node_1",
+      "target": "dfg_node_35",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_30": {
+      "id": "dfg_edge_30",
+      "source": "dfg_node_38",
+      "target": "dfg_node_40",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_31": {
+      "id": "dfg_edge_31",
+      "source": "dfg_node_1",
+      "target": "dfg_node_38",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 1345,
+    "source_line": 1346,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "MultiSigWallet",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

@@ -1,0 +1,561 @@
+{
+  "contract": "RatingStore",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "RatingStore",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 24,
+        "column": 1,
+        "end_line": 169,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 24,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "debug",
+      "data_type": "bool",
+      "scope": "RatingStore",
+      "source_location": {
+        "line": 32,
+        "column": 5,
+        "end_line": 32,
+        "end_column": 25
+      },
+      "properties": {
+        "source_location": {
+          "line": 32,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "state_variable",
+      "name": "scores",
+      "data_type": "mapping (address => Score)",
+      "scope": "RatingStore",
+      "source_location": {
+        "line": 33,
+        "column": 5,
+        "end_line": 33,
+        "end_column": 48
+      },
+      "properties": {
+        "source_location": {
+          "line": 33,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "state_variable",
+      "name": "manager",
+      "data_type": "address",
+      "scope": "RatingStore",
+      "source_location": {
+        "line": 35,
+        "column": 5,
+        "end_line": 35,
+        "end_column": 30
+      },
+      "properties": {
+        "source_location": {
+          "line": 35,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "state_variable",
+      "name": "controller",
+      "data_type": "address",
+      "scope": "RatingStore",
+      "source_location": {
+        "line": 37,
+        "column": 5,
+        "end_line": 37,
+        "end_column": 33
+      },
+      "properties": {
+        "source_location": {
+          "line": 37,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "constructor_function",
+      "name": "RatingStore",
+      "data_type": null,
+      "scope": "RatingStore",
+      "source_location": {
+        "line": 64,
+        "column": 5,
+        "end_line": 68,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 64,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "function",
+      "name": "set",
+      "data_type": null,
+      "scope": "RatingStore",
+      "source_location": {
+        "line": 77,
+        "column": 5,
+        "end_line": 83,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 77,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "function",
+      "name": "add",
+      "data_type": null,
+      "scope": "RatingStore",
+      "source_location": {
+        "line": 91,
+        "column": 5,
+        "end_line": 97,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 91,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "function",
+      "name": "get",
+      "data_type": null,
+      "scope": "RatingStore",
+      "source_location": {
+        "line": 105,
+        "column": 5,
+        "end_line": 111,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 105,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_11": {
+      "id": "dfg_node_11",
+      "type": "parameter",
+      "name": "param_9",
+      "data_type": "int",
+      "scope": "get_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "get"
+      }
+    },
+    "dfg_node_13": {
+      "id": "dfg_node_13",
+      "type": "parameter",
+      "name": "param_11",
+      "data_type": "uint",
+      "scope": "get_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "get"
+      }
+    },
+    "dfg_node_14": {
+      "id": "dfg_node_14",
+      "type": "function",
+      "name": "reset",
+      "data_type": null,
+      "scope": "RatingStore",
+      "source_location": {
+        "line": 117,
+        "column": 5,
+        "end_line": 119,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 117,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_15": {
+      "id": "dfg_node_15",
+      "type": "function",
+      "name": "getManager",
+      "data_type": null,
+      "scope": "RatingStore",
+      "source_location": {
+        "line": 125,
+        "column": 5,
+        "end_line": 127,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 125,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_17": {
+      "id": "dfg_node_17",
+      "type": "parameter",
+      "name": "param_15",
+      "data_type": "address",
+      "scope": "getManager_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getManager"
+      }
+    },
+    "dfg_node_18": {
+      "id": "dfg_node_18",
+      "type": "function",
+      "name": "setManager",
+      "data_type": null,
+      "scope": "RatingStore",
+      "source_location": {
+        "line": 133,
+        "column": 5,
+        "end_line": 135,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 133,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_19": {
+      "id": "dfg_node_19",
+      "type": "function",
+      "name": "getController",
+      "data_type": null,
+      "scope": "RatingStore",
+      "source_location": {
+        "line": 141,
+        "column": 5,
+        "end_line": 143,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 141,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_21": {
+      "id": "dfg_node_21",
+      "type": "parameter",
+      "name": "param_19",
+      "data_type": "address",
+      "scope": "getController_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getController"
+      }
+    },
+    "dfg_node_22": {
+      "id": "dfg_node_22",
+      "type": "function",
+      "name": "setController",
+      "data_type": null,
+      "scope": "RatingStore",
+      "source_location": {
+        "line": 149,
+        "column": 5,
+        "end_line": 151,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 149,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_23": {
+      "id": "dfg_node_23",
+      "type": "function",
+      "name": "getDebug",
+      "data_type": null,
+      "scope": "RatingStore",
+      "source_location": {
+        "line": 157,
+        "column": 5,
+        "end_line": 159,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 157,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_25": {
+      "id": "dfg_node_25",
+      "type": "parameter",
+      "name": "param_23",
+      "data_type": "bool",
+      "scope": "getDebug_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getDebug"
+      }
+    },
+    "dfg_node_26": {
+      "id": "dfg_node_26",
+      "type": "function",
+      "name": "setDebug",
+      "data_type": null,
+      "scope": "RatingStore",
+      "source_location": {
+        "line": 165,
+        "column": 5,
+        "end_line": 167,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 165,
+          "column": 5
+        }
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_1",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_1",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_1",
+      "target": "dfg_node_7",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_1",
+      "target": "dfg_node_8",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_9",
+      "target": "dfg_node_11",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_9": {
+      "id": "dfg_edge_9",
+      "source": "dfg_node_9",
+      "target": "dfg_node_13",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_10": {
+      "id": "dfg_edge_10",
+      "source": "dfg_node_1",
+      "target": "dfg_node_9",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_11": {
+      "id": "dfg_edge_11",
+      "source": "dfg_node_1",
+      "target": "dfg_node_14",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_12": {
+      "id": "dfg_edge_12",
+      "source": "dfg_node_15",
+      "target": "dfg_node_17",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_13": {
+      "id": "dfg_edge_13",
+      "source": "dfg_node_1",
+      "target": "dfg_node_15",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_14": {
+      "id": "dfg_edge_14",
+      "source": "dfg_node_1",
+      "target": "dfg_node_18",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_15": {
+      "id": "dfg_edge_15",
+      "source": "dfg_node_19",
+      "target": "dfg_node_21",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_16": {
+      "id": "dfg_edge_16",
+      "source": "dfg_node_1",
+      "target": "dfg_node_19",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_17": {
+      "id": "dfg_edge_17",
+      "source": "dfg_node_1",
+      "target": "dfg_node_22",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_18": {
+      "id": "dfg_edge_18",
+      "source": "dfg_node_23",
+      "target": "dfg_node_25",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_19": {
+      "id": "dfg_edge_19",
+      "source": "dfg_node_1",
+      "target": "dfg_node_23",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_20": {
+      "id": "dfg_edge_20",
+      "source": "dfg_node_1",
+      "target": "dfg_node_26",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 744,
+    "source_line": 745,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "RatingStore",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

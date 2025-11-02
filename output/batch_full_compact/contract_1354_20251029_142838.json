@@ -1,0 +1,85 @@
+{
+  "contract": "MyContract",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "MyContract",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 3,
+        "column": 1,
+        "end_line": 7,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "function",
+      "name": "whatDidJasonSay",
+      "data_type": null,
+      "scope": "MyContract",
+      "source_location": {
+        "line": 4,
+        "column": 5,
+        "end_line": 6,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 4,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "parameter",
+      "name": "said",
+      "data_type": "string",
+      "scope": "whatDidJasonSay_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "whatDidJasonSay"
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_2",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 1354,
+    "source_line": 1355,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "MyContract",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

@@ -1,0 +1,1058 @@
+{
+  "contract": "DXF_Tokens",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "DXF_Tokens",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 3,
+        "column": 1,
+        "end_line": 301,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "dxfOpen",
+      "data_type": "bool",
+      "scope": "DXF_Tokens",
+      "source_location": {
+        "line": 6,
+        "column": 3,
+        "end_line": 6,
+        "end_column": 28
+      },
+      "properties": {
+        "source_location": {
+          "line": 6,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "state_variable",
+      "name": "refundState",
+      "data_type": "bool",
+      "scope": "DXF_Tokens",
+      "source_location": {
+        "line": 7,
+        "column": 3,
+        "end_line": 7,
+        "end_column": 27
+      },
+      "properties": {
+        "source_location": {
+          "line": 7,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "state_variable",
+      "name": "transferLocked",
+      "data_type": "bool",
+      "scope": "DXF_Tokens",
+      "source_location": {
+        "line": 8,
+        "column": 3,
+        "end_line": 8,
+        "end_column": 35
+      },
+      "properties": {
+        "source_location": {
+          "line": 8,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "state_variable",
+      "name": "startingDateFunding",
+      "data_type": "uint256",
+      "scope": "DXF_Tokens",
+      "source_location": {
+        "line": 10,
+        "column": 3,
+        "end_line": 10,
+        "end_column": 38
+      },
+      "properties": {
+        "source_location": {
+          "line": 10,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "state_variable",
+      "name": "closingDateFunding",
+      "data_type": "uint256",
+      "scope": "DXF_Tokens",
+      "source_location": {
+        "line": 11,
+        "column": 3,
+        "end_line": 11,
+        "end_column": 37
+      },
+      "properties": {
+        "source_location": {
+          "line": 11,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "state_variable",
+      "name": "maxNumberMembers",
+      "data_type": "uint256",
+      "scope": "DXF_Tokens",
+      "source_location": {
+        "line": 13,
+        "column": 3,
+        "end_line": 13,
+        "end_column": 49
+      },
+      "properties": {
+        "source_location": {
+          "line": 13,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "state_variable",
+      "name": "totalTokens",
+      "data_type": "uint256",
+      "scope": "DXF_Tokens",
+      "source_location": {
+        "line": 15,
+        "column": 3,
+        "end_line": 15,
+        "end_column": 30
+      },
+      "properties": {
+        "source_location": {
+          "line": 15,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "state_variable",
+      "name": "tokensCreationMin",
+      "data_type": "uint256",
+      "scope": "DXF_Tokens",
+      "source_location": {
+        "line": 16,
+        "column": 3,
+        "end_line": 16,
+        "end_column": 59
+      },
+      "properties": {
+        "source_location": {
+          "line": 16,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_10": {
+      "id": "dfg_node_10",
+      "type": "state_variable",
+      "name": "tokensCreationCap",
+      "data_type": "uint256",
+      "scope": "DXF_Tokens",
+      "source_location": {
+        "line": 17,
+        "column": 3,
+        "end_line": 17,
+        "end_column": 59
+      },
+      "properties": {
+        "source_location": {
+          "line": 17,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_11": {
+      "id": "dfg_node_11",
+      "type": "state_variable",
+      "name": "remainingTokensVIPs",
+      "data_type": "uint256",
+      "scope": "DXF_Tokens",
+      "source_location": {
+        "line": 20,
+        "column": 3,
+        "end_line": 20,
+        "end_column": 50
+      },
+      "properties": {
+        "source_location": {
+          "line": 20,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_12": {
+      "id": "dfg_node_12",
+      "type": "state_variable",
+      "name": "tokensCreationVIPsCap",
+      "data_type": "uint256",
+      "scope": "DXF_Tokens",
+      "source_location": {
+        "line": 21,
+        "column": 3,
+        "end_line": 21,
+        "end_column": 63
+      },
+      "properties": {
+        "source_location": {
+          "line": 21,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_13": {
+      "id": "dfg_node_13",
+      "type": "state_variable",
+      "name": "balances",
+      "data_type": "mapping (address => uint256)",
+      "scope": "DXF_Tokens",
+      "source_location": {
+        "line": 24,
+        "column": 3,
+        "end_line": 24,
+        "end_column": 41
+      },
+      "properties": {
+        "source_location": {
+          "line": 24,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_14": {
+      "id": "dfg_node_14",
+      "type": "state_variable",
+      "name": "vips",
+      "data_type": "mapping (address => bool)",
+      "scope": "DXF_Tokens",
+      "source_location": {
+        "line": 25,
+        "column": 3,
+        "end_line": 25,
+        "end_column": 34
+      },
+      "properties": {
+        "source_location": {
+          "line": 25,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_15": {
+      "id": "dfg_node_15",
+      "type": "state_variable",
+      "name": "indexMembers",
+      "data_type": "mapping (address => uint256)",
+      "scope": "DXF_Tokens",
+      "source_location": {
+        "line": 26,
+        "column": 3,
+        "end_line": 26,
+        "end_column": 45
+      },
+      "properties": {
+        "source_location": {
+          "line": 26,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_16": {
+      "id": "dfg_node_16",
+      "type": "state_variable",
+      "name": "members",
+      "data_type": "Member[]",
+      "scope": "DXF_Tokens",
+      "source_location": {
+        "line": 34,
+        "column": 3,
+        "end_line": 34,
+        "end_column": 27
+      },
+      "properties": {
+        "source_location": {
+          "line": 34,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_17": {
+      "id": "dfg_node_17",
+      "type": "state_variable",
+      "name": "name",
+      "data_type": "string",
+      "scope": "DXF_Tokens",
+      "source_location": {
+        "line": 43,
+        "column": 3,
+        "end_line": 43,
+        "end_column": 74
+      },
+      "properties": {
+        "source_location": {
+          "line": 43,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_18": {
+      "id": "dfg_node_18",
+      "type": "state_variable",
+      "name": "symbol",
+      "data_type": "string",
+      "scope": "DXF_Tokens",
+      "source_location": {
+        "line": 44,
+        "column": 3,
+        "end_line": 44,
+        "end_column": 41
+      },
+      "properties": {
+        "source_location": {
+          "line": 44,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_19": {
+      "id": "dfg_node_19",
+      "type": "state_variable",
+      "name": "decimals",
+      "data_type": "uint8",
+      "scope": "DXF_Tokens",
+      "source_location": {
+        "line": 45,
+        "column": 3,
+        "end_line": 45,
+        "end_column": 39
+      },
+      "properties": {
+        "source_location": {
+          "line": 45,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_20": {
+      "id": "dfg_node_20",
+      "type": "state_variable",
+      "name": "admin",
+      "data_type": "address",
+      "scope": "DXF_Tokens",
+      "source_location": {
+        "line": 47,
+        "column": 3,
+        "end_line": 47,
+        "end_column": 24
+      },
+      "properties": {
+        "source_location": {
+          "line": 47,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_21": {
+      "id": "dfg_node_21",
+      "type": "state_variable",
+      "name": "multisigDXF",
+      "data_type": "address",
+      "scope": "DXF_Tokens",
+      "source_location": {
+        "line": 48,
+        "column": 3,
+        "end_line": 48,
+        "end_column": 30
+      },
+      "properties": {
+        "source_location": {
+          "line": 48,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_22": {
+      "id": "dfg_node_22",
+      "type": "constructor_function",
+      "name": "DXF_Tokens",
+      "data_type": null,
+      "scope": "DXF_Tokens",
+      "source_location": {
+        "line": 56,
+        "column": 3,
+        "end_line": 63,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 56,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_23": {
+      "id": "dfg_node_23",
+      "type": "function",
+      "name": "acceptTermsAndJoinDXF",
+      "data_type": null,
+      "scope": "DXF_Tokens",
+      "source_location": {
+        "line": 77,
+        "column": 3,
+        "end_line": 113,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 77,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_24": {
+      "id": "dfg_node_24",
+      "type": "function",
+      "name": "fullTransfer",
+      "data_type": null,
+      "scope": "DXF_Tokens",
+      "source_location": {
+        "line": 146,
+        "column": 3,
+        "end_line": 171,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 146,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_26": {
+      "id": "dfg_node_26",
+      "type": "parameter",
+      "name": "param_24",
+      "data_type": "bool",
+      "scope": "fullTransfer_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "fullTransfer"
+      }
+    },
+    "dfg_node_27": {
+      "id": "dfg_node_27",
+      "type": "function",
+      "name": "registerVIP",
+      "data_type": null,
+      "scope": "DXF_Tokens",
+      "source_location": {
+        "line": 181,
+        "column": 3,
+        "end_line": 199,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 181,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_28": {
+      "id": "dfg_node_28",
+      "type": "function",
+      "name": "paybackContribution",
+      "data_type": null,
+      "scope": "DXF_Tokens",
+      "source_location": {
+        "line": 203,
+        "column": 3,
+        "end_line": 229,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 203,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_29": {
+      "id": "dfg_node_29",
+      "type": "function",
+      "name": "changeAdmin",
+      "data_type": null,
+      "scope": "DXF_Tokens",
+      "source_location": {
+        "line": 232,
+        "column": 3,
+        "end_line": 238,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 232,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_30": {
+      "id": "dfg_node_30",
+      "type": "function",
+      "name": "closeFunding",
+      "data_type": null,
+      "scope": "DXF_Tokens",
+      "source_location": {
+        "line": 243,
+        "column": 3,
+        "end_line": 259,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 243,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_31": {
+      "id": "dfg_node_31",
+      "type": "function",
+      "name": "allowTransfers",
+      "data_type": null,
+      "scope": "DXF_Tokens",
+      "source_location": {
+        "line": 269,
+        "column": 3,
+        "end_line": 273,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 269,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_32": {
+      "id": "dfg_node_32",
+      "type": "function",
+      "name": "disableTransfers",
+      "data_type": null,
+      "scope": "DXF_Tokens",
+      "source_location": {
+        "line": 275,
+        "column": 3,
+        "end_line": 279,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 275,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_33": {
+      "id": "dfg_node_33",
+      "type": "function",
+      "name": "totalSupply",
+      "data_type": null,
+      "scope": "DXF_Tokens",
+      "source_location": {
+        "line": 283,
+        "column": 3,
+        "end_line": 286,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 283,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_35": {
+      "id": "dfg_node_35",
+      "type": "parameter",
+      "name": "param_33",
+      "data_type": "uint256",
+      "scope": "totalSupply_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "totalSupply"
+      }
+    },
+    "dfg_node_36": {
+      "id": "dfg_node_36",
+      "type": "function",
+      "name": "balanceOf",
+      "data_type": null,
+      "scope": "DXF_Tokens",
+      "source_location": {
+        "line": 288,
+        "column": 3,
+        "end_line": 291,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 288,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_38": {
+      "id": "dfg_node_38",
+      "type": "parameter",
+      "name": "param_36",
+      "data_type": "uint256",
+      "scope": "balanceOf_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "balanceOf"
+      }
+    },
+    "dfg_node_39": {
+      "id": "dfg_node_39",
+      "type": "function",
+      "name": "accountInformation",
+      "data_type": null,
+      "scope": "DXF_Tokens",
+      "source_location": {
+        "line": 293,
+        "column": 3,
+        "end_line": 298,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 293,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_41": {
+      "id": "dfg_node_41",
+      "type": "parameter",
+      "name": "vip",
+      "data_type": "bool",
+      "scope": "accountInformation_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "accountInformation"
+      }
+    },
+    "dfg_node_43": {
+      "id": "dfg_node_43",
+      "type": "parameter",
+      "name": "balance_dxf",
+      "data_type": "uint",
+      "scope": "accountInformation_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "accountInformation"
+      }
+    },
+    "dfg_node_45": {
+      "id": "dfg_node_45",
+      "type": "parameter",
+      "name": "share_dxf_per_thousands",
+      "data_type": "uint",
+      "scope": "accountInformation_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "accountInformation"
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_1",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_1",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_1",
+      "target": "dfg_node_7",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_1",
+      "target": "dfg_node_8",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_1",
+      "target": "dfg_node_9",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_9": {
+      "id": "dfg_edge_9",
+      "source": "dfg_node_1",
+      "target": "dfg_node_10",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_10": {
+      "id": "dfg_edge_10",
+      "source": "dfg_node_1",
+      "target": "dfg_node_11",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_11": {
+      "id": "dfg_edge_11",
+      "source": "dfg_node_1",
+      "target": "dfg_node_12",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_12": {
+      "id": "dfg_edge_12",
+      "source": "dfg_node_1",
+      "target": "dfg_node_13",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_13": {
+      "id": "dfg_edge_13",
+      "source": "dfg_node_1",
+      "target": "dfg_node_14",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_14": {
+      "id": "dfg_edge_14",
+      "source": "dfg_node_1",
+      "target": "dfg_node_15",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_15": {
+      "id": "dfg_edge_15",
+      "source": "dfg_node_1",
+      "target": "dfg_node_16",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_16": {
+      "id": "dfg_edge_16",
+      "source": "dfg_node_1",
+      "target": "dfg_node_17",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_17": {
+      "id": "dfg_edge_17",
+      "source": "dfg_node_1",
+      "target": "dfg_node_18",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_18": {
+      "id": "dfg_edge_18",
+      "source": "dfg_node_1",
+      "target": "dfg_node_19",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_19": {
+      "id": "dfg_edge_19",
+      "source": "dfg_node_1",
+      "target": "dfg_node_20",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_20": {
+      "id": "dfg_edge_20",
+      "source": "dfg_node_1",
+      "target": "dfg_node_21",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_21": {
+      "id": "dfg_edge_21",
+      "source": "dfg_node_1",
+      "target": "dfg_node_22",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_22": {
+      "id": "dfg_edge_22",
+      "source": "dfg_node_1",
+      "target": "dfg_node_23",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_23": {
+      "id": "dfg_edge_23",
+      "source": "dfg_node_24",
+      "target": "dfg_node_26",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_24": {
+      "id": "dfg_edge_24",
+      "source": "dfg_node_1",
+      "target": "dfg_node_24",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_25": {
+      "id": "dfg_edge_25",
+      "source": "dfg_node_1",
+      "target": "dfg_node_27",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_26": {
+      "id": "dfg_edge_26",
+      "source": "dfg_node_1",
+      "target": "dfg_node_28",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_27": {
+      "id": "dfg_edge_27",
+      "source": "dfg_node_1",
+      "target": "dfg_node_29",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_28": {
+      "id": "dfg_edge_28",
+      "source": "dfg_node_1",
+      "target": "dfg_node_30",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_29": {
+      "id": "dfg_edge_29",
+      "source": "dfg_node_1",
+      "target": "dfg_node_31",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_30": {
+      "id": "dfg_edge_30",
+      "source": "dfg_node_1",
+      "target": "dfg_node_32",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_31": {
+      "id": "dfg_edge_31",
+      "source": "dfg_node_33",
+      "target": "dfg_node_35",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_32": {
+      "id": "dfg_edge_32",
+      "source": "dfg_node_1",
+      "target": "dfg_node_33",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_33": {
+      "id": "dfg_edge_33",
+      "source": "dfg_node_36",
+      "target": "dfg_node_38",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_34": {
+      "id": "dfg_edge_34",
+      "source": "dfg_node_1",
+      "target": "dfg_node_36",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_35": {
+      "id": "dfg_edge_35",
+      "source": "dfg_node_39",
+      "target": "dfg_node_41",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_36": {
+      "id": "dfg_edge_36",
+      "source": "dfg_node_39",
+      "target": "dfg_node_43",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_37": {
+      "id": "dfg_edge_37",
+      "source": "dfg_node_39",
+      "target": "dfg_node_45",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_38": {
+      "id": "dfg_edge_38",
+      "source": "dfg_node_1",
+      "target": "dfg_node_39",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 974,
+    "source_line": 975,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "DXF_Tokens",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

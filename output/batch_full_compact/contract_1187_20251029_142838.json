@@ -1,0 +1,148 @@
+{
+  "contract": "WealthRedistributionProject",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "WealthRedistributionProject",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 6,
+        "column": 1,
+        "end_line": 53,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 6,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "benefactor",
+      "data_type": "BenefactorArray[]",
+      "scope": "WealthRedistributionProject",
+      "source_location": {
+        "line": 13,
+        "column": 3,
+        "end_line": 13,
+        "end_column": 39
+      },
+      "properties": {
+        "source_location": {
+          "line": 13,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "state_variable",
+      "name": "balance",
+      "data_type": "uint",
+      "scope": "WealthRedistributionProject",
+      "source_location": {
+        "line": 15,
+        "column": 3,
+        "end_line": 15,
+        "end_column": 27
+      },
+      "properties": {
+        "source_location": {
+          "line": 15,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "state_variable",
+      "name": "totalBalance",
+      "data_type": "uint",
+      "scope": "WealthRedistributionProject",
+      "source_location": {
+        "line": 16,
+        "column": 3,
+        "end_line": 16,
+        "end_column": 32
+      },
+      "properties": {
+        "source_location": {
+          "line": 16,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "function",
+      "name": "enter",
+      "data_type": null,
+      "scope": "WealthRedistributionProject",
+      "source_location": {
+        "line": 22,
+        "column": 3,
+        "end_line": 51,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 22,
+          "column": 3
+        }
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_1",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 1187,
+    "source_line": 1188,
+    "label": 1,
+    "mode": "compact",
+    "contract_name": "WealthRedistributionProject",
+    "timestamp": "20251029_142838"
+  },
+  "label": 1
+}

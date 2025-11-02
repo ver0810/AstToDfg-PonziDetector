@@ -1,0 +1,197 @@
+{
+  "contract": "NoPainNoGain",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "NoPainNoGain",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 2,
+        "column": 1,
+        "end_line": 23,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "Owner",
+      "data_type": "address",
+      "scope": "NoPainNoGain",
+      "source_location": {
+        "line": 4,
+        "column": 5,
+        "end_line": 4,
+        "end_column": 40
+      },
+      "properties": {
+        "source_location": {
+          "line": 4,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "constructor_function",
+      "name": "NoPainNoGain",
+      "data_type": null,
+      "scope": "NoPainNoGain",
+      "source_location": {
+        "line": 6,
+        "column": 5,
+        "end_line": 6,
+        "end_column": 46
+      },
+      "properties": {
+        "source_location": {
+          "line": 6,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "function",
+      "name": "Withdraw",
+      "data_type": null,
+      "scope": "NoPainNoGain",
+      "source_location": {
+        "line": 9,
+        "column": 5,
+        "end_line": 12,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 9,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "function",
+      "name": "Play",
+      "data_type": null,
+      "scope": "NoPainNoGain",
+      "source_location": {
+        "line": 14,
+        "column": 5,
+        "end_line": 18,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 14,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "function",
+      "name": "rand",
+      "data_type": null,
+      "scope": "NoPainNoGain",
+      "source_location": {
+        "line": 20,
+        "column": 2,
+        "end_line": 22,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 20,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "parameter",
+      "name": "param_6",
+      "data_type": "uint",
+      "scope": "rand_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "rand"
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_1",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_6",
+      "target": "dfg_node_8",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_1",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 351,
+    "source_line": 352,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "NoPainNoGain",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

@@ -1,0 +1,216 @@
+{
+  "contract": "FiveForty",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "FiveForty",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 11,
+        "column": 1,
+        "end_line": 101,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 11,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "invested",
+      "data_type": "mapping (address => uint256)",
+      "scope": "FiveForty",
+      "source_location": {
+        "line": 45,
+        "column": 1,
+        "end_line": 45,
+        "end_column": 39
+      },
+      "properties": {
+        "source_location": {
+          "line": 45,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "state_variable",
+      "name": "lastPaymentBlock",
+      "data_type": "mapping (address => uint256)",
+      "scope": "FiveForty",
+      "source_location": {
+        "line": 47,
+        "column": 1,
+        "end_line": 47,
+        "end_column": 47
+      },
+      "properties": {
+        "source_location": {
+          "line": 47,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "state_variable",
+      "name": "dailyPayment",
+      "data_type": "mapping (address => uint256)",
+      "scope": "FiveForty",
+      "source_location": {
+        "line": 49,
+        "column": 1,
+        "end_line": 49,
+        "end_column": 43
+      },
+      "properties": {
+        "source_location": {
+          "line": 49,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "state_variable",
+      "name": "totalPaid",
+      "data_type": "mapping (address => uint256)",
+      "scope": "FiveForty",
+      "source_location": {
+        "line": 51,
+        "column": 1,
+        "end_line": 51,
+        "end_column": 40
+      },
+      "properties": {
+        "source_location": {
+          "line": 51,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "state_variable",
+      "name": "fundAddress",
+      "data_type": "address payable",
+      "scope": "FiveForty",
+      "source_location": {
+        "line": 53,
+        "column": 1,
+        "end_line": 53,
+        "end_column": 83
+      },
+      "properties": {
+        "source_location": {
+          "line": 53,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "function",
+      "name": "toAddr",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 107,
+        "column": 3,
+        "end_line": 113,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 107,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "parameter",
+      "name": "addr",
+      "data_type": "address payable",
+      "scope": "toAddr_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "toAddr"
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_1",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_1",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_7",
+      "target": "dfg_node_9",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 254,
+    "source_line": 255,
+    "label": 1,
+    "mode": "compact",
+    "contract_name": "FiveForty",
+    "timestamp": "20251029_142838"
+  },
+  "label": 1
+}

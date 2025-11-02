@@ -9,13 +9,15 @@ from datetime import datetime
 from pathlib import Path
 
 from .node_types import DFG, DFGNode, DFGEdge, EdgeType
+from .dfg_config import DFGConfig
 
 
 class JSONSerializer:
     """JSON序列化器"""
     
-    def __init__(self, indent: int = 2):
+    def __init__(self, config: Optional[DFGConfig] = None, indent: int = 2):
         """初始化序列化器"""
+        self.config = config or DFGConfig.standard()
         self.indent = indent
     
     def serialize_dfg(self, dfg: DFG) -> Dict[str, Any]:
@@ -52,11 +54,16 @@ class JSONSerializer:
                 "properties": node.properties or {}
             }
             
-            # 添加AST节点的额外信息
-            if hasattr(node.ast_node, 'text') and node.ast_node.text:
-                serialized_node["text"] = node.ast_node.text
+            # 根据配置决定是否添加文本
+            if self.config.include_node_text and hasattr(node.ast_node, 'text') and node.ast_node.text:
+                text = node.ast_node.text
+                # 应用文本长度限制
+                if self.config.text_max_length > 0 and len(text) > self.config.text_max_length:
+                    text = text[:self.config.text_max_length] + "..."
+                serialized_node["text"] = text
             
-            if hasattr(node.ast_node, 'metadata') and node.ast_node.metadata:
+            # 根据配置决定是否添加AST元数据
+            if self.config.include_ast_metadata and hasattr(node.ast_node, 'metadata') and node.ast_node.metadata:
                 serialized_node["ast_metadata"] = node.ast_node.metadata
             
             serialized_nodes[node_id] = serialized_node

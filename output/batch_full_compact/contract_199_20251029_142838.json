@@ -1,0 +1,467 @@
+{
+  "contract": "SplitPayment",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "function",
+      "name": "mul",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 4,
+        "column": 3,
+        "end_line": 11,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 4,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "parameter",
+      "name": "param_1",
+      "data_type": "uint256",
+      "scope": "mul_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "mul"
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "function",
+      "name": "div",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 13,
+        "column": 3,
+        "end_line": 18,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 13,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "parameter",
+      "name": "param_4",
+      "data_type": "uint256",
+      "scope": "div_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "div"
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "function",
+      "name": "sub",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 20,
+        "column": 3,
+        "end_line": 23,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 20,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "parameter",
+      "name": "param_7",
+      "data_type": "uint256",
+      "scope": "sub_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "sub"
+      }
+    },
+    "dfg_node_10": {
+      "id": "dfg_node_10",
+      "type": "function",
+      "name": "add",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 25,
+        "column": 3,
+        "end_line": 29,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 25,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_12": {
+      "id": "dfg_node_12",
+      "type": "parameter",
+      "name": "param_10",
+      "data_type": "uint256",
+      "scope": "add_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "add"
+      }
+    },
+    "dfg_node_13": {
+      "id": "dfg_node_13",
+      "type": "contract",
+      "name": "SplitPayment",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 32,
+        "column": 1,
+        "end_line": 87,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 32,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_14": {
+      "id": "dfg_node_14",
+      "type": "state_variable",
+      "name": "totalShares",
+      "data_type": "uint256",
+      "scope": "SplitPayment",
+      "source_location": {
+        "line": 35,
+        "column": 3,
+        "end_line": 35,
+        "end_column": 34
+      },
+      "properties": {
+        "source_location": {
+          "line": 35,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_15": {
+      "id": "dfg_node_15",
+      "type": "state_variable",
+      "name": "totalReleased",
+      "data_type": "uint256",
+      "scope": "SplitPayment",
+      "source_location": {
+        "line": 36,
+        "column": 3,
+        "end_line": 36,
+        "end_column": 36
+      },
+      "properties": {
+        "source_location": {
+          "line": 36,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_16": {
+      "id": "dfg_node_16",
+      "type": "state_variable",
+      "name": "shares",
+      "data_type": "mapping(address => uint256)",
+      "scope": "SplitPayment",
+      "source_location": {
+        "line": 38,
+        "column": 3,
+        "end_line": 38,
+        "end_column": 45
+      },
+      "properties": {
+        "source_location": {
+          "line": 38,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_17": {
+      "id": "dfg_node_17",
+      "type": "state_variable",
+      "name": "released",
+      "data_type": "mapping(address => uint256)",
+      "scope": "SplitPayment",
+      "source_location": {
+        "line": 39,
+        "column": 3,
+        "end_line": 39,
+        "end_column": 47
+      },
+      "properties": {
+        "source_location": {
+          "line": 39,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_18": {
+      "id": "dfg_node_18",
+      "type": "state_variable",
+      "name": "payees",
+      "data_type": "address[]",
+      "scope": "SplitPayment",
+      "source_location": {
+        "line": 40,
+        "column": 3,
+        "end_line": 40,
+        "end_column": 27
+      },
+      "properties": {
+        "source_location": {
+          "line": 40,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_19": {
+      "id": "dfg_node_19",
+      "type": "constructor_function",
+      "name": "SplitPayment",
+      "data_type": null,
+      "scope": "SplitPayment",
+      "source_location": {
+        "line": 45,
+        "column": 3,
+        "end_line": 51,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 45,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_20": {
+      "id": "dfg_node_20",
+      "type": "function",
+      "name": "addPayee",
+      "data_type": null,
+      "scope": "SplitPayment",
+      "source_location": {
+        "line": 58,
+        "column": 3,
+        "end_line": 66,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 58,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_21": {
+      "id": "dfg_node_21",
+      "type": "function",
+      "name": "claim",
+      "data_type": null,
+      "scope": "SplitPayment",
+      "source_location": {
+        "line": 71,
+        "column": 3,
+        "end_line": 86,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 71,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_22": {
+      "id": "dfg_node_22",
+      "type": "contract",
+      "name": "DonationSplitter",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 89,
+        "column": 1,
+        "end_line": 99,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 89,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_23": {
+      "id": "dfg_node_23",
+      "type": "constructor_function",
+      "name": "DonationSplitter",
+      "data_type": null,
+      "scope": "DonationSplitter",
+      "source_location": {
+        "line": 90,
+        "column": 5,
+        "end_line": 95,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 90,
+          "column": 5
+        }
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_4",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_7",
+      "target": "dfg_node_9",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_10",
+      "target": "dfg_node_12",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_13",
+      "target": "dfg_node_14",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_13",
+      "target": "dfg_node_15",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_13",
+      "target": "dfg_node_16",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_13",
+      "target": "dfg_node_17",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_9": {
+      "id": "dfg_edge_9",
+      "source": "dfg_node_13",
+      "target": "dfg_node_18",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_10": {
+      "id": "dfg_edge_10",
+      "source": "dfg_node_13",
+      "target": "dfg_node_19",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_11": {
+      "id": "dfg_edge_11",
+      "source": "dfg_node_13",
+      "target": "dfg_node_20",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_12": {
+      "id": "dfg_edge_12",
+      "source": "dfg_node_13",
+      "target": "dfg_node_21",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_13": {
+      "id": "dfg_edge_13",
+      "source": "dfg_node_22",
+      "target": "dfg_node_23",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 199,
+    "source_line": 200,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "SplitPayment",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

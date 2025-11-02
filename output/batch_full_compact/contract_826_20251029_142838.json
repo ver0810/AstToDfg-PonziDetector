@@ -1,0 +1,167 @@
+{
+  "contract": "addGenesisPairs",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "addGenesisPairs",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 3,
+        "column": 1,
+        "end_line": 71,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "newParents",
+      "data_type": "address[]",
+      "scope": "addGenesisPairs",
+      "source_location": {
+        "line": 5,
+        "column": 1,
+        "end_line": 5,
+        "end_column": 22
+      },
+      "properties": {
+        "source_location": {
+          "line": 5,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "state_variable",
+      "name": "newChildren",
+      "data_type": "address[]",
+      "scope": "addGenesisPairs",
+      "source_location": {
+        "line": 6,
+        "column": 1,
+        "end_line": 6,
+        "end_column": 23
+      },
+      "properties": {
+        "source_location": {
+          "line": 6,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "constructor_function",
+      "name": "addGenesisPairs",
+      "data_type": null,
+      "scope": "addGenesisPairs",
+      "source_location": {
+        "line": 8,
+        "column": 1,
+        "end_line": 69,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 8,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "contract",
+      "name": "elixor",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 73,
+        "column": 1,
+        "end_line": 75,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 73,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "function",
+      "name": "importGenesisPairs",
+      "data_type": null,
+      "scope": "elixor",
+      "source_location": {
+        "line": 74,
+        "column": 5,
+        "end_line": 74,
+        "end_column": 84
+      },
+      "properties": {
+        "source_location": {
+          "line": 74,
+          "column": 5
+        }
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_5",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 826,
+    "source_line": 827,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "addGenesisPairs",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

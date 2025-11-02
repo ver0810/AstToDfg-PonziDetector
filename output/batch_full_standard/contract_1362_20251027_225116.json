@@ -1,0 +1,7172 @@
+{
+  "contract": "Controlled",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "Controlled",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 29,
+        "column": 1,
+        "end_line": 43,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 29,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "Controlled",
+      "source_location": {
+        "line": 32,
+        "column": 31,
+        "end_line": 32,
+        "end_column": 64
+      },
+      "properties": {
+        "source_location": {
+          "line": 32,
+          "column": 31
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "Controlled",
+      "source_location": {
+        "line": 32,
+        "column": 39,
+        "end_line": 32,
+        "end_column": 63
+      },
+      "properties": {
+        "source_location": {
+          "line": 32,
+          "column": 39
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "Controlled",
+      "source_location": {
+        "line": 32,
+        "column": 39,
+        "end_line": 32,
+        "end_column": 49
+      },
+      "properties": {
+        "source_location": {
+          "line": 32,
+          "column": 39
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "state_variable",
+      "name": "controller",
+      "data_type": "address",
+      "scope": "Controlled",
+      "source_location": {
+        "line": 34,
+        "column": 5,
+        "end_line": 34,
+        "end_column": 31
+      },
+      "properties": {
+        "source_location": {
+          "line": 34,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "constructor_function",
+      "name": "Controlled",
+      "data_type": null,
+      "scope": "Controlled",
+      "source_location": {
+        "line": 36,
+        "column": 5,
+        "end_line": 36,
+        "end_column": 61
+      },
+      "properties": {
+        "source_location": {
+          "line": 36,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "Controlled_function",
+      "source_location": {
+        "line": 36,
+        "column": 36,
+        "end_line": 36,
+        "end_column": 59
+      },
+      "properties": {
+        "source_location": {
+          "line": 36,
+          "column": 36
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "Controlled_function",
+      "source_location": {
+        "line": 36,
+        "column": 49,
+        "end_line": 36,
+        "end_column": 59
+      },
+      "properties": {
+        "source_location": {
+          "line": 36,
+          "column": 49
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "function",
+      "name": "changeController",
+      "data_type": null,
+      "scope": "Controlled",
+      "source_location": {
+        "line": 40,
+        "column": 5,
+        "end_line": 42,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 40,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_10": {
+      "id": "dfg_node_10",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "changeController_function",
+      "source_location": {
+        "line": 41,
+        "column": 9,
+        "end_line": 41,
+        "end_column": 36
+      },
+      "properties": {
+        "source_location": {
+          "line": 41,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_11": {
+      "id": "dfg_node_11",
+      "type": "contract",
+      "name": "TokenController",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 46,
+        "column": 1,
+        "end_line": 68,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 46,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_12": {
+      "id": "dfg_node_12",
+      "type": "function",
+      "name": "proxyPayment",
+      "data_type": null,
+      "scope": "TokenController",
+      "source_location": {
+        "line": 50,
+        "column": 5,
+        "end_line": 50,
+        "end_column": 72
+      },
+      "properties": {
+        "source_location": {
+          "line": 50,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_14": {
+      "id": "dfg_node_14",
+      "type": "parameter",
+      "name": "param_12",
+      "data_type": "bool",
+      "scope": "proxyPayment_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "proxyPayment"
+      }
+    },
+    "dfg_node_15": {
+      "id": "dfg_node_15",
+      "type": "function",
+      "name": "onTransfer",
+      "data_type": null,
+      "scope": "TokenController",
+      "source_location": {
+        "line": 58,
+        "column": 5,
+        "end_line": 58,
+        "end_column": 88
+      },
+      "properties": {
+        "source_location": {
+          "line": 58,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_17": {
+      "id": "dfg_node_17",
+      "type": "parameter",
+      "name": "param_15",
+      "data_type": "bool",
+      "scope": "onTransfer_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "onTransfer"
+      }
+    },
+    "dfg_node_18": {
+      "id": "dfg_node_18",
+      "type": "function",
+      "name": "onApprove",
+      "data_type": null,
+      "scope": "TokenController",
+      "source_location": {
+        "line": 66,
+        "column": 5,
+        "end_line": 67,
+        "end_column": 23
+      },
+      "properties": {
+        "source_location": {
+          "line": 66,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_20": {
+      "id": "dfg_node_20",
+      "type": "parameter",
+      "name": "param_18",
+      "data_type": "bool",
+      "scope": "onApprove_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "onApprove"
+      }
+    },
+    "dfg_node_21": {
+      "id": "dfg_node_21",
+      "type": "contract",
+      "name": "ApproveAndCallFallBack",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 70,
+        "column": 1,
+        "end_line": 72,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 70,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_22": {
+      "id": "dfg_node_22",
+      "type": "function",
+      "name": "receiveApproval",
+      "data_type": null,
+      "scope": "ApproveAndCallFallBack",
+      "source_location": {
+        "line": 71,
+        "column": 5,
+        "end_line": 71,
+        "end_column": 97
+      },
+      "properties": {
+        "source_location": {
+          "line": 71,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_23": {
+      "id": "dfg_node_23",
+      "type": "contract",
+      "name": "MiniMeToken",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 77,
+        "column": 1,
+        "end_line": 560,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 77,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_24": {
+      "id": "dfg_node_24",
+      "type": "state_variable",
+      "name": "name",
+      "data_type": "string",
+      "scope": "MiniMeToken",
+      "source_location": {
+        "line": 79,
+        "column": 5,
+        "end_line": 79,
+        "end_column": 24
+      },
+      "properties": {
+        "source_location": {
+          "line": 79,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_25": {
+      "id": "dfg_node_25",
+      "type": "state_variable",
+      "name": "decimals",
+      "data_type": "uint8",
+      "scope": "MiniMeToken",
+      "source_location": {
+        "line": 80,
+        "column": 5,
+        "end_line": 80,
+        "end_column": 27
+      },
+      "properties": {
+        "source_location": {
+          "line": 80,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_26": {
+      "id": "dfg_node_26",
+      "type": "state_variable",
+      "name": "symbol",
+      "data_type": "string",
+      "scope": "MiniMeToken",
+      "source_location": {
+        "line": 81,
+        "column": 5,
+        "end_line": 81,
+        "end_column": 26
+      },
+      "properties": {
+        "source_location": {
+          "line": 81,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_27": {
+      "id": "dfg_node_27",
+      "type": "state_variable",
+      "name": "version",
+      "data_type": "string",
+      "scope": "MiniMeToken",
+      "source_location": {
+        "line": 82,
+        "column": 5,
+        "end_line": 82,
+        "end_column": 34
+      },
+      "properties": {
+        "source_location": {
+          "line": 82,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_28": {
+      "id": "dfg_node_28",
+      "type": "struct_declaration",
+      "name": null,
+      "data_type": null,
+      "scope": "MiniMeToken",
+      "source_location": {
+        "line": 88,
+        "column": 5,
+        "end_line": 95,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 88,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_29": {
+      "id": "dfg_node_29",
+      "type": "state_variable",
+      "name": "parentToken",
+      "data_type": "MiniMeToken",
+      "scope": "MiniMeToken",
+      "source_location": {
+        "line": 99,
+        "column": 5,
+        "end_line": 99,
+        "end_column": 36
+      },
+      "properties": {
+        "source_location": {
+          "line": 99,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_30": {
+      "id": "dfg_node_30",
+      "type": "state_variable",
+      "name": "parentSnapShotBlock",
+      "data_type": "uint",
+      "scope": "MiniMeToken",
+      "source_location": {
+        "line": 103,
+        "column": 5,
+        "end_line": 103,
+        "end_column": 37
+      },
+      "properties": {
+        "source_location": {
+          "line": 103,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_31": {
+      "id": "dfg_node_31",
+      "type": "state_variable",
+      "name": "creationBlock",
+      "data_type": "uint",
+      "scope": "MiniMeToken",
+      "source_location": {
+        "line": 106,
+        "column": 5,
+        "end_line": 106,
+        "end_column": 31
+      },
+      "properties": {
+        "source_location": {
+          "line": 106,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_32": {
+      "id": "dfg_node_32",
+      "type": "state_variable",
+      "name": "balances",
+      "data_type": "mapping (address => Checkpoint[])",
+      "scope": "MiniMeToken",
+      "source_location": {
+        "line": 111,
+        "column": 5,
+        "end_line": 111,
+        "end_column": 48
+      },
+      "properties": {
+        "source_location": {
+          "line": 111,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_33": {
+      "id": "dfg_node_33",
+      "type": "state_variable",
+      "name": "allowed",
+      "data_type": "mapping (address => mapping (address => uint256))",
+      "scope": "MiniMeToken",
+      "source_location": {
+        "line": 114,
+        "column": 5,
+        "end_line": 114,
+        "end_column": 63
+      },
+      "properties": {
+        "source_location": {
+          "line": 114,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_34": {
+      "id": "dfg_node_34",
+      "type": "state_variable",
+      "name": "totalSupplyHistory",
+      "data_type": "Checkpoint[]",
+      "scope": "MiniMeToken",
+      "source_location": {
+        "line": 117,
+        "column": 5,
+        "end_line": 117,
+        "end_column": 37
+      },
+      "properties": {
+        "source_location": {
+          "line": 117,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_35": {
+      "id": "dfg_node_35",
+      "type": "state_variable",
+      "name": "transfersEnabled",
+      "data_type": "bool",
+      "scope": "MiniMeToken",
+      "source_location": {
+        "line": 120,
+        "column": 5,
+        "end_line": 120,
+        "end_column": 34
+      },
+      "properties": {
+        "source_location": {
+          "line": 120,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_36": {
+      "id": "dfg_node_36",
+      "type": "state_variable",
+      "name": "tokenFactory",
+      "data_type": "MiniMeTokenFactory",
+      "scope": "MiniMeToken",
+      "source_location": {
+        "line": 123,
+        "column": 5,
+        "end_line": 123,
+        "end_column": 44
+      },
+      "properties": {
+        "source_location": {
+          "line": 123,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_37": {
+      "id": "dfg_node_37",
+      "type": "constructor_function",
+      "name": "MiniMeToken",
+      "data_type": null,
+      "scope": "MiniMeToken",
+      "source_location": {
+        "line": 142,
+        "column": 5,
+        "end_line": 159,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 142,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_38": {
+      "id": "dfg_node_38",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "MiniMeToken_function",
+      "source_location": {
+        "line": 151,
+        "column": 9,
+        "end_line": 151,
+        "end_column": 57
+      },
+      "properties": {
+        "source_location": {
+          "line": 151,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_39": {
+      "id": "dfg_node_39",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "MiniMeToken_function",
+      "source_location": {
+        "line": 151,
+        "column": 24,
+        "end_line": 151,
+        "end_column": 57
+      },
+      "properties": {
+        "source_location": {
+          "line": 151,
+          "column": 24
+        }
+      }
+    },
+    "dfg_node_40": {
+      "id": "dfg_node_40",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "MiniMeToken_function",
+      "source_location": {
+        "line": 152,
+        "column": 9,
+        "end_line": 152,
+        "end_column": 26
+      },
+      "properties": {
+        "source_location": {
+          "line": 152,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_41": {
+      "id": "dfg_node_41",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "MiniMeToken_function",
+      "source_location": {
+        "line": 153,
+        "column": 9,
+        "end_line": 153,
+        "end_column": 33
+      },
+      "properties": {
+        "source_location": {
+          "line": 153,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_42": {
+      "id": "dfg_node_42",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "MiniMeToken_function",
+      "source_location": {
+        "line": 154,
+        "column": 9,
+        "end_line": 154,
+        "end_column": 30
+      },
+      "properties": {
+        "source_location": {
+          "line": 154,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_43": {
+      "id": "dfg_node_43",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "MiniMeToken_function",
+      "source_location": {
+        "line": 155,
+        "column": 9,
+        "end_line": 155,
+        "end_column": 48
+      },
+      "properties": {
+        "source_location": {
+          "line": 155,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_44": {
+      "id": "dfg_node_44",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "MiniMeToken_function",
+      "source_location": {
+        "line": 155,
+        "column": 23,
+        "end_line": 155,
+        "end_column": 48
+      },
+      "properties": {
+        "source_location": {
+          "line": 155,
+          "column": 23
+        }
+      }
+    },
+    "dfg_node_45": {
+      "id": "dfg_node_45",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "MiniMeToken_function",
+      "source_location": {
+        "line": 156,
+        "column": 9,
+        "end_line": 156,
+        "end_column": 51
+      },
+      "properties": {
+        "source_location": {
+          "line": 156,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_46": {
+      "id": "dfg_node_46",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "MiniMeToken_function",
+      "source_location": {
+        "line": 157,
+        "column": 9,
+        "end_line": 157,
+        "end_column": 45
+      },
+      "properties": {
+        "source_location": {
+          "line": 157,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_47": {
+      "id": "dfg_node_47",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "MiniMeToken_function",
+      "source_location": {
+        "line": 158,
+        "column": 9,
+        "end_line": 158,
+        "end_column": 37
+      },
+      "properties": {
+        "source_location": {
+          "line": 158,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_48": {
+      "id": "dfg_node_48",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "MiniMeToken_function",
+      "source_location": {
+        "line": 158,
+        "column": 25,
+        "end_line": 158,
+        "end_column": 37
+      },
+      "properties": {
+        "source_location": {
+          "line": 158,
+          "column": 25
+        }
+      }
+    },
+    "dfg_node_49": {
+      "id": "dfg_node_49",
+      "type": "function",
+      "name": "transfer",
+      "data_type": null,
+      "scope": "MiniMeToken",
+      "source_location": {
+        "line": 170,
+        "column": 5,
+        "end_line": 174,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 170,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_50": {
+      "id": "dfg_node_50",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "transfer_function",
+      "source_location": {
+        "line": 171,
+        "column": 9,
+        "end_line": 171,
+        "end_column": 34
+      },
+      "properties": {
+        "source_location": {
+          "line": 171,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_51": {
+      "id": "dfg_node_51",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "transfer_function",
+      "source_location": {
+        "line": 172,
+        "column": 9,
+        "end_line": 172,
+        "end_column": 45
+      },
+      "properties": {
+        "source_location": {
+          "line": 172,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_52": {
+      "id": "dfg_node_52",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "transfer_function",
+      "source_location": {
+        "line": 172,
+        "column": 20,
+        "end_line": 172,
+        "end_column": 30
+      },
+      "properties": {
+        "source_location": {
+          "line": 172,
+          "column": 20
+        }
+      }
+    },
+    "dfg_node_53": {
+      "id": "dfg_node_53",
+      "type": "return_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "transfer_function",
+      "source_location": {
+        "line": 173,
+        "column": 9,
+        "end_line": 173,
+        "end_column": 21
+      },
+      "properties": {
+        "source_location": {
+          "line": 173,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_55": {
+      "id": "dfg_node_55",
+      "type": "parameter",
+      "name": "success",
+      "data_type": "bool",
+      "scope": "transfer_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "transfer"
+      }
+    },
+    "dfg_node_56": {
+      "id": "dfg_node_56",
+      "type": "function",
+      "name": "transferFrom",
+      "data_type": null,
+      "scope": "MiniMeToken",
+      "source_location": {
+        "line": 182,
+        "column": 5,
+        "end_line": 198,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 182,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_57": {
+      "id": "dfg_node_57",
+      "type": "if_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "transferFrom_function",
+      "source_location": {
+        "line": 189,
+        "column": 9,
+        "end_line": 195,
+        "end_column": 10
+      },
+      "properties": {
+        "source_location": {
+          "line": 189,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_58": {
+      "id": "dfg_node_58",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "transferFrom_function",
+      "source_location": {
+        "line": 189,
+        "column": 13,
+        "end_line": 189,
+        "end_column": 37
+      },
+      "properties": {
+        "source_location": {
+          "line": 189,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_59": {
+      "id": "dfg_node_59",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "transferFrom_function",
+      "source_location": {
+        "line": 189,
+        "column": 13,
+        "end_line": 189,
+        "end_column": 23
+      },
+      "properties": {
+        "source_location": {
+          "line": 189,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_60": {
+      "id": "dfg_node_60",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "transferFrom_function",
+      "source_location": {
+        "line": 190,
+        "column": 13,
+        "end_line": 190,
+        "end_column": 38
+      },
+      "properties": {
+        "source_location": {
+          "line": 190,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_61": {
+      "id": "dfg_node_61",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "transferFrom_function",
+      "source_location": {
+        "line": 193,
+        "column": 13,
+        "end_line": 193,
+        "end_column": 59
+      },
+      "properties": {
+        "source_location": {
+          "line": 193,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_62": {
+      "id": "dfg_node_62",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "transferFrom_function",
+      "source_location": {
+        "line": 193,
+        "column": 21,
+        "end_line": 193,
+        "end_column": 58
+      },
+      "properties": {
+        "source_location": {
+          "line": 193,
+          "column": 21
+        }
+      }
+    },
+    "dfg_node_63": {
+      "id": "dfg_node_63",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "transferFrom_function",
+      "source_location": {
+        "line": 193,
+        "column": 36,
+        "end_line": 193,
+        "end_column": 46
+      },
+      "properties": {
+        "source_location": {
+          "line": 193,
+          "column": 36
+        }
+      }
+    },
+    "dfg_node_64": {
+      "id": "dfg_node_64",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "transferFrom_function",
+      "source_location": {
+        "line": 194,
+        "column": 28,
+        "end_line": 194,
+        "end_column": 38
+      },
+      "properties": {
+        "source_location": {
+          "line": 194,
+          "column": 28
+        }
+      }
+    },
+    "dfg_node_65": {
+      "id": "dfg_node_65",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "transferFrom_function",
+      "source_location": {
+        "line": 196,
+        "column": 9,
+        "end_line": 196,
+        "end_column": 40
+      },
+      "properties": {
+        "source_location": {
+          "line": 196,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_66": {
+      "id": "dfg_node_66",
+      "type": "return_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "transferFrom_function",
+      "source_location": {
+        "line": 197,
+        "column": 9,
+        "end_line": 197,
+        "end_column": 21
+      },
+      "properties": {
+        "source_location": {
+          "line": 197,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_68": {
+      "id": "dfg_node_68",
+      "type": "parameter",
+      "name": "success",
+      "data_type": "bool",
+      "scope": "transferFrom_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "transferFrom"
+      }
+    },
+    "dfg_node_69": {
+      "id": "dfg_node_69",
+      "type": "function",
+      "name": "doTransfer",
+      "data_type": null,
+      "scope": "MiniMeToken",
+      "source_location": {
+        "line": 206,
+        "column": 5,
+        "end_line": 243,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 206,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_70": {
+      "id": "dfg_node_70",
+      "type": "if_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "doTransfer_function",
+      "source_location": {
+        "line": 209,
+        "column": 12,
+        "end_line": 212,
+        "end_column": 13
+      },
+      "properties": {
+        "source_location": {
+          "line": 209,
+          "column": 12
+        }
+      }
+    },
+    "dfg_node_71": {
+      "id": "dfg_node_71",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "doTransfer_function",
+      "source_location": {
+        "line": 209,
+        "column": 16,
+        "end_line": 209,
+        "end_column": 28
+      },
+      "properties": {
+        "source_location": {
+          "line": 209,
+          "column": 16
+        }
+      }
+    },
+    "dfg_node_72": {
+      "id": "dfg_node_72",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "doTransfer_function",
+      "source_location": {
+        "line": 210,
+        "column": 16,
+        "end_line": 210,
+        "end_column": 45
+      },
+      "properties": {
+        "source_location": {
+          "line": 210,
+          "column": 16
+        }
+      }
+    },
+    "dfg_node_73": {
+      "id": "dfg_node_73",
+      "type": "return_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "doTransfer_function",
+      "source_location": {
+        "line": 211,
+        "column": 16,
+        "end_line": 211,
+        "end_column": 23
+      },
+      "properties": {
+        "source_location": {
+          "line": 211,
+          "column": 16
+        }
+      }
+    },
+    "dfg_node_74": {
+      "id": "dfg_node_74",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "doTransfer_function",
+      "source_location": {
+        "line": 214,
+        "column": 12,
+        "end_line": 214,
+        "end_column": 55
+      },
+      "properties": {
+        "source_location": {
+          "line": 214,
+          "column": 12
+        }
+      }
+    },
+    "dfg_node_75": {
+      "id": "dfg_node_75",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "doTransfer_function",
+      "source_location": {
+        "line": 214,
+        "column": 20,
+        "end_line": 214,
+        "end_column": 54
+      },
+      "properties": {
+        "source_location": {
+          "line": 214,
+          "column": 20
+        }
+      }
+    },
+    "dfg_node_76": {
+      "id": "dfg_node_76",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "doTransfer_function",
+      "source_location": {
+        "line": 214,
+        "column": 42,
+        "end_line": 214,
+        "end_column": 54
+      },
+      "properties": {
+        "source_location": {
+          "line": 214,
+          "column": 42
+        }
+      }
+    },
+    "dfg_node_77": {
+      "id": "dfg_node_77",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "doTransfer_function",
+      "source_location": {
+        "line": 217,
+        "column": 12,
+        "end_line": 217,
+        "end_column": 57
+      },
+      "properties": {
+        "source_location": {
+          "line": 217,
+          "column": 12
+        }
+      }
+    },
+    "dfg_node_78": {
+      "id": "dfg_node_78",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "doTransfer_function",
+      "source_location": {
+        "line": 217,
+        "column": 20,
+        "end_line": 217,
+        "end_column": 56
+      },
+      "properties": {
+        "source_location": {
+          "line": 217,
+          "column": 20
+        }
+      }
+    },
+    "dfg_node_79": {
+      "id": "dfg_node_79",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "doTransfer_function",
+      "source_location": {
+        "line": 217,
+        "column": 21,
+        "end_line": 217,
+        "end_column": 29
+      },
+      "properties": {
+        "source_location": {
+          "line": 217,
+          "column": 21
+        }
+      }
+    },
+    "dfg_node_80": {
+      "id": "dfg_node_80",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "doTransfer_function",
+      "source_location": {
+        "line": 217,
+        "column": 35,
+        "end_line": 217,
+        "end_column": 55
+      },
+      "properties": {
+        "source_location": {
+          "line": 217,
+          "column": 35
+        }
+      }
+    },
+    "dfg_node_81": {
+      "id": "dfg_node_81",
+      "type": "local_variable",
+      "name": "previousBalanceFrom",
+      "data_type": "var",
+      "scope": "doTransfer_function",
+      "source_location": {
+        "line": 221,
+        "column": 12,
+        "end_line": 221,
+        "end_column": 35
+      },
+      "properties": {
+        "source_location": {
+          "line": 221,
+          "column": 12
+        }
+      }
+    },
+    "dfg_node_82": {
+      "id": "dfg_node_82",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "doTransfer_function",
+      "source_location": {
+        "line": 221,
+        "column": 38,
+        "end_line": 221,
+        "end_column": 70
+      },
+      "properties": {
+        "source_location": {
+          "line": 221,
+          "column": 38
+        }
+      }
+    },
+    "dfg_node_83": {
+      "id": "dfg_node_83",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "doTransfer_function",
+      "source_location": {
+        "line": 221,
+        "column": 57,
+        "end_line": 221,
+        "end_column": 69
+      },
+      "properties": {
+        "source_location": {
+          "line": 221,
+          "column": 57
+        }
+      }
+    },
+    "dfg_node_84": {
+      "id": "dfg_node_84",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "doTransfer_function",
+      "source_location": {
+        "line": 223,
+        "column": 12,
+        "end_line": 223,
+        "end_column": 51
+      },
+      "properties": {
+        "source_location": {
+          "line": 223,
+          "column": 12
+        }
+      }
+    },
+    "dfg_node_85": {
+      "id": "dfg_node_85",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "doTransfer_function",
+      "source_location": {
+        "line": 223,
+        "column": 20,
+        "end_line": 223,
+        "end_column": 50
+      },
+      "properties": {
+        "source_location": {
+          "line": 223,
+          "column": 20
+        }
+      }
+    },
+    "dfg_node_86": {
+      "id": "dfg_node_86",
+      "type": "if_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "doTransfer_function",
+      "source_location": {
+        "line": 226,
+        "column": 12,
+        "end_line": 228,
+        "end_column": 13
+      },
+      "properties": {
+        "source_location": {
+          "line": 226,
+          "column": 12
+        }
+      }
+    },
+    "dfg_node_87": {
+      "id": "dfg_node_87",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "doTransfer_function",
+      "source_location": {
+        "line": 226,
+        "column": 16,
+        "end_line": 226,
+        "end_column": 38
+      },
+      "properties": {
+        "source_location": {
+          "line": 226,
+          "column": 16
+        }
+      }
+    },
+    "dfg_node_88": {
+      "id": "dfg_node_88",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "doTransfer_function",
+      "source_location": {
+        "line": 227,
+        "column": 16,
+        "end_line": 227,
+        "end_column": 84
+      },
+      "properties": {
+        "source_location": {
+          "line": 227,
+          "column": 16
+        }
+      }
+    },
+    "dfg_node_89": {
+      "id": "dfg_node_89",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "doTransfer_function",
+      "source_location": {
+        "line": 227,
+        "column": 24,
+        "end_line": 227,
+        "end_column": 83
+      },
+      "properties": {
+        "source_location": {
+          "line": 227,
+          "column": 24
+        }
+      }
+    },
+    "dfg_node_90": {
+      "id": "dfg_node_90",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "doTransfer_function",
+      "source_location": {
+        "line": 227,
+        "column": 24,
+        "end_line": 227,
+        "end_column": 62
+      },
+      "properties": {
+        "source_location": {
+          "line": 227,
+          "column": 24
+        }
+      }
+    },
+    "dfg_node_91": {
+      "id": "dfg_node_91",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "doTransfer_function",
+      "source_location": {
+        "line": 227,
+        "column": 24,
+        "end_line": 227,
+        "end_column": 51
+      },
+      "properties": {
+        "source_location": {
+          "line": 227,
+          "column": 24
+        }
+      }
+    },
+    "dfg_node_92": {
+      "id": "dfg_node_92",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "doTransfer_function",
+      "source_location": {
+        "line": 232,
+        "column": 12,
+        "end_line": 232,
+        "end_column": 76
+      },
+      "properties": {
+        "source_location": {
+          "line": 232,
+          "column": 12
+        }
+      }
+    },
+    "dfg_node_93": {
+      "id": "dfg_node_93",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "doTransfer_function",
+      "source_location": {
+        "line": 232,
+        "column": 46,
+        "end_line": 232,
+        "end_column": 75
+      },
+      "properties": {
+        "source_location": {
+          "line": 232,
+          "column": 46
+        }
+      }
+    },
+    "dfg_node_94": {
+      "id": "dfg_node_94",
+      "type": "local_variable",
+      "name": "previousBalanceTo",
+      "data_type": "var",
+      "scope": "doTransfer_function",
+      "source_location": {
+        "line": 236,
+        "column": 12,
+        "end_line": 236,
+        "end_column": 33
+      },
+      "properties": {
+        "source_location": {
+          "line": 236,
+          "column": 12
+        }
+      }
+    },
+    "dfg_node_95": {
+      "id": "dfg_node_95",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "doTransfer_function",
+      "source_location": {
+        "line": 236,
+        "column": 36,
+        "end_line": 236,
+        "end_column": 66
+      },
+      "properties": {
+        "source_location": {
+          "line": 236,
+          "column": 36
+        }
+      }
+    },
+    "dfg_node_96": {
+      "id": "dfg_node_96",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "doTransfer_function",
+      "source_location": {
+        "line": 236,
+        "column": 53,
+        "end_line": 236,
+        "end_column": 65
+      },
+      "properties": {
+        "source_location": {
+          "line": 236,
+          "column": 53
+        }
+      }
+    },
+    "dfg_node_97": {
+      "id": "dfg_node_97",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "doTransfer_function",
+      "source_location": {
+        "line": 237,
+        "column": 12,
+        "end_line": 237,
+        "end_column": 69
+      },
+      "properties": {
+        "source_location": {
+          "line": 237,
+          "column": 12
+        }
+      }
+    },
+    "dfg_node_98": {
+      "id": "dfg_node_98",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "doTransfer_function",
+      "source_location": {
+        "line": 237,
+        "column": 20,
+        "end_line": 237,
+        "end_column": 68
+      },
+      "properties": {
+        "source_location": {
+          "line": 237,
+          "column": 20
+        }
+      }
+    },
+    "dfg_node_99": {
+      "id": "dfg_node_99",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "doTransfer_function",
+      "source_location": {
+        "line": 237,
+        "column": 20,
+        "end_line": 237,
+        "end_column": 47
+      },
+      "properties": {
+        "source_location": {
+          "line": 237,
+          "column": 20
+        }
+      }
+    },
+    "dfg_node_100": {
+      "id": "dfg_node_100",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "doTransfer_function",
+      "source_location": {
+        "line": 238,
+        "column": 12,
+        "end_line": 238,
+        "end_column": 72
+      },
+      "properties": {
+        "source_location": {
+          "line": 238,
+          "column": 12
+        }
+      }
+    },
+    "dfg_node_101": {
+      "id": "dfg_node_101",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "doTransfer_function",
+      "source_location": {
+        "line": 238,
+        "column": 44,
+        "end_line": 238,
+        "end_column": 71
+      },
+      "properties": {
+        "source_location": {
+          "line": 238,
+          "column": 44
+        }
+      }
+    },
+    "dfg_node_102": {
+      "id": "dfg_node_102",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "doTransfer_function",
+      "source_location": {
+        "line": 241,
+        "column": 12,
+        "end_line": 241,
+        "end_column": 41
+      },
+      "properties": {
+        "source_location": {
+          "line": 241,
+          "column": 12
+        }
+      }
+    },
+    "dfg_node_103": {
+      "id": "dfg_node_103",
+      "type": "function",
+      "name": "balanceOf",
+      "data_type": null,
+      "scope": "MiniMeToken",
+      "source_location": {
+        "line": 247,
+        "column": 5,
+        "end_line": 249,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 247,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_104": {
+      "id": "dfg_node_104",
+      "type": "return_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "balanceOf_function",
+      "source_location": {
+        "line": 248,
+        "column": 9,
+        "end_line": 248,
+        "end_column": 50
+      },
+      "properties": {
+        "source_location": {
+          "line": 248,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_105": {
+      "id": "dfg_node_105",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "balanceOf_function",
+      "source_location": {
+        "line": 248,
+        "column": 16,
+        "end_line": 248,
+        "end_column": 49
+      },
+      "properties": {
+        "source_location": {
+          "line": 248,
+          "column": 16
+        }
+      }
+    },
+    "dfg_node_106": {
+      "id": "dfg_node_106",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "balanceOf_function",
+      "source_location": {
+        "line": 248,
+        "column": 36,
+        "end_line": 248,
+        "end_column": 48
+      },
+      "properties": {
+        "source_location": {
+          "line": 248,
+          "column": 36
+        }
+      }
+    },
+    "dfg_node_108": {
+      "id": "dfg_node_108",
+      "type": "parameter",
+      "name": "balance",
+      "data_type": "uint256",
+      "scope": "balanceOf_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "balanceOf"
+      }
+    },
+    "dfg_node_109": {
+      "id": "dfg_node_109",
+      "type": "function",
+      "name": "approve",
+      "data_type": null,
+      "scope": "MiniMeToken",
+      "source_location": {
+        "line": 257,
+        "column": 5,
+        "end_line": 274,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 257,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_110": {
+      "id": "dfg_node_110",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "approve_function",
+      "source_location": {
+        "line": 258,
+        "column": 9,
+        "end_line": 258,
+        "end_column": 34
+      },
+      "properties": {
+        "source_location": {
+          "line": 258,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_111": {
+      "id": "dfg_node_111",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "approve_function",
+      "source_location": {
+        "line": 264,
+        "column": 9,
+        "end_line": 264,
+        "end_column": 72
+      },
+      "properties": {
+        "source_location": {
+          "line": 264,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_112": {
+      "id": "dfg_node_112",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "approve_function",
+      "source_location": {
+        "line": 264,
+        "column": 17,
+        "end_line": 264,
+        "end_column": 71
+      },
+      "properties": {
+        "source_location": {
+          "line": 264,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_113": {
+      "id": "dfg_node_113",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "approve_function",
+      "source_location": {
+        "line": 264,
+        "column": 18,
+        "end_line": 264,
+        "end_column": 30
+      },
+      "properties": {
+        "source_location": {
+          "line": 264,
+          "column": 18
+        }
+      }
+    },
+    "dfg_node_114": {
+      "id": "dfg_node_114",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "approve_function",
+      "source_location": {
+        "line": 264,
+        "column": 36,
+        "end_line": 264,
+        "end_column": 70
+      },
+      "properties": {
+        "source_location": {
+          "line": 264,
+          "column": 36
+        }
+      }
+    },
+    "dfg_node_115": {
+      "id": "dfg_node_115",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "approve_function",
+      "source_location": {
+        "line": 264,
+        "column": 44,
+        "end_line": 264,
+        "end_column": 54
+      },
+      "properties": {
+        "source_location": {
+          "line": 264,
+          "column": 44
+        }
+      }
+    },
+    "dfg_node_116": {
+      "id": "dfg_node_116",
+      "type": "if_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "approve_function",
+      "source_location": {
+        "line": 267,
+        "column": 9,
+        "end_line": 269,
+        "end_column": 10
+      },
+      "properties": {
+        "source_location": {
+          "line": 267,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_117": {
+      "id": "dfg_node_117",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "approve_function",
+      "source_location": {
+        "line": 267,
+        "column": 13,
+        "end_line": 267,
+        "end_column": 35
+      },
+      "properties": {
+        "source_location": {
+          "line": 267,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_118": {
+      "id": "dfg_node_118",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "approve_function",
+      "source_location": {
+        "line": 268,
+        "column": 13,
+        "end_line": 268,
+        "end_column": 90
+      },
+      "properties": {
+        "source_location": {
+          "line": 268,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_119": {
+      "id": "dfg_node_119",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "approve_function",
+      "source_location": {
+        "line": 268,
+        "column": 21,
+        "end_line": 268,
+        "end_column": 89
+      },
+      "properties": {
+        "source_location": {
+          "line": 268,
+          "column": 21
+        }
+      }
+    },
+    "dfg_node_120": {
+      "id": "dfg_node_120",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "approve_function",
+      "source_location": {
+        "line": 268,
+        "column": 21,
+        "end_line": 268,
+        "end_column": 58
+      },
+      "properties": {
+        "source_location": {
+          "line": 268,
+          "column": 21
+        }
+      }
+    },
+    "dfg_node_121": {
+      "id": "dfg_node_121",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "approve_function",
+      "source_location": {
+        "line": 268,
+        "column": 21,
+        "end_line": 268,
+        "end_column": 48
+      },
+      "properties": {
+        "source_location": {
+          "line": 268,
+          "column": 21
+        }
+      }
+    },
+    "dfg_node_122": {
+      "id": "dfg_node_122",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "approve_function",
+      "source_location": {
+        "line": 268,
+        "column": 59,
+        "end_line": 268,
+        "end_column": 69
+      },
+      "properties": {
+        "source_location": {
+          "line": 268,
+          "column": 59
+        }
+      }
+    },
+    "dfg_node_123": {
+      "id": "dfg_node_123",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "approve_function",
+      "source_location": {
+        "line": 271,
+        "column": 9,
+        "end_line": 271,
+        "end_column": 48
+      },
+      "properties": {
+        "source_location": {
+          "line": 271,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_124": {
+      "id": "dfg_node_124",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "approve_function",
+      "source_location": {
+        "line": 271,
+        "column": 17,
+        "end_line": 271,
+        "end_column": 27
+      },
+      "properties": {
+        "source_location": {
+          "line": 271,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_125": {
+      "id": "dfg_node_125",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "approve_function",
+      "source_location": {
+        "line": 272,
+        "column": 9,
+        "end_line": 272,
+        "end_column": 48
+      },
+      "properties": {
+        "source_location": {
+          "line": 272,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_126": {
+      "id": "dfg_node_126",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "approve_function",
+      "source_location": {
+        "line": 272,
+        "column": 18,
+        "end_line": 272,
+        "end_column": 28
+      },
+      "properties": {
+        "source_location": {
+          "line": 272,
+          "column": 18
+        }
+      }
+    },
+    "dfg_node_127": {
+      "id": "dfg_node_127",
+      "type": "return_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "approve_function",
+      "source_location": {
+        "line": 273,
+        "column": 9,
+        "end_line": 273,
+        "end_column": 21
+      },
+      "properties": {
+        "source_location": {
+          "line": 273,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_129": {
+      "id": "dfg_node_129",
+      "type": "parameter",
+      "name": "success",
+      "data_type": "bool",
+      "scope": "approve_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "approve"
+      }
+    },
+    "dfg_node_130": {
+      "id": "dfg_node_130",
+      "type": "function",
+      "name": "allowance",
+      "data_type": null,
+      "scope": "MiniMeToken",
+      "source_location": {
+        "line": 281,
+        "column": 5,
+        "end_line": 284,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 281,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_131": {
+      "id": "dfg_node_131",
+      "type": "return_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "allowance_function",
+      "source_location": {
+        "line": 283,
+        "column": 9,
+        "end_line": 283,
+        "end_column": 42
+      },
+      "properties": {
+        "source_location": {
+          "line": 283,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_133": {
+      "id": "dfg_node_133",
+      "type": "parameter",
+      "name": "remaining",
+      "data_type": "uint256",
+      "scope": "allowance_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "allowance"
+      }
+    },
+    "dfg_node_134": {
+      "id": "dfg_node_134",
+      "type": "function",
+      "name": "approveAndCall",
+      "data_type": null,
+      "scope": "MiniMeToken",
+      "source_location": {
+        "line": 293,
+        "column": 5,
+        "end_line": 305,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 293,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_135": {
+      "id": "dfg_node_135",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "approveAndCall_function",
+      "source_location": {
+        "line": 295,
+        "column": 9,
+        "end_line": 295,
+        "end_column": 44
+      },
+      "properties": {
+        "source_location": {
+          "line": 295,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_136": {
+      "id": "dfg_node_136",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "approveAndCall_function",
+      "source_location": {
+        "line": 295,
+        "column": 17,
+        "end_line": 295,
+        "end_column": 43
+      },
+      "properties": {
+        "source_location": {
+          "line": 295,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_137": {
+      "id": "dfg_node_137",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "approveAndCall_function",
+      "source_location": {
+        "line": 297,
+        "column": 9,
+        "end_line": 302,
+        "end_column": 10
+      },
+      "properties": {
+        "source_location": {
+          "line": 297,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_138": {
+      "id": "dfg_node_138",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "approveAndCall_function",
+      "source_location": {
+        "line": 297,
+        "column": 9,
+        "end_line": 297,
+        "end_column": 57
+      },
+      "properties": {
+        "source_location": {
+          "line": 297,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_139": {
+      "id": "dfg_node_139",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "approveAndCall_function",
+      "source_location": {
+        "line": 297,
+        "column": 9,
+        "end_line": 297,
+        "end_column": 41
+      },
+      "properties": {
+        "source_location": {
+          "line": 297,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_140": {
+      "id": "dfg_node_140",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "approveAndCall_function",
+      "source_location": {
+        "line": 298,
+        "column": 13,
+        "end_line": 298,
+        "end_column": 23
+      },
+      "properties": {
+        "source_location": {
+          "line": 298,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_141": {
+      "id": "dfg_node_141",
+      "type": "return_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "approveAndCall_function",
+      "source_location": {
+        "line": 304,
+        "column": 9,
+        "end_line": 304,
+        "end_column": 21
+      },
+      "properties": {
+        "source_location": {
+          "line": 304,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_143": {
+      "id": "dfg_node_143",
+      "type": "parameter",
+      "name": "success",
+      "data_type": "bool",
+      "scope": "approveAndCall_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "approveAndCall"
+      }
+    },
+    "dfg_node_144": {
+      "id": "dfg_node_144",
+      "type": "function",
+      "name": "totalSupply",
+      "data_type": null,
+      "scope": "MiniMeToken",
+      "source_location": {
+        "line": 309,
+        "column": 5,
+        "end_line": 311,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 309,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_145": {
+      "id": "dfg_node_145",
+      "type": "return_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "totalSupply_function",
+      "source_location": {
+        "line": 310,
+        "column": 9,
+        "end_line": 310,
+        "end_column": 44
+      },
+      "properties": {
+        "source_location": {
+          "line": 310,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_146": {
+      "id": "dfg_node_146",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "totalSupply_function",
+      "source_location": {
+        "line": 310,
+        "column": 16,
+        "end_line": 310,
+        "end_column": 43
+      },
+      "properties": {
+        "source_location": {
+          "line": 310,
+          "column": 16
+        }
+      }
+    },
+    "dfg_node_147": {
+      "id": "dfg_node_147",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "totalSupply_function",
+      "source_location": {
+        "line": 310,
+        "column": 30,
+        "end_line": 310,
+        "end_column": 42
+      },
+      "properties": {
+        "source_location": {
+          "line": 310,
+          "column": 30
+        }
+      }
+    },
+    "dfg_node_149": {
+      "id": "dfg_node_149",
+      "type": "parameter",
+      "name": "param_147",
+      "data_type": "uint",
+      "scope": "totalSupply_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "totalSupply"
+      }
+    },
+    "dfg_node_150": {
+      "id": "dfg_node_150",
+      "type": "function",
+      "name": "balanceOfAt",
+      "data_type": null,
+      "scope": "MiniMeToken",
+      "source_location": {
+        "line": 322,
+        "column": 5,
+        "end_line": 343,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 322,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_151": {
+      "id": "dfg_node_151",
+      "type": "if_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "balanceOfAt_function",
+      "source_location": {
+        "line": 330,
+        "column": 9,
+        "end_line": 342,
+        "end_column": 10
+      },
+      "properties": {
+        "source_location": {
+          "line": 330,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_152": {
+      "id": "dfg_node_152",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "balanceOfAt_function",
+      "source_location": {
+        "line": 330,
+        "column": 13,
+        "end_line": 331,
+        "end_column": 62
+      },
+      "properties": {
+        "source_location": {
+          "line": 330,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_153": {
+      "id": "dfg_node_153",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "balanceOfAt_function",
+      "source_location": {
+        "line": 330,
+        "column": 14,
+        "end_line": 330,
+        "end_column": 42
+      },
+      "properties": {
+        "source_location": {
+          "line": 330,
+          "column": 14
+        }
+      }
+    },
+    "dfg_node_154": {
+      "id": "dfg_node_154",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "balanceOfAt_function",
+      "source_location": {
+        "line": 330,
+        "column": 14,
+        "end_line": 330,
+        "end_column": 37
+      },
+      "properties": {
+        "source_location": {
+          "line": 330,
+          "column": 14
+        }
+      }
+    },
+    "dfg_node_155": {
+      "id": "dfg_node_155",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "balanceOfAt_function",
+      "source_location": {
+        "line": 331,
+        "column": 17,
+        "end_line": 331,
+        "end_column": 61
+      },
+      "properties": {
+        "source_location": {
+          "line": 331,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_156": {
+      "id": "dfg_node_156",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "balanceOfAt_function",
+      "source_location": {
+        "line": 331,
+        "column": 17,
+        "end_line": 331,
+        "end_column": 46
+      },
+      "properties": {
+        "source_location": {
+          "line": 331,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_157": {
+      "id": "dfg_node_157",
+      "type": "if_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "balanceOfAt_function",
+      "source_location": {
+        "line": 332,
+        "column": 13,
+        "end_line": 337,
+        "end_column": 14
+      },
+      "properties": {
+        "source_location": {
+          "line": 332,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_158": {
+      "id": "dfg_node_158",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "balanceOfAt_function",
+      "source_location": {
+        "line": 332,
+        "column": 17,
+        "end_line": 332,
+        "end_column": 42
+      },
+      "properties": {
+        "source_location": {
+          "line": 332,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_159": {
+      "id": "dfg_node_159",
+      "type": "return_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "balanceOfAt_function",
+      "source_location": {
+        "line": 333,
+        "column": 17,
+        "end_line": 333,
+        "end_column": 96
+      },
+      "properties": {
+        "source_location": {
+          "line": 333,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_160": {
+      "id": "dfg_node_160",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "balanceOfAt_function",
+      "source_location": {
+        "line": 333,
+        "column": 24,
+        "end_line": 333,
+        "end_column": 95
+      },
+      "properties": {
+        "source_location": {
+          "line": 333,
+          "column": 24
+        }
+      }
+    },
+    "dfg_node_161": {
+      "id": "dfg_node_161",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "balanceOfAt_function",
+      "source_location": {
+        "line": 333,
+        "column": 24,
+        "end_line": 333,
+        "end_column": 47
+      },
+      "properties": {
+        "source_location": {
+          "line": 333,
+          "column": 24
+        }
+      }
+    },
+    "dfg_node_162": {
+      "id": "dfg_node_162",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "balanceOfAt_function",
+      "source_location": {
+        "line": 333,
+        "column": 56,
+        "end_line": 333,
+        "end_column": 94
+      },
+      "properties": {
+        "source_location": {
+          "line": 333,
+          "column": 56
+        }
+      }
+    },
+    "dfg_node_163": {
+      "id": "dfg_node_163",
+      "type": "return_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "balanceOfAt_function",
+      "source_location": {
+        "line": 336,
+        "column": 17,
+        "end_line": 336,
+        "end_column": 26
+      },
+      "properties": {
+        "source_location": {
+          "line": 336,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_164": {
+      "id": "dfg_node_164",
+      "type": "return_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "balanceOfAt_function",
+      "source_location": {
+        "line": 341,
+        "column": 13,
+        "end_line": 341,
+        "end_column": 63
+      },
+      "properties": {
+        "source_location": {
+          "line": 341,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_165": {
+      "id": "dfg_node_165",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "balanceOfAt_function",
+      "source_location": {
+        "line": 341,
+        "column": 20,
+        "end_line": 341,
+        "end_column": 62
+      },
+      "properties": {
+        "source_location": {
+          "line": 341,
+          "column": 20
+        }
+      }
+    },
+    "dfg_node_167": {
+      "id": "dfg_node_167",
+      "type": "parameter",
+      "name": "param_165",
+      "data_type": "uint",
+      "scope": "balanceOfAt_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "balanceOfAt"
+      }
+    },
+    "dfg_node_168": {
+      "id": "dfg_node_168",
+      "type": "function",
+      "name": "totalSupplyAt",
+      "data_type": null,
+      "scope": "MiniMeToken",
+      "source_location": {
+        "line": 348,
+        "column": 5,
+        "end_line": 367,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 348,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_169": {
+      "id": "dfg_node_169",
+      "type": "if_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "totalSupplyAt_function",
+      "source_location": {
+        "line": 355,
+        "column": 9,
+        "end_line": 366,
+        "end_column": 10
+      },
+      "properties": {
+        "source_location": {
+          "line": 355,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_170": {
+      "id": "dfg_node_170",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "totalSupplyAt_function",
+      "source_location": {
+        "line": 355,
+        "column": 13,
+        "end_line": 356,
+        "end_column": 64
+      },
+      "properties": {
+        "source_location": {
+          "line": 355,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_171": {
+      "id": "dfg_node_171",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "totalSupplyAt_function",
+      "source_location": {
+        "line": 355,
+        "column": 14,
+        "end_line": 355,
+        "end_column": 44
+      },
+      "properties": {
+        "source_location": {
+          "line": 355,
+          "column": 14
+        }
+      }
+    },
+    "dfg_node_172": {
+      "id": "dfg_node_172",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "totalSupplyAt_function",
+      "source_location": {
+        "line": 355,
+        "column": 14,
+        "end_line": 355,
+        "end_column": 39
+      },
+      "properties": {
+        "source_location": {
+          "line": 355,
+          "column": 14
+        }
+      }
+    },
+    "dfg_node_173": {
+      "id": "dfg_node_173",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "totalSupplyAt_function",
+      "source_location": {
+        "line": 356,
+        "column": 17,
+        "end_line": 356,
+        "end_column": 63
+      },
+      "properties": {
+        "source_location": {
+          "line": 356,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_174": {
+      "id": "dfg_node_174",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "totalSupplyAt_function",
+      "source_location": {
+        "line": 356,
+        "column": 17,
+        "end_line": 356,
+        "end_column": 48
+      },
+      "properties": {
+        "source_location": {
+          "line": 356,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_175": {
+      "id": "dfg_node_175",
+      "type": "if_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "totalSupplyAt_function",
+      "source_location": {
+        "line": 357,
+        "column": 13,
+        "end_line": 361,
+        "end_column": 14
+      },
+      "properties": {
+        "source_location": {
+          "line": 357,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_176": {
+      "id": "dfg_node_176",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "totalSupplyAt_function",
+      "source_location": {
+        "line": 357,
+        "column": 17,
+        "end_line": 357,
+        "end_column": 42
+      },
+      "properties": {
+        "source_location": {
+          "line": 357,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_177": {
+      "id": "dfg_node_177",
+      "type": "return_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "totalSupplyAt_function",
+      "source_location": {
+        "line": 358,
+        "column": 17,
+        "end_line": 358,
+        "end_column": 90
+      },
+      "properties": {
+        "source_location": {
+          "line": 358,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_178": {
+      "id": "dfg_node_178",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "totalSupplyAt_function",
+      "source_location": {
+        "line": 358,
+        "column": 24,
+        "end_line": 358,
+        "end_column": 89
+      },
+      "properties": {
+        "source_location": {
+          "line": 358,
+          "column": 24
+        }
+      }
+    },
+    "dfg_node_179": {
+      "id": "dfg_node_179",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "totalSupplyAt_function",
+      "source_location": {
+        "line": 358,
+        "column": 24,
+        "end_line": 358,
+        "end_column": 49
+      },
+      "properties": {
+        "source_location": {
+          "line": 358,
+          "column": 24
+        }
+      }
+    },
+    "dfg_node_180": {
+      "id": "dfg_node_180",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "totalSupplyAt_function",
+      "source_location": {
+        "line": 358,
+        "column": 50,
+        "end_line": 358,
+        "end_column": 88
+      },
+      "properties": {
+        "source_location": {
+          "line": 358,
+          "column": 50
+        }
+      }
+    },
+    "dfg_node_181": {
+      "id": "dfg_node_181",
+      "type": "return_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "totalSupplyAt_function",
+      "source_location": {
+        "line": 360,
+        "column": 17,
+        "end_line": 360,
+        "end_column": 26
+      },
+      "properties": {
+        "source_location": {
+          "line": 360,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_182": {
+      "id": "dfg_node_182",
+      "type": "return_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "totalSupplyAt_function",
+      "source_location": {
+        "line": 365,
+        "column": 13,
+        "end_line": 365,
+        "end_column": 65
+      },
+      "properties": {
+        "source_location": {
+          "line": 365,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_183": {
+      "id": "dfg_node_183",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "totalSupplyAt_function",
+      "source_location": {
+        "line": 365,
+        "column": 20,
+        "end_line": 365,
+        "end_column": 64
+      },
+      "properties": {
+        "source_location": {
+          "line": 365,
+          "column": 20
+        }
+      }
+    },
+    "dfg_node_185": {
+      "id": "dfg_node_185",
+      "type": "parameter",
+      "name": "param_183",
+      "data_type": "uint",
+      "scope": "totalSupplyAt_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "totalSupplyAt"
+      }
+    },
+    "dfg_node_186": {
+      "id": "dfg_node_186",
+      "type": "function",
+      "name": "createCloneToken",
+      "data_type": null,
+      "scope": "MiniMeToken",
+      "source_location": {
+        "line": 383,
+        "column": 5,
+        "end_line": 405,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 383,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_187": {
+      "id": "dfg_node_187",
+      "type": "if_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "createCloneToken_function",
+      "source_location": {
+        "line": 390,
+        "column": 9,
+        "end_line": 390,
+        "end_column": 64
+      },
+      "properties": {
+        "source_location": {
+          "line": 390,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_188": {
+      "id": "dfg_node_188",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "createCloneToken_function",
+      "source_location": {
+        "line": 390,
+        "column": 13,
+        "end_line": 390,
+        "end_column": 32
+      },
+      "properties": {
+        "source_location": {
+          "line": 390,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_189": {
+      "id": "dfg_node_189",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "createCloneToken_function",
+      "source_location": {
+        "line": 390,
+        "column": 34,
+        "end_line": 390,
+        "end_column": 63
+      },
+      "properties": {
+        "source_location": {
+          "line": 390,
+          "column": 34
+        }
+      }
+    },
+    "dfg_node_190": {
+      "id": "dfg_node_190",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "createCloneToken_function",
+      "source_location": {
+        "line": 390,
+        "column": 51,
+        "end_line": 390,
+        "end_column": 63
+      },
+      "properties": {
+        "source_location": {
+          "line": 390,
+          "column": 51
+        }
+      }
+    },
+    "dfg_node_191": {
+      "id": "dfg_node_191",
+      "type": "local_variable",
+      "name": "cloneToken",
+      "data_type": "MiniMeToken",
+      "scope": "createCloneToken_function",
+      "source_location": {
+        "line": 391,
+        "column": 9,
+        "end_line": 391,
+        "end_column": 31
+      },
+      "properties": {
+        "source_location": {
+          "line": 391,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_192": {
+      "id": "dfg_node_192",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "createCloneToken_function",
+      "source_location": {
+        "line": 391,
+        "column": 34,
+        "end_line": 398,
+        "end_column": 14
+      },
+      "properties": {
+        "source_location": {
+          "line": 391,
+          "column": 34
+        }
+      }
+    },
+    "dfg_node_193": {
+      "id": "dfg_node_193",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "createCloneToken_function",
+      "source_location": {
+        "line": 391,
+        "column": 34,
+        "end_line": 391,
+        "end_column": 63
+      },
+      "properties": {
+        "source_location": {
+          "line": 391,
+          "column": 34
+        }
+      }
+    },
+    "dfg_node_194": {
+      "id": "dfg_node_194",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "createCloneToken_function",
+      "source_location": {
+        "line": 400,
+        "column": 9,
+        "end_line": 400,
+        "end_column": 48
+      },
+      "properties": {
+        "source_location": {
+          "line": 400,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_195": {
+      "id": "dfg_node_195",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "createCloneToken_function",
+      "source_location": {
+        "line": 400,
+        "column": 9,
+        "end_line": 400,
+        "end_column": 36
+      },
+      "properties": {
+        "source_location": {
+          "line": 400,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_196": {
+      "id": "dfg_node_196",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "createCloneToken_function",
+      "source_location": {
+        "line": 400,
+        "column": 37,
+        "end_line": 400,
+        "end_column": 47
+      },
+      "properties": {
+        "source_location": {
+          "line": 400,
+          "column": 37
+        }
+      }
+    },
+    "dfg_node_197": {
+      "id": "dfg_node_197",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "createCloneToken_function",
+      "source_location": {
+        "line": 403,
+        "column": 9,
+        "end_line": 403,
+        "end_column": 59
+      },
+      "properties": {
+        "source_location": {
+          "line": 403,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_198": {
+      "id": "dfg_node_198",
+      "type": "return_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "createCloneToken_function",
+      "source_location": {
+        "line": 404,
+        "column": 9,
+        "end_line": 404,
+        "end_column": 36
+      },
+      "properties": {
+        "source_location": {
+          "line": 404,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_200": {
+      "id": "dfg_node_200",
+      "type": "parameter",
+      "name": "param_198",
+      "data_type": "address",
+      "scope": "createCloneToken_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "createCloneToken"
+      }
+    },
+    "dfg_node_201": {
+      "id": "dfg_node_201",
+      "type": "function",
+      "name": "generateTokens",
+      "data_type": null,
+      "scope": "MiniMeToken",
+      "source_location": {
+        "line": 415,
+        "column": 5,
+        "end_line": 425,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 415,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_202": {
+      "id": "dfg_node_202",
+      "type": "local_variable",
+      "name": "curTotalSupply",
+      "data_type": "uint",
+      "scope": "generateTokens_function",
+      "source_location": {
+        "line": 417,
+        "column": 9,
+        "end_line": 417,
+        "end_column": 28
+      },
+      "properties": {
+        "source_location": {
+          "line": 417,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_203": {
+      "id": "dfg_node_203",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "generateTokens_function",
+      "source_location": {
+        "line": 417,
+        "column": 31,
+        "end_line": 417,
+        "end_column": 44
+      },
+      "properties": {
+        "source_location": {
+          "line": 417,
+          "column": 31
+        }
+      }
+    },
+    "dfg_node_204": {
+      "id": "dfg_node_204",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "generateTokens_function",
+      "source_location": {
+        "line": 418,
+        "column": 9,
+        "end_line": 418,
+        "end_column": 60
+      },
+      "properties": {
+        "source_location": {
+          "line": 418,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_205": {
+      "id": "dfg_node_205",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "generateTokens_function",
+      "source_location": {
+        "line": 418,
+        "column": 17,
+        "end_line": 418,
+        "end_column": 59
+      },
+      "properties": {
+        "source_location": {
+          "line": 418,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_206": {
+      "id": "dfg_node_206",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "generateTokens_function",
+      "source_location": {
+        "line": 418,
+        "column": 17,
+        "end_line": 418,
+        "end_column": 41
+      },
+      "properties": {
+        "source_location": {
+          "line": 418,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_207": {
+      "id": "dfg_node_207",
+      "type": "local_variable",
+      "name": "previousBalanceTo",
+      "data_type": "uint",
+      "scope": "generateTokens_function",
+      "source_location": {
+        "line": 419,
+        "column": 9,
+        "end_line": 419,
+        "end_column": 31
+      },
+      "properties": {
+        "source_location": {
+          "line": 419,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_208": {
+      "id": "dfg_node_208",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "generateTokens_function",
+      "source_location": {
+        "line": 419,
+        "column": 34,
+        "end_line": 419,
+        "end_column": 51
+      },
+      "properties": {
+        "source_location": {
+          "line": 419,
+          "column": 34
+        }
+      }
+    },
+    "dfg_node_209": {
+      "id": "dfg_node_209",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "generateTokens_function",
+      "source_location": {
+        "line": 420,
+        "column": 9,
+        "end_line": 420,
+        "end_column": 66
+      },
+      "properties": {
+        "source_location": {
+          "line": 420,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_210": {
+      "id": "dfg_node_210",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "generateTokens_function",
+      "source_location": {
+        "line": 420,
+        "column": 17,
+        "end_line": 420,
+        "end_column": 65
+      },
+      "properties": {
+        "source_location": {
+          "line": 420,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_211": {
+      "id": "dfg_node_211",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "generateTokens_function",
+      "source_location": {
+        "line": 420,
+        "column": 17,
+        "end_line": 420,
+        "end_column": 44
+      },
+      "properties": {
+        "source_location": {
+          "line": 420,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_212": {
+      "id": "dfg_node_212",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "generateTokens_function",
+      "source_location": {
+        "line": 421,
+        "column": 9,
+        "end_line": 421,
+        "end_column": 71
+      },
+      "properties": {
+        "source_location": {
+          "line": 421,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_213": {
+      "id": "dfg_node_213",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "generateTokens_function",
+      "source_location": {
+        "line": 421,
+        "column": 46,
+        "end_line": 421,
+        "end_column": 70
+      },
+      "properties": {
+        "source_location": {
+          "line": 421,
+          "column": 46
+        }
+      }
+    },
+    "dfg_node_214": {
+      "id": "dfg_node_214",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "generateTokens_function",
+      "source_location": {
+        "line": 422,
+        "column": 9,
+        "end_line": 422,
+        "end_column": 72
+      },
+      "properties": {
+        "source_location": {
+          "line": 422,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_215": {
+      "id": "dfg_node_215",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "generateTokens_function",
+      "source_location": {
+        "line": 422,
+        "column": 44,
+        "end_line": 422,
+        "end_column": 71
+      },
+      "properties": {
+        "source_location": {
+          "line": 422,
+          "column": 44
+        }
+      }
+    },
+    "dfg_node_216": {
+      "id": "dfg_node_216",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "generateTokens_function",
+      "source_location": {
+        "line": 423,
+        "column": 9,
+        "end_line": 423,
+        "end_column": 37
+      },
+      "properties": {
+        "source_location": {
+          "line": 423,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_217": {
+      "id": "dfg_node_217",
+      "type": "return_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "generateTokens_function",
+      "source_location": {
+        "line": 424,
+        "column": 9,
+        "end_line": 424,
+        "end_column": 21
+      },
+      "properties": {
+        "source_location": {
+          "line": 424,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_219": {
+      "id": "dfg_node_219",
+      "type": "parameter",
+      "name": "param_217",
+      "data_type": "bool",
+      "scope": "generateTokens_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "generateTokens"
+      }
+    },
+    "dfg_node_220": {
+      "id": "dfg_node_220",
+      "type": "function",
+      "name": "destroyTokens",
+      "data_type": null,
+      "scope": "MiniMeToken",
+      "source_location": {
+        "line": 432,
+        "column": 5,
+        "end_line": 442,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 432,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_221": {
+      "id": "dfg_node_221",
+      "type": "local_variable",
+      "name": "curTotalSupply",
+      "data_type": "uint",
+      "scope": "destroyTokens_function",
+      "source_location": {
+        "line": 434,
+        "column": 9,
+        "end_line": 434,
+        "end_column": 28
+      },
+      "properties": {
+        "source_location": {
+          "line": 434,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_222": {
+      "id": "dfg_node_222",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "destroyTokens_function",
+      "source_location": {
+        "line": 434,
+        "column": 31,
+        "end_line": 434,
+        "end_column": 44
+      },
+      "properties": {
+        "source_location": {
+          "line": 434,
+          "column": 31
+        }
+      }
+    },
+    "dfg_node_223": {
+      "id": "dfg_node_223",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "destroyTokens_function",
+      "source_location": {
+        "line": 435,
+        "column": 9,
+        "end_line": 435,
+        "end_column": 43
+      },
+      "properties": {
+        "source_location": {
+          "line": 435,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_224": {
+      "id": "dfg_node_224",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "destroyTokens_function",
+      "source_location": {
+        "line": 435,
+        "column": 17,
+        "end_line": 435,
+        "end_column": 42
+      },
+      "properties": {
+        "source_location": {
+          "line": 435,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_225": {
+      "id": "dfg_node_225",
+      "type": "local_variable",
+      "name": "previousBalanceFrom",
+      "data_type": "uint",
+      "scope": "destroyTokens_function",
+      "source_location": {
+        "line": 436,
+        "column": 9,
+        "end_line": 436,
+        "end_column": 33
+      },
+      "properties": {
+        "source_location": {
+          "line": 436,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_226": {
+      "id": "dfg_node_226",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "destroyTokens_function",
+      "source_location": {
+        "line": 436,
+        "column": 36,
+        "end_line": 436,
+        "end_column": 53
+      },
+      "properties": {
+        "source_location": {
+          "line": 436,
+          "column": 36
+        }
+      }
+    },
+    "dfg_node_227": {
+      "id": "dfg_node_227",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "destroyTokens_function",
+      "source_location": {
+        "line": 437,
+        "column": 9,
+        "end_line": 437,
+        "end_column": 48
+      },
+      "properties": {
+        "source_location": {
+          "line": 437,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_228": {
+      "id": "dfg_node_228",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "destroyTokens_function",
+      "source_location": {
+        "line": 437,
+        "column": 17,
+        "end_line": 437,
+        "end_column": 47
+      },
+      "properties": {
+        "source_location": {
+          "line": 437,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_229": {
+      "id": "dfg_node_229",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "destroyTokens_function",
+      "source_location": {
+        "line": 438,
+        "column": 9,
+        "end_line": 438,
+        "end_column": 71
+      },
+      "properties": {
+        "source_location": {
+          "line": 438,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_230": {
+      "id": "dfg_node_230",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "destroyTokens_function",
+      "source_location": {
+        "line": 438,
+        "column": 46,
+        "end_line": 438,
+        "end_column": 70
+      },
+      "properties": {
+        "source_location": {
+          "line": 438,
+          "column": 46
+        }
+      }
+    },
+    "dfg_node_231": {
+      "id": "dfg_node_231",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "destroyTokens_function",
+      "source_location": {
+        "line": 439,
+        "column": 9,
+        "end_line": 439,
+        "end_column": 74
+      },
+      "properties": {
+        "source_location": {
+          "line": 439,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_232": {
+      "id": "dfg_node_232",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "destroyTokens_function",
+      "source_location": {
+        "line": 439,
+        "column": 44,
+        "end_line": 439,
+        "end_column": 73
+      },
+      "properties": {
+        "source_location": {
+          "line": 439,
+          "column": 44
+        }
+      }
+    },
+    "dfg_node_233": {
+      "id": "dfg_node_233",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "destroyTokens_function",
+      "source_location": {
+        "line": 440,
+        "column": 9,
+        "end_line": 440,
+        "end_column": 37
+      },
+      "properties": {
+        "source_location": {
+          "line": 440,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_234": {
+      "id": "dfg_node_234",
+      "type": "return_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "destroyTokens_function",
+      "source_location": {
+        "line": 441,
+        "column": 9,
+        "end_line": 441,
+        "end_column": 21
+      },
+      "properties": {
+        "source_location": {
+          "line": 441,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_236": {
+      "id": "dfg_node_236",
+      "type": "parameter",
+      "name": "param_234",
+      "data_type": "bool",
+      "scope": "destroyTokens_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "destroyTokens"
+      }
+    },
+    "dfg_node_237": {
+      "id": "dfg_node_237",
+      "type": "function",
+      "name": "enableTransfers",
+      "data_type": null,
+      "scope": "MiniMeToken",
+      "source_location": {
+        "line": 451,
+        "column": 5,
+        "end_line": 453,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 451,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_238": {
+      "id": "dfg_node_238",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "enableTransfers_function",
+      "source_location": {
+        "line": 452,
+        "column": 9,
+        "end_line": 452,
+        "end_column": 45
+      },
+      "properties": {
+        "source_location": {
+          "line": 452,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_239": {
+      "id": "dfg_node_239",
+      "type": "function",
+      "name": "getValueAt",
+      "data_type": null,
+      "scope": "MiniMeToken",
+      "source_location": {
+        "line": 463,
+        "column": 5,
+        "end_line": 484,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 463,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_240": {
+      "id": "dfg_node_240",
+      "type": "if_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "getValueAt_function",
+      "source_location": {
+        "line": 465,
+        "column": 9,
+        "end_line": 465,
+        "end_column": 47
+      },
+      "properties": {
+        "source_location": {
+          "line": 465,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_241": {
+      "id": "dfg_node_241",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "getValueAt_function",
+      "source_location": {
+        "line": 465,
+        "column": 13,
+        "end_line": 465,
+        "end_column": 36
+      },
+      "properties": {
+        "source_location": {
+          "line": 465,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_242": {
+      "id": "dfg_node_242",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "getValueAt_function",
+      "source_location": {
+        "line": 465,
+        "column": 13,
+        "end_line": 465,
+        "end_column": 31
+      },
+      "properties": {
+        "source_location": {
+          "line": 465,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_243": {
+      "id": "dfg_node_243",
+      "type": "return_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "getValueAt_function",
+      "source_location": {
+        "line": 465,
+        "column": 38,
+        "end_line": 465,
+        "end_column": 47
+      },
+      "properties": {
+        "source_location": {
+          "line": 465,
+          "column": 38
+        }
+      }
+    },
+    "dfg_node_244": {
+      "id": "dfg_node_244",
+      "type": "if_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "getValueAt_function",
+      "source_location": {
+        "line": 468,
+        "column": 9,
+        "end_line": 469,
+        "end_column": 60
+      },
+      "properties": {
+        "source_location": {
+          "line": 468,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_245": {
+      "id": "dfg_node_245",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "getValueAt_function",
+      "source_location": {
+        "line": 468,
+        "column": 13,
+        "end_line": 468,
+        "end_column": 66
+      },
+      "properties": {
+        "source_location": {
+          "line": 468,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_246": {
+      "id": "dfg_node_246",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "getValueAt_function",
+      "source_location": {
+        "line": 468,
+        "column": 13,
+        "end_line": 468,
+        "end_column": 34
+      },
+      "properties": {
+        "source_location": {
+          "line": 468,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_247": {
+      "id": "dfg_node_247",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "getValueAt_function",
+      "source_location": {
+        "line": 468,
+        "column": 35,
+        "end_line": 468,
+        "end_column": 55
+      },
+      "properties": {
+        "source_location": {
+          "line": 468,
+          "column": 35
+        }
+      }
+    },
+    "dfg_node_248": {
+      "id": "dfg_node_248",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "getValueAt_function",
+      "source_location": {
+        "line": 468,
+        "column": 35,
+        "end_line": 468,
+        "end_column": 53
+      },
+      "properties": {
+        "source_location": {
+          "line": 468,
+          "column": 35
+        }
+      }
+    },
+    "dfg_node_249": {
+      "id": "dfg_node_249",
+      "type": "return_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "getValueAt_function",
+      "source_location": {
+        "line": 469,
+        "column": 13,
+        "end_line": 469,
+        "end_column": 60
+      },
+      "properties": {
+        "source_location": {
+          "line": 469,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_250": {
+      "id": "dfg_node_250",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "getValueAt_function",
+      "source_location": {
+        "line": 469,
+        "column": 20,
+        "end_line": 469,
+        "end_column": 59
+      },
+      "properties": {
+        "source_location": {
+          "line": 469,
+          "column": 20
+        }
+      }
+    },
+    "dfg_node_251": {
+      "id": "dfg_node_251",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "getValueAt_function",
+      "source_location": {
+        "line": 469,
+        "column": 32,
+        "end_line": 469,
+        "end_column": 52
+      },
+      "properties": {
+        "source_location": {
+          "line": 469,
+          "column": 32
+        }
+      }
+    },
+    "dfg_node_252": {
+      "id": "dfg_node_252",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "getValueAt_function",
+      "source_location": {
+        "line": 469,
+        "column": 32,
+        "end_line": 469,
+        "end_column": 50
+      },
+      "properties": {
+        "source_location": {
+          "line": 469,
+          "column": 32
+        }
+      }
+    },
+    "dfg_node_253": {
+      "id": "dfg_node_253",
+      "type": "if_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "getValueAt_function",
+      "source_location": {
+        "line": 470,
+        "column": 9,
+        "end_line": 470,
+        "end_column": 57
+      },
+      "properties": {
+        "source_location": {
+          "line": 470,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_254": {
+      "id": "dfg_node_254",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "getValueAt_function",
+      "source_location": {
+        "line": 470,
+        "column": 13,
+        "end_line": 470,
+        "end_column": 46
+      },
+      "properties": {
+        "source_location": {
+          "line": 470,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_255": {
+      "id": "dfg_node_255",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "getValueAt_function",
+      "source_location": {
+        "line": 470,
+        "column": 13,
+        "end_line": 470,
+        "end_column": 33
+      },
+      "properties": {
+        "source_location": {
+          "line": 470,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_256": {
+      "id": "dfg_node_256",
+      "type": "return_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "getValueAt_function",
+      "source_location": {
+        "line": 470,
+        "column": 48,
+        "end_line": 470,
+        "end_column": 57
+      },
+      "properties": {
+        "source_location": {
+          "line": 470,
+          "column": 48
+        }
+      }
+    },
+    "dfg_node_257": {
+      "id": "dfg_node_257",
+      "type": "local_variable",
+      "name": "min",
+      "data_type": "uint",
+      "scope": "getValueAt_function",
+      "source_location": {
+        "line": 473,
+        "column": 9,
+        "end_line": 473,
+        "end_column": 17
+      },
+      "properties": {
+        "source_location": {
+          "line": 473,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_258": {
+      "id": "dfg_node_258",
+      "type": "local_variable",
+      "name": "max",
+      "data_type": "uint",
+      "scope": "getValueAt_function",
+      "source_location": {
+        "line": 474,
+        "column": 9,
+        "end_line": 474,
+        "end_column": 17
+      },
+      "properties": {
+        "source_location": {
+          "line": 474,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_259": {
+      "id": "dfg_node_259",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "getValueAt_function",
+      "source_location": {
+        "line": 474,
+        "column": 20,
+        "end_line": 474,
+        "end_column": 40
+      },
+      "properties": {
+        "source_location": {
+          "line": 474,
+          "column": 20
+        }
+      }
+    },
+    "dfg_node_260": {
+      "id": "dfg_node_260",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "getValueAt_function",
+      "source_location": {
+        "line": 474,
+        "column": 20,
+        "end_line": 474,
+        "end_column": 38
+      },
+      "properties": {
+        "source_location": {
+          "line": 474,
+          "column": 20
+        }
+      }
+    },
+    "dfg_node_261": {
+      "id": "dfg_node_261",
+      "type": "while_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "getValueAt_function",
+      "source_location": {
+        "line": 475,
+        "column": 9,
+        "end_line": 482,
+        "end_column": 10
+      },
+      "properties": {
+        "source_location": {
+          "line": 475,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_262": {
+      "id": "dfg_node_262",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "getValueAt_function",
+      "source_location": {
+        "line": 475,
+        "column": 16,
+        "end_line": 475,
+        "end_column": 25
+      },
+      "properties": {
+        "source_location": {
+          "line": 475,
+          "column": 16
+        }
+      }
+    },
+    "dfg_node_263": {
+      "id": "dfg_node_263",
+      "type": "local_variable",
+      "name": "mid",
+      "data_type": "uint",
+      "scope": "getValueAt_function",
+      "source_location": {
+        "line": 476,
+        "column": 13,
+        "end_line": 476,
+        "end_column": 21
+      },
+      "properties": {
+        "source_location": {
+          "line": 476,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_264": {
+      "id": "dfg_node_264",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "getValueAt_function",
+      "source_location": {
+        "line": 476,
+        "column": 24,
+        "end_line": 476,
+        "end_column": 42
+      },
+      "properties": {
+        "source_location": {
+          "line": 476,
+          "column": 24
+        }
+      }
+    },
+    "dfg_node_265": {
+      "id": "dfg_node_265",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "getValueAt_function",
+      "source_location": {
+        "line": 476,
+        "column": 25,
+        "end_line": 476,
+        "end_column": 38
+      },
+      "properties": {
+        "source_location": {
+          "line": 476,
+          "column": 25
+        }
+      }
+    },
+    "dfg_node_266": {
+      "id": "dfg_node_266",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "getValueAt_function",
+      "source_location": {
+        "line": 476,
+        "column": 25,
+        "end_line": 476,
+        "end_column": 34
+      },
+      "properties": {
+        "source_location": {
+          "line": 476,
+          "column": 25
+        }
+      }
+    },
+    "dfg_node_267": {
+      "id": "dfg_node_267",
+      "type": "if_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "getValueAt_function",
+      "source_location": {
+        "line": 477,
+        "column": 13,
+        "end_line": 481,
+        "end_column": 14
+      },
+      "properties": {
+        "source_location": {
+          "line": 477,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_268": {
+      "id": "dfg_node_268",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "getValueAt_function",
+      "source_location": {
+        "line": 477,
+        "column": 17,
+        "end_line": 477,
+        "end_column": 51
+      },
+      "properties": {
+        "source_location": {
+          "line": 477,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_269": {
+      "id": "dfg_node_269",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "getValueAt_function",
+      "source_location": {
+        "line": 477,
+        "column": 17,
+        "end_line": 477,
+        "end_column": 43
+      },
+      "properties": {
+        "source_location": {
+          "line": 477,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_270": {
+      "id": "dfg_node_270",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "getValueAt_function",
+      "source_location": {
+        "line": 478,
+        "column": 17,
+        "end_line": 478,
+        "end_column": 26
+      },
+      "properties": {
+        "source_location": {
+          "line": 478,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_271": {
+      "id": "dfg_node_271",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "getValueAt_function",
+      "source_location": {
+        "line": 480,
+        "column": 17,
+        "end_line": 480,
+        "end_column": 28
+      },
+      "properties": {
+        "source_location": {
+          "line": 480,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_272": {
+      "id": "dfg_node_272",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "getValueAt_function",
+      "source_location": {
+        "line": 480,
+        "column": 23,
+        "end_line": 480,
+        "end_column": 28
+      },
+      "properties": {
+        "source_location": {
+          "line": 480,
+          "column": 23
+        }
+      }
+    },
+    "dfg_node_273": {
+      "id": "dfg_node_273",
+      "type": "return_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "getValueAt_function",
+      "source_location": {
+        "line": 483,
+        "column": 9,
+        "end_line": 483,
+        "end_column": 39
+      },
+      "properties": {
+        "source_location": {
+          "line": 483,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_274": {
+      "id": "dfg_node_274",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "getValueAt_function",
+      "source_location": {
+        "line": 483,
+        "column": 16,
+        "end_line": 483,
+        "end_column": 38
+      },
+      "properties": {
+        "source_location": {
+          "line": 483,
+          "column": 16
+        }
+      }
+    },
+    "dfg_node_276": {
+      "id": "dfg_node_276",
+      "type": "parameter",
+      "name": "param_274",
+      "data_type": "uint",
+      "scope": "getValueAt_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getValueAt"
+      }
+    },
+    "dfg_node_277": {
+      "id": "dfg_node_277",
+      "type": "function",
+      "name": "updateValueAtNow",
+      "data_type": null,
+      "scope": "MiniMeToken",
+      "source_location": {
+        "line": 490,
+        "column": 5,
+        "end_line": 501,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 490,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_278": {
+      "id": "dfg_node_278",
+      "type": "if_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "updateValueAtNow_function",
+      "source_location": {
+        "line": 492,
+        "column": 9,
+        "end_line": 500,
+        "end_column": 13
+      },
+      "properties": {
+        "source_location": {
+          "line": 492,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_279": {
+      "id": "dfg_node_279",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "updateValueAtNow_function",
+      "source_location": {
+        "line": 492,
+        "column": 13,
+        "end_line": 493,
+        "end_column": 73
+      },
+      "properties": {
+        "source_location": {
+          "line": 492,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_280": {
+      "id": "dfg_node_280",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "updateValueAtNow_function",
+      "source_location": {
+        "line": 492,
+        "column": 14,
+        "end_line": 492,
+        "end_column": 37
+      },
+      "properties": {
+        "source_location": {
+          "line": 492,
+          "column": 14
+        }
+      }
+    },
+    "dfg_node_281": {
+      "id": "dfg_node_281",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "updateValueAtNow_function",
+      "source_location": {
+        "line": 492,
+        "column": 14,
+        "end_line": 492,
+        "end_column": 32
+      },
+      "properties": {
+        "source_location": {
+          "line": 492,
+          "column": 14
+        }
+      }
+    },
+    "dfg_node_282": {
+      "id": "dfg_node_282",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "updateValueAtNow_function",
+      "source_location": {
+        "line": 493,
+        "column": 13,
+        "end_line": 493,
+        "end_column": 72
+      },
+      "properties": {
+        "source_location": {
+          "line": 493,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_283": {
+      "id": "dfg_node_283",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "updateValueAtNow_function",
+      "source_location": {
+        "line": 493,
+        "column": 13,
+        "end_line": 493,
+        "end_column": 57
+      },
+      "properties": {
+        "source_location": {
+          "line": 493,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_284": {
+      "id": "dfg_node_284",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "updateValueAtNow_function",
+      "source_location": {
+        "line": 493,
+        "column": 25,
+        "end_line": 493,
+        "end_column": 46
+      },
+      "properties": {
+        "source_location": {
+          "line": 493,
+          "column": 25
+        }
+      }
+    },
+    "dfg_node_285": {
+      "id": "dfg_node_285",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "updateValueAtNow_function",
+      "source_location": {
+        "line": 493,
+        "column": 25,
+        "end_line": 493,
+        "end_column": 43
+      },
+      "properties": {
+        "source_location": {
+          "line": 493,
+          "column": 25
+        }
+      }
+    },
+    "dfg_node_286": {
+      "id": "dfg_node_286",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "updateValueAtNow_function",
+      "source_location": {
+        "line": 493,
+        "column": 60,
+        "end_line": 493,
+        "end_column": 72
+      },
+      "properties": {
+        "source_location": {
+          "line": 493,
+          "column": 60
+        }
+      }
+    },
+    "dfg_node_287": {
+      "id": "dfg_node_287",
+      "type": "local_variable",
+      "name": "newCheckPoint",
+      "data_type": "Checkpoint",
+      "scope": "updateValueAtNow_function",
+      "source_location": {
+        "line": 494,
+        "column": 16,
+        "end_line": 494,
+        "end_column": 48
+      },
+      "properties": {
+        "source_location": {
+          "line": 494,
+          "column": 16
+        }
+      }
+    },
+    "dfg_node_288": {
+      "id": "dfg_node_288",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "updateValueAtNow_function",
+      "source_location": {
+        "line": 494,
+        "column": 64,
+        "end_line": 494,
+        "end_column": 82
+      },
+      "properties": {
+        "source_location": {
+          "line": 494,
+          "column": 64
+        }
+      }
+    },
+    "dfg_node_289": {
+      "id": "dfg_node_289",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "updateValueAtNow_function",
+      "source_location": {
+        "line": 495,
+        "column": 16,
+        "end_line": 495,
+        "end_column": 64
+      },
+      "properties": {
+        "source_location": {
+          "line": 495,
+          "column": 16
+        }
+      }
+    },
+    "dfg_node_290": {
+      "id": "dfg_node_290",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "updateValueAtNow_function",
+      "source_location": {
+        "line": 495,
+        "column": 16,
+        "end_line": 495,
+        "end_column": 39
+      },
+      "properties": {
+        "source_location": {
+          "line": 495,
+          "column": 16
+        }
+      }
+    },
+    "dfg_node_291": {
+      "id": "dfg_node_291",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "updateValueAtNow_function",
+      "source_location": {
+        "line": 495,
+        "column": 51,
+        "end_line": 495,
+        "end_column": 63
+      },
+      "properties": {
+        "source_location": {
+          "line": 495,
+          "column": 51
+        }
+      }
+    },
+    "dfg_node_292": {
+      "id": "dfg_node_292",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "updateValueAtNow_function",
+      "source_location": {
+        "line": 496,
+        "column": 16,
+        "end_line": 496,
+        "end_column": 53
+      },
+      "properties": {
+        "source_location": {
+          "line": 496,
+          "column": 16
+        }
+      }
+    },
+    "dfg_node_293": {
+      "id": "dfg_node_293",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "updateValueAtNow_function",
+      "source_location": {
+        "line": 496,
+        "column": 16,
+        "end_line": 496,
+        "end_column": 35
+      },
+      "properties": {
+        "source_location": {
+          "line": 496,
+          "column": 16
+        }
+      }
+    },
+    "dfg_node_294": {
+      "id": "dfg_node_294",
+      "type": "local_variable",
+      "name": "oldCheckPoint",
+      "data_type": "Checkpoint",
+      "scope": "updateValueAtNow_function",
+      "source_location": {
+        "line": 498,
+        "column": 16,
+        "end_line": 498,
+        "end_column": 48
+      },
+      "properties": {
+        "source_location": {
+          "line": 498,
+          "column": 16
+        }
+      }
+    },
+    "dfg_node_295": {
+      "id": "dfg_node_295",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "updateValueAtNow_function",
+      "source_location": {
+        "line": 498,
+        "column": 63,
+        "end_line": 498,
+        "end_column": 83
+      },
+      "properties": {
+        "source_location": {
+          "line": 498,
+          "column": 63
+        }
+      }
+    },
+    "dfg_node_296": {
+      "id": "dfg_node_296",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "updateValueAtNow_function",
+      "source_location": {
+        "line": 498,
+        "column": 63,
+        "end_line": 498,
+        "end_column": 81
+      },
+      "properties": {
+        "source_location": {
+          "line": 498,
+          "column": 63
+        }
+      }
+    },
+    "dfg_node_297": {
+      "id": "dfg_node_297",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "updateValueAtNow_function",
+      "source_location": {
+        "line": 499,
+        "column": 16,
+        "end_line": 499,
+        "end_column": 53
+      },
+      "properties": {
+        "source_location": {
+          "line": 499,
+          "column": 16
+        }
+      }
+    },
+    "dfg_node_298": {
+      "id": "dfg_node_298",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "updateValueAtNow_function",
+      "source_location": {
+        "line": 499,
+        "column": 16,
+        "end_line": 499,
+        "end_column": 35
+      },
+      "properties": {
+        "source_location": {
+          "line": 499,
+          "column": 16
+        }
+      }
+    },
+    "dfg_node_299": {
+      "id": "dfg_node_299",
+      "type": "function",
+      "name": "isContract",
+      "data_type": null,
+      "scope": "MiniMeToken",
+      "source_location": {
+        "line": 506,
+        "column": 5,
+        "end_line": 513,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 506,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_300": {
+      "id": "dfg_node_300",
+      "type": "local_variable",
+      "name": "size",
+      "data_type": "uint",
+      "scope": "isContract_function",
+      "source_location": {
+        "line": 507,
+        "column": 9,
+        "end_line": 507,
+        "end_column": 18
+      },
+      "properties": {
+        "source_location": {
+          "line": 507,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_301": {
+      "id": "dfg_node_301",
+      "type": "if_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "isContract_function",
+      "source_location": {
+        "line": 508,
+        "column": 9,
+        "end_line": 508,
+        "end_column": 38
+      },
+      "properties": {
+        "source_location": {
+          "line": 508,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_302": {
+      "id": "dfg_node_302",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "isContract_function",
+      "source_location": {
+        "line": 508,
+        "column": 13,
+        "end_line": 508,
+        "end_column": 23
+      },
+      "properties": {
+        "source_location": {
+          "line": 508,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_303": {
+      "id": "dfg_node_303",
+      "type": "return_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "isContract_function",
+      "source_location": {
+        "line": 508,
+        "column": 25,
+        "end_line": 508,
+        "end_column": 38
+      },
+      "properties": {
+        "source_location": {
+          "line": 508,
+          "column": 25
+        }
+      }
+    },
+    "dfg_node_304": {
+      "id": "dfg_node_304",
+      "type": "return_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "isContract_function",
+      "source_location": {
+        "line": 512,
+        "column": 9,
+        "end_line": 512,
+        "end_column": 23
+      },
+      "properties": {
+        "source_location": {
+          "line": 512,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_305": {
+      "id": "dfg_node_305",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "isContract_function",
+      "source_location": {
+        "line": 512,
+        "column": 16,
+        "end_line": 512,
+        "end_column": 22
+      },
+      "properties": {
+        "source_location": {
+          "line": 512,
+          "column": 16
+        }
+      }
+    },
+    "dfg_node_307": {
+      "id": "dfg_node_307",
+      "type": "parameter",
+      "name": "param_305",
+      "data_type": "bool",
+      "scope": "isContract_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "isContract"
+      }
+    },
+    "dfg_node_308": {
+      "id": "dfg_node_308",
+      "type": "function",
+      "name": "min",
+      "data_type": null,
+      "scope": "MiniMeToken",
+      "source_location": {
+        "line": 516,
+        "column": 5,
+        "end_line": 518,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 516,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_309": {
+      "id": "dfg_node_309",
+      "type": "return_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "min_function",
+      "source_location": {
+        "line": 517,
+        "column": 9,
+        "end_line": 517,
+        "end_column": 30
+      },
+      "properties": {
+        "source_location": {
+          "line": 517,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_310": {
+      "id": "dfg_node_310",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "min_function",
+      "source_location": {
+        "line": 517,
+        "column": 16,
+        "end_line": 517,
+        "end_column": 21
+      },
+      "properties": {
+        "source_location": {
+          "line": 517,
+          "column": 16
+        }
+      }
+    },
+    "dfg_node_312": {
+      "id": "dfg_node_312",
+      "type": "parameter",
+      "name": "param_310",
+      "data_type": "uint",
+      "scope": "min_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "min"
+      }
+    },
+    "dfg_node_313": {
+      "id": "dfg_node_313",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "MiniMeToken",
+      "source_location": {
+        "line": 524,
+        "column": 9,
+        "end_line": 524,
+        "end_column": 40
+      },
+      "properties": {
+        "source_location": {
+          "line": 524,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_314": {
+      "id": "dfg_node_314",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "MiniMeToken",
+      "source_location": {
+        "line": 524,
+        "column": 17,
+        "end_line": 524,
+        "end_column": 39
+      },
+      "properties": {
+        "source_location": {
+          "line": 524,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_315": {
+      "id": "dfg_node_315",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "MiniMeToken",
+      "source_location": {
+        "line": 525,
+        "column": 9,
+        "end_line": 525,
+        "end_column": 87
+      },
+      "properties": {
+        "source_location": {
+          "line": 525,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_316": {
+      "id": "dfg_node_316",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "MiniMeToken",
+      "source_location": {
+        "line": 525,
+        "column": 17,
+        "end_line": 525,
+        "end_column": 86
+      },
+      "properties": {
+        "source_location": {
+          "line": 525,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_317": {
+      "id": "dfg_node_317",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "MiniMeToken",
+      "source_location": {
+        "line": 525,
+        "column": 17,
+        "end_line": 525,
+        "end_column": 74
+      },
+      "properties": {
+        "source_location": {
+          "line": 525,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_318": {
+      "id": "dfg_node_318",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "MiniMeToken",
+      "source_location": {
+        "line": 525,
+        "column": 17,
+        "end_line": 525,
+        "end_column": 63
+      },
+      "properties": {
+        "source_location": {
+          "line": 525,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_319": {
+      "id": "dfg_node_319",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "MiniMeToken",
+      "source_location": {
+        "line": 525,
+        "column": 17,
+        "end_line": 525,
+        "end_column": 57
+      },
+      "properties": {
+        "source_location": {
+          "line": 525,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_320": {
+      "id": "dfg_node_320",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "MiniMeToken",
+      "source_location": {
+        "line": 525,
+        "column": 17,
+        "end_line": 525,
+        "end_column": 44
+      },
+      "properties": {
+        "source_location": {
+          "line": 525,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_321": {
+      "id": "dfg_node_321",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "MiniMeToken",
+      "source_location": {
+        "line": 525,
+        "column": 64,
+        "end_line": 525,
+        "end_column": 73
+      },
+      "properties": {
+        "source_location": {
+          "line": 525,
+          "column": 64
+        }
+      }
+    },
+    "dfg_node_322": {
+      "id": "dfg_node_322",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "MiniMeToken",
+      "source_location": {
+        "line": 525,
+        "column": 75,
+        "end_line": 525,
+        "end_column": 85
+      },
+      "properties": {
+        "source_location": {
+          "line": 525,
+          "column": 75
+        }
+      }
+    },
+    "dfg_node_323": {
+      "id": "dfg_node_323",
+      "type": "function",
+      "name": "claimTokens",
+      "data_type": null,
+      "scope": "MiniMeToken",
+      "source_location": {
+        "line": 536,
+        "column": 5,
+        "end_line": 546,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 536,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_324": {
+      "id": "dfg_node_324",
+      "type": "if_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "claimTokens_function",
+      "source_location": {
+        "line": 537,
+        "column": 9,
+        "end_line": 540,
+        "end_column": 10
+      },
+      "properties": {
+        "source_location": {
+          "line": 537,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_325": {
+      "id": "dfg_node_325",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "claimTokens_function",
+      "source_location": {
+        "line": 537,
+        "column": 13,
+        "end_line": 537,
+        "end_column": 26
+      },
+      "properties": {
+        "source_location": {
+          "line": 537,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_326": {
+      "id": "dfg_node_326",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "claimTokens_function",
+      "source_location": {
+        "line": 538,
+        "column": 13,
+        "end_line": 538,
+        "end_column": 46
+      },
+      "properties": {
+        "source_location": {
+          "line": 538,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_327": {
+      "id": "dfg_node_327",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "claimTokens_function",
+      "source_location": {
+        "line": 538,
+        "column": 13,
+        "end_line": 538,
+        "end_column": 32
+      },
+      "properties": {
+        "source_location": {
+          "line": 538,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_328": {
+      "id": "dfg_node_328",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "claimTokens_function",
+      "source_location": {
+        "line": 538,
+        "column": 33,
+        "end_line": 538,
+        "end_column": 45
+      },
+      "properties": {
+        "source_location": {
+          "line": 538,
+          "column": 33
+        }
+      }
+    },
+    "dfg_node_329": {
+      "id": "dfg_node_329",
+      "type": "return_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "claimTokens_function",
+      "source_location": {
+        "line": 539,
+        "column": 13,
+        "end_line": 539,
+        "end_column": 20
+      },
+      "properties": {
+        "source_location": {
+          "line": 539,
+          "column": 13
+        }
+      }
+    },
+    "dfg_node_330": {
+      "id": "dfg_node_330",
+      "type": "local_variable",
+      "name": "token",
+      "data_type": "MiniMeToken",
+      "scope": "claimTokens_function",
+      "source_location": {
+        "line": 542,
+        "column": 9,
+        "end_line": 542,
+        "end_column": 26
+      },
+      "properties": {
+        "source_location": {
+          "line": 542,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_331": {
+      "id": "dfg_node_331",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "claimTokens_function",
+      "source_location": {
+        "line": 542,
+        "column": 29,
+        "end_line": 542,
+        "end_column": 48
+      },
+      "properties": {
+        "source_location": {
+          "line": 542,
+          "column": 29
+        }
+      }
+    },
+    "dfg_node_332": {
+      "id": "dfg_node_332",
+      "type": "local_variable",
+      "name": "balance",
+      "data_type": "uint",
+      "scope": "claimTokens_function",
+      "source_location": {
+        "line": 543,
+        "column": 9,
+        "end_line": 543,
+        "end_column": 21
+      },
+      "properties": {
+        "source_location": {
+          "line": 543,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_333": {
+      "id": "dfg_node_333",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "claimTokens_function",
+      "source_location": {
+        "line": 543,
+        "column": 24,
+        "end_line": 543,
+        "end_column": 45
+      },
+      "properties": {
+        "source_location": {
+          "line": 543,
+          "column": 24
+        }
+      }
+    },
+    "dfg_node_334": {
+      "id": "dfg_node_334",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "claimTokens_function",
+      "source_location": {
+        "line": 543,
+        "column": 24,
+        "end_line": 543,
+        "end_column": 39
+      },
+      "properties": {
+        "source_location": {
+          "line": 543,
+          "column": 24
+        }
+      }
+    },
+    "dfg_node_335": {
+      "id": "dfg_node_335",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "claimTokens_function",
+      "source_location": {
+        "line": 544,
+        "column": 9,
+        "end_line": 544,
+        "end_column": 44
+      },
+      "properties": {
+        "source_location": {
+          "line": 544,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_336": {
+      "id": "dfg_node_336",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "claimTokens_function",
+      "source_location": {
+        "line": 544,
+        "column": 9,
+        "end_line": 544,
+        "end_column": 23
+      },
+      "properties": {
+        "source_location": {
+          "line": 544,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_337": {
+      "id": "dfg_node_337",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "claimTokens_function",
+      "source_location": {
+        "line": 545,
+        "column": 9,
+        "end_line": 545,
+        "end_column": 51
+      },
+      "properties": {
+        "source_location": {
+          "line": 545,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_338": {
+      "id": "dfg_node_338",
+      "type": "event_definition",
+      "name": null,
+      "data_type": null,
+      "scope": "MiniMeToken",
+      "source_location": {
+        "line": 551,
+        "column": 5,
+        "end_line": 551,
+        "end_column": 92
+      },
+      "properties": {
+        "source_location": {
+          "line": 551,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_339": {
+      "id": "dfg_node_339",
+      "type": "event_definition",
+      "name": null,
+      "data_type": null,
+      "scope": "MiniMeToken",
+      "source_location": {
+        "line": 552,
+        "column": 5,
+        "end_line": 552,
+        "end_column": 81
+      },
+      "properties": {
+        "source_location": {
+          "line": 552,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_340": {
+      "id": "dfg_node_340",
+      "type": "event_definition",
+      "name": null,
+      "data_type": null,
+      "scope": "MiniMeToken",
+      "source_location": {
+        "line": 553,
+        "column": 5,
+        "end_line": 553,
+        "end_column": 75
+      },
+      "properties": {
+        "source_location": {
+          "line": 553,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_341": {
+      "id": "dfg_node_341",
+      "type": "event_definition",
+      "name": null,
+      "data_type": null,
+      "scope": "MiniMeToken",
+      "source_location": {
+        "line": 554,
+        "column": 5,
+        "end_line": 558,
+        "end_column": 11
+      },
+      "properties": {
+        "source_location": {
+          "line": 554,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_342": {
+      "id": "dfg_node_342",
+      "type": "contract",
+      "name": "MiniMeTokenFactory",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 570,
+        "column": 1,
+        "end_line": 603,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 570,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_343": {
+      "id": "dfg_node_343",
+      "type": "function",
+      "name": "createCloneToken",
+      "data_type": null,
+      "scope": "MiniMeTokenFactory",
+      "source_location": {
+        "line": 582,
+        "column": 5,
+        "end_line": 602,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 582,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_344": {
+      "id": "dfg_node_344",
+      "type": "local_variable",
+      "name": "newToken",
+      "data_type": "MiniMeToken",
+      "scope": "createCloneToken_function",
+      "source_location": {
+        "line": 590,
+        "column": 9,
+        "end_line": 590,
+        "end_column": 29
+      },
+      "properties": {
+        "source_location": {
+          "line": 590,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_345": {
+      "id": "dfg_node_345",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "createCloneToken_function",
+      "source_location": {
+        "line": 590,
+        "column": 32,
+        "end_line": 598,
+        "end_column": 14
+      },
+      "properties": {
+        "source_location": {
+          "line": 590,
+          "column": 32
+        }
+      }
+    },
+    "dfg_node_346": {
+      "id": "dfg_node_346",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "createCloneToken_function",
+      "source_location": {
+        "line": 600,
+        "column": 9,
+        "end_line": 600,
+        "end_column": 46
+      },
+      "properties": {
+        "source_location": {
+          "line": 600,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_347": {
+      "id": "dfg_node_347",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "createCloneToken_function",
+      "source_location": {
+        "line": 600,
+        "column": 9,
+        "end_line": 600,
+        "end_column": 34
+      },
+      "properties": {
+        "source_location": {
+          "line": 600,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_348": {
+      "id": "dfg_node_348",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "createCloneToken_function",
+      "source_location": {
+        "line": 600,
+        "column": 35,
+        "end_line": 600,
+        "end_column": 45
+      },
+      "properties": {
+        "source_location": {
+          "line": 600,
+          "column": 35
+        }
+      }
+    },
+    "dfg_node_349": {
+      "id": "dfg_node_349",
+      "type": "return_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "createCloneToken_function",
+      "source_location": {
+        "line": 601,
+        "column": 9,
+        "end_line": 601,
+        "end_column": 25
+      },
+      "properties": {
+        "source_location": {
+          "line": 601,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_351": {
+      "id": "dfg_node_351",
+      "type": "parameter",
+      "name": "param_349",
+      "data_type": "MiniMeToken",
+      "scope": "createCloneToken_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "createCloneToken"
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_9",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_12",
+      "target": "dfg_node_14",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_11",
+      "target": "dfg_node_12",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_15",
+      "target": "dfg_node_17",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_11",
+      "target": "dfg_node_15",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_18",
+      "target": "dfg_node_20",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_9": {
+      "id": "dfg_edge_9",
+      "source": "dfg_node_11",
+      "target": "dfg_node_18",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_10": {
+      "id": "dfg_edge_10",
+      "source": "dfg_node_21",
+      "target": "dfg_node_22",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_11": {
+      "id": "dfg_edge_11",
+      "source": "dfg_node_23",
+      "target": "dfg_node_24",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_12": {
+      "id": "dfg_edge_12",
+      "source": "dfg_node_23",
+      "target": "dfg_node_25",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_13": {
+      "id": "dfg_edge_13",
+      "source": "dfg_node_23",
+      "target": "dfg_node_26",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_14": {
+      "id": "dfg_edge_14",
+      "source": "dfg_node_23",
+      "target": "dfg_node_27",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_15": {
+      "id": "dfg_edge_15",
+      "source": "dfg_node_23",
+      "target": "dfg_node_28",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_16": {
+      "id": "dfg_edge_16",
+      "source": "dfg_node_23",
+      "target": "dfg_node_29",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_17": {
+      "id": "dfg_edge_17",
+      "source": "dfg_node_23",
+      "target": "dfg_node_30",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_18": {
+      "id": "dfg_edge_18",
+      "source": "dfg_node_23",
+      "target": "dfg_node_31",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_19": {
+      "id": "dfg_edge_19",
+      "source": "dfg_node_23",
+      "target": "dfg_node_32",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_20": {
+      "id": "dfg_edge_20",
+      "source": "dfg_node_23",
+      "target": "dfg_node_33",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_21": {
+      "id": "dfg_edge_21",
+      "source": "dfg_node_23",
+      "target": "dfg_node_34",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_22": {
+      "id": "dfg_edge_22",
+      "source": "dfg_node_23",
+      "target": "dfg_node_35",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_23": {
+      "id": "dfg_edge_23",
+      "source": "dfg_node_23",
+      "target": "dfg_node_36",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_24": {
+      "id": "dfg_edge_24",
+      "source": "dfg_node_23",
+      "target": "dfg_node_37",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_25": {
+      "id": "dfg_edge_25",
+      "source": "dfg_node_49",
+      "target": "dfg_node_55",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_26": {
+      "id": "dfg_edge_26",
+      "source": "dfg_node_23",
+      "target": "dfg_node_49",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_27": {
+      "id": "dfg_edge_27",
+      "source": "dfg_node_56",
+      "target": "dfg_node_68",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_28": {
+      "id": "dfg_edge_28",
+      "source": "dfg_node_23",
+      "target": "dfg_node_56",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_29": {
+      "id": "dfg_edge_29",
+      "source": "dfg_node_23",
+      "target": "dfg_node_69",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_30": {
+      "id": "dfg_edge_30",
+      "source": "dfg_node_103",
+      "target": "dfg_node_108",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_31": {
+      "id": "dfg_edge_31",
+      "source": "dfg_node_23",
+      "target": "dfg_node_103",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_32": {
+      "id": "dfg_edge_32",
+      "source": "dfg_node_109",
+      "target": "dfg_node_129",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_33": {
+      "id": "dfg_edge_33",
+      "source": "dfg_node_23",
+      "target": "dfg_node_109",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_34": {
+      "id": "dfg_edge_34",
+      "source": "dfg_node_130",
+      "target": "dfg_node_133",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_35": {
+      "id": "dfg_edge_35",
+      "source": "dfg_node_23",
+      "target": "dfg_node_130",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_36": {
+      "id": "dfg_edge_36",
+      "source": "dfg_node_134",
+      "target": "dfg_node_143",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_37": {
+      "id": "dfg_edge_37",
+      "source": "dfg_node_23",
+      "target": "dfg_node_134",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_38": {
+      "id": "dfg_edge_38",
+      "source": "dfg_node_144",
+      "target": "dfg_node_149",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_39": {
+      "id": "dfg_edge_39",
+      "source": "dfg_node_23",
+      "target": "dfg_node_144",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_40": {
+      "id": "dfg_edge_40",
+      "source": "dfg_node_150",
+      "target": "dfg_node_167",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_41": {
+      "id": "dfg_edge_41",
+      "source": "dfg_node_23",
+      "target": "dfg_node_150",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_42": {
+      "id": "dfg_edge_42",
+      "source": "dfg_node_168",
+      "target": "dfg_node_185",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_43": {
+      "id": "dfg_edge_43",
+      "source": "dfg_node_23",
+      "target": "dfg_node_168",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_44": {
+      "id": "dfg_edge_44",
+      "source": "dfg_node_186",
+      "target": "dfg_node_200",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_45": {
+      "id": "dfg_edge_45",
+      "source": "dfg_node_23",
+      "target": "dfg_node_186",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_46": {
+      "id": "dfg_edge_46",
+      "source": "dfg_node_201",
+      "target": "dfg_node_219",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_47": {
+      "id": "dfg_edge_47",
+      "source": "dfg_node_23",
+      "target": "dfg_node_201",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_48": {
+      "id": "dfg_edge_48",
+      "source": "dfg_node_220",
+      "target": "dfg_node_236",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_49": {
+      "id": "dfg_edge_49",
+      "source": "dfg_node_23",
+      "target": "dfg_node_220",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_50": {
+      "id": "dfg_edge_50",
+      "source": "dfg_node_23",
+      "target": "dfg_node_237",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_51": {
+      "id": "dfg_edge_51",
+      "source": "dfg_node_239",
+      "target": "dfg_node_276",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_52": {
+      "id": "dfg_edge_52",
+      "source": "dfg_node_23",
+      "target": "dfg_node_239",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_53": {
+      "id": "dfg_edge_53",
+      "source": "dfg_node_23",
+      "target": "dfg_node_277",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_54": {
+      "id": "dfg_edge_54",
+      "source": "dfg_node_299",
+      "target": "dfg_node_307",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_55": {
+      "id": "dfg_edge_55",
+      "source": "dfg_node_23",
+      "target": "dfg_node_299",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_56": {
+      "id": "dfg_edge_56",
+      "source": "dfg_node_308",
+      "target": "dfg_node_312",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_57": {
+      "id": "dfg_edge_57",
+      "source": "dfg_node_23",
+      "target": "dfg_node_308",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_58": {
+      "id": "dfg_edge_58",
+      "source": "dfg_node_23",
+      "target": "dfg_node_323",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_59": {
+      "id": "dfg_edge_59",
+      "source": "dfg_node_23",
+      "target": "dfg_node_338",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_60": {
+      "id": "dfg_edge_60",
+      "source": "dfg_node_23",
+      "target": "dfg_node_339",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_61": {
+      "id": "dfg_edge_61",
+      "source": "dfg_node_23",
+      "target": "dfg_node_340",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_62": {
+      "id": "dfg_edge_62",
+      "source": "dfg_node_23",
+      "target": "dfg_node_341",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_63": {
+      "id": "dfg_edge_63",
+      "source": "dfg_node_343",
+      "target": "dfg_node_351",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_64": {
+      "id": "dfg_edge_64",
+      "source": "dfg_node_342",
+      "target": "dfg_node_343",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_65": {
+      "id": "dfg_edge_65",
+      "source": "dfg_node_9",
+      "target": "dfg_node_194",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_66": {
+      "id": "dfg_edge_66",
+      "source": "dfg_node_9",
+      "target": "dfg_node_346",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_67": {
+      "id": "dfg_edge_67",
+      "source": "dfg_node_15",
+      "target": "dfg_node_88",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_68": {
+      "id": "dfg_edge_68",
+      "source": "dfg_node_15",
+      "target": "dfg_node_89",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_69": {
+      "id": "dfg_edge_69",
+      "source": "dfg_node_18",
+      "target": "dfg_node_118",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_70": {
+      "id": "dfg_edge_70",
+      "source": "dfg_node_18",
+      "target": "dfg_node_119",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_71": {
+      "id": "dfg_edge_71",
+      "source": "dfg_node_22",
+      "target": "dfg_node_137",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_72": {
+      "id": "dfg_edge_72",
+      "source": "dfg_node_37",
+      "target": "dfg_node_43",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_73": {
+      "id": "dfg_edge_73",
+      "source": "dfg_node_37",
+      "target": "dfg_node_44",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_74": {
+      "id": "dfg_edge_74",
+      "source": "dfg_node_37",
+      "target": "dfg_node_331",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_75": {
+      "id": "dfg_edge_75",
+      "source": "dfg_node_37",
+      "target": "dfg_node_345",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_76": {
+      "id": "dfg_edge_76",
+      "source": "dfg_node_49",
+      "target": "dfg_node_326",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_77": {
+      "id": "dfg_edge_77",
+      "source": "dfg_node_49",
+      "target": "dfg_node_335",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_78": {
+      "id": "dfg_edge_78",
+      "source": "dfg_node_69",
+      "target": "dfg_node_51",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_79": {
+      "id": "dfg_edge_79",
+      "source": "dfg_node_69",
+      "target": "dfg_node_65",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_80": {
+      "id": "dfg_edge_80",
+      "source": "dfg_node_103",
+      "target": "dfg_node_208",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_81": {
+      "id": "dfg_edge_81",
+      "source": "dfg_node_103",
+      "target": "dfg_node_226",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_82": {
+      "id": "dfg_edge_82",
+      "source": "dfg_node_103",
+      "target": "dfg_node_333",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_83": {
+      "id": "dfg_edge_83",
+      "source": "dfg_node_109",
+      "target": "dfg_node_135",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_84": {
+      "id": "dfg_edge_84",
+      "source": "dfg_node_109",
+      "target": "dfg_node_136",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_85": {
+      "id": "dfg_edge_85",
+      "source": "dfg_node_144",
+      "target": "dfg_node_203",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_86": {
+      "id": "dfg_edge_86",
+      "source": "dfg_node_144",
+      "target": "dfg_node_222",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_87": {
+      "id": "dfg_edge_87",
+      "source": "dfg_node_150",
+      "target": "dfg_node_82",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_88": {
+      "id": "dfg_edge_88",
+      "source": "dfg_node_150",
+      "target": "dfg_node_95",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_89": {
+      "id": "dfg_edge_89",
+      "source": "dfg_node_150",
+      "target": "dfg_node_105",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_90": {
+      "id": "dfg_edge_90",
+      "source": "dfg_node_150",
+      "target": "dfg_node_160",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_91": {
+      "id": "dfg_edge_91",
+      "source": "dfg_node_168",
+      "target": "dfg_node_146",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_92": {
+      "id": "dfg_edge_92",
+      "source": "dfg_node_168",
+      "target": "dfg_node_178",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_93": {
+      "id": "dfg_edge_93",
+      "source": "dfg_node_343",
+      "target": "dfg_node_192",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_94": {
+      "id": "dfg_edge_94",
+      "source": "dfg_node_239",
+      "target": "dfg_node_165",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_95": {
+      "id": "dfg_edge_95",
+      "source": "dfg_node_239",
+      "target": "dfg_node_183",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_96": {
+      "id": "dfg_edge_96",
+      "source": "dfg_node_277",
+      "target": "dfg_node_92",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_97": {
+      "id": "dfg_edge_97",
+      "source": "dfg_node_277",
+      "target": "dfg_node_100",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_98": {
+      "id": "dfg_edge_98",
+      "source": "dfg_node_277",
+      "target": "dfg_node_212",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_99": {
+      "id": "dfg_edge_99",
+      "source": "dfg_node_277",
+      "target": "dfg_node_214",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_100": {
+      "id": "dfg_edge_100",
+      "source": "dfg_node_277",
+      "target": "dfg_node_229",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_101": {
+      "id": "dfg_edge_101",
+      "source": "dfg_node_277",
+      "target": "dfg_node_231",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_102": {
+      "id": "dfg_edge_102",
+      "source": "dfg_node_299",
+      "target": "dfg_node_87",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_103": {
+      "id": "dfg_edge_103",
+      "source": "dfg_node_299",
+      "target": "dfg_node_117",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_104": {
+      "id": "dfg_edge_104",
+      "source": "dfg_node_299",
+      "target": "dfg_node_313",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_105": {
+      "id": "dfg_edge_105",
+      "source": "dfg_node_299",
+      "target": "dfg_node_314",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_106": {
+      "id": "dfg_edge_106",
+      "source": "dfg_node_308",
+      "target": "dfg_node_160",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_107": {
+      "id": "dfg_edge_107",
+      "source": "dfg_node_308",
+      "target": "dfg_node_162",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_108": {
+      "id": "dfg_edge_108",
+      "source": "dfg_node_308",
+      "target": "dfg_node_178",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_109": {
+      "id": "dfg_edge_109",
+      "source": "dfg_node_308",
+      "target": "dfg_node_180",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 1362,
+    "source_line": 1363,
+    "label": 0,
+    "mode": "standard",
+    "contract_name": "Controlled",
+    "timestamp": "20251027_225116"
+  }
+}

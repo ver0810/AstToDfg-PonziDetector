@@ -1,0 +1,3110 @@
+{
+  "contract": "ChronoBankPlatform",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "ChronoBankPlatform",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 4,
+        "column": 1,
+        "end_line": 28,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 4,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "proxies",
+      "data_type": "mapping(bytes32 => address)",
+      "scope": "ChronoBankPlatform",
+      "source_location": {
+        "line": 5,
+        "column": 5,
+        "end_line": 5,
+        "end_column": 48
+      },
+      "properties": {
+        "source_location": {
+          "line": 5,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "function",
+      "name": "symbols",
+      "data_type": null,
+      "scope": "ChronoBankPlatform",
+      "source_location": {
+        "line": 7,
+        "column": 5,
+        "end_line": 7,
+        "end_column": 67
+      },
+      "properties": {
+        "source_location": {
+          "line": 7,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "parameter",
+      "name": "param_3",
+      "data_type": "bytes32",
+      "scope": "symbols_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "symbols"
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "function",
+      "name": "symbolsCount",
+      "data_type": null,
+      "scope": "ChronoBankPlatform",
+      "source_location": {
+        "line": 8,
+        "column": 5,
+        "end_line": 8,
+        "end_column": 60
+      },
+      "properties": {
+        "source_location": {
+          "line": 8,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "parameter",
+      "name": "param_6",
+      "data_type": "uint",
+      "scope": "symbolsCount_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "symbolsCount"
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "function",
+      "name": "name",
+      "data_type": null,
+      "scope": "ChronoBankPlatform",
+      "source_location": {
+        "line": 10,
+        "column": 5,
+        "end_line": 10,
+        "end_column": 52
+      },
+      "properties": {
+        "source_location": {
+          "line": 10,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_11": {
+      "id": "dfg_node_11",
+      "type": "parameter",
+      "name": "param_9",
+      "data_type": "string",
+      "scope": "name_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "name"
+      }
+    },
+    "dfg_node_12": {
+      "id": "dfg_node_12",
+      "type": "function",
+      "name": "setProxy",
+      "data_type": null,
+      "scope": "ChronoBankPlatform",
+      "source_location": {
+        "line": 11,
+        "column": 5,
+        "end_line": 11,
+        "end_column": 82
+      },
+      "properties": {
+        "source_location": {
+          "line": 11,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_14": {
+      "id": "dfg_node_14",
+      "type": "parameter",
+      "name": "errorCode",
+      "data_type": "uint",
+      "scope": "setProxy_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "setProxy"
+      }
+    },
+    "dfg_node_15": {
+      "id": "dfg_node_15",
+      "type": "function",
+      "name": "isCreated",
+      "data_type": null,
+      "scope": "ChronoBankPlatform",
+      "source_location": {
+        "line": 12,
+        "column": 5,
+        "end_line": 12,
+        "end_column": 64
+      },
+      "properties": {
+        "source_location": {
+          "line": 12,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_17": {
+      "id": "dfg_node_17",
+      "type": "parameter",
+      "name": "param_15",
+      "data_type": "bool",
+      "scope": "isCreated_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "isCreated"
+      }
+    },
+    "dfg_node_18": {
+      "id": "dfg_node_18",
+      "type": "function",
+      "name": "isOwner",
+      "data_type": null,
+      "scope": "ChronoBankPlatform",
+      "source_location": {
+        "line": 13,
+        "column": 5,
+        "end_line": 13,
+        "end_column": 69
+      },
+      "properties": {
+        "source_location": {
+          "line": 13,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_20": {
+      "id": "dfg_node_20",
+      "type": "parameter",
+      "name": "param_18",
+      "data_type": "bool",
+      "scope": "isOwner_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "isOwner"
+      }
+    },
+    "dfg_node_21": {
+      "id": "dfg_node_21",
+      "type": "function",
+      "name": "owner",
+      "data_type": null,
+      "scope": "ChronoBankPlatform",
+      "source_location": {
+        "line": 14,
+        "column": 5,
+        "end_line": 14,
+        "end_column": 63
+      },
+      "properties": {
+        "source_location": {
+          "line": 14,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_23": {
+      "id": "dfg_node_23",
+      "type": "parameter",
+      "name": "param_21",
+      "data_type": "address",
+      "scope": "owner_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "owner"
+      }
+    },
+    "dfg_node_24": {
+      "id": "dfg_node_24",
+      "type": "function",
+      "name": "totalSupply",
+      "data_type": null,
+      "scope": "ChronoBankPlatform",
+      "source_location": {
+        "line": 15,
+        "column": 5,
+        "end_line": 15,
+        "end_column": 57
+      },
+      "properties": {
+        "source_location": {
+          "line": 15,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_26": {
+      "id": "dfg_node_26",
+      "type": "parameter",
+      "name": "param_24",
+      "data_type": "uint",
+      "scope": "totalSupply_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "totalSupply"
+      }
+    },
+    "dfg_node_27": {
+      "id": "dfg_node_27",
+      "type": "function",
+      "name": "balanceOf",
+      "data_type": null,
+      "scope": "ChronoBankPlatform",
+      "source_location": {
+        "line": 16,
+        "column": 5,
+        "end_line": 16,
+        "end_column": 72
+      },
+      "properties": {
+        "source_location": {
+          "line": 16,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_29": {
+      "id": "dfg_node_29",
+      "type": "parameter",
+      "name": "param_27",
+      "data_type": "uint",
+      "scope": "balanceOf_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "balanceOf"
+      }
+    },
+    "dfg_node_30": {
+      "id": "dfg_node_30",
+      "type": "function",
+      "name": "allowance",
+      "data_type": null,
+      "scope": "ChronoBankPlatform",
+      "source_location": {
+        "line": 17,
+        "column": 5,
+        "end_line": 17,
+        "end_column": 88
+      },
+      "properties": {
+        "source_location": {
+          "line": 17,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_32": {
+      "id": "dfg_node_32",
+      "type": "parameter",
+      "name": "param_30",
+      "data_type": "uint",
+      "scope": "allowance_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "allowance"
+      }
+    },
+    "dfg_node_33": {
+      "id": "dfg_node_33",
+      "type": "function",
+      "name": "baseUnit",
+      "data_type": null,
+      "scope": "ChronoBankPlatform",
+      "source_location": {
+        "line": 18,
+        "column": 5,
+        "end_line": 18,
+        "end_column": 55
+      },
+      "properties": {
+        "source_location": {
+          "line": 18,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_35": {
+      "id": "dfg_node_35",
+      "type": "parameter",
+      "name": "param_33",
+      "data_type": "uint8",
+      "scope": "baseUnit_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "baseUnit"
+      }
+    },
+    "dfg_node_36": {
+      "id": "dfg_node_36",
+      "type": "function",
+      "name": "proxyTransferWithReference",
+      "data_type": null,
+      "scope": "ChronoBankPlatform",
+      "source_location": {
+        "line": 19,
+        "column": 5,
+        "end_line": 19,
+        "end_column": 144
+      },
+      "properties": {
+        "source_location": {
+          "line": 19,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_38": {
+      "id": "dfg_node_38",
+      "type": "parameter",
+      "name": "errorCode",
+      "data_type": "uint",
+      "scope": "proxyTransferWithReference_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "proxyTransferWithReference"
+      }
+    },
+    "dfg_node_39": {
+      "id": "dfg_node_39",
+      "type": "function",
+      "name": "proxyTransferFromWithReference",
+      "data_type": null,
+      "scope": "ChronoBankPlatform",
+      "source_location": {
+        "line": 20,
+        "column": 5,
+        "end_line": 20,
+        "end_column": 163
+      },
+      "properties": {
+        "source_location": {
+          "line": 20,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_41": {
+      "id": "dfg_node_41",
+      "type": "parameter",
+      "name": "errorCode",
+      "data_type": "uint",
+      "scope": "proxyTransferFromWithReference_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "proxyTransferFromWithReference"
+      }
+    },
+    "dfg_node_42": {
+      "id": "dfg_node_42",
+      "type": "function",
+      "name": "proxyApprove",
+      "data_type": null,
+      "scope": "ChronoBankPlatform",
+      "source_location": {
+        "line": 21,
+        "column": 5,
+        "end_line": 21,
+        "end_column": 116
+      },
+      "properties": {
+        "source_location": {
+          "line": 21,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_44": {
+      "id": "dfg_node_44",
+      "type": "parameter",
+      "name": "errorCode",
+      "data_type": "uint",
+      "scope": "proxyApprove_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "proxyApprove"
+      }
+    },
+    "dfg_node_45": {
+      "id": "dfg_node_45",
+      "type": "function",
+      "name": "issueAsset",
+      "data_type": null,
+      "scope": "ChronoBankPlatform",
+      "source_location": {
+        "line": 22,
+        "column": 5,
+        "end_line": 22,
+        "end_column": 151
+      },
+      "properties": {
+        "source_location": {
+          "line": 22,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_47": {
+      "id": "dfg_node_47",
+      "type": "parameter",
+      "name": "errorCode",
+      "data_type": "uint",
+      "scope": "issueAsset_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "issueAsset"
+      }
+    },
+    "dfg_node_48": {
+      "id": "dfg_node_48",
+      "type": "function",
+      "name": "issueAsset",
+      "data_type": null,
+      "scope": "ChronoBankPlatform",
+      "source_location": {
+        "line": 23,
+        "column": 5,
+        "end_line": 23,
+        "end_column": 169
+      },
+      "properties": {
+        "source_location": {
+          "line": 23,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_50": {
+      "id": "dfg_node_50",
+      "type": "parameter",
+      "name": "errorCode",
+      "data_type": "uint",
+      "scope": "issueAsset_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "issueAsset"
+      }
+    },
+    "dfg_node_51": {
+      "id": "dfg_node_51",
+      "type": "function",
+      "name": "reissueAsset",
+      "data_type": null,
+      "scope": "ChronoBankPlatform",
+      "source_location": {
+        "line": 24,
+        "column": 5,
+        "end_line": 24,
+        "end_column": 81
+      },
+      "properties": {
+        "source_location": {
+          "line": 24,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_53": {
+      "id": "dfg_node_53",
+      "type": "parameter",
+      "name": "errorCode",
+      "data_type": "uint",
+      "scope": "reissueAsset_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "reissueAsset"
+      }
+    },
+    "dfg_node_54": {
+      "id": "dfg_node_54",
+      "type": "function",
+      "name": "revokeAsset",
+      "data_type": null,
+      "scope": "ChronoBankPlatform",
+      "source_location": {
+        "line": 25,
+        "column": 5,
+        "end_line": 25,
+        "end_column": 80
+      },
+      "properties": {
+        "source_location": {
+          "line": 25,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_56": {
+      "id": "dfg_node_56",
+      "type": "parameter",
+      "name": "errorCode",
+      "data_type": "uint",
+      "scope": "revokeAsset_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "revokeAsset"
+      }
+    },
+    "dfg_node_57": {
+      "id": "dfg_node_57",
+      "type": "function",
+      "name": "isReissuable",
+      "data_type": null,
+      "scope": "ChronoBankPlatform",
+      "source_location": {
+        "line": 26,
+        "column": 5,
+        "end_line": 26,
+        "end_column": 58
+      },
+      "properties": {
+        "source_location": {
+          "line": 26,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_59": {
+      "id": "dfg_node_59",
+      "type": "parameter",
+      "name": "param_57",
+      "data_type": "bool",
+      "scope": "isReissuable_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "isReissuable"
+      }
+    },
+    "dfg_node_60": {
+      "id": "dfg_node_60",
+      "type": "function",
+      "name": "changeOwnership",
+      "data_type": null,
+      "scope": "ChronoBankPlatform",
+      "source_location": {
+        "line": 27,
+        "column": 5,
+        "end_line": 27,
+        "end_column": 90
+      },
+      "properties": {
+        "source_location": {
+          "line": 27,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_62": {
+      "id": "dfg_node_62",
+      "type": "parameter",
+      "name": "errorCode",
+      "data_type": "uint",
+      "scope": "changeOwnership_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "changeOwnership"
+      }
+    },
+    "dfg_node_63": {
+      "id": "dfg_node_63",
+      "type": "contract",
+      "name": "ChronoBankAsset",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 30,
+        "column": 1,
+        "end_line": 37,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 30,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_64": {
+      "id": "dfg_node_64",
+      "type": "function",
+      "name": "__transferWithReference",
+      "data_type": null,
+      "scope": "ChronoBankAsset",
+      "source_location": {
+        "line": 31,
+        "column": 5,
+        "end_line": 31,
+        "end_column": 114
+      },
+      "properties": {
+        "source_location": {
+          "line": 31,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_66": {
+      "id": "dfg_node_66",
+      "type": "parameter",
+      "name": "param_64",
+      "data_type": "bool",
+      "scope": "__transferWithReference_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "__transferWithReference"
+      }
+    },
+    "dfg_node_67": {
+      "id": "dfg_node_67",
+      "type": "function",
+      "name": "__transferFromWithReference",
+      "data_type": null,
+      "scope": "ChronoBankAsset",
+      "source_location": {
+        "line": 32,
+        "column": 5,
+        "end_line": 32,
+        "end_column": 133
+      },
+      "properties": {
+        "source_location": {
+          "line": 32,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_69": {
+      "id": "dfg_node_69",
+      "type": "parameter",
+      "name": "param_67",
+      "data_type": "bool",
+      "scope": "__transferFromWithReference_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "__transferFromWithReference"
+      }
+    },
+    "dfg_node_70": {
+      "id": "dfg_node_70",
+      "type": "function",
+      "name": "__approve",
+      "data_type": null,
+      "scope": "ChronoBankAsset",
+      "source_location": {
+        "line": 33,
+        "column": 5,
+        "end_line": 33,
+        "end_column": 86
+      },
+      "properties": {
+        "source_location": {
+          "line": 33,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_72": {
+      "id": "dfg_node_72",
+      "type": "parameter",
+      "name": "param_70",
+      "data_type": "bool",
+      "scope": "__approve_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "__approve"
+      }
+    },
+    "dfg_node_73": {
+      "id": "dfg_node_73",
+      "type": "function",
+      "name": "__process",
+      "data_type": null,
+      "scope": "ChronoBankAsset",
+      "source_location": {
+        "line": 34,
+        "column": 5,
+        "end_line": 36,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 34,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_74": {
+      "id": "dfg_node_74",
+      "type": "contract",
+      "name": "ERC20",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 39,
+        "column": 1,
+        "end_line": 50,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 39,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_75": {
+      "id": "dfg_node_75",
+      "type": "state_variable",
+      "name": "symbol",
+      "data_type": "string",
+      "scope": "ERC20",
+      "source_location": {
+        "line": 42,
+        "column": 5,
+        "end_line": 42,
+        "end_column": 26
+      },
+      "properties": {
+        "source_location": {
+          "line": 42,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_76": {
+      "id": "dfg_node_76",
+      "type": "function",
+      "name": "totalSupply",
+      "data_type": null,
+      "scope": "ERC20",
+      "source_location": {
+        "line": 44,
+        "column": 5,
+        "end_line": 44,
+        "end_column": 62
+      },
+      "properties": {
+        "source_location": {
+          "line": 44,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_78": {
+      "id": "dfg_node_78",
+      "type": "parameter",
+      "name": "supply",
+      "data_type": "uint256",
+      "scope": "totalSupply_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "totalSupply"
+      }
+    },
+    "dfg_node_79": {
+      "id": "dfg_node_79",
+      "type": "function",
+      "name": "balanceOf",
+      "data_type": null,
+      "scope": "ERC20",
+      "source_location": {
+        "line": 45,
+        "column": 5,
+        "end_line": 45,
+        "end_column": 75
+      },
+      "properties": {
+        "source_location": {
+          "line": 45,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_81": {
+      "id": "dfg_node_81",
+      "type": "parameter",
+      "name": "balance",
+      "data_type": "uint256",
+      "scope": "balanceOf_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "balanceOf"
+      }
+    },
+    "dfg_node_82": {
+      "id": "dfg_node_82",
+      "type": "function",
+      "name": "transfer",
+      "data_type": null,
+      "scope": "ERC20",
+      "source_location": {
+        "line": 46,
+        "column": 5,
+        "end_line": 46,
+        "end_column": 75
+      },
+      "properties": {
+        "source_location": {
+          "line": 46,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_84": {
+      "id": "dfg_node_84",
+      "type": "parameter",
+      "name": "success",
+      "data_type": "bool",
+      "scope": "transfer_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "transfer"
+      }
+    },
+    "dfg_node_85": {
+      "id": "dfg_node_85",
+      "type": "function",
+      "name": "transferFrom",
+      "data_type": null,
+      "scope": "ERC20",
+      "source_location": {
+        "line": 47,
+        "column": 5,
+        "end_line": 47,
+        "end_column": 94
+      },
+      "properties": {
+        "source_location": {
+          "line": 47,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_87": {
+      "id": "dfg_node_87",
+      "type": "parameter",
+      "name": "success",
+      "data_type": "bool",
+      "scope": "transferFrom_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "transferFrom"
+      }
+    },
+    "dfg_node_88": {
+      "id": "dfg_node_88",
+      "type": "function",
+      "name": "approve",
+      "data_type": null,
+      "scope": "ERC20",
+      "source_location": {
+        "line": 48,
+        "column": 5,
+        "end_line": 48,
+        "end_column": 79
+      },
+      "properties": {
+        "source_location": {
+          "line": 48,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_90": {
+      "id": "dfg_node_90",
+      "type": "parameter",
+      "name": "success",
+      "data_type": "bool",
+      "scope": "approve_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "approve"
+      }
+    },
+    "dfg_node_91": {
+      "id": "dfg_node_91",
+      "type": "function",
+      "name": "allowance",
+      "data_type": null,
+      "scope": "ERC20",
+      "source_location": {
+        "line": 49,
+        "column": 5,
+        "end_line": 49,
+        "end_column": 95
+      },
+      "properties": {
+        "source_location": {
+          "line": 49,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_93": {
+      "id": "dfg_node_93",
+      "type": "parameter",
+      "name": "remaining",
+      "data_type": "uint256",
+      "scope": "allowance_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "allowance"
+      }
+    },
+    "dfg_node_94": {
+      "id": "dfg_node_94",
+      "type": "contract",
+      "name": "ChronoBankAssetProxy",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 75,
+        "column": 2,
+        "end_line": 500,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 75,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_95": {
+      "id": "dfg_node_95",
+      "type": "state_variable",
+      "name": "OK",
+      "data_type": "uint",
+      "scope": "ChronoBankAssetProxy",
+      "source_location": {
+        "line": 78,
+        "column": 6,
+        "end_line": 78,
+        "end_column": 27
+      },
+      "properties": {
+        "source_location": {
+          "line": 78,
+          "column": 6
+        }
+      }
+    },
+    "dfg_node_96": {
+      "id": "dfg_node_96",
+      "type": "state_variable",
+      "name": "chronoBankPlatform",
+      "data_type": "ChronoBankPlatform",
+      "scope": "ChronoBankAssetProxy",
+      "source_location": {
+        "line": 81,
+        "column": 6,
+        "end_line": 81,
+        "end_column": 51
+      },
+      "properties": {
+        "source_location": {
+          "line": 81,
+          "column": 6
+        }
+      }
+    },
+    "dfg_node_97": {
+      "id": "dfg_node_97",
+      "type": "state_variable",
+      "name": "smbl",
+      "data_type": "bytes32",
+      "scope": "ChronoBankAssetProxy",
+      "source_location": {
+        "line": 84,
+        "column": 6,
+        "end_line": 84,
+        "end_column": 26
+      },
+      "properties": {
+        "source_location": {
+          "line": 84,
+          "column": 6
+        }
+      }
+    },
+    "dfg_node_98": {
+      "id": "dfg_node_98",
+      "type": "state_variable",
+      "name": "name",
+      "data_type": "string",
+      "scope": "ChronoBankAssetProxy",
+      "source_location": {
+        "line": 87,
+        "column": 6,
+        "end_line": 87,
+        "end_column": 25
+      },
+      "properties": {
+        "source_location": {
+          "line": 87,
+          "column": 6
+        }
+      }
+    },
+    "dfg_node_99": {
+      "id": "dfg_node_99",
+      "type": "state_variable",
+      "name": "symbol",
+      "data_type": "string",
+      "scope": "ChronoBankAssetProxy",
+      "source_location": {
+        "line": 89,
+        "column": 6,
+        "end_line": 89,
+        "end_column": 27
+      },
+      "properties": {
+        "source_location": {
+          "line": 89,
+          "column": 6
+        }
+      }
+    },
+    "dfg_node_100": {
+      "id": "dfg_node_100",
+      "type": "function",
+      "name": "init",
+      "data_type": null,
+      "scope": "ChronoBankAssetProxy",
+      "source_location": {
+        "line": 102,
+        "column": 6,
+        "end_line": 111,
+        "end_column": 7
+      },
+      "properties": {
+        "source_location": {
+          "line": 102,
+          "column": 6
+        }
+      }
+    },
+    "dfg_node_102": {
+      "id": "dfg_node_102",
+      "type": "parameter",
+      "name": "param_100",
+      "data_type": "bool",
+      "scope": "init_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "init"
+      }
+    },
+    "dfg_node_103": {
+      "id": "dfg_node_103",
+      "type": "function",
+      "name": "stringToBytes32",
+      "data_type": null,
+      "scope": "ChronoBankAssetProxy",
+      "source_location": {
+        "line": 113,
+        "column": 6,
+        "end_line": 117,
+        "end_column": 7
+      },
+      "properties": {
+        "source_location": {
+          "line": 113,
+          "column": 6
+        }
+      }
+    },
+    "dfg_node_105": {
+      "id": "dfg_node_105",
+      "type": "parameter",
+      "name": "result",
+      "data_type": "bytes32",
+      "scope": "stringToBytes32_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "stringToBytes32"
+      }
+    },
+    "dfg_node_106": {
+      "id": "dfg_node_106",
+      "type": "function",
+      "name": "_getAsset",
+      "data_type": null,
+      "scope": "ChronoBankAssetProxy",
+      "source_location": {
+        "line": 142,
+        "column": 6,
+        "end_line": 144,
+        "end_column": 7
+      },
+      "properties": {
+        "source_location": {
+          "line": 142,
+          "column": 6
+        }
+      }
+    },
+    "dfg_node_108": {
+      "id": "dfg_node_108",
+      "type": "parameter",
+      "name": "param_106",
+      "data_type": "ChronoBankAsset",
+      "scope": "_getAsset_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "_getAsset"
+      }
+    },
+    "dfg_node_109": {
+      "id": "dfg_node_109",
+      "type": "function",
+      "name": "totalSupply",
+      "data_type": null,
+      "scope": "ChronoBankAssetProxy",
+      "source_location": {
+        "line": 151,
+        "column": 6,
+        "end_line": 153,
+        "end_column": 7
+      },
+      "properties": {
+        "source_location": {
+          "line": 151,
+          "column": 6
+        }
+      }
+    },
+    "dfg_node_111": {
+      "id": "dfg_node_111",
+      "type": "parameter",
+      "name": "param_109",
+      "data_type": "uint",
+      "scope": "totalSupply_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "totalSupply"
+      }
+    },
+    "dfg_node_112": {
+      "id": "dfg_node_112",
+      "type": "function",
+      "name": "balanceOf",
+      "data_type": null,
+      "scope": "ChronoBankAssetProxy",
+      "source_location": {
+        "line": 162,
+        "column": 6,
+        "end_line": 164,
+        "end_column": 7
+      },
+      "properties": {
+        "source_location": {
+          "line": 162,
+          "column": 6
+        }
+      }
+    },
+    "dfg_node_114": {
+      "id": "dfg_node_114",
+      "type": "parameter",
+      "name": "param_112",
+      "data_type": "uint",
+      "scope": "balanceOf_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "balanceOf"
+      }
+    },
+    "dfg_node_115": {
+      "id": "dfg_node_115",
+      "type": "function",
+      "name": "allowance",
+      "data_type": null,
+      "scope": "ChronoBankAssetProxy",
+      "source_location": {
+        "line": 174,
+        "column": 6,
+        "end_line": 176,
+        "end_column": 7
+      },
+      "properties": {
+        "source_location": {
+          "line": 174,
+          "column": 6
+        }
+      }
+    },
+    "dfg_node_117": {
+      "id": "dfg_node_117",
+      "type": "parameter",
+      "name": "param_115",
+      "data_type": "uint",
+      "scope": "allowance_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "allowance"
+      }
+    },
+    "dfg_node_118": {
+      "id": "dfg_node_118",
+      "type": "function",
+      "name": "decimals",
+      "data_type": null,
+      "scope": "ChronoBankAssetProxy",
+      "source_location": {
+        "line": 183,
+        "column": 6,
+        "end_line": 185,
+        "end_column": 7
+      },
+      "properties": {
+        "source_location": {
+          "line": 183,
+          "column": 6
+        }
+      }
+    },
+    "dfg_node_120": {
+      "id": "dfg_node_120",
+      "type": "parameter",
+      "name": "param_118",
+      "data_type": "uint8",
+      "scope": "decimals_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "decimals"
+      }
+    },
+    "dfg_node_121": {
+      "id": "dfg_node_121",
+      "type": "function",
+      "name": "transfer",
+      "data_type": null,
+      "scope": "ChronoBankAssetProxy",
+      "source_location": {
+        "line": 195,
+        "column": 6,
+        "end_line": 202,
+        "end_column": 7
+      },
+      "properties": {
+        "source_location": {
+          "line": 195,
+          "column": 6
+        }
+      }
+    },
+    "dfg_node_123": {
+      "id": "dfg_node_123",
+      "type": "parameter",
+      "name": "param_121",
+      "data_type": "bool",
+      "scope": "transfer_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "transfer"
+      }
+    },
+    "dfg_node_124": {
+      "id": "dfg_node_124",
+      "type": "function",
+      "name": "transferWithReference",
+      "data_type": null,
+      "scope": "ChronoBankAssetProxy",
+      "source_location": {
+        "line": 213,
+        "column": 6,
+        "end_line": 220,
+        "end_column": 7
+      },
+      "properties": {
+        "source_location": {
+          "line": 213,
+          "column": 6
+        }
+      }
+    },
+    "dfg_node_126": {
+      "id": "dfg_node_126",
+      "type": "parameter",
+      "name": "param_124",
+      "data_type": "bool",
+      "scope": "transferWithReference_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "transferWithReference"
+      }
+    },
+    "dfg_node_127": {
+      "id": "dfg_node_127",
+      "type": "function",
+      "name": "_transferWithReference",
+      "data_type": null,
+      "scope": "ChronoBankAssetProxy",
+      "source_location": {
+        "line": 228,
+        "column": 6,
+        "end_line": 230,
+        "end_column": 7
+      },
+      "properties": {
+        "source_location": {
+          "line": 228,
+          "column": 6
+        }
+      }
+    },
+    "dfg_node_129": {
+      "id": "dfg_node_129",
+      "type": "parameter",
+      "name": "param_127",
+      "data_type": "bool",
+      "scope": "_transferWithReference_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "_transferWithReference"
+      }
+    },
+    "dfg_node_130": {
+      "id": "dfg_node_130",
+      "type": "function",
+      "name": "__transferWithReference",
+      "data_type": null,
+      "scope": "ChronoBankAssetProxy",
+      "source_location": {
+        "line": 244,
+        "column": 6,
+        "end_line": 246,
+        "end_column": 7
+      },
+      "properties": {
+        "source_location": {
+          "line": 244,
+          "column": 6
+        }
+      }
+    },
+    "dfg_node_132": {
+      "id": "dfg_node_132",
+      "type": "parameter",
+      "name": "param_130",
+      "data_type": "bool",
+      "scope": "__transferWithReference_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "__transferWithReference"
+      }
+    },
+    "dfg_node_133": {
+      "id": "dfg_node_133",
+      "type": "function",
+      "name": "transferFrom",
+      "data_type": null,
+      "scope": "ChronoBankAssetProxy",
+      "source_location": {
+        "line": 257,
+        "column": 6,
+        "end_line": 264,
+        "end_column": 7
+      },
+      "properties": {
+        "source_location": {
+          "line": 257,
+          "column": 6
+        }
+      }
+    },
+    "dfg_node_135": {
+      "id": "dfg_node_135",
+      "type": "parameter",
+      "name": "param_133",
+      "data_type": "bool",
+      "scope": "transferFrom_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "transferFrom"
+      }
+    },
+    "dfg_node_136": {
+      "id": "dfg_node_136",
+      "type": "function",
+      "name": "__transferFromWithReference",
+      "data_type": null,
+      "scope": "ChronoBankAssetProxy",
+      "source_location": {
+        "line": 279,
+        "column": 6,
+        "end_line": 281,
+        "end_column": 7
+      },
+      "properties": {
+        "source_location": {
+          "line": 279,
+          "column": 6
+        }
+      }
+    },
+    "dfg_node_138": {
+      "id": "dfg_node_138",
+      "type": "parameter",
+      "name": "param_136",
+      "data_type": "bool",
+      "scope": "__transferFromWithReference_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "__transferFromWithReference"
+      }
+    },
+    "dfg_node_139": {
+      "id": "dfg_node_139",
+      "type": "function",
+      "name": "approve",
+      "data_type": null,
+      "scope": "ChronoBankAssetProxy",
+      "source_location": {
+        "line": 291,
+        "column": 6,
+        "end_line": 298,
+        "end_column": 7
+      },
+      "properties": {
+        "source_location": {
+          "line": 291,
+          "column": 6
+        }
+      }
+    },
+    "dfg_node_141": {
+      "id": "dfg_node_141",
+      "type": "parameter",
+      "name": "param_139",
+      "data_type": "bool",
+      "scope": "approve_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "approve"
+      }
+    },
+    "dfg_node_142": {
+      "id": "dfg_node_142",
+      "type": "function",
+      "name": "__approve",
+      "data_type": null,
+      "scope": "ChronoBankAssetProxy",
+      "source_location": {
+        "line": 311,
+        "column": 6,
+        "end_line": 313,
+        "end_column": 7
+      },
+      "properties": {
+        "source_location": {
+          "line": 311,
+          "column": 6
+        }
+      }
+    },
+    "dfg_node_144": {
+      "id": "dfg_node_144",
+      "type": "parameter",
+      "name": "param_142",
+      "data_type": "bool",
+      "scope": "__approve_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "__approve"
+      }
+    },
+    "dfg_node_145": {
+      "id": "dfg_node_145",
+      "type": "function",
+      "name": "emitTransfer",
+      "data_type": null,
+      "scope": "ChronoBankAssetProxy",
+      "source_location": {
+        "line": 320,
+        "column": 6,
+        "end_line": 322,
+        "end_column": 7
+      },
+      "properties": {
+        "source_location": {
+          "line": 320,
+          "column": 6
+        }
+      }
+    },
+    "dfg_node_146": {
+      "id": "dfg_node_146",
+      "type": "function",
+      "name": "emitApprove",
+      "data_type": null,
+      "scope": "ChronoBankAssetProxy",
+      "source_location": {
+        "line": 329,
+        "column": 6,
+        "end_line": 331,
+        "end_column": 7
+      },
+      "properties": {
+        "source_location": {
+          "line": 329,
+          "column": 6
+        }
+      }
+    },
+    "dfg_node_147": {
+      "id": "dfg_node_147",
+      "type": "state_variable",
+      "name": "latestVersion",
+      "data_type": "address",
+      "scope": "ChronoBankAssetProxy",
+      "source_location": {
+        "line": 347,
+        "column": 6,
+        "end_line": 347,
+        "end_column": 28
+      },
+      "properties": {
+        "source_location": {
+          "line": 347,
+          "column": 6
+        }
+      }
+    },
+    "dfg_node_148": {
+      "id": "dfg_node_148",
+      "type": "state_variable",
+      "name": "pendingVersion",
+      "data_type": "address",
+      "scope": "ChronoBankAssetProxy",
+      "source_location": {
+        "line": 350,
+        "column": 6,
+        "end_line": 350,
+        "end_column": 29
+      },
+      "properties": {
+        "source_location": {
+          "line": 350,
+          "column": 6
+        }
+      }
+    },
+    "dfg_node_149": {
+      "id": "dfg_node_149",
+      "type": "state_variable",
+      "name": "pendingVersionTimestamp",
+      "data_type": "uint",
+      "scope": "ChronoBankAssetProxy",
+      "source_location": {
+        "line": 353,
+        "column": 6,
+        "end_line": 353,
+        "end_column": 35
+      },
+      "properties": {
+        "source_location": {
+          "line": 353,
+          "column": 6
+        }
+      }
+    },
+    "dfg_node_150": {
+      "id": "dfg_node_150",
+      "type": "state_variable",
+      "name": "UPGRADE_FREEZE_TIME",
+      "data_type": "uint",
+      "scope": "ChronoBankAssetProxy",
+      "source_location": {
+        "line": 356,
+        "column": 6,
+        "end_line": 356,
+        "end_column": 49
+      },
+      "properties": {
+        "source_location": {
+          "line": 356,
+          "column": 6
+        }
+      }
+    },
+    "dfg_node_151": {
+      "id": "dfg_node_151",
+      "type": "state_variable",
+      "name": "userOptOutVersion",
+      "data_type": "mapping(address => address)",
+      "scope": "ChronoBankAssetProxy",
+      "source_location": {
+        "line": 360,
+        "column": 6,
+        "end_line": 360,
+        "end_column": 52
+      },
+      "properties": {
+        "source_location": {
+          "line": 360,
+          "column": 6
+        }
+      }
+    },
+    "dfg_node_152": {
+      "id": "dfg_node_152",
+      "type": "function",
+      "name": "getVersionFor",
+      "data_type": null,
+      "scope": "ChronoBankAssetProxy",
+      "source_location": {
+        "line": 378,
+        "column": 6,
+        "end_line": 380,
+        "end_column": 7
+      },
+      "properties": {
+        "source_location": {
+          "line": 378,
+          "column": 6
+        }
+      }
+    },
+    "dfg_node_154": {
+      "id": "dfg_node_154",
+      "type": "parameter",
+      "name": "param_152",
+      "data_type": "address",
+      "scope": "getVersionFor_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getVersionFor"
+      }
+    },
+    "dfg_node_155": {
+      "id": "dfg_node_155",
+      "type": "function",
+      "name": "getLatestVersion",
+      "data_type": null,
+      "scope": "ChronoBankAssetProxy",
+      "source_location": {
+        "line": 387,
+        "column": 6,
+        "end_line": 389,
+        "end_column": 7
+      },
+      "properties": {
+        "source_location": {
+          "line": 387,
+          "column": 6
+        }
+      }
+    },
+    "dfg_node_157": {
+      "id": "dfg_node_157",
+      "type": "parameter",
+      "name": "param_155",
+      "data_type": "address",
+      "scope": "getLatestVersion_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getLatestVersion"
+      }
+    },
+    "dfg_node_158": {
+      "id": "dfg_node_158",
+      "type": "function",
+      "name": "getPendingVersion",
+      "data_type": null,
+      "scope": "ChronoBankAssetProxy",
+      "source_location": {
+        "line": 396,
+        "column": 6,
+        "end_line": 398,
+        "end_column": 7
+      },
+      "properties": {
+        "source_location": {
+          "line": 396,
+          "column": 6
+        }
+      }
+    },
+    "dfg_node_160": {
+      "id": "dfg_node_160",
+      "type": "parameter",
+      "name": "param_158",
+      "data_type": "address",
+      "scope": "getPendingVersion_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getPendingVersion"
+      }
+    },
+    "dfg_node_161": {
+      "id": "dfg_node_161",
+      "type": "function",
+      "name": "getPendingVersionTimestamp",
+      "data_type": null,
+      "scope": "ChronoBankAssetProxy",
+      "source_location": {
+        "line": 405,
+        "column": 6,
+        "end_line": 407,
+        "end_column": 7
+      },
+      "properties": {
+        "source_location": {
+          "line": 405,
+          "column": 6
+        }
+      }
+    },
+    "dfg_node_163": {
+      "id": "dfg_node_163",
+      "type": "parameter",
+      "name": "param_161",
+      "data_type": "uint",
+      "scope": "getPendingVersionTimestamp_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getPendingVersionTimestamp"
+      }
+    },
+    "dfg_node_164": {
+      "id": "dfg_node_164",
+      "type": "function",
+      "name": "proposeUpgrade",
+      "data_type": null,
+      "scope": "ChronoBankAssetProxy",
+      "source_location": {
+        "line": 420,
+        "column": 6,
+        "end_line": 438,
+        "end_column": 7
+      },
+      "properties": {
+        "source_location": {
+          "line": 420,
+          "column": 6
+        }
+      }
+    },
+    "dfg_node_166": {
+      "id": "dfg_node_166",
+      "type": "parameter",
+      "name": "param_164",
+      "data_type": "bool",
+      "scope": "proposeUpgrade_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "proposeUpgrade"
+      }
+    },
+    "dfg_node_167": {
+      "id": "dfg_node_167",
+      "type": "function",
+      "name": "purgeUpgrade",
+      "data_type": null,
+      "scope": "ChronoBankAssetProxy",
+      "source_location": {
+        "line": 447,
+        "column": 6,
+        "end_line": 454,
+        "end_column": 7
+      },
+      "properties": {
+        "source_location": {
+          "line": 447,
+          "column": 6
+        }
+      }
+    },
+    "dfg_node_169": {
+      "id": "dfg_node_169",
+      "type": "parameter",
+      "name": "param_167",
+      "data_type": "bool",
+      "scope": "purgeUpgrade_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "purgeUpgrade"
+      }
+    },
+    "dfg_node_170": {
+      "id": "dfg_node_170",
+      "type": "function",
+      "name": "commitUpgrade",
+      "data_type": null,
+      "scope": "ChronoBankAssetProxy",
+      "source_location": {
+        "line": 463,
+        "column": 6,
+        "end_line": 474,
+        "end_column": 7
+      },
+      "properties": {
+        "source_location": {
+          "line": 463,
+          "column": 6
+        }
+      }
+    },
+    "dfg_node_172": {
+      "id": "dfg_node_172",
+      "type": "parameter",
+      "name": "param_170",
+      "data_type": "bool",
+      "scope": "commitUpgrade_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "commitUpgrade"
+      }
+    },
+    "dfg_node_173": {
+      "id": "dfg_node_173",
+      "type": "function",
+      "name": "optOut",
+      "data_type": null,
+      "scope": "ChronoBankAssetProxy",
+      "source_location": {
+        "line": 482,
+        "column": 6,
+        "end_line": 488,
+        "end_column": 7
+      },
+      "properties": {
+        "source_location": {
+          "line": 482,
+          "column": 6
+        }
+      }
+    },
+    "dfg_node_175": {
+      "id": "dfg_node_175",
+      "type": "parameter",
+      "name": "param_173",
+      "data_type": "bool",
+      "scope": "optOut_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "optOut"
+      }
+    },
+    "dfg_node_176": {
+      "id": "dfg_node_176",
+      "type": "function",
+      "name": "optIn",
+      "data_type": null,
+      "scope": "ChronoBankAssetProxy",
+      "source_location": {
+        "line": 496,
+        "column": 6,
+        "end_line": 499,
+        "end_column": 7
+      },
+      "properties": {
+        "source_location": {
+          "line": 496,
+          "column": 6
+        }
+      }
+    },
+    "dfg_node_178": {
+      "id": "dfg_node_178",
+      "type": "parameter",
+      "name": "param_176",
+      "data_type": "bool",
+      "scope": "optIn_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "optIn"
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_3",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_6",
+      "target": "dfg_node_8",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_1",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_9",
+      "target": "dfg_node_11",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_1",
+      "target": "dfg_node_9",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_12",
+      "target": "dfg_node_14",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_9": {
+      "id": "dfg_edge_9",
+      "source": "dfg_node_1",
+      "target": "dfg_node_12",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_10": {
+      "id": "dfg_edge_10",
+      "source": "dfg_node_15",
+      "target": "dfg_node_17",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_11": {
+      "id": "dfg_edge_11",
+      "source": "dfg_node_1",
+      "target": "dfg_node_15",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_12": {
+      "id": "dfg_edge_12",
+      "source": "dfg_node_18",
+      "target": "dfg_node_20",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_13": {
+      "id": "dfg_edge_13",
+      "source": "dfg_node_1",
+      "target": "dfg_node_18",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_14": {
+      "id": "dfg_edge_14",
+      "source": "dfg_node_21",
+      "target": "dfg_node_23",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_15": {
+      "id": "dfg_edge_15",
+      "source": "dfg_node_1",
+      "target": "dfg_node_21",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_16": {
+      "id": "dfg_edge_16",
+      "source": "dfg_node_24",
+      "target": "dfg_node_26",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_17": {
+      "id": "dfg_edge_17",
+      "source": "dfg_node_1",
+      "target": "dfg_node_24",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_18": {
+      "id": "dfg_edge_18",
+      "source": "dfg_node_27",
+      "target": "dfg_node_29",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_19": {
+      "id": "dfg_edge_19",
+      "source": "dfg_node_1",
+      "target": "dfg_node_27",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_20": {
+      "id": "dfg_edge_20",
+      "source": "dfg_node_30",
+      "target": "dfg_node_32",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_21": {
+      "id": "dfg_edge_21",
+      "source": "dfg_node_1",
+      "target": "dfg_node_30",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_22": {
+      "id": "dfg_edge_22",
+      "source": "dfg_node_33",
+      "target": "dfg_node_35",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_23": {
+      "id": "dfg_edge_23",
+      "source": "dfg_node_1",
+      "target": "dfg_node_33",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_24": {
+      "id": "dfg_edge_24",
+      "source": "dfg_node_36",
+      "target": "dfg_node_38",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_25": {
+      "id": "dfg_edge_25",
+      "source": "dfg_node_1",
+      "target": "dfg_node_36",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_26": {
+      "id": "dfg_edge_26",
+      "source": "dfg_node_39",
+      "target": "dfg_node_41",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_27": {
+      "id": "dfg_edge_27",
+      "source": "dfg_node_1",
+      "target": "dfg_node_39",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_28": {
+      "id": "dfg_edge_28",
+      "source": "dfg_node_42",
+      "target": "dfg_node_44",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_29": {
+      "id": "dfg_edge_29",
+      "source": "dfg_node_1",
+      "target": "dfg_node_42",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_30": {
+      "id": "dfg_edge_30",
+      "source": "dfg_node_45",
+      "target": "dfg_node_47",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_31": {
+      "id": "dfg_edge_31",
+      "source": "dfg_node_1",
+      "target": "dfg_node_45",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_32": {
+      "id": "dfg_edge_32",
+      "source": "dfg_node_48",
+      "target": "dfg_node_50",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_33": {
+      "id": "dfg_edge_33",
+      "source": "dfg_node_1",
+      "target": "dfg_node_48",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_34": {
+      "id": "dfg_edge_34",
+      "source": "dfg_node_51",
+      "target": "dfg_node_53",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_35": {
+      "id": "dfg_edge_35",
+      "source": "dfg_node_1",
+      "target": "dfg_node_51",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_36": {
+      "id": "dfg_edge_36",
+      "source": "dfg_node_54",
+      "target": "dfg_node_56",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_37": {
+      "id": "dfg_edge_37",
+      "source": "dfg_node_1",
+      "target": "dfg_node_54",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_38": {
+      "id": "dfg_edge_38",
+      "source": "dfg_node_57",
+      "target": "dfg_node_59",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_39": {
+      "id": "dfg_edge_39",
+      "source": "dfg_node_1",
+      "target": "dfg_node_57",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_40": {
+      "id": "dfg_edge_40",
+      "source": "dfg_node_60",
+      "target": "dfg_node_62",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_41": {
+      "id": "dfg_edge_41",
+      "source": "dfg_node_1",
+      "target": "dfg_node_60",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_42": {
+      "id": "dfg_edge_42",
+      "source": "dfg_node_64",
+      "target": "dfg_node_66",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_43": {
+      "id": "dfg_edge_43",
+      "source": "dfg_node_63",
+      "target": "dfg_node_64",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_44": {
+      "id": "dfg_edge_44",
+      "source": "dfg_node_67",
+      "target": "dfg_node_69",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_45": {
+      "id": "dfg_edge_45",
+      "source": "dfg_node_63",
+      "target": "dfg_node_67",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_46": {
+      "id": "dfg_edge_46",
+      "source": "dfg_node_70",
+      "target": "dfg_node_72",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_47": {
+      "id": "dfg_edge_47",
+      "source": "dfg_node_63",
+      "target": "dfg_node_70",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_48": {
+      "id": "dfg_edge_48",
+      "source": "dfg_node_63",
+      "target": "dfg_node_73",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_49": {
+      "id": "dfg_edge_49",
+      "source": "dfg_node_74",
+      "target": "dfg_node_75",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_50": {
+      "id": "dfg_edge_50",
+      "source": "dfg_node_76",
+      "target": "dfg_node_78",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_51": {
+      "id": "dfg_edge_51",
+      "source": "dfg_node_74",
+      "target": "dfg_node_76",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_52": {
+      "id": "dfg_edge_52",
+      "source": "dfg_node_79",
+      "target": "dfg_node_81",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_53": {
+      "id": "dfg_edge_53",
+      "source": "dfg_node_74",
+      "target": "dfg_node_79",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_54": {
+      "id": "dfg_edge_54",
+      "source": "dfg_node_82",
+      "target": "dfg_node_84",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_55": {
+      "id": "dfg_edge_55",
+      "source": "dfg_node_74",
+      "target": "dfg_node_82",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_56": {
+      "id": "dfg_edge_56",
+      "source": "dfg_node_85",
+      "target": "dfg_node_87",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_57": {
+      "id": "dfg_edge_57",
+      "source": "dfg_node_74",
+      "target": "dfg_node_85",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_58": {
+      "id": "dfg_edge_58",
+      "source": "dfg_node_88",
+      "target": "dfg_node_90",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_59": {
+      "id": "dfg_edge_59",
+      "source": "dfg_node_74",
+      "target": "dfg_node_88",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_60": {
+      "id": "dfg_edge_60",
+      "source": "dfg_node_91",
+      "target": "dfg_node_93",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_61": {
+      "id": "dfg_edge_61",
+      "source": "dfg_node_74",
+      "target": "dfg_node_91",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_62": {
+      "id": "dfg_edge_62",
+      "source": "dfg_node_94",
+      "target": "dfg_node_95",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_63": {
+      "id": "dfg_edge_63",
+      "source": "dfg_node_94",
+      "target": "dfg_node_96",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_64": {
+      "id": "dfg_edge_64",
+      "source": "dfg_node_94",
+      "target": "dfg_node_97",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_65": {
+      "id": "dfg_edge_65",
+      "source": "dfg_node_94",
+      "target": "dfg_node_98",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_66": {
+      "id": "dfg_edge_66",
+      "source": "dfg_node_94",
+      "target": "dfg_node_99",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_67": {
+      "id": "dfg_edge_67",
+      "source": "dfg_node_100",
+      "target": "dfg_node_102",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_68": {
+      "id": "dfg_edge_68",
+      "source": "dfg_node_94",
+      "target": "dfg_node_100",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_69": {
+      "id": "dfg_edge_69",
+      "source": "dfg_node_103",
+      "target": "dfg_node_105",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_70": {
+      "id": "dfg_edge_70",
+      "source": "dfg_node_94",
+      "target": "dfg_node_103",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_71": {
+      "id": "dfg_edge_71",
+      "source": "dfg_node_106",
+      "target": "dfg_node_108",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_72": {
+      "id": "dfg_edge_72",
+      "source": "dfg_node_94",
+      "target": "dfg_node_106",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_73": {
+      "id": "dfg_edge_73",
+      "source": "dfg_node_109",
+      "target": "dfg_node_111",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_74": {
+      "id": "dfg_edge_74",
+      "source": "dfg_node_94",
+      "target": "dfg_node_109",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_75": {
+      "id": "dfg_edge_75",
+      "source": "dfg_node_112",
+      "target": "dfg_node_114",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_76": {
+      "id": "dfg_edge_76",
+      "source": "dfg_node_94",
+      "target": "dfg_node_112",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_77": {
+      "id": "dfg_edge_77",
+      "source": "dfg_node_115",
+      "target": "dfg_node_117",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_78": {
+      "id": "dfg_edge_78",
+      "source": "dfg_node_94",
+      "target": "dfg_node_115",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_79": {
+      "id": "dfg_edge_79",
+      "source": "dfg_node_118",
+      "target": "dfg_node_120",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_80": {
+      "id": "dfg_edge_80",
+      "source": "dfg_node_94",
+      "target": "dfg_node_118",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_81": {
+      "id": "dfg_edge_81",
+      "source": "dfg_node_121",
+      "target": "dfg_node_123",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_82": {
+      "id": "dfg_edge_82",
+      "source": "dfg_node_94",
+      "target": "dfg_node_121",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_83": {
+      "id": "dfg_edge_83",
+      "source": "dfg_node_124",
+      "target": "dfg_node_126",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_84": {
+      "id": "dfg_edge_84",
+      "source": "dfg_node_94",
+      "target": "dfg_node_124",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_85": {
+      "id": "dfg_edge_85",
+      "source": "dfg_node_127",
+      "target": "dfg_node_129",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_86": {
+      "id": "dfg_edge_86",
+      "source": "dfg_node_94",
+      "target": "dfg_node_127",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_87": {
+      "id": "dfg_edge_87",
+      "source": "dfg_node_130",
+      "target": "dfg_node_132",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_88": {
+      "id": "dfg_edge_88",
+      "source": "dfg_node_94",
+      "target": "dfg_node_130",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_89": {
+      "id": "dfg_edge_89",
+      "source": "dfg_node_133",
+      "target": "dfg_node_135",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_90": {
+      "id": "dfg_edge_90",
+      "source": "dfg_node_94",
+      "target": "dfg_node_133",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_91": {
+      "id": "dfg_edge_91",
+      "source": "dfg_node_136",
+      "target": "dfg_node_138",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_92": {
+      "id": "dfg_edge_92",
+      "source": "dfg_node_94",
+      "target": "dfg_node_136",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_93": {
+      "id": "dfg_edge_93",
+      "source": "dfg_node_139",
+      "target": "dfg_node_141",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_94": {
+      "id": "dfg_edge_94",
+      "source": "dfg_node_94",
+      "target": "dfg_node_139",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_95": {
+      "id": "dfg_edge_95",
+      "source": "dfg_node_142",
+      "target": "dfg_node_144",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_96": {
+      "id": "dfg_edge_96",
+      "source": "dfg_node_94",
+      "target": "dfg_node_142",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_97": {
+      "id": "dfg_edge_97",
+      "source": "dfg_node_94",
+      "target": "dfg_node_145",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_98": {
+      "id": "dfg_edge_98",
+      "source": "dfg_node_94",
+      "target": "dfg_node_146",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_99": {
+      "id": "dfg_edge_99",
+      "source": "dfg_node_94",
+      "target": "dfg_node_147",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_100": {
+      "id": "dfg_edge_100",
+      "source": "dfg_node_94",
+      "target": "dfg_node_148",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_101": {
+      "id": "dfg_edge_101",
+      "source": "dfg_node_94",
+      "target": "dfg_node_149",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_102": {
+      "id": "dfg_edge_102",
+      "source": "dfg_node_94",
+      "target": "dfg_node_150",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_103": {
+      "id": "dfg_edge_103",
+      "source": "dfg_node_94",
+      "target": "dfg_node_151",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_104": {
+      "id": "dfg_edge_104",
+      "source": "dfg_node_152",
+      "target": "dfg_node_154",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_105": {
+      "id": "dfg_edge_105",
+      "source": "dfg_node_94",
+      "target": "dfg_node_152",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_106": {
+      "id": "dfg_edge_106",
+      "source": "dfg_node_155",
+      "target": "dfg_node_157",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_107": {
+      "id": "dfg_edge_107",
+      "source": "dfg_node_94",
+      "target": "dfg_node_155",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_108": {
+      "id": "dfg_edge_108",
+      "source": "dfg_node_158",
+      "target": "dfg_node_160",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_109": {
+      "id": "dfg_edge_109",
+      "source": "dfg_node_94",
+      "target": "dfg_node_158",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_110": {
+      "id": "dfg_edge_110",
+      "source": "dfg_node_161",
+      "target": "dfg_node_163",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_111": {
+      "id": "dfg_edge_111",
+      "source": "dfg_node_94",
+      "target": "dfg_node_161",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_112": {
+      "id": "dfg_edge_112",
+      "source": "dfg_node_164",
+      "target": "dfg_node_166",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_113": {
+      "id": "dfg_edge_113",
+      "source": "dfg_node_94",
+      "target": "dfg_node_164",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_114": {
+      "id": "dfg_edge_114",
+      "source": "dfg_node_167",
+      "target": "dfg_node_169",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_115": {
+      "id": "dfg_edge_115",
+      "source": "dfg_node_94",
+      "target": "dfg_node_167",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_116": {
+      "id": "dfg_edge_116",
+      "source": "dfg_node_170",
+      "target": "dfg_node_172",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_117": {
+      "id": "dfg_edge_117",
+      "source": "dfg_node_94",
+      "target": "dfg_node_170",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_118": {
+      "id": "dfg_edge_118",
+      "source": "dfg_node_173",
+      "target": "dfg_node_175",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_119": {
+      "id": "dfg_edge_119",
+      "source": "dfg_node_94",
+      "target": "dfg_node_173",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_120": {
+      "id": "dfg_edge_120",
+      "source": "dfg_node_176",
+      "target": "dfg_node_178",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_121": {
+      "id": "dfg_edge_121",
+      "source": "dfg_node_94",
+      "target": "dfg_node_176",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 800,
+    "source_line": 801,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "ChronoBankPlatform",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

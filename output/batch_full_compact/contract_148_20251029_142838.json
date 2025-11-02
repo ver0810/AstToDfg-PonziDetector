@@ -1,0 +1,1283 @@
+{
+  "contract": "multiowned",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "multiowned",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 11,
+        "column": 1,
+        "end_line": 223,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 11,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "constructor_function",
+      "name": "multiowned",
+      "data_type": null,
+      "scope": "multiowned",
+      "source_location": {
+        "line": 54,
+        "column": 5,
+        "end_line": 64,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 54,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "function",
+      "name": "revoke",
+      "data_type": null,
+      "scope": "multiowned",
+      "source_location": {
+        "line": 67,
+        "column": 5,
+        "end_line": 78,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 67,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "function",
+      "name": "changeOwner",
+      "data_type": null,
+      "scope": "multiowned",
+      "source_location": {
+        "line": 81,
+        "column": 5,
+        "end_line": 91,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 81,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "function",
+      "name": "addOwner",
+      "data_type": null,
+      "scope": "multiowned",
+      "source_location": {
+        "line": 93,
+        "column": 5,
+        "end_line": 105,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 93,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "function",
+      "name": "removeOwner",
+      "data_type": null,
+      "scope": "multiowned",
+      "source_location": {
+        "line": 107,
+        "column": 5,
+        "end_line": 117,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 107,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "function",
+      "name": "changeRequirement",
+      "data_type": null,
+      "scope": "multiowned",
+      "source_location": {
+        "line": 119,
+        "column": 5,
+        "end_line": 124,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 119,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "function",
+      "name": "isOwner",
+      "data_type": null,
+      "scope": "multiowned",
+      "source_location": {
+        "line": 126,
+        "column": 5,
+        "end_line": 128,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 126,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_10": {
+      "id": "dfg_node_10",
+      "type": "parameter",
+      "name": "param_8",
+      "data_type": "bool",
+      "scope": "isOwner_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "isOwner"
+      }
+    },
+    "dfg_node_11": {
+      "id": "dfg_node_11",
+      "type": "function",
+      "name": "hasConfirmed",
+      "data_type": null,
+      "scope": "multiowned",
+      "source_location": {
+        "line": 130,
+        "column": 5,
+        "end_line": 144,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 130,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_13": {
+      "id": "dfg_node_13",
+      "type": "parameter",
+      "name": "param_11",
+      "data_type": "bool",
+      "scope": "hasConfirmed_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "hasConfirmed"
+      }
+    },
+    "dfg_node_14": {
+      "id": "dfg_node_14",
+      "type": "function",
+      "name": "confirmAndCheck",
+      "data_type": null,
+      "scope": "multiowned",
+      "source_location": {
+        "line": 148,
+        "column": 5,
+        "end_line": 183,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 148,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_16": {
+      "id": "dfg_node_16",
+      "type": "parameter",
+      "name": "param_14",
+      "data_type": "bool",
+      "scope": "confirmAndCheck_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "confirmAndCheck"
+      }
+    },
+    "dfg_node_17": {
+      "id": "dfg_node_17",
+      "type": "function",
+      "name": "reorganizeOwners",
+      "data_type": null,
+      "scope": "multiowned",
+      "source_location": {
+        "line": 185,
+        "column": 5,
+        "end_line": 198,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 185,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_19": {
+      "id": "dfg_node_19",
+      "type": "parameter",
+      "name": "param_17",
+      "data_type": "bool",
+      "scope": "reorganizeOwners_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "reorganizeOwners"
+      }
+    },
+    "dfg_node_20": {
+      "id": "dfg_node_20",
+      "type": "function",
+      "name": "clearPending",
+      "data_type": null,
+      "scope": "multiowned",
+      "source_location": {
+        "line": 200,
+        "column": 5,
+        "end_line": 206,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 200,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_21": {
+      "id": "dfg_node_21",
+      "type": "state_variable",
+      "name": "m_required",
+      "data_type": "uint",
+      "scope": "multiowned",
+      "source_location": {
+        "line": 211,
+        "column": 5,
+        "end_line": 211,
+        "end_column": 28
+      },
+      "properties": {
+        "source_location": {
+          "line": 211,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_22": {
+      "id": "dfg_node_22",
+      "type": "state_variable",
+      "name": "m_numOwners",
+      "data_type": "uint",
+      "scope": "multiowned",
+      "source_location": {
+        "line": 213,
+        "column": 5,
+        "end_line": 213,
+        "end_column": 29
+      },
+      "properties": {
+        "source_location": {
+          "line": 213,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_23": {
+      "id": "dfg_node_23",
+      "type": "state_variable",
+      "name": "m_owners",
+      "data_type": "uint[256]",
+      "scope": "multiowned",
+      "source_location": {
+        "line": 216,
+        "column": 5,
+        "end_line": 216,
+        "end_column": 24
+      },
+      "properties": {
+        "source_location": {
+          "line": 216,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_24": {
+      "id": "dfg_node_24",
+      "type": "state_variable",
+      "name": "c_maxOwners",
+      "data_type": "uint",
+      "scope": "multiowned",
+      "source_location": {
+        "line": 217,
+        "column": 5,
+        "end_line": 217,
+        "end_column": 37
+      },
+      "properties": {
+        "source_location": {
+          "line": 217,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_25": {
+      "id": "dfg_node_25",
+      "type": "state_variable",
+      "name": "m_ownerIndex",
+      "data_type": "mapping(uint => uint)",
+      "scope": "multiowned",
+      "source_location": {
+        "line": 219,
+        "column": 5,
+        "end_line": 219,
+        "end_column": 40
+      },
+      "properties": {
+        "source_location": {
+          "line": 219,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_26": {
+      "id": "dfg_node_26",
+      "type": "state_variable",
+      "name": "m_pending",
+      "data_type": "mapping(bytes32 => PendingState)",
+      "scope": "multiowned",
+      "source_location": {
+        "line": 221,
+        "column": 5,
+        "end_line": 221,
+        "end_column": 48
+      },
+      "properties": {
+        "source_location": {
+          "line": 221,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_27": {
+      "id": "dfg_node_27",
+      "type": "state_variable",
+      "name": "m_pendingIndex",
+      "data_type": "bytes32[]",
+      "scope": "multiowned",
+      "source_location": {
+        "line": 222,
+        "column": 5,
+        "end_line": 222,
+        "end_column": 30
+      },
+      "properties": {
+        "source_location": {
+          "line": 222,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_28": {
+      "id": "dfg_node_28",
+      "type": "contract",
+      "name": "daylimit",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 228,
+        "column": 1,
+        "end_line": 279,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 228,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_29": {
+      "id": "dfg_node_29",
+      "type": "constructor_function",
+      "name": "daylimit",
+      "data_type": null,
+      "scope": "daylimit",
+      "source_location": {
+        "line": 241,
+        "column": 5,
+        "end_line": 244,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 241,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_30": {
+      "id": "dfg_node_30",
+      "type": "function",
+      "name": "setDailyLimit",
+      "data_type": null,
+      "scope": "daylimit",
+      "source_location": {
+        "line": 246,
+        "column": 5,
+        "end_line": 248,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 246,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_31": {
+      "id": "dfg_node_31",
+      "type": "function",
+      "name": "resetSpentToday",
+      "data_type": null,
+      "scope": "daylimit",
+      "source_location": {
+        "line": 250,
+        "column": 5,
+        "end_line": 252,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 250,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_32": {
+      "id": "dfg_node_32",
+      "type": "function",
+      "name": "underLimit",
+      "data_type": null,
+      "scope": "daylimit",
+      "source_location": {
+        "line": 258,
+        "column": 5,
+        "end_line": 270,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 258,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_34": {
+      "id": "dfg_node_34",
+      "type": "parameter",
+      "name": "param_32",
+      "data_type": "bool",
+      "scope": "underLimit_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "underLimit"
+      }
+    },
+    "dfg_node_35": {
+      "id": "dfg_node_35",
+      "type": "function",
+      "name": "today",
+      "data_type": null,
+      "scope": "daylimit",
+      "source_location": {
+        "line": 272,
+        "column": 5,
+        "end_line": 272,
+        "end_column": 78
+      },
+      "properties": {
+        "source_location": {
+          "line": 272,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_37": {
+      "id": "dfg_node_37",
+      "type": "parameter",
+      "name": "param_35",
+      "data_type": "uint",
+      "scope": "today_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "today"
+      }
+    },
+    "dfg_node_38": {
+      "id": "dfg_node_38",
+      "type": "state_variable",
+      "name": "m_dailyLimit",
+      "data_type": "uint",
+      "scope": "daylimit",
+      "source_location": {
+        "line": 276,
+        "column": 5,
+        "end_line": 276,
+        "end_column": 30
+      },
+      "properties": {
+        "source_location": {
+          "line": 276,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_39": {
+      "id": "dfg_node_39",
+      "type": "state_variable",
+      "name": "m_spentToday",
+      "data_type": "uint",
+      "scope": "daylimit",
+      "source_location": {
+        "line": 277,
+        "column": 5,
+        "end_line": 277,
+        "end_column": 23
+      },
+      "properties": {
+        "source_location": {
+          "line": 277,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_40": {
+      "id": "dfg_node_40",
+      "type": "state_variable",
+      "name": "m_lastDay",
+      "data_type": "uint",
+      "scope": "daylimit",
+      "source_location": {
+        "line": 278,
+        "column": 5,
+        "end_line": 278,
+        "end_column": 20
+      },
+      "properties": {
+        "source_location": {
+          "line": 278,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_41": {
+      "id": "dfg_node_41",
+      "type": "contract",
+      "name": "multisig",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 282,
+        "column": 1,
+        "end_line": 302,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 282,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_42": {
+      "id": "dfg_node_42",
+      "type": "function",
+      "name": "changeOwner",
+      "data_type": null,
+      "scope": "multisig",
+      "source_location": {
+        "line": 299,
+        "column": 5,
+        "end_line": 299,
+        "end_column": 63
+      },
+      "properties": {
+        "source_location": {
+          "line": 299,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_43": {
+      "id": "dfg_node_43",
+      "type": "function",
+      "name": "execute",
+      "data_type": null,
+      "scope": "multisig",
+      "source_location": {
+        "line": 300,
+        "column": 5,
+        "end_line": 300,
+        "end_column": 88
+      },
+      "properties": {
+        "source_location": {
+          "line": 300,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_45": {
+      "id": "dfg_node_45",
+      "type": "parameter",
+      "name": "param_43",
+      "data_type": "bytes32",
+      "scope": "execute_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "execute"
+      }
+    },
+    "dfg_node_46": {
+      "id": "dfg_node_46",
+      "type": "function",
+      "name": "confirm",
+      "data_type": null,
+      "scope": "multisig",
+      "source_location": {
+        "line": 301,
+        "column": 5,
+        "end_line": 301,
+        "end_column": 49
+      },
+      "properties": {
+        "source_location": {
+          "line": 301,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_48": {
+      "id": "dfg_node_48",
+      "type": "parameter",
+      "name": "param_46",
+      "data_type": "bool",
+      "scope": "confirm_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "confirm"
+      }
+    },
+    "dfg_node_49": {
+      "id": "dfg_node_49",
+      "type": "contract",
+      "name": "Wallet",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 307,
+        "column": 1,
+        "end_line": 384,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 307,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_50": {
+      "id": "dfg_node_50",
+      "type": "constructor_function",
+      "name": "Wallet",
+      "data_type": null,
+      "scope": "Wallet",
+      "source_location": {
+        "line": 322,
+        "column": 5,
+        "end_line": 324,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 322,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_51": {
+      "id": "dfg_node_51",
+      "type": "function",
+      "name": "kill",
+      "data_type": null,
+      "scope": "Wallet",
+      "source_location": {
+        "line": 327,
+        "column": 5,
+        "end_line": 329,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 327,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_52": {
+      "id": "dfg_node_52",
+      "type": "function",
+      "name": "execute",
+      "data_type": null,
+      "scope": "Wallet",
+      "source_location": {
+        "line": 342,
+        "column": 5,
+        "end_line": 358,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 342,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_54": {
+      "id": "dfg_node_54",
+      "type": "parameter",
+      "name": "_r",
+      "data_type": "bytes32",
+      "scope": "execute_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "execute"
+      }
+    },
+    "dfg_node_55": {
+      "id": "dfg_node_55",
+      "type": "function",
+      "name": "confirm",
+      "data_type": null,
+      "scope": "Wallet",
+      "source_location": {
+        "line": 362,
+        "column": 5,
+        "end_line": 369,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 362,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_57": {
+      "id": "dfg_node_57",
+      "type": "parameter",
+      "name": "param_55",
+      "data_type": "bool",
+      "scope": "confirm_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "confirm"
+      }
+    },
+    "dfg_node_58": {
+      "id": "dfg_node_58",
+      "type": "function",
+      "name": "clearPending",
+      "data_type": null,
+      "scope": "Wallet",
+      "source_location": {
+        "line": 373,
+        "column": 5,
+        "end_line": 378,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 373,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_59": {
+      "id": "dfg_node_59",
+      "type": "state_variable",
+      "name": "m_txs",
+      "data_type": "mapping (bytes32 => Transaction)",
+      "scope": "Wallet",
+      "source_location": {
+        "line": 383,
+        "column": 5,
+        "end_line": 383,
+        "end_column": 44
+      },
+      "properties": {
+        "source_location": {
+          "line": 383,
+          "column": 5
+        }
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_1",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_1",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_1",
+      "target": "dfg_node_7",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_8",
+      "target": "dfg_node_10",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_1",
+      "target": "dfg_node_8",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_9": {
+      "id": "dfg_edge_9",
+      "source": "dfg_node_11",
+      "target": "dfg_node_13",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_10": {
+      "id": "dfg_edge_10",
+      "source": "dfg_node_1",
+      "target": "dfg_node_11",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_11": {
+      "id": "dfg_edge_11",
+      "source": "dfg_node_14",
+      "target": "dfg_node_16",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_12": {
+      "id": "dfg_edge_12",
+      "source": "dfg_node_1",
+      "target": "dfg_node_14",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_13": {
+      "id": "dfg_edge_13",
+      "source": "dfg_node_17",
+      "target": "dfg_node_19",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_14": {
+      "id": "dfg_edge_14",
+      "source": "dfg_node_1",
+      "target": "dfg_node_17",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_15": {
+      "id": "dfg_edge_15",
+      "source": "dfg_node_1",
+      "target": "dfg_node_20",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_16": {
+      "id": "dfg_edge_16",
+      "source": "dfg_node_1",
+      "target": "dfg_node_21",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_17": {
+      "id": "dfg_edge_17",
+      "source": "dfg_node_1",
+      "target": "dfg_node_22",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_18": {
+      "id": "dfg_edge_18",
+      "source": "dfg_node_1",
+      "target": "dfg_node_23",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_19": {
+      "id": "dfg_edge_19",
+      "source": "dfg_node_1",
+      "target": "dfg_node_24",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_20": {
+      "id": "dfg_edge_20",
+      "source": "dfg_node_1",
+      "target": "dfg_node_25",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_21": {
+      "id": "dfg_edge_21",
+      "source": "dfg_node_1",
+      "target": "dfg_node_26",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_22": {
+      "id": "dfg_edge_22",
+      "source": "dfg_node_1",
+      "target": "dfg_node_27",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_23": {
+      "id": "dfg_edge_23",
+      "source": "dfg_node_28",
+      "target": "dfg_node_29",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_24": {
+      "id": "dfg_edge_24",
+      "source": "dfg_node_28",
+      "target": "dfg_node_30",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_25": {
+      "id": "dfg_edge_25",
+      "source": "dfg_node_28",
+      "target": "dfg_node_31",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_26": {
+      "id": "dfg_edge_26",
+      "source": "dfg_node_32",
+      "target": "dfg_node_34",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_27": {
+      "id": "dfg_edge_27",
+      "source": "dfg_node_28",
+      "target": "dfg_node_32",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_28": {
+      "id": "dfg_edge_28",
+      "source": "dfg_node_35",
+      "target": "dfg_node_37",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_29": {
+      "id": "dfg_edge_29",
+      "source": "dfg_node_28",
+      "target": "dfg_node_35",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_30": {
+      "id": "dfg_edge_30",
+      "source": "dfg_node_28",
+      "target": "dfg_node_38",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_31": {
+      "id": "dfg_edge_31",
+      "source": "dfg_node_28",
+      "target": "dfg_node_39",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_32": {
+      "id": "dfg_edge_32",
+      "source": "dfg_node_28",
+      "target": "dfg_node_40",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_33": {
+      "id": "dfg_edge_33",
+      "source": "dfg_node_41",
+      "target": "dfg_node_42",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_34": {
+      "id": "dfg_edge_34",
+      "source": "dfg_node_43",
+      "target": "dfg_node_45",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_35": {
+      "id": "dfg_edge_35",
+      "source": "dfg_node_41",
+      "target": "dfg_node_43",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_36": {
+      "id": "dfg_edge_36",
+      "source": "dfg_node_46",
+      "target": "dfg_node_48",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_37": {
+      "id": "dfg_edge_37",
+      "source": "dfg_node_41",
+      "target": "dfg_node_46",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_38": {
+      "id": "dfg_edge_38",
+      "source": "dfg_node_49",
+      "target": "dfg_node_50",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_39": {
+      "id": "dfg_edge_39",
+      "source": "dfg_node_49",
+      "target": "dfg_node_51",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_40": {
+      "id": "dfg_edge_40",
+      "source": "dfg_node_52",
+      "target": "dfg_node_54",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_41": {
+      "id": "dfg_edge_41",
+      "source": "dfg_node_49",
+      "target": "dfg_node_52",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_42": {
+      "id": "dfg_edge_42",
+      "source": "dfg_node_55",
+      "target": "dfg_node_57",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_43": {
+      "id": "dfg_edge_43",
+      "source": "dfg_node_49",
+      "target": "dfg_node_55",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_44": {
+      "id": "dfg_edge_44",
+      "source": "dfg_node_49",
+      "target": "dfg_node_58",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_45": {
+      "id": "dfg_edge_45",
+      "source": "dfg_node_49",
+      "target": "dfg_node_59",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 148,
+    "source_line": 149,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "multiowned",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

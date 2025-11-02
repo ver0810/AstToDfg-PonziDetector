@@ -1,0 +1,64 @@
+{
+  "contract": "Agent",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "Agent",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 3,
+        "column": 1,
+        "end_line": 9,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "function",
+      "name": "g",
+      "data_type": null,
+      "scope": "Agent",
+      "source_location": {
+        "line": 5,
+        "column": 5,
+        "end_line": 7,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 5,
+          "column": 5
+        }
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 951,
+    "source_line": 952,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "Agent",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

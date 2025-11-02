@@ -1,0 +1,1180 @@
+{
+  "contract": "EducationFundToken",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "EducationFundToken",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 3,
+        "column": 1,
+        "end_line": 55,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "name",
+      "data_type": "string",
+      "scope": "EducationFundToken",
+      "source_location": {
+        "line": 5,
+        "column": 5,
+        "end_line": 5,
+        "end_column": 47
+      },
+      "properties": {
+        "source_location": {
+          "line": 5,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "state_variable",
+      "name": "symbol",
+      "data_type": "string",
+      "scope": "EducationFundToken",
+      "source_location": {
+        "line": 6,
+        "column": 5,
+        "end_line": 6,
+        "end_column": 35
+      },
+      "properties": {
+        "source_location": {
+          "line": 6,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "state_variable",
+      "name": "decimals",
+      "data_type": "uint8",
+      "scope": "EducationFundToken",
+      "source_location": {
+        "line": 7,
+        "column": 5,
+        "end_line": 7,
+        "end_column": 31
+      },
+      "properties": {
+        "source_location": {
+          "line": 7,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "state_variable",
+      "name": "owner",
+      "data_type": "address",
+      "scope": "EducationFundToken",
+      "source_location": {
+        "line": 9,
+        "column": 5,
+        "end_line": 9,
+        "end_column": 64
+      },
+      "properties": {
+        "source_location": {
+          "line": 9,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "state_variable",
+      "name": "balanceOf",
+      "data_type": "mapping (address => uint256)",
+      "scope": "EducationFundToken",
+      "source_location": {
+        "line": 11,
+        "column": 5,
+        "end_line": 11,
+        "end_column": 51
+      },
+      "properties": {
+        "source_location": {
+          "line": 11,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "state_variable",
+      "name": "allowance",
+      "data_type": "mapping (address => mapping (address => uint256))",
+      "scope": "EducationFundToken",
+      "source_location": {
+        "line": 12,
+        "column": 5,
+        "end_line": 12,
+        "end_column": 72
+      },
+      "properties": {
+        "source_location": {
+          "line": 12,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "event_definition",
+      "name": null,
+      "data_type": null,
+      "scope": "EducationFundToken",
+      "source_location": {
+        "line": 14,
+        "column": 5,
+        "end_line": 14,
+        "end_column": 77
+      },
+      "properties": {
+        "source_location": {
+          "line": 14,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "function",
+      "name": "MyKidsEducationFund",
+      "data_type": null,
+      "scope": "EducationFundToken",
+      "source_location": {
+        "line": 16,
+        "column": 5,
+        "end_line": 20,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 16,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_10": {
+      "id": "dfg_node_10",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "MyKidsEducationFund_function",
+      "source_location": {
+        "line": 17,
+        "column": 9,
+        "end_line": 17,
+        "end_column": 37
+      },
+      "properties": {
+        "source_location": {
+          "line": 17,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_11": {
+      "id": "dfg_node_11",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "MyKidsEducationFund_function",
+      "source_location": {
+        "line": 17,
+        "column": 19,
+        "end_line": 17,
+        "end_column": 29
+      },
+      "properties": {
+        "source_location": {
+          "line": 17,
+          "column": 19
+        }
+      }
+    },
+    "dfg_node_12": {
+      "id": "dfg_node_12",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "MyKidsEducationFund_function",
+      "source_location": {
+        "line": 18,
+        "column": 9,
+        "end_line": 18,
+        "end_column": 36
+      },
+      "properties": {
+        "source_location": {
+          "line": 18,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_13": {
+      "id": "dfg_node_13",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "MyKidsEducationFund_function",
+      "source_location": {
+        "line": 19,
+        "column": 9,
+        "end_line": 19,
+        "end_column": 24
+      },
+      "properties": {
+        "source_location": {
+          "line": 19,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_14": {
+      "id": "dfg_node_14",
+      "type": "function",
+      "name": "_transfer",
+      "data_type": null,
+      "scope": "EducationFundToken",
+      "source_location": {
+        "line": 22,
+        "column": 5,
+        "end_line": 31,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 22,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_15": {
+      "id": "dfg_node_15",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "_transfer_function",
+      "source_location": {
+        "line": 23,
+        "column": 9,
+        "end_line": 23,
+        "end_column": 28
+      },
+      "properties": {
+        "source_location": {
+          "line": 23,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_16": {
+      "id": "dfg_node_16",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "_transfer_function",
+      "source_location": {
+        "line": 23,
+        "column": 17,
+        "end_line": 23,
+        "end_column": 27
+      },
+      "properties": {
+        "source_location": {
+          "line": 23,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_17": {
+      "id": "dfg_node_17",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "_transfer_function",
+      "source_location": {
+        "line": 24,
+        "column": 9,
+        "end_line": 24,
+        "end_column": 44
+      },
+      "properties": {
+        "source_location": {
+          "line": 24,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_18": {
+      "id": "dfg_node_18",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "_transfer_function",
+      "source_location": {
+        "line": 24,
+        "column": 17,
+        "end_line": 24,
+        "end_column": 43
+      },
+      "properties": {
+        "source_location": {
+          "line": 24,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_19": {
+      "id": "dfg_node_19",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "_transfer_function",
+      "source_location": {
+        "line": 25,
+        "column": 9,
+        "end_line": 25,
+        "end_column": 58
+      },
+      "properties": {
+        "source_location": {
+          "line": 25,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_20": {
+      "id": "dfg_node_20",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "_transfer_function",
+      "source_location": {
+        "line": 25,
+        "column": 17,
+        "end_line": 25,
+        "end_column": 52
+      },
+      "properties": {
+        "source_location": {
+          "line": 25,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_21": {
+      "id": "dfg_node_21",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "_transfer_function",
+      "source_location": {
+        "line": 25,
+        "column": 17,
+        "end_line": 25,
+        "end_column": 40
+      },
+      "properties": {
+        "source_location": {
+          "line": 25,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_22": {
+      "id": "dfg_node_22",
+      "type": "local_variable",
+      "name": "previousBalances",
+      "data_type": "uint",
+      "scope": "_transfer_function",
+      "source_location": {
+        "line": 26,
+        "column": 9,
+        "end_line": 26,
+        "end_column": 30
+      },
+      "properties": {
+        "source_location": {
+          "line": 26,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_23": {
+      "id": "dfg_node_23",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "_transfer_function",
+      "source_location": {
+        "line": 26,
+        "column": 33,
+        "end_line": 26,
+        "end_column": 61
+      },
+      "properties": {
+        "source_location": {
+          "line": 26,
+          "column": 33
+        }
+      }
+    },
+    "dfg_node_24": {
+      "id": "dfg_node_24",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "_transfer_function",
+      "source_location": {
+        "line": 29,
+        "column": 9,
+        "end_line": 29,
+        "end_column": 37
+      },
+      "properties": {
+        "source_location": {
+          "line": 29,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_25": {
+      "id": "dfg_node_25",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "_transfer_function",
+      "source_location": {
+        "line": 30,
+        "column": 9,
+        "end_line": 30,
+        "end_column": 70
+      },
+      "properties": {
+        "source_location": {
+          "line": 30,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_26": {
+      "id": "dfg_node_26",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "_transfer_function",
+      "source_location": {
+        "line": 30,
+        "column": 16,
+        "end_line": 30,
+        "end_column": 69
+      },
+      "properties": {
+        "source_location": {
+          "line": 30,
+          "column": 16
+        }
+      }
+    },
+    "dfg_node_27": {
+      "id": "dfg_node_27",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "_transfer_function",
+      "source_location": {
+        "line": 30,
+        "column": 16,
+        "end_line": 30,
+        "end_column": 44
+      },
+      "properties": {
+        "source_location": {
+          "line": 30,
+          "column": 16
+        }
+      }
+    },
+    "dfg_node_28": {
+      "id": "dfg_node_28",
+      "type": "function",
+      "name": "transfer",
+      "data_type": null,
+      "scope": "EducationFundToken",
+      "source_location": {
+        "line": 33,
+        "column": 5,
+        "end_line": 35,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 33,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_29": {
+      "id": "dfg_node_29",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "transfer_function",
+      "source_location": {
+        "line": 34,
+        "column": 9,
+        "end_line": 34,
+        "end_column": 43
+      },
+      "properties": {
+        "source_location": {
+          "line": 34,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_30": {
+      "id": "dfg_node_30",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "transfer_function",
+      "source_location": {
+        "line": 34,
+        "column": 19,
+        "end_line": 34,
+        "end_column": 29
+      },
+      "properties": {
+        "source_location": {
+          "line": 34,
+          "column": 19
+        }
+      }
+    },
+    "dfg_node_31": {
+      "id": "dfg_node_31",
+      "type": "function",
+      "name": "transferFrom",
+      "data_type": null,
+      "scope": "EducationFundToken",
+      "source_location": {
+        "line": 37,
+        "column": 5,
+        "end_line": 42,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 37,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_32": {
+      "id": "dfg_node_32",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "transferFrom_function",
+      "source_location": {
+        "line": 38,
+        "column": 9,
+        "end_line": 38,
+        "end_column": 56
+      },
+      "properties": {
+        "source_location": {
+          "line": 38,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_33": {
+      "id": "dfg_node_33",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "transferFrom_function",
+      "source_location": {
+        "line": 38,
+        "column": 17,
+        "end_line": 38,
+        "end_column": 36
+      },
+      "properties": {
+        "source_location": {
+          "line": 38,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_34": {
+      "id": "dfg_node_34",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "transferFrom_function",
+      "source_location": {
+        "line": 38,
+        "column": 44,
+        "end_line": 38,
+        "end_column": 54
+      },
+      "properties": {
+        "source_location": {
+          "line": 38,
+          "column": 44
+        }
+      }
+    },
+    "dfg_node_35": {
+      "id": "dfg_node_35",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "transferFrom_function",
+      "source_location": {
+        "line": 39,
+        "column": 26,
+        "end_line": 39,
+        "end_column": 36
+      },
+      "properties": {
+        "source_location": {
+          "line": 39,
+          "column": 26
+        }
+      }
+    },
+    "dfg_node_36": {
+      "id": "dfg_node_36",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "transferFrom_function",
+      "source_location": {
+        "line": 40,
+        "column": 9,
+        "end_line": 40,
+        "end_column": 38
+      },
+      "properties": {
+        "source_location": {
+          "line": 40,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_37": {
+      "id": "dfg_node_37",
+      "type": "return_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "transferFrom_function",
+      "source_location": {
+        "line": 41,
+        "column": 9,
+        "end_line": 41,
+        "end_column": 21
+      },
+      "properties": {
+        "source_location": {
+          "line": 41,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_39": {
+      "id": "dfg_node_39",
+      "type": "parameter",
+      "name": "success",
+      "data_type": "bool",
+      "scope": "transferFrom_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "transferFrom"
+      }
+    },
+    "dfg_node_40": {
+      "id": "dfg_node_40",
+      "type": "function",
+      "name": "approve",
+      "data_type": null,
+      "scope": "EducationFundToken",
+      "source_location": {
+        "line": 44,
+        "column": 5,
+        "end_line": 47,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 44,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_41": {
+      "id": "dfg_node_41",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "approve_function",
+      "source_location": {
+        "line": 45,
+        "column": 9,
+        "end_line": 45,
+        "end_column": 49
+      },
+      "properties": {
+        "source_location": {
+          "line": 45,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_42": {
+      "id": "dfg_node_42",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "approve_function",
+      "source_location": {
+        "line": 45,
+        "column": 19,
+        "end_line": 45,
+        "end_column": 29
+      },
+      "properties": {
+        "source_location": {
+          "line": 45,
+          "column": 19
+        }
+      }
+    },
+    "dfg_node_43": {
+      "id": "dfg_node_43",
+      "type": "return_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "approve_function",
+      "source_location": {
+        "line": 46,
+        "column": 9,
+        "end_line": 46,
+        "end_column": 21
+      },
+      "properties": {
+        "source_location": {
+          "line": 46,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_45": {
+      "id": "dfg_node_45",
+      "type": "parameter",
+      "name": "success",
+      "data_type": "bool",
+      "scope": "approve_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "approve"
+      }
+    },
+    "dfg_node_46": {
+      "id": "dfg_node_46",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "EducationFundToken",
+      "source_location": {
+        "line": 50,
+        "column": 9,
+        "end_line": 50,
+        "end_column": 32
+      },
+      "properties": {
+        "source_location": {
+          "line": 50,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_47": {
+      "id": "dfg_node_47",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "EducationFundToken",
+      "source_location": {
+        "line": 50,
+        "column": 17,
+        "end_line": 50,
+        "end_column": 31
+      },
+      "properties": {
+        "source_location": {
+          "line": 50,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_48": {
+      "id": "dfg_node_48",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "EducationFundToken",
+      "source_location": {
+        "line": 50,
+        "column": 17,
+        "end_line": 50,
+        "end_column": 26
+      },
+      "properties": {
+        "source_location": {
+          "line": 50,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_49": {
+      "id": "dfg_node_49",
+      "type": "local_variable",
+      "name": "tokens",
+      "data_type": "uint",
+      "scope": "EducationFundToken",
+      "source_location": {
+        "line": 51,
+        "column": 9,
+        "end_line": 51,
+        "end_column": 20
+      },
+      "properties": {
+        "source_location": {
+          "line": 51,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_50": {
+      "id": "dfg_node_50",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "EducationFundToken",
+      "source_location": {
+        "line": 51,
+        "column": 23,
+        "end_line": 51,
+        "end_column": 43
+      },
+      "properties": {
+        "source_location": {
+          "line": 51,
+          "column": 23
+        }
+      }
+    },
+    "dfg_node_51": {
+      "id": "dfg_node_51",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "EducationFundToken",
+      "source_location": {
+        "line": 51,
+        "column": 23,
+        "end_line": 51,
+        "end_column": 32
+      },
+      "properties": {
+        "source_location": {
+          "line": 51,
+          "column": 23
+        }
+      }
+    },
+    "dfg_node_52": {
+      "id": "dfg_node_52",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "EducationFundToken",
+      "source_location": {
+        "line": 52,
+        "column": 19,
+        "end_line": 52,
+        "end_column": 29
+      },
+      "properties": {
+        "source_location": {
+          "line": 52,
+          "column": 19
+        }
+      }
+    },
+    "dfg_node_53": {
+      "id": "dfg_node_53",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "EducationFundToken",
+      "source_location": {
+        "line": 53,
+        "column": 9,
+        "end_line": 53,
+        "end_column": 34
+      },
+      "properties": {
+        "source_location": {
+          "line": 53,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_54": {
+      "id": "dfg_node_54",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "EducationFundToken",
+      "source_location": {
+        "line": 53,
+        "column": 9,
+        "end_line": 53,
+        "end_column": 23
+      },
+      "properties": {
+        "source_location": {
+          "line": 53,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_55": {
+      "id": "dfg_node_55",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "EducationFundToken",
+      "source_location": {
+        "line": 53,
+        "column": 24,
+        "end_line": 53,
+        "end_column": 33
+      },
+      "properties": {
+        "source_location": {
+          "line": 53,
+          "column": 24
+        }
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_1",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_1",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_1",
+      "target": "dfg_node_7",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_1",
+      "target": "dfg_node_8",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_1",
+      "target": "dfg_node_9",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_9": {
+      "id": "dfg_edge_9",
+      "source": "dfg_node_1",
+      "target": "dfg_node_14",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_10": {
+      "id": "dfg_edge_10",
+      "source": "dfg_node_1",
+      "target": "dfg_node_28",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_11": {
+      "id": "dfg_edge_11",
+      "source": "dfg_node_31",
+      "target": "dfg_node_39",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_12": {
+      "id": "dfg_edge_12",
+      "source": "dfg_node_1",
+      "target": "dfg_node_31",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_13": {
+      "id": "dfg_edge_13",
+      "source": "dfg_node_40",
+      "target": "dfg_node_45",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_14": {
+      "id": "dfg_edge_14",
+      "source": "dfg_node_1",
+      "target": "dfg_node_40",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_15": {
+      "id": "dfg_edge_15",
+      "source": "dfg_node_14",
+      "target": "dfg_node_29",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_16": {
+      "id": "dfg_edge_16",
+      "source": "dfg_node_14",
+      "target": "dfg_node_36",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_17": {
+      "id": "dfg_edge_17",
+      "source": "dfg_node_28",
+      "target": "dfg_node_29",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_18": {
+      "id": "dfg_edge_18",
+      "source": "dfg_node_28",
+      "target": "dfg_node_36",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_19": {
+      "id": "dfg_edge_19",
+      "source": "dfg_node_28",
+      "target": "dfg_node_53",
+      "type": "function_call",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 901,
+    "source_line": 902,
+    "label": 0,
+    "mode": "standard",
+    "contract_name": "EducationFundToken",
+    "timestamp": "20251027_225116"
+  }
+}

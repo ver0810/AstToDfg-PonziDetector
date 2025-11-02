@@ -1,0 +1,176 @@
+{
+  "contract": "DividendProfit",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "DividendProfit",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 3,
+        "column": 1,
+        "end_line": 39,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "deployer",
+      "data_type": "address",
+      "scope": "DividendProfit",
+      "source_location": {
+        "line": 5,
+        "column": 1,
+        "end_line": 5,
+        "end_column": 25
+      },
+      "properties": {
+        "source_location": {
+          "line": 5,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "state_variable",
+      "name": "dividendAddr",
+      "data_type": "address",
+      "scope": "DividendProfit",
+      "source_location": {
+        "line": 6,
+        "column": 1,
+        "end_line": 6,
+        "end_column": 29
+      },
+      "properties": {
+        "source_location": {
+          "line": 6,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "constructor_function",
+      "name": "DividendProfit",
+      "data_type": null,
+      "scope": "DividendProfit",
+      "source_location": {
+        "line": 15,
+        "column": 1,
+        "end_line": 18,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 15,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "function",
+      "name": "SetAddr",
+      "data_type": null,
+      "scope": "DividendProfit",
+      "source_location": {
+        "line": 28,
+        "column": 1,
+        "end_line": 30,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 28,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "function",
+      "name": "TestContract",
+      "data_type": null,
+      "scope": "DividendProfit",
+      "source_location": {
+        "line": 33,
+        "column": 1,
+        "end_line": 35,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 33,
+          "column": 1
+        }
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_1",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_1",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 792,
+    "source_line": 793,
+    "label": 1,
+    "mode": "compact",
+    "contract_name": "DividendProfit",
+    "timestamp": "20251029_142838"
+  },
+  "label": 1
+}

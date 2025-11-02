@@ -10,14 +10,16 @@ from .node_types import (
     ASTNode, DFG, DFGNode, DFGEdge, NodeType, EdgeType,
     FunctionNode, VariableNode, ExpressionNode, ContractNode
 )
+from .dfg_config import DFGConfig, should_keep_node
 
 
 class DFGBuilder:
     """数据流图构建器"""
     
-    def __init__(self, solidity_version: str = "0.4.x"):
+    def __init__(self, solidity_version: str = "0.4.x", config: Optional[DFGConfig] = None):
         """初始化DFG构建器"""
         self.solidity_version = solidity_version
+        self.config = config or DFGConfig.standard()  # 使用标准配置作为默认
         self.legacy_handler = None
         # 暂时禁用legacy handler以避免导入问题
         # if solidity_version.startswith("0.4"):
@@ -37,6 +39,10 @@ class DFGBuilder:
         # 节点计数器
         self.node_counter = 0
         self.edge_counter = 0
+        
+        # 统计信息
+        self.filtered_nodes_count = 0
+        self.filtered_edges_count = 0
     
     def generate_node_id(self) -> str:
         """生成唯一节点ID"""
@@ -81,20 +87,26 @@ class DFGBuilder:
             return None
         
         dfg_node = self._create_dfg_node(node)
-        if not dfg_node:
-            return None
         
-        # 根据节点类型处理
-        if isinstance(node, ContractNode):
-            self._build_contract_dfg(node, dfg_node)
-        elif isinstance(node, FunctionNode):
-            self._build_function_dfg(node, dfg_node)
-        elif isinstance(node, VariableNode):
-            self._build_variable_dfg(node, dfg_node)
-        elif isinstance(node, ExpressionNode):
-            self._build_expression_dfg(node, dfg_node)
+        # 即使当前节点被过滤，也要处理子节点
+        # 这确保子节点中的核心节点（如contract, function等）不会被丢失
+        if dfg_node:
+            # 根据节点类型处理
+            if isinstance(node, ContractNode):
+                self._build_contract_dfg(node, dfg_node)
+            elif isinstance(node, FunctionNode):
+                self._build_function_dfg(node, dfg_node)
+            elif isinstance(node, VariableNode):
+                self._build_variable_dfg(node, dfg_node)
+            elif isinstance(node, ExpressionNode):
+                self._build_expression_dfg(node, dfg_node)
+            else:
+                self._build_generic_dfg(node, dfg_node)
         else:
-            self._build_generic_dfg(node, dfg_node)
+            # 节点被过滤，但仍需处理子节点
+            if hasattr(node, 'children') and node.children:
+                for child in node.children:
+                    self._build_node_dfg(child)
         
         return dfg_node
     
@@ -103,11 +115,17 @@ class DFGBuilder:
         if not ast_node:
             return None
         
-        node_id = self.generate_node_id()
-        
         # 确定节点类型和名称
         node_type = self._get_dfg_node_type(ast_node)
         node_name = self._get_node_name(ast_node)
+        node_text = getattr(ast_node, 'text', '')
+        
+        # 应用节点过滤规则
+        if not should_keep_node(node_type, node_name or '', node_text or '', self.config):
+            self.filtered_nodes_count += 1
+            return None
+        
+        node_id = self.generate_node_id()
         data_type = self._get_node_data_type(ast_node)
         
         dfg_node = DFGNode(
@@ -160,14 +178,14 @@ class DFGBuilder:
         """提取节点属性"""
         properties = {}
         
-        # 添加0.4.x特有属性
-        if self.legacy_handler:
+        # 添加0.4.x特有属性（如果配置允许）
+        if self.legacy_handler and self.config.include_ast_metadata:
             self.legacy_handler.add_legacy_metadata(ast_node)
             if hasattr(ast_node, 'metadata') and ast_node.metadata:
                 properties.update(ast_node.metadata)
         
-        # 添加通用属性
-        if hasattr(ast_node, 'source_location') and ast_node.source_location:
+        # 添加源码位置（根据配置）
+        if self.config.store_source_location and hasattr(ast_node, 'source_location') and ast_node.source_location:
             properties['source_location'] = {
                 'line': ast_node.source_location.line,
                 'column': ast_node.source_location.column
@@ -340,6 +358,27 @@ class DFGBuilder:
         """添加DFG边"""
         if not self.current_dfg:
             return
+        
+        # 检查节点是否存在（可能被过滤了）
+        if source_id not in self.current_dfg.nodes or target_id not in self.current_dfg.nodes:
+            self.filtered_edges_count += 1
+            return
+        
+        # 应用边过滤规则
+        if self.config.skip_sequential_control and edge_type == EdgeType.CONTROL_DEPENDENCY:
+            # 可以在这里添加更复杂的逻辑来判断是否为顺序控制依赖
+            # 暂时保留所有控制依赖
+            pass
+        
+        # 检查冗余边
+        if self.config.skip_redundant_edges:
+            # 检查是否已存在相同的边
+            for existing_edge in self.current_dfg.edges.values():
+                if (existing_edge.source_node_id == source_id and 
+                    existing_edge.target_node_id == target_id and 
+                    existing_edge.edge_type == edge_type):
+                    self.filtered_edges_count += 1
+                    return
         
         edge_id = self.generate_edge_id()
         edge = DFGEdge(

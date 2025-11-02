@@ -1,0 +1,120 @@
+{
+  "contract": "MyContract",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "MyContract",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 1,
+        "column": 1,
+        "end_line": 11,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "constructor_function",
+      "name": "MyContract",
+      "data_type": null,
+      "scope": "MyContract",
+      "source_location": {
+        "line": 4,
+        "column": 2,
+        "end_line": 10,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 4,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "local_variable",
+      "name": "co23actline1",
+      "data_type": "var",
+      "scope": "MyContract_function",
+      "source_location": {
+        "line": 5,
+        "column": 1,
+        "end_line": 5,
+        "end_column": 17
+      },
+      "properties": {
+        "source_location": {
+          "line": 5,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "local_variable",
+      "name": "str2",
+      "data_type": "var",
+      "scope": "MyContract_function",
+      "source_location": {
+        "line": 6,
+        "column": 1,
+        "end_line": 6,
+        "end_column": 9
+      },
+      "properties": {
+        "source_location": {
+          "line": 6,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "local_variable",
+      "name": "contractline2",
+      "data_type": "var",
+      "scope": "MyContract_function",
+      "source_location": {
+        "line": 8,
+        "column": 1,
+        "end_line": 8,
+        "end_column": 18
+      },
+      "properties": {
+        "source_location": {
+          "line": 8,
+          "column": 1
+        }
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 1449,
+    "source_line": 1450,
+    "label": 0,
+    "mode": "standard",
+    "contract_name": "MyContract",
+    "timestamp": "20251027_225116"
+  }
+}

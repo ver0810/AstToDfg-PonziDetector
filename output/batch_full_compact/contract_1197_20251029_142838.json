@@ -1,0 +1,141 @@
+{
+  "contract": "RipplePayExample",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "RipplePayExample",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 1,
+        "column": 1,
+        "end_line": 12,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "TrustSettings",
+      "data_type": "mapping(address => mapping(address => uint))",
+      "scope": "RipplePayExample",
+      "source_location": {
+        "line": 3,
+        "column": 1,
+        "end_line": 3,
+        "end_column": 60
+      },
+      "properties": {
+        "source_location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "function",
+      "name": "updateTrustSettings",
+      "data_type": null,
+      "scope": "RipplePayExample",
+      "source_location": {
+        "line": 5,
+        "column": 1,
+        "end_line": 7,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 5,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "function",
+      "name": "getTrustSetting",
+      "data_type": null,
+      "scope": "RipplePayExample",
+      "source_location": {
+        "line": 9,
+        "column": 1,
+        "end_line": 11,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 9,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "parameter",
+      "name": "param_4",
+      "data_type": "uint",
+      "scope": "getTrustSetting_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getTrustSetting"
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_4",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_1",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 1197,
+    "source_line": 1198,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "RipplePayExample",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

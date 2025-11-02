@@ -1,0 +1,1677 @@
+{
+  "contract": "CMHome",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "CMHome",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 1,
+        "column": 1,
+        "end_line": 71,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "CMAdmin",
+      "data_type": "address",
+      "scope": "CMHome",
+      "source_location": {
+        "line": 2,
+        "column": 1,
+        "end_line": 2,
+        "end_column": 62
+      },
+      "properties": {
+        "source_location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "state_variable",
+      "name": "whitelist",
+      "data_type": "mapping(address => WhiteList)",
+      "scope": "CMHome",
+      "source_location": {
+        "line": 11,
+        "column": 1,
+        "end_line": 11,
+        "end_column": 48
+      },
+      "properties": {
+        "source_location": {
+          "line": 11,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "state_variable",
+      "name": "mycontracts",
+      "data_type": "mapping(uint32 => mapping (address => MyContracts))",
+      "scope": "CMHome",
+      "source_location": {
+        "line": 17,
+        "column": 1,
+        "end_line": 17,
+        "end_column": 72
+      },
+      "properties": {
+        "source_location": {
+          "line": 17,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "state_variable",
+      "name": "factory",
+      "data_type": "mapping (address => Factories)",
+      "scope": "CMHome",
+      "source_location": {
+        "line": 23,
+        "column": 1,
+        "end_line": 23,
+        "end_column": 47
+      },
+      "properties": {
+        "source_location": {
+          "line": 23,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "function",
+      "name": "Config",
+      "data_type": null,
+      "scope": "CMHome",
+      "source_location": {
+        "line": 26,
+        "column": 1,
+        "end_line": 37,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 26,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "function",
+      "name": "Auth",
+      "data_type": null,
+      "scope": "CMHome",
+      "source_location": {
+        "line": 39,
+        "column": 1,
+        "end_line": 48,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 39,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "function",
+      "name": "RegisterOne",
+      "data_type": null,
+      "scope": "CMHome",
+      "source_location": {
+        "line": 50,
+        "column": 1,
+        "end_line": 57,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 50,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "function",
+      "name": "RegisterTwo",
+      "data_type": null,
+      "scope": "CMHome",
+      "source_location": {
+        "line": 59,
+        "column": 1,
+        "end_line": 69,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 59,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_10": {
+      "id": "dfg_node_10",
+      "type": "contract",
+      "name": "MidasFactory",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 73,
+        "column": 1,
+        "end_line": 115,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 73,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_11": {
+      "id": "dfg_node_11",
+      "type": "state_variable",
+      "name": "CMAdmin",
+      "data_type": "address",
+      "scope": "MidasFactory",
+      "source_location": {
+        "line": 74,
+        "column": 1,
+        "end_line": 74,
+        "end_column": 62
+      },
+      "properties": {
+        "source_location": {
+          "line": 74,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_12": {
+      "id": "dfg_node_12",
+      "type": "function",
+      "name": "GetContractAddr",
+      "data_type": null,
+      "scope": "MidasFactory",
+      "source_location": {
+        "line": 77,
+        "column": 1,
+        "end_line": 79,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 77,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_14": {
+      "id": "dfg_node_14",
+      "type": "parameter",
+      "name": "param_12",
+      "data_type": "address",
+      "scope": "GetContractAddr_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "GetContractAddr"
+      }
+    },
+    "dfg_node_15": {
+      "id": "dfg_node_15",
+      "type": "state_variable",
+      "name": "ContrAddr2",
+      "data_type": "address",
+      "scope": "MidasFactory",
+      "source_location": {
+        "line": 80,
+        "column": 1,
+        "end_line": 80,
+        "end_column": 40
+      },
+      "properties": {
+        "source_location": {
+          "line": 80,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_16": {
+      "id": "dfg_node_16",
+      "type": "function",
+      "name": "Create",
+      "data_type": null,
+      "scope": "MidasFactory",
+      "source_location": {
+        "line": 84,
+        "column": 1,
+        "end_line": 92,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 84,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_17": {
+      "id": "dfg_node_17",
+      "type": "state_variable",
+      "name": "pri",
+      "data_type": "Pricing",
+      "scope": "MidasFactory",
+      "source_location": {
+        "line": 99,
+        "column": 1,
+        "end_line": 99,
+        "end_column": 13
+      },
+      "properties": {
+        "source_location": {
+          "line": 99,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_18": {
+      "id": "dfg_node_18",
+      "type": "function",
+      "name": "UpdatePrice",
+      "data_type": null,
+      "scope": "MidasFactory",
+      "source_location": {
+        "line": 102,
+        "column": 1,
+        "end_line": 106,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 102,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_19": {
+      "id": "dfg_node_19",
+      "type": "function",
+      "name": "GetPrice",
+      "data_type": null,
+      "scope": "MidasFactory",
+      "source_location": {
+        "line": 109,
+        "column": 1,
+        "end_line": 112,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 109,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_21": {
+      "id": "dfg_node_21",
+      "type": "parameter",
+      "name": "param_19",
+      "data_type": "uint32",
+      "scope": "GetPrice_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "GetPrice"
+      }
+    },
+    "dfg_node_22": {
+      "id": "dfg_node_22",
+      "type": "contract",
+      "name": "Midas",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 117,
+        "column": 1,
+        "end_line": 485,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 117,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_23": {
+      "id": "dfg_node_23",
+      "type": "state_variable",
+      "name": "CMAccount",
+      "data_type": "address",
+      "scope": "Midas",
+      "source_location": {
+        "line": 118,
+        "column": 1,
+        "end_line": 118,
+        "end_column": 64
+      },
+      "properties": {
+        "source_location": {
+          "line": 118,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_24": {
+      "id": "dfg_node_24",
+      "type": "state_variable",
+      "name": "CMAdmin",
+      "data_type": "address",
+      "scope": "Midas",
+      "source_location": {
+        "line": 119,
+        "column": 1,
+        "end_line": 119,
+        "end_column": 62
+      },
+      "properties": {
+        "source_location": {
+          "line": 119,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_25": {
+      "id": "dfg_node_25",
+      "type": "state_variable",
+      "name": "WeiConverter",
+      "data_type": "uint256",
+      "scope": "Midas",
+      "source_location": {
+        "line": 120,
+        "column": 1,
+        "end_line": 120,
+        "end_column": 44
+      },
+      "properties": {
+        "source_location": {
+          "line": 120,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_26": {
+      "id": "dfg_node_26",
+      "type": "state_variable",
+      "name": "Factor",
+      "data_type": "uint32",
+      "scope": "Midas",
+      "source_location": {
+        "line": 121,
+        "column": 1,
+        "end_line": 121,
+        "end_column": 27
+      },
+      "properties": {
+        "source_location": {
+          "line": 121,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_27": {
+      "id": "dfg_node_27",
+      "type": "state_variable",
+      "name": "ServiceFee",
+      "data_type": "uint32",
+      "scope": "Midas",
+      "source_location": {
+        "line": 122,
+        "column": 1,
+        "end_line": 122,
+        "end_column": 19
+      },
+      "properties": {
+        "source_location": {
+          "line": 122,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_28": {
+      "id": "dfg_node_28",
+      "type": "state_variable",
+      "name": "DefaultFee",
+      "data_type": "uint32",
+      "scope": "Midas",
+      "source_location": {
+        "line": 123,
+        "column": 1,
+        "end_line": 123,
+        "end_column": 19
+      },
+      "properties": {
+        "source_location": {
+          "line": 123,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_29": {
+      "id": "dfg_node_29",
+      "type": "state_variable",
+      "name": "Fee",
+      "data_type": "uint256",
+      "scope": "Midas",
+      "source_location": {
+        "line": 124,
+        "column": 1,
+        "end_line": 124,
+        "end_column": 13
+      },
+      "properties": {
+        "source_location": {
+          "line": 124,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_30": {
+      "id": "dfg_node_30",
+      "type": "state_variable",
+      "name": "Pay",
+      "data_type": "uint256",
+      "scope": "Midas",
+      "source_location": {
+        "line": 125,
+        "column": 1,
+        "end_line": 125,
+        "end_column": 13
+      },
+      "properties": {
+        "source_location": {
+          "line": 125,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_31": {
+      "id": "dfg_node_31",
+      "type": "state_variable",
+      "name": "NetPayout",
+      "data_type": "uint256",
+      "scope": "Midas",
+      "source_location": {
+        "line": 126,
+        "column": 1,
+        "end_line": 126,
+        "end_column": 19
+      },
+      "properties": {
+        "source_location": {
+          "line": 126,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_32": {
+      "id": "dfg_node_32",
+      "type": "function",
+      "name": "GetContractAddr",
+      "data_type": null,
+      "scope": "Midas",
+      "source_location": {
+        "line": 128,
+        "column": 1,
+        "end_line": 130,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 128,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_34": {
+      "id": "dfg_node_34",
+      "type": "parameter",
+      "name": "param_32",
+      "data_type": "address",
+      "scope": "GetContractAddr_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "GetContractAddr"
+      }
+    },
+    "dfg_node_35": {
+      "id": "dfg_node_35",
+      "type": "state_variable",
+      "name": "ContrAddr",
+      "data_type": "address",
+      "scope": "Midas",
+      "source_location": {
+        "line": 131,
+        "column": 1,
+        "end_line": 131,
+        "end_column": 39
+      },
+      "properties": {
+        "source_location": {
+          "line": 131,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_36": {
+      "id": "dfg_node_36",
+      "type": "state_variable",
+      "name": "contractPartOne",
+      "data_type": "mapping (uint256 => fContr1)",
+      "scope": "Midas",
+      "source_location": {
+        "line": 189,
+        "column": 1,
+        "end_line": 189,
+        "end_column": 53
+      },
+      "properties": {
+        "source_location": {
+          "line": 189,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_37": {
+      "id": "dfg_node_37",
+      "type": "state_variable",
+      "name": "contractPartTwo",
+      "data_type": "mapping (uint256 => fContr2)",
+      "scope": "Midas",
+      "source_location": {
+        "line": 190,
+        "column": 1,
+        "end_line": 190,
+        "end_column": 53
+      },
+      "properties": {
+        "source_location": {
+          "line": 190,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_38": {
+      "id": "dfg_node_38",
+      "type": "state_variable",
+      "name": "contractPartThree",
+      "data_type": "mapping (uint256 => fContr3)",
+      "scope": "Midas",
+      "source_location": {
+        "line": 191,
+        "column": 1,
+        "end_line": 191,
+        "end_column": 55
+      },
+      "properties": {
+        "source_location": {
+          "line": 191,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_39": {
+      "id": "dfg_node_39",
+      "type": "state_variable",
+      "name": "settlement",
+      "data_type": "mapping (uint256 => Settlement)",
+      "scope": "Midas",
+      "source_location": {
+        "line": 192,
+        "column": 1,
+        "end_line": 192,
+        "end_column": 51
+      },
+      "properties": {
+        "source_location": {
+          "line": 192,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_40": {
+      "id": "dfg_node_40",
+      "type": "state_variable",
+      "name": "arbitration",
+      "data_type": "mapping (uint256 => Arbitration)",
+      "scope": "Midas",
+      "source_location": {
+        "line": 193,
+        "column": 1,
+        "end_line": 193,
+        "end_column": 53
+      },
+      "properties": {
+        "source_location": {
+          "line": 193,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_41": {
+      "id": "dfg_node_41",
+      "type": "state_variable",
+      "name": "deposits",
+      "data_type": "mapping (uint256 => Deposits)",
+      "scope": "Midas",
+      "source_location": {
+        "line": 194,
+        "column": 1,
+        "end_line": 194,
+        "end_column": 47
+      },
+      "properties": {
+        "source_location": {
+          "line": 194,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_42": {
+      "id": "dfg_node_42",
+      "type": "state_variable",
+      "name": "status",
+      "data_type": "mapping (uint256 => Status)",
+      "scope": "Midas",
+      "source_location": {
+        "line": 195,
+        "column": 1,
+        "end_line": 195,
+        "end_column": 43
+      },
+      "properties": {
+        "source_location": {
+          "line": 195,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_43": {
+      "id": "dfg_node_43",
+      "type": "state_variable",
+      "name": "c1",
+      "data_type": "fContr1",
+      "scope": "Midas",
+      "source_location": {
+        "line": 198,
+        "column": 1,
+        "end_line": 198,
+        "end_column": 12
+      },
+      "properties": {
+        "source_location": {
+          "line": 198,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_44": {
+      "id": "dfg_node_44",
+      "type": "state_variable",
+      "name": "c2",
+      "data_type": "fContr2",
+      "scope": "Midas",
+      "source_location": {
+        "line": 199,
+        "column": 1,
+        "end_line": 199,
+        "end_column": 12
+      },
+      "properties": {
+        "source_location": {
+          "line": 199,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_45": {
+      "id": "dfg_node_45",
+      "type": "state_variable",
+      "name": "c3",
+      "data_type": "fContr3",
+      "scope": "Midas",
+      "source_location": {
+        "line": 200,
+        "column": 1,
+        "end_line": 200,
+        "end_column": 12
+      },
+      "properties": {
+        "source_location": {
+          "line": 200,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_46": {
+      "id": "dfg_node_46",
+      "type": "state_variable",
+      "name": "se",
+      "data_type": "Settlement",
+      "scope": "Midas",
+      "source_location": {
+        "line": 201,
+        "column": 1,
+        "end_line": 201,
+        "end_column": 15
+      },
+      "properties": {
+        "source_location": {
+          "line": 201,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_47": {
+      "id": "dfg_node_47",
+      "type": "state_variable",
+      "name": "ar",
+      "data_type": "Arbitration",
+      "scope": "Midas",
+      "source_location": {
+        "line": 202,
+        "column": 1,
+        "end_line": 202,
+        "end_column": 16
+      },
+      "properties": {
+        "source_location": {
+          "line": 202,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_48": {
+      "id": "dfg_node_48",
+      "type": "state_variable",
+      "name": "de",
+      "data_type": "Deposits",
+      "scope": "Midas",
+      "source_location": {
+        "line": 203,
+        "column": 1,
+        "end_line": 203,
+        "end_column": 13
+      },
+      "properties": {
+        "source_location": {
+          "line": 203,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_49": {
+      "id": "dfg_node_49",
+      "type": "state_variable",
+      "name": "st",
+      "data_type": "Status",
+      "scope": "Midas",
+      "source_location": {
+        "line": 204,
+        "column": 1,
+        "end_line": 204,
+        "end_column": 11
+      },
+      "properties": {
+        "source_location": {
+          "line": 204,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_50": {
+      "id": "dfg_node_50",
+      "type": "state_variable",
+      "name": "co",
+      "data_type": "Core",
+      "scope": "Midas",
+      "source_location": {
+        "line": 205,
+        "column": 1,
+        "end_line": 205,
+        "end_column": 9
+      },
+      "properties": {
+        "source_location": {
+          "line": 205,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_51": {
+      "id": "dfg_node_51",
+      "type": "constructor_function",
+      "name": "Midas",
+      "data_type": null,
+      "scope": "Midas",
+      "source_location": {
+        "line": 208,
+        "column": 1,
+        "end_line": 211,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 208,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_52": {
+      "id": "dfg_node_52",
+      "type": "function",
+      "name": "Register",
+      "data_type": null,
+      "scope": "Midas",
+      "source_location": {
+        "line": 214,
+        "column": 1,
+        "end_line": 220,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 214,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_53": {
+      "id": "dfg_node_53",
+      "type": "state_variable",
+      "name": "ContractNum",
+      "data_type": "uint256",
+      "scope": "Midas",
+      "source_location": {
+        "line": 223,
+        "column": 1,
+        "end_line": 223,
+        "end_column": 25
+      },
+      "properties": {
+        "source_location": {
+          "line": 223,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_54": {
+      "id": "dfg_node_54",
+      "type": "function",
+      "name": "CreateProposal",
+      "data_type": null,
+      "scope": "Midas",
+      "source_location": {
+        "line": 226,
+        "column": 1,
+        "end_line": 266,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 226,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_55": {
+      "id": "dfg_node_55",
+      "type": "function",
+      "name": "OwnerDeposit",
+      "data_type": null,
+      "scope": "Midas",
+      "source_location": {
+        "line": 270,
+        "column": 1,
+        "end_line": 282,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 270,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_56": {
+      "id": "dfg_node_56",
+      "type": "function",
+      "name": "CounterPartyDeposit",
+      "data_type": null,
+      "scope": "Midas",
+      "source_location": {
+        "line": 286,
+        "column": 1,
+        "end_line": 298,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 286,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_57": {
+      "id": "dfg_node_57",
+      "type": "function",
+      "name": "Settle",
+      "data_type": null,
+      "scope": "Midas",
+      "source_location": {
+        "line": 302,
+        "column": 1,
+        "end_line": 319,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 302,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_58": {
+      "id": "dfg_node_58",
+      "type": "function",
+      "name": "Payout",
+      "data_type": null,
+      "scope": "Midas",
+      "source_location": {
+        "line": 322,
+        "column": 1,
+        "end_line": 348,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 322,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_59": {
+      "id": "dfg_node_59",
+      "type": "function",
+      "name": "Dispute",
+      "data_type": null,
+      "scope": "Midas",
+      "source_location": {
+        "line": 350,
+        "column": 1,
+        "end_line": 360,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 350,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_60": {
+      "id": "dfg_node_60",
+      "type": "function",
+      "name": "Arbitrate",
+      "data_type": null,
+      "scope": "Midas",
+      "source_location": {
+        "line": 363,
+        "column": 1,
+        "end_line": 381,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 363,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_61": {
+      "id": "dfg_node_61",
+      "type": "function",
+      "name": "CCPayoutArb",
+      "data_type": null,
+      "scope": "Midas",
+      "source_location": {
+        "line": 384,
+        "column": 1,
+        "end_line": 412,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 384,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_62": {
+      "id": "dfg_node_62",
+      "type": "function",
+      "name": "OWPayoutArb",
+      "data_type": null,
+      "scope": "Midas",
+      "source_location": {
+        "line": 415,
+        "column": 1,
+        "end_line": 441,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 415,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_63": {
+      "id": "dfg_node_63",
+      "type": "function",
+      "name": "Refund",
+      "data_type": null,
+      "scope": "Midas",
+      "source_location": {
+        "line": 444,
+        "column": 1,
+        "end_line": 471,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 444,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_64": {
+      "id": "dfg_node_64",
+      "type": "function",
+      "name": "Reset",
+      "data_type": null,
+      "scope": "Midas",
+      "source_location": {
+        "line": 473,
+        "column": 1,
+        "end_line": 482,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 473,
+          "column": 1
+        }
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_1",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_1",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_1",
+      "target": "dfg_node_7",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_1",
+      "target": "dfg_node_8",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_1",
+      "target": "dfg_node_9",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_9": {
+      "id": "dfg_edge_9",
+      "source": "dfg_node_10",
+      "target": "dfg_node_11",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_10": {
+      "id": "dfg_edge_10",
+      "source": "dfg_node_12",
+      "target": "dfg_node_14",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_11": {
+      "id": "dfg_edge_11",
+      "source": "dfg_node_10",
+      "target": "dfg_node_12",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_12": {
+      "id": "dfg_edge_12",
+      "source": "dfg_node_10",
+      "target": "dfg_node_15",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_13": {
+      "id": "dfg_edge_13",
+      "source": "dfg_node_10",
+      "target": "dfg_node_16",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_14": {
+      "id": "dfg_edge_14",
+      "source": "dfg_node_10",
+      "target": "dfg_node_17",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_15": {
+      "id": "dfg_edge_15",
+      "source": "dfg_node_10",
+      "target": "dfg_node_18",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_16": {
+      "id": "dfg_edge_16",
+      "source": "dfg_node_19",
+      "target": "dfg_node_21",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_17": {
+      "id": "dfg_edge_17",
+      "source": "dfg_node_10",
+      "target": "dfg_node_19",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_18": {
+      "id": "dfg_edge_18",
+      "source": "dfg_node_22",
+      "target": "dfg_node_23",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_19": {
+      "id": "dfg_edge_19",
+      "source": "dfg_node_22",
+      "target": "dfg_node_24",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_20": {
+      "id": "dfg_edge_20",
+      "source": "dfg_node_22",
+      "target": "dfg_node_25",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_21": {
+      "id": "dfg_edge_21",
+      "source": "dfg_node_22",
+      "target": "dfg_node_26",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_22": {
+      "id": "dfg_edge_22",
+      "source": "dfg_node_22",
+      "target": "dfg_node_27",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_23": {
+      "id": "dfg_edge_23",
+      "source": "dfg_node_22",
+      "target": "dfg_node_28",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_24": {
+      "id": "dfg_edge_24",
+      "source": "dfg_node_22",
+      "target": "dfg_node_29",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_25": {
+      "id": "dfg_edge_25",
+      "source": "dfg_node_22",
+      "target": "dfg_node_30",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_26": {
+      "id": "dfg_edge_26",
+      "source": "dfg_node_22",
+      "target": "dfg_node_31",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_27": {
+      "id": "dfg_edge_27",
+      "source": "dfg_node_32",
+      "target": "dfg_node_34",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_28": {
+      "id": "dfg_edge_28",
+      "source": "dfg_node_22",
+      "target": "dfg_node_32",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_29": {
+      "id": "dfg_edge_29",
+      "source": "dfg_node_22",
+      "target": "dfg_node_35",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_30": {
+      "id": "dfg_edge_30",
+      "source": "dfg_node_22",
+      "target": "dfg_node_36",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_31": {
+      "id": "dfg_edge_31",
+      "source": "dfg_node_22",
+      "target": "dfg_node_37",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_32": {
+      "id": "dfg_edge_32",
+      "source": "dfg_node_22",
+      "target": "dfg_node_38",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_33": {
+      "id": "dfg_edge_33",
+      "source": "dfg_node_22",
+      "target": "dfg_node_39",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_34": {
+      "id": "dfg_edge_34",
+      "source": "dfg_node_22",
+      "target": "dfg_node_40",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_35": {
+      "id": "dfg_edge_35",
+      "source": "dfg_node_22",
+      "target": "dfg_node_41",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_36": {
+      "id": "dfg_edge_36",
+      "source": "dfg_node_22",
+      "target": "dfg_node_42",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_37": {
+      "id": "dfg_edge_37",
+      "source": "dfg_node_22",
+      "target": "dfg_node_43",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_38": {
+      "id": "dfg_edge_38",
+      "source": "dfg_node_22",
+      "target": "dfg_node_44",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_39": {
+      "id": "dfg_edge_39",
+      "source": "dfg_node_22",
+      "target": "dfg_node_45",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_40": {
+      "id": "dfg_edge_40",
+      "source": "dfg_node_22",
+      "target": "dfg_node_46",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_41": {
+      "id": "dfg_edge_41",
+      "source": "dfg_node_22",
+      "target": "dfg_node_47",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_42": {
+      "id": "dfg_edge_42",
+      "source": "dfg_node_22",
+      "target": "dfg_node_48",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_43": {
+      "id": "dfg_edge_43",
+      "source": "dfg_node_22",
+      "target": "dfg_node_49",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_44": {
+      "id": "dfg_edge_44",
+      "source": "dfg_node_22",
+      "target": "dfg_node_50",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_45": {
+      "id": "dfg_edge_45",
+      "source": "dfg_node_22",
+      "target": "dfg_node_51",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_46": {
+      "id": "dfg_edge_46",
+      "source": "dfg_node_22",
+      "target": "dfg_node_52",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_47": {
+      "id": "dfg_edge_47",
+      "source": "dfg_node_22",
+      "target": "dfg_node_53",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_48": {
+      "id": "dfg_edge_48",
+      "source": "dfg_node_22",
+      "target": "dfg_node_54",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_49": {
+      "id": "dfg_edge_49",
+      "source": "dfg_node_22",
+      "target": "dfg_node_55",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_50": {
+      "id": "dfg_edge_50",
+      "source": "dfg_node_22",
+      "target": "dfg_node_56",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_51": {
+      "id": "dfg_edge_51",
+      "source": "dfg_node_22",
+      "target": "dfg_node_57",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_52": {
+      "id": "dfg_edge_52",
+      "source": "dfg_node_22",
+      "target": "dfg_node_58",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_53": {
+      "id": "dfg_edge_53",
+      "source": "dfg_node_22",
+      "target": "dfg_node_59",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_54": {
+      "id": "dfg_edge_54",
+      "source": "dfg_node_22",
+      "target": "dfg_node_60",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_55": {
+      "id": "dfg_edge_55",
+      "source": "dfg_node_22",
+      "target": "dfg_node_61",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_56": {
+      "id": "dfg_edge_56",
+      "source": "dfg_node_22",
+      "target": "dfg_node_62",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_57": {
+      "id": "dfg_edge_57",
+      "source": "dfg_node_22",
+      "target": "dfg_node_63",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_58": {
+      "id": "dfg_edge_58",
+      "source": "dfg_node_22",
+      "target": "dfg_node_64",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 1499,
+    "source_line": 1500,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "CMHome",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

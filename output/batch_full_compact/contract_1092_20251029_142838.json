@@ -1,0 +1,260 @@
+{
+  "contract": "DaoChallenge",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "DaoChallenge",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 1,
+        "column": 1,
+        "end_line": 68,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "tokenBalanceOf",
+      "data_type": "mapping (address => uint256)",
+      "scope": "DaoChallenge",
+      "source_location": {
+        "line": 13,
+        "column": 3,
+        "end_line": 13,
+        "end_column": 54
+      },
+      "properties": {
+        "source_location": {
+          "line": 13,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "state_variable",
+      "name": "tokenPrice",
+      "data_type": "uint256",
+      "scope": "DaoChallenge",
+      "source_location": {
+        "line": 15,
+        "column": 2,
+        "end_line": 15,
+        "end_column": 49
+      },
+      "properties": {
+        "source_location": {
+          "line": 15,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "state_variable",
+      "name": "owner",
+      "data_type": "address",
+      "scope": "DaoChallenge",
+      "source_location": {
+        "line": 18,
+        "column": 2,
+        "end_line": 18,
+        "end_column": 16
+      },
+      "properties": {
+        "source_location": {
+          "line": 18,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "constructor_function",
+      "name": "DaoChallenge",
+      "data_type": null,
+      "scope": "DaoChallenge",
+      "source_location": {
+        "line": 20,
+        "column": 2,
+        "end_line": 22,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 20,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "function",
+      "name": "withdrawEtherOrThrow",
+      "data_type": null,
+      "scope": "DaoChallenge",
+      "source_location": {
+        "line": 37,
+        "column": 2,
+        "end_line": 42,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 37,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "function",
+      "name": "refund",
+      "data_type": null,
+      "scope": "DaoChallenge",
+      "source_location": {
+        "line": 44,
+        "column": 2,
+        "end_line": 51,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 44,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "function",
+      "name": "transfer",
+      "data_type": null,
+      "scope": "DaoChallenge",
+      "source_location": {
+        "line": 53,
+        "column": 2,
+        "end_line": 61,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 53,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "function",
+      "name": "terminate",
+      "data_type": null,
+      "scope": "DaoChallenge",
+      "source_location": {
+        "line": 64,
+        "column": 2,
+        "end_line": 67,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 64,
+          "column": 2
+        }
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_1",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_1",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_1",
+      "target": "dfg_node_7",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_1",
+      "target": "dfg_node_8",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_1",
+      "target": "dfg_node_9",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 1092,
+    "source_line": 1093,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "DaoChallenge",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

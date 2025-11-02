@@ -1,0 +1,428 @@
+{
+  "contract": "CrazyEarning",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "CrazyEarning",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 13,
+        "column": 1,
+        "end_line": 59,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 13,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "crazyearners",
+      "data_type": "earnerarray[]",
+      "scope": "CrazyEarning",
+      "source_location": {
+        "line": 18,
+        "column": 1,
+        "end_line": 18,
+        "end_column": 35
+      },
+      "properties": {
+        "source_location": {
+          "line": 18,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "state_variable",
+      "name": "deposits_until_jackpot",
+      "data_type": "uint",
+      "scope": "CrazyEarning",
+      "source_location": {
+        "line": 19,
+        "column": 1,
+        "end_line": 19,
+        "end_column": 38
+      },
+      "properties": {
+        "source_location": {
+          "line": 19,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "state_variable",
+      "name": "totalearners",
+      "data_type": "uint",
+      "scope": "CrazyEarning",
+      "source_location": {
+        "line": 20,
+        "column": 1,
+        "end_line": 20,
+        "end_column": 28
+      },
+      "properties": {
+        "source_location": {
+          "line": 20,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "state_variable",
+      "name": "feerate",
+      "data_type": "uint",
+      "scope": "CrazyEarning",
+      "source_location": {
+        "line": 20,
+        "column": 29,
+        "end_line": 20,
+        "end_column": 51
+      },
+      "properties": {
+        "source_location": {
+          "line": 20,
+          "column": 29
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "state_variable",
+      "name": "profitrate",
+      "data_type": "uint",
+      "scope": "CrazyEarning",
+      "source_location": {
+        "line": 20,
+        "column": 51,
+        "end_line": 20,
+        "end_column": 78
+      },
+      "properties": {
+        "source_location": {
+          "line": 20,
+          "column": 51
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "state_variable",
+      "name": "jackpotrate",
+      "data_type": "uint",
+      "scope": "CrazyEarning",
+      "source_location": {
+        "line": 20,
+        "column": 78,
+        "end_line": 20,
+        "end_column": 106
+      },
+      "properties": {
+        "source_location": {
+          "line": 20,
+          "column": 78
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "state_variable",
+      "name": "alpha",
+      "data_type": "uint",
+      "scope": "CrazyEarning",
+      "source_location": {
+        "line": 20,
+        "column": 107,
+        "end_line": 20,
+        "end_column": 120
+      },
+      "properties": {
+        "source_location": {
+          "line": 20,
+          "column": 107
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "state_variable",
+      "name": "feeamount",
+      "data_type": "uint",
+      "scope": "CrazyEarning",
+      "source_location": {
+        "line": 20,
+        "column": 121,
+        "end_line": 20,
+        "end_column": 138
+      },
+      "properties": {
+        "source_location": {
+          "line": 20,
+          "column": 121
+        }
+      }
+    },
+    "dfg_node_10": {
+      "id": "dfg_node_10",
+      "type": "state_variable",
+      "name": "balance",
+      "data_type": "uint",
+      "scope": "CrazyEarning",
+      "source_location": {
+        "line": 20,
+        "column": 139,
+        "end_line": 20,
+        "end_column": 161
+      },
+      "properties": {
+        "source_location": {
+          "line": 20,
+          "column": 139
+        }
+      }
+    },
+    "dfg_node_11": {
+      "id": "dfg_node_11",
+      "type": "state_variable",
+      "name": "totaldeposited",
+      "data_type": "uint",
+      "scope": "CrazyEarning",
+      "source_location": {
+        "line": 20,
+        "column": 162,
+        "end_line": 20,
+        "end_column": 191
+      },
+      "properties": {
+        "source_location": {
+          "line": 20,
+          "column": 162
+        }
+      }
+    },
+    "dfg_node_12": {
+      "id": "dfg_node_12",
+      "type": "state_variable",
+      "name": "totalmoneyearned",
+      "data_type": "uint",
+      "scope": "CrazyEarning",
+      "source_location": {
+        "line": 20,
+        "column": 192,
+        "end_line": 20,
+        "end_column": 223
+      },
+      "properties": {
+        "source_location": {
+          "line": 20,
+          "column": 192
+        }
+      }
+    },
+    "dfg_node_13": {
+      "id": "dfg_node_13",
+      "type": "state_variable",
+      "name": "owner",
+      "data_type": "address",
+      "scope": "CrazyEarning",
+      "source_location": {
+        "line": 21,
+        "column": 1,
+        "end_line": 21,
+        "end_column": 22
+      },
+      "properties": {
+        "source_location": {
+          "line": 21,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_14": {
+      "id": "dfg_node_14",
+      "type": "constructor_function",
+      "name": "CrazyEarning",
+      "data_type": null,
+      "scope": "CrazyEarning",
+      "source_location": {
+        "line": 22,
+        "column": 1,
+        "end_line": 24,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 22,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_15": {
+      "id": "dfg_node_15",
+      "type": "function",
+      "name": "enter",
+      "data_type": null,
+      "scope": "CrazyEarning",
+      "source_location": {
+        "line": 28,
+        "column": 1,
+        "end_line": 59,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 28,
+          "column": 1
+        }
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_1",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_1",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_1",
+      "target": "dfg_node_7",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_1",
+      "target": "dfg_node_8",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_1",
+      "target": "dfg_node_9",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_9": {
+      "id": "dfg_edge_9",
+      "source": "dfg_node_1",
+      "target": "dfg_node_10",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_10": {
+      "id": "dfg_edge_10",
+      "source": "dfg_node_1",
+      "target": "dfg_node_11",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_11": {
+      "id": "dfg_edge_11",
+      "source": "dfg_node_1",
+      "target": "dfg_node_12",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_12": {
+      "id": "dfg_edge_12",
+      "source": "dfg_node_1",
+      "target": "dfg_node_13",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_13": {
+      "id": "dfg_edge_13",
+      "source": "dfg_node_1",
+      "target": "dfg_node_14",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_14": {
+      "id": "dfg_edge_14",
+      "source": "dfg_node_1",
+      "target": "dfg_node_15",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 1222,
+    "source_line": 1223,
+    "label": 1,
+    "mode": "compact",
+    "contract_name": "CrazyEarning",
+    "timestamp": "20251029_142838"
+  },
+  "label": 1
+}

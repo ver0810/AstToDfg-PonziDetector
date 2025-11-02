@@ -1,0 +1,291 @@
+{
+  "contract": "Contract_971",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "function",
+      "name": "addFunds",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 17,
+        "column": 9,
+        "end_line": 23,
+        "end_column": 10
+      },
+      "properties": {
+        "source_location": {
+          "line": 17,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "function",
+      "name": "Deposit",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 30,
+        "column": 9,
+        "end_line": 32,
+        "end_column": 10
+      },
+      "properties": {
+        "source_location": {
+          "line": 30,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "function",
+      "name": "deposit",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 39,
+        "column": 9,
+        "end_line": 42,
+        "end_column": 10
+      },
+      "properties": {
+        "source_location": {
+          "line": 39,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "parameter",
+      "name": "param_3",
+      "data_type": "bool",
+      "scope": "deposit_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "deposit"
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "function",
+      "name": "Withdrawal",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 49,
+        "column": 9,
+        "end_line": 51,
+        "end_column": 10
+      },
+      "properties": {
+        "source_location": {
+          "line": 49,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "function",
+      "name": "InsufficientFunds",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 59,
+        "column": 9,
+        "end_line": 61,
+        "end_column": 10
+      },
+      "properties": {
+        "source_location": {
+          "line": 59,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "function",
+      "name": "deductFunds",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 67,
+        "column": 9,
+        "end_line": 78,
+        "end_column": 10
+      },
+      "properties": {
+        "source_location": {
+          "line": 67,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "function",
+      "name": "withdraw",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 84,
+        "column": 9,
+        "end_line": 103,
+        "end_column": 10
+      },
+      "properties": {
+        "source_location": {
+          "line": 84,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_11": {
+      "id": "dfg_node_11",
+      "type": "parameter",
+      "name": "param_9",
+      "data_type": "bool",
+      "scope": "withdraw_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "withdraw"
+      }
+    },
+    "dfg_node_12": {
+      "id": "dfg_node_12",
+      "type": "state_variable",
+      "name": "DEFAULT_SEND_GAS",
+      "data_type": "uint",
+      "scope": "global",
+      "source_location": {
+        "line": 105,
+        "column": 9,
+        "end_line": 105,
+        "end_column": 49
+      },
+      "properties": {
+        "source_location": {
+          "line": 105,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_13": {
+      "id": "dfg_node_13",
+      "type": "function",
+      "name": "sendRobust",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 107,
+        "column": 9,
+        "end_line": 112,
+        "end_column": 10
+      },
+      "properties": {
+        "source_location": {
+          "line": 107,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_15": {
+      "id": "dfg_node_15",
+      "type": "parameter",
+      "name": "param_13",
+      "data_type": "bool",
+      "scope": "sendRobust_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "sendRobust"
+      }
+    },
+    "dfg_node_16": {
+      "id": "dfg_node_16",
+      "type": "function",
+      "name": "sendRobust",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 114,
+        "column": 9,
+        "end_line": 124,
+        "end_column": 10
+      },
+      "properties": {
+        "source_location": {
+          "line": 114,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_18": {
+      "id": "dfg_node_18",
+      "type": "parameter",
+      "name": "param_16",
+      "data_type": "bool",
+      "scope": "sendRobust_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "sendRobust"
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_3",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_9",
+      "target": "dfg_node_11",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_13",
+      "target": "dfg_node_15",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_16",
+      "target": "dfg_node_18",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 970,
+    "source_line": 971,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "Contract_971",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

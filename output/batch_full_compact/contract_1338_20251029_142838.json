@@ -1,0 +1,1742 @@
+{
+  "contract": "Ownable",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "function",
+      "name": "mul",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 9,
+        "column": 3,
+        "end_line": 13,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 9,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "parameter",
+      "name": "param_1",
+      "data_type": "uint256",
+      "scope": "mul_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "mul"
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "function",
+      "name": "div",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 15,
+        "column": 3,
+        "end_line": 20,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 15,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "parameter",
+      "name": "param_4",
+      "data_type": "uint256",
+      "scope": "div_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "div"
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "function",
+      "name": "sub",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 22,
+        "column": 3,
+        "end_line": 25,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 22,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "parameter",
+      "name": "param_7",
+      "data_type": "uint256",
+      "scope": "sub_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "sub"
+      }
+    },
+    "dfg_node_10": {
+      "id": "dfg_node_10",
+      "type": "function",
+      "name": "add",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 27,
+        "column": 3,
+        "end_line": 31,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 27,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_12": {
+      "id": "dfg_node_12",
+      "type": "parameter",
+      "name": "param_10",
+      "data_type": "uint256",
+      "scope": "add_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "add"
+      }
+    },
+    "dfg_node_13": {
+      "id": "dfg_node_13",
+      "type": "contract",
+      "name": "Ownable",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 40,
+        "column": 1,
+        "end_line": 72,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 40,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_14": {
+      "id": "dfg_node_14",
+      "type": "state_variable",
+      "name": "owner",
+      "data_type": "address",
+      "scope": "Ownable",
+      "source_location": {
+        "line": 41,
+        "column": 3,
+        "end_line": 41,
+        "end_column": 24
+      },
+      "properties": {
+        "source_location": {
+          "line": 41,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_15": {
+      "id": "dfg_node_15",
+      "type": "constructor_function",
+      "name": "Ownable",
+      "data_type": null,
+      "scope": "Ownable",
+      "source_location": {
+        "line": 48,
+        "column": 3,
+        "end_line": 50,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 48,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_16": {
+      "id": "dfg_node_16",
+      "type": "function",
+      "name": "transferOwnership",
+      "data_type": null,
+      "scope": "Ownable",
+      "source_location": {
+        "line": 66,
+        "column": 3,
+        "end_line": 70,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 66,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_17": {
+      "id": "dfg_node_17",
+      "type": "contract",
+      "name": "Pausable",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 79,
+        "column": 1,
+        "end_line": 119,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 79,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_18": {
+      "id": "dfg_node_18",
+      "type": "state_variable",
+      "name": "paused",
+      "data_type": "bool",
+      "scope": "Pausable",
+      "source_location": {
+        "line": 83,
+        "column": 3,
+        "end_line": 83,
+        "end_column": 30
+      },
+      "properties": {
+        "source_location": {
+          "line": 83,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_19": {
+      "id": "dfg_node_19",
+      "type": "function",
+      "name": "pause",
+      "data_type": null,
+      "scope": "Pausable",
+      "source_location": {
+        "line": 105,
+        "column": 3,
+        "end_line": 109,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 105,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_21": {
+      "id": "dfg_node_21",
+      "type": "parameter",
+      "name": "param_19",
+      "data_type": "bool",
+      "scope": "pause_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "pause"
+      }
+    },
+    "dfg_node_22": {
+      "id": "dfg_node_22",
+      "type": "function",
+      "name": "unpause",
+      "data_type": null,
+      "scope": "Pausable",
+      "source_location": {
+        "line": 114,
+        "column": 3,
+        "end_line": 118,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 114,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_24": {
+      "id": "dfg_node_24",
+      "type": "parameter",
+      "name": "param_22",
+      "data_type": "bool",
+      "scope": "unpause_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "unpause"
+      }
+    },
+    "dfg_node_25": {
+      "id": "dfg_node_25",
+      "type": "contract",
+      "name": "IMintableToken",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 121,
+        "column": 1,
+        "end_line": 124,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 121,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_26": {
+      "id": "dfg_node_26",
+      "type": "function",
+      "name": "mint",
+      "data_type": null,
+      "scope": "IMintableToken",
+      "source_location": {
+        "line": 122,
+        "column": 5,
+        "end_line": 122,
+        "end_column": 64
+      },
+      "properties": {
+        "source_location": {
+          "line": 122,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_28": {
+      "id": "dfg_node_28",
+      "type": "parameter",
+      "name": "param_26",
+      "data_type": "bool",
+      "scope": "mint_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "mint"
+      }
+    },
+    "dfg_node_29": {
+      "id": "dfg_node_29",
+      "type": "function",
+      "name": "finishMinting",
+      "data_type": null,
+      "scope": "IMintableToken",
+      "source_location": {
+        "line": 123,
+        "column": 5,
+        "end_line": 123,
+        "end_column": 45
+      },
+      "properties": {
+        "source_location": {
+          "line": 123,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_31": {
+      "id": "dfg_node_31",
+      "type": "parameter",
+      "name": "param_29",
+      "data_type": "bool",
+      "scope": "finishMinting_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "finishMinting"
+      }
+    },
+    "dfg_node_32": {
+      "id": "dfg_node_32",
+      "type": "contract",
+      "name": "PricingStrategy",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 126,
+        "column": 1,
+        "end_line": 185,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 126,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_33": {
+      "id": "dfg_node_33",
+      "type": "state_variable",
+      "name": "rate0",
+      "data_type": "uint",
+      "scope": "PricingStrategy",
+      "source_location": {
+        "line": 130,
+        "column": 5,
+        "end_line": 130,
+        "end_column": 23
+      },
+      "properties": {
+        "source_location": {
+          "line": 130,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_34": {
+      "id": "dfg_node_34",
+      "type": "state_variable",
+      "name": "rate1",
+      "data_type": "uint",
+      "scope": "PricingStrategy",
+      "source_location": {
+        "line": 131,
+        "column": 5,
+        "end_line": 131,
+        "end_column": 23
+      },
+      "properties": {
+        "source_location": {
+          "line": 131,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_35": {
+      "id": "dfg_node_35",
+      "type": "state_variable",
+      "name": "rate2",
+      "data_type": "uint",
+      "scope": "PricingStrategy",
+      "source_location": {
+        "line": 132,
+        "column": 5,
+        "end_line": 132,
+        "end_column": 23
+      },
+      "properties": {
+        "source_location": {
+          "line": 132,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_36": {
+      "id": "dfg_node_36",
+      "type": "state_variable",
+      "name": "threshold1",
+      "data_type": "uint",
+      "scope": "PricingStrategy",
+      "source_location": {
+        "line": 134,
+        "column": 5,
+        "end_line": 134,
+        "end_column": 28
+      },
+      "properties": {
+        "source_location": {
+          "line": 134,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_37": {
+      "id": "dfg_node_37",
+      "type": "state_variable",
+      "name": "threshold2",
+      "data_type": "uint",
+      "scope": "PricingStrategy",
+      "source_location": {
+        "line": 135,
+        "column": 5,
+        "end_line": 135,
+        "end_column": 28
+      },
+      "properties": {
+        "source_location": {
+          "line": 135,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_38": {
+      "id": "dfg_node_38",
+      "type": "state_variable",
+      "name": "minimumWeiAmount",
+      "data_type": "uint",
+      "scope": "PricingStrategy",
+      "source_location": {
+        "line": 137,
+        "column": 5,
+        "end_line": 137,
+        "end_column": 34
+      },
+      "properties": {
+        "source_location": {
+          "line": 137,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_39": {
+      "id": "dfg_node_39",
+      "type": "constructor_function",
+      "name": "PricingStrategy",
+      "data_type": null,
+      "scope": "PricingStrategy",
+      "source_location": {
+        "line": 139,
+        "column": 5,
+        "end_line": 160,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 139,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_40": {
+      "id": "dfg_node_40",
+      "type": "function",
+      "name": "isPricingStrategy",
+      "data_type": null,
+      "scope": "PricingStrategy",
+      "source_location": {
+        "line": 163,
+        "column": 5,
+        "end_line": 165,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 163,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_42": {
+      "id": "dfg_node_42",
+      "type": "parameter",
+      "name": "param_40",
+      "data_type": "bool",
+      "scope": "isPricingStrategy_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "isPricingStrategy"
+      }
+    },
+    "dfg_node_43": {
+      "id": "dfg_node_43",
+      "type": "function",
+      "name": "calculateTokenAmount",
+      "data_type": null,
+      "scope": "PricingStrategy",
+      "source_location": {
+        "line": 168,
+        "column": 5,
+        "end_line": 184,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 168,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_45": {
+      "id": "dfg_node_45",
+      "type": "parameter",
+      "name": "tokenAmount",
+      "data_type": "uint",
+      "scope": "calculateTokenAmount_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "calculateTokenAmount"
+      }
+    },
+    "dfg_node_46": {
+      "id": "dfg_node_46",
+      "type": "contract",
+      "name": "Presale",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 187,
+        "column": 1,
+        "end_line": 474,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 187,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_47": {
+      "id": "dfg_node_47",
+      "type": "state_variable",
+      "name": "MAX_INVESTMENTS_BEFORE_MULTISIG_CHANGE",
+      "data_type": "uint",
+      "scope": "Presale",
+      "source_location": {
+        "line": 192,
+        "column": 5,
+        "end_line": 192,
+        "end_column": 62
+      },
+      "properties": {
+        "source_location": {
+          "line": 192,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_48": {
+      "id": "dfg_node_48",
+      "type": "state_variable",
+      "name": "token",
+      "data_type": "IMintableToken",
+      "scope": "Presale",
+      "source_location": {
+        "line": 195,
+        "column": 5,
+        "end_line": 195,
+        "end_column": 33
+      },
+      "properties": {
+        "source_location": {
+          "line": 195,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_49": {
+      "id": "dfg_node_49",
+      "type": "state_variable",
+      "name": "pricingStrategy",
+      "data_type": "PricingStrategy",
+      "scope": "Presale",
+      "source_location": {
+        "line": 198,
+        "column": 5,
+        "end_line": 198,
+        "end_column": 44
+      },
+      "properties": {
+        "source_location": {
+          "line": 198,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_50": {
+      "id": "dfg_node_50",
+      "type": "state_variable",
+      "name": "multisigWallet",
+      "data_type": "address",
+      "scope": "Presale",
+      "source_location": {
+        "line": 201,
+        "column": 5,
+        "end_line": 201,
+        "end_column": 35
+      },
+      "properties": {
+        "source_location": {
+          "line": 201,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_51": {
+      "id": "dfg_node_51",
+      "type": "state_variable",
+      "name": "minimumFundingGoal",
+      "data_type": "uint",
+      "scope": "Presale",
+      "source_location": {
+        "line": 204,
+        "column": 5,
+        "end_line": 204,
+        "end_column": 36
+      },
+      "properties": {
+        "source_location": {
+          "line": 204,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_52": {
+      "id": "dfg_node_52",
+      "type": "state_variable",
+      "name": "startsAt",
+      "data_type": "uint",
+      "scope": "Presale",
+      "source_location": {
+        "line": 207,
+        "column": 5,
+        "end_line": 207,
+        "end_column": 26
+      },
+      "properties": {
+        "source_location": {
+          "line": 207,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_53": {
+      "id": "dfg_node_53",
+      "type": "state_variable",
+      "name": "endsAt",
+      "data_type": "uint",
+      "scope": "Presale",
+      "source_location": {
+        "line": 210,
+        "column": 5,
+        "end_line": 210,
+        "end_column": 24
+      },
+      "properties": {
+        "source_location": {
+          "line": 210,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_54": {
+      "id": "dfg_node_54",
+      "type": "state_variable",
+      "name": "tokensHardCap",
+      "data_type": "uint",
+      "scope": "Presale",
+      "source_location": {
+        "line": 213,
+        "column": 5,
+        "end_line": 213,
+        "end_column": 31
+      },
+      "properties": {
+        "source_location": {
+          "line": 213,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_55": {
+      "id": "dfg_node_55",
+      "type": "state_variable",
+      "name": "tokensSold",
+      "data_type": "uint",
+      "scope": "Presale",
+      "source_location": {
+        "line": 216,
+        "column": 5,
+        "end_line": 216,
+        "end_column": 32
+      },
+      "properties": {
+        "source_location": {
+          "line": 216,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_56": {
+      "id": "dfg_node_56",
+      "type": "state_variable",
+      "name": "weiRaised",
+      "data_type": "uint",
+      "scope": "Presale",
+      "source_location": {
+        "line": 219,
+        "column": 5,
+        "end_line": 219,
+        "end_column": 31
+      },
+      "properties": {
+        "source_location": {
+          "line": 219,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_57": {
+      "id": "dfg_node_57",
+      "type": "state_variable",
+      "name": "investorCount",
+      "data_type": "uint",
+      "scope": "Presale",
+      "source_location": {
+        "line": 222,
+        "column": 5,
+        "end_line": 222,
+        "end_column": 35
+      },
+      "properties": {
+        "source_location": {
+          "line": 222,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_58": {
+      "id": "dfg_node_58",
+      "type": "state_variable",
+      "name": "loadedRefund",
+      "data_type": "uint",
+      "scope": "Presale",
+      "source_location": {
+        "line": 225,
+        "column": 5,
+        "end_line": 225,
+        "end_column": 34
+      },
+      "properties": {
+        "source_location": {
+          "line": 225,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_59": {
+      "id": "dfg_node_59",
+      "type": "state_variable",
+      "name": "weiRefunded",
+      "data_type": "uint",
+      "scope": "Presale",
+      "source_location": {
+        "line": 228,
+        "column": 5,
+        "end_line": 228,
+        "end_column": 33
+      },
+      "properties": {
+        "source_location": {
+          "line": 228,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_60": {
+      "id": "dfg_node_60",
+      "type": "state_variable",
+      "name": "investedAmountOf",
+      "data_type": "mapping (address => uint256)",
+      "scope": "Presale",
+      "source_location": {
+        "line": 231,
+        "column": 5,
+        "end_line": 231,
+        "end_column": 58
+      },
+      "properties": {
+        "source_location": {
+          "line": 231,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_61": {
+      "id": "dfg_node_61",
+      "type": "state_variable",
+      "name": "tokenAmountOf",
+      "data_type": "mapping (address => uint256)",
+      "scope": "Presale",
+      "source_location": {
+        "line": 234,
+        "column": 5,
+        "end_line": 234,
+        "end_column": 55
+      },
+      "properties": {
+        "source_location": {
+          "line": 234,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_62": {
+      "id": "dfg_node_62",
+      "type": "state_variable",
+      "name": "earlyParticipantWhitelist",
+      "data_type": "mapping (address => bool)",
+      "scope": "Presale",
+      "source_location": {
+        "line": 237,
+        "column": 5,
+        "end_line": 237,
+        "end_column": 64
+      },
+      "properties": {
+        "source_location": {
+          "line": 237,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_63": {
+      "id": "dfg_node_63",
+      "type": "constructor_function",
+      "name": "Presale",
+      "data_type": null,
+      "scope": "Presale",
+      "source_location": {
+        "line": 262,
+        "column": 5,
+        "end_line": 286,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 262,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_64": {
+      "id": "dfg_node_64",
+      "type": "function",
+      "name": "invest",
+      "data_type": null,
+      "scope": "Presale",
+      "source_location": {
+        "line": 303,
+        "column": 5,
+        "end_line": 344,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 303,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_65": {
+      "id": "dfg_node_65",
+      "type": "function",
+      "name": "setEarlyParicipantWhitelist",
+      "data_type": null,
+      "scope": "Presale",
+      "source_location": {
+        "line": 350,
+        "column": 5,
+        "end_line": 353,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 350,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_66": {
+      "id": "dfg_node_66",
+      "type": "function",
+      "name": "setEndsAt",
+      "data_type": null,
+      "scope": "Presale",
+      "source_location": {
+        "line": 365,
+        "column": 5,
+        "end_line": 371,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 365,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_67": {
+      "id": "dfg_node_67",
+      "type": "function",
+      "name": "setPricingStrategy",
+      "data_type": null,
+      "scope": "Presale",
+      "source_location": {
+        "line": 378,
+        "column": 5,
+        "end_line": 383,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 378,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_68": {
+      "id": "dfg_node_68",
+      "type": "function",
+      "name": "setMultisig",
+      "data_type": null,
+      "scope": "Presale",
+      "source_location": {
+        "line": 392,
+        "column": 5,
+        "end_line": 397,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 392,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_69": {
+      "id": "dfg_node_69",
+      "type": "function",
+      "name": "loadRefund",
+      "data_type": null,
+      "scope": "Presale",
+      "source_location": {
+        "line": 404,
+        "column": 5,
+        "end_line": 408,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 404,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_70": {
+      "id": "dfg_node_70",
+      "type": "function",
+      "name": "refund",
+      "data_type": null,
+      "scope": "Presale",
+      "source_location": {
+        "line": 416,
+        "column": 5,
+        "end_line": 425,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 416,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_71": {
+      "id": "dfg_node_71",
+      "type": "function",
+      "name": "getState",
+      "data_type": null,
+      "scope": "Presale",
+      "source_location": {
+        "line": 432,
+        "column": 5,
+        "end_line": 445,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 432,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_73": {
+      "id": "dfg_node_73",
+      "type": "parameter",
+      "name": "param_71",
+      "data_type": "State",
+      "scope": "getState_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getState"
+      }
+    },
+    "dfg_node_74": {
+      "id": "dfg_node_74",
+      "type": "function",
+      "name": "isMinimumGoalReached",
+      "data_type": null,
+      "scope": "Presale",
+      "source_location": {
+        "line": 450,
+        "column": 5,
+        "end_line": 452,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 450,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_76": {
+      "id": "dfg_node_76",
+      "type": "parameter",
+      "name": "reached",
+      "data_type": "bool",
+      "scope": "isMinimumGoalReached_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "isMinimumGoalReached"
+      }
+    },
+    "dfg_node_77": {
+      "id": "dfg_node_77",
+      "type": "function",
+      "name": "isBreakingCap",
+      "data_type": null,
+      "scope": "Presale",
+      "source_location": {
+        "line": 457,
+        "column": 5,
+        "end_line": 459,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 457,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_79": {
+      "id": "dfg_node_79",
+      "type": "parameter",
+      "name": "param_77",
+      "data_type": "bool",
+      "scope": "isBreakingCap_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "isBreakingCap"
+      }
+    },
+    "dfg_node_80": {
+      "id": "dfg_node_80",
+      "type": "function",
+      "name": "isPresaleFull",
+      "data_type": null,
+      "scope": "Presale",
+      "source_location": {
+        "line": 461,
+        "column": 5,
+        "end_line": 463,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 461,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_82": {
+      "id": "dfg_node_82",
+      "type": "parameter",
+      "name": "param_80",
+      "data_type": "bool",
+      "scope": "isPresaleFull_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "isPresaleFull"
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_4",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_7",
+      "target": "dfg_node_9",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_10",
+      "target": "dfg_node_12",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_13",
+      "target": "dfg_node_14",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_13",
+      "target": "dfg_node_15",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_13",
+      "target": "dfg_node_16",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_17",
+      "target": "dfg_node_18",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_9": {
+      "id": "dfg_edge_9",
+      "source": "dfg_node_19",
+      "target": "dfg_node_21",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_10": {
+      "id": "dfg_edge_10",
+      "source": "dfg_node_17",
+      "target": "dfg_node_19",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_11": {
+      "id": "dfg_edge_11",
+      "source": "dfg_node_22",
+      "target": "dfg_node_24",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_12": {
+      "id": "dfg_edge_12",
+      "source": "dfg_node_17",
+      "target": "dfg_node_22",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_13": {
+      "id": "dfg_edge_13",
+      "source": "dfg_node_26",
+      "target": "dfg_node_28",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_14": {
+      "id": "dfg_edge_14",
+      "source": "dfg_node_25",
+      "target": "dfg_node_26",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_15": {
+      "id": "dfg_edge_15",
+      "source": "dfg_node_29",
+      "target": "dfg_node_31",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_16": {
+      "id": "dfg_edge_16",
+      "source": "dfg_node_25",
+      "target": "dfg_node_29",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_17": {
+      "id": "dfg_edge_17",
+      "source": "dfg_node_32",
+      "target": "dfg_node_33",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_18": {
+      "id": "dfg_edge_18",
+      "source": "dfg_node_32",
+      "target": "dfg_node_34",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_19": {
+      "id": "dfg_edge_19",
+      "source": "dfg_node_32",
+      "target": "dfg_node_35",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_20": {
+      "id": "dfg_edge_20",
+      "source": "dfg_node_32",
+      "target": "dfg_node_36",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_21": {
+      "id": "dfg_edge_21",
+      "source": "dfg_node_32",
+      "target": "dfg_node_37",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_22": {
+      "id": "dfg_edge_22",
+      "source": "dfg_node_32",
+      "target": "dfg_node_38",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_23": {
+      "id": "dfg_edge_23",
+      "source": "dfg_node_32",
+      "target": "dfg_node_39",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_24": {
+      "id": "dfg_edge_24",
+      "source": "dfg_node_40",
+      "target": "dfg_node_42",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_25": {
+      "id": "dfg_edge_25",
+      "source": "dfg_node_32",
+      "target": "dfg_node_40",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_26": {
+      "id": "dfg_edge_26",
+      "source": "dfg_node_43",
+      "target": "dfg_node_45",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_27": {
+      "id": "dfg_edge_27",
+      "source": "dfg_node_32",
+      "target": "dfg_node_43",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_28": {
+      "id": "dfg_edge_28",
+      "source": "dfg_node_46",
+      "target": "dfg_node_47",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_29": {
+      "id": "dfg_edge_29",
+      "source": "dfg_node_46",
+      "target": "dfg_node_48",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_30": {
+      "id": "dfg_edge_30",
+      "source": "dfg_node_46",
+      "target": "dfg_node_49",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_31": {
+      "id": "dfg_edge_31",
+      "source": "dfg_node_46",
+      "target": "dfg_node_50",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_32": {
+      "id": "dfg_edge_32",
+      "source": "dfg_node_46",
+      "target": "dfg_node_51",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_33": {
+      "id": "dfg_edge_33",
+      "source": "dfg_node_46",
+      "target": "dfg_node_52",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_34": {
+      "id": "dfg_edge_34",
+      "source": "dfg_node_46",
+      "target": "dfg_node_53",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_35": {
+      "id": "dfg_edge_35",
+      "source": "dfg_node_46",
+      "target": "dfg_node_54",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_36": {
+      "id": "dfg_edge_36",
+      "source": "dfg_node_46",
+      "target": "dfg_node_55",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_37": {
+      "id": "dfg_edge_37",
+      "source": "dfg_node_46",
+      "target": "dfg_node_56",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_38": {
+      "id": "dfg_edge_38",
+      "source": "dfg_node_46",
+      "target": "dfg_node_57",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_39": {
+      "id": "dfg_edge_39",
+      "source": "dfg_node_46",
+      "target": "dfg_node_58",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_40": {
+      "id": "dfg_edge_40",
+      "source": "dfg_node_46",
+      "target": "dfg_node_59",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_41": {
+      "id": "dfg_edge_41",
+      "source": "dfg_node_46",
+      "target": "dfg_node_60",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_42": {
+      "id": "dfg_edge_42",
+      "source": "dfg_node_46",
+      "target": "dfg_node_61",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_43": {
+      "id": "dfg_edge_43",
+      "source": "dfg_node_46",
+      "target": "dfg_node_62",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_44": {
+      "id": "dfg_edge_44",
+      "source": "dfg_node_46",
+      "target": "dfg_node_63",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_45": {
+      "id": "dfg_edge_45",
+      "source": "dfg_node_46",
+      "target": "dfg_node_64",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_46": {
+      "id": "dfg_edge_46",
+      "source": "dfg_node_46",
+      "target": "dfg_node_65",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_47": {
+      "id": "dfg_edge_47",
+      "source": "dfg_node_46",
+      "target": "dfg_node_66",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_48": {
+      "id": "dfg_edge_48",
+      "source": "dfg_node_46",
+      "target": "dfg_node_67",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_49": {
+      "id": "dfg_edge_49",
+      "source": "dfg_node_46",
+      "target": "dfg_node_68",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_50": {
+      "id": "dfg_edge_50",
+      "source": "dfg_node_46",
+      "target": "dfg_node_69",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_51": {
+      "id": "dfg_edge_51",
+      "source": "dfg_node_46",
+      "target": "dfg_node_70",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_52": {
+      "id": "dfg_edge_52",
+      "source": "dfg_node_71",
+      "target": "dfg_node_73",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_53": {
+      "id": "dfg_edge_53",
+      "source": "dfg_node_46",
+      "target": "dfg_node_71",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_54": {
+      "id": "dfg_edge_54",
+      "source": "dfg_node_74",
+      "target": "dfg_node_76",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_55": {
+      "id": "dfg_edge_55",
+      "source": "dfg_node_46",
+      "target": "dfg_node_74",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_56": {
+      "id": "dfg_edge_56",
+      "source": "dfg_node_77",
+      "target": "dfg_node_79",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_57": {
+      "id": "dfg_edge_57",
+      "source": "dfg_node_46",
+      "target": "dfg_node_77",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_58": {
+      "id": "dfg_edge_58",
+      "source": "dfg_node_80",
+      "target": "dfg_node_82",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_59": {
+      "id": "dfg_edge_59",
+      "source": "dfg_node_46",
+      "target": "dfg_node_80",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 1338,
+    "source_line": 1339,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "Ownable",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

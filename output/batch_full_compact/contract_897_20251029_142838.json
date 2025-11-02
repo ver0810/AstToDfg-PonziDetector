@@ -1,0 +1,1716 @@
+{
+  "contract": "SportCrypt",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "SportCrypt",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 3,
+        "column": 1,
+        "end_line": 527,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "owner",
+      "data_type": "address",
+      "scope": "SportCrypt",
+      "source_location": {
+        "line": 4,
+        "column": 5,
+        "end_line": 4,
+        "end_column": 27
+      },
+      "properties": {
+        "source_location": {
+          "line": 4,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "state_variable",
+      "name": "admins",
+      "data_type": "mapping(address => bool)",
+      "scope": "SportCrypt",
+      "source_location": {
+        "line": 5,
+        "column": 5,
+        "end_line": 5,
+        "end_column": 45
+      },
+      "properties": {
+        "source_location": {
+          "line": 5,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "constructor_function",
+      "name": "SportCrypt",
+      "data_type": null,
+      "scope": "SportCrypt",
+      "source_location": {
+        "line": 7,
+        "column": 5,
+        "end_line": 9,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 7,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "function",
+      "name": "changeOwner",
+      "data_type": null,
+      "scope": "SportCrypt",
+      "source_location": {
+        "line": 16,
+        "column": 5,
+        "end_line": 18,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 16,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "function",
+      "name": "addAdmin",
+      "data_type": null,
+      "scope": "SportCrypt",
+      "source_location": {
+        "line": 20,
+        "column": 5,
+        "end_line": 22,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 20,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "function",
+      "name": "removeAdmin",
+      "data_type": null,
+      "scope": "SportCrypt",
+      "source_location": {
+        "line": 24,
+        "column": 5,
+        "end_line": 26,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 24,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "state_variable",
+      "name": "balances",
+      "data_type": "mapping(address => uint)",
+      "scope": "SportCrypt",
+      "source_location": {
+        "line": 50,
+        "column": 5,
+        "end_line": 50,
+        "end_column": 47
+      },
+      "properties": {
+        "source_location": {
+          "line": 50,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "state_variable",
+      "name": "matches",
+      "data_type": "mapping(uint => Match)",
+      "scope": "SportCrypt",
+      "source_location": {
+        "line": 51,
+        "column": 5,
+        "end_line": 51,
+        "end_column": 44
+      },
+      "properties": {
+        "source_location": {
+          "line": 51,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_10": {
+      "id": "dfg_node_10",
+      "type": "state_variable",
+      "name": "filledAmounts",
+      "data_type": "mapping(uint => uint)",
+      "scope": "SportCrypt",
+      "source_location": {
+        "line": 52,
+        "column": 5,
+        "end_line": 52,
+        "end_column": 49
+      },
+      "properties": {
+        "source_location": {
+          "line": 52,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_11": {
+      "id": "dfg_node_11",
+      "type": "state_variable",
+      "name": "MAX_SANE_AMOUNT",
+      "data_type": "uint",
+      "scope": "SportCrypt",
+      "source_location": {
+        "line": 57,
+        "column": 5,
+        "end_line": 57,
+        "end_column": 44
+      },
+      "properties": {
+        "source_location": {
+          "line": 57,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_12": {
+      "id": "dfg_node_12",
+      "type": "function",
+      "name": "parseOrder",
+      "data_type": null,
+      "scope": "SportCrypt",
+      "source_location": {
+        "line": 84,
+        "column": 5,
+        "end_line": 95,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 84,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_14": {
+      "id": "dfg_node_14",
+      "type": "parameter",
+      "name": "o",
+      "data_type": "Order",
+      "scope": "parseOrder_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "parseOrder"
+      }
+    },
+    "dfg_node_15": {
+      "id": "dfg_node_15",
+      "type": "function",
+      "name": "validateOrderParams",
+      "data_type": null,
+      "scope": "SportCrypt",
+      "source_location": {
+        "line": 97,
+        "column": 5,
+        "end_line": 102,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 97,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_17": {
+      "id": "dfg_node_17",
+      "type": "parameter",
+      "name": "param_15",
+      "data_type": "bool",
+      "scope": "validateOrderParams_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "validateOrderParams"
+      }
+    },
+    "dfg_node_18": {
+      "id": "dfg_node_18",
+      "type": "function",
+      "name": "validateOrderSig",
+      "data_type": null,
+      "scope": "SportCrypt",
+      "source_location": {
+        "line": 104,
+        "column": 5,
+        "end_line": 107,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 104,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_20": {
+      "id": "dfg_node_20",
+      "type": "parameter",
+      "name": "param_18",
+      "data_type": "bool",
+      "scope": "validateOrderSig_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "validateOrderSig"
+      }
+    },
+    "dfg_node_21": {
+      "id": "dfg_node_21",
+      "type": "function",
+      "name": "deposit",
+      "data_type": null,
+      "scope": "SportCrypt",
+      "source_location": {
+        "line": 128,
+        "column": 5,
+        "end_line": 137,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 128,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_22": {
+      "id": "dfg_node_22",
+      "type": "function",
+      "name": "withdraw",
+      "data_type": null,
+      "scope": "SportCrypt",
+      "source_location": {
+        "line": 139,
+        "column": 5,
+        "end_line": 152,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 139,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_23": {
+      "id": "dfg_node_23",
+      "type": "function",
+      "name": "cancelOrder",
+      "data_type": null,
+      "scope": "SportCrypt",
+      "source_location": {
+        "line": 154,
+        "column": 5,
+        "end_line": 165,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 154,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_24": {
+      "id": "dfg_node_24",
+      "type": "function",
+      "name": "trade",
+      "data_type": null,
+      "scope": "SportCrypt",
+      "source_location": {
+        "line": 167,
+        "column": 5,
+        "end_line": 205,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 167,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_25": {
+      "id": "dfg_node_25",
+      "type": "function",
+      "name": "claim",
+      "data_type": null,
+      "scope": "SportCrypt",
+      "source_location": {
+        "line": 207,
+        "column": 5,
+        "end_line": 242,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 207,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_26": {
+      "id": "dfg_node_26",
+      "type": "function",
+      "name": "recoverFunds",
+      "data_type": null,
+      "scope": "SportCrypt",
+      "source_location": {
+        "line": 244,
+        "column": 5,
+        "end_line": 261,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 244,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_27": {
+      "id": "dfg_node_27",
+      "type": "function",
+      "name": "adjustBalance",
+      "data_type": null,
+      "scope": "SportCrypt",
+      "source_location": {
+        "line": 266,
+        "column": 5,
+        "end_line": 272,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 266,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_28": {
+      "id": "dfg_node_28",
+      "type": "function",
+      "name": "priceDivide",
+      "data_type": null,
+      "scope": "SportCrypt",
+      "source_location": {
+        "line": 274,
+        "column": 5,
+        "end_line": 277,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 274,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_30": {
+      "id": "dfg_node_30",
+      "type": "parameter",
+      "name": "param_28",
+      "data_type": "int",
+      "scope": "priceDivide_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "priceDivide"
+      }
+    },
+    "dfg_node_31": {
+      "id": "dfg_node_31",
+      "type": "function",
+      "name": "computeEffectiveBalance",
+      "data_type": null,
+      "scope": "SportCrypt",
+      "source_location": {
+        "line": 279,
+        "column": 5,
+        "end_line": 289,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 279,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_33": {
+      "id": "dfg_node_33",
+      "type": "parameter",
+      "name": "param_31",
+      "data_type": "uint",
+      "scope": "computeEffectiveBalance_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "computeEffectiveBalance"
+      }
+    },
+    "dfg_node_34": {
+      "id": "dfg_node_34",
+      "type": "function",
+      "name": "computePriceWeightedAmounts",
+      "data_type": null,
+      "scope": "SportCrypt",
+      "source_location": {
+        "line": 291,
+        "column": 5,
+        "end_line": 303,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 291,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_36": {
+      "id": "dfg_node_36",
+      "type": "parameter",
+      "name": "param_34",
+      "data_type": "uint",
+      "scope": "computePriceWeightedAmounts_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "computePriceWeightedAmounts"
+      }
+    },
+    "dfg_node_38": {
+      "id": "dfg_node_38",
+      "type": "parameter",
+      "name": "param_36",
+      "data_type": "uint",
+      "scope": "computePriceWeightedAmounts_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "computePriceWeightedAmounts"
+      }
+    },
+    "dfg_node_39": {
+      "id": "dfg_node_39",
+      "type": "function",
+      "name": "computeExposureDelta",
+      "data_type": null,
+      "scope": "SportCrypt",
+      "source_location": {
+        "line": 305,
+        "column": 5,
+        "end_line": 311,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 305,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_41": {
+      "id": "dfg_node_41",
+      "type": "parameter",
+      "name": "param_39",
+      "data_type": "int",
+      "scope": "computeExposureDelta_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "computeExposureDelta"
+      }
+    },
+    "dfg_node_42": {
+      "id": "dfg_node_42",
+      "type": "function",
+      "name": "tradeCore",
+      "data_type": null,
+      "scope": "SportCrypt",
+      "source_location": {
+        "line": 313,
+        "column": 5,
+        "end_line": 406,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 313,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_44": {
+      "id": "dfg_node_44",
+      "type": "parameter",
+      "name": "t",
+      "data_type": "Trade",
+      "scope": "tradeCore_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "tradeCore"
+      }
+    },
+    "dfg_node_45": {
+      "id": "dfg_node_45",
+      "type": "function",
+      "name": "getOwner",
+      "data_type": null,
+      "scope": "SportCrypt",
+      "source_location": {
+        "line": 411,
+        "column": 5,
+        "end_line": 413,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 411,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_47": {
+      "id": "dfg_node_47",
+      "type": "parameter",
+      "name": "param_45",
+      "data_type": "address",
+      "scope": "getOwner_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getOwner"
+      }
+    },
+    "dfg_node_48": {
+      "id": "dfg_node_48",
+      "type": "function",
+      "name": "isAdmin",
+      "data_type": null,
+      "scope": "SportCrypt",
+      "source_location": {
+        "line": 415,
+        "column": 5,
+        "end_line": 417,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 415,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_50": {
+      "id": "dfg_node_50",
+      "type": "parameter",
+      "name": "param_48",
+      "data_type": "bool",
+      "scope": "isAdmin_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "isAdmin"
+      }
+    },
+    "dfg_node_51": {
+      "id": "dfg_node_51",
+      "type": "function",
+      "name": "getBalance",
+      "data_type": null,
+      "scope": "SportCrypt",
+      "source_location": {
+        "line": 419,
+        "column": 5,
+        "end_line": 421,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 419,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_53": {
+      "id": "dfg_node_53",
+      "type": "parameter",
+      "name": "param_51",
+      "data_type": "uint",
+      "scope": "getBalance_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getBalance"
+      }
+    },
+    "dfg_node_54": {
+      "id": "dfg_node_54",
+      "type": "function",
+      "name": "getMatchInfo",
+      "data_type": null,
+      "scope": "SportCrypt",
+      "source_location": {
+        "line": 423,
+        "column": 5,
+        "end_line": 426,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 423,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_56": {
+      "id": "dfg_node_56",
+      "type": "parameter",
+      "name": "param_54",
+      "data_type": "uint64",
+      "scope": "getMatchInfo_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getMatchInfo"
+      }
+    },
+    "dfg_node_58": {
+      "id": "dfg_node_58",
+      "type": "parameter",
+      "name": "param_56",
+      "data_type": "bool",
+      "scope": "getMatchInfo_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getMatchInfo"
+      }
+    },
+    "dfg_node_60": {
+      "id": "dfg_node_60",
+      "type": "parameter",
+      "name": "param_58",
+      "data_type": "uint8",
+      "scope": "getMatchInfo_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getMatchInfo"
+      }
+    },
+    "dfg_node_61": {
+      "id": "dfg_node_61",
+      "type": "function",
+      "name": "getPosition",
+      "data_type": null,
+      "scope": "SportCrypt",
+      "source_location": {
+        "line": 428,
+        "column": 5,
+        "end_line": 430,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 428,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_63": {
+      "id": "dfg_node_63",
+      "type": "parameter",
+      "name": "param_61",
+      "data_type": "int",
+      "scope": "getPosition_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getPosition"
+      }
+    },
+    "dfg_node_64": {
+      "id": "dfg_node_64",
+      "type": "function",
+      "name": "getFilledAmount",
+      "data_type": null,
+      "scope": "SportCrypt",
+      "source_location": {
+        "line": 432,
+        "column": 5,
+        "end_line": 434,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 432,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_66": {
+      "id": "dfg_node_66",
+      "type": "parameter",
+      "name": "param_64",
+      "data_type": "uint",
+      "scope": "getFilledAmount_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getFilledAmount"
+      }
+    },
+    "dfg_node_67": {
+      "id": "dfg_node_67",
+      "type": "function",
+      "name": "checkMatchBatch",
+      "data_type": null,
+      "scope": "SportCrypt",
+      "source_location": {
+        "line": 436,
+        "column": 5,
+        "end_line": 446,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 436,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_69": {
+      "id": "dfg_node_69",
+      "type": "parameter",
+      "name": "myPosition",
+      "data_type": "int[16]",
+      "scope": "checkMatchBatch_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "checkMatchBatch"
+      }
+    },
+    "dfg_node_71": {
+      "id": "dfg_node_71",
+      "type": "parameter",
+      "name": "finalized",
+      "data_type": "bool[16]",
+      "scope": "checkMatchBatch_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "checkMatchBatch"
+      }
+    },
+    "dfg_node_73": {
+      "id": "dfg_node_73",
+      "type": "parameter",
+      "name": "finalPrice",
+      "data_type": "uint8[16]",
+      "scope": "checkMatchBatch_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "checkMatchBatch"
+      }
+    },
+    "dfg_node_74": {
+      "id": "dfg_node_74",
+      "type": "function",
+      "name": "checkOrderBatch",
+      "data_type": null,
+      "scope": "SportCrypt",
+      "source_location": {
+        "line": 448,
+        "column": 5,
+        "end_line": 494,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 448,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_76": {
+      "id": "dfg_node_76",
+      "type": "parameter",
+      "name": "status",
+      "data_type": "uint16[16]",
+      "scope": "checkOrderBatch_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "checkOrderBatch"
+      }
+    },
+    "dfg_node_78": {
+      "id": "dfg_node_78",
+      "type": "parameter",
+      "name": "amount",
+      "data_type": "uint[16]",
+      "scope": "checkOrderBatch_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "checkOrderBatch"
+      }
+    },
+    "dfg_node_79": {
+      "id": "dfg_node_79",
+      "type": "function",
+      "name": "safeMul",
+      "data_type": null,
+      "scope": "SportCrypt",
+      "source_location": {
+        "line": 499,
+        "column": 5,
+        "end_line": 503,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 499,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_81": {
+      "id": "dfg_node_81",
+      "type": "parameter",
+      "name": "param_79",
+      "data_type": "uint",
+      "scope": "safeMul_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "safeMul"
+      }
+    },
+    "dfg_node_82": {
+      "id": "dfg_node_82",
+      "type": "function",
+      "name": "safeSub",
+      "data_type": null,
+      "scope": "SportCrypt",
+      "source_location": {
+        "line": 505,
+        "column": 5,
+        "end_line": 508,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 505,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_84": {
+      "id": "dfg_node_84",
+      "type": "parameter",
+      "name": "param_82",
+      "data_type": "uint",
+      "scope": "safeSub_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "safeSub"
+      }
+    },
+    "dfg_node_85": {
+      "id": "dfg_node_85",
+      "type": "function",
+      "name": "safeAdd",
+      "data_type": null,
+      "scope": "SportCrypt",
+      "source_location": {
+        "line": 510,
+        "column": 5,
+        "end_line": 514,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 510,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_87": {
+      "id": "dfg_node_87",
+      "type": "parameter",
+      "name": "param_85",
+      "data_type": "uint",
+      "scope": "safeAdd_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "safeAdd"
+      }
+    },
+    "dfg_node_88": {
+      "id": "dfg_node_88",
+      "type": "function",
+      "name": "minu256",
+      "data_type": null,
+      "scope": "SportCrypt",
+      "source_location": {
+        "line": 516,
+        "column": 5,
+        "end_line": 518,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 516,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_90": {
+      "id": "dfg_node_90",
+      "type": "parameter",
+      "name": "param_88",
+      "data_type": "uint",
+      "scope": "minu256_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "minu256"
+      }
+    },
+    "dfg_node_91": {
+      "id": "dfg_node_91",
+      "type": "function",
+      "name": "max256",
+      "data_type": null,
+      "scope": "SportCrypt",
+      "source_location": {
+        "line": 520,
+        "column": 5,
+        "end_line": 522,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 520,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_93": {
+      "id": "dfg_node_93",
+      "type": "parameter",
+      "name": "param_91",
+      "data_type": "int",
+      "scope": "max256_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "max256"
+      }
+    },
+    "dfg_node_94": {
+      "id": "dfg_node_94",
+      "type": "function",
+      "name": "min256",
+      "data_type": null,
+      "scope": "SportCrypt",
+      "source_location": {
+        "line": 524,
+        "column": 5,
+        "end_line": 526,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 524,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_96": {
+      "id": "dfg_node_96",
+      "type": "parameter",
+      "name": "param_94",
+      "data_type": "int",
+      "scope": "min256_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "min256"
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_1",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_1",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_1",
+      "target": "dfg_node_7",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_1",
+      "target": "dfg_node_8",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_1",
+      "target": "dfg_node_9",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_9": {
+      "id": "dfg_edge_9",
+      "source": "dfg_node_1",
+      "target": "dfg_node_10",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_10": {
+      "id": "dfg_edge_10",
+      "source": "dfg_node_1",
+      "target": "dfg_node_11",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_11": {
+      "id": "dfg_edge_11",
+      "source": "dfg_node_12",
+      "target": "dfg_node_14",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_12": {
+      "id": "dfg_edge_12",
+      "source": "dfg_node_1",
+      "target": "dfg_node_12",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_13": {
+      "id": "dfg_edge_13",
+      "source": "dfg_node_15",
+      "target": "dfg_node_17",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_14": {
+      "id": "dfg_edge_14",
+      "source": "dfg_node_1",
+      "target": "dfg_node_15",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_15": {
+      "id": "dfg_edge_15",
+      "source": "dfg_node_18",
+      "target": "dfg_node_20",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_16": {
+      "id": "dfg_edge_16",
+      "source": "dfg_node_1",
+      "target": "dfg_node_18",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_17": {
+      "id": "dfg_edge_17",
+      "source": "dfg_node_1",
+      "target": "dfg_node_21",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_18": {
+      "id": "dfg_edge_18",
+      "source": "dfg_node_1",
+      "target": "dfg_node_22",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_19": {
+      "id": "dfg_edge_19",
+      "source": "dfg_node_1",
+      "target": "dfg_node_23",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_20": {
+      "id": "dfg_edge_20",
+      "source": "dfg_node_1",
+      "target": "dfg_node_24",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_21": {
+      "id": "dfg_edge_21",
+      "source": "dfg_node_1",
+      "target": "dfg_node_25",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_22": {
+      "id": "dfg_edge_22",
+      "source": "dfg_node_1",
+      "target": "dfg_node_26",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_23": {
+      "id": "dfg_edge_23",
+      "source": "dfg_node_1",
+      "target": "dfg_node_27",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_24": {
+      "id": "dfg_edge_24",
+      "source": "dfg_node_28",
+      "target": "dfg_node_30",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_25": {
+      "id": "dfg_edge_25",
+      "source": "dfg_node_1",
+      "target": "dfg_node_28",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_26": {
+      "id": "dfg_edge_26",
+      "source": "dfg_node_31",
+      "target": "dfg_node_33",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_27": {
+      "id": "dfg_edge_27",
+      "source": "dfg_node_1",
+      "target": "dfg_node_31",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_28": {
+      "id": "dfg_edge_28",
+      "source": "dfg_node_34",
+      "target": "dfg_node_36",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_29": {
+      "id": "dfg_edge_29",
+      "source": "dfg_node_34",
+      "target": "dfg_node_38",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_30": {
+      "id": "dfg_edge_30",
+      "source": "dfg_node_1",
+      "target": "dfg_node_34",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_31": {
+      "id": "dfg_edge_31",
+      "source": "dfg_node_39",
+      "target": "dfg_node_41",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_32": {
+      "id": "dfg_edge_32",
+      "source": "dfg_node_1",
+      "target": "dfg_node_39",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_33": {
+      "id": "dfg_edge_33",
+      "source": "dfg_node_42",
+      "target": "dfg_node_44",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_34": {
+      "id": "dfg_edge_34",
+      "source": "dfg_node_1",
+      "target": "dfg_node_42",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_35": {
+      "id": "dfg_edge_35",
+      "source": "dfg_node_45",
+      "target": "dfg_node_47",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_36": {
+      "id": "dfg_edge_36",
+      "source": "dfg_node_1",
+      "target": "dfg_node_45",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_37": {
+      "id": "dfg_edge_37",
+      "source": "dfg_node_48",
+      "target": "dfg_node_50",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_38": {
+      "id": "dfg_edge_38",
+      "source": "dfg_node_1",
+      "target": "dfg_node_48",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_39": {
+      "id": "dfg_edge_39",
+      "source": "dfg_node_51",
+      "target": "dfg_node_53",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_40": {
+      "id": "dfg_edge_40",
+      "source": "dfg_node_1",
+      "target": "dfg_node_51",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_41": {
+      "id": "dfg_edge_41",
+      "source": "dfg_node_54",
+      "target": "dfg_node_56",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_42": {
+      "id": "dfg_edge_42",
+      "source": "dfg_node_54",
+      "target": "dfg_node_58",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_43": {
+      "id": "dfg_edge_43",
+      "source": "dfg_node_54",
+      "target": "dfg_node_60",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_44": {
+      "id": "dfg_edge_44",
+      "source": "dfg_node_1",
+      "target": "dfg_node_54",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_45": {
+      "id": "dfg_edge_45",
+      "source": "dfg_node_61",
+      "target": "dfg_node_63",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_46": {
+      "id": "dfg_edge_46",
+      "source": "dfg_node_1",
+      "target": "dfg_node_61",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_47": {
+      "id": "dfg_edge_47",
+      "source": "dfg_node_64",
+      "target": "dfg_node_66",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_48": {
+      "id": "dfg_edge_48",
+      "source": "dfg_node_1",
+      "target": "dfg_node_64",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_49": {
+      "id": "dfg_edge_49",
+      "source": "dfg_node_67",
+      "target": "dfg_node_69",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_50": {
+      "id": "dfg_edge_50",
+      "source": "dfg_node_67",
+      "target": "dfg_node_71",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_51": {
+      "id": "dfg_edge_51",
+      "source": "dfg_node_67",
+      "target": "dfg_node_73",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_52": {
+      "id": "dfg_edge_52",
+      "source": "dfg_node_1",
+      "target": "dfg_node_67",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_53": {
+      "id": "dfg_edge_53",
+      "source": "dfg_node_74",
+      "target": "dfg_node_76",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_54": {
+      "id": "dfg_edge_54",
+      "source": "dfg_node_74",
+      "target": "dfg_node_78",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_55": {
+      "id": "dfg_edge_55",
+      "source": "dfg_node_1",
+      "target": "dfg_node_74",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_56": {
+      "id": "dfg_edge_56",
+      "source": "dfg_node_79",
+      "target": "dfg_node_81",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_57": {
+      "id": "dfg_edge_57",
+      "source": "dfg_node_1",
+      "target": "dfg_node_79",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_58": {
+      "id": "dfg_edge_58",
+      "source": "dfg_node_82",
+      "target": "dfg_node_84",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_59": {
+      "id": "dfg_edge_59",
+      "source": "dfg_node_1",
+      "target": "dfg_node_82",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_60": {
+      "id": "dfg_edge_60",
+      "source": "dfg_node_85",
+      "target": "dfg_node_87",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_61": {
+      "id": "dfg_edge_61",
+      "source": "dfg_node_1",
+      "target": "dfg_node_85",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_62": {
+      "id": "dfg_edge_62",
+      "source": "dfg_node_88",
+      "target": "dfg_node_90",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_63": {
+      "id": "dfg_edge_63",
+      "source": "dfg_node_1",
+      "target": "dfg_node_88",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_64": {
+      "id": "dfg_edge_64",
+      "source": "dfg_node_91",
+      "target": "dfg_node_93",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_65": {
+      "id": "dfg_edge_65",
+      "source": "dfg_node_1",
+      "target": "dfg_node_91",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_66": {
+      "id": "dfg_edge_66",
+      "source": "dfg_node_94",
+      "target": "dfg_node_96",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_67": {
+      "id": "dfg_edge_67",
+      "source": "dfg_node_1",
+      "target": "dfg_node_94",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 897,
+    "source_line": 898,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "SportCrypt",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

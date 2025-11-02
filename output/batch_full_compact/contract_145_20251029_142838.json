@@ -1,0 +1,1005 @@
+{
+  "contract": "admined",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "admined",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 3,
+        "column": 1,
+        "end_line": 19,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "admin",
+      "data_type": "address",
+      "scope": "admined",
+      "source_location": {
+        "line": 4,
+        "column": 2,
+        "end_line": 4,
+        "end_column": 23
+      },
+      "properties": {
+        "source_location": {
+          "line": 4,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "constructor_function",
+      "name": "admined",
+      "data_type": null,
+      "scope": "admined",
+      "source_location": {
+        "line": 6,
+        "column": 2,
+        "end_line": 8,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 6,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "function",
+      "name": "transferAdminship",
+      "data_type": null,
+      "scope": "admined",
+      "source_location": {
+        "line": 15,
+        "column": 2,
+        "end_line": 17,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 15,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "contract",
+      "name": "Topscoin",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 21,
+        "column": 1,
+        "end_line": 68,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 21,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "state_variable",
+      "name": "balanceOf",
+      "data_type": "mapping (address => uint256)",
+      "scope": "Topscoin",
+      "source_location": {
+        "line": 23,
+        "column": 2,
+        "end_line": 23,
+        "end_column": 48
+      },
+      "properties": {
+        "source_location": {
+          "line": 23,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "state_variable",
+      "name": "allowance",
+      "data_type": "mapping (address => mapping (address => uint256))",
+      "scope": "Topscoin",
+      "source_location": {
+        "line": 24,
+        "column": 2,
+        "end_line": 24,
+        "end_column": 69
+      },
+      "properties": {
+        "source_location": {
+          "line": 24,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "state_variable",
+      "name": "standard",
+      "data_type": "string",
+      "scope": "Topscoin",
+      "source_location": {
+        "line": 26,
+        "column": 2,
+        "end_line": 26,
+        "end_column": 43
+      },
+      "properties": {
+        "source_location": {
+          "line": 26,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "state_variable",
+      "name": "name",
+      "data_type": "string",
+      "scope": "Topscoin",
+      "source_location": {
+        "line": 27,
+        "column": 2,
+        "end_line": 27,
+        "end_column": 21
+      },
+      "properties": {
+        "source_location": {
+          "line": 27,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_10": {
+      "id": "dfg_node_10",
+      "type": "state_variable",
+      "name": "symbol",
+      "data_type": "string",
+      "scope": "Topscoin",
+      "source_location": {
+        "line": 28,
+        "column": 2,
+        "end_line": 28,
+        "end_column": 23
+      },
+      "properties": {
+        "source_location": {
+          "line": 28,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_11": {
+      "id": "dfg_node_11",
+      "type": "state_variable",
+      "name": "decimals",
+      "data_type": "uint8",
+      "scope": "Topscoin",
+      "source_location": {
+        "line": 29,
+        "column": 2,
+        "end_line": 29,
+        "end_column": 24
+      },
+      "properties": {
+        "source_location": {
+          "line": 29,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_12": {
+      "id": "dfg_node_12",
+      "type": "state_variable",
+      "name": "totalSupply",
+      "data_type": "uint256",
+      "scope": "Topscoin",
+      "source_location": {
+        "line": 30,
+        "column": 2,
+        "end_line": 30,
+        "end_column": 29
+      },
+      "properties": {
+        "source_location": {
+          "line": 30,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_13": {
+      "id": "dfg_node_13",
+      "type": "constructor_function",
+      "name": "Topscoin",
+      "data_type": null,
+      "scope": "Topscoin",
+      "source_location": {
+        "line": 34,
+        "column": 2,
+        "end_line": 40,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 34,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_14": {
+      "id": "dfg_node_14",
+      "type": "function",
+      "name": "transfer",
+      "data_type": null,
+      "scope": "Topscoin",
+      "source_location": {
+        "line": 42,
+        "column": 2,
+        "end_line": 50,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 42,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_15": {
+      "id": "dfg_node_15",
+      "type": "function",
+      "name": "approve",
+      "data_type": null,
+      "scope": "Topscoin",
+      "source_location": {
+        "line": 52,
+        "column": 2,
+        "end_line": 55,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 52,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_17": {
+      "id": "dfg_node_17",
+      "type": "parameter",
+      "name": "success",
+      "data_type": "bool",
+      "scope": "approve_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "approve"
+      }
+    },
+    "dfg_node_18": {
+      "id": "dfg_node_18",
+      "type": "function",
+      "name": "transferFrom",
+      "data_type": null,
+      "scope": "Topscoin",
+      "source_location": {
+        "line": 57,
+        "column": 2,
+        "end_line": 67,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 57,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_20": {
+      "id": "dfg_node_20",
+      "type": "parameter",
+      "name": "success",
+      "data_type": "bool",
+      "scope": "transferFrom_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "transferFrom"
+      }
+    },
+    "dfg_node_21": {
+      "id": "dfg_node_21",
+      "type": "contract",
+      "name": "TopscoinAdvanced",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 70,
+        "column": 1,
+        "end_line": 177,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 70,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_22": {
+      "id": "dfg_node_22",
+      "type": "state_variable",
+      "name": "minimumBalanceForAccounts",
+      "data_type": "uint256",
+      "scope": "TopscoinAdvanced",
+      "source_location": {
+        "line": 72,
+        "column": 2,
+        "end_line": 72,
+        "end_column": 47
+      },
+      "properties": {
+        "source_location": {
+          "line": 72,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_23": {
+      "id": "dfg_node_23",
+      "type": "state_variable",
+      "name": "sellPrice",
+      "data_type": "uint256",
+      "scope": "TopscoinAdvanced",
+      "source_location": {
+        "line": 73,
+        "column": 2,
+        "end_line": 73,
+        "end_column": 27
+      },
+      "properties": {
+        "source_location": {
+          "line": 73,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_24": {
+      "id": "dfg_node_24",
+      "type": "state_variable",
+      "name": "buyPrice",
+      "data_type": "uint256",
+      "scope": "TopscoinAdvanced",
+      "source_location": {
+        "line": 74,
+        "column": 2,
+        "end_line": 74,
+        "end_column": 26
+      },
+      "properties": {
+        "source_location": {
+          "line": 74,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_25": {
+      "id": "dfg_node_25",
+      "type": "state_variable",
+      "name": "frozenAccount",
+      "data_type": "mapping (address => bool)",
+      "scope": "TopscoinAdvanced",
+      "source_location": {
+        "line": 75,
+        "column": 2,
+        "end_line": 75,
+        "end_column": 49
+      },
+      "properties": {
+        "source_location": {
+          "line": 75,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_26": {
+      "id": "dfg_node_26",
+      "type": "constructor_function",
+      "name": "TopscoinAdvanced",
+      "data_type": null,
+      "scope": "TopscoinAdvanced",
+      "source_location": {
+        "line": 79,
+        "column": 2,
+        "end_line": 87,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 79,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_27": {
+      "id": "dfg_node_27",
+      "type": "function",
+      "name": "mintToken",
+      "data_type": null,
+      "scope": "TopscoinAdvanced",
+      "source_location": {
+        "line": 89,
+        "column": 2,
+        "end_line": 94,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 89,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_28": {
+      "id": "dfg_node_28",
+      "type": "function",
+      "name": "freezeAccount",
+      "data_type": null,
+      "scope": "TopscoinAdvanced",
+      "source_location": {
+        "line": 96,
+        "column": 2,
+        "end_line": 99,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 96,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_29": {
+      "id": "dfg_node_29",
+      "type": "function",
+      "name": "transfer",
+      "data_type": null,
+      "scope": "TopscoinAdvanced",
+      "source_location": {
+        "line": 101,
+        "column": 2,
+        "end_line": 113,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 101,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_30": {
+      "id": "dfg_node_30",
+      "type": "function",
+      "name": "transferFrom",
+      "data_type": null,
+      "scope": "TopscoinAdvanced",
+      "source_location": {
+        "line": 115,
+        "column": 2,
+        "end_line": 126,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 115,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_32": {
+      "id": "dfg_node_32",
+      "type": "parameter",
+      "name": "success",
+      "data_type": "bool",
+      "scope": "transferFrom_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "transferFrom"
+      }
+    },
+    "dfg_node_33": {
+      "id": "dfg_node_33",
+      "type": "function",
+      "name": "setPrices",
+      "data_type": null,
+      "scope": "TopscoinAdvanced",
+      "source_location": {
+        "line": 128,
+        "column": 2,
+        "end_line": 131,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 128,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_34": {
+      "id": "dfg_node_34",
+      "type": "function",
+      "name": "buy",
+      "data_type": null,
+      "scope": "TopscoinAdvanced",
+      "source_location": {
+        "line": 133,
+        "column": 2,
+        "end_line": 139,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 133,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_35": {
+      "id": "dfg_node_35",
+      "type": "function",
+      "name": "sell",
+      "data_type": null,
+      "scope": "TopscoinAdvanced",
+      "source_location": {
+        "line": 141,
+        "column": 2,
+        "end_line": 150,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 141,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_36": {
+      "id": "dfg_node_36",
+      "type": "function",
+      "name": "giveBlockreward",
+      "data_type": null,
+      "scope": "TopscoinAdvanced",
+      "source_location": {
+        "line": 152,
+        "column": 2,
+        "end_line": 154,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 152,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_37": {
+      "id": "dfg_node_37",
+      "type": "state_variable",
+      "name": "currentChallenge",
+      "data_type": "bytes32",
+      "scope": "TopscoinAdvanced",
+      "source_location": {
+        "line": 156,
+        "column": 2,
+        "end_line": 156,
+        "end_column": 34
+      },
+      "properties": {
+        "source_location": {
+          "line": 156,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_38": {
+      "id": "dfg_node_38",
+      "type": "state_variable",
+      "name": "timeOfLastProof",
+      "data_type": "uint",
+      "scope": "TopscoinAdvanced",
+      "source_location": {
+        "line": 157,
+        "column": 2,
+        "end_line": 157,
+        "end_column": 30
+      },
+      "properties": {
+        "source_location": {
+          "line": 157,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_39": {
+      "id": "dfg_node_39",
+      "type": "state_variable",
+      "name": "difficulty",
+      "data_type": "uint",
+      "scope": "TopscoinAdvanced",
+      "source_location": {
+        "line": 158,
+        "column": 2,
+        "end_line": 158,
+        "end_column": 34
+      },
+      "properties": {
+        "source_location": {
+          "line": 158,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_40": {
+      "id": "dfg_node_40",
+      "type": "function",
+      "name": "proofOfWork",
+      "data_type": null,
+      "scope": "TopscoinAdvanced",
+      "source_location": {
+        "line": 160,
+        "column": 2,
+        "end_line": 171,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 160,
+          "column": 2
+        }
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_5",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_5",
+      "target": "dfg_node_7",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_5",
+      "target": "dfg_node_8",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_5",
+      "target": "dfg_node_9",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_5",
+      "target": "dfg_node_10",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_9": {
+      "id": "dfg_edge_9",
+      "source": "dfg_node_5",
+      "target": "dfg_node_11",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_10": {
+      "id": "dfg_edge_10",
+      "source": "dfg_node_5",
+      "target": "dfg_node_12",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_11": {
+      "id": "dfg_edge_11",
+      "source": "dfg_node_5",
+      "target": "dfg_node_13",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_12": {
+      "id": "dfg_edge_12",
+      "source": "dfg_node_5",
+      "target": "dfg_node_14",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_13": {
+      "id": "dfg_edge_13",
+      "source": "dfg_node_15",
+      "target": "dfg_node_17",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_14": {
+      "id": "dfg_edge_14",
+      "source": "dfg_node_5",
+      "target": "dfg_node_15",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_15": {
+      "id": "dfg_edge_15",
+      "source": "dfg_node_18",
+      "target": "dfg_node_20",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_16": {
+      "id": "dfg_edge_16",
+      "source": "dfg_node_5",
+      "target": "dfg_node_18",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_17": {
+      "id": "dfg_edge_17",
+      "source": "dfg_node_21",
+      "target": "dfg_node_22",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_18": {
+      "id": "dfg_edge_18",
+      "source": "dfg_node_21",
+      "target": "dfg_node_23",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_19": {
+      "id": "dfg_edge_19",
+      "source": "dfg_node_21",
+      "target": "dfg_node_24",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_20": {
+      "id": "dfg_edge_20",
+      "source": "dfg_node_21",
+      "target": "dfg_node_25",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_21": {
+      "id": "dfg_edge_21",
+      "source": "dfg_node_21",
+      "target": "dfg_node_26",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_22": {
+      "id": "dfg_edge_22",
+      "source": "dfg_node_21",
+      "target": "dfg_node_27",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_23": {
+      "id": "dfg_edge_23",
+      "source": "dfg_node_21",
+      "target": "dfg_node_28",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_24": {
+      "id": "dfg_edge_24",
+      "source": "dfg_node_21",
+      "target": "dfg_node_29",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_25": {
+      "id": "dfg_edge_25",
+      "source": "dfg_node_30",
+      "target": "dfg_node_32",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_26": {
+      "id": "dfg_edge_26",
+      "source": "dfg_node_21",
+      "target": "dfg_node_30",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_27": {
+      "id": "dfg_edge_27",
+      "source": "dfg_node_21",
+      "target": "dfg_node_33",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_28": {
+      "id": "dfg_edge_28",
+      "source": "dfg_node_21",
+      "target": "dfg_node_34",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_29": {
+      "id": "dfg_edge_29",
+      "source": "dfg_node_21",
+      "target": "dfg_node_35",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_30": {
+      "id": "dfg_edge_30",
+      "source": "dfg_node_21",
+      "target": "dfg_node_36",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_31": {
+      "id": "dfg_edge_31",
+      "source": "dfg_node_21",
+      "target": "dfg_node_37",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_32": {
+      "id": "dfg_edge_32",
+      "source": "dfg_node_21",
+      "target": "dfg_node_38",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_33": {
+      "id": "dfg_edge_33",
+      "source": "dfg_node_21",
+      "target": "dfg_node_39",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_34": {
+      "id": "dfg_edge_34",
+      "source": "dfg_node_21",
+      "target": "dfg_node_40",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 145,
+    "source_line": 146,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "admined",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

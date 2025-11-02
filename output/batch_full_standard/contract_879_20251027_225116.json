@@ -1,0 +1,357 @@
+{
+  "contract": "SimplePonzi",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "SimplePonzi",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 1,
+        "column": 1,
+        "end_line": 19,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "currentInvestor",
+      "data_type": "address",
+      "scope": "SimplePonzi",
+      "source_location": {
+        "line": 2,
+        "column": 5,
+        "end_line": 2,
+        "end_column": 36
+      },
+      "properties": {
+        "source_location": {
+          "line": 2,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "state_variable",
+      "name": "currentInvestment",
+      "data_type": "uint",
+      "scope": "SimplePonzi",
+      "source_location": {
+        "line": 3,
+        "column": 5,
+        "end_line": 3,
+        "end_column": 39
+      },
+      "properties": {
+        "source_location": {
+          "line": 3,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "local_variable",
+      "name": "minimumInvestment",
+      "data_type": "uint",
+      "scope": "SimplePonzi",
+      "source_location": {
+        "line": 7,
+        "column": 9,
+        "end_line": 7,
+        "end_column": 31
+      },
+      "properties": {
+        "source_location": {
+          "line": 7,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "SimplePonzi",
+      "source_location": {
+        "line": 7,
+        "column": 34,
+        "end_line": 7,
+        "end_column": 61
+      },
+      "properties": {
+        "source_location": {
+          "line": 7,
+          "column": 34
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "SimplePonzi",
+      "source_location": {
+        "line": 7,
+        "column": 34,
+        "end_line": 7,
+        "end_column": 56
+      },
+      "properties": {
+        "source_location": {
+          "line": 7,
+          "column": 34
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "SimplePonzi",
+      "source_location": {
+        "line": 8,
+        "column": 9,
+        "end_line": 8,
+        "end_column": 47
+      },
+      "properties": {
+        "source_location": {
+          "line": 8,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "SimplePonzi",
+      "source_location": {
+        "line": 8,
+        "column": 17,
+        "end_line": 8,
+        "end_column": 46
+      },
+      "properties": {
+        "source_location": {
+          "line": 8,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "SimplePonzi",
+      "source_location": {
+        "line": 8,
+        "column": 17,
+        "end_line": 8,
+        "end_column": 26
+      },
+      "properties": {
+        "source_location": {
+          "line": 8,
+          "column": 17
+        }
+      }
+    },
+    "dfg_node_10": {
+      "id": "dfg_node_10",
+      "type": "local_variable",
+      "name": "previousInvestor",
+      "data_type": "address",
+      "scope": "SimplePonzi",
+      "source_location": {
+        "line": 11,
+        "column": 9,
+        "end_line": 11,
+        "end_column": 33
+      },
+      "properties": {
+        "source_location": {
+          "line": 11,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_11": {
+      "id": "dfg_node_11",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "SimplePonzi",
+      "source_location": {
+        "line": 12,
+        "column": 9,
+        "end_line": 12,
+        "end_column": 37
+      },
+      "properties": {
+        "source_location": {
+          "line": 12,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_12": {
+      "id": "dfg_node_12",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "SimplePonzi",
+      "source_location": {
+        "line": 12,
+        "column": 27,
+        "end_line": 12,
+        "end_column": 37
+      },
+      "properties": {
+        "source_location": {
+          "line": 12,
+          "column": 27
+        }
+      }
+    },
+    "dfg_node_13": {
+      "id": "dfg_node_13",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "SimplePonzi",
+      "source_location": {
+        "line": 13,
+        "column": 9,
+        "end_line": 13,
+        "end_column": 38
+      },
+      "properties": {
+        "source_location": {
+          "line": 13,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_14": {
+      "id": "dfg_node_14",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "SimplePonzi",
+      "source_location": {
+        "line": 13,
+        "column": 29,
+        "end_line": 13,
+        "end_column": 38
+      },
+      "properties": {
+        "source_location": {
+          "line": 13,
+          "column": 29
+        }
+      }
+    },
+    "dfg_node_15": {
+      "id": "dfg_node_15",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "SimplePonzi",
+      "source_location": {
+        "line": 17,
+        "column": 9,
+        "end_line": 17,
+        "end_column": 41
+      },
+      "properties": {
+        "source_location": {
+          "line": 17,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_16": {
+      "id": "dfg_node_16",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "SimplePonzi",
+      "source_location": {
+        "line": 17,
+        "column": 9,
+        "end_line": 17,
+        "end_column": 30
+      },
+      "properties": {
+        "source_location": {
+          "line": 17,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_17": {
+      "id": "dfg_node_17",
+      "type": "expression",
+      "name": null,
+      "data_type": null,
+      "scope": "SimplePonzi",
+      "source_location": {
+        "line": 17,
+        "column": 31,
+        "end_line": 17,
+        "end_column": 40
+      },
+      "properties": {
+        "source_location": {
+          "line": 17,
+          "column": 31
+        }
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 879,
+    "source_line": 880,
+    "label": 1,
+    "mode": "standard",
+    "contract_name": "SimplePonzi",
+    "timestamp": "20251027_225116"
+  }
+}

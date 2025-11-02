@@ -12,10 +12,19 @@ class SolidityAnalyzer:
     """Solidity代码分析器"""
     
     def __init__(self, solidity_version: str = "0.4.x", 
-                 output_dir: str = "output"):
-        """初始化分析器"""
+                 output_dir: str = "output",
+                 dfg_config: Optional[Any] = None):
+        """
+        初始化分析器
+        
+        Args:
+            solidity_version: Solidity版本
+            output_dir: 输出目录
+            dfg_config: DFG配置对象（DFGConfig实例），如果为None则使用默认配置
+        """
         self.solidity_version = solidity_version
         self.output_dir = Path(output_dir)
+        self.dfg_config = dfg_config
         
         # 组件初始化状态
         self.components_ready = False
@@ -33,11 +42,16 @@ class SolidityAnalyzer:
             from .visualizer import DFGVisualizer
             from .solidity_04x_handler import Solidity04xHandler
             from .node_types import ASTNode, DFG, ContractNode
+            from .dfg_config import DFGConfig
             
-            # 初始化组件
+            # 如果没有提供配置，使用标准配置
+            if self.dfg_config is None:
+                self.dfg_config = DFGConfig.standard()
+            
+            # 初始化组件（传入配置）
             self.ast_builder = ASTBuilder()
-            self.dfg_builder = DFGBuilder(self.solidity_version)
-            self.json_serializer = JSONSerializer()
+            self.dfg_builder = DFGBuilder(self.solidity_version, self.dfg_config)
+            self.json_serializer = JSONSerializer(self.dfg_config)
             self.visualizer = DFGVisualizer()
             
             # 0.4.x特性处理器
@@ -47,6 +61,7 @@ class SolidityAnalyzer:
             self.ASTNode = ASTNode
             self.DFG = DFG
             self.ContractNode = ContractNode
+            self.DFGConfig = DFGConfig
             
             self.components_ready = True
             
@@ -61,6 +76,7 @@ class SolidityAnalyzer:
             self.ASTNode = None
             self.DFG = None
             self.ContractNode = None
+            self.DFGConfig = None
     
     def analyze_file(self, file_path: str, 
                     generate_json: bool = True,
@@ -137,7 +153,15 @@ class SolidityAnalyzer:
                 "success": True,
                 "ast_nodes": ast_node_count,
                 "dfg_nodes": len(dfg.nodes),
-                "dfg_edges": len(dfg.edges)
+                "dfg_edges": len(dfg.edges),
+                "filtered_nodes": self.dfg_builder.filtered_nodes_count,
+                "filtered_edges": self.dfg_builder.filtered_edges_count,
+                "optimization_stats": {
+                    "original_potential_nodes": ast_node_count,
+                    "kept_nodes": len(dfg.nodes),
+                    "filtered_nodes": self.dfg_builder.filtered_nodes_count,
+                    "reduction_rate": f"{(self.dfg_builder.filtered_nodes_count / max(ast_node_count, 1) * 100):.1f}%"
+                }
             }
             
             # 生成JSON文件

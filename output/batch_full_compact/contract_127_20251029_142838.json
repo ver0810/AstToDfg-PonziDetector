@@ -1,0 +1,1822 @@
+{
+  "contract": "UnilotPrizeCalculator",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "function",
+      "name": "getPrizeAmount",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 9,
+        "column": 5,
+        "end_line": 9,
+        "end_column": 62
+      },
+      "properties": {
+        "source_location": {
+          "line": 9,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "parameter",
+      "name": "param_1",
+      "data_type": "uint",
+      "scope": "getPrizeAmount_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getPrizeAmount"
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "function",
+      "name": "getNumWinners",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 10,
+        "column": 5,
+        "end_line": 10,
+        "end_column": 66
+      },
+      "properties": {
+        "source_location": {
+          "line": 10,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "parameter",
+      "name": "param_4",
+      "data_type": "uint",
+      "scope": "getNumWinners_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getNumWinners"
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "parameter",
+      "name": "param_6",
+      "data_type": "uint",
+      "scope": "getNumWinners_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getNumWinners"
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "function",
+      "name": "getPlayers",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 11,
+        "column": 5,
+        "end_line": 11,
+        "end_column": 62
+      },
+      "properties": {
+        "source_location": {
+          "line": 11,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_11": {
+      "id": "dfg_node_11",
+      "type": "parameter",
+      "name": "param_9",
+      "data_type": "address[]",
+      "scope": "getPlayers_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getPlayers"
+      }
+    },
+    "dfg_node_12": {
+      "id": "dfg_node_12",
+      "type": "function",
+      "name": "getWinners",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 12,
+        "column": 5,
+        "end_line": 13,
+        "end_column": 71
+      },
+      "properties": {
+        "source_location": {
+          "line": 12,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_14": {
+      "id": "dfg_node_14",
+      "type": "parameter",
+      "name": "players",
+      "data_type": "address[]",
+      "scope": "getWinners_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getWinners"
+      }
+    },
+    "dfg_node_16": {
+      "id": "dfg_node_16",
+      "type": "parameter",
+      "name": "prizes",
+      "data_type": "uint[]",
+      "scope": "getWinners_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getWinners"
+      }
+    },
+    "dfg_node_17": {
+      "id": "dfg_node_17",
+      "type": "function",
+      "name": "getStat",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 14,
+        "column": 5,
+        "end_line": 14,
+        "end_column": 66
+      },
+      "properties": {
+        "source_location": {
+          "line": 14,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_19": {
+      "id": "dfg_node_19",
+      "type": "parameter",
+      "name": "param_17",
+      "data_type": "uint",
+      "scope": "getStat_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getStat"
+      }
+    },
+    "dfg_node_21": {
+      "id": "dfg_node_21",
+      "type": "parameter",
+      "name": "param_19",
+      "data_type": "uint",
+      "scope": "getStat_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getStat"
+      }
+    },
+    "dfg_node_23": {
+      "id": "dfg_node_23",
+      "type": "parameter",
+      "name": "param_21",
+      "data_type": "uint",
+      "scope": "getStat_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getStat"
+      }
+    },
+    "dfg_node_24": {
+      "id": "dfg_node_24",
+      "type": "function",
+      "name": "calcaultePrizes",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 16,
+        "column": 5,
+        "end_line": 16,
+        "end_column": 56
+      },
+      "properties": {
+        "source_location": {
+          "line": 16,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_26": {
+      "id": "dfg_node_26",
+      "type": "parameter",
+      "name": "param_24",
+      "data_type": "uint[]",
+      "scope": "calcaultePrizes_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "calcaultePrizes"
+      }
+    },
+    "dfg_node_27": {
+      "id": "dfg_node_27",
+      "type": "function",
+      "name": "finish",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 18,
+        "column": 5,
+        "end_line": 18,
+        "end_column": 30
+      },
+      "properties": {
+        "source_location": {
+          "line": 18,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_28": {
+      "id": "dfg_node_28",
+      "type": "function",
+      "name": "revoke",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 20,
+        "column": 5,
+        "end_line": 20,
+        "end_column": 30
+      },
+      "properties": {
+        "source_location": {
+          "line": 20,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_29": {
+      "id": "dfg_node_29",
+      "type": "contract",
+      "name": "UnilotPrizeCalculator",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 32,
+        "column": 1,
+        "end_line": 182,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 32,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_30": {
+      "id": "dfg_node_30",
+      "type": "state_variable",
+      "name": "accuracy",
+      "data_type": "uint64",
+      "scope": "UnilotPrizeCalculator",
+      "source_location": {
+        "line": 34,
+        "column": 5,
+        "end_line": 34,
+        "end_column": 71
+      },
+      "properties": {
+        "source_location": {
+          "line": 34,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_31": {
+      "id": "dfg_node_31",
+      "type": "state_variable",
+      "name": "MAX_X_FOR_Y",
+      "data_type": "uint8",
+      "scope": "UnilotPrizeCalculator",
+      "source_location": {
+        "line": 35,
+        "column": 5,
+        "end_line": 35,
+        "end_column": 54
+      },
+      "properties": {
+        "source_location": {
+          "line": 35,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_32": {
+      "id": "dfg_node_32",
+      "type": "state_variable",
+      "name": "minPrizeCoeficent",
+      "data_type": "uint8",
+      "scope": "UnilotPrizeCalculator",
+      "source_location": {
+        "line": 37,
+        "column": 5,
+        "end_line": 37,
+        "end_column": 52
+      },
+      "properties": {
+        "source_location": {
+          "line": 37,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_33": {
+      "id": "dfg_node_33",
+      "type": "state_variable",
+      "name": "percentOfWinners",
+      "data_type": "uint8",
+      "scope": "UnilotPrizeCalculator",
+      "source_location": {
+        "line": 38,
+        "column": 5,
+        "end_line": 38,
+        "end_column": 52
+      },
+      "properties": {
+        "source_location": {
+          "line": 38,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_34": {
+      "id": "dfg_node_34",
+      "type": "state_variable",
+      "name": "percentOfFixedPrizeWinners",
+      "data_type": "uint8",
+      "scope": "UnilotPrizeCalculator",
+      "source_location": {
+        "line": 39,
+        "column": 5,
+        "end_line": 39,
+        "end_column": 53
+      },
+      "properties": {
+        "source_location": {
+          "line": 39,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_35": {
+      "id": "dfg_node_35",
+      "type": "state_variable",
+      "name": "gameCommision",
+      "data_type": "uint8",
+      "scope": "UnilotPrizeCalculator",
+      "source_location": {
+        "line": 40,
+        "column": 5,
+        "end_line": 40,
+        "end_column": 53
+      },
+      "properties": {
+        "source_location": {
+          "line": 40,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_36": {
+      "id": "dfg_node_36",
+      "type": "state_variable",
+      "name": "bonusGameCommision",
+      "data_type": "uint8",
+      "scope": "UnilotPrizeCalculator",
+      "source_location": {
+        "line": 41,
+        "column": 5,
+        "end_line": 41,
+        "end_column": 52
+      },
+      "properties": {
+        "source_location": {
+          "line": 41,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_37": {
+      "id": "dfg_node_37",
+      "type": "state_variable",
+      "name": "tokenHolerGameCommision",
+      "data_type": "uint8",
+      "scope": "UnilotPrizeCalculator",
+      "source_location": {
+        "line": 42,
+        "column": 5,
+        "end_line": 42,
+        "end_column": 52
+      },
+      "properties": {
+        "source_location": {
+          "line": 42,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_38": {
+      "id": "dfg_node_38",
+      "type": "function",
+      "name": "getPrizeAmount",
+      "data_type": null,
+      "scope": "UnilotPrizeCalculator",
+      "source_location": {
+        "line": 47,
+        "column": 5,
+        "end_line": 61,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 47,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_40": {
+      "id": "dfg_node_40",
+      "type": "parameter",
+      "name": "result",
+      "data_type": "uint",
+      "scope": "getPrizeAmount_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getPrizeAmount"
+      }
+    },
+    "dfg_node_41": {
+      "id": "dfg_node_41",
+      "type": "function",
+      "name": "getNumWinners",
+      "data_type": null,
+      "scope": "UnilotPrizeCalculator",
+      "source_location": {
+        "line": 63,
+        "column": 5,
+        "end_line": 77,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 63,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_43": {
+      "id": "dfg_node_43",
+      "type": "parameter",
+      "name": "numWinners",
+      "data_type": "uint16",
+      "scope": "getNumWinners_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getNumWinners"
+      }
+    },
+    "dfg_node_45": {
+      "id": "dfg_node_45",
+      "type": "parameter",
+      "name": "numFixedAmountWinners",
+      "data_type": "uint16",
+      "scope": "getNumWinners_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getNumWinners"
+      }
+    },
+    "dfg_node_46": {
+      "id": "dfg_node_46",
+      "type": "function",
+      "name": "calcaultePrizes",
+      "data_type": null,
+      "scope": "UnilotPrizeCalculator",
+      "source_location": {
+        "line": 79,
+        "column": 5,
+        "end_line": 125,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 79,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_48": {
+      "id": "dfg_node_48",
+      "type": "parameter",
+      "name": "prizes",
+      "data_type": "uint[50]",
+      "scope": "calcaultePrizes_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "calcaultePrizes"
+      }
+    },
+    "dfg_node_49": {
+      "id": "dfg_node_49",
+      "type": "function",
+      "name": "distributePrizeCalculation",
+      "data_type": null,
+      "scope": "UnilotPrizeCalculator",
+      "source_location": {
+        "line": 127,
+        "column": 5,
+        "end_line": 161,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 127,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_51": {
+      "id": "dfg_node_51",
+      "type": "parameter",
+      "name": "prizes",
+      "data_type": "uint[5]",
+      "scope": "distributePrizeCalculation_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "distributePrizeCalculation"
+      }
+    },
+    "dfg_node_52": {
+      "id": "dfg_node_52",
+      "type": "function",
+      "name": "formula",
+      "data_type": null,
+      "scope": "UnilotPrizeCalculator",
+      "source_location": {
+        "line": 163,
+        "column": 5,
+        "end_line": 171,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 163,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_54": {
+      "id": "dfg_node_54",
+      "type": "parameter",
+      "name": "y",
+      "data_type": "uint",
+      "scope": "formula_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "formula"
+      }
+    },
+    "dfg_node_55": {
+      "id": "dfg_node_55",
+      "type": "function",
+      "name": "calculateStep",
+      "data_type": null,
+      "scope": "UnilotPrizeCalculator",
+      "source_location": {
+        "line": 173,
+        "column": 5,
+        "end_line": 181,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 173,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_57": {
+      "id": "dfg_node_57",
+      "type": "parameter",
+      "name": "step",
+      "data_type": "uint",
+      "scope": "calculateStep_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "calculateStep"
+      }
+    },
+    "dfg_node_58": {
+      "id": "dfg_node_58",
+      "type": "contract",
+      "name": "BaseUnilotGame",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 184,
+        "column": 1,
+        "end_line": 337,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 184,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_59": {
+      "id": "dfg_node_59",
+      "type": "state_variable",
+      "name": "state",
+      "data_type": "State",
+      "scope": "BaseUnilotGame",
+      "source_location": {
+        "line": 195,
+        "column": 5,
+        "end_line": 195,
+        "end_column": 17
+      },
+      "properties": {
+        "source_location": {
+          "line": 195,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_60": {
+      "id": "dfg_node_60",
+      "type": "state_variable",
+      "name": "administrator",
+      "data_type": "address",
+      "scope": "BaseUnilotGame",
+      "source_location": {
+        "line": 196,
+        "column": 5,
+        "end_line": 196,
+        "end_column": 27
+      },
+      "properties": {
+        "source_location": {
+          "line": 196,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_61": {
+      "id": "dfg_node_61",
+      "type": "state_variable",
+      "name": "bet",
+      "data_type": "uint",
+      "scope": "BaseUnilotGame",
+      "source_location": {
+        "line": 197,
+        "column": 5,
+        "end_line": 197,
+        "end_column": 14
+      },
+      "properties": {
+        "source_location": {
+          "line": 197,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_62": {
+      "id": "dfg_node_62",
+      "type": "state_variable",
+      "name": "tickets",
+      "data_type": "mapping (address => TicketLib.Ticket)",
+      "scope": "BaseUnilotGame",
+      "source_location": {
+        "line": 199,
+        "column": 5,
+        "end_line": 199,
+        "end_column": 60
+      },
+      "properties": {
+        "source_location": {
+          "line": 199,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_63": {
+      "id": "dfg_node_63",
+      "type": "state_variable",
+      "name": "ticketIndex",
+      "data_type": "address[]",
+      "scope": "BaseUnilotGame",
+      "source_location": {
+        "line": 200,
+        "column": 5,
+        "end_line": 200,
+        "end_column": 36
+      },
+      "properties": {
+        "source_location": {
+          "line": 200,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_64": {
+      "id": "dfg_node_64",
+      "type": "state_variable",
+      "name": "calculator",
+      "data_type": "UnilotPrizeCalculator",
+      "scope": "BaseUnilotGame",
+      "source_location": {
+        "line": 202,
+        "column": 5,
+        "end_line": 202,
+        "end_column": 38
+      },
+      "properties": {
+        "source_location": {
+          "line": 202,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_65": {
+      "id": "dfg_node_65",
+      "type": "function",
+      "name": "getState",
+      "data_type": null,
+      "scope": "BaseUnilotGame",
+      "source_location": {
+        "line": 237,
+        "column": 5,
+        "end_line": 243,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 237,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_67": {
+      "id": "dfg_node_67",
+      "type": "parameter",
+      "name": "param_65",
+      "data_type": "State",
+      "scope": "getState_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getState"
+      }
+    },
+    "dfg_node_68": {
+      "id": "dfg_node_68",
+      "type": "function",
+      "name": "getBet",
+      "data_type": null,
+      "scope": "BaseUnilotGame",
+      "source_location": {
+        "line": 245,
+        "column": 5,
+        "end_line": 251,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 245,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_70": {
+      "id": "dfg_node_70",
+      "type": "parameter",
+      "name": "param_68",
+      "data_type": "uint",
+      "scope": "getBet_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getBet"
+      }
+    },
+    "dfg_node_71": {
+      "id": "dfg_node_71",
+      "type": "function",
+      "name": "getPlayers",
+      "data_type": null,
+      "scope": "BaseUnilotGame",
+      "source_location": {
+        "line": 253,
+        "column": 5,
+        "end_line": 259,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 253,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_73": {
+      "id": "dfg_node_73",
+      "type": "parameter",
+      "name": "param_71",
+      "data_type": "address[]",
+      "scope": "getPlayers_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getPlayers"
+      }
+    },
+    "dfg_node_74": {
+      "id": "dfg_node_74",
+      "type": "function",
+      "name": "getPlayerDetails",
+      "data_type": null,
+      "scope": "BaseUnilotGame",
+      "source_location": {
+        "line": 261,
+        "column": 5,
+        "end_line": 270,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 261,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_76": {
+      "id": "dfg_node_76",
+      "type": "parameter",
+      "name": "param_74",
+      "data_type": "uint",
+      "scope": "getPlayerDetails_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getPlayerDetails"
+      }
+    },
+    "dfg_node_78": {
+      "id": "dfg_node_78",
+      "type": "parameter",
+      "name": "param_76",
+      "data_type": "uint",
+      "scope": "getPlayerDetails_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getPlayerDetails"
+      }
+    },
+    "dfg_node_80": {
+      "id": "dfg_node_80",
+      "type": "parameter",
+      "name": "param_78",
+      "data_type": "uint",
+      "scope": "getPlayerDetails_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getPlayerDetails"
+      }
+    },
+    "dfg_node_81": {
+      "id": "dfg_node_81",
+      "type": "function",
+      "name": "getNumWinners",
+      "data_type": null,
+      "scope": "BaseUnilotGame",
+      "source_location": {
+        "line": 272,
+        "column": 5,
+        "end_line": 280,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 272,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_83": {
+      "id": "dfg_node_83",
+      "type": "parameter",
+      "name": "param_81",
+      "data_type": "uint",
+      "scope": "getNumWinners_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getNumWinners"
+      }
+    },
+    "dfg_node_85": {
+      "id": "dfg_node_85",
+      "type": "parameter",
+      "name": "param_83",
+      "data_type": "uint",
+      "scope": "getNumWinners_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getNumWinners"
+      }
+    },
+    "dfg_node_86": {
+      "id": "dfg_node_86",
+      "type": "function",
+      "name": "getPrizeAmount",
+      "data_type": null,
+      "scope": "BaseUnilotGame",
+      "source_location": {
+        "line": 282,
+        "column": 5,
+        "end_line": 296,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 282,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_88": {
+      "id": "dfg_node_88",
+      "type": "parameter",
+      "name": "result",
+      "data_type": "uint",
+      "scope": "getPrizeAmount_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getPrizeAmount"
+      }
+    },
+    "dfg_node_89": {
+      "id": "dfg_node_89",
+      "type": "function",
+      "name": "getStat",
+      "data_type": null,
+      "scope": "BaseUnilotGame",
+      "source_location": {
+        "line": 298,
+        "column": 5,
+        "end_line": 305,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 298,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_91": {
+      "id": "dfg_node_91",
+      "type": "parameter",
+      "name": "param_89",
+      "data_type": "uint",
+      "scope": "getStat_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getStat"
+      }
+    },
+    "dfg_node_93": {
+      "id": "dfg_node_93",
+      "type": "parameter",
+      "name": "param_91",
+      "data_type": "uint",
+      "scope": "getStat_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getStat"
+      }
+    },
+    "dfg_node_95": {
+      "id": "dfg_node_95",
+      "type": "parameter",
+      "name": "param_93",
+      "data_type": "uint",
+      "scope": "getStat_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getStat"
+      }
+    },
+    "dfg_node_96": {
+      "id": "dfg_node_96",
+      "type": "function",
+      "name": "calcaultePrizes",
+      "data_type": null,
+      "scope": "BaseUnilotGame",
+      "source_location": {
+        "line": 307,
+        "column": 5,
+        "end_line": 324,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 307,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_98": {
+      "id": "dfg_node_98",
+      "type": "parameter",
+      "name": "result",
+      "data_type": "uint[]",
+      "scope": "calcaultePrizes_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "calcaultePrizes"
+      }
+    },
+    "dfg_node_99": {
+      "id": "dfg_node_99",
+      "type": "function",
+      "name": "revoke",
+      "data_type": null,
+      "scope": "BaseUnilotGame",
+      "source_location": {
+        "line": 326,
+        "column": 5,
+        "end_line": 336,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 326,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_100": {
+      "id": "dfg_node_100",
+      "type": "contract",
+      "name": "UnilotTailEther",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 340,
+        "column": 1,
+        "end_line": 443,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 340,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_101": {
+      "id": "dfg_node_101",
+      "type": "state_variable",
+      "name": "winnerIndex",
+      "data_type": "uint64",
+      "scope": "UnilotTailEther",
+      "source_location": {
+        "line": 342,
+        "column": 5,
+        "end_line": 342,
+        "end_column": 24
+      },
+      "properties": {
+        "source_location": {
+          "line": 342,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_102": {
+      "id": "dfg_node_102",
+      "type": "constructor_function",
+      "name": "UnilotTailEther",
+      "data_type": null,
+      "scope": "UnilotTailEther",
+      "source_location": {
+        "line": 345,
+        "column": 5,
+        "end_line": 355,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 345,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_103": {
+      "id": "dfg_node_103",
+      "type": "function",
+      "name": "getWinners",
+      "data_type": null,
+      "scope": "UnilotTailEther",
+      "source_location": {
+        "line": 357,
+        "column": 5,
+        "end_line": 383,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 357,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_105": {
+      "id": "dfg_node_105",
+      "type": "parameter",
+      "name": "players",
+      "data_type": "address[]",
+      "scope": "getWinners_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getWinners"
+      }
+    },
+    "dfg_node_107": {
+      "id": "dfg_node_107",
+      "type": "parameter",
+      "name": "prizes",
+      "data_type": "uint[]",
+      "scope": "getWinners_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getWinners"
+      }
+    },
+    "dfg_node_108": {
+      "id": "dfg_node_108",
+      "type": "function",
+      "name": "finish",
+      "data_type": null,
+      "scope": "UnilotTailEther",
+      "source_location": {
+        "line": 402,
+        "column": 5,
+        "end_line": 442,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 402,
+          "column": 5
+        }
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_4",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_4",
+      "target": "dfg_node_8",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_9",
+      "target": "dfg_node_11",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_12",
+      "target": "dfg_node_14",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_12",
+      "target": "dfg_node_16",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_17",
+      "target": "dfg_node_19",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_17",
+      "target": "dfg_node_21",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_9": {
+      "id": "dfg_edge_9",
+      "source": "dfg_node_17",
+      "target": "dfg_node_23",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_10": {
+      "id": "dfg_edge_10",
+      "source": "dfg_node_24",
+      "target": "dfg_node_26",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_11": {
+      "id": "dfg_edge_11",
+      "source": "dfg_node_29",
+      "target": "dfg_node_30",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_12": {
+      "id": "dfg_edge_12",
+      "source": "dfg_node_29",
+      "target": "dfg_node_31",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_13": {
+      "id": "dfg_edge_13",
+      "source": "dfg_node_29",
+      "target": "dfg_node_32",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_14": {
+      "id": "dfg_edge_14",
+      "source": "dfg_node_29",
+      "target": "dfg_node_33",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_15": {
+      "id": "dfg_edge_15",
+      "source": "dfg_node_29",
+      "target": "dfg_node_34",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_16": {
+      "id": "dfg_edge_16",
+      "source": "dfg_node_29",
+      "target": "dfg_node_35",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_17": {
+      "id": "dfg_edge_17",
+      "source": "dfg_node_29",
+      "target": "dfg_node_36",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_18": {
+      "id": "dfg_edge_18",
+      "source": "dfg_node_29",
+      "target": "dfg_node_37",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_19": {
+      "id": "dfg_edge_19",
+      "source": "dfg_node_38",
+      "target": "dfg_node_40",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_20": {
+      "id": "dfg_edge_20",
+      "source": "dfg_node_29",
+      "target": "dfg_node_38",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_21": {
+      "id": "dfg_edge_21",
+      "source": "dfg_node_41",
+      "target": "dfg_node_43",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_22": {
+      "id": "dfg_edge_22",
+      "source": "dfg_node_41",
+      "target": "dfg_node_45",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_23": {
+      "id": "dfg_edge_23",
+      "source": "dfg_node_29",
+      "target": "dfg_node_41",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_24": {
+      "id": "dfg_edge_24",
+      "source": "dfg_node_46",
+      "target": "dfg_node_48",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_25": {
+      "id": "dfg_edge_25",
+      "source": "dfg_node_29",
+      "target": "dfg_node_46",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_26": {
+      "id": "dfg_edge_26",
+      "source": "dfg_node_49",
+      "target": "dfg_node_51",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_27": {
+      "id": "dfg_edge_27",
+      "source": "dfg_node_29",
+      "target": "dfg_node_49",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_28": {
+      "id": "dfg_edge_28",
+      "source": "dfg_node_52",
+      "target": "dfg_node_54",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_29": {
+      "id": "dfg_edge_29",
+      "source": "dfg_node_29",
+      "target": "dfg_node_52",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_30": {
+      "id": "dfg_edge_30",
+      "source": "dfg_node_55",
+      "target": "dfg_node_57",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_31": {
+      "id": "dfg_edge_31",
+      "source": "dfg_node_29",
+      "target": "dfg_node_55",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_32": {
+      "id": "dfg_edge_32",
+      "source": "dfg_node_58",
+      "target": "dfg_node_59",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_33": {
+      "id": "dfg_edge_33",
+      "source": "dfg_node_58",
+      "target": "dfg_node_60",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_34": {
+      "id": "dfg_edge_34",
+      "source": "dfg_node_58",
+      "target": "dfg_node_61",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_35": {
+      "id": "dfg_edge_35",
+      "source": "dfg_node_58",
+      "target": "dfg_node_62",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_36": {
+      "id": "dfg_edge_36",
+      "source": "dfg_node_58",
+      "target": "dfg_node_63",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_37": {
+      "id": "dfg_edge_37",
+      "source": "dfg_node_58",
+      "target": "dfg_node_64",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_38": {
+      "id": "dfg_edge_38",
+      "source": "dfg_node_65",
+      "target": "dfg_node_67",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_39": {
+      "id": "dfg_edge_39",
+      "source": "dfg_node_58",
+      "target": "dfg_node_65",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_40": {
+      "id": "dfg_edge_40",
+      "source": "dfg_node_68",
+      "target": "dfg_node_70",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_41": {
+      "id": "dfg_edge_41",
+      "source": "dfg_node_58",
+      "target": "dfg_node_68",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_42": {
+      "id": "dfg_edge_42",
+      "source": "dfg_node_71",
+      "target": "dfg_node_73",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_43": {
+      "id": "dfg_edge_43",
+      "source": "dfg_node_58",
+      "target": "dfg_node_71",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_44": {
+      "id": "dfg_edge_44",
+      "source": "dfg_node_74",
+      "target": "dfg_node_76",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_45": {
+      "id": "dfg_edge_45",
+      "source": "dfg_node_74",
+      "target": "dfg_node_78",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_46": {
+      "id": "dfg_edge_46",
+      "source": "dfg_node_74",
+      "target": "dfg_node_80",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_47": {
+      "id": "dfg_edge_47",
+      "source": "dfg_node_58",
+      "target": "dfg_node_74",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_48": {
+      "id": "dfg_edge_48",
+      "source": "dfg_node_81",
+      "target": "dfg_node_83",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_49": {
+      "id": "dfg_edge_49",
+      "source": "dfg_node_81",
+      "target": "dfg_node_85",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_50": {
+      "id": "dfg_edge_50",
+      "source": "dfg_node_58",
+      "target": "dfg_node_81",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_51": {
+      "id": "dfg_edge_51",
+      "source": "dfg_node_86",
+      "target": "dfg_node_88",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_52": {
+      "id": "dfg_edge_52",
+      "source": "dfg_node_58",
+      "target": "dfg_node_86",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_53": {
+      "id": "dfg_edge_53",
+      "source": "dfg_node_89",
+      "target": "dfg_node_91",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_54": {
+      "id": "dfg_edge_54",
+      "source": "dfg_node_89",
+      "target": "dfg_node_93",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_55": {
+      "id": "dfg_edge_55",
+      "source": "dfg_node_89",
+      "target": "dfg_node_95",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_56": {
+      "id": "dfg_edge_56",
+      "source": "dfg_node_58",
+      "target": "dfg_node_89",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_57": {
+      "id": "dfg_edge_57",
+      "source": "dfg_node_96",
+      "target": "dfg_node_98",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_58": {
+      "id": "dfg_edge_58",
+      "source": "dfg_node_58",
+      "target": "dfg_node_96",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_59": {
+      "id": "dfg_edge_59",
+      "source": "dfg_node_58",
+      "target": "dfg_node_99",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_60": {
+      "id": "dfg_edge_60",
+      "source": "dfg_node_100",
+      "target": "dfg_node_101",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_61": {
+      "id": "dfg_edge_61",
+      "source": "dfg_node_100",
+      "target": "dfg_node_102",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_62": {
+      "id": "dfg_edge_62",
+      "source": "dfg_node_103",
+      "target": "dfg_node_105",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_63": {
+      "id": "dfg_edge_63",
+      "source": "dfg_node_103",
+      "target": "dfg_node_107",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_64": {
+      "id": "dfg_edge_64",
+      "source": "dfg_node_100",
+      "target": "dfg_node_103",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_65": {
+      "id": "dfg_edge_65",
+      "source": "dfg_node_100",
+      "target": "dfg_node_108",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 127,
+    "source_line": 128,
+    "label": 1,
+    "mode": "compact",
+    "contract_name": "UnilotPrizeCalculator",
+    "timestamp": "20251029_142838"
+  },
+  "label": 1
+}

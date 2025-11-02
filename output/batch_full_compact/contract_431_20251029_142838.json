@@ -1,0 +1,750 @@
+{
+  "contract": "RSPLT_E",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "RSPLT_E",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 6,
+        "column": 1,
+        "end_line": 305,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 6,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "owner",
+      "data_type": "address",
+      "scope": "RSPLT_E",
+      "source_location": {
+        "line": 23,
+        "column": 9,
+        "end_line": 23,
+        "end_column": 30
+      },
+      "properties": {
+        "source_location": {
+          "line": 23,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "state_variable",
+      "name": "partnerAccounts",
+      "data_type": "mapping (uint => partnerAccount)",
+      "scope": "RSPLT_E",
+      "source_location": {
+        "line": 24,
+        "column": 9,
+        "end_line": 24,
+        "end_column": 58
+      },
+      "properties": {
+        "source_location": {
+          "line": 24,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "state_variable",
+      "name": "numAccounts",
+      "data_type": "uint",
+      "scope": "RSPLT_E",
+      "source_location": {
+        "line": 25,
+        "column": 9,
+        "end_line": 25,
+        "end_column": 33
+      },
+      "properties": {
+        "source_location": {
+          "line": 25,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "state_variable",
+      "name": "holdoverBalance",
+      "data_type": "uint",
+      "scope": "RSPLT_E",
+      "source_location": {
+        "line": 26,
+        "column": 9,
+        "end_line": 26,
+        "end_column": 37
+      },
+      "properties": {
+        "source_location": {
+          "line": 26,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "state_variable",
+      "name": "totalFundsReceived",
+      "data_type": "uint",
+      "scope": "RSPLT_E",
+      "source_location": {
+        "line": 27,
+        "column": 9,
+        "end_line": 27,
+        "end_column": 40
+      },
+      "properties": {
+        "source_location": {
+          "line": 27,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "state_variable",
+      "name": "totalFundsDistributed",
+      "data_type": "uint",
+      "scope": "RSPLT_E",
+      "source_location": {
+        "line": 28,
+        "column": 9,
+        "end_line": 28,
+        "end_column": 43
+      },
+      "properties": {
+        "source_location": {
+          "line": 28,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "state_variable",
+      "name": "evenDistThresh",
+      "data_type": "uint",
+      "scope": "RSPLT_E",
+      "source_location": {
+        "line": 29,
+        "column": 9,
+        "end_line": 29,
+        "end_column": 36
+      },
+      "properties": {
+        "source_location": {
+          "line": 29,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "state_variable",
+      "name": "withdrawGas",
+      "data_type": "uint",
+      "scope": "RSPLT_E",
+      "source_location": {
+        "line": 30,
+        "column": 9,
+        "end_line": 30,
+        "end_column": 41
+      },
+      "properties": {
+        "source_location": {
+          "line": 30,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_10": {
+      "id": "dfg_node_10",
+      "type": "state_variable",
+      "name": "TENHUNDWEI",
+      "data_type": "uint",
+      "scope": "RSPLT_E",
+      "source_location": {
+        "line": 31,
+        "column": 9,
+        "end_line": 31,
+        "end_column": 41
+      },
+      "properties": {
+        "source_location": {
+          "line": 31,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_11": {
+      "id": "dfg_node_11",
+      "type": "state_variable",
+      "name": "settingsState",
+      "data_type": "SettingStateValue",
+      "scope": "RSPLT_E",
+      "source_location": {
+        "line": 33,
+        "column": 9,
+        "end_line": 33,
+        "end_column": 74
+      },
+      "properties": {
+        "source_location": {
+          "line": 33,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_12": {
+      "id": "dfg_node_12",
+      "type": "constructor_function",
+      "name": "RSPLT_E",
+      "data_type": null,
+      "scope": "RSPLT_E",
+      "source_location": {
+        "line": 39,
+        "column": 9,
+        "end_line": 41,
+        "end_column": 10
+      },
+      "properties": {
+        "source_location": {
+          "line": 39,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_13": {
+      "id": "dfg_node_13",
+      "type": "function",
+      "name": "lock",
+      "data_type": null,
+      "scope": "RSPLT_E",
+      "source_location": {
+        "line": 48,
+        "column": 9,
+        "end_line": 59,
+        "end_column": 10
+      },
+      "properties": {
+        "source_location": {
+          "line": 48,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_14": {
+      "id": "dfg_node_14",
+      "type": "function",
+      "name": "reset",
+      "data_type": null,
+      "scope": "RSPLT_E",
+      "source_location": {
+        "line": 66,
+        "column": 9,
+        "end_line": 80,
+        "end_column": 10
+      },
+      "properties": {
+        "source_location": {
+          "line": 66,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_15": {
+      "id": "dfg_node_15",
+      "type": "function",
+      "name": "setEvenDistThresh",
+      "data_type": null,
+      "scope": "RSPLT_E",
+      "source_location": {
+        "line": 86,
+        "column": 9,
+        "end_line": 97,
+        "end_column": 10
+      },
+      "properties": {
+        "source_location": {
+          "line": 86,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_16": {
+      "id": "dfg_node_16",
+      "type": "function",
+      "name": "setWitdrawGas",
+      "data_type": null,
+      "scope": "RSPLT_E",
+      "source_location": {
+        "line": 103,
+        "column": 9,
+        "end_line": 110,
+        "end_column": 10
+      },
+      "properties": {
+        "source_location": {
+          "line": 103,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_17": {
+      "id": "dfg_node_17",
+      "type": "function",
+      "name": "addAccount",
+      "data_type": null,
+      "scope": "RSPLT_E",
+      "source_location": {
+        "line": 116,
+        "column": 9,
+        "end_line": 132,
+        "end_column": 10
+      },
+      "properties": {
+        "source_location": {
+          "line": 116,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_18": {
+      "id": "dfg_node_18",
+      "type": "function",
+      "name": "getAccountInfo",
+      "data_type": null,
+      "scope": "RSPLT_E",
+      "source_location": {
+        "line": 138,
+        "column": 9,
+        "end_line": 152,
+        "end_column": 10
+      },
+      "properties": {
+        "source_location": {
+          "line": 138,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_20": {
+      "id": "dfg_node_20",
+      "type": "parameter",
+      "name": "_idx",
+      "data_type": "uint",
+      "scope": "getAccountInfo_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getAccountInfo"
+      }
+    },
+    "dfg_node_22": {
+      "id": "dfg_node_22",
+      "type": "parameter",
+      "name": "_pctx10",
+      "data_type": "uint",
+      "scope": "getAccountInfo_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getAccountInfo"
+      }
+    },
+    "dfg_node_24": {
+      "id": "dfg_node_24",
+      "type": "parameter",
+      "name": "_evenStart",
+      "data_type": "bool",
+      "scope": "getAccountInfo_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getAccountInfo"
+      }
+    },
+    "dfg_node_26": {
+      "id": "dfg_node_26",
+      "type": "parameter",
+      "name": "_credited",
+      "data_type": "uint",
+      "scope": "getAccountInfo_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getAccountInfo"
+      }
+    },
+    "dfg_node_28": {
+      "id": "dfg_node_28",
+      "type": "parameter",
+      "name": "_balance",
+      "data_type": "uint",
+      "scope": "getAccountInfo_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getAccountInfo"
+      }
+    },
+    "dfg_node_29": {
+      "id": "dfg_node_29",
+      "type": "function",
+      "name": "getTotalPctx10",
+      "data_type": null,
+      "scope": "RSPLT_E",
+      "source_location": {
+        "line": 158,
+        "column": 9,
+        "end_line": 164,
+        "end_column": 10
+      },
+      "properties": {
+        "source_location": {
+          "line": 158,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_31": {
+      "id": "dfg_node_31",
+      "type": "parameter",
+      "name": "_totalPctx10",
+      "data_type": "uint",
+      "scope": "getTotalPctx10_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getTotalPctx10"
+      }
+    },
+    "dfg_node_32": {
+      "id": "dfg_node_32",
+      "type": "function",
+      "name": "distribute",
+      "data_type": null,
+      "scope": "RSPLT_E",
+      "source_location": {
+        "line": 181,
+        "column": 9,
+        "end_line": 266,
+        "end_column": 10
+      },
+      "properties": {
+        "source_location": {
+          "line": 181,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_33": {
+      "id": "dfg_node_33",
+      "type": "function",
+      "name": "withdraw",
+      "data_type": null,
+      "scope": "RSPLT_E",
+      "source_location": {
+        "line": 272,
+        "column": 9,
+        "end_line": 287,
+        "end_column": 10
+      },
+      "properties": {
+        "source_location": {
+          "line": 272,
+          "column": 9
+        }
+      }
+    },
+    "dfg_node_34": {
+      "id": "dfg_node_34",
+      "type": "function",
+      "name": "hariKari",
+      "data_type": null,
+      "scope": "RSPLT_E",
+      "source_location": {
+        "line": 293,
+        "column": 9,
+        "end_line": 303,
+        "end_column": 10
+      },
+      "properties": {
+        "source_location": {
+          "line": 293,
+          "column": 9
+        }
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_1",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_1",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_1",
+      "target": "dfg_node_7",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_1",
+      "target": "dfg_node_8",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_1",
+      "target": "dfg_node_9",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_9": {
+      "id": "dfg_edge_9",
+      "source": "dfg_node_1",
+      "target": "dfg_node_10",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_10": {
+      "id": "dfg_edge_10",
+      "source": "dfg_node_1",
+      "target": "dfg_node_11",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_11": {
+      "id": "dfg_edge_11",
+      "source": "dfg_node_1",
+      "target": "dfg_node_12",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_12": {
+      "id": "dfg_edge_12",
+      "source": "dfg_node_1",
+      "target": "dfg_node_13",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_13": {
+      "id": "dfg_edge_13",
+      "source": "dfg_node_1",
+      "target": "dfg_node_14",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_14": {
+      "id": "dfg_edge_14",
+      "source": "dfg_node_1",
+      "target": "dfg_node_15",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_15": {
+      "id": "dfg_edge_15",
+      "source": "dfg_node_1",
+      "target": "dfg_node_16",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_16": {
+      "id": "dfg_edge_16",
+      "source": "dfg_node_1",
+      "target": "dfg_node_17",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_17": {
+      "id": "dfg_edge_17",
+      "source": "dfg_node_18",
+      "target": "dfg_node_20",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_18": {
+      "id": "dfg_edge_18",
+      "source": "dfg_node_18",
+      "target": "dfg_node_22",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_19": {
+      "id": "dfg_edge_19",
+      "source": "dfg_node_18",
+      "target": "dfg_node_24",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_20": {
+      "id": "dfg_edge_20",
+      "source": "dfg_node_18",
+      "target": "dfg_node_26",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_21": {
+      "id": "dfg_edge_21",
+      "source": "dfg_node_18",
+      "target": "dfg_node_28",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_22": {
+      "id": "dfg_edge_22",
+      "source": "dfg_node_1",
+      "target": "dfg_node_18",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_23": {
+      "id": "dfg_edge_23",
+      "source": "dfg_node_29",
+      "target": "dfg_node_31",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_24": {
+      "id": "dfg_edge_24",
+      "source": "dfg_node_1",
+      "target": "dfg_node_29",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_25": {
+      "id": "dfg_edge_25",
+      "source": "dfg_node_1",
+      "target": "dfg_node_32",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_26": {
+      "id": "dfg_edge_26",
+      "source": "dfg_node_1",
+      "target": "dfg_node_33",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_27": {
+      "id": "dfg_edge_27",
+      "source": "dfg_node_1",
+      "target": "dfg_node_34",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 431,
+    "source_line": 432,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "RSPLT_E",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

@@ -1,0 +1,103 @@
+{
+  "contract": "Trademark",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "Trademark",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 1,
+        "column": 1,
+        "end_line": 5,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "function",
+      "name": "getTrademark",
+      "data_type": null,
+      "scope": "Trademark",
+      "source_location": {
+        "line": 2,
+        "column": 1,
+        "end_line": 4,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "return_statement",
+      "name": null,
+      "data_type": null,
+      "scope": "getTrademark_function",
+      "source_location": {
+        "line": 3,
+        "column": 1,
+        "end_line": 3,
+        "end_column": 78
+      },
+      "properties": {
+        "source_location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "parameter",
+      "name": "param_3",
+      "data_type": "string",
+      "scope": "getTrademark_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getTrademark"
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_2",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 1036,
+    "source_line": 1037,
+    "label": 0,
+    "mode": "standard",
+    "contract_name": "Trademark",
+    "timestamp": "20251027_225116"
+  }
+}

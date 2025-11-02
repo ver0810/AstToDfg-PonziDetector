@@ -1,0 +1,832 @@
+{
+  "contract": "Owned",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "Owned",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 8,
+        "column": 1,
+        "end_line": 16,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 8,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "function",
+      "name": "setOwner",
+      "data_type": null,
+      "scope": "Owned",
+      "source_location": {
+        "line": 13,
+        "column": 2,
+        "end_line": 13,
+        "end_column": 85
+      },
+      "properties": {
+        "source_location": {
+          "line": 13,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "state_variable",
+      "name": "owner",
+      "data_type": "address",
+      "scope": "Owned",
+      "source_location": {
+        "line": 15,
+        "column": 2,
+        "end_line": 15,
+        "end_column": 36
+      },
+      "properties": {
+        "source_location": {
+          "line": 15,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "contract",
+      "name": "BadgeReg",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 18,
+        "column": 1,
+        "end_line": 109,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 18,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "function",
+      "name": "register",
+      "data_type": null,
+      "scope": "BadgeReg",
+      "source_location": {
+        "line": 37,
+        "column": 2,
+        "end_line": 39,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 37,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "parameter",
+      "name": "param_5",
+      "data_type": "bool",
+      "scope": "register_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "register"
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "function",
+      "name": "registerAs",
+      "data_type": null,
+      "scope": "BadgeReg",
+      "source_location": {
+        "line": 41,
+        "column": 2,
+        "end_line": 47,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 41,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_10": {
+      "id": "dfg_node_10",
+      "type": "parameter",
+      "name": "param_8",
+      "data_type": "bool",
+      "scope": "registerAs_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "registerAs"
+      }
+    },
+    "dfg_node_11": {
+      "id": "dfg_node_11",
+      "type": "function",
+      "name": "unregister",
+      "data_type": null,
+      "scope": "BadgeReg",
+      "source_location": {
+        "line": 49,
+        "column": 2,
+        "end_line": 54,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 49,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_12": {
+      "id": "dfg_node_12",
+      "type": "function",
+      "name": "setFee",
+      "data_type": null,
+      "scope": "BadgeReg",
+      "source_location": {
+        "line": 56,
+        "column": 2,
+        "end_line": 58,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 56,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_13": {
+      "id": "dfg_node_13",
+      "type": "function",
+      "name": "badgeCount",
+      "data_type": null,
+      "scope": "BadgeReg",
+      "source_location": {
+        "line": 60,
+        "column": 2,
+        "end_line": 60,
+        "end_column": 73
+      },
+      "properties": {
+        "source_location": {
+          "line": 60,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_15": {
+      "id": "dfg_node_15",
+      "type": "parameter",
+      "name": "param_13",
+      "data_type": "uint",
+      "scope": "badgeCount_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "badgeCount"
+      }
+    },
+    "dfg_node_16": {
+      "id": "dfg_node_16",
+      "type": "function",
+      "name": "badge",
+      "data_type": null,
+      "scope": "BadgeReg",
+      "source_location": {
+        "line": 62,
+        "column": 2,
+        "end_line": 67,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 62,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_18": {
+      "id": "dfg_node_18",
+      "type": "parameter",
+      "name": "addr",
+      "data_type": "address",
+      "scope": "badge_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "badge"
+      }
+    },
+    "dfg_node_20": {
+      "id": "dfg_node_20",
+      "type": "parameter",
+      "name": "name",
+      "data_type": "bytes32",
+      "scope": "badge_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "badge"
+      }
+    },
+    "dfg_node_22": {
+      "id": "dfg_node_22",
+      "type": "parameter",
+      "name": "owner",
+      "data_type": "address",
+      "scope": "badge_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "badge"
+      }
+    },
+    "dfg_node_23": {
+      "id": "dfg_node_23",
+      "type": "function",
+      "name": "fromAddress",
+      "data_type": null,
+      "scope": "BadgeReg",
+      "source_location": {
+        "line": 69,
+        "column": 2,
+        "end_line": 74,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 69,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_25": {
+      "id": "dfg_node_25",
+      "type": "parameter",
+      "name": "id",
+      "data_type": "uint",
+      "scope": "fromAddress_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "fromAddress"
+      }
+    },
+    "dfg_node_27": {
+      "id": "dfg_node_27",
+      "type": "parameter",
+      "name": "name",
+      "data_type": "bytes32",
+      "scope": "fromAddress_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "fromAddress"
+      }
+    },
+    "dfg_node_29": {
+      "id": "dfg_node_29",
+      "type": "parameter",
+      "name": "owner",
+      "data_type": "address",
+      "scope": "fromAddress_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "fromAddress"
+      }
+    },
+    "dfg_node_30": {
+      "id": "dfg_node_30",
+      "type": "function",
+      "name": "fromName",
+      "data_type": null,
+      "scope": "BadgeReg",
+      "source_location": {
+        "line": 76,
+        "column": 2,
+        "end_line": 81,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 76,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_32": {
+      "id": "dfg_node_32",
+      "type": "parameter",
+      "name": "id",
+      "data_type": "uint",
+      "scope": "fromName_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "fromName"
+      }
+    },
+    "dfg_node_34": {
+      "id": "dfg_node_34",
+      "type": "parameter",
+      "name": "addr",
+      "data_type": "address",
+      "scope": "fromName_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "fromName"
+      }
+    },
+    "dfg_node_36": {
+      "id": "dfg_node_36",
+      "type": "parameter",
+      "name": "owner",
+      "data_type": "address",
+      "scope": "fromName_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "fromName"
+      }
+    },
+    "dfg_node_37": {
+      "id": "dfg_node_37",
+      "type": "function",
+      "name": "meta",
+      "data_type": null,
+      "scope": "BadgeReg",
+      "source_location": {
+        "line": 83,
+        "column": 2,
+        "end_line": 85,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 83,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_39": {
+      "id": "dfg_node_39",
+      "type": "parameter",
+      "name": "param_37",
+      "data_type": "bytes32",
+      "scope": "meta_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "meta"
+      }
+    },
+    "dfg_node_40": {
+      "id": "dfg_node_40",
+      "type": "function",
+      "name": "setAddress",
+      "data_type": null,
+      "scope": "BadgeReg",
+      "source_location": {
+        "line": 87,
+        "column": 2,
+        "end_line": 93,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 87,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_41": {
+      "id": "dfg_node_41",
+      "type": "function",
+      "name": "setMeta",
+      "data_type": null,
+      "scope": "BadgeReg",
+      "source_location": {
+        "line": 95,
+        "column": 2,
+        "end_line": 98,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 95,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_42": {
+      "id": "dfg_node_42",
+      "type": "function",
+      "name": "drain",
+      "data_type": null,
+      "scope": "BadgeReg",
+      "source_location": {
+        "line": 100,
+        "column": 2,
+        "end_line": 103,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 100,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_43": {
+      "id": "dfg_node_43",
+      "type": "state_variable",
+      "name": "mapFromAddress",
+      "data_type": "mapping (address => uint)",
+      "scope": "BadgeReg",
+      "source_location": {
+        "line": 105,
+        "column": 2,
+        "end_line": 105,
+        "end_column": 43
+      },
+      "properties": {
+        "source_location": {
+          "line": 105,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_44": {
+      "id": "dfg_node_44",
+      "type": "state_variable",
+      "name": "mapFromName",
+      "data_type": "mapping (bytes32 => uint)",
+      "scope": "BadgeReg",
+      "source_location": {
+        "line": 106,
+        "column": 2,
+        "end_line": 106,
+        "end_column": 40
+      },
+      "properties": {
+        "source_location": {
+          "line": 106,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_45": {
+      "id": "dfg_node_45",
+      "type": "state_variable",
+      "name": "badges",
+      "data_type": "Badge[]",
+      "scope": "BadgeReg",
+      "source_location": {
+        "line": 107,
+        "column": 2,
+        "end_line": 107,
+        "end_column": 17
+      },
+      "properties": {
+        "source_location": {
+          "line": 107,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_46": {
+      "id": "dfg_node_46",
+      "type": "state_variable",
+      "name": "fee",
+      "data_type": "uint",
+      "scope": "BadgeReg",
+      "source_location": {
+        "line": 108,
+        "column": 2,
+        "end_line": 108,
+        "end_column": 28
+      },
+      "properties": {
+        "source_location": {
+          "line": 108,
+          "column": 2
+        }
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_5",
+      "target": "dfg_node_7",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_4",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_8",
+      "target": "dfg_node_10",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_4",
+      "target": "dfg_node_8",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_4",
+      "target": "dfg_node_11",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_4",
+      "target": "dfg_node_12",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_9": {
+      "id": "dfg_edge_9",
+      "source": "dfg_node_13",
+      "target": "dfg_node_15",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_10": {
+      "id": "dfg_edge_10",
+      "source": "dfg_node_4",
+      "target": "dfg_node_13",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_11": {
+      "id": "dfg_edge_11",
+      "source": "dfg_node_16",
+      "target": "dfg_node_18",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_12": {
+      "id": "dfg_edge_12",
+      "source": "dfg_node_16",
+      "target": "dfg_node_20",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_13": {
+      "id": "dfg_edge_13",
+      "source": "dfg_node_16",
+      "target": "dfg_node_22",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_14": {
+      "id": "dfg_edge_14",
+      "source": "dfg_node_4",
+      "target": "dfg_node_16",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_15": {
+      "id": "dfg_edge_15",
+      "source": "dfg_node_23",
+      "target": "dfg_node_25",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_16": {
+      "id": "dfg_edge_16",
+      "source": "dfg_node_23",
+      "target": "dfg_node_27",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_17": {
+      "id": "dfg_edge_17",
+      "source": "dfg_node_23",
+      "target": "dfg_node_29",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_18": {
+      "id": "dfg_edge_18",
+      "source": "dfg_node_4",
+      "target": "dfg_node_23",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_19": {
+      "id": "dfg_edge_19",
+      "source": "dfg_node_30",
+      "target": "dfg_node_32",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_20": {
+      "id": "dfg_edge_20",
+      "source": "dfg_node_30",
+      "target": "dfg_node_34",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_21": {
+      "id": "dfg_edge_21",
+      "source": "dfg_node_30",
+      "target": "dfg_node_36",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_22": {
+      "id": "dfg_edge_22",
+      "source": "dfg_node_4",
+      "target": "dfg_node_30",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_23": {
+      "id": "dfg_edge_23",
+      "source": "dfg_node_37",
+      "target": "dfg_node_39",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_24": {
+      "id": "dfg_edge_24",
+      "source": "dfg_node_4",
+      "target": "dfg_node_37",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_25": {
+      "id": "dfg_edge_25",
+      "source": "dfg_node_4",
+      "target": "dfg_node_40",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_26": {
+      "id": "dfg_edge_26",
+      "source": "dfg_node_4",
+      "target": "dfg_node_41",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_27": {
+      "id": "dfg_edge_27",
+      "source": "dfg_node_4",
+      "target": "dfg_node_42",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_28": {
+      "id": "dfg_edge_28",
+      "source": "dfg_node_4",
+      "target": "dfg_node_43",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_29": {
+      "id": "dfg_edge_29",
+      "source": "dfg_node_4",
+      "target": "dfg_node_44",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_30": {
+      "id": "dfg_edge_30",
+      "source": "dfg_node_4",
+      "target": "dfg_node_45",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_31": {
+      "id": "dfg_edge_31",
+      "source": "dfg_node_4",
+      "target": "dfg_node_46",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 1441,
+    "source_line": 1442,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "Owned",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

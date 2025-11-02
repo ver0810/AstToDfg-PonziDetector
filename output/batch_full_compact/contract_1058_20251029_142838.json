@@ -1,0 +1,547 @@
+{
+  "contract": "Pot",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "Pot",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 2,
+        "column": 1,
+        "end_line": 113,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "owner",
+      "data_type": "address",
+      "scope": "Pot",
+      "source_location": {
+        "line": 4,
+        "column": 2,
+        "end_line": 4,
+        "end_column": 23
+      },
+      "properties": {
+        "source_location": {
+          "line": 4,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "state_variable",
+      "name": "potMembers",
+      "data_type": "address[]",
+      "scope": "Pot",
+      "source_location": {
+        "line": 5,
+        "column": 5,
+        "end_line": 5,
+        "end_column": 33
+      },
+      "properties": {
+        "source_location": {
+          "line": 5,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "state_variable",
+      "name": "potSize",
+      "data_type": "uint",
+      "scope": "Pot",
+      "source_location": {
+        "line": 7,
+        "column": 2,
+        "end_line": 7,
+        "end_column": 26
+      },
+      "properties": {
+        "source_location": {
+          "line": 7,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "state_variable",
+      "name": "winnerIndex",
+      "data_type": "uint",
+      "scope": "Pot",
+      "source_location": {
+        "line": 8,
+        "column": 2,
+        "end_line": 8,
+        "end_column": 26
+      },
+      "properties": {
+        "source_location": {
+          "line": 8,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "state_variable",
+      "name": "winnerAddress",
+      "data_type": "address",
+      "scope": "Pot",
+      "source_location": {
+        "line": 9,
+        "column": 2,
+        "end_line": 9,
+        "end_column": 31
+      },
+      "properties": {
+        "source_location": {
+          "line": 9,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "state_variable",
+      "name": "minBetSize",
+      "data_type": "uint",
+      "scope": "Pot",
+      "source_location": {
+        "line": 10,
+        "column": 2,
+        "end_line": 10,
+        "end_column": 36
+      },
+      "properties": {
+        "source_location": {
+          "line": 10,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "state_variable",
+      "name": "potTime",
+      "data_type": "uint",
+      "scope": "Pot",
+      "source_location": {
+        "line": 11,
+        "column": 2,
+        "end_line": 11,
+        "end_column": 29
+      },
+      "properties": {
+        "source_location": {
+          "line": 11,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "state_variable",
+      "name": "endTime",
+      "data_type": "uint",
+      "scope": "Pot",
+      "source_location": {
+        "line": 12,
+        "column": 2,
+        "end_line": 12,
+        "end_column": 38
+      },
+      "properties": {
+        "source_location": {
+          "line": 12,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_10": {
+      "id": "dfg_node_10",
+      "type": "state_variable",
+      "name": "totalBet",
+      "data_type": "uint",
+      "scope": "Pot",
+      "source_location": {
+        "line": 13,
+        "column": 2,
+        "end_line": 13,
+        "end_column": 27
+      },
+      "properties": {
+        "source_location": {
+          "line": 13,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_11": {
+      "id": "dfg_node_11",
+      "type": "state_variable",
+      "name": "locked",
+      "data_type": "bool",
+      "scope": "Pot",
+      "source_location": {
+        "line": 15,
+        "column": 2,
+        "end_line": 15,
+        "end_column": 29
+      },
+      "properties": {
+        "source_location": {
+          "line": 15,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_12": {
+      "id": "dfg_node_12",
+      "type": "constructor_function",
+      "name": "Pot",
+      "data_type": null,
+      "scope": "Pot",
+      "source_location": {
+        "line": 30,
+        "column": 2,
+        "end_line": 32,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 30,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_13": {
+      "id": "dfg_node_13",
+      "type": "function",
+      "name": "bytesToString",
+      "data_type": null,
+      "scope": "Pot",
+      "source_location": {
+        "line": 41,
+        "column": 2,
+        "end_line": 50,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 41,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_15": {
+      "id": "dfg_node_15",
+      "type": "parameter",
+      "name": "param_13",
+      "data_type": "string",
+      "scope": "bytesToString_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "bytesToString"
+      }
+    },
+    "dfg_node_16": {
+      "id": "dfg_node_16",
+      "type": "function",
+      "name": "joinPot",
+      "data_type": null,
+      "scope": "Pot",
+      "source_location": {
+        "line": 53,
+        "column": 2,
+        "end_line": 66,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 53,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_17": {
+      "id": "dfg_node_17",
+      "type": "function",
+      "name": "getPlayers",
+      "data_type": null,
+      "scope": "Pot",
+      "source_location": {
+        "line": 68,
+        "column": 2,
+        "end_line": 70,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 68,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_19": {
+      "id": "dfg_node_19",
+      "type": "parameter",
+      "name": "param_17",
+      "data_type": "address[]",
+      "scope": "getPlayers_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getPlayers"
+      }
+    },
+    "dfg_node_20": {
+      "id": "dfg_node_20",
+      "type": "function",
+      "name": "getEndTime",
+      "data_type": null,
+      "scope": "Pot",
+      "source_location": {
+        "line": 72,
+        "column": 2,
+        "end_line": 74,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 72,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_22": {
+      "id": "dfg_node_22",
+      "type": "parameter",
+      "name": "param_20",
+      "data_type": "uint",
+      "scope": "getEndTime_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getEndTime"
+      }
+    },
+    "dfg_node_23": {
+      "id": "dfg_node_23",
+      "type": "function",
+      "name": "rewardWinner",
+      "data_type": null,
+      "scope": "Pot",
+      "source_location": {
+        "line": 76,
+        "column": 5,
+        "end_line": 111,
+        "end_column": 6
+      },
+      "properties": {
+        "source_location": {
+          "line": 76,
+          "column": 5
+        }
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_1",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_1",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_1",
+      "target": "dfg_node_7",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_1",
+      "target": "dfg_node_8",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_1",
+      "target": "dfg_node_9",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_9": {
+      "id": "dfg_edge_9",
+      "source": "dfg_node_1",
+      "target": "dfg_node_10",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_10": {
+      "id": "dfg_edge_10",
+      "source": "dfg_node_1",
+      "target": "dfg_node_11",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_11": {
+      "id": "dfg_edge_11",
+      "source": "dfg_node_1",
+      "target": "dfg_node_12",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_12": {
+      "id": "dfg_edge_12",
+      "source": "dfg_node_13",
+      "target": "dfg_node_15",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_13": {
+      "id": "dfg_edge_13",
+      "source": "dfg_node_1",
+      "target": "dfg_node_13",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_14": {
+      "id": "dfg_edge_14",
+      "source": "dfg_node_1",
+      "target": "dfg_node_16",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_15": {
+      "id": "dfg_edge_15",
+      "source": "dfg_node_17",
+      "target": "dfg_node_19",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_16": {
+      "id": "dfg_edge_16",
+      "source": "dfg_node_1",
+      "target": "dfg_node_17",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_17": {
+      "id": "dfg_edge_17",
+      "source": "dfg_node_20",
+      "target": "dfg_node_22",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_18": {
+      "id": "dfg_edge_18",
+      "source": "dfg_node_1",
+      "target": "dfg_node_20",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_19": {
+      "id": "dfg_edge_19",
+      "source": "dfg_node_1",
+      "target": "dfg_node_23",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 1058,
+    "source_line": 1059,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "Pot",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

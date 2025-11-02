@@ -1,0 +1,778 @@
+{
+  "contract": "OrganizeFunds",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "OrganizeFunds",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 13,
+        "column": 1,
+        "end_line": 209,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 13,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "TENHUNDWEI",
+      "data_type": "uint",
+      "scope": "OrganizeFunds",
+      "source_location": {
+        "line": 23,
+        "column": 3,
+        "end_line": 23,
+        "end_column": 35
+      },
+      "properties": {
+        "source_location": {
+          "line": 23,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "state_variable",
+      "name": "MAX_ACCOUNTS",
+      "data_type": "uint",
+      "scope": "OrganizeFunds",
+      "source_location": {
+        "line": 24,
+        "column": 3,
+        "end_line": 24,
+        "end_column": 35
+      },
+      "properties": {
+        "source_location": {
+          "line": 24,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "state_variable",
+      "name": "isLocked",
+      "data_type": "bool",
+      "scope": "OrganizeFunds",
+      "source_location": {
+        "line": 30,
+        "column": 3,
+        "end_line": 30,
+        "end_column": 24
+      },
+      "properties": {
+        "source_location": {
+          "line": 30,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "state_variable",
+      "name": "name",
+      "data_type": "string",
+      "scope": "OrganizeFunds",
+      "source_location": {
+        "line": 31,
+        "column": 3,
+        "end_line": 31,
+        "end_column": 22
+      },
+      "properties": {
+        "source_location": {
+          "line": 31,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "state_variable",
+      "name": "owner",
+      "data_type": "address",
+      "scope": "OrganizeFunds",
+      "source_location": {
+        "line": 32,
+        "column": 3,
+        "end_line": 32,
+        "end_column": 24
+      },
+      "properties": {
+        "source_location": {
+          "line": 32,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "state_variable",
+      "name": "activityAccounts",
+      "data_type": "mapping (uint => ActivityAccount)",
+      "scope": "OrganizeFunds",
+      "source_location": {
+        "line": 33,
+        "column": 3,
+        "end_line": 33,
+        "end_column": 54
+      },
+      "properties": {
+        "source_location": {
+          "line": 33,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "state_variable",
+      "name": "activityCount",
+      "data_type": "uint",
+      "scope": "OrganizeFunds",
+      "source_location": {
+        "line": 34,
+        "column": 3,
+        "end_line": 34,
+        "end_column": 29
+      },
+      "properties": {
+        "source_location": {
+          "line": 34,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "state_variable",
+      "name": "totalFundsReceived",
+      "data_type": "uint",
+      "scope": "OrganizeFunds",
+      "source_location": {
+        "line": 35,
+        "column": 3,
+        "end_line": 35,
+        "end_column": 34
+      },
+      "properties": {
+        "source_location": {
+          "line": 35,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_10": {
+      "id": "dfg_node_10",
+      "type": "state_variable",
+      "name": "totalFundsDistributed",
+      "data_type": "uint",
+      "scope": "OrganizeFunds",
+      "source_location": {
+        "line": 36,
+        "column": 3,
+        "end_line": 36,
+        "end_column": 37
+      },
+      "properties": {
+        "source_location": {
+          "line": 36,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_11": {
+      "id": "dfg_node_11",
+      "type": "state_variable",
+      "name": "totalFundsWithdrawn",
+      "data_type": "uint",
+      "scope": "OrganizeFunds",
+      "source_location": {
+        "line": 37,
+        "column": 3,
+        "end_line": 37,
+        "end_column": 35
+      },
+      "properties": {
+        "source_location": {
+          "line": 37,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_12": {
+      "id": "dfg_node_12",
+      "type": "state_variable",
+      "name": "withdrawGas",
+      "data_type": "uint",
+      "scope": "OrganizeFunds",
+      "source_location": {
+        "line": 38,
+        "column": 3,
+        "end_line": 38,
+        "end_column": 36
+      },
+      "properties": {
+        "source_location": {
+          "line": 38,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_13": {
+      "id": "dfg_node_13",
+      "type": "constructor_function",
+      "name": "OrganizeFunds",
+      "data_type": null,
+      "scope": "OrganizeFunds",
+      "source_location": {
+        "line": 55,
+        "column": 3,
+        "end_line": 57,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 55,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_14": {
+      "id": "dfg_node_14",
+      "type": "function",
+      "name": "lock",
+      "data_type": null,
+      "scope": "OrganizeFunds",
+      "source_location": {
+        "line": 59,
+        "column": 3,
+        "end_line": 61,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 59,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_15": {
+      "id": "dfg_node_15",
+      "type": "function",
+      "name": "setName",
+      "data_type": null,
+      "scope": "OrganizeFunds",
+      "source_location": {
+        "line": 63,
+        "column": 3,
+        "end_line": 65,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 63,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_16": {
+      "id": "dfg_node_16",
+      "type": "function",
+      "name": "reset",
+      "data_type": null,
+      "scope": "OrganizeFunds",
+      "source_location": {
+        "line": 72,
+        "column": 3,
+        "end_line": 78,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 72,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_17": {
+      "id": "dfg_node_17",
+      "type": "function",
+      "name": "setWitdrawGas",
+      "data_type": null,
+      "scope": "OrganizeFunds",
+      "source_location": {
+        "line": 85,
+        "column": 3,
+        "end_line": 88,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 85,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_18": {
+      "id": "dfg_node_18",
+      "type": "function",
+      "name": "addActivityAccount",
+      "data_type": null,
+      "scope": "OrganizeFunds",
+      "source_location": {
+        "line": 94,
+        "column": 3,
+        "end_line": 106,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 94,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_19": {
+      "id": "dfg_node_19",
+      "type": "function",
+      "name": "getActivityAccountInfo",
+      "data_type": null,
+      "scope": "OrganizeFunds",
+      "source_location": {
+        "line": 112,
+        "column": 3,
+        "end_line": 124,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 112,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_21": {
+      "id": "dfg_node_21",
+      "type": "parameter",
+      "name": "_idx",
+      "data_type": "uint",
+      "scope": "getActivityAccountInfo_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getActivityAccountInfo"
+      }
+    },
+    "dfg_node_23": {
+      "id": "dfg_node_23",
+      "type": "parameter",
+      "name": "_pctx10",
+      "data_type": "uint",
+      "scope": "getActivityAccountInfo_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getActivityAccountInfo"
+      }
+    },
+    "dfg_node_25": {
+      "id": "dfg_node_25",
+      "type": "parameter",
+      "name": "_name",
+      "data_type": "string",
+      "scope": "getActivityAccountInfo_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getActivityAccountInfo"
+      }
+    },
+    "dfg_node_27": {
+      "id": "dfg_node_27",
+      "type": "parameter",
+      "name": "_credited",
+      "data_type": "uint",
+      "scope": "getActivityAccountInfo_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getActivityAccountInfo"
+      }
+    },
+    "dfg_node_29": {
+      "id": "dfg_node_29",
+      "type": "parameter",
+      "name": "_balance",
+      "data_type": "uint",
+      "scope": "getActivityAccountInfo_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getActivityAccountInfo"
+      }
+    },
+    "dfg_node_30": {
+      "id": "dfg_node_30",
+      "type": "function",
+      "name": "getTotalPctx10",
+      "data_type": null,
+      "scope": "OrganizeFunds",
+      "source_location": {
+        "line": 130,
+        "column": 3,
+        "end_line": 135,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 130,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_32": {
+      "id": "dfg_node_32",
+      "type": "parameter",
+      "name": "_totalPctx10",
+      "data_type": "uint",
+      "scope": "getTotalPctx10_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getTotalPctx10"
+      }
+    },
+    "dfg_node_33": {
+      "id": "dfg_node_33",
+      "type": "function",
+      "name": "distribute",
+      "data_type": null,
+      "scope": "OrganizeFunds",
+      "source_location": {
+        "line": 151,
+        "column": 3,
+        "end_line": 174,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 151,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_34": {
+      "id": "dfg_node_34",
+      "type": "function",
+      "name": "withdraw",
+      "data_type": null,
+      "scope": "OrganizeFunds",
+      "source_location": {
+        "line": 181,
+        "column": 3,
+        "end_line": 199,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 181,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_35": {
+      "id": "dfg_node_35",
+      "type": "function",
+      "name": "hariKari",
+      "data_type": null,
+      "scope": "OrganizeFunds",
+      "source_location": {
+        "line": 205,
+        "column": 3,
+        "end_line": 207,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 205,
+          "column": 3
+        }
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_1",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_1",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_1",
+      "target": "dfg_node_7",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_1",
+      "target": "dfg_node_8",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_1",
+      "target": "dfg_node_9",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_9": {
+      "id": "dfg_edge_9",
+      "source": "dfg_node_1",
+      "target": "dfg_node_10",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_10": {
+      "id": "dfg_edge_10",
+      "source": "dfg_node_1",
+      "target": "dfg_node_11",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_11": {
+      "id": "dfg_edge_11",
+      "source": "dfg_node_1",
+      "target": "dfg_node_12",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_12": {
+      "id": "dfg_edge_12",
+      "source": "dfg_node_1",
+      "target": "dfg_node_13",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_13": {
+      "id": "dfg_edge_13",
+      "source": "dfg_node_1",
+      "target": "dfg_node_14",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_14": {
+      "id": "dfg_edge_14",
+      "source": "dfg_node_1",
+      "target": "dfg_node_15",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_15": {
+      "id": "dfg_edge_15",
+      "source": "dfg_node_1",
+      "target": "dfg_node_16",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_16": {
+      "id": "dfg_edge_16",
+      "source": "dfg_node_1",
+      "target": "dfg_node_17",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_17": {
+      "id": "dfg_edge_17",
+      "source": "dfg_node_1",
+      "target": "dfg_node_18",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_18": {
+      "id": "dfg_edge_18",
+      "source": "dfg_node_19",
+      "target": "dfg_node_21",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_19": {
+      "id": "dfg_edge_19",
+      "source": "dfg_node_19",
+      "target": "dfg_node_23",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_20": {
+      "id": "dfg_edge_20",
+      "source": "dfg_node_19",
+      "target": "dfg_node_25",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_21": {
+      "id": "dfg_edge_21",
+      "source": "dfg_node_19",
+      "target": "dfg_node_27",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_22": {
+      "id": "dfg_edge_22",
+      "source": "dfg_node_19",
+      "target": "dfg_node_29",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_23": {
+      "id": "dfg_edge_23",
+      "source": "dfg_node_1",
+      "target": "dfg_node_19",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_24": {
+      "id": "dfg_edge_24",
+      "source": "dfg_node_30",
+      "target": "dfg_node_32",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_25": {
+      "id": "dfg_edge_25",
+      "source": "dfg_node_1",
+      "target": "dfg_node_30",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_26": {
+      "id": "dfg_edge_26",
+      "source": "dfg_node_1",
+      "target": "dfg_node_33",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_27": {
+      "id": "dfg_edge_27",
+      "source": "dfg_node_1",
+      "target": "dfg_node_34",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_28": {
+      "id": "dfg_edge_28",
+      "source": "dfg_node_1",
+      "target": "dfg_node_35",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 551,
+    "source_line": 552,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "OrganizeFunds",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

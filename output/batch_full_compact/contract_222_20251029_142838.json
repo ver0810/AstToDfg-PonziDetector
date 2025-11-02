@@ -1,0 +1,1387 @@
+{
+  "contract": "dEthereumlotteryNet",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "dEthereumlotteryNet",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 1,
+        "column": 1,
+        "end_line": 333,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "state_variable",
+      "name": "owner",
+      "data_type": "address",
+      "scope": "dEthereumlotteryNet",
+      "source_location": {
+        "line": 12,
+        "column": 2,
+        "end_line": 12,
+        "end_column": 24
+      },
+      "properties": {
+        "source_location": {
+          "line": 12,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_3": {
+      "id": "dfg_node_3",
+      "type": "state_variable",
+      "name": "fee",
+      "data_type": "uint",
+      "scope": "dEthereumlotteryNet",
+      "source_location": {
+        "line": 13,
+        "column": 2,
+        "end_line": 13,
+        "end_column": 32
+      },
+      "properties": {
+        "source_location": {
+          "line": 13,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "state_variable",
+      "name": "investorFee",
+      "data_type": "uint",
+      "scope": "dEthereumlotteryNet",
+      "source_location": {
+        "line": 14,
+        "column": 2,
+        "end_line": 14,
+        "end_column": 41
+      },
+      "properties": {
+        "source_location": {
+          "line": 14,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "state_variable",
+      "name": "prepareBlockDelay",
+      "data_type": "uint",
+      "scope": "dEthereumlotteryNet",
+      "source_location": {
+        "line": 15,
+        "column": 2,
+        "end_line": 15,
+        "end_column": 46
+      },
+      "properties": {
+        "source_location": {
+          "line": 15,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "state_variable",
+      "name": "rollLossBlockDelay",
+      "data_type": "uint",
+      "scope": "dEthereumlotteryNet",
+      "source_location": {
+        "line": 16,
+        "column": 2,
+        "end_line": 16,
+        "end_column": 48
+      },
+      "properties": {
+        "source_location": {
+          "line": 16,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "state_variable",
+      "name": "investUnit",
+      "data_type": "uint",
+      "scope": "dEthereumlotteryNet",
+      "source_location": {
+        "line": 17,
+        "column": 2,
+        "end_line": 17,
+        "end_column": 45
+      },
+      "properties": {
+        "source_location": {
+          "line": 17,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "state_variable",
+      "name": "extraRate",
+      "data_type": "uint",
+      "scope": "dEthereumlotteryNet",
+      "source_location": {
+        "line": 18,
+        "column": 2,
+        "end_line": 18,
+        "end_column": 40
+      },
+      "properties": {
+        "source_location": {
+          "line": 18,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "state_variable",
+      "name": "minimumRollPrice",
+      "data_type": "uint",
+      "scope": "dEthereumlotteryNet",
+      "source_location": {
+        "line": 19,
+        "column": 2,
+        "end_line": 19,
+        "end_column": 53
+      },
+      "properties": {
+        "source_location": {
+          "line": 19,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_10": {
+      "id": "dfg_node_10",
+      "type": "state_variable",
+      "name": "investMinDuration",
+      "data_type": "uint",
+      "scope": "dEthereumlotteryNet",
+      "source_location": {
+        "line": 20,
+        "column": 2,
+        "end_line": 20,
+        "end_column": 51
+      },
+      "properties": {
+        "source_location": {
+          "line": 20,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_11": {
+      "id": "dfg_node_11",
+      "type": "state_variable",
+      "name": "BestRollRate",
+      "data_type": "uint",
+      "scope": "dEthereumlotteryNet",
+      "source_location": {
+        "line": 21,
+        "column": 2,
+        "end_line": 21,
+        "end_column": 42
+      },
+      "properties": {
+        "source_location": {
+          "line": 21,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_12": {
+      "id": "dfg_node_12",
+      "type": "state_variable",
+      "name": "ContractEnabled",
+      "data_type": "bool",
+      "scope": "dEthereumlotteryNet",
+      "source_location": {
+        "line": 23,
+        "column": 5,
+        "end_line": 23,
+        "end_column": 40
+      },
+      "properties": {
+        "source_location": {
+          "line": 23,
+          "column": 5
+        }
+      }
+    },
+    "dfg_node_13": {
+      "id": "dfg_node_13",
+      "type": "state_variable",
+      "name": "Jackpot",
+      "data_type": "uint",
+      "scope": "dEthereumlotteryNet",
+      "source_location": {
+        "line": 24,
+        "column": 2,
+        "end_line": 24,
+        "end_column": 22
+      },
+      "properties": {
+        "source_location": {
+          "line": 24,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_14": {
+      "id": "dfg_node_14",
+      "type": "state_variable",
+      "name": "RollCount",
+      "data_type": "uint",
+      "scope": "dEthereumlotteryNet",
+      "source_location": {
+        "line": 25,
+        "column": 2,
+        "end_line": 25,
+        "end_column": 24
+      },
+      "properties": {
+        "source_location": {
+          "line": 25,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_15": {
+      "id": "dfg_node_15",
+      "type": "state_variable",
+      "name": "JackpotHits",
+      "data_type": "uint",
+      "scope": "dEthereumlotteryNet",
+      "source_location": {
+        "line": 26,
+        "column": 2,
+        "end_line": 26,
+        "end_column": 26
+      },
+      "properties": {
+        "source_location": {
+          "line": 26,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_16": {
+      "id": "dfg_node_16",
+      "type": "state_variable",
+      "name": "ContractDisabledBlock",
+      "data_type": "uint",
+      "scope": "dEthereumlotteryNet",
+      "source_location": {
+        "line": 28,
+        "column": 2,
+        "end_line": 28,
+        "end_column": 37
+      },
+      "properties": {
+        "source_location": {
+          "line": 28,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_17": {
+      "id": "dfg_node_17",
+      "type": "state_variable",
+      "name": "jackpot_",
+      "data_type": "uint",
+      "scope": "dEthereumlotteryNet",
+      "source_location": {
+        "line": 29,
+        "column": 2,
+        "end_line": 29,
+        "end_column": 24
+      },
+      "properties": {
+        "source_location": {
+          "line": 29,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_18": {
+      "id": "dfg_node_18",
+      "type": "state_variable",
+      "name": "extraJackpot_",
+      "data_type": "uint",
+      "scope": "dEthereumlotteryNet",
+      "source_location": {
+        "line": 30,
+        "column": 2,
+        "end_line": 30,
+        "end_column": 29
+      },
+      "properties": {
+        "source_location": {
+          "line": 30,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_19": {
+      "id": "dfg_node_19",
+      "type": "state_variable",
+      "name": "feeValue",
+      "data_type": "uint",
+      "scope": "dEthereumlotteryNet",
+      "source_location": {
+        "line": 31,
+        "column": 2,
+        "end_line": 31,
+        "end_column": 24
+      },
+      "properties": {
+        "source_location": {
+          "line": 31,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_20": {
+      "id": "dfg_node_20",
+      "type": "state_variable",
+      "name": "playersPot",
+      "data_type": "uint",
+      "scope": "dEthereumlotteryNet",
+      "source_location": {
+        "line": 32,
+        "column": 2,
+        "end_line": 32,
+        "end_column": 26
+      },
+      "properties": {
+        "source_location": {
+          "line": 32,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_21": {
+      "id": "dfg_node_21",
+      "type": "state_variable",
+      "name": "players",
+      "data_type": "mapping(address => rolls_s[])",
+      "scope": "dEthereumlotteryNet",
+      "source_location": {
+        "line": 43,
+        "column": 2,
+        "end_line": 43,
+        "end_column": 48
+      },
+      "properties": {
+        "source_location": {
+          "line": 43,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_22": {
+      "id": "dfg_node_22",
+      "type": "state_variable",
+      "name": "investors",
+      "data_type": "investors_s[]",
+      "scope": "dEthereumlotteryNet",
+      "source_location": {
+        "line": 54,
+        "column": 2,
+        "end_line": 54,
+        "end_column": 34
+      },
+      "properties": {
+        "source_location": {
+          "line": 54,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_23": {
+      "id": "dfg_node_23",
+      "type": "state_variable",
+      "name": "Information",
+      "data_type": "string",
+      "scope": "dEthereumlotteryNet",
+      "source_location": {
+        "line": 56,
+        "column": 2,
+        "end_line": 56,
+        "end_column": 70
+      },
+      "properties": {
+        "source_location": {
+          "line": 56,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_24": {
+      "id": "dfg_node_24",
+      "type": "constructor_function",
+      "name": "dEthereumlotteryNet",
+      "data_type": null,
+      "scope": "dEthereumlotteryNet",
+      "source_location": {
+        "line": 61,
+        "column": 2,
+        "end_line": 64,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 61,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_25": {
+      "id": "dfg_node_25",
+      "type": "function",
+      "name": "ChanceOfWinning",
+      "data_type": null,
+      "scope": "dEthereumlotteryNet",
+      "source_location": {
+        "line": 69,
+        "column": 2,
+        "end_line": 88,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 69,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_27": {
+      "id": "dfg_node_27",
+      "type": "parameter",
+      "name": "Rate",
+      "data_type": "uint",
+      "scope": "ChanceOfWinning_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "ChanceOfWinning"
+      }
+    },
+    "dfg_node_29": {
+      "id": "dfg_node_29",
+      "type": "parameter",
+      "name": "Bet",
+      "data_type": "uint",
+      "scope": "ChanceOfWinning_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "ChanceOfWinning"
+      }
+    },
+    "dfg_node_30": {
+      "id": "dfg_node_30",
+      "type": "function",
+      "name": "BetPriceLimit",
+      "data_type": null,
+      "scope": "dEthereumlotteryNet",
+      "source_location": {
+        "line": 89,
+        "column": 2,
+        "end_line": 92,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 89,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_32": {
+      "id": "dfg_node_32",
+      "type": "parameter",
+      "name": "min",
+      "data_type": "uint",
+      "scope": "BetPriceLimit_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "BetPriceLimit"
+      }
+    },
+    "dfg_node_34": {
+      "id": "dfg_node_34",
+      "type": "parameter",
+      "name": "max",
+      "data_type": "uint",
+      "scope": "BetPriceLimit_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "BetPriceLimit"
+      }
+    },
+    "dfg_node_35": {
+      "id": "dfg_node_35",
+      "type": "function",
+      "name": "Investors",
+      "data_type": null,
+      "scope": "dEthereumlotteryNet",
+      "source_location": {
+        "line": 93,
+        "column": 2,
+        "end_line": 103,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 93,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_37": {
+      "id": "dfg_node_37",
+      "type": "parameter",
+      "name": "Investment",
+      "data_type": "uint",
+      "scope": "Investors_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "Investors"
+      }
+    },
+    "dfg_node_39": {
+      "id": "dfg_node_39",
+      "type": "parameter",
+      "name": "Balance",
+      "data_type": "uint",
+      "scope": "Investors_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "Investors"
+      }
+    },
+    "dfg_node_41": {
+      "id": "dfg_node_41",
+      "type": "parameter",
+      "name": "Live",
+      "data_type": "bool",
+      "scope": "Investors_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "Investors"
+      }
+    },
+    "dfg_node_42": {
+      "id": "dfg_node_42",
+      "type": "function",
+      "name": "Invest",
+      "data_type": null,
+      "scope": "dEthereumlotteryNet",
+      "source_location": {
+        "line": 113,
+        "column": 2,
+        "end_line": 136,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 113,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_43": {
+      "id": "dfg_node_43",
+      "type": "function",
+      "name": "GetMyInvestmentBalance",
+      "data_type": null,
+      "scope": "dEthereumlotteryNet",
+      "source_location": {
+        "line": 137,
+        "column": 2,
+        "end_line": 144,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 137,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_44": {
+      "id": "dfg_node_44",
+      "type": "function",
+      "name": "CancelMyInvestment",
+      "data_type": null,
+      "scope": "dEthereumlotteryNet",
+      "source_location": {
+        "line": 145,
+        "column": 2,
+        "end_line": 161,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 145,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_45": {
+      "id": "dfg_node_45",
+      "type": "function",
+      "name": "DoRoll",
+      "data_type": null,
+      "scope": "dEthereumlotteryNet",
+      "source_location": {
+        "line": 163,
+        "column": 2,
+        "end_line": 197,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 163,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_46": {
+      "id": "dfg_node_46",
+      "type": "function",
+      "name": "PrepareRoll",
+      "data_type": null,
+      "scope": "dEthereumlotteryNet",
+      "source_location": {
+        "line": 198,
+        "column": 2,
+        "end_line": 222,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 198,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_47": {
+      "id": "dfg_node_47",
+      "type": "function",
+      "name": "OwnerCloseContract",
+      "data_type": null,
+      "scope": "dEthereumlotteryNet",
+      "source_location": {
+        "line": 224,
+        "column": 2,
+        "end_line": 238,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 224,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_48": {
+      "id": "dfg_node_48",
+      "type": "function",
+      "name": "OwnerGetFee",
+      "data_type": null,
+      "scope": "dEthereumlotteryNet",
+      "source_location": {
+        "line": 239,
+        "column": 2,
+        "end_line": 243,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 239,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_49": {
+      "id": "dfg_node_49",
+      "type": "function",
+      "name": "setJackpot",
+      "data_type": null,
+      "scope": "dEthereumlotteryNet",
+      "source_location": {
+        "line": 248,
+        "column": 2,
+        "end_line": 250,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 248,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_50": {
+      "id": "dfg_node_50",
+      "type": "function",
+      "name": "makeRoll",
+      "data_type": null,
+      "scope": "dEthereumlotteryNet",
+      "source_location": {
+        "line": 251,
+        "column": 2,
+        "end_line": 277,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 251,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_52": {
+      "id": "dfg_node_52",
+      "type": "parameter",
+      "name": "win",
+      "data_type": "uint",
+      "scope": "makeRoll_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "makeRoll"
+      }
+    },
+    "dfg_node_53": {
+      "id": "dfg_node_53",
+      "type": "function",
+      "name": "investorAddFee",
+      "data_type": null,
+      "scope": "dEthereumlotteryNet",
+      "source_location": {
+        "line": 278,
+        "column": 2,
+        "end_line": 289,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 278,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_54": {
+      "id": "dfg_node_54",
+      "type": "function",
+      "name": "prepareRoll",
+      "data_type": null,
+      "scope": "dEthereumlotteryNet",
+      "source_location": {
+        "line": 290,
+        "column": 2,
+        "end_line": 300,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 290,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_55": {
+      "id": "dfg_node_55",
+      "type": "function",
+      "name": "getRate",
+      "data_type": null,
+      "scope": "dEthereumlotteryNet",
+      "source_location": {
+        "line": 305,
+        "column": 2,
+        "end_line": 307,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 305,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_57": {
+      "id": "dfg_node_57",
+      "type": "parameter",
+      "name": "param_55",
+      "data_type": "uint",
+      "scope": "getRate_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getRate"
+      }
+    },
+    "dfg_node_58": {
+      "id": "dfg_node_58",
+      "type": "function",
+      "name": "getRealBet",
+      "data_type": null,
+      "scope": "dEthereumlotteryNet",
+      "source_location": {
+        "line": 308,
+        "column": 2,
+        "end_line": 310,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 308,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_60": {
+      "id": "dfg_node_60",
+      "type": "parameter",
+      "name": "param_58",
+      "data_type": "uint",
+      "scope": "getRealBet_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getRealBet"
+      }
+    },
+    "dfg_node_61": {
+      "id": "dfg_node_61",
+      "type": "function",
+      "name": "getInvestorByAddress",
+      "data_type": null,
+      "scope": "dEthereumlotteryNet",
+      "source_location": {
+        "line": 311,
+        "column": 2,
+        "end_line": 318,
+        "end_column": 3
+      },
+      "properties": {
+        "source_location": {
+          "line": 311,
+          "column": 2
+        }
+      }
+    },
+    "dfg_node_63": {
+      "id": "dfg_node_63",
+      "type": "parameter",
+      "name": "id",
+      "data_type": "uint",
+      "scope": "getInvestorByAddress_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getInvestorByAddress"
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_3",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_1",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_1",
+      "target": "dfg_node_5",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_1",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_1",
+      "target": "dfg_node_7",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_1",
+      "target": "dfg_node_8",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_1",
+      "target": "dfg_node_9",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_9": {
+      "id": "dfg_edge_9",
+      "source": "dfg_node_1",
+      "target": "dfg_node_10",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_10": {
+      "id": "dfg_edge_10",
+      "source": "dfg_node_1",
+      "target": "dfg_node_11",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_11": {
+      "id": "dfg_edge_11",
+      "source": "dfg_node_1",
+      "target": "dfg_node_12",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_12": {
+      "id": "dfg_edge_12",
+      "source": "dfg_node_1",
+      "target": "dfg_node_13",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_13": {
+      "id": "dfg_edge_13",
+      "source": "dfg_node_1",
+      "target": "dfg_node_14",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_14": {
+      "id": "dfg_edge_14",
+      "source": "dfg_node_1",
+      "target": "dfg_node_15",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_15": {
+      "id": "dfg_edge_15",
+      "source": "dfg_node_1",
+      "target": "dfg_node_16",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_16": {
+      "id": "dfg_edge_16",
+      "source": "dfg_node_1",
+      "target": "dfg_node_17",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_17": {
+      "id": "dfg_edge_17",
+      "source": "dfg_node_1",
+      "target": "dfg_node_18",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_18": {
+      "id": "dfg_edge_18",
+      "source": "dfg_node_1",
+      "target": "dfg_node_19",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_19": {
+      "id": "dfg_edge_19",
+      "source": "dfg_node_1",
+      "target": "dfg_node_20",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_20": {
+      "id": "dfg_edge_20",
+      "source": "dfg_node_1",
+      "target": "dfg_node_21",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_21": {
+      "id": "dfg_edge_21",
+      "source": "dfg_node_1",
+      "target": "dfg_node_22",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_22": {
+      "id": "dfg_edge_22",
+      "source": "dfg_node_1",
+      "target": "dfg_node_23",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_23": {
+      "id": "dfg_edge_23",
+      "source": "dfg_node_1",
+      "target": "dfg_node_24",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_24": {
+      "id": "dfg_edge_24",
+      "source": "dfg_node_25",
+      "target": "dfg_node_27",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_25": {
+      "id": "dfg_edge_25",
+      "source": "dfg_node_25",
+      "target": "dfg_node_29",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_26": {
+      "id": "dfg_edge_26",
+      "source": "dfg_node_1",
+      "target": "dfg_node_25",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_27": {
+      "id": "dfg_edge_27",
+      "source": "dfg_node_30",
+      "target": "dfg_node_32",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_28": {
+      "id": "dfg_edge_28",
+      "source": "dfg_node_30",
+      "target": "dfg_node_34",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_29": {
+      "id": "dfg_edge_29",
+      "source": "dfg_node_1",
+      "target": "dfg_node_30",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_30": {
+      "id": "dfg_edge_30",
+      "source": "dfg_node_35",
+      "target": "dfg_node_37",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_31": {
+      "id": "dfg_edge_31",
+      "source": "dfg_node_35",
+      "target": "dfg_node_39",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_32": {
+      "id": "dfg_edge_32",
+      "source": "dfg_node_35",
+      "target": "dfg_node_41",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_33": {
+      "id": "dfg_edge_33",
+      "source": "dfg_node_1",
+      "target": "dfg_node_35",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_34": {
+      "id": "dfg_edge_34",
+      "source": "dfg_node_1",
+      "target": "dfg_node_42",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_35": {
+      "id": "dfg_edge_35",
+      "source": "dfg_node_1",
+      "target": "dfg_node_43",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_36": {
+      "id": "dfg_edge_36",
+      "source": "dfg_node_1",
+      "target": "dfg_node_44",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_37": {
+      "id": "dfg_edge_37",
+      "source": "dfg_node_1",
+      "target": "dfg_node_45",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_38": {
+      "id": "dfg_edge_38",
+      "source": "dfg_node_1",
+      "target": "dfg_node_46",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_39": {
+      "id": "dfg_edge_39",
+      "source": "dfg_node_1",
+      "target": "dfg_node_47",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_40": {
+      "id": "dfg_edge_40",
+      "source": "dfg_node_1",
+      "target": "dfg_node_48",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_41": {
+      "id": "dfg_edge_41",
+      "source": "dfg_node_1",
+      "target": "dfg_node_49",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_42": {
+      "id": "dfg_edge_42",
+      "source": "dfg_node_50",
+      "target": "dfg_node_52",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_43": {
+      "id": "dfg_edge_43",
+      "source": "dfg_node_1",
+      "target": "dfg_node_50",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_44": {
+      "id": "dfg_edge_44",
+      "source": "dfg_node_1",
+      "target": "dfg_node_53",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_45": {
+      "id": "dfg_edge_45",
+      "source": "dfg_node_1",
+      "target": "dfg_node_54",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_46": {
+      "id": "dfg_edge_46",
+      "source": "dfg_node_55",
+      "target": "dfg_node_57",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_47": {
+      "id": "dfg_edge_47",
+      "source": "dfg_node_1",
+      "target": "dfg_node_55",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_48": {
+      "id": "dfg_edge_48",
+      "source": "dfg_node_58",
+      "target": "dfg_node_60",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_49": {
+      "id": "dfg_edge_49",
+      "source": "dfg_node_1",
+      "target": "dfg_node_58",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_50": {
+      "id": "dfg_edge_50",
+      "source": "dfg_node_61",
+      "target": "dfg_node_63",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_51": {
+      "id": "dfg_edge_51",
+      "source": "dfg_node_1",
+      "target": "dfg_node_61",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 222,
+    "source_line": 223,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "dEthereumlotteryNet",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}

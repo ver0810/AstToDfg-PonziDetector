@@ -1,0 +1,489 @@
+{
+  "contract": "PricingStrategy",
+  "solidity_version": "0.4.x",
+  "nodes": {
+    "dfg_node_1": {
+      "id": "dfg_node_1",
+      "type": "contract",
+      "name": "PricingStrategy",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 4,
+        "column": 1,
+        "end_line": 10,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 4,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_2": {
+      "id": "dfg_node_2",
+      "type": "function",
+      "name": "calculatePrice",
+      "data_type": null,
+      "scope": "PricingStrategy",
+      "source_location": {
+        "line": 9,
+        "column": 3,
+        "end_line": 9,
+        "end_column": 134
+      },
+      "properties": {
+        "source_location": {
+          "line": 9,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_4": {
+      "id": "dfg_node_4",
+      "type": "parameter",
+      "name": "tokenAmount",
+      "data_type": "uint",
+      "scope": "calculatePrice_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "calculatePrice"
+      }
+    },
+    "dfg_node_5": {
+      "id": "dfg_node_5",
+      "type": "contract",
+      "name": "MilestonePricing",
+      "data_type": null,
+      "scope": "global",
+      "source_location": {
+        "line": 17,
+        "column": 1,
+        "end_line": 124,
+        "end_column": 2
+      },
+      "properties": {
+        "source_location": {
+          "line": 17,
+          "column": 1
+        }
+      }
+    },
+    "dfg_node_6": {
+      "id": "dfg_node_6",
+      "type": "state_variable",
+      "name": "MAX_MILESTONE",
+      "data_type": "uint",
+      "scope": "MilestonePricing",
+      "source_location": {
+        "line": 19,
+        "column": 3,
+        "end_line": 19,
+        "end_column": 43
+      },
+      "properties": {
+        "source_location": {
+          "line": 19,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_7": {
+      "id": "dfg_node_7",
+      "type": "state_variable",
+      "name": "preicoContractAddress",
+      "data_type": "address",
+      "scope": "MilestonePricing",
+      "source_location": {
+        "line": 22,
+        "column": 3,
+        "end_line": 22,
+        "end_column": 40
+      },
+      "properties": {
+        "source_location": {
+          "line": 22,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_8": {
+      "id": "dfg_node_8",
+      "type": "state_variable",
+      "name": "preicoPrice",
+      "data_type": "uint",
+      "scope": "MilestonePricing",
+      "source_location": {
+        "line": 25,
+        "column": 3,
+        "end_line": 25,
+        "end_column": 27
+      },
+      "properties": {
+        "source_location": {
+          "line": 25,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_9": {
+      "id": "dfg_node_9",
+      "type": "state_variable",
+      "name": "milestones",
+      "data_type": "Milestone[10]",
+      "scope": "MilestonePricing",
+      "source_location": {
+        "line": 42,
+        "column": 3,
+        "end_line": 42,
+        "end_column": 35
+      },
+      "properties": {
+        "source_location": {
+          "line": 42,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_10": {
+      "id": "dfg_node_10",
+      "type": "state_variable",
+      "name": "milestoneCount",
+      "data_type": "uint",
+      "scope": "MilestonePricing",
+      "source_location": {
+        "line": 45,
+        "column": 3,
+        "end_line": 45,
+        "end_column": 30
+      },
+      "properties": {
+        "source_location": {
+          "line": 45,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_11": {
+      "id": "dfg_node_11",
+      "type": "constructor_function",
+      "name": "MilestonePricing",
+      "data_type": null,
+      "scope": "MilestonePricing",
+      "source_location": {
+        "line": 52,
+        "column": 3,
+        "end_line": 68,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 52,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_12": {
+      "id": "dfg_node_12",
+      "type": "function",
+      "name": "getMilestone",
+      "data_type": null,
+      "scope": "MilestonePricing",
+      "source_location": {
+        "line": 77,
+        "column": 3,
+        "end_line": 79,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 77,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_14": {
+      "id": "dfg_node_14",
+      "type": "parameter",
+      "name": "param_12",
+      "data_type": "uint",
+      "scope": "getMilestone_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getMilestone"
+      }
+    },
+    "dfg_node_16": {
+      "id": "dfg_node_16",
+      "type": "parameter",
+      "name": "param_14",
+      "data_type": "uint",
+      "scope": "getMilestone_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getMilestone"
+      }
+    },
+    "dfg_node_17": {
+      "id": "dfg_node_17",
+      "type": "function",
+      "name": "getCurrentMilestone",
+      "data_type": null,
+      "scope": "MilestonePricing",
+      "source_location": {
+        "line": 86,
+        "column": 3,
+        "end_line": 95,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 86,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_19": {
+      "id": "dfg_node_19",
+      "type": "parameter",
+      "name": "param_17",
+      "data_type": "Milestone",
+      "scope": "getCurrentMilestone_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getCurrentMilestone"
+      }
+    },
+    "dfg_node_20": {
+      "id": "dfg_node_20",
+      "type": "function",
+      "name": "getCurrentPrice",
+      "data_type": null,
+      "scope": "MilestonePricing",
+      "source_location": {
+        "line": 102,
+        "column": 3,
+        "end_line": 104,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 102,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_22": {
+      "id": "dfg_node_22",
+      "type": "parameter",
+      "name": "result",
+      "data_type": "uint",
+      "scope": "getCurrentPrice_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "getCurrentPrice"
+      }
+    },
+    "dfg_node_23": {
+      "id": "dfg_node_23",
+      "type": "function",
+      "name": "calculatePrice",
+      "data_type": null,
+      "scope": "MilestonePricing",
+      "source_location": {
+        "line": 109,
+        "column": 3,
+        "end_line": 118,
+        "end_column": 4
+      },
+      "properties": {
+        "source_location": {
+          "line": 109,
+          "column": 3
+        }
+      }
+    },
+    "dfg_node_25": {
+      "id": "dfg_node_25",
+      "type": "parameter",
+      "name": "param_23",
+      "data_type": "uint",
+      "scope": "calculatePrice_function",
+      "source_location": null,
+      "properties": {
+        "is_return": true,
+        "function": "calculatePrice"
+      }
+    }
+  },
+  "edges": {
+    "dfg_edge_1": {
+      "id": "dfg_edge_1",
+      "source": "dfg_node_2",
+      "target": "dfg_node_4",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_2": {
+      "id": "dfg_edge_2",
+      "source": "dfg_node_1",
+      "target": "dfg_node_2",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_3": {
+      "id": "dfg_edge_3",
+      "source": "dfg_node_5",
+      "target": "dfg_node_6",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_4": {
+      "id": "dfg_edge_4",
+      "source": "dfg_node_5",
+      "target": "dfg_node_7",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_5": {
+      "id": "dfg_edge_5",
+      "source": "dfg_node_5",
+      "target": "dfg_node_8",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_6": {
+      "id": "dfg_edge_6",
+      "source": "dfg_node_5",
+      "target": "dfg_node_9",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_7": {
+      "id": "dfg_edge_7",
+      "source": "dfg_node_5",
+      "target": "dfg_node_10",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_8": {
+      "id": "dfg_edge_8",
+      "source": "dfg_node_5",
+      "target": "dfg_node_11",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_9": {
+      "id": "dfg_edge_9",
+      "source": "dfg_node_12",
+      "target": "dfg_node_14",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_10": {
+      "id": "dfg_edge_10",
+      "source": "dfg_node_12",
+      "target": "dfg_node_16",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_11": {
+      "id": "dfg_edge_11",
+      "source": "dfg_node_5",
+      "target": "dfg_node_12",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_12": {
+      "id": "dfg_edge_12",
+      "source": "dfg_node_17",
+      "target": "dfg_node_19",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_13": {
+      "id": "dfg_edge_13",
+      "source": "dfg_node_5",
+      "target": "dfg_node_17",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_14": {
+      "id": "dfg_edge_14",
+      "source": "dfg_node_20",
+      "target": "dfg_node_22",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_15": {
+      "id": "dfg_edge_15",
+      "source": "dfg_node_5",
+      "target": "dfg_node_20",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_16": {
+      "id": "dfg_edge_16",
+      "source": "dfg_node_23",
+      "target": "dfg_node_25",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    },
+    "dfg_edge_17": {
+      "id": "dfg_edge_17",
+      "source": "dfg_node_5",
+      "target": "dfg_node_23",
+      "type": "definition",
+      "label": null,
+      "weight": 1,
+      "properties": {}
+    }
+  },
+  "metadata": {
+    "index": 1456,
+    "source_line": 1457,
+    "label": 0,
+    "mode": "compact",
+    "contract_name": "PricingStrategy",
+    "timestamp": "20251029_142838"
+  },
+  "label": 0
+}
