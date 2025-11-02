@@ -4,12 +4,44 @@ A comprehensive system for parsing Solidity smart contracts (specifically target
 
 ## 🚀 Features
 
-- **Solidity 0.4.x Support**: Specialized handling for legacy Solidity features
-- **AST Construction**: Complete Abstract Syntax Tree generation using tree-sitter
-- **DFG Generation**: Data Flow Graph construction with control, data, and definition dependencies
-- **Multiple Output Formats**: JSON exports, PNG visualizations, and summary reports
-- **Batch Processing**: Analyze individual files or entire directories
-- **Legacy Feature Support**: Handles constructors, constant keywords, and 0.4.x syntax
+- **🎯 Unified Pipeline**: One-command workflow from source code to detection results
+- **📊 Complete Analysis**: AST → DFG → Detection → Visualization
+- **🔍 Ponzi Detection**: Built-in LLM-based Ponzi scheme detection
+- **🎨 Visualization**: Automatic DFG graph visualization
+- **⚙️ Flexible Configuration**: Multiple output modes (compact/standard/verbose)
+- **🔄 Batch Processing**: Process multiple contracts efficiently
+- **📦 Solidity 0.4.x Support**: Specialized handling for legacy Solidity features
+- **🌳 AST Construction**: Complete Abstract Syntax Tree generation using tree-sitter
+- **📈 DFG Generation**: Data Flow Graph construction with control, data, and definition dependencies
+
+## ⚡ Quick Start
+
+### Option 1: Use the Main Pipeline (Recommended)
+
+```bash
+# Basic analysis - Generate DFG
+python -m src.main examples/solidity_04x/simple_contract.sol
+
+# With Ponzi detection
+python -m src.main examples/solidity_04x/simple_contract.sol --detect
+
+# Full pipeline: Analysis + Detection + Visualization
+python -m src.main examples/solidity_04x/simple_contract.sol --detect --visualize
+
+# Batch processing
+python -m src.main examples/solidity_04x/*.sol --batch --detect
+```
+
+See [Main Script Guide](docs/MAIN_SCRIPT_GUIDE.md) for detailed usage.
+
+### Option 2: Use Python API
+
+```python
+from src import SolidityAnalyzer
+
+analyzer = SolidityAnalyzer(solidity_version="0.4.x")
+result = analyzer.analyze_file("contract.sol")
+```
 
 ## 📋 Requirements
 
@@ -55,19 +87,28 @@ brew install graphviz
 ```
 ast-solidity/
 ├── src/                           # Core modules
-│   ├── analyzer.py               # Main orchestrator
-│   ├── ast_builder.py             # AST construction
-│   ├── dfg_builder.py             # DFG construction
-│   ├── solidity_04x_handler.py    # 0.4.x specific handling
-│   ├── json_serializer.py         # JSON export
-│   ├── visualizer.py              # Graph visualization
-│   └── node_types.py              # Type definitions
+│   ├── main.py                   # 🎯 Main pipeline orchestrator
+│   ├── analyzer.py               # Main analyzer
+│   ├── ast_builder/              # AST construction
+│   │   ├── ast_builder.py
+│   │   ├── node_types.py
+│   │   └── solidity_04x_handler.py
+│   ├── dfg_builder/              # DFG construction
+│   │   ├── dfg_builder.py
+│   │   └── dfg_config.py
+│   ├── visualization/            # Graph visualization
+│   │   └── visualizer.py
+│   ├── detector/                 # Ponzi detection
+│   │   ├── llm_detector.py
+│   │   └── batch_detector.py
+│   ├── utils/                    # Utility functions
+│   └── json_serializer.py        # JSON export
 ├── examples/solidity_04x/         # Example contracts
+├── docs/                          # Documentation
+│   └── MAIN_SCRIPT_GUIDE.md      # Main script usage guide
 ├── output/                        # Generated outputs
-│   ├── dfgs/                      # JSON DFG files
-│   └── graphs/                    # PNG visualizations
-├── tree-sitter-solidity/          # Parser library
-└── test_analyzer.py               # Test suite
+├── ast-solidity.py               # 🚀 CLI entry point
+└── tree-sitter-solidity/          # Parser library
 ```
 
 ## 🎯 Quick Start

@@ -66,7 +66,7 @@ class StaticAnalyzer:
         wait=wait_exponential(multiplier=1, max=10),
         reraise=True
     )
-    async def analyze_code(self, contract_data: str) -> str:
+    async def analyze_code(self, contract_data: str) -> ClassificationResult:
         """Analyze contract code/DFG and generate report"""
         try:
             response = await self.client.chat.completions.create(
@@ -79,47 +79,6 @@ class StaticAnalyzer:
                 temperature=0
             )
             content = response.choices[0].message.content
-            return content if content else "分析失败：API未返回内容"
-        except Exception as e:
-            print(f"模型分析失败: {e}")
-            return "分析失败"
-
-
-class Classifier:
-    """Classifier model - classifies based on analysis report"""
-    
-    def __init__(self, config: LLMConfig, client: AsyncOpenAI):
-        self.config = config
-        self.client = client
-        self.system_prompt = """你是一个智能合约安全分类专家。请根据分析报告判断是否为庞氏骗局。
-
-输出格式为JSON，包含以下字段：
-- is_ponzi: 布尔值 (true/false)
-- confidence: 浮点数 (0.0到1.0)
-- risk_level: 字符串 ("高", "中", "低")
-- reasoning: 字符串 (简要说明判断依据)
-
-请只返回JSON对象。"""
-    
-    @retry(
-        retry=retry_if_exception_type((ConnectionError, TimeoutError)),
-        stop=stop_after_attempt(3),
-        wait=wait_exponential(multiplier=1, max=10),
-        reraise=True
-    )
-    async def classify(self, analysis_report: str) -> ClassificationResult:
-        """Classify based on analysis report"""
-        try:
-            response = await self.client.chat.completions.create(
-                model=self.config.model,
-                messages=[
-                    {"role": "system", "content": self.system_prompt},
-                    {"role": "user", "content": f"请根据以下分析报告进行分类：\n{analysis_report}"}
-                ],
-                response_format={"type": "json_object"},
-                temperature=0,
-                timeout=60,
-            )
             result_json = json.loads(response.choices[0].message.content)
             return ClassificationResult(
                 is_ponzi=bool(result_json.get("is_ponzi", False)),
@@ -127,10 +86,10 @@ class Classifier:
                 risk_level=result_json.get("risk_level", "未知"),
                 reasoning=result_json.get("reasoning", "无详细理由。")
             )
+            # return content if content else "分析失败：API未返回内容"
         except Exception as e:
-            print(f"模型分类失败: {e}")
+            print(f"模型分析失败: {e}")
             return ClassificationResult(False, 0.0, "未知", "分类异常")
-
 
 class PonziDetectionPipeline:
     """Ponzi detection pipeline using LLM cascade"""
@@ -148,12 +107,12 @@ class PonziDetectionPipeline:
         
         # Initialize models
         self.analyzer = StaticAnalyzer(self.config, self.client)
-        self.classifier = Classifier(self.config, self.client)
         
         # Cache
         self.cache = {}
         self.cache_file = os.path.join(cache_dir, "detection_cache.json")
         self._load_cache()
+        
     
     def _load_cache(self):
         """Load cache from file"""
@@ -199,12 +158,8 @@ class PonziDetectionPipeline:
         
         try:
             # Step 1: Analyze contract data
-            report_str = await self.analyzer.analyze_code(contract_data)
-            if "分析失败" in report_str:
-                raise Exception("分析报告生成失败")
-            
-            # Step 2: Classify based on report
-            result = await self.classifier.classify(report_str)
+            result = await self.analyzer.analyze_code(contract_data)
+            report_str = result.reasoning
             
         except Exception as e:
             print(f"检测失败 {contract_name}: {e}")

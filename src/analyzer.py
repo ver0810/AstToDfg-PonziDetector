@@ -36,13 +36,13 @@ class SolidityAnalyzer:
     def _init_components(self) -> None:
         """初始化组件"""
         try:
-            from .ast_builder import ASTBuilder
-            from .dfg_builder import DFGBuilder
+            from .ast_builder.ast_builder import ASTBuilder
+            from .dfg_builder.dfg_builder import DFGBuilder
             from .json_serializer import JSONSerializer
-            from .visualizer import DFGVisualizer
-            from .solidity_04x_handler import Solidity04xHandler
-            from .node_types import ASTNode, DFG, ContractNode
-            from .dfg_config import DFGConfig
+            from .visualization.visualizer import DFGVisualizer
+            from .ast_builder.solidity_04x_handler import Solidity04xHandler
+            from .ast_builder.node_types import ASTNode, DFG, ContractNode
+            from .dfg_builder.dfg_config import DFGConfig
             
             # 如果没有提供配置，使用标准配置
             if self.dfg_config is None:

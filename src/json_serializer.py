@@ -8,8 +8,8 @@ from typing import Dict, Any, Optional
 from datetime import datetime
 from pathlib import Path
 
-from .node_types import DFG, DFGNode, DFGEdge, EdgeType
-from .dfg_config import DFGConfig
+from .ast_builder.node_types import DFG, DFGNode, DFGEdge, EdgeType
+from .dfg_builder.dfg_config import DFGConfig
 
 
 class JSONSerializer:

@@ -16,7 +16,7 @@ def test_config():
     print("=" * 70)
     
     try:
-        from src.dfg_config import (
+        from src.dfg_builder.dfg_config import (
             DFGConfig, OutputMode, NodePriority, EdgePriority,
             get_node_priority, should_keep_node,
             CRITICAL_NODE_TYPES, IMPORTANT_NODE_TYPES, KEYWORD_PATTERNS
