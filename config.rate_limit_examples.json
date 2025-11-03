@@ -1,0 +1,196 @@
+{
+  "rate_limit_examples": {
+    "description": "不同 LLM 提供商的速率限制配置示例",
+    
+    "qwen_dashscope": {
+      "comment": "阿里云 DashScope（通义千问）",
+      "api_key": "your-qwen-api-key",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "model": "qwen-plus",
+      "rate_limit_per_minute": 60,
+      "rate_limit_per_second": 10,
+      "request_delay": 0.1,
+      "notes": [
+        "免费额度：通常有 QPM（每分钟查询数）限制",
+        "推荐设置：rate_limit_per_minute=60, rate_limit_per_second=10",
+        "保守设置：rate_limit_per_minute=30, rate_limit_per_second=3"
+      ]
+    },
+    
+    "deepseek": {
+      "comment": "DeepSeek API",
+      "api_key": "your-deepseek-api-key",
+      "base_url": "https://api.deepseek.com/v1",
+      "model": "deepseek-chat",
+      "rate_limit_per_minute": 60,
+      "rate_limit_per_second": 10,
+      "request_delay": 0.2,
+      "notes": [
+        "标准限制：60 RPM（每分钟请求数）",
+        "推荐设置：rate_limit_per_minute=50, rate_limit_per_second=5",
+        "批量处理：建议降低到 30 RPM 以确保稳定性"
+      ]
+    },
+    
+    "openai": {
+      "comment": "OpenAI API",
+      "api_key": "your-openai-api-key",
+      "base_url": "https://api.openai.com/v1",
+      "model": "gpt-4",
+      "rate_limit_per_minute": 3000,
+      "rate_limit_per_second": 50,
+      "request_delay": 0.05,
+      "notes": [
+        "Tier 1: 3 RPM, 40,000 TPM",
+        "Tier 2: 3,500 RPM, 150,000 TPM",
+        "根据您的账户等级调整"
+      ]
+    },
+    
+    "glm_zhipu": {
+      "comment": "智谱 AI GLM-4",
+      "api_key": "your-zhipu-api-key",
+      "base_url": "https://open.bigmodel.cn/api/paas/v4",
+      "model": "glm-4",
+      "rate_limit_per_minute": 60,
+      "rate_limit_per_second": 5,
+      "request_delay": 0.2,
+      "notes": [
+        "免费额额度通常有较低的 QPM 限制",
+        "推荐设置：rate_limit_per_minute=30, rate_limit_per_second=3",
+        "遇到 429 错误时建议降低到 rate_limit_per_minute=15"
+      ]
+    },
+    
+    "conservative": {
+      "comment": "保守配置 - 适用于不确定限制的提供商",
+      "rate_limit_per_minute": 20,
+      "rate_limit_per_second": 2,
+      "request_delay": 0.5,
+      "notes": [
+        "适用于测试或未知限制的情况",
+        "避免触发速率限制",
+        "可以逐步提高直到找到最优值"
+      ]
+    },
+    
+    "aggressive": {
+      "comment": "激进配置 - 适用于高级账户或无限制场景",
+      "rate_limit_per_minute": 200,
+      "rate_limit_per_second": 20,
+      "request_delay": 0.01,
+      "notes": [
+        "仅在确认账户有足够配额时使用",
+        "需要监控 API 使用情况",
+        "建议配合 --concurrency 参数使用"
+      ]
+    }
+  },
+  
+  "environment_variables": {
+    "description": "可以通过环境变量设置速率限制",
+    "examples": {
+      "RATE_LIMIT_PER_MINUTE": "60",
+      "RATE_LIMIT_PER_SECOND": "10",
+      "REQUEST_DELAY": "0.1",
+      "RATE_LIMIT_RETRY_ATTEMPTS": "10",
+      "INITIAL_BACKOFF": "1.0",
+      "MAX_BACKOFF": "60.0"
+    }
+  },
+  
+  "recommended_settings_by_scenario": {
+    "small_batch_1_50": {
+      "comment": "小批量处理（1-50个合约）",
+      "concurrency": 5,
+      "rate_limit_per_minute": 60,
+      "rate_limit_per_second": 10,
+      "request_delay": 0.1
+    },
+    
+    "medium_batch_50_200": {
+      "comment": "中等批量处理（50-200个合约）",
+      "concurrency": 10,
+      "rate_limit_per_minute": 50,
+      "rate_limit_per_second": 8,
+      "request_delay": 0.15
+    },
+    
+    "large_batch_200_plus": {
+      "comment": "大批量处理（200+个合约）",
+      "concurrency": 20,
+      "rate_limit_per_minute": 40,
+      "rate_limit_per_second": 5,
+      "request_delay": 0.2,
+      "notes": [
+        "建议分批处理，每批200-500个",
+        "监控 API 使用情况",
+        "如遇到速率限制，降低 concurrency 到 10"
+      ]
+    },
+    
+    "ultra_safe": {
+      "comment": "超级安全模式 - 避免任何速率限制问题",
+      "concurrency": 1,
+      "rate_limit_per_minute": 15,
+      "rate_limit_per_second": 1,
+      "request_delay": 1.0,
+      "notes": [
+        "适用于免费账户或测试",
+        "处理速度慢但极其稳定",
+        "可用于验证功能正确性"
+      ]
+    }
+  },
+  
+  "troubleshooting": {
+    "error_429_too_many_requests": {
+      "description": "遇到 429 错误（请求过多）",
+      "solutions": [
+        "1. 降低 rate_limit_per_minute 到原来的 50%",
+        "2. 降低 rate_limit_per_second 到原来的 50%",
+        "3. 增加 request_delay 到 0.5 或更高",
+        "4. 降低 --concurrency 参数",
+        "5. 检查账户配额是否已用完"
+      ]
+    },
+    
+    "slow_processing": {
+      "description": "处理速度太慢",
+      "solutions": [
+        "1. 提高 --concurrency 参数",
+        "2. 降低 request_delay",
+        "3. 确认 rate_limit 设置不过于保守",
+        "4. 检查网络连接质量",
+        "5. 考虑升级 API 账户等级"
+      ]
+    },
+    
+    "timeout_errors": {
+      "description": "频繁超时错误",
+      "solutions": [
+        "1. 增加 API_TIMEOUT 环境变量（默认120秒）",
+        "2. 降低并发数",
+        "3. 检查网络连接",
+        "4. 简化输入数据（如使用 compact 模式）"
+      ]
+    }
+  },
+  
+  "command_line_examples": {
+    "basic_with_rate_limit": {
+      "command": "python -m src.main --detect-only --detect-dir output/batch_full_compact --concurrency 5 --api-key YOUR_KEY --base-url YOUR_URL --model YOUR_MODEL",
+      "description": "基本批量检测，使用默认速率限制"
+    },
+    
+    "conservative_mode": {
+      "command": "export RATE_LIMIT_PER_MINUTE=20 && export RATE_LIMIT_PER_SECOND=2 && export REQUEST_DELAY=0.5 && python -m src.main --detect-only --detect-dir output/batch_full_compact --concurrency 1",
+      "description": "保守模式，极低的速率限制"
+    },
+    
+    "large_batch_optimized": {
+      "command": "export RATE_LIMIT_PER_MINUTE=50 && export RATE_LIMIT_PER_SECOND=8 && python -m src.main --detect-only --detect-dir output/batch_full_compact --concurrency 10 --limit 500",
+      "description": "大批量处理优化配置"
+    }
+  }
+}

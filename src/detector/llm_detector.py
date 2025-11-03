@@ -8,10 +8,12 @@ import json
 import os
 import asyncio
 import hashlib
+import time
 from typing import Dict, Optional
 from dataclasses import dataclass
 from openai import AsyncOpenAI
 from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
+from asyncio import Semaphore
 
 from ..utils.functional_helpers import Result
 
@@ -25,26 +27,104 @@ class ClassificationResult:
     reasoning: str
 
 
+class RateLimiter:
+    """
+    异步速率限制器，用于控制 API 调用频率
+    支持令牌桶算法，平滑处理突发请求
+    """
+    
+    def __init__(self, calls_per_minute: int = 60, calls_per_second: int = 10):
+        """
+        初始化速率限制器
+        
+        Args:
+            calls_per_minute: 每分钟最大请求数
+            calls_per_second: 每秒最大请求数
+        """
+        self.calls_per_minute = calls_per_minute
+        self.calls_per_second = calls_per_second
+        
+        # 令牌桶 - 每秒级别
+        self.second_tokens = calls_per_second
+        self.second_max_tokens = calls_per_second
+        self.second_last_update = time.time()
+        
+        # 令牌桶 - 每分钟级别
+        self.minute_tokens = calls_per_minute
+        self.minute_max_tokens = calls_per_minute
+        self.minute_last_update = time.time()
+        
+        self._lock = asyncio.Lock()
+    
+    async def acquire(self):
+        """获取一个令牌，如果没有可用令牌则等待"""
+        async with self._lock:
+            while True:
+                now = time.time()
+                
+                # 更新每秒令牌
+                time_passed = now - self.second_last_update
+                self.second_tokens = min(
+                    self.second_max_tokens,
+                    self.second_tokens + time_passed * self.calls_per_second
+                )
+                self.second_last_update = now
+                
+                # 更新每分钟令牌
+                time_passed_minute = now - self.minute_last_update
+                self.minute_tokens = min(
+                    self.minute_max_tokens,
+                    self.minute_tokens + time_passed_minute * (self.calls_per_minute / 60.0)
+                )
+                self.minute_last_update = now
+                
+                # 检查是否有足够的令牌
+                if self.second_tokens >= 1 and self.minute_tokens >= 1:
+                    self.second_tokens -= 1
+                    self.minute_tokens -= 1
+                    return
+                
+                # 计算需要等待的时间
+                wait_time_second = (1 - self.second_tokens) / self.calls_per_second if self.second_tokens < 1 else 0
+                wait_time_minute = (1 - self.minute_tokens) / (self.calls_per_minute / 60.0) if self.minute_tokens < 1 else 0
+                wait_time = max(wait_time_second, wait_time_minute, 0.1)
+                
+                await asyncio.sleep(wait_time)
+
+
 class LLMConfig:
     """Configuration for LLM API"""
     
-    def __init__(self, api_key: str = None, base_url: str = None, model: str = None):
+    def __init__(self, api_key: str = None, base_url: str = None, model: str = None,
+                 rate_limit_per_minute: int = None, rate_limit_per_second: int = None,
+                 request_delay: float = None):
         # Use environment variables as defaults
         self.api_key = api_key or os.getenv('OPENAI_API_KEY', 'sk-8e71e4eb5d1d4471aed912b4e4172cb1')
         self.base_url = base_url or os.getenv('OPENAI_BASE_URL', 'https://dashscope.aliyuncs.com/compatible-mode/v1')
         self.model = model or os.getenv('OPENAI_MODEL', 'qwen-plus')
         
+        # Rate limiting configuration
+        self.rate_limit_per_minute = rate_limit_per_minute or int(os.getenv('RATE_LIMIT_PER_MINUTE', '60'))
+        self.rate_limit_per_second = rate_limit_per_second or int(os.getenv('RATE_LIMIT_PER_SECOND', '10'))
+        self.request_delay = request_delay or float(os.getenv('REQUEST_DELAY', '0.1'))  # 请求间最小延迟（秒）
+        
         # Retry configuration
-        self.retry_attempts = int(os.getenv('RETRY_ATTEMPTS', '3'))
+        self.retry_attempts = int(os.getenv('RETRY_ATTEMPTS', '5'))  # 增加重试次数
         self.timeout = int(os.getenv('API_TIMEOUT', '120'))
+        
+        # Backoff configuration for rate limit errors
+        self.rate_limit_retry_attempts = int(os.getenv('RATE_LIMIT_RETRY_ATTEMPTS', '10'))
+        self.initial_backoff = float(os.getenv('INITIAL_BACKOFF', '1.0'))
+        self.max_backoff = float(os.getenv('MAX_BACKOFF', '60.0'))
 
 
 class StaticAnalyzer:
     """Static analyzer model - analyzes contract code/DFG"""
     
-    def __init__(self, config: LLMConfig, client: AsyncOpenAI):
+    def __init__(self, config: LLMConfig, client: AsyncOpenAI, rate_limiter: RateLimiter = None):
         self.config = config
         self.client = client
+        self.rate_limiter = rate_limiter
         self.system_prompt = """你是一名区块链智能合约风险审计专家，分析庞氏骗局、资金盘及高风险投资合约。
 
 目标：准确分类风险。输入为结构化JSON格式数据流图。
@@ -60,25 +140,72 @@ class StaticAnalyzer:
 ```
 """
     
-    @retry(
-        retry=retry_if_exception_type((ConnectionError, TimeoutError)),
-        stop=stop_after_attempt(3),
-        wait=wait_exponential(multiplier=1, max=10),
-        reraise=True
-    )
-    async def analyze_code(self, contract_data: str) -> ClassificationResult:
-        """Analyze contract code/DFG and generate report"""
+    async def _call_api_with_retry(self, contract_data: str, retry_count: int = 0) -> str:
+        """
+        调用 API 并处理速率限制错误
+        
+        Args:
+            contract_data: 合约数据
+            retry_count: 当前重试次数
+            
+        Returns:
+            API 响应内容
+        """
+        # 使用速率限制器
+        if self.rate_limiter:
+            await self.rate_limiter.acquire()
+        
+        # 添加请求间延迟
+        if self.config.request_delay > 0:
+            await asyncio.sleep(self.config.request_delay)
+        
         try:
             response = await self.client.chat.completions.create(
                 model=self.config.model,
                 messages=[
                     {"role": "system", "content": self.system_prompt},
-                    {"role": "user", "content": f"请分析以下智能合约数据：\n{contract_data}"}
+                    {"role": "user", "content": f"请分析以下智能合约数据：\n ```json{contract_data}```"}
                 ],
                 timeout=self.config.timeout,
                 temperature=0
             )
-            content = response.choices[0].message.content
+            return response.choices[0].message.content
+            
+        except Exception as e:
+            error_str = str(e)
+            
+            # 检查是否是速率限制错误
+            if "429" in error_str or "rate limit" in error_str.lower() or "too many requests" in error_str.lower():
+                if retry_count < self.config.rate_limit_retry_attempts:
+                    # 指数退避
+                    backoff = min(
+                        self.config.initial_backoff * (2 ** retry_count),
+                        self.config.max_backoff
+                    )
+                    print(f"⚠️  遇到速率限制，等待 {backoff:.1f} 秒后重试（第 {retry_count + 1}/{self.config.rate_limit_retry_attempts} 次）")
+                    await asyncio.sleep(backoff)
+                    return await self._call_api_with_retry(contract_data, retry_count + 1)
+                else:
+                    raise Exception(f"达到速率限制重试上限: {error_str}")
+            
+            # 检查是否是连接或超时错误
+            elif any(err in error_str.lower() for err in ["timeout", "connection", "network"]):
+                if retry_count < self.config.retry_attempts:
+                    backoff = min(2 ** retry_count, 10)
+                    print(f"⚠️  网络错误，等待 {backoff:.1f} 秒后重试: {error_str}")
+                    await asyncio.sleep(backoff)
+                    return await self._call_api_with_retry(contract_data, retry_count + 1)
+                else:
+                    raise Exception(f"达到网络错误重试上限: {error_str}")
+            
+            # 其他错误直接抛出
+            raise
+    
+    async def analyze_code(self, contract_data: str) -> ClassificationResult:
+        """Analyze contract code/DFG and generate report"""
+        try:
+            # 使用带重试的 API 调用
+            content = await self._call_api_with_retry(contract_data)
             
             if not content:
                 print(f"⚠️ API 返回空内容")
@@ -142,8 +269,14 @@ class PonziDetectionPipeline:
             base_url=self.config.base_url
         )
         
-        # Initialize models
-        self.analyzer = StaticAnalyzer(self.config, self.client)
+        # Initialize rate limiter
+        self.rate_limiter = RateLimiter(
+            calls_per_minute=self.config.rate_limit_per_minute,
+            calls_per_second=self.config.rate_limit_per_second
+        )
+        
+        # Initialize models with rate limiter
+        self.analyzer = StaticAnalyzer(self.config, self.client, self.rate_limiter)
         
         # Cache
         self.cache = {}
