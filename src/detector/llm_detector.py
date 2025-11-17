@@ -129,7 +129,7 @@ class StaticAnalyzer:
 
 目标：准确分类风险。输入为结构化JSON格式数据流图。
 
-请严格按照以下结构，输出JSON格式，结构如下：
+请严格按照以下结构，仅输出JSON格式，不包含其他文字内容，JSON结构如下：
 ```json
 {
     "is_ponzi": true/false,
@@ -162,6 +162,7 @@ class StaticAnalyzer:
         try:
             response = await self.client.chat.completions.create(
                 model=self.config.model,
+                extra_body={"enable_thinking": False},
                 messages=[
                     {"role": "system", "content": self.system_prompt},
                     {"role": "user", "content": f"请分析以下智能合约数据：\n ```json{contract_data}```"}
